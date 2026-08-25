@@ -4,49 +4,88 @@
 
 ## Mission
 
-Build a sovereign, federated and AI-enabled global digital trust infrastructure for the Halal Tayyib ecosystem—from raw-material origin and scientific evidence through certification, manufacturing, logistics, retail, consumer participation and ESG.
+Build a sovereign, federated and AI-enabled global digital trust infrastructure for the Halal Tayyib ecosystem—from raw-material origin and scientific evidence through regulatory verification, manufacturing, logistics, warehousing, retail, consumer participation, ESG and long-term evidence preservation.
 
-## Core principles
+## Core principle
 
-- **Sovereignty:** each jurisdiction retains authority and protected data.
-- **Interoperability:** connect legacy and modern systems through APIs.
-- **Evidence:** critical events are cryptographically verifiable and auditable.
-- **Human authority:** AI assists; competent regulatory, scientific and Shariah authorities remain accountable.
-- **Security:** prevention, detection, containment, recovery and continuous hardening.
-- **Tayyib:** responsible, transparent and socially/environmentally conscious participation.
+> **Data stays where it belongs. Trust travels.**
 
-## Architecture
+## What this repository contains
 
-The platform separates sovereign operational systems from a federated trust/evidence layer. It is designed to exchange minimum necessary information rather than create a single centralized global database.
+### Master programme
+- `deliverables/00_EXECUTIVE_MASTER_BLUEPRINT.md`
+- `deliverables/01_MASTER_REQUIREMENTS.md`
+- `deliverables/02_REFERENCE_ARCHITECTURE.md`
 
-## AI journey
+### AI
+- `deliverables/03_AI_KNOWLEDGE_ONBOARDING.md`
 
-1. AI Knowledge Concierge
-2. AI Process Advisor
+Four-tier service journey:
+1. Knowledge Concierge
+2. Process Advisor
 3. Human/Regulatory Verification
-4. AI Commercial & Quotation Engine
+4. Commercial & Quotation Engine
+
+### Security and evidence
+- `deliverables/04_DATA_SOVEREIGNTY_AND_EVIDENCE.md`
+- `deliverables/05_CYBERSECURITY_AND_RESILIENCE.md`
+- `deliverables/19_SECURITY_ASSURANCE_TEST_PLAN.md`
+
+### Regulatory / laboratory
+- `deliverables/06_REGULATORY_LAB_EVIDENCE_MODEL.md`
+- `deliverables/16_SOURCE_REGISTER_AND_CLAIMS.md`
+
+### Sinotrans
+- `deliverables/07_SINOTRANS_PLAYBOOK.md`
+- `deliverables/17_SINOTRANS_DATA_MAPPING.md`
+- `deliverables/18_SINOTRANS_PILOT_SOP.md`
+
+### Ecosystem participants
+- `deliverables/08_MANUFACTURER_PRODUCER_PLAYBOOK.md`
+- `deliverables/09_RETAIL_IMPORTER_PLAYBOOK.md`
+- `deliverables/21_PARTNER_ENGAGEMENT_PLAYBOOK.md`
+
+### ESG / intelligence
+- `deliverables/10_ESG_GLOBAL_CITIZEN_FRAMEWORK.md`
+- `deliverables/11_TRUST_INDEX_AND_INTELLIGENCE.md`
+
+### Governance / economics
+- `deliverables/12_GOVERNANCE_RISK_AND_ACCOUNTABILITY.md`
+- `deliverables/13_BUSINESS_MODEL_AND_ECONOMICS.md`
+- `deliverables/20_GLOBAL_GOVERNANCE_CHARTER.md`
+
+### Engineering / implementation
+- `deliverables/14_API_AND_CANONICAL_DATA_MODEL.md`
+- `deliverables/15_IMPLEMENTATION_ROADMAP.md`
+
+## Architectural model
+
+The platform separates sovereign operational systems from a federated trust/evidence layer. The aim is not to centralize the world's data. Instead, it enables authorized verification using APIs, selective disclosure, cryptographic evidence and policy-controlled exchange.
 
 ## Ecosystem participants
 
-Governments · Halal authorities · laboratories · manufacturers · producers · logistics providers · importers · retailers · financiers · consumers · ESG/recycling partners.
+Governments · Halal authorities · laboratories · manufacturers · producers · logistics providers · importers · retailers · financiers · consumers · ESG/recycling partners · technology providers.
 
 ## Strategic analogies
 
 The intended network characteristics are comparable in concept to trusted global infrastructure such as payment-network and financial-messaging ecosystems: common standards, secure exchange, resilience and network effects. The platform is **not** a payment network and does not replace any existing governmental authority.
 
-## Repository roadmap
+## Source basis
 
-- `docs/01-master-strategy.md` — strategic vision and differentiation
-- `docs/02-reference-architecture.md` — technical/federated architecture
-- `docs/03-ai-architecture.md` — four-tier AI model
-- `docs/04-cybersecurity-risk.md` — risk, security and resilience
-- `docs/05-regulatory-laboratory.md` — regulatory and laboratory interoperability
-- `docs/06-business-model.md` — sustainable economic model
-- `docs/07-esg-global-citizen.md` — ESG and consumer participation
-- `docs/08-trust-index-intelligence.md` — index and intelligence framework
-- `docs/09-governance.md` — governance model
-- `docs/10-implementation-roadmap.md` — phased implementation
+The Sinotrans playbook and Halal supply-chain design were informed by the project-uploaded:
 
-## Important status note
+- MS 2400-1:2019 — Transportation
+- MS 2400-2:2019 — Warehousing
+- MS 2400-3:2019 — Retailing
+- supplied Halal audit training material
+- supplied Halal awareness training material
 
-This repository contains a strategic and architectural working baseline derived from the project discussions. Regulatory recognition, government endorsements, laboratory authorization, marks/licensing, insurance/assurance claims, legal ownership and commercial terms must be independently documented before being represented as established facts.
+Current public Sinotrans capabilities referenced in the playbook include integrated logistics, digital logistics information systems, EDI, IoT, Cloud Computing, Big Data, AI, Blockchain and Y2T. These are public-source positioning inputs, not evidence of a Sinotrans commitment to this programme.
+
+## Evidence and claims policy
+
+This repository deliberately distinguishes proposals from established facts. Government recognition, certification authority, laboratory authorization, insurance/assurance commitments, use of government marks, ownership/shareholding, commercial participation and signed partnerships must be independently documented before being presented externally as confirmed.
+
+## Implementation status
+
+This repository is the consolidated strategy/architecture baseline and pilot-operating documentation. Engineering implementation remains a subsequent delivery phase governed by the roadmap and release gates.
