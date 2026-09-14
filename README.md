@@ -38,19 +38,16 @@ Four-tier service journey:
 
 ## IQ300 MASTER STANDARDS STACK
 
-The complete source-derived Master Standards Stack is now organized in:
+The complete source-derived Master Standards Stack is organized in:
 
-- `master-standards-stack/README.md`
-- `master-standards-stack/01_MASTER_STANDARDS_STACK.md`
-- `master-standards-stack/02_MS2400_FULL_CLAUSE_CONTROL_MAP.md`
-- `master-standards-stack/03_SECTOR_STANDARDS_CONTROL_MAP.md`
-- `master-standards-stack/04_CERTIFICATION_AUDIT_SERTU_STUNNING.md`
-- `master-standards-stack/05_IQ300_EVIDENCE_TRUST_PROCESS_FLOWS.md`
-- `master-standards-stack/06_SOURCE_PROVENANCE_AND_VERIFICATION.md`
-- `master-standards-stack/07_REQUIREMENT_OBJECT_SCHEMA.json`
-- `master-standards-stack/08_HALAL_AWARENESS_AND_AUDIT_TRAINING_MAP.md`
+- `master-standards-stack/`
+- **`master-standards-stack/iq300-full-matrix/` - full IQ300 clause-to-control matrix and machine-readable requirement layer**
 
-Coverage includes the supplied MS 2400 transportation/warehousing/retailing standards, MS 1500, MS 2424, MS 2634, MS 2738, MS 2803, MS 2393, MS 2627 family, MS 1900, MS 2691 and supporting MS 2610 context, plus supplied halal audit and halal awareness training material. The folder includes clause architecture, HCP/risk mapping, evidence objects, authority boundaries, certification workflow, sertu/stunning controls, Digital Audit Twin, Global Trust Graph, state machines and process flowcharts.
+The `iq300-full-matrix` package contains the complete numbered-clause object set extracted from the three supplied MS 2400 PDFs (**613 unique requirement objects**), per-standard machine-readable shards, JSON schema, control catalog, audit-test library, authority-gate catalog, annex mapping, process flows, QA report and sector-standard source-gap register.
+
+Coverage includes the supplied MS 2400 transportation/warehousing/retailing standards, MS 1500, MS 2424, MS 2634, MS 2738, MS 2803, MS 2393, MS 2627 family, MS 1900, MS 2691 and supporting MS 2610 context, plus supplied halal audit and halal awareness training material. The IQ300 logic is expressed as:
+
+`Clause -> Requirement Intent -> Applicability -> Control -> HCP -> Evidence -> Audit Test -> Finding -> Corrective Action -> Re-verification -> Authority Gate -> Trust State`
 
 The IQ300 layer is deliberately version-aware and distinguishes source-derived requirements from implementation design and authority-confirmed rules.
 
@@ -91,7 +88,7 @@ The intended network characteristics are comparable in concept to trusted global
 
 ## Source basis
 
-The Sinotrans playbook and Halal supply-chain design were informed by the project-uploaded standards and training material. The new `master-standards-stack/` folder is the detailed source-derived control layer.
+The Sinotrans playbook and Halal supply-chain design were informed by the project-uploaded standards and training material. The `master-standards-stack/` folder is the detailed source-derived control layer, and `iq300-full-matrix/` is the machine-oriented clause-control upgrade.
 
 Current public Sinotrans capabilities referenced in the playbook include integrated logistics, digital logistics information systems, EDI, IoT, Cloud Computing, Big Data, AI, Blockchain and Y2T. These are public-source positioning inputs, not evidence of a Sinotrans commitment to this programme.
 
