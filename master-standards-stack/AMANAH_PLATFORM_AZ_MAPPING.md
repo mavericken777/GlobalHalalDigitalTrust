@@ -1,7 +1,7 @@
 # AMANAH HALAL TRUST ECOSYSTEM (AHTE)
 ## A-Z End-to-End Platform Mapping to the JAKIM/JSM Halal Standards Stack
 
-AHTE is the end-to-end sovereign/federated digital trust platform layer for Halal/Tayyib assurance. It does not replace JAKIM, JAIN, JSM, laboratories, regulators, certification panels, or other competent authorities. It operationalises evidence, controls, audit execution, traceability, risk management, authority gates, and trusted information exchange around applicable Malaysian Halal standards and related instruments.
+AHTE is the end-to-end sovereign/federated digital trust platform layer for Halal/Tayyib assurance. It operationalises evidence, controls, audit execution, traceability, risk management, authority gates, and trusted information exchange around applicable Malaysian Halal standards and related instruments.
 
 ## Canonical control chain
 `Shariah/Fatwa -> Competent Authority -> Applicable Standard Set -> Requirement -> Applicability Decision -> Control Objective -> Control -> HCP -> Evidence -> Audit Test -> Finding -> Corrective Action -> Re-verification -> Authority Gate -> Trust State -> Physical/Digital Release`
@@ -23,13 +23,14 @@ AHTE is the end-to-end sovereign/federated digital trust platform layer for Hala
 - MS 1900:2025 - Shariah-based quality management system - Requirements
 - MS 2691:2021 - Halal profession - General requirements
 - MS 2610:2015 - Muslim-friendly hospitality services (supporting context)
+- **MS 2636:2019 - Halal medical device - General requirements**
 
 Historical/replaced standards are retained as lineage metadata, not current production requirements.
 
 ## A-Z platform decomposition
 
 ### A - Authority & Accountability
-Authority registry, role matrix, mandate, delegation, approval, panel-case and decision objects. Certification authority remains external/competent-authority controlled.
+Authority registry, role matrix, mandate, delegation, approval, panel-case and decision objects.
 
 ### B - Batch, Lot & Boundary Identity
 Product/SKU/batch/lot/pallet/container/unit/sample identity, genealogy, status and affected-scope boundaries.
@@ -62,7 +63,7 @@ Onboarding, application, audit, certification, surveillance, change, incident, c
 Qualification, training, competence assessment, role authorisation, expiry, renewal and professional development.
 
 ### L - Laboratory & Analytical Evidence
-Sample management, method/version, matrix, controls, validation, result interpretation and limitations. Laboratory results are evidence, not certification.
+Sample management, method/version, matrix, controls, validation, result interpretation and limitations.
 
 ### M - Material & Ingredient Provenance
 Ingredient/source genealogy, supplier, origin, certificates, specifications, animal/plant/mineral classification and transformation/route provenance.
@@ -126,6 +127,7 @@ Purpose-limited disclosure, data sovereignty, tamper evidence and minimum-necess
 | MS 1900:2025 | A,C,G,I,J,K,Q,R,T,W,X | organisation-level Shariah QMS | policies, objectives, audits, reviews, records | MANAGEMENT REVIEW / CERTIFICATION AS APPLICABLE |
 | MS 2691:2021 | A,C,I,K,J,U | professional competence | qualification, training, assessment, authorisation | PROFESSIONAL RECOGNITION AS APPLICABLE |
 | MS 2610:2015 | C,F,K,P,S,U,V,W | accommodation/service environment | premises/service/staff/guest-facing evidence | HOSPITALITY AS APPLICABLE |
+| **MS 2636:2019** | C,D,E,F,G,H,I,K,L,M,P,Q,R,S,T,W,X | device/material provenance, manufacturing, storage, transport, packaging/labelling, outsourced activities, QC | material/source evidence, HMS/QMS records, lab/QC evidence, audit records | MEDICAL DEVICE SCOPE, MATERIAL, OUTSOURCE, CERTIFICATION |
 
 ## Core data model
 Authority; Organisation; Facility; Person/Role/Competence; Product/SKU/Formula; Ingredient/Raw Material; Supplier; Animal/Source Provenance; Process/Process Step; HCP; Control; Evidence; Laboratory Sample/Result; Audit; Finding/NCR; Corrective Action; Certificate/Application/Panel Case; Shipment/Pallet/Container/Seal; Warehouse Inventory Status; Retail Execution; Incident/Recall; Trust State; Standard/Edition/Clause/Version; Policy/Fatwa/Protocol/Circular; Digital Event.
@@ -137,10 +139,8 @@ Authority; Organisation; Facility; Person/Role/Competence; Product/SKU/Formula; 
 `PENDING -> EVIDENCE-COMPLETE -> ASSESSED -> VERIFIED -> VERIFIED-WITH-EXCEPTION -> RELEASED`
 Failure/hold states include HOLD, QUARANTINED, DISPUTED, CORRECTIVE_ACTION, RE-VERIFICATION, EXPIRED, SUSPENDED, REVOKED and RECALLED.
 
-**No AI model, laboratory result, QR code, blockchain record, manufacturer declaration or platform event independently creates Malaysian Halal certification.**
-
 ## Production freeze
 Every production rule must carry exact standard number/edition, confirmation or revision status, effective date, supersession lineage, MPPHM/MHMS edition, current protocol, applicable circular/Pekeliling/fatwa/law/regulator requirement, laboratory method version where applicable, authority owner, source provenance/hash and implementation test evidence.
 
 ## Visual and process assets
-The package includes full Mermaid process flows and SVG architecture/coverage visuals. Complete source package is also preserved as an archive in the `master-standards-stack` tree for zero-content-loss transport and auditability.
+The package includes full Mermaid process flows and SVG architecture/coverage visuals, including a 17-standard process-flow infographic atlas. China deployment implementation artefacts are under `master-standards-stack/china-deployment/`.
