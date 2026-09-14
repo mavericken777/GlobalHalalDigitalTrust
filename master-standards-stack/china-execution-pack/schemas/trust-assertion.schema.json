@@ -1,0 +1,34 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://ahtE.example/schemas/trust-assertion.schema.json",
+  "title":"AHTE Cross-Border Trust Assertion",
+  "type":"object",
+  "required":["TrustAssertionID","Issuer","SubjectObjects","Scope","ValidFrom","ValidUntil","State","DecisionRefs","EvidenceHashes","Jurisdiction","IssuedAt","Signature"],
+  "properties":{
+    "TrustAssertionID":{"type":"string"},
+    "Issuer":{"type":"string"},
+    "SubjectObjects":{"type":"array","items":{"type":"string"},"minItems":1},
+    "Scope":{"type":"string"},
+    "ValidFrom":{"type":"string","format":"date-time"},
+    "ValidUntil":{"type":"string","format":"date-time"},
+    "State":{"type":"string"},
+    "DecisionRefs":{"type":"array","items":{"type":"string"}},
+    "EvidenceHashes":{"type":"array","items":{"type":"string","pattern":"^sha256:"}},
+    "ExceptionFlags":{"type":"array","items":{"type":"string"}},
+    "VerificationEndpoint":{"type":["string","null"],"format":"uri"},
+    "Jurisdiction":{"type":"string"},
+    "IssuedAt":{"type":"string","format":"date-time"},
+    "PolicyVersion":{"type":["string","null"]},
+    "Signature":{
+      "type":"object",
+      "required":["Algorithm","KeyID","Value"],
+      "properties":{
+        "Algorithm":{"type":"string"},
+        "KeyID":{"type":"string"},
+        "Value":{"type":"string"}
+      },
+      "additionalProperties":false
+    }
+  },
+  "additionalProperties":false
+}
