@@ -1,0 +1,63 @@
+Seq,Phase,EventType,Critical,PrimaryObject,MinimumEvidence,ActorClass,FailureState
+001,Programme,E-PROGRAMME-OPEN,YES,Programme,Programme charter,Programme office,STOP
+002,Programme,E-ORG-ONBOARD,YES,Organisation,Legal identity,Organisation sponsor,HOLD
+003,Facility,E-FACILITY-REGISTERED,YES,Facility,Site record,Facility owner,HOLD
+004,Scope,E-SCOPE-CLASSIFIED,YES,Product/Shipment,Scope decision,Compliance owner,HOLD
+005,Standards,E-STANDARD-APPLIED,YES,Product/Shipment,Rule-set snapshot,Compliance engine,HOLD
+006,Rules,E-REQUIREMENT-RESOLVED,YES,Shipment,Resolution trace,Rule owner,HOLD
+007,Material,E-SUPPLIER-REGISTERED,YES,Supplier,Supplier dossier,Supplier manager,HOLD
+008,Material,E-MATERIAL-CREATED,YES,Material,Specification,Materials owner,HOLD
+009,Material,E-MATERIAL-RECEIVED,YES,Material,Receipt record,Warehouse,HOLD
+010,Material,E-MATERIAL-VERIFIED,YES,Material,Certificates/specification/evidence,Assurance owner,HOLD
+011,Manufacture,E-BATCH-CREATED,YES,Batch,MES batch record,Production,HOLD
+012,Manufacture,E-PROCESS-START,YES,Batch,Work order,MES,STOP
+013,Manufacture,E-PROCESS-HCP-CHECK,YES,HCP,Observation/evidence,Authorised operator,HOLD
+014,Manufacture,E-BATCH-COMPLETED,YES,Batch,Production record,Production,HOLD
+015,Packaging,E-PACKAGING-VERIFIED,YES,Lot,Label/package record,Packaging QA,HOLD
+016,Release,E-LOT-RELEASE,YES,Lot,Release decision,Authorised releaser,HOLD
+017,Audit,E-AUDIT-OPEN,YES,Audit,Assignment/audit scope,Auditor,HOLD
+018,Audit,E-AUDIT-OBSERVATION,YES,Requirement/HCP,Observation evidence,Auditor,FINDING
+019,Audit,E-FINDING,YES,Finding,Finding evidence,Auditor,CORRECTIVE-ACTION
+020,Audit,E-CAR-OPEN,YES,CAR,Owner/action,Site owner,CORRECTIVE-ACTION
+021,Audit,E-CAR-CLOSE,YES,CAR,Effectiveness evidence,Auditor/authority,RE-VERIFICATION
+022,Lab,E-SAMPLE-COLLECTED,YES,Sample,Seal/chain record,Sampler,REVIEW
+023,Lab,E-SAMPLE-CUSTODY,YES,Sample,Custody evidence,Lab/logistics,HOLD
+024,Lab,E-LAB-RESULT,YES,Sample/LabResult,Report/method/controls,Lab,REVIEW
+025,Authority,E-AUTHORITY-DECISION,YES,Case/Shipment/Lot,Signed decision,Competent authority,HOLD
+026,Shipment,E-SHIPMENT-CREATED,YES,Shipment,Booking/order,Logistics,HOLD
+027,Shipment,E-PALLET-CREATED,YES,Pallet,Pallet genealogy,Factory,RECONCILE
+028,Shipment,E-CONTAINER-ASSIGNED,YES,Container,Container record,Carrier,HOLD
+029,Shipment,E-SEAL-APPLIED,YES,Seal,Photo/identifier,Carrier,HOLD
+030,Shipment,E-LOAD-COMPLETED,YES,Container,Load reconciliation,Factory/carrier,HOLD
+031,Origin,E-ORIGIN-RECONCILIATION,YES,Shipment,Identity/doc check,Origin team,HOLD
+032,Origin,E-EXPORT-PACKET-SEALED,YES,TrustPacket,Packet hash/signature,Authorised issuer,HOLD
+033,Logistics,E-CARRIER-ACCEPTANCE,YES,Shipment,Custody condition,Carrier,HOLD
+034,Logistics,E-CUSTODY-TRANSFER,YES,Shipment/Container,Custody record,Carrier/handler,HOLD
+035,Logistics,E-GATE-CHECK,YES,Container,Gate scan,Gate operator,HOLD
+036,Border,E-PORT-INSPECTION,YES,Shipment,Inspection evidence,Port/customs, H0LD
+037,Border,E-EXPORT-RELEASE,YES,Shipment,Release reference,Customs,HOLD
+038,Transit,E-TRANSIT-DEPARTURE,YES,Shipment,Departure record,Carrier,HOLD
+039,Transit,E-CONDITION-CAPTURED,YES,Container,Sensor/inspection data,Carrier,REVIEW
+040,Transit,E-ROUTE-EXCEPTION,YES,Shipment,Telemetry/evidence,Carrier,HOLD
+041,Destination,E-ARRIVAL-PORT,YES,Container,Arrival record,Port,HOLD
+042,Destination,E-GCC-PACKET-PRESENTED,YES,Shipment,Trust packet,Importer/agent,HOLD
+043,Destination,E-SEAL-VERIFIED,YES,Container/Seal,Physical reconciliation,Port/customs,HOLD
+044,Destination,E-DOCUMENT-RECONCILIATION,YES,Shipment,Document set,Importer/authority,HOLD
+045,Destination,E-GCC-INSPECTION,YES,Shipment,Inspection record,Destination authority,HOLD
+046,Destination,E-IMPORT-RELEASE,YES,Shipment,Import release,Destination authority,HOLD
+047,Warehouse,E-DEST-WAREHOUSE-RECEIPT,YES,Container/Lots,Receipt/reconciliation,Warehouse,HOLD
+048,Warehouse,E-DEST-QUARANTINE,YES,Lot/Container,Quarantine reason,Warehouse,HOLD
+049,Warehouse,E-DEST-RECONCILIATION,YES,Inventory,Object comparison,Warehouse,HOLD
+050,Warehouse,E-DEST-RELEASE,YES,Inventory,Release decision,Warehouse authorised role,HOLD
+051,Distribution,E-DISTRIBUTION-DISPATCH,YES,LogisticUnit,Dispatch record,Distributor,HOLD
+052,Retail,E-RETAIL-RECEIPT,YES,RetailUnit,Receipt/reconciliation,Retail,HOLD
+053,Consumer,E-CONSUMER-VERIFICATION,NO,Assertion,Verification response,Verifier,NOT-VERIFIED
+054,Exception,E-SEAL-BROKEN,YES,Seal/Container,Photo + inspection,Handler,HOLD
+055,Exception,E-ID-MISMATCH,YES,Physical/digital object,Mismatch evidence,Handler,HOLD
+056,Exception,E-EVIDENCE-CONTRADICTION,YES,EvidenceSet,Contradiction links,Assurance,HOLD
+057,Exception,E-CUSTODY-GAP,YES,Shipment,Causality trace,Logistics,HOLD
+058,Exception,E-TRUST-FRACTURE,YES,TrustGraph,Dependency report,AHTE,HOLD
+059,Recall,E-RECALL-OPEN,YES,RecallCase,Decision + reason,Authority/owner,RECALLED
+060,Recall,E-RECALL-TRACEBACK,YES,RecallCase,Origin graph,AHTE,RECALLED
+061,Recall,E-RECALL-TRACEFORWARD,YES,RecallCase,Destination graph,AHTE,RECALLED
+062,Recall,E-RECALL-CLOSE,YES,RecallCase,Disposition evidence,Authorised owner,CLOSED
