@@ -36,7 +36,23 @@ Four-tier service journey:
 - `deliverables/16_SOURCE_REGISTER_AND_CLAIMS.md`
 - `deliverables/22_IQ300_JAKIM_MALAYSIAN_STANDARDS_INTELLIGENCE_LAYER.md`
 
-The IQ300 regulatory layer converts the supplied JAKIM/Malaysian Halal standards compendia into a version-aware regulatory knowledge model covering MS 1500, MS 2400-1/-2/-3, MS 2424, MS 2634, MS 2738, MS 2803, MS 2393, MS 2627/2627-2, MS 1900, MS 2691 and MS 2610, together with MPPHM/MHMS, protocols, circulars, fatwa/authority boundaries, evidence objects, HCPs, audit events, trust states and verification gates. It explicitly distinguishes secondary compendium material from authoritative normative sources.
+## IQ300 MASTER STANDARDS STACK
+
+The complete source-derived Master Standards Stack is now organized in:
+
+- `master-standards-stack/README.md`
+- `master-standards-stack/01_MASTER_STANDARDS_STACK.md`
+- `master-standards-stack/02_MS2400_FULL_CLAUSE_CONTROL_MAP.md`
+- `master-standards-stack/03_SECTOR_STANDARDS_CONTROL_MAP.md`
+- `master-standards-stack/04_CERTIFICATION_AUDIT_SERTU_STUNNING.md`
+- `master-standards-stack/05_IQ300_EVIDENCE_TRUST_PROCESS_FLOWS.md`
+- `master-standards-stack/06_SOURCE_PROVENANCE_AND_VERIFICATION.md`
+- `master-standards-stack/07_REQUIREMENT_OBJECT_SCHEMA.json`
+- `master-standards-stack/08_HALAL_AWARENESS_AND_AUDIT_TRAINING_MAP.md`
+
+Coverage includes the supplied MS 2400 transportation/warehousing/retailing standards, MS 1500, MS 2424, MS 2634, MS 2738, MS 2803, MS 2393, MS 2627 family, MS 1900, MS 2691 and supporting MS 2610 context, plus supplied halal audit and halal awareness training material. The folder includes clause architecture, HCP/risk mapping, evidence objects, authority boundaries, certification workflow, sertu/stunning controls, Digital Audit Twin, Global Trust Graph, state machines and process flowcharts.
+
+The IQ300 layer is deliberately version-aware and distinguishes source-derived requirements from implementation design and authority-confirmed rules.
 
 ### Sinotrans
 - `deliverables/07_SINOTRANS_PLAYBOOK.md`
@@ -75,14 +91,7 @@ The intended network characteristics are comparable in concept to trusted global
 
 ## Source basis
 
-The Sinotrans playbook and Halal supply-chain design were informed by the project-uploaded:
-
-- MS 2400-1:2019 — Transportation
-- MS 2400-2:2019 — Warehousing
-- MS 2400-3:2019 — Retailing
-- supplied Halal audit training material
-- supplied Halal awareness training material
-- supplied JAKIM/Malaysian Halal standards compendia used to build the IQ300 regulatory intelligence layer
+The Sinotrans playbook and Halal supply-chain design were informed by the project-uploaded standards and training material. The new `master-standards-stack/` folder is the detailed source-derived control layer.
 
 Current public Sinotrans capabilities referenced in the playbook include integrated logistics, digital logistics information systems, EDI, IoT, Cloud Computing, Big Data, AI, Blockchain and Y2T. These are public-source positioning inputs, not evidence of a Sinotrans commitment to this programme.
 
