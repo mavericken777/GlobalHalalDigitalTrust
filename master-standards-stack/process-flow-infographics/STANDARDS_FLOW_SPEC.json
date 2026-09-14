@@ -1,0 +1,257 @@
+[
+  {
+    "flow": "01",
+    "standard": "MS 1500:2019",
+    "title": "Halal food — General requirements",
+    "steps": [
+      "Scope & product classification",
+      "Halal materials / supplier provenance",
+      "Premise, equipment & hygiene controls",
+      "Processing, storage & handling",
+      "Packaging, labelling & presentation",
+      "Traceability + halal control verification",
+      "Audit / corrective action / authority decision",
+      "Release + ongoing assurance"
+    ]
+  },
+  {
+    "flow": "02",
+    "standard": "MS 2400-1:2019",
+    "title": "Halal supply chain management — Transportation",
+    "steps": [
+      "Shipment / cargo scope",
+      "Carrier + vehicle/container qualification",
+      "Pre-load cleanliness & segregation",
+      "Loading, seal & custody activation",
+      "Transit monitoring / exception control",
+      "Handover + receipt verification",
+      "Nonconformity / containment / re-verification",
+      "Transport release / trusted custody"
+    ]
+  },
+  {
+    "flow": "03",
+    "standard": "MS 2400-2:2019",
+    "title": "Halal supply chain management — Warehousing",
+    "steps": [
+      "Warehouse scope & zoning",
+      "Inbound seal / document / condition checks",
+      "Quarantine / released / rejected / returned status",
+      "Segregated storage + hygiene / pest control",
+      "Inventory identification + FIFO/FEFO",
+      "Picking / dispatch / seal control",
+      "Exception, damage, return & recall linkage",
+      "Warehouse disposition / release"
+    ]
+  },
+  {
+    "flow": "04",
+    "standard": "MS 2400-3:2019",
+    "title": "Halal supply chain management — Retailing",
+    "steps": [
+      "Retail scope & product status",
+      "Receiving + lot identity",
+      "Segregated storage / display",
+      "Serving / sale / utensils / surfaces controls",
+      "Opened-pack, tasting & returns control",
+      "Label / advertising / customer-facing integrity",
+      "Recall / withdrawal / exception workflow",
+      "Retail release + verification"
+    ]
+  },
+  {
+    "flow": "05",
+    "standard": "MS 2424:2019",
+    "title": "Halal pharmaceuticals — General requirements",
+    "steps": [
+      "Product / facility scope",
+      "Management + Halal Management System",
+      "Material origin / API / excipient controls",
+      "Manufacturing, storage & transport",
+      "QC / testing / documentation",
+      "Packaging, labelling & outsourced activities",
+      "Self-inspection / CAPA / authority review",
+      "Halal certification / release"
+    ]
+  },
+  {
+    "flow": "06",
+    "standard": "MS 2634:2019",
+    "title": "Halal cosmetics — General requirements",
+    "steps": [
+      "Cosmetic scope & formula identity",
+      "INCI material source / route verification",
+      "Animal-derived / ethanol / human-derived risk controls",
+      "Manufacturing + hygiene + segregation",
+      "QC / laboratory evidence",
+      "Packaging, labelling + OEM/outsourcing",
+      "Audit / corrective action / authority decision",
+      "Product release + lifecycle traceability"
+    ]
+  },
+  {
+    "flow": "07",
+    "standard": "MS 2738:2023",
+    "title": "Halal consumable goods — General requirements",
+    "steps": [
+      "Product eligibility / scope",
+      "Raw material sourcing & provenance",
+      "Manufacturing / handling controls",
+      "Hygiene + segregation + sanitation",
+      "Packaging / storage / transport",
+      "Traceability + monitoring",
+      "Audit / nonconformity / corrective action",
+      "Authority decision / market release"
+    ]
+  },
+  {
+    "flow": "08",
+    "standard": "MS 2803:2025",
+    "title": "Usage of animal bone, skin and hair",
+    "steps": [
+      "Material / finished-product scope",
+      "Species + source verification",
+      "Slaughter / origin documentation where applicable",
+      "Segregation + handling controls",
+      "Supplier / transformation provenance",
+      "Analytical / document evidence as required",
+      "Audit + exception + re-verification",
+      "Authority gate / release"
+    ]
+  },
+  {
+    "flow": "09",
+    "standard": "MS 2809:2025",
+    "title": "Authentication using chemometric techniques",
+    "steps": [
+      "Question / sample / matrix definition",
+      "Data acquisition: chromatography / spectroscopy / spectrometry",
+      "Dataset quality + provenance",
+      "Pre-processing + feature/model pipeline",
+      "Validation + statistical performance",
+      "Model result / interpretation",
+      "Audit trail + reproducibility / exception handling",
+      "Authority evidence package"
+    ]
+  },
+  {
+    "flow": "10",
+    "standard": "MS 2810:2025",
+    "title": "Identification of pig skin and hair — Test method",
+    "steps": [
+      "Test scope + sample eligibility",
+      "Sample identity + chain of custody",
+      "Preparation / method execution",
+      "Controls + analytical measurement",
+      "Result interpretation against method scope",
+      "Report + evidence integrity",
+      "Authority / decision linkage",
+      "Disposition: release / hold / investigation"
+    ]
+  },
+  {
+    "flow": "11",
+    "standard": "MS 2393:2023",
+    "title": "Islamic and halal terminologies",
+    "steps": [
+      "Term / concept intake",
+      "Authority-source definition",
+      "Semantic normalization",
+      "Ontology / relationship mapping",
+      "Context + usage constraints",
+      "Version / change control",
+      "Controlled publication",
+      "Platform-wide terminology enforcement"
+    ]
+  },
+  {
+    "flow": "12",
+    "standard": "MS 2627:2017",
+    "title": "Detection of porcine DNA — Food",
+    "steps": [
+      "Question / food matrix classification",
+      "Representative sampling + chain of custody",
+      "DNA extraction + controls",
+      "PCR detection + inhibition controls",
+      "Analytical result / limitations",
+      "Evidence interpretation (not standalone certification)",
+      "Authority review / investigation",
+      "Decision / traceability linkage"
+    ]
+  },
+  {
+    "flow": "13",
+    "standard": "MS 2627-2:2025",
+    "title": "Detection of porcine DNA — Cosmetics",
+    "steps": [
+      "Question / cosmetic matrix classification",
+      "Representative sampling + chain of custody",
+      "Matrix-appropriate DNA extraction",
+      "qPCR controls / validation",
+      "Result + inhibition / performance review",
+      "Evidence interpretation + limitations",
+      "Authority / investigation linkage",
+      "Decision / traceability linkage"
+    ]
+  },
+  {
+    "flow": "14",
+    "standard": "MS 1900:2025",
+    "title": "Shariah-based quality management system",
+    "steps": [
+      "Organisation context + Shariah/fatwa obligations",
+      "Leadership + policy",
+      "Objectives / risks / planning",
+      "Operational process control",
+      "Competence / awareness / documented information",
+      "Internal audit + management review",
+      "Corrective action + continual improvement",
+      "Organisation assurance / certification pathway as applicable"
+    ]
+  },
+  {
+    "flow": "15",
+    "standard": "MS 2691:2021",
+    "title": "Halal profession — General requirements",
+    "steps": [
+      "Role definition / competence profile",
+      "Qualification + education evidence",
+      "Training + competence assessment",
+      "Role authorisation / assignment",
+      "Professional conduct + records",
+      "Performance / continuing development",
+      "Renewal / expiry controls",
+      "Stakeholder / authority recognition as applicable"
+    ]
+  },
+  {
+    "flow": "16",
+    "standard": "MS 2610:2015",
+    "title": "Muslim-friendly hospitality services — supporting context",
+    "steps": [
+      "Service scope + guest journey",
+      "Premise / accommodation environment",
+      "Food & beverage halal integrity",
+      "Hygiene / facilities / service controls",
+      "Staff competence + guest-facing conduct",
+      "Traceability / supplier evidence",
+      "Complaint / incident / corrective action",
+      "Service assurance / verification"
+    ]
+  },
+  {
+    "flow": "17",
+    "standard": "MS 2636:2019",
+    "title": "Halal medical device — General requirements",
+    "steps": [
+      "Device scope + competent-authority eligibility",
+      "Quality management + management responsibility",
+      "Halal Management System + fundamentals",
+      "Materials / manufacturing / storage / transport",
+      "QC + personnel + training + hygiene",
+      "Packaging / labelling + outsourced activities",
+      "Internal audit / legal compliance / sertu where applicable",
+      "Halal certification pathway / mark / release"
+    ]
+  }
+]
