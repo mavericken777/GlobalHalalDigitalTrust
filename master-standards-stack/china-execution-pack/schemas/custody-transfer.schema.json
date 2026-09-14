@@ -1,0 +1,31 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://ahtE.example/schemas/custody-transfer.schema.json",
+  "title":"AHTE Custody Transfer",
+  "type":"object",
+  "required":["CustodyEventID","FromActorID","ToActorID","ObjectRefs","LocationID","OccurredAt","Condition","EvidenceRefs"],
+  "properties":{
+    "CustodyEventID":{"type":"string"},
+    "FromActorID":{"type":"string"},
+    "ToActorID":{"type":"string"},
+    "ObjectRefs":{"type":"array","items":{"type":"string"},"minItems":1},
+    "ShipmentID":{"type":["string","null"]},
+    "ContainerID":{"type":["string","null"]},
+    "SealID":{"type":["string","null"]},
+    "LocationID":{"type":"string"},
+    "OccurredAt":{"type":"string","format":"date-time"},
+    "Condition":{
+      "type":"object",
+      "properties":{
+        "SealStatus":{"type":["string","null"]},
+        "PackagingStatus":{"type":["string","null"]},
+        "Temperature":{"type":["number","null"]},
+        "ConditionNotes":{"type":["string","null"]}
+      },
+      "additionalProperties":true
+    },
+    "EvidenceRefs":{"type":"array","items":{"type":"string"}},
+    "Signature":{"type":["object","null"]}
+  },
+  "additionalProperties":false
+}
