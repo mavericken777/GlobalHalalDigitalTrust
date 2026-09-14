@@ -22,6 +22,16 @@ This folder is the detailed JAKIM / Malaysian Halal Standards intelligence layer
 6. `06_SOURCE_PROVENANCE_AND_VERIFICATION.md` - source register, verification classes and version-freeze rules
 7. `07_REQUIREMENT_OBJECT_SCHEMA.json` - machine-readable requirement/evidence/authority decision schema
 
+## IQ300 full matrix
+
+`iq300-full-matrix/` is the logical upgrade layer. It contains the complete numbered-clause object set extracted from the three supplied MS 2400 PDFs: **613 unique requirement objects**.
+
+The clause-level machine path is:
+
+`Clause -> Requirement Intent -> Applicability -> Control -> HCP -> Evidence -> Audit Test -> Finding -> Corrective Action -> Re-verification -> Authority Gate -> Trust State`
+
+It also contains per-standard machine-readable shards, a JSON schema, control catalog, authority-gate catalog, audit-test library, annex map, process-flow library, QA report, and sector-standard source-gap register.
+
 ## Core doctrine
 
 `Shariah/fatwa -> competent authority -> certification operating layer -> technical standards -> controls/HCPs -> evidence -> human assessment -> authority decision -> trust state -> physical/digital release`
