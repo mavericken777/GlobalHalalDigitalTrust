@@ -27,7 +27,7 @@ Canonical path:
 - `master-standards-stack/IQ300_AHTE_PLATFORM_README.md` - AHTE package declaration and coverage model
 - `master-standards-stack/IQ300_AHTE_COMPLETE_MASTER_PACKAGE.tar.gz` - complete generated source-derived package archive
 
-The current IQ300 library represents the standards/contexts represented by the current JSM Halal catalogue and the supplied source corpus, including MS 1500:2019; MS 2400-1/-2/-3:2019; MS 2424:2019; MS 2634:2019; MS 2738:2023; MS 2803:2025; MS 2809:2025; MS 2810:2025; MS 2393:2023; MS 2627:2017; MS 2627-2:2025; MS 1900:2025; MS 2691:2021; and MS 2610:2015 supporting hospitality context. Current JSM MySOL catalogue evidence confirms the recent 2025 standards and current statuses referenced by this build.
+The current IQ300 library represents the standards/contexts represented by the current JSM Halal catalogue and the supplied source corpus, including MS 1500:2019; MS 2400-1/-2/-3:2019; MS 2424:2019; MS 2634:2019; MS 2738:2023; MS 2803:2025; MS 2809:2025; MS 2810:2025; MS 2393:2023; MS 2627:2017; MS 2627-2:2025; MS 1900:2025; MS 2691:2021; and MS 2610:2015 supporting hospitality context.
 
 ## Governance boundary
 
