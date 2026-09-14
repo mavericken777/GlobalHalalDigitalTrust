@@ -34,7 +34,7 @@ Seq,Phase,EventType,Critical,PrimaryObject,MinimumEvidence,ActorClass,FailureSta
 033,Logistics,E-CARRIER-ACCEPTANCE,YES,Shipment,Custody condition,Carrier,HOLD
 034,Logistics,E-CUSTODY-TRANSFER,YES,Shipment/Container,Custody record,Carrier/handler,HOLD
 035,Logistics,E-GATE-CHECK,YES,Container,Gate scan,Gate operator,HOLD
-036,Border,E-PORT-INSPECTION,YES,Shipment,Inspection evidence,Port/customs, H0LD
+036,Border,E-PORT-INSPECTION,YES,Shipment,Inspection evidence,Port/customs,HOLD
 037,Border,E-EXPORT-RELEASE,YES,Shipment,Release reference,Customs,HOLD
 038,Transit,E-TRANSIT-DEPARTURE,YES,Shipment,Departure record,Carrier,HOLD
 039,Transit,E-CONDITION-CAPTURED,YES,Container,Sensor/inspection data,Carrier,REVIEW
