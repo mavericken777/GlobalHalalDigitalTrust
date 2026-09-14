@@ -20,77 +20,67 @@ Build a sovereign, federated and AI-enabled global digital trust infrastructure 
 ### AI
 - `deliverables/03_AI_KNOWLEDGE_ONBOARDING.md`
 
-Four-tier service journey:
-1. Knowledge Concierge
-2. Process Advisor
-3. Human/Regulatory Verification
-4. Commercial & Quotation Engine
-
 ### Security and evidence
 - `deliverables/04_DATA_SOVEREIGNTY_AND_EVIDENCE.md`
 - `deliverables/05_CYBERSECURITY_AND_RESILIENCE.md`
 - `deliverables/19_SECURITY_ASSURANCE_TEST_PLAN.md`
 
-### Regulatory / laboratory
-- `deliverables/06_REGULATORY_LAB_EVIDENCE_MODEL.md`
-- `deliverables/16_SOURCE_REGISTER_AND_CLAIMS.md`
-- `deliverables/22_IQ300_JAKIM_MALAYSIAN_STANDARDS_INTELLIGENCE_LAYER.md`
-
 ## IQ300 MASTER STANDARDS STACK
 
-The complete source-derived Master Standards Stack is organized in:
+The consolidated standards intelligence layer is organized under:
 
 - `master-standards-stack/`
-- **`master-standards-stack/iq300-full-matrix/` - full IQ300 clause-to-control matrix and machine-readable requirement layer**
+- **`master-standards-stack/iq300-all-jakim-ms/` - complete current JAKIM/JSM Halal standards library, control architecture, process flows and visual layer**
+- **`master-standards-stack/iq300-full-matrix/` - machine-oriented numbered MS 2400 clause objects and audit matrix**
 
-The `iq300-full-matrix` package contains the complete numbered-clause object set extracted from the three supplied MS 2400 PDFs (**613 unique requirement objects**), per-standard machine-readable shards, JSON schema, control catalog, audit-test library, authority-gate catalog, annex mapping, process flows, QA report and sector-standard source-gap register.
+### IQ300 standards coverage
 
-Coverage includes the supplied MS 2400 transportation/warehousing/retailing standards, MS 1500, MS 2424, MS 2634, MS 2738, MS 2803, MS 2393, MS 2627 family, MS 1900, MS 2691 and supporting MS 2610 context, plus supplied halal audit and halal awareness training material. The IQ300 logic is expressed as:
+The current library explicitly represents:
+
+`MS 1500:2019 | MS 2400-1:2019 | MS 2400-2:2019 | MS 2400-3:2019 | MS 2424:2019 | MS 2634:2019 | MS 2738:2023 | MS 2803:2025 | MS 2393:2023 | MS 2627:2017 | MS 2627-2:2025 | MS 1900:2025 | MS 2691:2021 | MS 2610:2015 | MS 2809:2025 | MS 2810:2025`
+
+The three supplied MS 2400 PDFs are fully objectized at numbered-clause level with **613 unique requirement objects**:
+
+- MS 2400-1:2019: 187
+- MS 2400-2:2019: 201
+- MS 2400-3:2019: 225
+
+The all-standard library adds source-supported control families, HCP mappings, evidence requirements, audit tests, authority gates, Mermaid process flows and SVG infographics for the wider standards set.
+
+### Current catalogue update
+
+A current JSM MySOL Halal-sector catalogue check also surfaced **MS 2809:2025** (Authentication of products using chemometric techniques) and **MS 2810:2025** (Consumable goods - Test method - Identification of pig skin and hair). These are now included in IQ300 rather than relying only on the earlier supplied compendium.
+
+Source: https://mysol.jsm.gov.my/search-catalogue?is-advance=1&page=1&sector=204
+
+### Core IQ300 logic
 
 `Clause -> Requirement Intent -> Applicability -> Control -> HCP -> Evidence -> Audit Test -> Finding -> Corrective Action -> Re-verification -> Authority Gate -> Trust State`
 
-The IQ300 layer is deliberately version-aware and distinguishes source-derived requirements from implementation design and authority-confirmed rules.
+The layer distinguishes technical standards from MPPHM, MHMS, Protocol, Pekeliling/circular, fatwa, regulator and competent-authority decisions.
 
-### Sinotrans
+## Sinotrans
 - `deliverables/07_SINOTRANS_PLAYBOOK.md`
 - `deliverables/17_SINOTRANS_DATA_MAPPING.md`
 - `deliverables/18_SINOTRANS_PILOT_SOP.md`
 
-### Ecosystem participants
+## Ecosystem participants
 - `deliverables/08_MANUFACTURER_PRODUCER_PLAYBOOK.md`
 - `deliverables/09_RETAIL_IMPORTER_PLAYBOOK.md`
 - `deliverables/21_PARTNER_ENGAGEMENT_PLAYBOOK.md`
 
-### ESG / intelligence
+## ESG / intelligence
 - `deliverables/10_ESG_GLOBAL_CITIZEN_FRAMEWORK.md`
 - `deliverables/11_TRUST_INDEX_AND_INTELLIGENCE.md`
 
-### Governance / economics
+## Governance / economics
 - `deliverables/12_GOVERNANCE_RISK_AND_ACCOUNTABILITY.md`
 - `deliverables/13_BUSINESS_MODEL_AND_ECONOMICS.md`
 - `deliverables/20_GLOBAL_GOVERNANCE_CHARTER.md`
 
-### Engineering / implementation
+## Engineering / implementation
 - `deliverables/14_API_AND_CANONICAL_DATA_MODEL.md`
 - `deliverables/15_IMPLEMENTATION_ROADMAP.md`
-
-## Architectural model
-
-The platform separates sovereign operational systems from a federated trust/evidence layer. The aim is not to centralize the world's data. Instead, it enables authorized verification using APIs, selective disclosure, cryptographic evidence and policy-controlled exchange.
-
-## Ecosystem participants
-
-Governments · Halal authorities · laboratories · manufacturers · producers · logistics providers · importers · retailers · financiers · consumers · ESG/recycling partners · technology providers.
-
-## Strategic analogies
-
-The intended network characteristics are comparable in concept to trusted global infrastructure such as payment-network and financial-messaging ecosystems: common standards, secure exchange, resilience and network effects. The platform is **not** a payment network and does not replace any existing governmental authority.
-
-## Source basis
-
-The Sinotrans playbook and Halal supply-chain design were informed by the project-uploaded standards and training material. The `master-standards-stack/` folder is the detailed source-derived control layer, and `iq300-full-matrix/` is the machine-oriented clause-control upgrade.
-
-Current public Sinotrans capabilities referenced in the playbook include integrated logistics, digital logistics information systems, EDI, IoT, Cloud Computing, Big Data, AI, Blockchain and Y2T. These are public-source positioning inputs, not evidence of a Sinotrans commitment to this programme.
 
 ## Evidence and claims policy
 
@@ -102,4 +92,4 @@ This repository is the consolidated strategy/architecture baseline and pilot-ope
 
 ## IQ300 doctrine
 
-**Source provenance first. Authority boundaries explicit. Evidence versioned. AI advisory. Decisions accountable. Physical and digital trust continuously linked.**
+**Source provenance first. Authority boundaries explicit. Requirements versioned. Controls operationalized. Evidence linked. AI advisory. Decisions accountable. Physical and digital trust continuously linked.**
