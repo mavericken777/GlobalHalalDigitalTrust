@@ -1,0 +1,38 @@
+name: Generate AHTE Process-Flow Infographics
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'tools/generate_ahtem_infographics.py'
+      - 'master-standards-stack/process-flow-infographics/STANDARDS_FLOW_SPEC.json'
+      - 'master-standards-stack/process-flow-infographics/README.md'
+      - '.github/workflows/generate-ahtem-infographics.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Generate SVG infographics
+        run: python3 tools/generate_ahtem_infographics.py
+
+      - name: Commit generated visuals
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add master-standards-stack/process-flow-infographics/*.svg
+          if git diff --cached --quiet; then
+            echo 'No infographic changes.'
+            exit 0
+          fi
+          git commit -m 'Generate complete AHTE JAKIM/JSM process-flow infographic set [skip ci]'
+          git push origin HEAD:main
