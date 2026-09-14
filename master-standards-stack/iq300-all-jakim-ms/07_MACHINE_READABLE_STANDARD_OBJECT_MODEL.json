@@ -1,0 +1,32 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "title":"IQ300 Unified JAKIM/JSM Halal Malaysian Standard Requirement Object",
+  "type":"object",
+  "required":["requirement_id","instrument","clause_status","requirement_intent","control_objective","hcp","evidence","audit_tests","authority_gate","trust_state_effect"],
+  "properties":{
+    "requirement_id":{"type":"string"},
+    "instrument":{"type":"string"},
+    "standard_status":{"type":"string"},
+    "clause":{"type":"string"},
+    "clause_title":{"type":"string"},
+    "clause_status":{"enum":["fully_objectized_from_supplied_pdf","source_summary_family_map","current_catalogue_scope_only","historical_reference"]},
+    "source_basis":{"type":"string"},
+    "requirement_intent":{"type":"string"},
+    "applicability":{"type":"string"},
+    "control_objective":{"type":"string"},
+    "control_object":{"type":"string"},
+    "control_owner":{"type":"string"},
+    "hcp":{"type":"string"},
+    "risk_class":{"type":"string"},
+    "evidence":{"type":"array","items":{"type":"string"}},
+    "audit_tests":{"type":"array","items":{"type":"string"}},
+    "authority_gate":{"type":"string"},
+    "digital_events":{"type":"array","items":{"type":"string"}},
+    "failure_states":{"type":"array","items":{"type":"string"}},
+    "corrective_action":{"type":"string"},
+    "reverification":{"type":"string"},
+    "trust_state_effect":{"type":"string"},
+    "notes":{"type":"string"}
+  },
+  "additionalProperties":true
+}
