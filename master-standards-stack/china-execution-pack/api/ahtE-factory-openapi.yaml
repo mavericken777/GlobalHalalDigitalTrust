@@ -1,0 +1,417 @@
+openapi: 3.0.3
+info:
+  title: AHTE Factory Integration API
+  version: 1.0.0
+  description: >-
+    Canonical integration contract between AHTE and participating China factory
+    systems including ERP, MES, QMS, WMS, LIMS, identity and logistics systems.
+servers:
+  - url: https://api.example.local/ahtE
+security:
+  - bearerAuth: []
+paths:
+  /v1/facilities:
+    post:
+      summary: Register a facility
+      operationId: createFacility
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Facility'
+      responses:
+        '201': {description: Created}
+        '400': {description: Invalid request}
+        '401': {description: Unauthorized}
+  /v1/products:
+    post:
+      summary: Create or register a product
+      operationId: createProduct
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Product'
+      responses:
+        '201': {description: Created}
+  /v1/products/{productId}/requirements:resolve:
+    post:
+      summary: Resolve applicable requirement set
+      operationId: resolveRequirements
+      parameters:
+        - {name: productId, in: path, required: true, schema: {type: string}}
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ResolutionContext'
+      responses:
+        '200':
+          description: Resolved requirement set
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/ResolvedRequirementSet'}
+  /v1/materials:
+    post:
+      summary: Register material
+      operationId: createMaterial
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: {$ref: '#/components/schemas/Material'}
+      responses:
+        '201': {description: Created}
+  /v1/batches:
+    post:
+      summary: Create production batch
+      operationId: createBatch
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: {$ref: '#/components/schemas/Batch'}
+      responses:
+        '201': {description: Created}
+  /v1/batches/{batchId}/hcp-checks:
+    post:
+      summary: Record HCP check
+      operationId: createHcpCheck
+      parameters:
+        - {name: batchId, in: path, required: true, schema: {type: string}}
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: {$ref: '#/components/schemas/HcpCheck'}
+      responses:
+        '201': {description: Created}
+  /v1/lots/{lotId}:release:
+    post:
+      summary: Submit lot release decision
+      operationId: releaseLot
+      parameters:
+        - {name: lotId, in: path, required: true, schema: {type: string}}
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: {$ref: '#/components/schemas/ReleaseRequest'}
+      responses:
+        '200': {description: Release processed}
+  /v1/evidence:
+    post:
+      summary: Create evidence object
+      operationId: createEvidence
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: {$ref: '#/components/schemas/Evidence'}
+      responses:
+        '201': {description: Created}
+  /v1/samples:
+    post:
+      summary: Register sample
+      operationId: createSample
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: {$ref: '#/components/schemas/Sample'}
+      responses:
+        '201': {description: Created}
+  /v1/lab-results:
+    post:
+      summary: Register laboratory result
+      operationId: createLabResult
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: {$ref: '#/components/schemas/LabResult'}
+      responses:
+        '201': {description: Created}
+  /v1/audits:
+    post:
+      summary: Open audit
+      operationId: createAudit
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: {$ref: '#/components/schemas/Audit'}
+      responses:
+        '201': {description: Created}
+  /v1/findings:
+    post:
+      summary: Create audit finding
+      operationId: createFinding
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: {$ref: '#/components/schemas/Finding'}
+      responses:
+        '201': {description: Created}
+  /v1/corrective-actions:
+    post:
+      summary: Create corrective action
+      operationId: createCorrectiveAction
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: {$ref: '#/components/schemas/CorrectiveAction'}
+      responses:
+        '201': {description: Created}
+  /v1/shipments:
+    post:
+      summary: Create shipment
+      operationId: createShipment
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: {$ref: '#/components/schemas/Shipment'}
+      responses:
+        '201': {description: Created}
+  /v1/custody-transfers:
+    post:
+      summary: Record custody transfer
+      operationId: createCustodyTransfer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: {$ref: '#/components/schemas/CustodyTransfer'}
+      responses:
+        '201': {description: Created}
+  /v1/trust-assertions:verify:
+    post:
+      summary: Verify cross-border trust assertion
+      operationId: verifyTrustAssertion
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: {$ref: '#/components/schemas/TrustAssertion'}
+      responses:
+        '200':
+          description: Verification result
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [valid]
+                properties:
+                  valid: {type: boolean}
+                  reasons: {type: array, items: {type: string}}
+  /v1/events:
+    post:
+      summary: Ingest signed business event
+      operationId: ingestEvent
+      parameters:
+        - {name: Idempotency-Key, in: header, required: true, schema: {type: string}}
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: {$ref: '#/components/schemas/Event'}
+      responses:
+        '202': {description: Accepted}
+        '409': {description: Duplicate or sequencing conflict}
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+  schemas:
+    Facility:
+      type: object
+      required: [facilityId, organisationId, jurisdiction, name]
+      properties:
+        facilityId: {type: string}
+        organisationId: {type: string}
+        jurisdiction: {type: string}
+        name: {type: string}
+        status: {type: string}
+    Product:
+      type: object
+      required: [productId, name, version]
+      properties:
+        productId: {type: string}
+        name: {type: string}
+        version: {type: string}
+        destinationMarkets: {type: array, items: {type: string}}
+        requirementSetId: {type: string}
+    ResolutionContext:
+      type: object
+      required: [activity, destination, effectiveAt]
+      properties:
+        activity: {type: string}
+        destination: {type: string}
+        effectiveAt: {type: string, format: date-time}
+        dataClass: {type: array, items: {type: string}}
+    ResolvedRequirementSet:
+      type: object
+      required: [resolvedRequirementSetId, applicableRules, controls]
+      properties:
+        resolvedRequirementSetId: {type: string}
+        applicableRules: {type: array, items: {type: string}}
+        conflicts: {type: array, items: {type: string}}
+        controls: {type: array, items: {type: string}}
+        hcps: {type: array, items: {type: string}}
+        evidenceRequirements: {type: array, items: {type: string}}
+    Material:
+      type: object
+      required: [materialId, supplierId, sourceClass]
+      properties:
+        materialId: {type: string}
+        supplierId: {type: string}
+        sourceClass: {type: string}
+        origin: {type: string}
+        specificationRefs: {type: array, items: {type: string}}
+        certificateRefs: {type: array, items: {type: string}}
+        evidenceRefs: {type: array, items: {type: string}}
+    Batch:
+      type: object
+      required: [batchId, productId, facilityId]
+      properties:
+        batchId: {type: string}
+        productId: {type: string}
+        facilityId: {type: string}
+        formulaVersion: {type: string}
+        materialRefs: {type: array, items: {type: string}}
+    HcpCheck:
+      type: object
+      required: [hcpCheckId, hcpId, result, performedAt]
+      properties:
+        hcpCheckId: {type: string}
+        hcpId: {type: string}
+        result: {type: string}
+        performedAt: {type: string, format: date-time}
+        evidenceRefs: {type: array, items: {type: string}}
+    ReleaseRequest:
+      type: object
+      required: [actorId, decision]
+      properties:
+        actorId: {type: string}
+        decision: {type: string}
+        evidenceRefs: {type: array, items: {type: string}}
+    Evidence:
+      type: object
+      required: [evidenceId, objectRefs, hash]
+      properties:
+        evidenceId: {type: string}
+        objectRefs: {type: array, items: {type: string}}
+        sourceType: {type: string}
+        hash: {type: string}
+        capturedAt: {type: string, format: date-time}
+    Sample:
+      type: object
+      required: [sampleId, objectRefs, matrix, collectedAt]
+      properties:
+        sampleId: {type: string}
+        objectRefs: {type: array, items: {type: string}}
+        matrix: {type: string}
+        methodId: {type: string}
+        collectedAt: {type: string, format: date-time}
+    LabResult:
+      type: object
+      required: [resultId, sampleId, methodId, status]
+      properties:
+        resultId: {type: string}
+        sampleId: {type: string}
+        methodId: {type: string}
+        status: {type: string}
+        resultValue: {}
+        reportRef: {type: string}
+    Audit:
+      type: object
+      required: [auditId, facilityId, scope]
+      properties:
+        auditId: {type: string}
+        facilityId: {type: string}
+        scope: {type: array, items: {type: string}}
+    Finding:
+      type: object
+      required: [findingId, auditId, severity]
+      properties:
+        findingId: {type: string}
+        auditId: {type: string}
+        severity: {type: string}
+        requirementId: {type: string}
+        evidenceRefs: {type: array, items: {type: string}}
+    CorrectiveAction:
+      type: object
+      required: [carId, findingId, owner]
+      properties:
+        carId: {type: string}
+        findingId: {type: string}
+        owner: {type: string}
+        action: {type: string}
+        dueAt: {type: string, format: date-time}
+    Shipment:
+      type: object
+      required: [shipmentId, origin, destination]
+      properties:
+        shipmentId: {type: string}
+        origin: {type: string}
+        destination: {type: string}
+        productRefs: {type: array, items: {type: string}}
+        lotRefs: {type: array, items: {type: string}}
+        containerRefs: {type: array, items: {type: string}}
+    CustodyTransfer:
+      type: object
+      required: [custodyEventId, fromActorId, toActorId, objectRefs, occurredAt]
+      properties:
+        custodyEventId: {type: string}
+        fromActorId: {type: string}
+        toActorId: {type: string}
+        objectRefs: {type: array, items: {type: string}}
+        occurredAt: {type: string, format: date-time}
+        evidenceRefs: {type: array, items: {type: string}}
+    TrustAssertion:
+      type: object
+      required: [trustAssertionId, issuer, subjectObjects, state, signature]
+      properties:
+        trustAssertionId: {type: string}
+        issuer: {type: string}
+        subjectObjects: {type: array, items: {type: string}}
+        state: {type: string}
+        evidenceHashes: {type: array, items: {type: string}}
+        decisionRefs: {type: array, items: {type: string}}
+        signature:
+          type: object
+          required: [algorithm, keyId, value]
+          properties:
+            algorithm: {type: string}
+            keyId: {type: string}
+            value: {type: string}
+    Event:
+      type: object
+      required: [eventId, eventType, eventVersion, occurredAt, actorId, objectRefs, payload, integrity]
+      properties:
+        eventId: {type: string}
+        eventType: {type: string}
+        eventVersion: {type: string}
+        occurredAt: {type: string, format: date-time}
+        actorId: {type: string}
+        actorRole: {type: string}
+        jurisdiction: {type: string}
+        objectRefs: {type: array, items: {type: string}}
+        previousEventId: {type: [string, 'null']}
+        evidenceRefs: {type: array, items: {type: string}}
+        payload: {type: object}
+        resultingState: {type: string}
+        integrity:
+          type: object
+          required: [payloadHash]
+          properties:
+            payloadHash: {type: string}
+            previousEventHash: {type: [string, 'null']}
