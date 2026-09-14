@@ -1,0 +1,14 @@
+InterfaceID,Domain,FunctionalCounterpart,PrimaryAHTEObjects,PrimaryEvents,MeetingOutput,Accountability
+HOD-CN-01,Standardisation,SAC/technical committee,Standard/Requirement/Terminology,E-STANDARD-APPLIED;E-REQUIREMENT-RESOLVED,Standards crosswalk + terminology register,Designated standards owner
+HOD-CN-02,Market regulation,SAMR/local market regulator,Product/Traceability/Inspection,E-INSPECTION;E-RECALL-OPEN,Regulatory interface + traceability route,Designated regulatory owner
+HOD-CN-03,Food safety,Food safety competent function,Facility/Product/Lot/Evidence,E-HCP-MONITOR;E-LAB-RESULT,Food safety data/inspection interface,Competent food-safety owner
+HOD-CN-04,Customs,GACC/customs port,Shipment/Container/Seal/Inspection,E-GATE-CHECK;E-PORT-INSPECTION;E-EXPORT-RELEASE,Border trust packet + officer workflow,Customs authority for transaction
+HOD-CN-05,Commerce,MOFCOM/trade bureau,Programme/Shipment/TradeCase,E-SHIPMENT-CREATED;E-EXPORT-RELEASE,Trade corridor workplan,Designated commerce owner
+HOD-CN-06,Data governance,CAC/local cyberspace authority,DataPolicy/TransferCase/TrustAssertion,E-DATA-POLICY-DECISION;E-ASSERTION-ISSUED,Data classification + transfer framework,Data controller / project owner
+HOD-CN-07,Industrial digitisation,MIIT/local industrial digitisation function,ERP/MES/QMS/WMS/LIMS connectors,E-FACTORY-SYNC;E-BATCH-CREATED,Factory reference architecture,Industrial programme owner
+HOD-CN-08,Conformity assessment,CNCA/accredited CAB/lab ecosystem,LabResult/Certificate/ConformityCase,E-LAB-RESULT;E-AUTHORITY-DECISION,Recognition/evidence interoperability plan,Relevant conformity authority
+HOD-CN-09,Local implementation,Provincial/municipal departments,Facility/PilotCase,E-ORG-ONBOARD;E-FACILITY-REGISTERED,Pilot activation contacts,Local programme owner
+HOD-CN-10,Manufacturing,Manufacturer executive sponsor,Facility/Product/Batch/Lot/HCP,E-BATCH-CREATED;E-LOT-RELEASE,Site activation + product roster,Manufacturer sponsor
+HOD-CN-11,Logistics,Sinotrans/China Merchants or appointed carrier,Shipment/Container/Seal/Custody,E-SEAL-APPLIED;E-CUSTODY-TRANSFER,Custody API + seal protocol,Carrier account owner
+HOD-CN-12,Laboratory,Qualified laboratory,Sample/LabResult/Method,E-SAMPLE-COLLECTED;E-LAB-RESULT,Method + chain-of-custody protocol,Lab technical director
+HOD-CN-13,Cybersecurity,Entity security function,Identity/Key/Device/Event,E-KEY-ROTATED;E-SECURITY-EVENT,Security baseline + incident route,Entity security owner
