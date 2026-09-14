@@ -1,0 +1,33 @@
+{
+  "package": "IQ300 Full Clause-to-Control Intelligence Layer",
+  "generated": "2026-09-15",
+  "repository": "mavericken777/GlobalHalalDigitalTrust",
+  "folder": "master-standards-stack/iq300-full-matrix",
+  "source_corpus": [
+    "MS 2400-1:2019 Transportation PDF",
+    "MS 2400-2:2019 Warehousing PDF",
+    "MS 2400-3:2019 Retailing PDF",
+    "halal audit training PDF",
+    "halal awareness PDF",
+    "JAKIM/Malaysian Halal standards compendia"
+  ],
+  "complete_clause_level_objects": 613,
+  "by_standard": {
+    "MS 2400-1:2019": 187,
+    "MS 2400-2:2019": 201,
+    "MS 2400-3:2019": 225
+  },
+  "machine_readable_assets": [
+    "MS2400-12019_IQ300_REQUIREMENTS.json.gz",
+    "MS2400-22019_IQ300_REQUIREMENTS.json.gz",
+    "MS2400-32019_IQ300_REQUIREMENTS.json.gz",
+    "requirement_schema.json",
+    "SECTOR_FAMILY_CONTROL_MATRIX.md",
+    "SOURCE_AND_GAP_REGISTER.md",
+    "TEST_LIBRARY.md",
+    "AUTHORITY_GATE_CATALOG.md"
+  ],
+  "logic": "clause -> requirement intent -> applicability -> control -> HCP -> evidence -> audit test -> finding -> corrective action -> re-verification -> authority gate -> trust state",
+  "sector_standard_freeze_rule": "Do not fabricate unavailable licensed numbered subclauses. Use family-level mappings until authoritative text is licensed and verified.",
+  "authority_rule": "IQ300 is an evidence, control and decision-support layer. It does not itself issue Malaysian Halal certification."
+}
