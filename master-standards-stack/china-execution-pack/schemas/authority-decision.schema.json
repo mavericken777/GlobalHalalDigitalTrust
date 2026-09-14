@@ -1,0 +1,35 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://ahtE.example/schemas/authority-decision.schema.json",
+  "title":"AHTE Authority Decision",
+  "type":"object",
+  "required":["DecisionID","IssuerAuthorityID","DecisionType","Scope","EffectiveFrom","Status","Signature"],
+  "properties":{
+    "DecisionID":{"type":"string"},
+    "IssuerAuthorityID":{"type":"string"},
+    "IssuerRole":{"type":"string"},
+    "DecisionType":{"type":"string"},
+    "Scope":{"type":"object"},
+    "EffectiveFrom":{"type":"string","format":"date-time"},
+    "EffectiveUntil":{"type":["string","null"],"format":"date-time"},
+    "Status":{"type":"string","enum":["ACTIVE","SUPERSEDED","SUSPENDED","REVOKED","EXPIRED"]},
+    "CaseRef":{"type":["string","null"]},
+    "ObjectRefs":{"type":"array","items":{"type":"string"}},
+    "EvidenceRefs":{"type":"array","items":{"type":"string"}},
+    "Conditions":{"type":"array","items":{"type":"string"}},
+    "Exceptions":{"type":"array","items":{"type":"string"}},
+    "IssuedAt":{"type":"string","format":"date-time"},
+    "PolicyVersion":{"type":["string","null"]},
+    "Signature":{
+      "type":"object",
+      "required":["Algorithm","KeyID","Value"],
+      "properties":{
+        "Algorithm":{"type":"string"},
+        "KeyID":{"type":"string"},
+        "Value":{"type":"string"}
+      },
+      "additionalProperties":false
+    }
+  },
+  "additionalProperties":false
+}
