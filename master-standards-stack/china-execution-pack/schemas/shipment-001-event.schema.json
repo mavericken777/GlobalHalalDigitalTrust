@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ahtE.example/schemas/shipment-001-event.schema.json",
+  "title": "AHTE Shipment 001 Event",
+  "type": "object",
+  "required": ["EventID","EventType","EventVersion","OccurredAt","ActorID","Jurisdiction","ObjectRefs","EvidenceRefs","Payload","ResultingState","Integrity"],
+  "properties": {
+    "EventID": {"type":"string","minLength":3},
+    "EventType": {"type":"string","pattern":"^E-[A-Z0-9-]+$"},
+    "EventVersion": {"type":"string"},
+    "OccurredAt": {"type":"string","format":"date-time"},
+    "RecordedAt": {"type":"string","format":"date-time"},
+    "TimeSource": {"type":"string","enum":["device","server","authority","trusted-time"]},
+    "ActorID": {"type":"string"},
+    "ActorRole": {"type":"string"},
+    "OrganisationID": {"type":"string"},
+    "Jurisdiction": {"type":"string"},
+    "LocationID": {"type":["string","null"]},
+    "DeviceID": {"type":["string","null"]},
+    "ObjectRefs": {"type":"array","items":{"type":"string"},"minItems":1},
+    "PreviousEventID": {"type":["string","null"]},
+    "PreviousEventHash": {"type":["string","null"]},
+    "EvidenceRefs": {"type":"array","items":{"type":"string"}},
+    "Payload": {"type":"object"},
+    "ResultingState": {"type":"string"},
+    "Integrity": {
+      "type":"object",
+      "required":["PayloadHash"],
+      "properties":{
+        "PayloadHash":{"type":"string","pattern":"^sha256:"},
+        "Canonicalisation":{"type":"string"},
+        "MerkleRoot":{"type":["string","null"]}
+      },
+      "additionalProperties":false
+    },
+    "Signature": {
+      "type":["object","null"],
+      "properties":{
+        "Algorithm":{"type":"string"},
+        "KeyID":{"type":"string"},
+        "Value":{"type":"string"}
+      }
+    }
+  },
+  "additionalProperties": false
+}
