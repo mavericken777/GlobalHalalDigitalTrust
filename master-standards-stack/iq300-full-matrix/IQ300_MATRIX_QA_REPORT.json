@@ -1,0 +1,21 @@
+{
+  "status": "PASS_WITH_SOURCE_BOUNDARY",
+  "clause_object_count": 613,
+  "standards": {
+    "MS 2400-1:2019": {"count":187,"sections":{"4":55,"5":31,"6":39,"7":52,"8":10}},
+    "MS 2400-2:2019": {"count":201,"sections":{"4":56,"5":31,"6":40,"7":65,"8":9}},
+    "MS 2400-3:2019": {"count":225,"sections":{"4":56,"5":28,"6":40,"7":92,"8":9}}
+  },
+  "qa_checks": [
+    "unique requirement IDs",
+    "standard/edition/clause populated",
+    "control/HCP/evidence/test/gate fields present",
+    "nested clause numbers preserved",
+    "source PDF attached to clause object",
+    "sector standards without licensed numbered text flagged as source-gap"
+  ],
+  "known_limitations": [
+    "some control-intent fields are implementation mappings rather than verbatim clause paraphrases",
+    "sector-standard subclause inventories beyond the three uploaded MS 2400 PDFs require authoritative licensed text before production freeze"
+  ]
+}
