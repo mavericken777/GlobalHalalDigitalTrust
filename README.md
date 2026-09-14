@@ -34,6 +34,9 @@ Four-tier service journey:
 ### Regulatory / laboratory
 - `deliverables/06_REGULATORY_LAB_EVIDENCE_MODEL.md`
 - `deliverables/16_SOURCE_REGISTER_AND_CLAIMS.md`
+- `deliverables/22_IQ300_JAKIM_MALAYSIAN_STANDARDS_INTELLIGENCE_LAYER.md`
+
+The IQ300 regulatory layer converts the supplied JAKIM/Malaysian Halal standards compendia into a version-aware regulatory knowledge model covering MS 1500, MS 2400-1/-2/-3, MS 2424, MS 2634, MS 2738, MS 2803, MS 2393, MS 2627/2627-2, MS 1900, MS 2691 and MS 2610, together with MPPHM/MHMS, protocols, circulars, fatwa/authority boundaries, evidence objects, HCPs, audit events, trust states and verification gates. It explicitly distinguishes secondary compendium material from authoritative normative sources.
 
 ### Sinotrans
 - `deliverables/07_SINOTRANS_PLAYBOOK.md`
@@ -79,6 +82,7 @@ The Sinotrans playbook and Halal supply-chain design were informed by the projec
 - MS 2400-3:2019 — Retailing
 - supplied Halal audit training material
 - supplied Halal awareness training material
+- supplied JAKIM/Malaysian Halal standards compendia used to build the IQ300 regulatory intelligence layer
 
 Current public Sinotrans capabilities referenced in the playbook include integrated logistics, digital logistics information systems, EDI, IoT, Cloud Computing, Big Data, AI, Blockchain and Y2T. These are public-source positioning inputs, not evidence of a Sinotrans commitment to this programme.
 
@@ -89,3 +93,7 @@ This repository deliberately distinguishes proposals from established facts. Gov
 ## Implementation status
 
 This repository is the consolidated strategy/architecture baseline and pilot-operating documentation. Engineering implementation remains a subsequent delivery phase governed by the roadmap and release gates.
+
+## IQ300 doctrine
+
+**Source provenance first. Authority boundaries explicit. Evidence versioned. AI advisory. Decisions accountable. Physical and digital trust continuously linked.**
