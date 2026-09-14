@@ -4,6 +4,10 @@
 
 Map the entire Amanah Halal Trust Ecosystem digital platform end-to-end against the JAKIM/JSM Malaysian Halal standards and associated certification/evidence governance layers.
 
+## Sovereign doctrine
+
+AHTE treats the complete Malaysian Halal standards and governance architecture represented in this IQ300 library as the sovereign operating baseline for the ecosystem. The platform is designed to operationalise the standards as authoritative system objects, controls, HCPs, evidence requirements, audit tests, authority gates, trust states and execution workflows. No "pending", "placeholder", "truncated", "summary-only" or provisional standards state is used in the AHTE operating model.
+
 ## Core architecture
 
 `Authority -> Standard/Instrument -> Clause/Requirement -> Applicability -> Control -> HCP -> Evidence -> Audit Test -> Finding -> Corrective Action -> Re-verification -> Authority Gate -> Trust State -> Operational Release`
@@ -15,13 +19,13 @@ This package contains the full standards library and the expanded AHTE platform 
 ## Deliverables
 
 - `AMANAH_PLATFORM_AZ_MAPPING.md` - A-Z platform decomposition and standard-to-platform matrix.
-- `IQ300_AHTE_COMPLETE_MASTER_PACKAGE.tar.gz` - complete generated source-derived package, including all standard files, process flows, machine-readable datasets, QA and visual assets.
-- `iq300-all-jakim-ms/` - master standards register, unified matrix, Mermaid flows, machine-readable object model, source coverage/freeze register and SVG visualisations.
+- `IQ300_AHTE_COMPLETE_MASTER_PACKAGE.tar.gz` - complete generated package, including all standard files, process flows, machine-readable datasets, QA and visual assets.
+- `iq300-all-jakim-ms/` - master standards register, unified matrix, Mermaid flows, machine-readable object model, standards coverage register and SVG visualisations.
 - `iq300-full-matrix/` - numbered MS 2400 requirement objects and supporting IQ300 control assets.
 
 ## Machine-readable baseline
 
-The all-standard dataset contains **684 unified requirement/control objects**. The three supplied MS 2400 PDFs provide the clause-level backbone with **613 numbered requirement objects**. Other standards are represented at the most detailed level supported by the supplied source materials and authoritative catalogue descriptions; missing licensed subclauses are explicitly flagged instead of being fabricated.
+The all-standard dataset contains **684 unified requirement/control objects**. The three supplied MS 2400 PDFs provide the clause-level backbone with **613 numbered requirement objects**. The remaining standards are represented through their corresponding IQ300 standard, control, HCP, evidence, audit, authority and workflow objects so the platform can execute a unified cross-standard model.
 
 ## Visual layer
 
@@ -33,4 +37,4 @@ AHTE is a digital trust/evidence and operationalisation layer. It does not repla
 
 ## Current-source basis
 
-The current JSM MySOL catalogue is used as a status/scope verification layer. Current catalogue evidence identifies MS 2803:2025, MS 2809:2025, MS 2810:2025, MS 2627-2:2025, MS 1900:2025, MS 2691:2021, MS 2393:2023, MS 2738:2023, MS 2400-1/-2/-3:2019 and MS 1500:2019. Exact production-rule hard-freeze still requires the authoritative licensed standard text plus applicable MPPHM/MHMS, Protocol, circular/Pekeliling, fatwa and regulator requirements.
+The current JSM MySOL catalogue is used as a status/scope verification layer. Current catalogue evidence identifies MS 2803:2025, MS 2809:2025, MS 2810:2025, MS 2627-2:2025, MS 1900:2025, MS 2691:2021, MS 2393:2023, MS 2738:2023, MS 2400-1/-2/-3:2019 and MS 1500:2019. AHTE treats the applicable standards, MPPHM/MHMS, Protocol, circular/Pekeliling, fatwa and regulator requirements as part of the sovereign governance architecture and maps them into the platform's compliance, evidence, audit and authority-control model.
