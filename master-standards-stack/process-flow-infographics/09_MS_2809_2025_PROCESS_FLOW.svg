@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1200" viewBox="0 0 1800 1200">
+<rect width="1800" height="1200" fill="#f1f5f9"/>
+<rect x="40" y="32" width="1720" height="120" rx="28" fill="#0f172a"/>
+<text x="85" y="82" font-family="Inter,Arial,sans-serif" font-size="28" font-weight="800" text-anchor="start" fill="#ffffff">AMANAH HALAL TRUST ECOSYSTEM</text>
+<text x="85" y="120" font-family="Inter,Arial,sans-serif" font-size="32" font-weight="800" text-anchor="start" fill="#ffffff">MS 2809:2025  •  Authentication using chemometric techniques</text>
+<text x="1690" y="82" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" text-anchor="end" fill="#cbd5e1">PROCESS FLOW 09</text>
+<text x="1690" y="110" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="500" text-anchor="end" fill="#cbd5e1">Paraphrased implementation view</text>
+<rect x="40" y="176" width="1720" height="930" rx="28" fill="#ffffff" stroke="#e2e8f0"/>
+<text x="78" y="220" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="800" text-anchor="start" fill="#0f172a">END-TO-END DIGITAL ASSURANCE FLOW</text>
+<text x="78" y="250" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="500" text-anchor="start" fill="#475569">Scope → provenance → control → evidence → assessment → authority gate → trusted release</text>
+<rect x="130" y="285" width="1540" height="83" rx="18" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<circle cx="174" cy="326" r="26" fill="#0f172a"/>
+<text x="174" y="333" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="800" text-anchor="middle" fill="#ffffff">1</text>
+<text x="218" y="319" font-family="Inter,Arial,sans-serif" font-size="20" font-weight="650" text-anchor="start" fill="#0f172a">Question / sample / matrix definition</text>
+<line x1="900.0" y1="368" x2="900.0" y2="385" stroke="#64748b" stroke-width="4"/>
+<polygon points="892.0,380 908.0,380 900.0,392" fill="#64748b"/>
+<rect x="130" y="392" width="1540" height="83" rx="18" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2"/>
+<circle cx="174" cy="433" r="26" fill="#0f172a"/>
+<text x="174" y="440" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="800" text-anchor="middle" fill="#ffffff">2</text>
+<text x="218" y="426" font-family="Inter,Arial,sans-serif" font-size="20" font-weight="650" text-anchor="start" fill="#0f172a">Data acquisition: chromatography / spectroscopy / spectrometry</text>
+<line x1="900.0" y1="475" x2="900.0" y2="492" stroke="#64748b" stroke-width="4"/>
+<polygon points="892.0,487 908.0,487 900.0,499" fill="#64748b"/>
+<rect x="130" y="499" width="1540" height="83" rx="18" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<circle cx="174" cy="540" r="26" fill="#0f172a"/>
+<text x="174" y="547" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="800" text-anchor="middle" fill="#ffffff">3</text>
+<text x="218" y="533" font-family="Inter,Arial,sans-serif" font-size="20" font-weight="650" text-anchor="start" fill="#0f172a">Dataset quality + provenance</text>
+<line x1="900.0" y1="582" x2="900.0" y2="599" stroke="#64748b" stroke-width="4"/>
+<polygon points="892.0,594 908.0,594 900.0,606" fill="#64748b"/>
+<rect x="130" y="606" width="1540" height="83" rx="18" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2"/>
+<circle cx="174" cy="647" r="26" fill="#0f172a"/>
+<text x="174" y="654" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="800" text-anchor="middle" fill="#ffffff">4</text>
+<text x="218" y="640" font-family="Inter,Arial,sans-serif" font-size="20" font-weight="650" text-anchor="start" fill="#0f172a">Pre-processing + feature/model pipeline</text>
+<line x1="900.0" y1="689" x2="900.0" y2="706" stroke="#64748b" stroke-width="4"/>
+<polygon points="892.0,701 908.0,701 900.0,713" fill="#64748b"/>
+<rect x="130" y="713" width="1540" height="83" rx="18" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<circle cx="174" cy="754" r="26" fill="#0f172a"/>
+<text x="174" y="761" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="800" text-anchor="middle" fill="#ffffff">5</text>
+<text x="218" y="747" font-family="Inter,Arial,sans-serif" font-size="20" font-weight="650" text-anchor="start" fill="#0f172a">Validation + statistical performance</text>
+<line x1="900.0" y1="796" x2="900.0" y2="813" stroke="#64748b" stroke-width="4"/>
+<polygon points="892.0,808 908.0,808 900.0,820" fill="#64748b"/>
+<rect x="130" y="820" width="1540" height="83" rx="18" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2"/>
+<circle cx="174" cy="861" r="26" fill="#0f172a"/>
+<text x="174" y="868" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="800" text-anchor="middle" fill="#ffffff">6</text>
+<text x="218" y="854" font-family="Inter,Arial,sans-serif" font-size="20" font-weight="650" text-anchor="start" fill="#0f172a">Model result / interpretation</text>
+<line x1="900.0" y1="903" x2="900.0" y2="920" stroke="#64748b" stroke-width="4"/>
+<polygon points="892.0,915 908.0,915 900.0,927" fill="#64748b"/>
+<rect x="130" y="927" width="1540" height="83" rx="18" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<circle cx="174" cy="968" r="26" fill="#0f172a"/>
+<text x="174" y="975" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="800" text-anchor="middle" fill="#ffffff">7</text>
+<text x="218" y="961" font-family="Inter,Arial,sans-serif" font-size="20" font-weight="650" text-anchor="start" fill="#0f172a">Audit trail + reproducibility / exception handling</text>
+<line x1="900.0" y1="1010" x2="900.0" y2="1027" stroke="#64748b" stroke-width="4"/>
+<polygon points="892.0,1022 908.0,1022 900.0,1034" fill="#64748b"/>
+<rect x="130" y="1034" width="1540" height="83" rx="18" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2"/>
+<circle cx="174" cy="1075" r="26" fill="#0f172a"/>
+<text x="174" y="1082" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="800" text-anchor="middle" fill="#ffffff">8</text>
+<text x="218" y="1068" font-family="Inter,Arial,sans-serif" font-size="20" font-weight="650" text-anchor="start" fill="#0f172a">Authority evidence package</text>
+<rect x="82" y="1018" width="500" height="58" rx="15" fill="#ecfeff" stroke="#99f6e4"/>
+<text x="105" y="1055" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="650" text-anchor="start" fill="#0f172a">AHTE bindings: requirement • HCP • evidence • audit test</text>
+<rect x="600" y="1018" width="500" height="58" rx="15" fill="#fefce8" stroke="#fde68a"/>
+<text x="625" y="1055" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="650" text-anchor="start" fill="#0f172a">Authority-controlled decision / certification boundary</text>
+<rect x="1118" y="1018" width="600" height="58" rx="15" fill="#f8fafc" stroke="#cbd5e1"/>
+<text x="1140" y="1055" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="650" text-anchor="start" fill="#0f172a">Digital events + traceability preserve every state transition</text>
+</svg>

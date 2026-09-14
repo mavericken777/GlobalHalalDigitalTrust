@@ -1,0 +1,564 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="1850" viewBox="0 0 2200 1850">
+<rect width="2200" height="1850" fill="#f1f5f9"/>
+<rect x="40" y="30" width="2120" height="125" rx="28" fill="#0f172a"/>
+<text x="80" y="78" font-family="Inter,Arial,sans-serif" font-size="32" font-weight="800" text-anchor="start" fill="#ffffff">AMANAH HALAL TRUST ECOSYSTEM</text>
+<text x="80" y="120" font-family="Inter,Arial,sans-serif" font-size="27" font-weight="800" text-anchor="start" fill="#ffffff">JAKIM/JSM HALAL STANDARDS — COMPLETE PROCESS-FLOW INFOGRAPHIC ATLAS</text>
+<text x="2115" y="78" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="700" text-anchor="end" fill="#cbd5e1">17 STANDARD FLOWS</text>
+<text x="2115" y="108" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="500" text-anchor="end" fill="#cbd5e1">AHTE implementation view</text>
+<rect x="40" y="180" width="2120" height="1600" rx="28" fill="#ffffff" stroke="#e2e8f0"/>
+<text x="75" y="225" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="800" text-anchor="start" fill="#0f172a">COMMON AHTE CONTROL SPINE</text>
+<text x="75" y="252" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="500" text-anchor="start" fill="#475569">Authority → scope → requirement → HCP → evidence → assessment → corrective action → re-verification → authority gate → trust state</text>
+<rect x="75" y="275" width="215" height="55" rx="14" fill="#f8fafc" stroke="#cbd5e1"/>
+<text x="182.5" y="310" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#0f172a">Authority</text>
+<line x1="290" y1="302" x2="300" y2="302" stroke="#64748b" stroke-width="2"/>
+<polygon points="292,295 292,309 302,302" fill="#64748b"/>
+<rect x="302" y="275" width="215" height="55" rx="14" fill="#f8fafc" stroke="#cbd5e1"/>
+<text x="409.5" y="310" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#0f172a">Scope</text>
+<line x1="517" y1="302" x2="527" y2="302" stroke="#64748b" stroke-width="2"/>
+<polygon points="519,295 519,309 529,302" fill="#64748b"/>
+<rect x="529" y="275" width="215" height="55" rx="14" fill="#f8fafc" stroke="#cbd5e1"/>
+<text x="636.5" y="310" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#0f172a">Requirement</text>
+<line x1="744" y1="302" x2="754" y2="302" stroke="#64748b" stroke-width="2"/>
+<polygon points="746,295 746,309 756,302" fill="#64748b"/>
+<rect x="756" y="275" width="215" height="55" rx="14" fill="#f8fafc" stroke="#cbd5e1"/>
+<text x="863.5" y="310" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#0f172a">HCP / Risk</text>
+<line x1="971" y1="302" x2="981" y2="302" stroke="#64748b" stroke-width="2"/>
+<polygon points="973,295 973,309 983,302" fill="#64748b"/>
+<rect x="983" y="275" width="215" height="55" rx="14" fill="#f8fafc" stroke="#cbd5e1"/>
+<text x="1090.5" y="310" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#0f172a">Evidence</text>
+<line x1="1198" y1="302" x2="1208" y2="302" stroke="#64748b" stroke-width="2"/>
+<polygon points="1200,295 1200,309 1210,302" fill="#64748b"/>
+<rect x="1210" y="275" width="215" height="55" rx="14" fill="#f8fafc" stroke="#cbd5e1"/>
+<text x="1317.5" y="310" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#0f172a">Audit</text>
+<line x1="1425" y1="302" x2="1435" y2="302" stroke="#64748b" stroke-width="2"/>
+<polygon points="1427,295 1427,309 1437,302" fill="#64748b"/>
+<rect x="1437" y="275" width="215" height="55" rx="14" fill="#f8fafc" stroke="#cbd5e1"/>
+<text x="1544.5" y="310" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#0f172a">CAR / Re-verify</text>
+<line x1="1652" y1="302" x2="1662" y2="302" stroke="#64748b" stroke-width="2"/>
+<polygon points="1654,295 1654,309 1664,302" fill="#64748b"/>
+<rect x="1664" y="275" width="215" height="55" rx="14" fill="#f8fafc" stroke="#cbd5e1"/>
+<text x="1771.5" y="310" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#0f172a">Authority gate</text>
+<line x1="1879" y1="302" x2="1889" y2="302" stroke="#64748b" stroke-width="2"/>
+<polygon points="1881,295 1881,309 1891,302" fill="#64748b"/>
+<rect x="1891" y="275" width="215" height="55" rx="14" fill="#f8fafc" stroke="#cbd5e1"/>
+<text x="1998.5" y="310" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#0f172a">Trust / Release</text>
+<rect x="75" y="360" width="670" height="205" rx="18" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<rect x="75" y="360" width="68" height="48" rx="14" fill="#0f172a"/>
+<text x="109" y="391" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="800" text-anchor="middle" fill="#ffffff">01</text>
+<text x="161" y="386" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="800" text-anchor="start" fill="#0f172a">MS 1500:2019</text>
+<text x="161" y="409" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="600" text-anchor="start" fill="#475569">Halal food — General requirements</text>
+<rect x="91" y="426" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="99" y="445" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">1. Scope &amp; product</text>
+<text x="99" y="461" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">classification</text>
+<rect x="246" y="426" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="254" y="445" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">2. Halal materials /</text>
+<text x="254" y="461" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">supplier provenance</text>
+<rect x="401" y="426" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="409" y="445" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">3. Premise, equipment &amp;</text>
+<text x="409" y="461" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">hygiene controls</text>
+<rect x="556" y="426" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="564" y="445" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">4. Processing, storage</text>
+<text x="564" y="461" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">&amp; handling</text>
+<rect x="91" y="489" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="99" y="508" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">5. Packaging, labelling</text>
+<text x="99" y="524" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">&amp; presentation</text>
+<rect x="246" y="489" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="254" y="508" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">6. Traceability + halal</text>
+<text x="254" y="524" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">control verification</text>
+<rect x="401" y="489" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="409" y="508" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">7. Audit / corrective</text>
+<text x="409" y="524" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">action / authority</text>
+<rect x="556" y="489" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="564" y="508" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">8. Release + ongoing</text>
+<text x="564" y="524" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">assurance</text>
+<text x="729" y="551" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="700" text-anchor="end" fill="#64748b">AHTE FLOW 01</text>
+<rect x="770" y="360" width="670" height="205" rx="18" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<rect x="770" y="360" width="68" height="48" rx="14" fill="#0f172a"/>
+<text x="804" y="391" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="800" text-anchor="middle" fill="#ffffff">02</text>
+<text x="856" y="386" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="800" text-anchor="start" fill="#0f172a">MS 2400-1:2019</text>
+<text x="856" y="409" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="600" text-anchor="start" fill="#475569">Halal supply chain management — Transportation</text>
+<rect x="786" y="426" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="794" y="445" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">1. Shipment / cargo</text>
+<text x="794" y="461" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">scope</text>
+<rect x="941" y="426" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="949" y="445" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">2. Carrier +</text>
+<text x="949" y="461" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">vehicle/container</text>
+<rect x="1096" y="426" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="1104" y="445" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">3. Pre-load cleanliness</text>
+<text x="1104" y="461" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">&amp; segregation</text>
+<rect x="1251" y="426" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="1259" y="445" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">4. Loading, seal &amp;</text>
+<text x="1259" y="461" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">custody activation</text>
+<rect x="786" y="489" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="794" y="508" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">5. Transit monitoring /</text>
+<text x="794" y="524" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">exception control</text>
+<rect x="941" y="489" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="949" y="508" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">6. Handover + receipt</text>
+<text x="949" y="524" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">verification</text>
+<rect x="1096" y="489" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="1104" y="508" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">7. Nonconformity /</text>
+<text x="1104" y="524" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">containment / re-</text>
+<rect x="1251" y="489" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="1259" y="508" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">8. Transport release /</text>
+<text x="1259" y="524" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">trusted custody</text>
+<text x="1424" y="551" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="700" text-anchor="end" fill="#64748b">AHTE FLOW 02</text>
+<rect x="1465" y="360" width="670" height="205" rx="18" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<rect x="1465" y="360" width="68" height="48" rx="14" fill="#0f172a"/>
+<text x="1499" y="391" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="800" text-anchor="middle" fill="#ffffff">03</text>
+<text x="1551" y="386" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="800" text-anchor="start" fill="#0f172a">MS 2400-2:2019</text>
+<text x="1551" y="409" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="600" text-anchor="start" fill="#475569">Halal supply chain management — Warehousing</text>
+<rect x="1481" y="426" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="1489" y="445" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">1. Warehouse scope &amp;</text>
+<text x="1489" y="461" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">zoning</text>
+<rect x="1636" y="426" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="1644" y="445" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">2. Inbound seal /</text>
+<text x="1644" y="461" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">document / condition</text>
+<rect x="1791" y="426" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="1799" y="445" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">3. Quarantine /</text>
+<text x="1799" y="461" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">released / rejected</text>
+<rect x="1946" y="426" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="1954" y="445" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">4. Segregated storage +</text>
+<text x="1954" y="461" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">hygiene / pest</text>
+<rect x="1481" y="489" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="1489" y="508" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">5. Inventory</text>
+<text x="1489" y="524" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">identification +</text>
+<rect x="1636" y="489" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="1644" y="508" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">6. Picking / dispatch /</text>
+<text x="1644" y="524" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">seal control</text>
+<rect x="1791" y="489" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="1799" y="508" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">7. Exception, damage,</text>
+<text x="1799" y="524" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">return &amp; recall</text>
+<rect x="1946" y="489" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="1954" y="508" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">8. Warehouse</text>
+<text x="1954" y="524" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">disposition /</text>
+<text x="2119" y="551" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="700" text-anchor="end" fill="#64748b">AHTE FLOW 03</text>
+<rect x="75" y="583" width="670" height="205" rx="18" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<rect x="75" y="583" width="68" height="48" rx="14" fill="#0f172a"/>
+<text x="109" y="614" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="800" text-anchor="middle" fill="#ffffff">04</text>
+<text x="161" y="609" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="800" text-anchor="start" fill="#0f172a">MS 2400-3:2019</text>
+<text x="161" y="632" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="600" text-anchor="start" fill="#475569">Halal supply chain management — Retailing</text>
+<rect x="91" y="649" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="99" y="668" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">1. Retail scope &amp;</text>
+<text x="99" y="684" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">product status</text>
+<rect x="246" y="649" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="254" y="668" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">2. Receiving + lot</text>
+<text x="254" y="684" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">identity</text>
+<rect x="401" y="649" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="409" y="668" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">3. Segregated storage /</text>
+<text x="409" y="684" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">display</text>
+<rect x="556" y="649" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="564" y="668" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">4. Serving / sale /</text>
+<text x="564" y="684" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">utensils / surfaces</text>
+<rect x="91" y="712" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="99" y="731" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">5. Opened-pack, tasting</text>
+<text x="99" y="747" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">&amp; returns control</text>
+<rect x="246" y="712" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="254" y="731" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">6. Label / advertising</text>
+<text x="254" y="747" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">/ customer-facing</text>
+<rect x="401" y="712" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="409" y="731" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">7. Recall / withdrawal</text>
+<text x="409" y="747" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">/ exception workflow</text>
+<rect x="556" y="712" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="564" y="731" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">8. Retail release +</text>
+<text x="564" y="747" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">verification</text>
+<text x="729" y="774" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="700" text-anchor="end" fill="#64748b">AHTE FLOW 04</text>
+<rect x="770" y="583" width="670" height="205" rx="18" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<rect x="770" y="583" width="68" height="48" rx="14" fill="#0f172a"/>
+<text x="804" y="614" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="800" text-anchor="middle" fill="#ffffff">05</text>
+<text x="856" y="609" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="800" text-anchor="start" fill="#0f172a">MS 2424:2019</text>
+<text x="856" y="632" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="600" text-anchor="start" fill="#475569">Halal pharmaceuticals — General requirements</text>
+<rect x="786" y="649" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="794" y="668" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">1. Product / facility</text>
+<text x="794" y="684" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">scope</text>
+<rect x="941" y="649" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="949" y="668" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">2. Management + Halal</text>
+<text x="949" y="684" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">Management System</text>
+<rect x="1096" y="649" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="1104" y="668" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">3. Material origin /</text>
+<text x="1104" y="684" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">API / excipient</text>
+<rect x="1251" y="649" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="1259" y="668" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">4. Manufacturing,</text>
+<text x="1259" y="684" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">storage &amp; transport</text>
+<rect x="786" y="712" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="794" y="731" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">5. QC / testing /</text>
+<text x="794" y="747" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">documentation</text>
+<rect x="941" y="712" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="949" y="731" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">6. Packaging, labelling</text>
+<text x="949" y="747" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">&amp; outsourced</text>
+<rect x="1096" y="712" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="1104" y="731" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">7. Self-inspection /</text>
+<text x="1104" y="747" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">CAPA / authority</text>
+<rect x="1251" y="712" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="1259" y="731" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">8. Halal certification</text>
+<text x="1259" y="747" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">/ release</text>
+<text x="1424" y="774" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="700" text-anchor="end" fill="#64748b">AHTE FLOW 05</text>
+<rect x="1465" y="583" width="670" height="205" rx="18" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<rect x="1465" y="583" width="68" height="48" rx="14" fill="#0f172a"/>
+<text x="1499" y="614" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="800" text-anchor="middle" fill="#ffffff">06</text>
+<text x="1551" y="609" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="800" text-anchor="start" fill="#0f172a">MS 2634:2019</text>
+<text x="1551" y="632" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="600" text-anchor="start" fill="#475569">Halal cosmetics — General requirements</text>
+<rect x="1481" y="649" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="1489" y="668" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">1. Cosmetic scope &amp;</text>
+<text x="1489" y="684" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">formula identity</text>
+<rect x="1636" y="649" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="1644" y="668" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">2. INCI material source</text>
+<text x="1644" y="684" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">/ route verification</text>
+<rect x="1791" y="649" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="1799" y="668" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">3. Animal-derived /</text>
+<text x="1799" y="684" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">ethanol / human-</text>
+<rect x="1946" y="649" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="1954" y="668" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">4. Manufacturing +</text>
+<text x="1954" y="684" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">hygiene +</text>
+<rect x="1481" y="712" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="1489" y="731" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">5. QC / laboratory</text>
+<text x="1489" y="747" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">evidence</text>
+<rect x="1636" y="712" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="1644" y="731" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">6. Packaging, labelling</text>
+<text x="1644" y="747" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">+ OEM/outsourcing</text>
+<rect x="1791" y="712" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="1799" y="731" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">7. Audit / corrective</text>
+<text x="1799" y="747" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">action / authority</text>
+<rect x="1946" y="712" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="1954" y="731" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">8. Product release +</text>
+<text x="1954" y="747" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">lifecycle</text>
+<text x="2119" y="774" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="700" text-anchor="end" fill="#64748b">AHTE FLOW 06</text>
+<rect x="75" y="806" width="670" height="205" rx="18" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<rect x="75" y="806" width="68" height="48" rx="14" fill="#0f172a"/>
+<text x="109" y="837" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="800" text-anchor="middle" fill="#ffffff">07</text>
+<text x="161" y="832" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="800" text-anchor="start" fill="#0f172a">MS 2738:2023</text>
+<text x="161" y="855" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="600" text-anchor="start" fill="#475569">Halal consumable goods — General requirements</text>
+<rect x="91" y="872" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="99" y="891" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">1. Product eligibility</text>
+<text x="99" y="907" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">/ scope</text>
+<rect x="246" y="872" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="254" y="891" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">2. Raw material</text>
+<text x="254" y="907" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">sourcing &amp;</text>
+<rect x="401" y="872" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="409" y="891" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">3. Manufacturing /</text>
+<text x="409" y="907" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">handling controls</text>
+<rect x="556" y="872" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="564" y="891" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">4. Hygiene +</text>
+<text x="564" y="907" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">segregation +</text>
+<rect x="91" y="935" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="99" y="954" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">5. Packaging / storage</text>
+<text x="99" y="970" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">/ transport</text>
+<rect x="246" y="935" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="254" y="954" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">6. Traceability +</text>
+<text x="254" y="970" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">monitoring</text>
+<rect x="401" y="935" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="409" y="954" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">7. Audit /</text>
+<text x="409" y="970" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">nonconformity /</text>
+<rect x="556" y="935" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="564" y="954" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">8. Authority decision /</text>
+<text x="564" y="970" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">market release</text>
+<text x="729" y="997" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="700" text-anchor="end" fill="#64748b">AHTE FLOW 07</text>
+<rect x="770" y="806" width="670" height="205" rx="18" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<rect x="770" y="806" width="68" height="48" rx="14" fill="#0f172a"/>
+<text x="804" y="837" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="800" text-anchor="middle" fill="#ffffff">08</text>
+<text x="856" y="832" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="800" text-anchor="start" fill="#0f172a">MS 2803:2025</text>
+<text x="856" y="855" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="600" text-anchor="start" fill="#475569">Usage of animal bone, skin and hair</text>
+<rect x="786" y="872" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="794" y="891" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">1. Material / finished-</text>
+<text x="794" y="907" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">product scope</text>
+<rect x="941" y="872" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="949" y="891" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">2. Species + source</text>
+<text x="949" y="907" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">verification</text>
+<rect x="1096" y="872" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="1104" y="891" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">3. Slaughter / origin</text>
+<text x="1104" y="907" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">documentation where</text>
+<rect x="1251" y="872" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="1259" y="891" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">4. Segregation +</text>
+<text x="1259" y="907" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">handling controls</text>
+<rect x="786" y="935" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="794" y="954" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">5. Supplier /</text>
+<text x="794" y="970" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">transformation</text>
+<rect x="941" y="935" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="949" y="954" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">6. Analytical /</text>
+<text x="949" y="970" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">document evidence as</text>
+<rect x="1096" y="935" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="1104" y="954" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">7. Audit + exception +</text>
+<text x="1104" y="970" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">re-verification</text>
+<rect x="1251" y="935" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="1259" y="954" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">8. Authority gate /</text>
+<text x="1259" y="970" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">release</text>
+<text x="1424" y="997" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="700" text-anchor="end" fill="#64748b">AHTE FLOW 08</text>
+<rect x="1465" y="806" width="670" height="205" rx="18" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<rect x="1465" y="806" width="68" height="48" rx="14" fill="#0f172a"/>
+<text x="1499" y="837" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="800" text-anchor="middle" fill="#ffffff">09</text>
+<text x="1551" y="832" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="800" text-anchor="start" fill="#0f172a">MS 2809:2025</text>
+<text x="1551" y="855" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="600" text-anchor="start" fill="#475569">Authentication using chemometric techniques</text>
+<rect x="1481" y="872" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="1489" y="891" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">1. Question / sample /</text>
+<text x="1489" y="907" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">matrix definition</text>
+<rect x="1636" y="872" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="1644" y="891" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">2. Data acquisition:</text>
+<text x="1644" y="907" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">chromatography /</text>
+<rect x="1791" y="872" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="1799" y="891" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">3. Dataset quality +</text>
+<text x="1799" y="907" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">provenance</text>
+<rect x="1946" y="872" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="1954" y="891" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">4. Pre-processing +</text>
+<text x="1954" y="907" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">feature/model</text>
+<rect x="1481" y="935" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="1489" y="954" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">5. Validation +</text>
+<text x="1489" y="970" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">statistical</text>
+<rect x="1636" y="935" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="1644" y="954" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">6. Model result /</text>
+<text x="1644" y="970" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">interpretation</text>
+<rect x="1791" y="935" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="1799" y="954" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">7. Audit trail +</text>
+<text x="1799" y="970" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">reproducibility /</text>
+<rect x="1946" y="935" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="1954" y="954" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">8. Authority evidence</text>
+<text x="1954" y="970" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">package</text>
+<text x="2119" y="997" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="700" text-anchor="end" fill="#64748b">AHTE FLOW 09</text>
+<rect x="75" y="1029" width="670" height="205" rx="18" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<rect x="75" y="1029" width="68" height="48" rx="14" fill="#0f172a"/>
+<text x="109" y="1060" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="800" text-anchor="middle" fill="#ffffff">10</text>
+<text x="161" y="1055" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="800" text-anchor="start" fill="#0f172a">MS 2810:2025</text>
+<text x="161" y="1078" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="600" text-anchor="start" fill="#475569">Identification of pig skin and hair — Test method</text>
+<rect x="91" y="1095" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="99" y="1114" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">1. Test scope + sample</text>
+<text x="99" y="1130" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">eligibility</text>
+<rect x="246" y="1095" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="254" y="1114" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">2. Sample identity +</text>
+<text x="254" y="1130" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">chain of custody</text>
+<rect x="401" y="1095" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="409" y="1114" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">3. Preparation / method</text>
+<text x="409" y="1130" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">execution</text>
+<rect x="556" y="1095" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="564" y="1114" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">4. Controls +</text>
+<text x="564" y="1130" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">analytical</text>
+<rect x="91" y="1158" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="99" y="1177" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">5. Result</text>
+<text x="99" y="1193" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">interpretation</text>
+<rect x="246" y="1158" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="254" y="1177" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">6. Report + evidence</text>
+<text x="254" y="1193" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">integrity</text>
+<rect x="401" y="1158" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="409" y="1177" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">7. Authority / decision</text>
+<text x="409" y="1193" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">linkage</text>
+<rect x="556" y="1158" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="564" y="1177" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">8. Disposition: release</text>
+<text x="564" y="1193" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">/ hold /</text>
+<text x="729" y="1220" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="700" text-anchor="end" fill="#64748b">AHTE FLOW 10</text>
+<rect x="770" y="1029" width="670" height="205" rx="18" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<rect x="770" y="1029" width="68" height="48" rx="14" fill="#0f172a"/>
+<text x="804" y="1060" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="800" text-anchor="middle" fill="#ffffff">11</text>
+<text x="856" y="1055" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="800" text-anchor="start" fill="#0f172a">MS 2393:2023</text>
+<text x="856" y="1078" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="600" text-anchor="start" fill="#475569">Islamic and halal terminologies</text>
+<rect x="786" y="1095" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="794" y="1114" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">1. Term / concept</text>
+<text x="794" y="1130" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">intake</text>
+<rect x="941" y="1095" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="949" y="1114" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">2. Authority-source</text>
+<text x="949" y="1130" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">definition</text>
+<rect x="1096" y="1095" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="1104" y="1114" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">3. Semantic</text>
+<text x="1104" y="1130" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">normalization</text>
+<rect x="1251" y="1095" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="1259" y="1114" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">4. Ontology /</text>
+<text x="1259" y="1130" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">relationship mapping</text>
+<rect x="786" y="1158" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="794" y="1177" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">5. Context + usage</text>
+<text x="794" y="1193" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">constraints</text>
+<rect x="941" y="1158" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="949" y="1177" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">6. Version / change</text>
+<text x="949" y="1193" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">control</text>
+<rect x="1096" y="1158" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="1104" y="1177" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">7. Controlled</text>
+<text x="1104" y="1193" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">publication</text>
+<rect x="1251" y="1158" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="1259" y="1177" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">8. Platform-wide</text>
+<text x="1259" y="1193" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">terminology</text>
+<text x="1424" y="1220" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="700" text-anchor="end" fill="#64748b">AHTE FLOW 11</text>
+<rect x="1465" y="1029" width="670" height="205" rx="18" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<rect x="1465" y="1029" width="68" height="48" rx="14" fill="#0f172a"/>
+<text x="1499" y="1060" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="800" text-anchor="middle" fill="#ffffff">12</text>
+<text x="1551" y="1055" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="800" text-anchor="start" fill="#0f172a">MS 2627:2017</text>
+<text x="1551" y="1078" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="600" text-anchor="start" fill="#475569">Detection of porcine DNA — Food</text>
+<rect x="1481" y="1095" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="1489" y="1114" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">1. Question / food</text>
+<text x="1489" y="1130" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">matrix</text>
+<rect x="1636" y="1095" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="1644" y="1114" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">2. Representative</text>
+<text x="1644" y="1130" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">sampling + chain of</text>
+<rect x="1791" y="1095" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="1799" y="1114" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">3. DNA extraction +</text>
+<text x="1799" y="1130" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">controls</text>
+<rect x="1946" y="1095" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="1954" y="1114" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">4. PCR detection +</text>
+<text x="1954" y="1130" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">inhibition controls</text>
+<rect x="1481" y="1158" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="1489" y="1177" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">5. Analytical result /</text>
+<text x="1489" y="1193" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">limitations</text>
+<rect x="1636" y="1158" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="1644" y="1177" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">6. Evidence</text>
+<text x="1644" y="1193" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">interpretation (not</text>
+<rect x="1791" y="1158" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="1799" y="1177" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">7. Authority review /</text>
+<text x="1799" y="1193" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">investigation</text>
+<rect x="1946" y="1158" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="1954" y="1177" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">8. Decision /</text>
+<text x="1954" y="1193" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">traceability linkage</text>
+<text x="2119" y="1220" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="700" text-anchor="end" fill="#64748b">AHTE FLOW 12</text>
+<rect x="75" y="1252" width="670" height="205" rx="18" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<rect x="75" y="1252" width="68" height="48" rx="14" fill="#0f172a"/>
+<text x="109" y="1283" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="800" text-anchor="middle" fill="#ffffff">13</text>
+<text x="161" y="1278" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="800" text-anchor="start" fill="#0f172a">MS 2627-2:2025</text>
+<text x="161" y="1301" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="600" text-anchor="start" fill="#475569">Detection of porcine DNA — Cosmetics</text>
+<rect x="91" y="1318" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="99" y="1337" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">1. Question / cosmetic</text>
+<text x="99" y="1353" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">matrix</text>
+<rect x="246" y="1318" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="254" y="1337" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">2. Representative</text>
+<text x="254" y="1353" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">sampling + chain of</text>
+<rect x="401" y="1318" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="409" y="1337" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">3. Matrix-appropriate</text>
+<text x="409" y="1353" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">DNA extraction</text>
+<rect x="556" y="1318" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="564" y="1337" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">4. qPCR controls /</text>
+<text x="564" y="1353" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">validation</text>
+<rect x="91" y="1381" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="99" y="1400" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">5. Result + inhibition</text>
+<text x="99" y="1416" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">/ performance review</text>
+<rect x="246" y="1381" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="254" y="1400" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">6. Evidence</text>
+<text x="254" y="1416" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">interpretation +</text>
+<rect x="401" y="1381" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="409" y="1400" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">7. Authority /</text>
+<text x="409" y="1416" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">investigation</text>
+<rect x="556" y="1381" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="564" y="1400" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">8. Decision /</text>
+<text x="564" y="1416" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">traceability linkage</text>
+<text x="729" y="1443" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="700" text-anchor="end" fill="#64748b">AHTE FLOW 13</text>
+<rect x="770" y="1252" width="670" height="205" rx="18" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<rect x="770" y="1252" width="68" height="48" rx="14" fill="#0f172a"/>
+<text x="804" y="1283" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="800" text-anchor="middle" fill="#ffffff">14</text>
+<text x="856" y="1278" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="800" text-anchor="start" fill="#0f172a">MS 1900:2025</text>
+<text x="856" y="1301" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="600" text-anchor="start" fill="#475569">Shariah-based quality management system</text>
+<rect x="786" y="1318" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="794" y="1337" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">1. Organisation context</text>
+<text x="794" y="1353" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">+ Shariah/fatwa</text>
+<rect x="941" y="1318" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="949" y="1337" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">2. Leadership + policy</text>
+<rect x="1096" y="1318" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="1104" y="1337" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">3. Objectives / risks /</text>
+<text x="1104" y="1353" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">planning</text>
+<rect x="1251" y="1318" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="1259" y="1337" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">4. Operational process</text>
+<text x="1259" y="1353" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">control</text>
+<rect x="786" y="1381" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="794" y="1400" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">5. Competence /</text>
+<text x="794" y="1416" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">awareness /</text>
+<rect x="941" y="1381" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="949" y="1400" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">6. Internal audit +</text>
+<text x="949" y="1416" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">management review</text>
+<rect x="1096" y="1381" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="1104" y="1400" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">7. Corrective action +</text>
+<text x="1104" y="1416" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">continual</text>
+<rect x="1251" y="1381" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="1259" y="1400" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">8. Organisation</text>
+<text x="1259" y="1416" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">assurance /</text>
+<text x="1424" y="1443" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="700" text-anchor="end" fill="#64748b">AHTE FLOW 14</text>
+<rect x="1465" y="1252" width="670" height="205" rx="18" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<rect x="1465" y="1252" width="68" height="48" rx="14" fill="#0f172a"/>
+<text x="1499" y="1283" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="800" text-anchor="middle" fill="#ffffff">15</text>
+<text x="1551" y="1278" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="800" text-anchor="start" fill="#0f172a">MS 2691:2021</text>
+<text x="1551" y="1301" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="600" text-anchor="start" fill="#475569">Halal profession — General requirements</text>
+<rect x="1481" y="1318" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="1489" y="1337" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">1. Role definition /</text>
+<text x="1489" y="1353" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">competence profile</text>
+<rect x="1636" y="1318" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="1644" y="1337" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">2. Qualification +</text>
+<text x="1644" y="1353" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">education evidence</text>
+<rect x="1791" y="1318" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="1799" y="1337" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">3. Training +</text>
+<text x="1799" y="1353" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">competence</text>
+<rect x="1946" y="1318" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="1954" y="1337" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">4. Role authorisation /</text>
+<text x="1954" y="1353" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">assignment</text>
+<rect x="1481" y="1381" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="1489" y="1400" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">5. Professional conduct</text>
+<text x="1489" y="1416" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">+ records</text>
+<rect x="1636" y="1381" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="1644" y="1400" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">6. Performance /</text>
+<text x="1644" y="1416" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">continuing</text>
+<rect x="1791" y="1381" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="1799" y="1400" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">7. Renewal / expiry</text>
+<text x="1799" y="1416" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">controls</text>
+<rect x="1946" y="1381" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="1954" y="1400" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">8. Stakeholder /</text>
+<text x="1954" y="1416" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">authority</text>
+<text x="2119" y="1443" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="700" text-anchor="end" fill="#64748b">AHTE FLOW 15</text>
+<rect x="75" y="1475" width="670" height="205" rx="18" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<rect x="75" y="1475" width="68" height="48" rx="14" fill="#0f172a"/>
+<text x="109" y="1506" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="800" text-anchor="middle" fill="#ffffff">16</text>
+<text x="161" y="1501" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="800" text-anchor="start" fill="#0f172a">MS 2610:2015</text>
+<text x="161" y="1524" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="600" text-anchor="start" fill="#475569">Muslim-friendly hospitality services — supporting context</text>
+<rect x="91" y="1541" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="99" y="1560" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">1. Service scope +</text>
+<text x="99" y="1576" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">guest journey</text>
+<rect x="246" y="1541" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="254" y="1560" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">2. Premise /</text>
+<text x="254" y="1576" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">accommodation</text>
+<rect x="401" y="1541" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="409" y="1560" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">3. Food &amp; beverage</text>
+<text x="409" y="1576" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">halal integrity</text>
+<rect x="556" y="1541" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="564" y="1560" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">4. Hygiene / facilities</text>
+<text x="564" y="1576" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">/ service controls</text>
+<rect x="91" y="1604" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="99" y="1623" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">5. Staff competence +</text>
+<text x="99" y="1639" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">guest-facing conduct</text>
+<rect x="246" y="1604" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="254" y="1623" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">6. Traceability /</text>
+<text x="254" y="1639" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">supplier evidence</text>
+<rect x="401" y="1604" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="409" y="1623" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">7. Complaint / incident</text>
+<text x="409" y="1639" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">/ corrective action</text>
+<rect x="556" y="1604" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="564" y="1623" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">8. Service assurance /</text>
+<text x="564" y="1639" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">verification</text>
+<text x="729" y="1666" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="700" text-anchor="end" fill="#64748b">AHTE FLOW 16</text>
+<rect x="770" y="1475" width="670" height="205" rx="18" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<rect x="770" y="1475" width="68" height="48" rx="14" fill="#0f172a"/>
+<text x="804" y="1506" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="800" text-anchor="middle" fill="#ffffff">17</text>
+<text x="856" y="1501" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="800" text-anchor="start" fill="#0f172a">MS 2636:2019</text>
+<text x="856" y="1524" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="600" text-anchor="start" fill="#475569">Halal medical device — General requirements</text>
+<rect x="786" y="1541" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="794" y="1560" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">1. Device scope +</text>
+<text x="794" y="1576" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">competent-authority</text>
+<rect x="941" y="1541" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="949" y="1560" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">2. Quality management +</text>
+<text x="949" y="1576" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">management</text>
+<rect x="1096" y="1541" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="1104" y="1560" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">3. Halal Management</text>
+<text x="1104" y="1576" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">System +</text>
+<rect x="1251" y="1541" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="1259" y="1560" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">4. Materials /</text>
+<text x="1259" y="1576" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">manufacturing /</text>
+<rect x="786" y="1604" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="794" y="1623" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">5. QC + personnel +</text>
+<text x="794" y="1639" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">training + hygiene</text>
+<rect x="941" y="1604" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="949" y="1623" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">6. Packaging /</text>
+<text x="949" y="1639" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">labelling +</text>
+<rect x="1096" y="1604" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="1104" y="1623" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">7. Internal audit /</text>
+<text x="1104" y="1639" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">legal compliance /</text>
+<rect x="1251" y="1604" width="147" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="1259" y="1623" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" text-anchor="start" fill="#0f172a">8. Halal certification</text>
+<text x="1259" y="1639" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#334155">pathway / mark /</text>
+<text x="1424" y="1666" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="700" text-anchor="end" fill="#64748b">AHTE FLOW 17</text>
+<rect x="75" y="1475" width="2060" height="205" rx="18" fill="#f8fafc" stroke="#cbd5e1"/>
+<text x="97" y="1509" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="800" text-anchor="start" fill="#0f172a">AHTE VISUAL DOCTRINE</text>
+<text x="97" y="1539" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="550" text-anchor="start" fill="#334155">The flow converts applicable standards into digital controls, HCPs, evidence, audit tests and traceable authority-gated outcomes.</text>
+<text x="97" y="1576" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="800" text-anchor="start" fill="#0f172a">Certification boundary</text>
+<text x="97" y="1602" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="550" text-anchor="start" fill="#334155">Competent authorities and applicable regulators retain certification and authority decisions.</text>
+<text x="97" y="1640" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="800" text-anchor="start" fill="#0f172a">Analytical boundary</text>
+<text x="97" y="1666" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="550" text-anchor="start" fill="#334155">Laboratory and AI outputs are evidence/decision-support; they do not independently create Malaysian Halal certification.</text>
+<rect x="75" y="1740" width="2050" height="16" rx="8" fill="#e2e8f0"/>
+<rect x="75" y="1740" width="1600" height="16" rx="8" fill="#0f172a"/>
+<text x="90" y="1810" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="650" text-anchor="start" fill="#0f172a">Implementation-oriented paraphrase; no copyrighted normative standard text is reproduced.</text>
+</svg>
