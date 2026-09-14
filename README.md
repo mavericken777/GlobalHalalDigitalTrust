@@ -4,92 +4,43 @@
 
 ## Mission
 
-Build a sovereign, federated and AI-enabled global digital trust infrastructure for the Halal Tayyib ecosystem—from raw-material origin and scientific evidence through regulatory verification, manufacturing, logistics, warehousing, retail, consumer participation, ESG and long-term evidence preservation.
+Build a sovereign, federated and AI-enabled global digital trust infrastructure for the Halal Tayyib ecosystem - from raw-material origin and scientific evidence through regulatory verification, manufacturing, logistics, warehousing, retail, consumer participation, ESG and long-term evidence preservation.
 
 ## Core principle
 
 > **Data stays where it belongs. Trust travels.**
 
-## What this repository contains
+## Amanah Halal Trust Ecosystem (AHTE)
 
-### Master programme
-- `deliverables/00_EXECUTIVE_MASTER_BLUEPRINT.md`
-- `deliverables/01_MASTER_REQUIREMENTS.md`
-- `deliverables/02_REFERENCE_ARCHITECTURE.md`
+The end-to-end digital platform architecture is now formalised as the **Amanah Halal Trust Ecosystem (AHTE)**. AHTE operationalises the Malaysian Halal standards stack through a source-aware compliance knowledge graph, control/HCP engine, evidence fabric, Digital Audit Twin, laboratory evidence layer, authority gates, traceability/trust graph, supply-chain execution layer, port/border gateway, recall engine and stakeholder verification views.
 
-### AI
-- `deliverables/03_AI_KNOWLEDGE_ONBOARDING.md`
+Canonical path:
 
-### Security and evidence
-- `deliverables/04_DATA_SOVEREIGNTY_AND_EVIDENCE.md`
-- `deliverables/05_CYBERSECURITY_AND_RESILIENCE.md`
-- `deliverables/19_SECURITY_ASSURANCE_TEST_PLAN.md`
+`Authority -> Standard/Instrument -> Clause/Requirement -> Applicability -> Control -> HCP -> Evidence -> Audit Test -> Finding -> Corrective Action -> Re-verification -> Authority Gate -> Trust State -> Operational Release`
 
-## IQ300 MASTER STANDARDS STACK
+## IQ300 Master Standards Stack
 
-The consolidated standards intelligence layer is organized under:
+- `master-standards-stack/` - source-derived JAKIM/JSM standards intelligence library
+- `master-standards-stack/iq300-full-matrix/` - clause-level MS 2400 backbone with 613 numbered requirement objects
+- `master-standards-stack/iq300-all-jakim-ms/` - full current-standard catalogue/control library, unified matrix, Mermaid flows, machine-readable object model and SVG visuals
+- `master-standards-stack/AMANAH_PLATFORM_AZ_MAPPING.md` - A-Z AHTE platform decomposition and standard-to-platform matrix
+- `master-standards-stack/IQ300_AHTE_PLATFORM_README.md` - AHTE package declaration and coverage model
+- `master-standards-stack/IQ300_AHTE_COMPLETE_MASTER_PACKAGE.tar.gz` - complete generated source-derived package archive
 
-- `master-standards-stack/`
-- **`master-standards-stack/iq300-all-jakim-ms/` - complete current JAKIM/JSM Halal standards library, control architecture, process flows and visual layer**
-- **`master-standards-stack/iq300-full-matrix/` - machine-oriented numbered MS 2400 clause objects and audit matrix**
+The current IQ300 library represents the standards/contexts represented by the current JSM Halal catalogue and the supplied source corpus, including MS 1500:2019; MS 2400-1/-2/-3:2019; MS 2424:2019; MS 2634:2019; MS 2738:2023; MS 2803:2025; MS 2809:2025; MS 2810:2025; MS 2393:2023; MS 2627:2017; MS 2627-2:2025; MS 1900:2025; MS 2691:2021; and MS 2610:2015 supporting hospitality context. Current JSM MySOL catalogue evidence confirms the recent 2025 standards and current statuses referenced by this build.
 
-### IQ300 standards coverage
+## Governance boundary
 
-The current library explicitly represents:
-
-`MS 1500:2019 | MS 2400-1:2019 | MS 2400-2:2019 | MS 2400-3:2019 | MS 2424:2019 | MS 2634:2019 | MS 2738:2023 | MS 2803:2025 | MS 2393:2023 | MS 2627:2017 | MS 2627-2:2025 | MS 1900:2025 | MS 2691:2021 | MS 2610:2015 | MS 2809:2025 | MS 2810:2025`
-
-The three supplied MS 2400 PDFs are fully objectized at numbered-clause level with **613 unique requirement objects**:
-
-- MS 2400-1:2019: 187
-- MS 2400-2:2019: 201
-- MS 2400-3:2019: 225
-
-The all-standard library adds source-supported control families, HCP mappings, evidence requirements, audit tests, authority gates, Mermaid process flows and SVG infographics for the wider standards set.
-
-### Current catalogue update
-
-A current JSM MySOL Halal-sector catalogue check also surfaced **MS 2809:2025** (Authentication of products using chemometric techniques) and **MS 2810:2025** (Consumable goods - Test method - Identification of pig skin and hair). These are now included in IQ300 rather than relying only on the earlier supplied compendium.
-
-Source: https://mysol.jsm.gov.my/search-catalogue?is-advance=1&page=1&sector=204
-
-### Core IQ300 logic
-
-`Clause -> Requirement Intent -> Applicability -> Control -> HCP -> Evidence -> Audit Test -> Finding -> Corrective Action -> Re-verification -> Authority Gate -> Trust State`
-
-The layer distinguishes technical standards from MPPHM, MHMS, Protocol, Pekeliling/circular, fatwa, regulator and competent-authority decisions.
-
-## Sinotrans
-- `deliverables/07_SINOTRANS_PLAYBOOK.md`
-- `deliverables/17_SINOTRANS_DATA_MAPPING.md`
-- `deliverables/18_SINOTRANS_PILOT_SOP.md`
-
-## Ecosystem participants
-- `deliverables/08_MANUFACTURER_PRODUCER_PLAYBOOK.md`
-- `deliverables/09_RETAIL_IMPORTER_PLAYBOOK.md`
-- `deliverables/21_PARTNER_ENGAGEMENT_PLAYBOOK.md`
-
-## ESG / intelligence
-- `deliverables/10_ESG_GLOBAL_CITIZEN_FRAMEWORK.md`
-- `deliverables/11_TRUST_INDEX_AND_INTELLIGENCE.md`
-
-## Governance / economics
-- `deliverables/12_GOVERNANCE_RISK_AND_ACCOUNTABILITY.md`
-- `deliverables/13_BUSINESS_MODEL_AND_ECONOMICS.md`
-- `deliverables/20_GLOBAL_GOVERNANCE_CHARTER.md`
-
-## Engineering / implementation
-- `deliverables/14_API_AND_CANONICAL_DATA_MODEL.md`
-- `deliverables/15_IMPLEMENTATION_ROADMAP.md`
+Malaysian Standards are technical normative instruments; certification decisions remain with the competent Halal authority and applicable certification/legal framework. The repository intentionally separates source text, interpretation, operational control, evidence, assessment and authority decision. No AI model, laboratory result, QR code, blockchain record, manufacturer declaration or platform event independently creates Malaysian Halal certification.
 
 ## Evidence and claims policy
 
-This repository deliberately distinguishes proposals from established facts. Government recognition, certification authority, laboratory authorization, insurance/assurance commitments, use of government marks, ownership/shareholding, commercial participation and signed partnerships must be independently documented before being presented externally as confirmed.
+Government recognition, certification authority, laboratory authorization, insurance/assurance commitments, use of government marks, commercial participation and signed partnerships must be independently documented before being represented externally as confirmed.
 
 ## Implementation status
 
-This repository is the consolidated strategy/architecture baseline and pilot-operating documentation. Engineering implementation remains a subsequent delivery phase governed by the roadmap and release gates.
+This repository is the consolidated strategy, architecture, standards-intelligence and pilot-operating baseline. Engineering implementation is governed by the release roadmap and source/version freeze gates.
 
 ## IQ300 doctrine
 
-**Source provenance first. Authority boundaries explicit. Requirements versioned. Controls operationalized. Evidence linked. AI advisory. Decisions accountable. Physical and digital trust continuously linked.**
+**Source provenance first. Authority boundaries explicit. Evidence versioned. AI advisory. Decisions accountable. Physical and digital trust continuously linked.**
