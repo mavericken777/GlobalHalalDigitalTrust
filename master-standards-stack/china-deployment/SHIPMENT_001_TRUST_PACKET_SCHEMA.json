@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AHTE Shipment 001 Trust Packet",
+  "type": "object",
+  "required": ["trustAssertionId", "jurisdiction", "shipment", "objects", "authority", "status", "issuedAt", "integrity"],
+  "properties": {
+    "trustAssertionId": {"type": "string"},
+    "jurisdiction": {"type": "string", "examples": ["CN", "SA", "AE", "MY"]},
+    "shipment": {
+      "type": "object",
+      "required": ["shipmentId", "containerIds"],
+      "properties": {
+        "shipmentId": {"type": "string"},
+        "containerIds": {"type": "array", "items": {"type": "string"}},
+        "sealIds": {"type": "array", "items": {"type": "string"}},
+        "origin": {"type": "string"},
+        "destination": {"type": "string"}
+      }
+    },
+    "objects": {
+      "type": "object",
+      "properties": {
+        "products": {"type": "array", "items": {"type": "string"}},
+        "batches": {"type": "array", "items": {"type": "string"}},
+        "lots": {"type": "array", "items": {"type": "string"}},
+        "pallets": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "authority": {
+      "type": "object",
+      "required": ["issuerId", "decisionReference"],
+      "properties": {
+        "issuerId": {"type": "string"},
+        "decisionReference": {"type": "string"},
+        "scope": {"type": "string"},
+        "validFrom": {"type": "string", "format": "date-time"},
+        "validTo": {"type": "string", "format": "date-time"}
+      }
+    },
+    "status": {"type": "string"},
+    "exceptionFlags": {"type": "array", "items": {"type": "string"}},
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["evidenceId", "hash", "issuer"],
+        "properties": {
+          "evidenceId": {"type": "string"},
+          "hash": {"type": "string"},
+          "issuer": {"type": "string"},
+          "type": {"type": "string"},
+          "verificationEndpoint": {"type": "string"}
+        }
+      }
+    },
+    "integrity": {
+      "type": "object",
+      "required": ["signature", "trustAnchor"],
+      "properties": {
+        "signature": {"type": "string"},
+        "trustAnchor": {"type": "string"},
+        "issuedAt": {"type": "string", "format": "date-time"}
+      }
+    },
+    "issuedAt": {"type": "string", "format": "date-time"}
+  }
+}
