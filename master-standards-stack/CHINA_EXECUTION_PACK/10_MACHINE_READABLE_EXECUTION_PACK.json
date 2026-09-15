@@ -1,0 +1,55 @@
+{
+  "package": "IQ300-CHINA-EXECUTION-PACK",
+  "version": "1.0.0",
+  "architecture": "AHTE",
+  "corridor": "CHINA-MALAYSIA-GCC",
+  "pilot": "Shipment-001",
+  "standards_count": 17,
+  "standards": [
+    "MS 1500:2019","MS 2400-1:2019","MS 2400-2:2019","MS 2400-3:2019","MS 2424:2019","MS 2634:2019","MS 2738:2023","MS 2803:2025","MS 2809:2025","MS 2810:2025","MS 2393:2023","MS 2627:2017","MS 2627-2:2025","MS 1900:2025","MS 2691:2021","MS 2610:2015","MS 2636:2019"
+  ],
+  "gates": [
+    "G0_PROGRAMME","G1_MANUFACTURER_ONBOARDED","G2_FACTORY_QUALIFIED","G3_MATERIAL_PROCESS_ASSURANCE","G4_BATCH_RELEASED","G5_SHIPMENT_ASSEMBLED","G6_EXPORT_RELEASED","G7_GCC_PREARRIVAL_READY","G8_GCC_BORDER_RELEASE","G9_DESTINATION_WAREHOUSE_RELEASE","G10_RETAIL_RELEASE"
+  ],
+  "trust_states": [
+    "INITIAL","EVIDENCE-COMPLETE","ASSESSED","VERIFIED","VERIFIED-WITH-EXCEPTION","RELEASED","HOLD","QUARANTINED","DISPUTED","CORRECTIVE-ACTION","RE-VERIFICATION","EXPIRED","SUSPENDED","REVOKED","RECALLED"
+  ],
+  "event_domains": {
+    "programme": ["E-ORG-ONBOARD","E-FACILITY-REGISTERED","E-SCOPE-CLASSIFIED","E-STANDARD-APPLIED","E-ROLE-ASSIGNED","E-TRAINING-COMPLETE"],
+    "materials": ["E-SUPPLIER-REGISTERED","E-MATERIAL-REGISTERED","E-MATERIAL-DOSSIER-COMPLETE","E-MATERIAL-APPROVED","E-MATERIAL-REJECTED","E-MATERIAL-LOT-RECEIVED","E-MATERIAL-QUARANTINED","E-MATERIAL-RELEASED"],
+    "production": ["E-FORMULA-VERSIONED","E-PROCESS-VERSIONED","E-HCP-OPEN","E-HCP-MONITOR","E-HCP-EXCEPTION","E-LINE-READY","E-PRODUCTION-START","E-SAMPLE-COLLECTED","E-LAB-SUBMITTED","E-LAB-RESULT","E-BATCH-CREATED","E-BATCH-RELEASED","E-BATCH-HOLD","E-BATCH-REJECTED"],
+    "audit_authority": ["E-AUDIT-OPEN","E-AUDIT-OBSERVATION","E-FINDING","E-CAR-OPEN","E-CAR-CLOSE","E-REVERIFICATION","E-AUTHORITY-SUBMISSION","E-AUTHORITY-DECISION","E-CERTIFICATE-ISSUED","E-CERTIFICATE-SUSPENDED"],
+    "packaging": ["E-PACKAGING-LOT-CREATED","E-UNIT-ID-BOUND","E-PALLET-CREATED","E-PALLET-LOADED","E-PALLET-UNLOADED","E-CONTAINER-ASSIGNED","E-SEAL-APPLIED","E-SEAL-INSPECTED","E-SEAL-BROKEN"],
+    "china_logistics": ["E-BOOKING-CREATED","E-CARRIER-ASSIGNED","E-VEHICLE-VERIFIED","E-CUSTODY-TRANSFER","E-EXPORT-DOCUMENT-SET","E-EXPORT-DECLARATION","E-EXPORT-RELEASE","E-PORT-IN","E-PORT-INSPECTION","E-PORT-OUT","E-DEPARTURE","E-TRANSIT-MILESTONE","E-ETA-UPDATED"],
+    "gcc": ["E-GCC-PREARRIVAL","E-GCC-CUSTOMS-FILING","E-GCC-DOCUMENT-VERIFICATION","E-GCC-PHYSICAL-INSPECTION","E-GCC-SAMPLE-COLLECTED","E-GCC-HOLD","E-GCC-RELEASE","E-DESTINATION-CUSTODY-TRANSFER","E-WAREHOUSE-RECEIPT","E-WAREHOUSE-RELEASE","E-RETAIL-RECEIPT","E-RETAIL-RELEASE"],
+    "incident": ["E-TRUST-STATE-CHANGED","E-EXCEPTION-OPEN","E-EXCEPTION-CLOSED","E-INCIDENT-OPEN","E-INCIDENT-CONTAINED","E-RECALL-OPEN","E-RECALL-BLAST-RADIUS","E-RECALL-WITHDRAWAL","E-RECALL-CLOSE"]
+  },
+  "factory_api": {
+    "base": "/v1",
+    "factory_to_ahte": ["facilities","products","materials","suppliers","formulas","process-versions","batches","production-events","samples","lab-results","evidence","nonconformities"],
+    "ahte_to_factory": ["requirements/{scope}","hcp-plans/{product}","release-state/{batch}","authority-gates/{object}","holds","release-instructions","change-notices"],
+    "required_headers": ["Authorization","Idempotency-Key","X-Correlation-Id","X-Client-Certificate"]
+  },
+  "roles": [
+    "PROGRAMME-DIRECTOR","CHINA-HOD","MANUFACTURER-QA","HALAL-COMPLIANCE","FACTORY-IT","LAB-COORDINATOR","LOGISTICS-CONTROL-TOWER","SEAL-CUSTODY-OFFICER","CHINA-EXPORT","GCC-IMPORTER","GCC-WAREHOUSE-QA","RETAIL-QA","AHTE-TRUST-OPERATIONS","COMPETENT-AUTHORITY"
+  ],
+  "rule_precedence": [
+    "R0_SHARIAH_FATWA_AUTHORITATIVE_DETERMINATION",
+    "R1_MANDATORY_LAW_REGULATION_AUTHORITY_DECISION",
+    "R2_OFFICIAL_CERTIFICATION_PROTOCOL_CIRCULAR_TECHNICAL_INSTRUMENT",
+    "R3_APPLICABLE_MALAYSIAN_OR_DESTINATION_TECHNICAL_STANDARD",
+    "R4_APPROVED_CORRIDOR_CONTRACT_REQUIREMENT",
+    "R5_INTERNAL_SOP_CONTROL",
+    "R6_ADVISORY_OPTIMISATION"
+  ],
+  "cryptography": {
+    "transport": "TLS1.3",
+    "content_hash": "SHA-256",
+    "event_signing": "Ed25519-or-approved-equivalent",
+    "infrastructure_identity": "X.509",
+    "high_value_key_storage": "HSM/TPM/secure-element",
+    "event_model": "append-only hash chain with optional Merkle anchoring"
+  },
+  "object_identity": ["organisation","facility","product","material","supplier","formula","process","HCP","batch","lot","unit","pallet","container","seal","shipment","warehouse","retail-unit","sample","audit-case","authority-case","recall-case"],
+  "source_reference": "JSM MySOL NSC 09 Halal catalogue + IQ300 project source corpus"
+}
