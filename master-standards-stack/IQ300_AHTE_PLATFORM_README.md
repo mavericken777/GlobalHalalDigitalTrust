@@ -2,67 +2,98 @@
 
 ## Mission
 
-Map the entire Amanah Halal Trust Ecosystem digital platform end-to-end against the JAKIM/JSM Malaysian Halal standards and associated certification/evidence governance layers.
+Map the Amanah Halal Trust Ecosystem end-to-end against the JAKIM/JSM Malaysian Halal standards architecture and operationalise the resulting controls, evidence, audit, authority and trade workflows across the China ↔ Malaysia ↔ GCC corridor.
 
 ## Sovereign doctrine
 
-AHTE treats the complete Malaysian Halal standards and governance architecture represented in this IQ300 library as the sovereign operating baseline for the ecosystem. The platform is designed to operationalise the standards as authoritative system objects, controls, HCPs, evidence requirements, audit tests, authority gates, trust states and execution workflows. No "pending", "placeholder", "truncated", "summary-only" or provisional standards state is used in the AHTE operating model.
+AHTE treats the complete Malaysian Halal standards and governance architecture represented in the IQ300 library as the sovereign operating baseline for the ecosystem. The platform operationalises standards as authoritative system objects, controls, HCPs, evidence requirements, audit tests, authority gates, trust states and execution workflows.
 
 ## Core architecture
 
-`Authority -> Standard/Instrument -> Clause/Requirement -> Applicability -> Control -> HCP -> Evidence -> Audit Test -> Finding -> Corrective Action -> Re-verification -> Authority Gate -> Trust State -> Operational Release`
+`Authority -> Standard/Instrument -> Requirement -> Applicability -> Control -> HCP -> Evidence -> Audit Test -> Finding -> Corrective Action -> Re-verification -> Authority Gate -> Trust State -> Operational Release`
 
-## Coverage
+## Current standards universe
 
-This package contains the full standards library and the expanded AHTE platform mapping. Current Halal-specific standards represented include MS 1500:2019; MS 2400-1/-2/-3:2019; MS 2424:2019; MS 2634:2019; **MS 2636:2019**; MS 2738:2023; MS 2803:2025; MS 2809:2025; MS 2810:2025; MS 2393:2023; MS 2627:2017; MS 2627-2:2025; MS 1900:2025; MS 2691:2021; plus MS 2610:2015 as supporting hospitality context.
+The Master Standard Stack currently contains **17 standards/standard contexts**:
+
+1. MS 1500:2019 — Halal food — General requirements
+2. MS 2400-1:2019 — Halal supply chain management system — Transportation
+3. MS 2400-2:2019 — Halal supply chain management system — Warehousing
+4. MS 2400-3:2019 — Halal supply chain management system — Retailing
+5. MS 2424:2019 — Halal pharmaceuticals — General requirements
+6. MS 2634:2019 — Halal cosmetics — General requirements
+7. MS 2738:2023 — Halal consumable goods — General requirements
+8. MS 2803:2025 — Usage of animal bone, skin and hair — General requirements for halal products
+9. MS 2809:2025 — Authentication of products using chemometric techniques
+10. MS 2810:2025 — Consumable goods — Test method — Identification of pig skin and hair
+11. MS 2393:2023 — Islamic and halal terminologies — Definitions and interpretations
+12. MS 2627:2017 — Detection of porcine DNA — Test method — Food and food products
+13. MS 2627-2:2025 — Detection of porcine DNA — Test method — Part 2: Cosmetics
+14. MS 1900:2025 — Shariah-based quality management system — Requirements
+15. MS 2691:2021 — Halal profession — General requirements
+16. MS 2610:2015 — Muslim-friendly hospitality services — supporting hospitality context
+17. MS 2636:2019 — Halal medical device — General requirements
+
+Current catalogue verification is maintained against the JSM MySOL NSC 09 Halal catalogue. Historical and withdrawn editions are retained as lineage data.
 
 ## Deliverables
 
-- `AMANAH_PLATFORM_AZ_MAPPING.md` - A-Z platform decomposition and standard-to-platform matrix.
-- `IQ300_AHTE_COMPLETE_MASTER_PACKAGE.tar.gz` - complete generated package, including all standard files, process flows, machine-readable datasets, QA and visual assets.
-- `iq300-all-jakim-ms/` - master standards register, unified matrix, machine-readable object model, standards coverage register and SVG visualisations.
-- `iq300-full-matrix/` - numbered MS 2400 requirement objects and supporting IQ300 control assets.
-- `china-execution-pack/` - complete China Execution Pack for HOD interfaces, cross-jurisdiction rules, Shipment 001, factory APIs, smart-glass audit, port officer workflow, cryptographic trust anchors and China Pilot → GCC Release operations.
-- `china-deployment/CHINA_SOVEREIGN_HOD_DEBRIEF.md` - China physical/digital deployment architecture and HOD decision package.
-- `process-flow-infographics/` - complete 17-standard process-flow infographic set and automated generation assets.
+- `AMANAH_PLATFORM_AZ_MAPPING.md` — A-Z platform decomposition and standard-to-platform matrix.
+- `iq300-all-jakim-ms/` — Master standards register, full standards matrix, requirement/control/HCP/evidence architecture and standards lineage.
+- `iq300-full-matrix/` — 613 numbered MS 2400 requirement objects from the three supplied MS 2400 source PDFs.
+- `process-flow-infographics/` — complete 17-standard infographic atlas and automated generator.
+- `CHINA_EXECUTION_PACK/` — complete China implementation pack.
+- `china-deployment/CHINA_SOVEREIGN_HOD_DEBRIEF.md` — HOD decision and deployment package.
 
 ## China Execution Pack
 
-The China execution layer is organised around a federated physical + digital operating model:
+The China execution architecture is organised as a synchronized physical + digital corridor:
 
-`China Manufacturer → Factory Systems → AHTE Trust/Evidence Layer → Origin Logistics/Port → GCC Border → Destination Warehouse → Retail/Verification`
+`China Manufacturer -> Factory Systems -> AHTE Trust/Evidence -> Production/Batch -> Pallet/Container/Seal -> China Export/Port -> Transit -> GCC Border -> Destination Warehouse -> Retail -> Trust Verification`
 
-The execution pack contains:
+The pack contains:
 
-1. Department-by-department China HOD RACI and interface model.
+1. Department-by-department China/Malaysia/GCC RACI.
 2. China ↔ Malaysia ↔ GCC rule-precedence engine.
-3. Complete Shipment 001 event catalogue and event registry.
-4. Factory ERP/MES/QMS/WMS/LIMS/IoT/identity API contracts.
-5. Smart-glass audit field specification.
-6. Port/customs officer UI and inspection workflow.
-7. Cryptographic trust-anchor and selective-disclosure architecture.
+3. Complete Shipment 001 event catalogue.
+4. Factory ERP/MES/QMS/WMS/LIMS/API integration contracts.
+5. Smart-glass audit specification.
+6. Port officer UI/workflow specification.
+7. Cryptographic trust-anchor architecture.
 8. China Pilot → Shipment 001 → GCC Release operating playbook.
-9. Machine-readable JSON schemas for events, trust assertions, authority decisions and custody transfers.
-10. OpenAPI contract for factory integrations.
+9. Machine-readable execution manifest.
+
+## Full Master Standards Matrix
+
+The canonical full matrix is:
+
+`CHINA_EXECUTION_PACK/09_MASTER_STANDARDS_FULL_MATRIX.md`
+
+Every standard row maps to AHTE domains, HCP families, evidence profiles, audit tests, authority gates and process-flow infographics.
 
 ## Machine-readable baseline
 
-The all-standard dataset contains **684 unified requirement/control objects**. The three supplied MS 2400 PDFs provide the clause-level backbone with **613 numbered requirement objects**. The remaining standards are represented through their corresponding IQ300 standard, control, HCP, evidence, audit, authority and workflow objects so the platform can execute a unified cross-standard model.
+The unified standards library contains **684 requirement/control objects**, including **613 individually numbered MS 2400 objects**. The China Execution Pack adds canonical event, rule, API, identity, trust-anchor and operating-gate specifications.
 
-## Visual layer
+## Physical + digital binding
 
-The generated package contains Mermaid process-flow specifications plus SVG architecture, standards-coverage, clause-count, control-pipeline and 17-standard process-flow visuals.
+The system binds:
 
-## Current-source basis
+`material -> production -> batch/lot -> package -> pallet -> container -> seal -> custody -> border -> warehouse -> retail`
 
-The current JSM MySOL catalogue is used as a status/scope verification layer. Current catalogue evidence identifies MS 2803:2025, MS 2809:2025, MS 2810:2025, MS 2627-2:2025, MS 1900:2025, MS 2691:2021, MS 2393:2023, MS 2738:2023, MS 2400-1/-2/-3:2019, MS 1500:2019 and MS 2636:2019. AHTE treats the applicable standards, MPPHM/MHMS, Protocol, circular/Pekeliling, fatwa and regulator requirements as part of the sovereign governance architecture and maps them into the platform's compliance, evidence, audit and authority-control model.
+to its corresponding digital evidence, event and authority state. Each critical physical transition creates or consumes a signed digital event.
 
-## Current China governance references
+## A-Z platform layer
 
-- China Standardization Law / SAC: standardisation governance and standard hierarchy. citeturn356679search1
-- SAMR: market supervision, food safety, quality traceability, inspection/testing and certification/recognition supervision. citeturn748828search1
-- MOFCOM: foreign trade, import/export policy and economic/trade cooperation. citeturn356679search2
-- CAC Network Data Security Management Regulation: network-data security controls, governance and important-data obligations. citeturn748828search0
-- CAC 2024 cross-border data provisions: regulated data-transfer framework and stated treatment of specified international trade, cross-border transport and multinational manufacturing data flows. citeturn164534search0
-- Saudi SFDA import/halal workflow references. citeturn848971search1turn848971search0
-- UAE MoIAT Halal National Mark / conformity workflow references. citeturn848971search2turn848971search5
+`AMANAH_PLATFORM_AZ_MAPPING.md` maps A–Z platform domains from Authority & Accountability through Zero-Knowledge / selective disclosure and Evidence Sovereignty.
+
+## Source references
+
+JSM MySOL Halal catalogue:
+`https://mysol.jsm.gov.my/search-catalogue?keyword=halal`
+
+JSM MySOL NSC 09 sector catalogue:
+`https://mysol.jsm.gov.my/search-catalogue?is-advance=1&page=1&sector=204`
+
+MS 2636:2019 catalogue result:
+`https://mysol.jsm.gov.my/search-catalogue?keyword=halal&page=4`
