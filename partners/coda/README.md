@@ -1,92 +1,60 @@
 # CODA — China Overseas Development Association
 
-## Source-verified partner profile
+**Project governance status:** Project-designated strategic partner
+**Public-source/contract status:** Existing repository evidence supports a strategic partnership framework/proposed role; executed controlling instrument remains an OPEN GATE
+**Role:** China Enterprise Mobilisation & Export Enablement Backbone
+**Canonical Path Position:** Enterprise mobilisation → Qualification
+**Evidence Class:** E1/E2 depending on the exact evidence object
 
-**Entity:** China Overseas Development Association (CODA), 中国产业海外发展协会.
+## Source-Verified Public Profile
+**Entity:** China Overseas Development Association (CODA), 中国产业海外发展协会  
+**Official website:** https://www.ciodpa.org.cn/  
+**Project reference:** https://www.ciodpa.org.cn/index.php?m=content&c=index&a=lists&catid=138
 
-**Official website:** https://www.ciodpa.org.cn/
+Public material supports CODA's role as an association focused on overseas industrial development and international cooperation. Earlier repository analysis treated the project relationship as proposed/candidate until documentary partnership evidence is attached.
 
-**Reference supplied for this project:** https://www.ciodpa.org.cn/index.php?m=content&c=index&a=lists&catid=138
+## Source Conflict Reconciliation
+The current project direction designates CODA as a strategic ecosystem partner. This project-governance designation does **not** silently prove an executed legal/contractual instrument.
 
-### Verified public context
+[OPEN GATE: CODA CONTRACTUAL BASIS — owner: Project + CODA — blocking: Enterprise Mobilisation/Qualification]
 
-CODA describes itself as an association focused on China's overseas industrial development and international cooperation. Its public site documents cooperation and international economic-development activities. For example, CODA reported that its president He Zhenwei met Malaysian entrepreneur Tan Sri Dato’ Danny Tan Chee Sing on 29 March 2023 and that the two sides discussed cooperation, particularly the Tropicana Industrial Park, with an intention to sign a memorandum of cooperation in the future.
+Both states are retained:
+1. project operating role: strategic mobilisation/export-enablement partner;
+2. legal/contractual evidence state: open until the executed controlling instrument is archived.
 
-### Global Halal project position
+## Authority Boundary
+CODA does not create Halal certification authority and does not substitute for JAKIM/MAIN/JAIN, destination GCC authorities, recognised certification bodies or sovereign government agencies.
 
-For the Global Halal Digital Trust Ecosystem, CODA should be treated as a **strategic institutional-development and China market-access partner candidate** unless and until a signed instrument establishes a different legal status.
+## Integration Points
+- enterprise mobilisation;
+- manufacturer/producer qualification coordination;
+- laboratory-evidence coordination;
+- Halal readiness onboarding;
+- digital-trust onboarding;
+- institutional/government-facing introductions subject to actual mandate.
 
-The proposed role is to help connect the ecosystem with Chinese industrial, investment, government-facing and overseas-development networks, while preserving Malaysian/JAKIM regulatory sovereignty and Chinese institutional sovereignty.
+## Contractual Basis
+`[OPEN GATE: CONTRACTUAL BASIS — owner: Project + CODA — blocking: Enterprise Mobilisation/Qualification]`
 
-## Important status rule
+## Contact
+`[OPEN GATE: PARTNER CONTACT REGISTER — owner: Project — blocking: Coordination]`
 
-This repository must distinguish between:
+## Open Gates
+- executed/controlling partnership instrument;
+- programme eligibility;
+- exact institutional mandate;
+- funding authority;
+- named authorised contacts;
+- commercial terms, if any.
 
-1. **Publicly verified CODA facts**;
-2. **Proposed strategic-partnership terms**;
-3. **Negotiated MoU terms**; and
-4. **Executed contractual commitments**.
+## Materials Checklist
+- [ ] Executed partnership/MoU/controlling instrument
+- [ ] Authorised contact register
+- [ ] Institutional mandate/scope document
+- [ ] Programme eligibility criteria
+- [ ] Funding authority/evidence where applicable
+- [ ] Commercial terms/fee model where applicable
+- [ ] Data/API integration requirements
 
-No proposed term is to be represented publicly as an executed agreement until the signed instrument is available.
-
-## Proposed strategic partnership architecture
-
-The partnership concept discussed for this programme is intended to support:
-
-- China–Malaysia institutional cooperation;
-- China manufacturer and producer onboarding;
-- China laboratory and supply-chain participation;
-- access to Chinese industrial networks;
-- international market expansion;
-- government and institutional introductions;
-- investment and commercial development;
-- trusted digital trade infrastructure;
-- Global Halal Digital Trust Ecosystem deployment in China and internationally.
-
-### Sovereignty principle
-
-CODA participation does **not** transfer Malaysian regulatory authority to CODA and does **not** transfer Chinese governmental authority to Global Halal. Each participating jurisdiction retains its sovereign authority.
-
-### Technology principle
-
-CODA should participate through interoperable APIs, controlled data exchange and approved institutional workflows. It should not require participating organizations to abandon existing systems.
-
-### Commercial principle
-
-Any commercial participation, revenue sharing, referral economics, platform fees, investment arrangements, branding rights or market-development incentives must be documented in the definitive agreement and approved by the relevant parties.
-
-## MoU workstreams
-
-A definitive MoU package should cover at least:
-
-1. Parties and legal capacity;
-2. purpose and strategic objectives;
-3. scope of cooperation;
-4. China market-development role;
-5. Global Halal platform role;
-6. government/institutional engagement;
-7. manufacturer and producer onboarding;
-8. laboratory and scientific-evidence integration;
-9. logistics and supply-chain integration;
-10. digital identity and trust infrastructure;
-11. API/data interoperability;
-12. data sovereignty and confidentiality;
-13. cybersecurity;
-14. intellectual property;
-15. branding and marks;
-16. commercial model;
-17. investment/funding principles;
-18. governance and steering committee;
-19. KPIs and reporting;
-20. pilot implementation;
-21. publicity and communications;
-22. compliance and anti-corruption requirements;
-23. term and termination;
-24. dispute-resolution mechanism; and
-25. non-binding/binding provisions.
-
-## Evidence status
-
-The project team should obtain the actual CODA correspondence, meeting notes, draft MoU, term sheet or signed instrument that formed the basis of the detailed partnership discussion before populating names, financial percentages, exclusivity, ownership, board seats or other legally material terms.
-
-**Status:** Strategic partnership framework — proposed / to be documented.
+## Governance Rule
+Publicly verified CODA facts, project role designations, negotiated terms and executed commitments must remain distinct evidence states. No proposed or user-designated project role may be represented as an executed legal commitment without documentary evidence.
