@@ -20,6 +20,23 @@ Canonical path:
 
 The platform architecture includes the compliance knowledge graph, HCP/SCCP engine, Evidence Fabric, Digital Audit Twin, laboratory evidence layer, authority gates, physical/digital identity binding, Global Trust Graph, supply-chain execution, port/border verification, recall/exception engine, partner APIs, smart-glass audit support and stakeholder verification views.
 
+## Executive command and doctrine layer
+
+The live repository command layer is maintained in `00_EXECUTIVE_COMMAND/`:
+
+- `00_EXECUTIVE_COMMAND/ABSOLUTE_MODE_SYSTEM_INSTRUCTION_v14.1.md` - current source/authority/canonical-path/flag operating instruction;
+- `00_EXECUTIVE_COMMAND/IQ300_DOCTRINE.md` - complete operational doctrine v3.1, including port/border and corridor integration;
+- `00_EXECUTIVE_COMMAND/live-source-registry.json` - controlled authority and canonical retrieval endpoints;
+- `00_EXECUTIVE_COMMAND/partner-registry.json` - project-designated partner roles with contractual/evidence gates;
+- `00_EXECUTIVE_COMMAND/port-authority-registry.json` - China/GCC port-customs authority references;
+- `00_EXECUTIVE_COMMAND/corridor-registry.json` - China -> GCC direct five-segment corridor model;
+- `00_EXECUTIVE_COMMAND/trust-packet-schemas.json` and `schema-registry.json` - machine-readable trust/evidence schema layer;
+- `00_EXECUTIVE_COMMAND/commit-tag-taxonomy.json` - repository synchronization trigger taxonomy;
+- `00_EXECUTIVE_COMMAND/project-file-curation.json` - curated Project-source strategy with PROJECT-REPO fallback;
+- `00_EXECUTIVE_COMMAND/REPOSITORY_COMPLETION_AUDIT_2026-09-18.md` - current chat-to-repository completion audit.
+
+The controlled standards freeze remains `master-standards-stack/verified-2026-09-17/`. Post-freeze command, port, corridor and partner artifacts do not rewrite the frozen standards package.
+
 ## Canonical verified package - 17 September 2026
 
 The current controlled compliance/market-validation baseline is:
@@ -124,6 +141,19 @@ A manufacturer/SKU cannot become `SHIPMENT-001-ELIGIBLE` until the following cha
 
 `legal entity -> factory -> SKU/formula -> current halal certificate + issuer/scope/validity -> destination issuer recognition/halal rules -> label/product/import registration -> importer/buyer -> commercial terms/PO -> pilot batch -> logistics qualification -> container/seal -> custody/telemetry -> border release -> receiving verification`.
 
+### Current corridor / partner expansion
+
+The repository now also contains:
+
+- `deliverables/26_GCC_IMPORTER_BUYER_ENGAGEMENT_PROTOCOL_2026.md`;
+- `deliverables/29_GLOBAL_PORT_AUTHORITIES_PROTOCOL_2026.md`;
+- `partners/coda/README.md`;
+- `partners/china-food-security-lab/README.md`;
+- `partners/china-merchant/README.md`;
+- `partners/sinotrans/README.md`.
+
+Partner operating-role designations are kept distinct from executed contractual status. Contractual basis, accreditation, exact route/facility qualification, importer/buyer evidence and transaction events remain explicit external/transaction gates until evidenced.
+
 ## Governance boundary
 
 Malaysian Standards are technical normative instruments. Malaysia Halal certification decisions remain with the competent Halal authority under the applicable certification/legal framework. Destination import and halal decisions remain with the relevant GCC authority and importer/regulatory process.
@@ -141,11 +171,17 @@ Analytical evidence is purpose-limited: a `not detected` PCR/qPCR result does no
 - Secondary reports are source-adjudicated before their claims are promoted into controls.
 - Historical evidence remains attached to the source version applicable at the event date.
 
-## Project status - 17 September 2026
+## Project status - 18 September 2026 repository audit
 
-The repository is **documentation-complete and gap-accounted for the controlled 17 September 2026 snapshot** across standards, JAKIM operating controls, audit/evidence, sertu/stunning, najs/contamination, factory transformation, China manufacturer screening, GCC entry architecture, manufacturer economics, logistics/Shipment 001 controls and A-Z project governance.
+The frozen standards baseline remains **17 September 2026**. The live repository has additionally completed and indexed the executive-command, doctrine/registry, importer/buyer, port/corridor and partner-folder expansion.
 
-External evidence that does not yet exist or is held by third parties remains explicitly gated: licensed non-supplied normative texts, official source for the reported 2026 JAKIM amendments, manufacturer private dossiers/certificates, importer/product approvals, buyer commitments, contracts/POs, live laboratory results, partner sign-offs and actual Shipment 001 events.
+Current completion audit:
+
+`00_EXECUTIVE_COMMAND/REPOSITORY_COMPLETION_AUDIT_2026-09-18.md`
+
+Repository state is **documentation-complete and gap-accounted** across standards, JAKIM operating controls, audit/evidence, sertu/stunning, najs/contamination, factory transformation, China manufacturer screening, GCC entry architecture, importer/buyer engagement, port/border governance, manufacturer economics, logistics/Shipment 001 controls, partner evidence boundaries and A-Z project governance.
+
+External evidence that does not yet exist or is held by third parties remains explicitly gated: licensed non-supplied normative texts, official source for the reported 2026 JAKIM amendments, manufacturer private dossiers/certificates, importer/product approvals, buyer commitments, partner contracts, POs, live laboratory results/accreditation evidence, route/facility qualification and actual Shipment 001 events.
 
 ## IQ300 doctrine
 
