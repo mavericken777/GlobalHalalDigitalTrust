@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "artifact": "port-authority-registry.json",
+  "version": "1.1.0",
+  "control_date": "2026-09-17",
+  "freeze_boundary": "master-standards-stack/verified-2026-09-17/",
+  "description": "Port/customs authority references for the China-GCC direct pilot. Consult before corridor clearance/release activity.",
+  "authority_boundary": "Port/customs authorities operate under sovereign mandates. AHTE does not issue, modify or substitute official clearance, release or Halal certification decisions.",
+  "origin_ports": {
+    "china": [
+      {
+        "id": "china-origin-port-tbd",
+        "name": "To be determined per Shipment 001",
+        "country": "China",
+        "competent_authority": "General Administration of Customs of the People's Republic of China (GACC)",
+        "competent_authority_url": "http://www.customs.gov.cn/",
+        "class": "authority_primary",
+        "status": "EXTERNAL-GATE",
+        "evidence_required": ["Port capability confirmation", "Halal-compatible handling capability if required", "Export process documentation", "Terminal cut-off times", "Coordination with Sinotrans"],
+        "open_gates": ["Specific origin port selection per shipment"]
+      }
+    ]
+  },
+  "destination_ports": {
+    "saudi_arabia": [
+      {
+        "id": "saudi-destination-port-tbd",
+        "name": "To be determined per Shipment 001",
+        "country": "Saudi Arabia",
+        "competent_authority": "Zakat, Tax and Customs Authority (ZATCA) + SFDA",
+        "competent_authority_urls": ["https://zatca.gov.sa/en/Pages/default.aspx", "https://www.sfda.gov.sa/en"],
+        "class": "authority_primary",
+        "status": "EXTERNAL-GATE",
+        "evidence_required": ["SFDA import registration", "Arabic labelling compliance where applicable", "Halal certificate requirement check for applicable product", "Customs clearance documentation", "Inspection/sampling readiness"],
+        "open_gates": ["Specific destination port selection", "Per-category SFDA inspection requirements"]
+      }
+    ],
+    "uae": [
+      {
+        "id": "uae-destination-port-tbd",
+        "name": "To be determined per Shipment 001",
+        "country": "United Arab Emirates",
+        "competent_authority": "Federal Authority for Identity, Citizenship, Customs & Port Security (ICP) + MoIAT + emirate-level customs",
+        "competent_authority_urls": ["https://icp.gov.ae/en/about-icp/uae-customs-en/", "https://www.moiat.gov.ae/en"],
+        "class": "authority_primary",
+        "status": "EXTERNAL-GATE",
+        "evidence_required": ["MoIAT Halal programme conformance as applicable", "Applicable UAE/GSO standards", "Customs clearance documentation", "Emirate-level import procedures"],
+        "open_gates": ["Specific destination port selection", "Emirate-specific procedures"]
+      }
+    ],
+    "other_gcc": [
+      {
+        "id": "gcc-other-port-tbd",
+        "name": "To be determined per scoping",
+        "country": "GCC member state as scoped",
+        "competent_authority": "To be confirmed per destination",
+        "class": "authority_primary",
+        "status": "EXTERNAL-GATE",
+        "evidence_required": ["National customs rules", "National standards and Halal recognition rules"],
+        "open_gates": ["Destination country selection", "National authority confirmation"]
+      }
+    ]
+  },
+  "document_set_reference": {
+    "origin": ["Commercial invoice", "Packing list", "Certificate of origin", "Export declaration", "Bill of lading draft/final", "Halal certificate copy where required", "Phytosanitary certificate if applicable", "Health certificate if applicable", "Container stuffing record"],
+    "destination": ["Bill of lading", "Import declaration", "Import licence/registration", "Inspection/sampling results", "Border release/clearance", "Goods receipt", "Condition report"]
+  },
+  "exception_codes": ["ORIGIN HOLD", "DESTINATION HOLD", "SEAL BREACH", "TELEMETRY EXCURSION", "DOCUMENT DISCREPANCY", "DAMAGE"],
+  "time_standards": {
+    "documentation_preparation": "T-14 to T-7 days",
+    "container_stuffing": "T-5 to T-3 days",
+    "origin_clearance": "T-3 to T-1 days",
+    "vessel_loading": "T-0",
+    "destination_arrival_to_inspection": "0 to 72 hours advisory",
+    "inspection_to_release": "Per authority",
+    "release_to_goods_receipt": "24 to 72 hours advisory",
+    "note": "Internal planning targets only; authority decisions and carrier schedules control actual timing."
+  }
+}
