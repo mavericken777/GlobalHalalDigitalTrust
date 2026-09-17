@@ -42,6 +42,7 @@ A row is complete only when the source status is known. Where a licensed standar
 - `12_MANUFACTURER_ECONOMIC_AND_MARKET_DECISION_MODEL.md` - readiness, cost stack, NPV/payback, scenario, funding and commercial decision framework using evidence-backed inputs.
 - `13_NAJS_CONTAMINATION_AND_RELEASE_DECISION_MODEL.md` - najs/contamination classification, containment, cleaning/sertu linkage, re-verification and release model.
 - `14_HALAL_BUILT_IN_RETROFIT_FACTORY_TRANSFORMATION_MODEL.md` - Halal Built-In vs existing-factory retrofit transformation, change control and [PILOT: Shipment 001] qualification path.
+- `15_POST_PDF_INGESTION_INTEGRITY_AUDIT.md` - final post-ingestion repository/source/conflict/routing/Shipment 001 integrity audit.
 - `MANIFEST.json` - machine-readable package index and source-depth declaration.
 
 ## Standards covered
