@@ -7,9 +7,9 @@
 
 ## Purpose
 
-This folder is the controlled 17 September 2026 consolidation point for the project's Malaysian Halal standards intelligence, JAKIM certification operating layer, technical control maps, sertu/stunning linkage, audit evidence model, China manufacturer screening and GCC market-entry controls.
+This folder is the controlled 17 September 2026 consolidation point for the project's Malaysian Halal standards intelligence, JAKIM certification operating layer, technical control maps, sertu/stunning linkage, audit evidence model, China manufacturer screening, GCC market-entry controls and the deep-dive ingestion of the two user-supplied 74-page/48-page reference PDFs.
 
-It does not reproduce licensed Malaysian Standards. It converts publicly verifiable clause headings, supplied licensed MS 2400 source files, JAKIM operating instruments and current regulator information into operational controls, evidence requirements, audit tests, digital objects, authority gates and external evidence gates.
+It does not reproduce licensed Malaysian Standards. It converts publicly verifiable clause headings, supplied licensed MS 2400 source files, JAKIM operating instruments, current regulator information and source-adjudicated secondary material into operational controls, evidence requirements, audit tests, digital objects, authority gates and external evidence gates.
 
 ## Source hierarchy
 
@@ -17,7 +17,8 @@ It does not reproduce licensed Malaysian Standards. It converts publicly verifia
 2. **National standards authority:** Department of Standards Malaysia / MySOL current published standard records and previews.
 3. **Licensed project corpus:** supplied MS 2400-1:2019, MS 2400-2:2019 and MS 2400-3:2019 copies; project-supplied halal audit and awareness training.
 4. **Destination regulators:** Saudi Food and Drug Authority, Saudi Halal Center, UAE MoIAT and applicable GCC/UAE/Saudi rules.
-5. **Primary commercial claims:** manufacturer-owned websites; treated only as supplier-screening evidence until documents are independently verified.
+5. **User-supplied secondary references:** `compliance_manual.pdf` and `market_validation.pdf`, accepted only for claims/structures that survive source reconciliation.
+6. **Primary commercial claims:** manufacturer-owned websites; treated only as supplier-screening evidence until documents are independently verified.
 
 ## Completion model
 
@@ -27,7 +28,7 @@ A row is complete only when the source status is known. Where a licensed standar
 
 ## Package contents
 
-- `01_MASTER_CATALOGUE_REVISION_REGISTER.md` - current catalogue, revision/supersession history, confirmation status and role.
+- `01_MASTER_CATALOGUE_REVISION_REGISTER.md` - current 17-standard catalogue, revision/supersession history, confirmation status and role.
 - `02_JAKIM_MPPHM2020_MHMS2020_CONTROL_MANUAL.md` - certification operating layer, MPPHM 2020 procedure map, MHMS/HAS/IHCS, 2025-2026 digital overlays.
 - `03_ALL_MS_CLAUSE_CONTROL_EVIDENCE_MANUAL.md` - standard-by-standard clause/control/evidence/audit/authority mapping for the full project catalogue.
 - `04_SERTU_STUNNING_PROTOCOL_LINKAGE.md` - cross-standard sertu architecture and MS 1500/slaughter/stunning/protocol precedence.
@@ -35,7 +36,13 @@ A row is complete only when the source status is known. Where a licensed standar
 - `06_CHINA_GCC_MANUFACTURER_MARKET_VALIDATION.md` - ten-manufacturer public-evidence validation, GCC entry gates and Shipment 001 qualification model.
 - `07_AZ_COMPLETION_EXTERNAL_GATE_REGISTER.md` - end-to-end completion audit, external dependencies and non-fabrication gates.
 - `08_SOURCE_VERIFICATION_REGISTER.md` - official URLs, supplied sources and verification notes.
-- `MANIFEST.json` - machine-readable package index.
+- `09_REPOSITORY_INTEGRITY_AUDIT.md` - pre-PDF-ingestion integrity baseline and corridor correction record.
+- `10_ATTACHED_PDF_DEEP_DIVE_RECONCILIATION.md` - 74-page compliance + 48-page market report ingestion, claim adjudication, conflicts and accepted/rejected content.
+- `11_AUDIT_CLOSURE_TRACEABILITY_GOVERNANCE_MODEL.md` - governance, document hierarchy, supplier assurance, traceability, recall, change control and Digital Audit Twin closure model.
+- `12_MANUFACTURER_ECONOMIC_AND_MARKET_DECISION_MODEL.md` - readiness, cost stack, NPV/payback, scenario, funding and commercial decision framework using evidence-backed inputs.
+- `13_NAJS_CONTAMINATION_AND_RELEASE_DECISION_MODEL.md` - najs/contamination classification, containment, cleaning/sertu linkage, re-verification and release model.
+- `14_HALAL_BUILT_IN_RETROFIT_FACTORY_TRANSFORMATION_MODEL.md` - Halal Built-In vs existing-factory retrofit transformation, change control and [PILOT: Shipment 001] qualification path.
+- `MANIFEST.json` - machine-readable package index and source-depth declaration.
 
 ## Standards covered
 
@@ -57,6 +64,23 @@ A row is complete only when the source status is known. Where a licensed standar
 16. MS 2809:2025 - Authentication of products using chemometric techniques
 17. MS 2810:2025 - Consumable goods - Test method - Identification of pig skin and hair
 
+## Attached-PDF adjudication
+
+The new PDFs are retained as secondary evidence sources, not controlling authority text.
+
+- `compliance_manual.pdf` - 74 pages; SHA-256 `3cd4d9ac0ba99adcff98be7860f2a008bd1c6cc31ec99a4069e9e5784f70dc10`.
+- `market_validation.pdf` - 48 pages; SHA-256 `5aeff302514c9486fe829f14dfd7d46c0633894a396628cfd43f3da6ff01e9cc`.
+
+Material corrections locked by the ingestion:
+
+- the PDFs' 14-standard universe does not replace the repository's current 17-standard operating set;
+- the compliance PDF's MS 2400 clause structure is rejected where it conflicts with the 613 source-backed objects from the project-held MS 2400 PDFs;
+- `76 MRA partners` is not used as an automatic market-access rule;
+- `23 days` is not used as a guaranteed JAKIM certification SLA;
+- `myHID` is not introduced as the current production system name; MYeHALAL remains the current reference;
+- fixed ROI/payback/revenue-uplift/grant-capture figures remain scenario assumptions unless evidenced;
+- generic recall/retention/committee frequencies from secondary material do not become mandatory rules without primary-source support.
+
 ## Non-negotiable authority boundaries
 
 - JAKIM/JAIN/MAIN certification decisions are not replaced by AHTE, AI, laboratory results, blockchain, QR/NFC/RFID, manufacturer declarations or audit-support tooling.
@@ -73,6 +97,10 @@ The repository treats the following as current operational overlays as of the co
 - MyHALALINGREDIENTS took effect on 15 August 2025 and is integrated with MYeHALAL for raw-material data collection/evaluation.
 - Malaysia Halal e-Certificate implementation began on 5 May 2025 for approved applications under the announced scope.
 - JAKIM continues to use the Malaysian Protocol for Halal Meat and Poultry Production with applicable Malaysian Standards for overseas slaughterhouse/processing audit contexts.
+
+[OPEN GATE: PRIMARY SOURCE FOR MPPHM 2020 PINDAAN 2026 - owner: JAKIM - blocking: exact 2026 amendment text/retention/first-application/training/IHCS rules]
+
+The uploaded PDFs report 2026 amendments. Those details remain `SECONDARY-VERIFIED / PRIMARY-SOURCE-LOCK` until the official circular is archived and reconciled.
 
 ## Production freeze rule
 
