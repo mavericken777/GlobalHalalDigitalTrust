@@ -68,6 +68,14 @@
     "retail_signal": "Saudi current packaged/canned-food category presence used as a screening signal, not a market-size forecast",
     "shipment_001_status": "architecture and evidence gates complete; transaction not instantiated until external evidence exists"
   },
+  "repository_integrity": {
+    "root_readme_synchronized": true,
+    "master_standards_readme_synchronized": true,
+    "physical_corridor_corrected": "CHINA-GCC-DIRECT",
+    "todo_index_results": 0,
+    "tbd_index_results": 0,
+    "integrity_audit_file": "09_REPOSITORY_INTEGRITY_AUDIT.md"
+  },
   "files": [
     "00_README.md",
     "01_MASTER_CATALOGUE_REVISION_REGISTER.md",
@@ -78,6 +86,7 @@
     "06_CHINA_GCC_MANUFACTURER_MARKET_VALIDATION.md",
     "07_AZ_COMPLETION_EXTERNAL_GATE_REGISTER.md",
     "08_SOURCE_VERIFICATION_REGISTER.md",
+    "09_REPOSITORY_INTEGRITY_AUDIT.md",
     "MANIFEST.json"
   ],
   "production_freeze_rule": "Recheck current JAKIM/JAIN/MAIN, Department of Standards Malaysia/MySOL, destination regulator, certificate issuer/recognition, product/import and transaction sources immediately before operational reliance.",
