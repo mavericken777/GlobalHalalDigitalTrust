@@ -28,7 +28,7 @@ The current controlled compliance/market-validation baseline is:
 
 Contents:
 
-- `00_README.md` - package scope, authority boundary and completion semantics
+- `00_README.md` - package scope, authority boundary, PDF-ingestion status and completion semantics
 - `01_MASTER_CATALOGUE_REVISION_REGISTER.md` - full 17-standard catalogue, revision/confirmation/supersession control
 - `02_JAKIM_MPPHM2020_MHMS2020_CONTROL_MANUAL.md` - all 71 MPPHM 2020 procedure headings mapped to controls/evidence/gates; MHMS HAS/IHCS; e-Cert and MyHALALINGREDIENTS overlays
 - `03_ALL_MS_CLAUSE_CONTROL_EVIDENCE_MANUAL.md` - standard-by-standard clause/control/evidence/audit mappings for the entire project catalogue
@@ -36,10 +36,35 @@ Contents:
 - `05_AUDIT_EVIDENCE_AUTHORITY_TEST_LIBRARY.md` - audit tests, evidence classes, NCR/CAR/re-verification, Digital Audit Twin and authority gates
 - `06_CHINA_GCC_MANUFACTURER_MARKET_VALIDATION.md` - ten-manufacturer China -> GCC public-evidence validation and Shipment 001 qualification model
 - `07_AZ_COMPLETION_EXTERNAL_GATE_REGISTER.md` - A-Z completion audit and explicit source/external/transaction/engineering gates
-- `08_SOURCE_VERIFICATION_REGISTER.md` - authoritative source hierarchy and live-source verification rules
+- `08_SOURCE_VERIFICATION_REGISTER.md` - authoritative source hierarchy, uploaded-source hashes and source-conflict rules
+- `09_REPOSITORY_INTEGRITY_AUDIT.md` - pre-ingestion repository integrity baseline
+- `10_ATTACHED_PDF_DEEP_DIVE_RECONCILIATION.md` - deep reconciliation of the 74-page compliance manual and 48-page market-validation report
+- `11_AUDIT_CLOSURE_TRACEABILITY_GOVERNANCE_MODEL.md` - governance, document hierarchy, supplier assurance, traceability, recall, change control and Digital Audit Twin closure
+- `12_MANUFACTURER_ECONOMIC_AND_MARKET_DECISION_MODEL.md` - evidence-backed readiness, cost, NPV/payback, scenario and commercial-decision framework
+- `13_NAJS_CONTAMINATION_AND_RELEASE_DECISION_MODEL.md` - najs/contamination containment, classification, cleaning/sertu, re-verification and release
+- `14_HALAL_BUILT_IN_RETROFIT_FACTORY_TRANSFORMATION_MODEL.md` - new-factory Halal Built-In versus retrofit transformation and Shipment 001 readiness
 - `MANIFEST.json` - machine-readable package declaration
 
 **Completion semantics:** `100% complete` means every required workstream is evidence-accounted. It does not mean that unavailable licensed clauses, certificates, importer approvals, contracts, regulatory decisions or shipment events have been invented.
+
+## Attached PDF deep-dive
+
+The latest source-ingestion pass analysed:
+
+- `compliance_manual.pdf` - 74 pages; secondary compliance/reference source;
+- `market_validation.pdf` - 48 pages; secondary market/economics source.
+
+The useful material has been integrated, while source conflicts were prevented from contaminating production controls.
+
+Critical adjudications now frozen in the repository:
+
+- the project retains its current **17-standard** operating set rather than the PDFs' 14-standard framing;
+- the **613 source-backed MS 2400 requirement objects** override the compliance PDF's conflicting generic MS 2400 clause map;
+- MYeHALAL remains the current production-system reference; `myHID` from the PDF is not promoted;
+- JAKIM FHCB recognition is not treated as automatic market access or a generic MRA unlock;
+- `23 days` is not treated as a guaranteed certification SLA;
+- fixed ROI, payback, revenue uplift, grant capture, recall threshold and supplier-transition percentages remain model assumptions/internal KPIs unless supported by a competent source or actual project evidence;
+- detailed `MPPHM 2020 Pindaan 2026` claims remain behind an explicit primary-source gate until the official JAKIM instrument is archived.
 
 ## IQ300 Master Standards Stack
 
@@ -84,7 +109,11 @@ Current digital overlays included in the package:
 - Malaysia Halal e-Certificate implementation announced from 5 May 2025 for approved applications within JAKIM/MAIN/JAIN scope;
 - MyHALALINGREDIENTS effective 15 August 2025 and integrated with MYeHALAL for raw-material data collection/evaluation.
 
+[OPEN GATE: PRIMARY SOURCE FOR MPPHM 2020 PINDAAN 2026 - owner: JAKIM - blocking: exact amendment text and applicability]
+
 ## China -> GCC direct pilot
+
+[PILOT: Shipment 001]
 
 The physical pilot architecture is **China -> GCC direct**.
 
@@ -108,13 +137,14 @@ Analytical evidence is purpose-limited: a `not detected` PCR/qPCR result does no
 - Licensed Malaysian Standards normative text is not redistributed in this repository.
 - Where the project does not hold a licensed current normative text, exact unavailable subclauses are marked `SOURCE-LOCKED` rather than fabricated.
 - Public manufacturer websites are E1 screening evidence, not final certification/commercial evidence.
+- Secondary reports are source-adjudicated before their claims are promoted into controls.
 - Historical evidence remains attached to the source version applicable at the event date.
 
 ## Project status - 17 September 2026
 
-The repository is **documentation-complete and gap-accounted for the controlled 17 September 2026 snapshot** across standards, JAKIM operating controls, audit/evidence, sertu/stunning, China manufacturer screening, GCC entry architecture, logistics/Shipment 001 controls and A-Z project governance.
+The repository is **documentation-complete and gap-accounted for the controlled 17 September 2026 snapshot** across standards, JAKIM operating controls, audit/evidence, sertu/stunning, najs/contamination, factory transformation, China manufacturer screening, GCC entry architecture, manufacturer economics, logistics/Shipment 001 controls and A-Z project governance.
 
-External evidence that does not yet exist or is held by third parties remains explicitly gated: licensed non-supplied normative texts, manufacturer private dossiers/certificates, importer/product approvals, buyer commitments, contracts/POs, live laboratory results, partner sign-offs and actual Shipment 001 events.
+External evidence that does not yet exist or is held by third parties remains explicitly gated: licensed non-supplied normative texts, official source for the reported 2026 JAKIM amendments, manufacturer private dossiers/certificates, importer/product approvals, buyer commitments, contracts/POs, live laboratory results, partner sign-offs and actual Shipment 001 events.
 
 ## IQ300 doctrine
 
