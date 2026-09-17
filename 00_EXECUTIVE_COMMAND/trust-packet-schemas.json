@@ -1,0 +1,151 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "artifact": "trust-packet-schemas.json",
+  "version": "1.1.0",
+  "control_date": "2026-09-17",
+  "description": "JSON Schema registry for AHTE trust-packet components",
+  "schemas": {
+    "identity_object": {
+      "$id": "schema/trust-packet/identity.json",
+      "type": "object",
+      "required": ["legal_entity", "factory", "sku", "batch"],
+      "properties": {
+        "legal_entity": {"type": "string"},
+        "factory": {"type": "string"},
+        "sku": {"type": "string"},
+        "batch": {"type": "string"},
+        "pallet": {"type": "string"},
+        "container": {"type": "string"},
+        "identifiers": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "certificate_object": {
+      "$id": "schema/trust-packet/certificate.json",
+      "type": "object",
+      "required": ["issuer", "scope", "validity_from", "validity_to"],
+      "properties": {
+        "issuer": {"type": "string"},
+        "certificate_number": {"type": "string"},
+        "scope": {"type": "string"},
+        "validity_from": {"type": "string", "format": "date"},
+        "validity_to": {"type": "string", "format": "date"},
+        "status": {"type": "string", "enum": ["active", "expired", "suspended", "contested"]}
+      }
+    },
+    "evidence_object": {
+      "$id": "schema/trust-packet/evidence.json",
+      "type": "object",
+      "required": ["source", "hash_sha256_first_12", "retrieval_timestamp", "class"],
+      "properties": {
+        "source": {"type": "string", "format": "uri"},
+        "hash_sha256_first_12": {"type": "string", "pattern": "^[A-Fa-f0-9]{12}$"},
+        "retrieval_timestamp": {"type": "string", "format": "date-time"},
+        "class": {"type": "string", "enum": ["E1", "E2", "E3", "E4", "E5"]},
+        "method": {"type": "string", "enum": ["scrape", "crawl", "search", "extract", "repository_fetch"]},
+        "connector": {"type": "string"},
+        "http_status": {"type": "integer"}
+      }
+    },
+    "custody_object": {
+      "$id": "schema/trust-packet/custody.json",
+      "type": "object",
+      "required": ["custodian", "timestamp", "seal_id"],
+      "properties": {
+        "custodian": {"type": "string"},
+        "timestamp": {"type": "string", "format": "date-time"},
+        "seal_id": {"type": "string"},
+        "telemetry": {"type": "object"},
+        "location": {"type": "object"}
+      }
+    },
+    "audit_object": {
+      "$id": "schema/trust-packet/audit.json",
+      "type": "object",
+      "required": ["audit_test", "finding"],
+      "properties": {
+        "audit_test": {"type": "string"},
+        "finding": {"type": "string", "enum": ["conformity", "non_conformity", "observation"]},
+        "corrective_action": {"type": ["string", "null"]},
+        "re_verification": {"type": ["string", "null"]},
+        "ncr_reference": {"type": "string"}
+      }
+    },
+    "authority_gate_object": {
+      "$id": "schema/trust-packet/authority-gate.json",
+      "type": "object",
+      "required": ["owner", "decision_point", "status"],
+      "properties": {
+        "owner": {"type": "string"},
+        "decision_point": {"type": "string"},
+        "status": {"type": "string", "enum": ["pending", "approved", "rejected", "deferred"]},
+        "decision_timestamp": {"type": "string", "format": "date-time"}
+      }
+    },
+    "trust_state_object": {
+      "$id": "schema/trust-packet/trust-state.json",
+      "type": "object",
+      "required": ["state", "derived_from"],
+      "properties": {
+        "state": {"type": "string", "enum": ["verified", "unverified", "expired", "contested"]},
+        "derived_from": {"type": "array", "items": {"type": "string"}},
+        "authority_boundary_note": {"type": "string"}
+      }
+    },
+    "port_custody_object": {
+      "$id": "schema/trust-packet/port-custody.json",
+      "type": "object",
+      "required": ["port", "authority", "event_type", "timestamp"],
+      "properties": {
+        "port": {"type": "string"},
+        "authority": {"type": "string"},
+        "event_type": {"type": "string", "enum": ["stuffing", "seal_application", "origin_clearance", "loading", "arrival", "inspection", "sampling", "release", "goods_receipt"]},
+        "timestamp": {"type": "string", "format": "date-time"},
+        "document_reference": {"type": "string"},
+        "seal_id": {"type": "string"},
+        "condition": {"type": "string"}
+      }
+    },
+    "evidence_chain": {
+      "$id": "schema/evidence-chain.json",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["path_point", "evidence_class", "artifact", "status"],
+        "properties": {
+          "path_point": {"type": "string"},
+          "evidence_class": {"type": "string", "enum": ["E1", "E2", "E3", "E4", "E5"]},
+          "artifact": {"type": "string"},
+          "status": {"type": "string", "enum": ["DOC-COMPLETE", "SOURCE-VERIFIED", "SOURCE-LOCKED", "EXTERNAL-GATE", "TRANSACTION-GATE", "ENGINEERING-GATE"]}
+        }
+      }
+    },
+    "standard_mapping": {
+      "$id": "schema/standard-mapping.json",
+      "type": "object",
+      "required": ["standard", "clause", "control", "hcp_sccp", "audit_test"],
+      "properties": {
+        "standard": {"type": "string"},
+        "clause": {"type": "string"},
+        "control": {"type": "string"},
+        "hcp_sccp": {"type": "string"},
+        "audit_test": {"type": "string"},
+        "evidence_required": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "trust_packet": {
+      "$id": "schema/trust-packet.json",
+      "type": "object",
+      "required": ["identity", "certificate", "evidence", "custody", "audit", "authority_gate", "trust_state"],
+      "properties": {
+        "identity": {"$ref": "schema/trust-packet/identity.json"},
+        "certificate": {"$ref": "schema/trust-packet/certificate.json"},
+        "evidence": {"$ref": "schema/trust-packet/evidence.json"},
+        "custody": {"$ref": "schema/trust-packet/custody.json"},
+        "port_custody": {"$ref": "schema/trust-packet/port-custody.json"},
+        "audit": {"$ref": "schema/trust-packet/audit.json"},
+        "authority_gate": {"$ref": "schema/trust-packet/authority-gate.json"},
+        "trust_state": {"$ref": "schema/trust-packet/trust-state.json"}
+      }
+    }
+  }
+}
