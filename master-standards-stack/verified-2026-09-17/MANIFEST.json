@@ -96,10 +96,13 @@
   "repository_integrity": {
     "root_readme_synchronized": true,
     "master_standards_readme_synchronized": true,
+    "verified_package_readme_synchronized": true,
+    "source_register_synchronized": true,
     "physical_corridor_corrected": "CHINA-GCC-DIRECT",
-    "todo_index_results": 0,
-    "tbd_index_results": 0,
-    "pre_ingestion_integrity_audit_file": "09_REPOSITORY_INTEGRITY_AUDIT.md"
+    "todo_index_results_active_tasks": 0,
+    "tbd_index_results_active_tasks": 0,
+    "pre_ingestion_integrity_audit_file": "09_REPOSITORY_INTEGRITY_AUDIT.md",
+    "post_ingestion_integrity_audit_file": "15_POST_PDF_INGESTION_INTEGRITY_AUDIT.md"
   },
   "files": [
     "00_README.md",
@@ -117,6 +120,7 @@
     "12_MANUFACTURER_ECONOMIC_AND_MARKET_DECISION_MODEL.md",
     "13_NAJS_CONTAMINATION_AND_RELEASE_DECISION_MODEL.md",
     "14_HALAL_BUILT_IN_RETROFIT_FACTORY_TRANSFORMATION_MODEL.md",
+    "15_POST_PDF_INGESTION_INTEGRITY_AUDIT.md",
     "MANIFEST.json"
   ],
   "open_gates": [
