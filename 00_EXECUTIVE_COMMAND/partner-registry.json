@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "artifact": "partner-registry.json",
+  "version": "1.1.0",
+  "control_date": "2026-09-17",
+  "description": "Project-designated ecosystem partner registry for the AHTE China-GCC corridor pilot. Project role designation is distinct from executed contractual status.",
+  "authority_boundary_affirmation": "No partner creates official Halal certification. Malaysia certification decisions remain with JAKIM/MAIN/JAIN; destination decisions remain with competent GCC authorities/importers.",
+  "partners": [
+    {
+      "id": "coda",
+      "name": "CODA",
+      "project_status": "project_designated_strategic_partner",
+      "contractual_status": "OPEN-GATE",
+      "role": "China Enterprise Mobilisation & Export Enablement Backbone",
+      "canonical_path_position": ["Enterprise mobilisation", "Qualification"],
+      "evidence_class": ["E1", "E2"],
+      "authority_boundary": "Does not create Halal certification authority or substitute for authority gates.",
+      "repository_path": "partners/coda/",
+      "source_conflict_note": "Existing repository public-source profile supported proposed/candidate partnership until executed documentary evidence is attached.",
+      "open_gates": ["Programme eligibility", "Institutional mandate", "Funding authority", "Executed/controlling partnership instrument"],
+      "integration_points": ["Enterprise mobilisation", "Qualification", "Laboratory evidence coordination", "Halal readiness", "Digital trust onboarding"]
+    },
+    {
+      "id": "china-food-security-lab",
+      "name": "China government food security laboratory",
+      "project_status": "project_designated_partner",
+      "contractual_status": "OPEN-GATE",
+      "role": "Analytical evidence generation",
+      "canonical_path_position": ["Evidence"],
+      "evidence_class": ["E3"],
+      "authority_boundary": "Does not create Halal certification. NOT DETECTED != HALAL. Evidence is purpose-limited.",
+      "repository_path": "partners/china-food-security-lab/",
+      "open_gates": ["Accreditation scope per test method", "Method validation status per test method", "GCC destination-market acceptance", "Contractual basis"],
+      "integration_points": ["Laboratory evidence generation", "E3 evidence production", "Analytical method execution"]
+    },
+    {
+      "id": "china-merchant",
+      "name": "China Merchant",
+      "project_status": "project_designated_strategic_partner",
+      "contractual_status": "OPEN-GATE",
+      "role": "China enterprise mobilisation and trade-enablement",
+      "canonical_path_position": ["Enterprise mobilisation", "Commercial terms"],
+      "evidence_class": ["E2", "E4"],
+      "authority_boundary": "Does not create Halal certification authority.",
+      "repository_path": "partners/china-merchant/",
+      "open_gates": ["Specific programme participation", "Commercial terms per transaction", "Contractual basis"],
+      "integration_points": ["Enterprise mobilisation", "Trade enablement", "Commercial terms negotiation", "Transaction facilitation"]
+    },
+    {
+      "id": "sinotrans",
+      "name": "Sinotrans",
+      "project_status": "project_designated_logistics_warehouse_partner",
+      "contractual_status": "OPEN-GATE",
+      "role": "Halal Trusted Logistics Corridor + Digital Evidence Node",
+      "canonical_path_position": ["Logistics qualification", "Custody", "Border release"],
+      "evidence_class": ["E4"],
+      "authority_boundary": "Does not create Halal certification authority.",
+      "repository_path": "partners/sinotrans/",
+      "open_gates": ["Route selection per shipment", "Carrier qualification per shipment", "Warehouse halal-specific qualification evidence per facility", "GCC receiving acceptance", "Contractual basis"],
+      "integration_points": ["Adapter/API integration with existing systems", "Custody/seal/telemetry evidence as E4", "Facility-specific storage segregation/control qualification"]
+    }
+  ],
+  "promotion_protocol": {
+    "trigger": "Any partner role expansion beyond current controlled scope",
+    "mechanism": "[PROMOTION: <partner> -> <doctrine artifact>]",
+    "review": "Canonical-path review with explicit supersession where applicable"
+  }
+}
