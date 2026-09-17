@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "artifact": "commit-tag-taxonomy.json",
+  "version": "1.1.0",
+  "control_date": "2026-09-17",
+  "description": "Machine-readable trigger system for repository-to-Project synchronization",
+  "tags": [
+    {"tag": "[DOCTRINE-CRITICAL]", "meaning": "Changes doctrine, flags, authority boundary or command layer", "action": "Regenerate IQ300_DOCTRINE.md; refresh curated Project source", "owner": "Project maintainer"},
+    {"tag": "[FREEZE-UPDATE]", "meaning": "Issues new verified-date snapshot", "action": "Update operating freeze reference and synchronized command artifacts", "owner": "Project maintainer"},
+    {"tag": "[PARTNER-UPDATE]", "meaning": "Updates partner registry/role evidence", "action": "Update partner-registry.json and Part XXIV; refresh partner source if curated", "owner": "Project maintainer"},
+    {"tag": "[STANDARDS-UPDATE]", "meaning": "Updates standards catalogue", "action": "Regenerate catalogue register and affected mappings", "owner": "Project maintainer"},
+    {"tag": "[EVIDENCE-UPDATE]", "meaning": "Adds/closes external gates", "action": "Update A-Z completion/evidence registers", "owner": "Project maintainer"},
+    {"tag": "[PILOT-UPDATE]", "meaning": "Updates Shipment 001 status", "action": "Update Part VIII and mark [PILOT: Shipment 001]", "owner": "Project maintainer"},
+    {"tag": "[PORT-UPDATE]", "meaning": "Updates port authority or corridor registry", "action": "Regenerate port-authority-registry.json and corridor-registry.json; refresh curated sources if applicable", "owner": "Project maintainer"},
+    {"tag": "[MINOR]", "meaning": "No doctrine impact", "action": "No synchronization action", "owner": "Project maintainer"}
+  ]
+}
