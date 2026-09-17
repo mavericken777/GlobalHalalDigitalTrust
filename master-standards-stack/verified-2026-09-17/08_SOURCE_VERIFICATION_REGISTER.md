@@ -110,3 +110,27 @@ If repository interpretation conflicts with a later competent-authority/current 
 `STOP AUTOMATIC RELEASE -> OPEN SOURCE-CONFLICT -> FREEZE AFFECTED RULE -> IDENTIFY TRANSACTIONS/CONTROLS -> AUTHORITATIVE REVIEW -> UPDATE VERSIONED RULE -> IMPACT ASSESSMENT -> RE-VERIFY AFFECTED OBJECTS -> RELEASE/REJECT`.
 
 The authoritative current source takes precedence within its mandate; historical repository text is retained only as provenance.
+
+## 10. Attached user-supplied secondary reference corpus - 17 September 2026
+
+| Source | Pages | SHA-256 | Classification | Claims accepted | Claims not allowed to override higher sources |
+|---|---:|---|---|---|---|
+| `compliance_manual.pdf` | 74 | `3cd4d9ac0ba99adcff98be7860f2a008bd1c6cc31ec99a4069e9e5784f70dc10` | SECONDARY-REFERENCE | governance patterns, document hierarchy, supplier-risk ideas, traceability/recall structure, audit-readiness patterns, source leads | exact normative text; 14-standard current catalogue; conflicting MS2400 clause architecture; unverified Pindaan 2026 details |
+| `market_validation.pdf` | 48 | `5aeff302514c9486fe829f14dfd7d46c0633894a396628cfd43f3da6ff01e9cc` | SECONDARY-MARKET-REFERENCE | cost-stack structure, NPV/payback mechanics, sensitivity variables, readiness prompts, supplier/partner-risk classes, funding due-diligence categories | fixed revenue uplift/payback/NPV; automatic MRA market access; blanket export requirements; fixed grant capture; fixed fee assumptions |
+
+### PDF conflict controls
+
+The following findings are now explicitly frozen in `10_ATTACHED_PDF_DEEP_DIVE_RECONCILIATION.md`:
+
+- 17-standard project catalogue takes precedence over the PDFs' 14-standard framing;
+- the 613 source-backed MS2400 requirement objects take precedence over the compliance PDF's conflicting generic clause map;
+- MYeHALAL remains the current system reference; `myHID` from the PDF is not introduced as a production-system name;
+- `23 days` is not a guaranteed certification SLA;
+- JAKIM FHCB recognition is not modelled as automatic cross-border market access;
+- fixed ROI/payback/grant/recall thresholds from the reports remain assumptions or internal KPIs unless an authority/contract/approved programme supplies the rule.
+
+### Pindaan 2026 gate
+
+[OPEN GATE: PRIMARY SOURCE FOR MPPHM 2020 PINDAAN 2026 - owner: JAKIM - blocking: exact amendment text and applicability]
+
+The uploaded PDFs report amendments effective in 2026, including first-application records, document retention, training/provider and IHCS-related changes. These remain `SECONDARY-VERIFIED / PRIMARY-SOURCE-LOCK` until the official JAKIM circular/instrument is held in the controlled source corpus.
