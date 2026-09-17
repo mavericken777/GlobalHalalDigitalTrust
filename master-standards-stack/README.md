@@ -29,6 +29,7 @@ Use `verified-2026-09-17/MANIFEST.json` as the machine-readable package declarat
 - `12_MANUFACTURER_ECONOMIC_AND_MARKET_DECISION_MODEL.md` - evidence-backed readiness/cost/NPV/payback/scenario model
 - `13_NAJS_CONTAMINATION_AND_RELEASE_DECISION_MODEL.md` - najs/contamination/cleaning/sertu/release logic
 - `14_HALAL_BUILT_IN_RETROFIT_FACTORY_TRANSFORMATION_MODEL.md` - Halal Built-In vs retrofit manufacturer transformation
+- `15_POST_PDF_INGESTION_INTEGRITY_AUDIT.md` - final repository/source/conflict/routing/open-gate verification after PDF ingestion
 - `MANIFEST.json` - machine-readable declaration
 
 ## Standards universe
