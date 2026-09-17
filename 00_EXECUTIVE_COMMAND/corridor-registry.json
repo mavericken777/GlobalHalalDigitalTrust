@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "artifact": "corridor-registry.json",
+  "version": "1.1.0",
+  "control_date": "2026-09-17",
+  "freeze_boundary": "master-standards-stack/verified-2026-09-17/",
+  "description": "Canonical post-freeze pilot corridor definition for China-GCC direct Shipment 001.",
+  "corridor": {
+    "id": "china-gcc-direct",
+    "name": "China → GCC Direct Corridor",
+    "canonical_path": "Origin (China) → Analytical Evidence → Logistics → Border → Destination (GCC)",
+    "transshipment_rule": "No transshipment through Malaysia unless explicitly re-scoped and controlled as a proposal/change",
+    "scope": "Shipment 001 qualification model",
+    "status": "PILOT"
+  },
+  "segments": [
+    {
+      "id": "segment-1-origin",
+      "name": "Origin — China",
+      "owner": "Manufacturer + project mobilisation layer",
+      "partners": ["CODA", "China Merchant"],
+      "canonical_path_points": ["Enterprise mobilisation", "Qualification", "Commercial terms"],
+      "evidence_class": ["E1", "E2"],
+      "open_gates": ["Manufacturer selection per shipment", "SKU selection per shipment", "Partner contractual mandate as applicable"]
+    },
+    {
+      "id": "segment-2-laboratory",
+      "name": "Analytical Evidence",
+      "owner": "China government food security laboratory",
+      "partners": ["China government food security laboratory"],
+      "canonical_path_points": ["Evidence"],
+      "evidence_class": ["E3"],
+      "open_gates": ["Accreditation scope per test method", "Method validation status", "GCC destination acceptance", "Contractual basis"]
+    },
+    {
+      "id": "segment-3-logistics",
+      "name": "Logistics and Warehouse",
+      "owner": "Sinotrans",
+      "partners": ["Sinotrans"],
+      "canonical_path_points": ["Logistics qualification", "Custody"],
+      "evidence_class": ["E4"],
+      "open_gates": ["Route selection", "Carrier qualification", "Warehouse halal-specific qualification", "Contractual basis"]
+    },
+    {
+      "id": "segment-4-border",
+      "name": "Border / Port Authorities",
+      "owner": "Origin and destination sovereign authorities",
+      "partners": [],
+      "canonical_path_points": ["Authority Gate", "Operational Release"],
+      "evidence_class": ["E4", "E5"],
+      "open_gates": ["Origin port selection", "Destination port selection", "Actual clearance and release events"]
+    },
+    {
+      "id": "segment-5-destination",
+      "name": "Destination — GCC",
+      "owner": "Importer / buyer",
+      "partners": [],
+      "canonical_path_points": ["Receiving verification", "Trust State"],
+      "evidence_class": ["E4"],
+      "open_gates": ["Importer identification", "Destination market", "Product category"]
+    }
+  ],
+  "pilot_shipment": {
+    "id": "shipment-001",
+    "name": "Shipment 001",
+    "status": "NOT-INSTANTIATED",
+    "eligibility_chain": ["Legal entity", "Factory", "SKU / formula", "Current halal certificate + issuer / scope / validity", "Destination issuer recognition / halal rules", "Label / product / import registration", "Importer / buyer", "Commercial terms / PO", "Pilot batch", "Laboratory evidence", "Logistics qualification", "Container / seal", "Custody / telemetry", "Border release", "Receiving verification"],
+    "open_gates": ["Manufacturer selection", "SKU selection", "Importer / buyer identification", "PO issuance", "Batch production", "Booking confirmation", "Export / import documentation", "Border release and receipt"]
+  }
+}
