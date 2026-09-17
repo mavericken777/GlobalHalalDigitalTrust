@@ -1,0 +1,86 @@
+{
+  "package": "IQ300 Verified JAKIM Malaysian Standards China-GCC Control Package",
+  "control_date": "2026-09-17",
+  "repository": "mavericken777/GlobalHalalDigitalTrust",
+  "canonical_corridor": "China -> GCC direct",
+  "completion_semantics": "100 percent evidence-accounted; no unsupported normative clause, certificate, destination approval, commercial commitment or shipment event is treated as complete",
+  "authority_boundary": "AHTE is an evidence, control and decision-support layer. Competent authorities retain certification and regulatory decisions.",
+  "standards": [
+    "MS 1500:2019",
+    "MS 2400-1:2019",
+    "MS 2400-2:2019",
+    "MS 2400-3:2019",
+    "MS 2424:2019",
+    "MS 2634:2019",
+    "MS 2636:2019",
+    "MS 2738:2023",
+    "MS 2803:2025",
+    "MS 2393:2023",
+    "MS 2627:2017",
+    "MS 2627-2:2025",
+    "MS 1900:2025",
+    "MS 2691:2021",
+    "MS 2610:2015",
+    "MS 2809:2025",
+    "MS 2810:2025"
+  ],
+  "ms2400_requirement_objects": {
+    "MS 2400-1:2019": 187,
+    "MS 2400-2:2019": 201,
+    "MS 2400-3:2019": 225,
+    "total": 613
+  },
+  "source_depth": {
+    "source_verified_numbered_objects": [
+      "MS 2400-1:2019",
+      "MS 2400-2:2019",
+      "MS 2400-3:2019"
+    ],
+    "public_structure_verified": [
+      "MS 1500:2019",
+      "MS 2424:2019",
+      "MS 2634:2019",
+      "MS 2636:2019",
+      "MS 2738:2023",
+      "MS 2393:2023",
+      "MS 2627:2017",
+      "MS 2691:2021",
+      "MS 2610:2015"
+    ],
+    "current_status_and_control_domains_verified_exact_normative_subclauses_source_locked": [
+      "MS 2803:2025",
+      "MS 2627-2:2025",
+      "MS 1900:2025",
+      "MS 2809:2025",
+      "MS 2810:2025"
+    ]
+  },
+  "jakim_operating_layer": {
+    "MPPHM_2020_procedure_headings_mapped": 71,
+    "MHMS_2020_HAS_elements_mapped": 13,
+    "IHCS_profile": true,
+    "e_certificate_overlay": "effective 2025-05-05 for JAKIM/MAIN/JAIN panel-approved applications under JAKIM announcement",
+    "MyHALALINGREDIENTS_overlay": "effective 2025-08-15 and integrated with MYeHALAL under JAKIM announcement"
+  },
+  "market_validation": {
+    "manufacturer_candidates_public_claim_screened": 10,
+    "destination_profiles": ["Saudi Arabia", "United Arab Emirates", "GCC country-specific template"],
+    "retail_signal": "Saudi current packaged/canned-food category presence used as a screening signal, not a market-size forecast",
+    "shipment_001_status": "architecture and evidence gates complete; transaction not instantiated until external evidence exists"
+  },
+  "files": [
+    "00_README.md",
+    "01_MASTER_CATALOGUE_REVISION_REGISTER.md",
+    "02_JAKIM_MPPHM2020_MHMS2020_CONTROL_MANUAL.md",
+    "03_ALL_MS_CLAUSE_CONTROL_EVIDENCE_MANUAL.md",
+    "04_SERTU_STUNNING_PROTOCOL_LINKAGE.md",
+    "05_AUDIT_EVIDENCE_AUTHORITY_TEST_LIBRARY.md",
+    "06_CHINA_GCC_MANUFACTURER_MARKET_VALIDATION.md",
+    "07_AZ_COMPLETION_EXTERNAL_GATE_REGISTER.md",
+    "08_SOURCE_VERIFICATION_REGISTER.md",
+    "MANIFEST.json"
+  ],
+  "production_freeze_rule": "Recheck current JAKIM/JAIN/MAIN, Department of Standards Malaysia/MySOL, destination regulator, certificate issuer/recognition, product/import and transaction sources immediately before operational reliance.",
+  "copyright_rule": "Do not redistribute Malaysian Standards normative text; retain licensed sources under controlled access and store derived control objects with provenance.",
+  "generated_by": "IQ300 project workflow"
+}
