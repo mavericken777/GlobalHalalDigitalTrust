@@ -55,6 +55,30 @@
       "MS 2810:2025"
     ]
   },
+  "attached_pdf_ingestion": {
+    "compliance_manual": {
+      "pages": 74,
+      "sha256": "3cd4d9ac0ba99adcff98be7860f2a008bd1c6cc31ec99a4069e9e5784f70dc10",
+      "classification": "SECONDARY-REFERENCE",
+      "accepted_for": ["cross-cutting governance", "traceability", "supplier risk", "document hierarchy", "audit-readiness patterns", "source leads"],
+      "not_authoritative_for": ["normative clause wording", "MS 2400 clause structure where conflicting with licensed source", "unverified 2026 amendment details"]
+    },
+    "market_validation": {
+      "pages": 48,
+      "sha256": "5aeff302514c9486fe829f14dfd7d46c0633894a396628cfd43f3da6ff01e9cc",
+      "classification": "SECONDARY-MARKET-REFERENCE",
+      "accepted_for": ["cost stack", "NPV/payback model structure", "scenario variables", "readiness prompts", "supplier/partner risk", "funding due-diligence categories"],
+      "not_authoritative_for": ["fixed ROI/payback", "automatic MRA market access", "blanket mandatory-export claims", "fixed grant capture", "fixed readiness scores"]
+    }
+  },
+  "pdf_reconciliation": {
+    "14_standard_count_rejected_as_current_catalogue": true,
+    "ms2400_secondary_clause_map_rejected_where_conflicting": true,
+    "mra_automatic_market_access_rejected": true,
+    "23_day_guaranteed_sla_rejected": true,
+    "myhid_current_system_reference_rejected": true,
+    "pindaan_2026_primary_source_status": "OPEN-GATE"
+  },
   "jakim_operating_layer": {
     "MPPHM_2020_procedure_headings_mapped": 71,
     "MHMS_2020_HAS_elements_mapped": 13,
@@ -65,6 +89,7 @@
   "market_validation": {
     "manufacturer_candidates_public_claim_screened": 10,
     "destination_profiles": ["Saudi Arabia", "United Arab Emirates", "GCC country-specific template"],
+    "economic_model": "evidence-backed variable-input NPV/payback/readiness framework",
     "retail_signal": "Saudi current packaged/canned-food category presence used as a screening signal, not a market-size forecast",
     "shipment_001_status": "architecture and evidence gates complete; transaction not instantiated until external evidence exists"
   },
@@ -74,7 +99,7 @@
     "physical_corridor_corrected": "CHINA-GCC-DIRECT",
     "todo_index_results": 0,
     "tbd_index_results": 0,
-    "integrity_audit_file": "09_REPOSITORY_INTEGRITY_AUDIT.md"
+    "pre_ingestion_integrity_audit_file": "09_REPOSITORY_INTEGRITY_AUDIT.md"
   },
   "files": [
     "00_README.md",
@@ -87,7 +112,18 @@
     "07_AZ_COMPLETION_EXTERNAL_GATE_REGISTER.md",
     "08_SOURCE_VERIFICATION_REGISTER.md",
     "09_REPOSITORY_INTEGRITY_AUDIT.md",
+    "10_ATTACHED_PDF_DEEP_DIVE_RECONCILIATION.md",
+    "11_AUDIT_CLOSURE_TRACEABILITY_GOVERNANCE_MODEL.md",
+    "12_MANUFACTURER_ECONOMIC_AND_MARKET_DECISION_MODEL.md",
+    "13_NAJS_CONTAMINATION_AND_RELEASE_DECISION_MODEL.md",
+    "14_HALAL_BUILT_IN_RETROFIT_FACTORY_TRANSFORMATION_MODEL.md",
     "MANIFEST.json"
+  ],
+  "open_gates": [
+    "Official primary JAKIM source for MPPHM 2020 Pindaan 2026 exact amendments",
+    "Licensed/current normative text for source-locked standards before clause-exact production use",
+    "Manufacturer private legal/certificate/SKU/formula/commercial data",
+    "Target GCC importer/product approvals and live transaction evidence"
   ],
   "production_freeze_rule": "Recheck current JAKIM/JAIN/MAIN, Department of Standards Malaysia/MySOL, destination regulator, certificate issuer/recognition, product/import and transaction sources immediately before operational reliance.",
   "copyright_rule": "Do not redistribute Malaysian Standards normative text; retain licensed sources under controlled access and store derived control objects with provenance.",
