@@ -43,6 +43,7 @@ Contents:
 - `12_MANUFACTURER_ECONOMIC_AND_MARKET_DECISION_MODEL.md` - evidence-backed readiness, cost, NPV/payback, scenario and commercial-decision framework
 - `13_NAJS_CONTAMINATION_AND_RELEASE_DECISION_MODEL.md` - najs/contamination containment, classification, cleaning/sertu, re-verification and release
 - `14_HALAL_BUILT_IN_RETROFIT_FACTORY_TRANSFORMATION_MODEL.md` - new-factory Halal Built-In versus retrofit transformation and Shipment 001 readiness
+- `15_POST_PDF_INGESTION_INTEGRITY_AUDIT.md` - final post-ingestion package/source/conflict/routing and open-gate verification
 - `MANIFEST.json` - machine-readable package declaration
 
 **Completion semantics:** `100% complete` means every required workstream is evidence-accounted. It does not mean that unavailable licensed clauses, certificates, importer approvals, contracts, regulatory decisions or shipment events have been invented.
