@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "artifact": "schema-registry.json",
+  "version": "1.1.0",
+  "control_date": "2026-09-17",
+  "description": "Schema registry index for structured output domains",
+  "schemas": {
+    "evidence-chain": {"path": "trust-packet-schemas.json#/schemas/evidence_chain", "purpose": "Evidence chain analysis output"},
+    "standard-mapping": {"path": "trust-packet-schemas.json#/schemas/standard_mapping", "purpose": "Standard-to-control mapping output"},
+    "trust-packet": {"path": "trust-packet-schemas.json#/schemas/trust_packet", "purpose": "Trust-packet component output"},
+    "authority-gate": {"path": "trust-packet-schemas.json#/schemas/authority_gate_object", "purpose": "Authority gate status output"},
+    "identity-object": {"path": "trust-packet-schemas.json#/schemas/identity_object", "purpose": "Identity object output"},
+    "certificate-object": {"path": "trust-packet-schemas.json#/schemas/certificate_object", "purpose": "Certificate object output"},
+    "evidence-object": {"path": "trust-packet-schemas.json#/schemas/evidence_object", "purpose": "Evidence object output"},
+    "custody-object": {"path": "trust-packet-schemas.json#/schemas/custody_object", "purpose": "Custody object output"},
+    "port-custody-object": {"path": "trust-packet-schemas.json#/schemas/port_custody_object", "purpose": "Port custody and clearance event output"},
+    "audit-object": {"path": "trust-packet-schemas.json#/schemas/audit_object", "purpose": "Audit object output"},
+    "trust-state-object": {"path": "trust-packet-schemas.json#/schemas/trust_state_object", "purpose": "Trust state object output"}
+  },
+  "enforcement_note": "Output is a formatting requirement; not decode-time enforced. Validate before delivery."
+}
