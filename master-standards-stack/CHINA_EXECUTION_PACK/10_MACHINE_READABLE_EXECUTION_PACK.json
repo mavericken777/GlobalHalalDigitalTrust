@@ -1,8 +1,9 @@
 {
   "package": "IQ300-CHINA-EXECUTION-PACK",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "architecture": "AHTE",
-  "corridor": "CHINA-MALAYSIA-GCC",
+  "corridor": "CHINA-GCC-DIRECT",
+  "assurance_reference_layer": "MALAYSIA-JAKIM-JSM-STANDARDS; NOT A PHYSICAL TRANSIT LEG",
   "pilot": "Shipment-001",
   "standards_count": 17,
   "standards": [
@@ -51,5 +52,6 @@
     "event_model": "append-only hash chain with optional Merkle anchoring"
   },
   "object_identity": ["organisation","facility","product","material","supplier","formula","process","HCP","batch","lot","unit","pallet","container","seal","shipment","warehouse","retail-unit","sample","audit-case","authority-case","recall-case"],
-  "source_reference": "JSM MySOL NSC 09 Halal catalogue + IQ300 project source corpus"
+  "source_reference": "Department of Standards Malaysia / MySOL NSC 09 Halal catalogue + JAKIM operating instruments + IQ300 project source corpus",
+  "physical_route_rule": "Malaysia/JAKIM/JSM may provide standards, assurance, authority or trust-reference functions. Physical Shipment 001 moves China to GCC directly unless a later approved transaction record explicitly changes the route."
 }
