@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "artifact": "project-file-curation.json",
+  "version": "1.1.0",
+  "control_date": "2026-09-17",
+  "plan_context": "ChatGPT Project curated-source strategy",
+  "file_limit_operating_assumption": 25,
+  "file_limit_status": "TOOL-SPEC UNVERIFIED — recheck platform limits before enforcing",
+  "description": "Curated high-frequency Project sources. Remaining repository content is retrieved from PROJECT-REPO when needed.",
+  "curated_files": [
+    {"priority": 1, "path": "00_EXECUTIVE_COMMAND/IQ300_DOCTRINE.md", "reason": "Operating doctrine"},
+    {"priority": 2, "path": "00_EXECUTIVE_COMMAND/live-source-registry.json", "reason": "Authority endpoints"},
+    {"priority": 3, "path": "00_EXECUTIVE_COMMAND/trust-packet-schemas.json", "reason": "Schema registry"},
+    {"priority": 4, "path": "00_EXECUTIVE_COMMAND/partner-registry.json", "reason": "Partner governance"},
+    {"priority": 5, "path": "00_EXECUTIVE_COMMAND/port-authority-registry.json", "reason": "Port authority references"},
+    {"priority": 6, "path": "00_EXECUTIVE_COMMAND/corridor-registry.json", "reason": "Corridor segment model"},
+    {"priority": 7, "path": "master-standards-stack/verified-2026-09-17/00_README.md", "reason": "Package scope and semantics"},
+    {"priority": 8, "path": "master-standards-stack/verified-2026-09-17/01_MASTER_CATALOGUE_REVISION_REGISTER.md", "reason": "17-standard catalogue"},
+    {"priority": 9, "path": "master-standards-stack/verified-2026-09-17/02_JAKIM_MPPHM2020_MHMS2020_CONTROL_MANUAL.md", "reason": "JAKIM operating layer"},
+    {"priority": 10, "path": "master-standards-stack/verified-2026-09-17/03_ALL_MS_CLAUSE_CONTROL_EVIDENCE_MANUAL.md", "reason": "Standards mappings"},
+    {"priority": 11, "path": "master-standards-stack/verified-2026-09-17/04_SERTU_STUNNING_PROTOCOL_LINKAGE.md", "reason": "Sertu/slaughter"},
+    {"priority": 12, "path": "master-standards-stack/verified-2026-09-17/05_AUDIT_EVIDENCE_AUTHORITY_TEST_LIBRARY.md", "reason": "Audit library"},
+    {"priority": 13, "path": "master-standards-stack/verified-2026-09-17/06_CHINA_GCC_MANUFACTURER_MARKET_VALIDATION.md", "reason": "Pilot manufacturer screen"},
+    {"priority": 14, "path": "master-standards-stack/verified-2026-09-17/07_AZ_COMPLETION_EXTERNAL_GATE_REGISTER.md", "reason": "A-Z completion"},
+    {"priority": 15, "path": "master-standards-stack/verified-2026-09-17/08_SOURCE_VERIFICATION_REGISTER.md", "reason": "Source hierarchy"},
+    {"priority": 16, "path": "deliverables/23_MANUFACTURER_MARKET_VALIDATION_GCC_2026.md", "reason": "Market validation"},
+    {"priority": 17, "path": "deliverables/24_AZ_COMPLETION_AUDIT_GAP_REGISTER_2026.md", "reason": "Gap register"},
+    {"priority": 18, "path": "deliverables/26_GCC_IMPORTER_BUYER_ENGAGEMENT_PROTOCOL_2026.md", "reason": "Importer/buyer protocol"},
+    {"priority": 19, "path": "deliverables/27_MANUFACTURER_PUBLIC_CLAIM_VERIFICATION_REGISTER_2026.md", "reason": "Claim verification"},
+    {"priority": 20, "path": "deliverables/29_GLOBAL_PORT_AUTHORITIES_PROTOCOL_2026.md", "reason": "Port authorities protocol"},
+    {"priority": 21, "path": "00_EXECUTIVE_COMMAND/MASTER_DISCUSSION_DECISION_LOG_2026.md", "reason": "Decision log"},
+    {"priority": 22, "path": "00_EXECUTIVE_COMMAND/OCTOBER_2026_STRATEGIC_IMPLEMENTATION_MISSION.md", "reason": "Strategic mission"},
+    {"priority": 23, "path": "deliverables/14_API_AND_CANONICAL_DATA_MODEL.md", "reason": "API/data model"},
+    {"priority": 24, "path": "deliverables/07_SINOTRANS_PLAYBOOK.md", "reason": "Sinotrans playbook"},
+    {"priority": 25, "path": "deliverables/17_SINOTRANS_DATA_MAPPING.md", "reason": "Sinotrans data mapping"}
+  ],
+  "overflow_candidates": [
+    "00_EXECUTIVE_COMMAND/commit-tag-taxonomy.json",
+    "00_EXECUTIVE_COMMAND/schema-registry.json",
+    "deliverables/22_IQ300_JAKIM_MALAYSIAN_STANDARDS_INTELLIGENCE_LAYER.md",
+    "03_ECOSYSTEM_PARTNERS/PARTNER_RACI_INTEGRATION_MATRIX.md",
+    "05_PLATINUM_REAL_TIME_MONITORING/PLATINUM_FULL_STACK_ARCHITECTURE.md",
+    "deliverables/02_REFERENCE_ARCHITECTURE.md"
+  ],
+  "retrieval_fallback": {
+    "mechanism": "PROJECT-REPO live retrieval",
+    "base_url": "https://raw.githubusercontent.com/mavericken777/GlobalHalalDigitalTrust/main/",
+    "path_template": "{base_url}{path}",
+    "metadata_required": ["url", "commit_sha_first_12", "timestamp_iso8601", "file_path", "class"]
+  }
+}
