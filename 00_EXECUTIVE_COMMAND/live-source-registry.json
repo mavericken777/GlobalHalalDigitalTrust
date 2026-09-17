@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "artifact": "live-source-registry.json",
+  "version": "1.1.0",
+  "control_date": "2026-09-17",
+  "freeze_boundary": "master-standards-stack/verified-2026-09-17/",
+  "description": "Controlled authority and canonical endpoints for live retrieval. Consult before any crawl. Prefer verified official endpoints. PROJECT-REPO is project doctrine, not external authority.",
+  "retrieval_metadata_required": ["url", "timestamp_iso8601", "issuing_entity", "class", "hash_sha256_first_12", "method", "connector", "http_status"],
+  "source_classes": {
+    "authority_primary": {"priority": 1, "entities": ["JAKIM", "MAIN", "JAIN", "GCC competent authorities", "SFDA", "Saudi Halal Center", "ZATCA", "UAE ICP", "UAE MoIAT", "GSO", "GACC"]},
+    "standards_bodies": {"priority": 2, "entities": ["Department of Standards Malaysia", "ISO", "OIC/SMIIC"]},
+    "official_gazettes": {"priority": 3, "entities": ["Official gazettes", "Regulatory notices"]},
+    "importer_authority": {"priority": 4, "entities": ["Importer", "Destination market authority publications"]},
+    "partner_evidence": {"priority": 5, "entities": ["Project-designated partner evidence; actual class depends on evidence object"]},
+    "PROJECT-REPO": {"priority": 6, "entities": ["GlobalHalalDigitalTrust project repository"]},
+    "signal": {"priority": 7, "entities": ["Commercial/retail signals; non-authority"]}
+  },
+  "endpoints": {
+    "malaysia": {
+      "jakim_portal": {"url": "https://www.islam.gov.my/", "issuing_entity": "JAKIM", "class": "authority_primary", "use": "Competent-authority information, halal administration, official notices", "status": "OFFICIAL-LIVE", "refresh_frequency": "before_each_transaction"},
+      "jakim_halal_directory": {"url": "https://myehalal.halal.gov.my/portal-halal/v1/", "issuing_entity": "JAKIM", "class": "authority_primary", "use": "Current Malaysia Halal certification/status lookup interface", "status": "OFFICIAL-LIVE", "note": "Status must be checked per entity/product", "refresh_frequency": "before_each_transaction"},
+      "jakim_media_statements": {"url": "https://www.islam.gov.my/en/media-statement", "issuing_entity": "JAKIM", "class": "authority_primary", "use": "Current policy/recognition/imported-halal notices", "status": "LIVE-SEARCH-VERIFIED-2026-09-17", "refresh_frequency": "weekly"},
+      "department_of_standards_malaysia": {"url": "https://www.msonline.gov.my/", "issuing_entity": "Department of Standards Malaysia", "class": "standards_bodies", "use": "Official Malaysian Standards catalogue/purchase/announcement portal", "status": "OFFICIAL-LIVE", "refresh_frequency": "monthly"},
+      "mysol_halal_sector": {"url": "https://www.msonline.gov.my/ms/standard/standards-sector/halal", "issuing_entity": "Department of Standards Malaysia", "class": "standards_bodies", "use": "Current Halal standards catalogue context", "status": "OFFICIAL-LIVE", "refresh_frequency": "monthly"},
+      "myhalalingredients_statement": {"url": "https://www.islam.gov.my/en/media-statement/4798-kenyataan-media-jabatan-kemajuan-islam-malaysia-jakim-berkenaan-pelaksanaan-myhalalingredients", "issuing_entity": "JAKIM", "class": "authority_primary", "use": "MyHALALINGREDIENTS implementation from 15 August 2025", "status": "OFFICIAL-LIVE", "refresh_frequency": "before_each_transaction"},
+      "e_certificate_statement": {"url": "https://www.islam.gov.my/en/media-statement/4704-kenyataan-media-ketua-pengarah-jabatan-kemajuan-islam-malaysia-berkenaan-pelaksanaan-sijil-pengesahan-halal-malaysia-sphm-secara-elektronik-e-cert", "issuing_entity": "JAKIM", "class": "authority_primary", "use": "Malaysia Halal e-Certificate implementation from 5 May 2025", "status": "OFFICIAL-LIVE", "refresh_frequency": "before_each_transaction"}
+    },
+    "saudi_arabia": {
+      "sfda_imported_food": {"url": "https://beta.sfda.gov.sa/en/imported-food", "issuing_entity": "SFDA", "class": "authority_primary", "use": "Importer/item registration and imported-food controls", "status": "OFFICIAL-LIVE", "refresh_frequency": "before_each_transaction"},
+      "sfda_halal_faq": {"url": "https://www.sfda.gov.sa/en/faq/what-are-products-require-halal-certificate", "issuing_entity": "SFDA", "class": "authority_primary", "use": "Halal certificate requirement guidance for relevant products", "status": "OFFICIAL-LIVE", "note": "Check product-specific conditions", "refresh_frequency": "before_each_transaction"},
+      "sfda_labelling_guidance": {"url": "https://www.sfda.gov.sa/en/faq/it-allowed-write-food-product-label-english-only", "issuing_entity": "SFDA", "class": "authority_primary", "use": "Arabic labelling guidance for prepacked food", "status": "OFFICIAL-LIVE", "refresh_frequency": "quarterly"},
+      "saudi_halal_center": {"url": "https://halal.sfda.gov.sa/", "issuing_entity": "Saudi Halal Center", "class": "authority_primary", "use": "Halal certification/services and destination controls", "status": "OFFICIAL-LIVE", "refresh_frequency": "before_each_transaction"},
+      "saudi_zatca": {"url": "https://zatca.gov.sa/en/Pages/default.aspx", "issuing_entity": "Zakat, Tax and Customs Authority", "class": "authority_primary", "use": "Destination customs clearance", "status": "OFFICIAL-ENTRYPOINT", "refresh_frequency": "before_each_transaction"}
+    },
+    "uae": {
+      "moiat_halal_programme": {"url": "https://www.moiat.gov.ae/en/programs/halal", "issuing_entity": "UAE MoIAT", "class": "authority_primary", "use": "Halal Products Control programme", "status": "OFFICIAL-LIVE", "refresh_frequency": "before_each_transaction"},
+      "moiat_registered_certification_bodies": {"url": "https://moiat.gov.ae/en/programs/halal/registered-halal-certification-bodies", "issuing_entity": "UAE MoIAT", "class": "authority_primary", "use": "Registered halal certification bodies status by country/scope/date", "status": "OFFICIAL-LIVE", "refresh_frequency": "before_each_transaction"},
+      "uae_customs_icp": {"url": "https://icp.gov.ae/en/about-icp/uae-customs-en/", "issuing_entity": "Federal Authority for Identity, Citizenship, Customs & Port Security", "class": "authority_primary", "use": "Federal UAE customs/port-security reference", "status": "LIVE-SEARCH-VERIFIED-2026-09-17", "refresh_frequency": "before_each_transaction"},
+      "esma_historical_note": {"url": "https://moiat.gov.ae/en/about-us/about-the-ministry", "issuing_entity": "UAE MoIAT", "class": "authority_primary", "use": "Confirms ESMA was merged into MoIAT; do not use ESMA as current standalone authority endpoint", "status": "LIVE-SEARCH-VERIFIED-2026-09-17", "refresh_frequency": "on_governance_change"}
+    },
+    "gcc_regional": {
+      "gso_portal": {"url": "https://www.gso.org.sa/", "issuing_entity": "GSO", "class": "authority_primary", "use": "GCC standards and technical-regulation entrypoint", "status": "OFFICIAL-ENTRYPOINT-RECHECK-BEFORE-USE", "refresh_frequency": "quarterly"}
+    },
+    "china_port_authority": {
+      "china_gacc": {"url": "http://www.customs.gov.cn/", "issuing_entity": "General Administration of Customs of the People's Republic of China", "class": "authority_primary", "use": "Origin customs clearance and export declaration", "status": "OFFICIAL-ENTRYPOINT-RECHECK-BEFORE-USE", "refresh_frequency": "before_each_transaction"}
+    },
+    "china_partners": {
+      "coda": {"url": "https://github.com/mavericken777/GlobalHalalDigitalTrust/tree/main/partners/coda", "issuing_entity": "CODA", "class": "partner_evidence", "use": "China enterprise mobilisation/export-enablement project materials", "status": "PROJECT-DESIGNATED; CONTRACTUAL-EVIDENCE-OPEN", "authority_boundary": "Does not create Halal certification authority"},
+      "sinotrans": {"url": "https://github.com/mavericken777/GlobalHalalDigitalTrust/tree/main/partners/sinotrans", "issuing_entity": "Sinotrans", "class": "partner_evidence", "use": "Logistics/custody project materials", "status": "PROJECT-DESIGNATED; CONTRACTUAL-EVIDENCE-OPEN", "authority_boundary": "Does not create Halal certification authority"},
+      "china_merchant": {"url": "https://github.com/mavericken777/GlobalHalalDigitalTrust/tree/main/partners/china-merchant", "issuing_entity": "China Merchant", "class": "partner_evidence", "use": "Enterprise mobilisation/trade enablement project materials", "status": "PROJECT-DESIGNATED; CONTRACTUAL-EVIDENCE-OPEN", "authority_boundary": "Does not create Halal certification authority"},
+      "china_food_security_lab": {"url": "https://github.com/mavericken777/GlobalHalalDigitalTrust/tree/main/partners/china-food-security-lab", "issuing_entity": "China government food security laboratory", "class": "partner_evidence", "use": "Analytical-evidence project materials", "status": "PROJECT-DESIGNATED; ACCREDITATION/CONTRACT-EVIDENCE-OPEN", "authority_boundary": "Does not create Halal certification. NOT DETECTED != HALAL."}
+    },
+    "canonical_repository": {
+      "github_raw_base": {"url": "https://raw.githubusercontent.com/mavericken777/GlobalHalalDigitalTrust/main/", "issuing_entity": "GlobalHalalDigitalTrust project", "class": "PROJECT-REPO", "use": "Canonical living knowledge-base retrieval", "status": "CANONICAL", "note": "Project doctrine, not external normative text. Version-aware retrieval required.", "path_template": "https://raw.githubusercontent.com/mavericken777/GlobalHalalDigitalTrust/main/{path}", "metadata_required": ["url", "commit_sha_first_12", "timestamp_iso8601", "file_path", "class"]}
+    },
+    "retail_signal": {
+      "noon_saudi_category": {"url": "https://supermall.noon.com/saudi-en/grocery-store/canned-dry-and-packaged-foods/noon-supermarket/", "issuing_entity": "Noon Saudi", "class": "signal", "use": "E-commerce category-presence signal", "status": "SIGNAL", "note": "Not a market-size authority", "refresh_frequency": "quarterly"}
+    }
+  },
+  "conflict_escalation": {"certification_affecting": "JAKIM", "destination_market": "GCC competent authority", "instrument_interpretation": "Department of Standards Malaysia"}
+}
