@@ -1,0 +1,37 @@
+{
+  "artifact": "ultra-deep-standards-ingestion-registry-2026-09-19.json",
+  "version": "1.0.0",
+  "control_date": "2026-09-19",
+  "freeze_boundary": "master-standards-stack/verified-2026-09-17/",
+  "status": "PROPOSAL_POST_FREEZE",
+  "source": {
+    "file": "ultra_deep_standards.pdf",
+    "physical_pages": 56,
+    "sha256": "d40aed0e7bbc173cf878814b89dec38b0f693a9719c6b0787bd759bf18ecf9ba",
+    "class": "secondary_synthesis_expanded_working_reference",
+    "self_described_edition": "2025 Ultra-Deep Revision",
+    "self_described_standard_count": 12
+  },
+  "standards": [
+    "MS 2424:2019",
+    "MS 2634:2019",
+    "MS 2738:2023",
+    "MS 2803:2025",
+    "MS 2809:2025",
+    "MS 2810:2025",
+    "MS 2393:2023",
+    "MS 2627:2017",
+    "MS 2627-2:2025",
+    "MS 1900:2025",
+    "MS 2691:2021",
+    "MS 2610:2015"
+  ],
+  "promotion_policy": "Secondary synthesis may identify candidate controls but cannot unlock exact normative subclauses without primary/authority reconciliation.",
+  "open_gates": [
+    "ULTRA-DEEP-PAGINATION-INTEGRITY",
+    "ULTRA-DEEP-VERBATIM-CLAIMS",
+    "MPPHM-2026-PRIMARY-SOURCE",
+    "ULTRA-DEEP-OPERATIONAL-THRESHOLDS"
+  ],
+  "authority_boundary": "No content in this source independently creates Malaysia Halal certification, GCC destination acceptance or operational release."
+}
