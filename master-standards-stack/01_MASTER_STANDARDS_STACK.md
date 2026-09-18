@@ -169,3 +169,15 @@ It is accepted for **gap discovery and reconciliation**, not as a substitute for
 Candidate operational thresholds, fees, retention rules, certificate durations, audit frequencies and `MPPHM 2020 Pindaan 2026` claims remain gated pending primary/authority verification.
 
 See `17_ULTRA_DEEP_STANDARDS_PDF_RECONCILIATION_2026-09-19.md`.
+
+## 13. 2026-09-19 detailed candidate-control extraction
+
+[PROPOSAL: closes secondary clause/control matrix gap - canonical path point: Clause / Requirement -> Applicability -> Control -> Evidence]
+
+The full 56-page attachment has now been decomposed into a standard-by-standard candidate matrix with physical PDF page ranges, source-confidence codes, candidate control domains, blocked claim classes and primary-reconciliation priorities.
+
+Detailed artifacts:
+- `18_ULTRA_DEEP_CLAUSE_CONTROL_CANDIDATE_MATRIX_2026-09-19.md`
+- `ultra-deep-candidate-control-registry-2026-09-19.json`
+
+The new matrix does not change the 17-standard catalogue or frozen package. It operationalizes the secondary source as a controlled gap-discovery corpus while keeping normative promotion blocked until primary/authority verification.
