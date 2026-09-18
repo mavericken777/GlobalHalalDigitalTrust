@@ -69,3 +69,26 @@ flowchart TD
 ## 8. Repository integrity
 
 All source-derived claims should identify the exact source class. Any future correction must supersede an earlier claim rather than silently editing its historical meaning.
+
+## 9. 2026-09-18 attached-source ingestion
+
+[PROPOSAL: closes source-provenance gap - canonical path point: Standard / Instrument -> Evidence]
+
+| ID | Supplied source | SHA12 | Class | Use |
+|---|---|---|---|---|
+| S8 | `market_validation.pdf` | `5aeff302514c` | secondary synthesis / market | Advisory market/ROI/risk model; not authority evidence |
+| S9 | `compliance_manual.pdf` | `e27bb840b400` | secondary synthesis / compliance | Cross-reference only; primary/authority sources prevail |
+| S10 | `MS1500_2019_BM_.pdf` | `01b75d2486a1` | primary supplied standard | MS 1500:2019 BM source-depth upgrade candidate |
+| S11 | `MS1500_2019_BM.pdf` | `a5573441ebce` | encrypted source candidate | Password-protected; no content equivalence assumed |
+| S12 | `MS2400-1_2019.pdf` | `1e5c635cbb43` | primary supplied standard | MS 2400-1 corroboration |
+| S13 | `MS2400-2_2019.pdf` | `d6369596a188` | primary supplied standard | MS 2400-2 corroboration; licensed-copy notice present |
+| S14 | `MS2400-3_2019_fromDL.pdf` | `8e757fa1821e` | primary supplied standard | MS 2400-3 corroboration |
+| S15 | `MS2610_2015.pdf` | `03c6d9e4ff35` | primary supplied standard | MS 2610 source-depth upgrade candidate |
+| S16 | `MS2683_2017.pdf` | `247b1f69bcc1` | primary supplied supplemental standard | Kelulut honey specification |
+| S17 | `MS2691_2021.pdf` | `07d3b127358b` | primary supplied standard | MS 2691 source-depth upgrade candidate |
+
+The secondary PDFs' 14-standard framing and references to `MPPHM 2020 Pindaan 2026` do not override the controlled 17-standard catalogue or establish exact authority text. Those issues remain explicit conflict/source gates.
+
+[OPEN GATE: SOURCE CONFLICT - secondary-14-vs-controlled-17 - owner: Department of Standards Malaysia/JAKIM as applicable - blocking: Standard / Instrument]
+
+[OPEN GATE: MPPHM-2026-PRIMARY-SOURCE - owner: JAKIM - blocking: Standard / Instrument]
