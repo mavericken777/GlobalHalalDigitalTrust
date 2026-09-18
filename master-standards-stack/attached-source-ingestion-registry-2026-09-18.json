@@ -1,0 +1,88 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "artifact": "attached-source-ingestion-registry-2026-09-18.json",
+  "version": "1.0.0",
+  "control_date": "2026-09-18",
+  "freeze_boundary": "master-standards-stack/verified-2026-09-17/",
+  "status": "PROPOSAL_POST_FREEZE",
+  "authority_boundary": "Source ingestion does not create Halal certification or destination clearance.",
+  "sources": [
+    {
+      "file": "market_validation.pdf",
+      "pages": 48,
+      "sha256": "5aeff302514c9486fe829f14dfd7d46c0633894a396628cfd43f3da6ff01e9cc",
+      "class": "secondary_synthesis_market",
+      "readable": true
+    },
+    {
+      "file": "compliance_manual.pdf",
+      "pages": 74,
+      "sha256": "e27bb840b4009fd16197cd7577becf3a6e7c8f37b0fe214a0eae8c31568606fb",
+      "class": "secondary_synthesis_compliance",
+      "readable": true
+    },
+    {
+      "file": "MS1500_2019_BM_.pdf",
+      "pages": 22,
+      "sha256": "01b75d2486a1aa662570d8dc54fd9f2e84bf23558b87d564d27d995eb5c698bd",
+      "class": "primary_supplied_standard",
+      "readable": true
+    },
+    {
+      "file": "MS1500_2019_BM.pdf",
+      "sha256": "a5573441ebce",
+      "class": "primary_supplied_standard_candidate",
+      "readable": false,
+      "status": "PASSWORD_PROTECTED"
+    },
+    {
+      "file": "MS2400-1_2019.pdf",
+      "pages": 42,
+      "sha256": "1e5c635cbb43",
+      "class": "primary_supplied_standard",
+      "readable": true
+    },
+    {
+      "file": "MS2400-2_2019.pdf",
+      "pages": 43,
+      "sha256": "d6369596a188",
+      "class": "primary_supplied_standard",
+      "readable": true,
+      "license_notice": true
+    },
+    {
+      "file": "MS2400-3_2019_fromDL.pdf",
+      "pages": 48,
+      "sha256": "8e757fa1821e",
+      "class": "primary_supplied_standard",
+      "readable": true
+    },
+    {
+      "file": "MS2610_2015.pdf",
+      "pages": 20,
+      "sha256": "03c6d9e4ff35",
+      "class": "primary_supplied_standard",
+      "readable": true
+    },
+    {
+      "file": "MS2683_2017.pdf",
+      "pages": 33,
+      "sha256": "247b1f69bcc1",
+      "class": "primary_supplied_supplemental_standard",
+      "readable": true,
+      "role": "Kelulut honey specification; not member of 17-standard halal operating set"
+    },
+    {
+      "file": "MS2691_2021.pdf",
+      "pages": 17,
+      "sha256": "07d3b127358b",
+      "class": "primary_supplied_standard",
+      "readable": true
+    }
+  ],
+  "open_gates": [
+    "secondary-14-vs-controlled-17",
+    "MPPHM-2026-PRIMARY-SOURCE",
+    "encrypted-MS1500-byte-comparison"
+  ]
+}
