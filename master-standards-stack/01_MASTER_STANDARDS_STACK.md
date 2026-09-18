@@ -147,3 +147,13 @@ Terminal/credential states:
 - AI may advise and detect anomalies; it cannot issue or override an authority decision.
 - A QR code, blockchain entry or internal database record is a representation of trust, not the authority credential itself.
 - All production rules require a versioned source reference.
+
+## 11. 2026-09-18 attached-source ingestion
+
+[PROPOSAL: closes primary-source depth gap - canonical path point: Standard / Instrument]
+
+The 2026-09-18 attachment set adds readable primary supplied copies of MS 1500:2019 (BM), MS 2400-1:2019, MS 2400-2:2019, MS 2400-3:2019, MS 2610:2015, MS 2683:2017 and MS 2691:2021, plus two secondary synthesis PDFs. The frozen `verified-2026-09-17/` package is unchanged.
+
+For the next controlled snapshot, MS 1500:2019, MS 2610:2015 and MS 2691:2021 are candidates for promotion from public-structure depth to primary-supplied-standard/source-held depth after clause-object reconciliation. MS 2683:2017 is registered as a supplemental Kelulut (stingless bee) honey specification and is **not** added to the 17-standard Malaysian halal operating set.
+
+See `16_ATTACHED_PDF_SOURCE_INGESTION_2026-09-18.md` and `attached-source-ingestion-registry-2026-09-18.json`.
