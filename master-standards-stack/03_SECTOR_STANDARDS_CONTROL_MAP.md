@@ -256,3 +256,15 @@ flowchart LR
     AUD --> AUTH[Authority decision]
     AUTH --> CRED[Credential/status]
 ```
+
+## Supplemental product specification - MS 2683:2017
+
+[PROPOSAL: closes Kelulut honey product-specification gap - canonical path point: Standard / Instrument -> Applicability]
+
+The supplied primary standard identifies MS 2683:2017 as **Kelulut (Stingless bee) honey - Specification**. Its visible architecture includes scope, normative references, terms and definitions, requirements, sampling, and packaging/labelling.
+
+IQ300 treatment:
+- classify MS 2683:2017 as a supplemental product-quality/specification instrument when a Kelulut honey SKU is in scope;
+- do not treat it as an additional halal-certification authority or as an automatic 18th member of the halal operating set;
+- map its product/specification evidence alongside, not in place of, the applicable halal certification instruments and MS 1500 controls;
+- preserve exact normative wording in the licensed source rather than reproducing it in repository prose.
