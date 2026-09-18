@@ -494,3 +494,23 @@ China → GCC direct is represented as five controlled segments: Origin → Anal
 `docs(doctrine): publish complete IQ300 operational doctrine v3.1 [DOCTRINE-CRITICAL]`
 
 **END OF IQ300 DOCTRINE**
+
+---
+
+## 2026-09-18 SOURCE-DEPTH OVERLAY
+
+[PROPOSAL: closes primary-source depth gaps - canonical path point: Standard / Instrument -> Clause / Requirement]
+
+A post-freeze attachment ingestion established readable primary supplied copies for MS 1500:2019 (BM), MS 2610:2015 and MS 2691:2021. These are candidates for promotion from the Part IV public-structure category to primary-supplied-standard/source-held depth in the next verified snapshot, after controlled clause-object reconciliation.
+
+MS 2400-1/-2/-3:2019 attachments corroborate the existing source-backed 613-object corpus; they do not silently replace it.
+
+MS 2683:2017 (Kelulut (Stingless bee) honey - Specification) is registered as a supplemental technical/product specification. It does not expand the 17-standard Malaysian halal operating set and does not create certification authority.
+
+Secondary attachments `compliance_manual.pdf` and `market_validation.pdf` remain subordinate to primary standards and competent-authority sources. Their 14-standard framing and references to an alleged `MPPHM 2020 Pindaan 2026` do not amend doctrine without source adjudication.
+
+[OPEN GATE: SOURCE CONFLICT - secondary-14-vs-controlled-17 - owner: Department of Standards Malaysia/JAKIM as applicable - blocking: Standard / Instrument]
+
+[OPEN GATE: MPPHM-2026-PRIMARY-SOURCE - owner: JAKIM - blocking: Standard / Instrument]
+
+Source details: `master-standards-stack/16_ATTACHED_PDF_SOURCE_INGESTION_2026-09-18.md`.
