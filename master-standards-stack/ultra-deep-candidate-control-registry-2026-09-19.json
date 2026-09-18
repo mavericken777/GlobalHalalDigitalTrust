@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "artifact": "ultra-deep-candidate-control-registry-2026-09-19.json",
+  "version": "1.0.0",
+  "control_date": "2026-09-19",
+  "freeze_boundary": "master-standards-stack/verified-2026-09-17/",
+  "status": "PROPOSAL_POST_FREEZE",
+  "source": {
+    "file": "ultra_deep_standards.pdf",
+    "physical_pages": 56,
+    "sha256": "d40aed0e7bbc173cf878814b89dec38b0f693a9719c6b0787bd759bf18ecf9ba",
+    "class": "secondary_synthesis_expanded_working_reference",
+    "self_described_edition": "2025 Ultra-Deep Revision",
+    "self_described_standard_count": 12,
+    "normative_status": "NOT_PRIMARY_STANDARD"
+  },
+  "confidence_codes": {
+    "U1": "identity/title/edition/scope metadata attributed by source to official/public JSM material; reconcile before freeze",
+    "U2": "secondary clause/control synthesis; candidate only",
+    "U3": "numeric threshold, method parameter, frequency, retention period, fee or validity period; primary verification required",
+    "U4": "MPPHM 2020 Pindaan 2026 claim; official JAKIM source required",
+    "U5": "IQ300 implementation inference; project proposal"
+  },
+  "standards": [
+    {"standard":"MS 2424:2019","physical_pages":"3-9","candidate_domains":["halal management/QMS","management responsibility","materials","personnel/training","hygiene","premises/equipment","manufacture/storage","quality control","documentation","contract manufacture/analysis","self-inspection","legal controls"],"confidence":["U1","U2","U3"],"promotion":"PRIMARY_RECONCILIATION_REQUIRED"},
+    {"standard":"MS 2634:2019","physical_pages":"10-16","candidate_domains":["cosmetic materials/provenance","premises","equipment","hygiene","processing","packaging/labelling","storage/transport","sertu"],"confidence":["U1","U2","U3"],"promotion":"PRIMARY_RECONCILIATION_REQUIRED"},
+    {"standard":"MS 2738:2023","physical_pages":"17-20","candidate_domains":["consumable-goods scope","materials","processing","premises","equipment","hygiene","packaging/labelling","storage/transport","sertu"],"confidence":["U1","U2","U4"],"promotion":"PRIMARY_RECONCILIATION_REQUIRED"},
+    {"standard":"MS 2803:2025","physical_pages":"21-24","candidate_domains":["animal bone/skin/hair provenance","species/source status","processing","segregation","traceability","documentation"],"confidence":["U1","U2"],"promotion":"SOURCE_LOCKED"},
+    {"standard":"MS 2809:2025","physical_pages":"25-27","candidate_domains":["chemometric reference libraries","fingerprints","multivariate modelling","validation","prediction","evidence interpretation"],"confidence":["U2","U3"],"source_note":"PDF explicitly labels clause map as inferred","promotion":"SOURCE_LOCKED"},
+    {"standard":"MS 2810:2025","physical_pages":"28-30","candidate_domains":["pig skin/hair identification","sample/material classification","macroscopic/microscopic/chemical/DNA candidates","reporting"],"confidence":["U1","U2","U3"],"promotion":"SOURCE_LOCKED"},
+    {"standard":"MS 2393:2023","physical_pages":"31-34","candidate_domains":["controlled halal terminology","competent authority concepts","halal/non-halal","najs","sertu","ontology"],"confidence":["U1","U2"],"promotion":"PRIMARY_RECONCILIATION_REQUIRED"},
+    {"standard":"MS 2627:2017","physical_pages":"35-37","candidate_domains":["sample handling","DNA extraction","PCR/qPCR controls","interpretation","reporting"],"confidence":["U1","U2","U3"],"promotion":"PRIMARY_RECONCILIATION_REQUIRED"},
+    {"standard":"MS 2627-2:2025","physical_pages":"38-40","candidate_domains":["cosmetic-matrix qPCR","matrix interference","extraction adaptation","internal controls","validation","reporting"],"confidence":["U1","U2","U3"],"promotion":"SOURCE_LOCKED"},
+    {"standard":"MS 1900:2025","physical_pages":"41-44","candidate_domains":["context","leadership","planning","support","operation","performance evaluation","improvement","SCCP"],"confidence":["U1","U2","U3"],"promotion":"SOURCE_LOCKED"},
+    {"standard":"MS 2691:2021","physical_pages":"45-47","candidate_domains":["halal profession levels","competence prerequisites","personal attributes","code of conduct","certification/recognition concepts"],"confidence":["U1","U2"],"primary_copy_status":"HELD_FROM_2026-09-18_INGESTION","promotion":"RECONCILE_AGAINST_PRIMARY"},
+    {"standard":"MS 2610:2015","physical_pages":"48-51","candidate_domains":["accommodation","food/beverage","prayer facilities","tour packages","tourist guides","management controls"],"confidence":["U1","U2","U4"],"primary_copy_status":"HELD_FROM_2026-09-18_INGESTION","promotion":"RECONCILE_AGAINST_PRIMARY"}
+  ],
+  "cross_cutting_modules": [
+    {"module":"sertu","physical_pages":"52-54","confidence":["U2","U3"]},
+    {"module":"najs taxonomy","physical_pages":"52-54","confidence":["U2"]},
+    {"module":"traceability and mock recall","physical_pages":"52-54","confidence":["U2","U3"]},
+    {"module":"document retention","physical_pages":"52-54","confidence":["U3","U4"]},
+    {"module":"application fee schedule","physical_pages":"52-54","confidence":["U3","U4"]},
+    {"module":"supersession map","physical_pages":"52-54","confidence":["U1","U2"]}
+  ],
+  "blocked_claim_classes": [
+    "purported verbatim clauses not independently held as primary source",
+    "inferred MS 2809 clause structure",
+    "PCR/qPCR primer sequences and cycle/reagent parameters",
+    "Ct/LOD and expected-yield thresholds",
+    "fixed audit/testing frequencies",
+    "campaign/shared-line conversion and analytical-release rules",
+    "certificate validity periods",
+    "mock-recall thresholds",
+    "document-retention periods",
+    "application fees",
+    "mandatory authority witnessing for every sertu event",
+    "MPPHM 2020 Pindaan 2026 requirements"
+  ],
+  "open_gates": [
+    "ULTRA-DEEP-PAGINATION-INTEGRITY",
+    "ULTRA-DEEP-VERBATIM-CLAIMS",
+    "ULTRA-DEEP-NORMATIVE-PROMOTION",
+    "ULTRA-DEEP-METHOD-PARAMETERS",
+    "ULTRA-DEEP-OPERATIONAL-THRESHOLDS",
+    "MPPHM-2026-PRIMARY-SOURCE"
+  ],
+  "authority_boundary": "This registry contains candidate architecture only. It does not create Malaysia Halal certification, destination acceptance, or operational release."
+}
