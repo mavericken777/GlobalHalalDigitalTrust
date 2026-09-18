@@ -514,3 +514,23 @@ Secondary attachments `compliance_manual.pdf` and `market_validation.pdf` remain
 [OPEN GATE: MPPHM-2026-PRIMARY-SOURCE - owner: JAKIM - blocking: Standard / Instrument]
 
 Source details: `master-standards-stack/16_ATTACHED_PDF_SOURCE_INGESTION_2026-09-18.md`.
+
+---
+
+## 2026-09-19 ULTRA-DEEP SECONDARY-SOURCE OVERLAY
+
+[PROPOSAL: closes secondary standards gap-discovery coverage - canonical path point: Standard / Instrument -> Clause / Requirement -> Evidence]
+
+The project has ingested `ultra_deep_standards.pdf` (SHA12 `d40aed0e7bbc`), a secondary synthesis covering twelve standards. It may be used to discover candidate clauses, controls, evidence objects and reconciliation targets. It is **not** a primary Malaysian Standard and does not independently unlock SOURCE-LOCKED normative text.
+
+The document's self-description as exhaustive/verbatim is not adopted as doctrine because it acknowledges reliance on public previews and secondary validation for paywalled standards, and its physical 56-page file conflicts with internal pagination reaching 115-116.
+
+Existing primary-source hierarchy and authority boundaries remain unchanged. Numeric operational thresholds and claims attributed to `MPPHM 2020 Pindaan 2026` require primary/authority verification before production use.
+
+[OPEN GATE: ULTRA-DEEP-VERBATIM-CLAIMS - owner: Department of Standards Malaysia / licensed primary source holder - blocking: Clause / Requirement]
+
+[OPEN GATE: ULTRA-DEEP-OPERATIONAL-THRESHOLDS - owner: applicable competent authority / primary standard holder - blocking: Control]
+
+[OPEN GATE: MPPHM-2026-PRIMARY-SOURCE - owner: JAKIM - blocking: Standard / Instrument]
+
+Reconciliation artifact: `master-standards-stack/17_ULTRA_DEEP_STANDARDS_PDF_RECONCILIATION_2026-09-19.md`.
