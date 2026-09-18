@@ -157,3 +157,15 @@ The 2026-09-18 attachment set adds readable primary supplied copies of MS 1500:2
 For the next controlled snapshot, MS 1500:2019, MS 2610:2015 and MS 2691:2021 are candidates for promotion from public-structure depth to primary-supplied-standard/source-held depth after clause-object reconciliation. MS 2683:2017 is registered as a supplemental Kelulut (stingless bee) honey specification and is **not** added to the 17-standard Malaysian halal operating set.
 
 See `16_ATTACHED_PDF_SOURCE_INGESTION_2026-09-18.md` and `attached-source-ingestion-registry-2026-09-18.json`.
+
+## 12. 2026-09-19 ultra-deep secondary-compendium overlay
+
+[PROPOSAL: closes candidate clause/control discovery gap - canonical path point: Standard / Instrument -> Clause / Requirement]
+
+The attached `ultra_deep_standards.pdf` provides an expanded secondary working reference across 12 standards: MS 2424, MS 2634, MS 2738, MS 2803, MS 2809, MS 2810, MS 2393, MS 2627, MS 2627-2, MS 1900, MS 2691 and MS 2610.
+
+It is accepted for **gap discovery and reconciliation**, not as a substitute for licensed primary Malaysian Standards. In particular, it does not remove existing SOURCE-LOCKED status for detailed normative subclauses of MS 2803:2025, MS 2809:2025, MS 2810:2025, MS 2627-2:2025 or MS 1900:2025.
+
+Candidate operational thresholds, fees, retention rules, certificate durations, audit frequencies and `MPPHM 2020 Pindaan 2026` claims remain gated pending primary/authority verification.
+
+See `17_ULTRA_DEEP_STANDARDS_PDF_RECONCILIATION_2026-09-19.md`.
