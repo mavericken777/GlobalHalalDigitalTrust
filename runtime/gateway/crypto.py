@@ -47,3 +47,11 @@ class Ed25519Signer:
     @classmethod
     def compute_sha256(cls, payload: Dict[str, Any]) -> str:
         return hashlib.sha256(cls.canonicalize_json(payload)).hexdigest()
+
+
+class CanonicalCryptoEngine:
+    generate_ed25519_keypair = staticmethod(Ed25519Signer.generate_keypair)
+    jcs_canonicalize = staticmethod(Ed25519Signer.canonicalize_json)
+    sign_document = classmethod(lambda cls, doc, key: Ed25519Signer.sign_payload(doc, key))
+    verify_document = classmethod(lambda cls, doc, sig, key: Ed25519Signer.verify_signature(doc, sig, key))
+    compute_sha256 = classmethod(lambda cls, data: Ed25519Signer.compute_sha256(data))
