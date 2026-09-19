@@ -1,0 +1,20 @@
+{
+  "accredited_facilities": {
+    "FIXTURE-MY-PL-1049": {
+      "name": "Demo northern processing fixture",
+      "country": "MYS",
+      "status": "ACTIVE",
+      "cert_valid_until": "2028-12-31",
+      "authority": "SIMULATED_REGISTRY_ONLY",
+      "not_jakim_listing": true
+    },
+    "FIXTURE-AU-PL-882": {
+      "name": "Demo southern processing fixture",
+      "country": "AUS",
+      "status": "ACTIVE",
+      "cert_valid_until": "2027-06-30",
+      "authority": "SIMULATED_REGISTRY_ONLY",
+      "not_jakim_listing": true
+    }
+  }
+}

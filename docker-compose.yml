@@ -1,0 +1,39 @@
+services:
+  opa:
+    image: openpolicyagent/opa:0.68.0
+    container_name: halal_opa_engine
+    ports:
+      - "8181:8181"
+    volumes:
+      - ./runtime/policies:/policies
+    command:
+      - "run"
+      - "--server"
+      - "--addr=0.0.0.0:8181"
+      - "--log-level=info"
+      - "--set=decision_logs.console=true"
+      - "/policies"
+    healthcheck:
+      test: ["CMD", "/opa", "eval", "true"]
+      interval: 5s
+      timeout: 3s
+      retries: 8
+
+  gateway:
+    build:
+      context: ./runtime/gateway
+      dockerfile: Dockerfile
+    container_name: halal_trust_gateway
+    ports:
+      - "8000:8000"
+    environment:
+      - OPA_URL=http://opa:8181/v1/data/halal/compliance
+      - ENVIRONMENT=reference
+    depends_on:
+      opa:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/api/v1/health')"]
+      interval: 5s
+      timeout: 3s
+      retries: 8
