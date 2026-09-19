@@ -1,0 +1,11 @@
+services:
+  api:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      AHTE_ENV: reference
+    volumes:
+      - ahte-data:/data
+volumes:
+  ahte-data:
