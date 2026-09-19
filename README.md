@@ -33,15 +33,31 @@ The live repository command layer is maintained in `00_EXECUTIVE_COMMAND/`:
 - `00_EXECUTIVE_COMMAND/trust-packet-schemas.json` and `schema-registry.json` - machine-readable trust/evidence schema layer;
 - `00_EXECUTIVE_COMMAND/commit-tag-taxonomy.json` - repository synchronization trigger taxonomy;
 - `00_EXECUTIVE_COMMAND/project-file-curation.json` - curated Project-source strategy with PROJECT-REPO fallback;
-- `00_EXECUTIVE_COMMAND/REPOSITORY_COMPLETION_AUDIT_2026-09-18.md` - current chat-to-repository completion audit.
+- `00_EXECUTIVE_COMMAND/REPOSITORY_COMPLETION_AUDIT_2026-09-18.md` - current chat-to-repository completion audit;
+- `00_EXECUTIVE_COMMAND/AGENT_CONTROL_LAYER_AUDIT_2026-09-19.md` - agent control-layer addition audit (post-freeze proposal).
 
-The controlled standards freeze remains `master-standards-stack/verified-2026-09-17/`. Post-freeze command, port, corridor and partner artifacts do not rewrite the frozen standards package.
+The controlled standards freeze remains `master-standards-stack/verified-2026-09-17/` (**16 content modules `00`–`15` + `MANIFEST.json`**). Post-freeze command, port, corridor, partner and agent-control artifacts do not rewrite the frozen standards package.
+
+## Agent control layer
+
+GitHub Copilot / agent governance (post-freeze proposal; does not alter the verified standards snapshot):
+
+- `AGENTS.md` - repository-root agent instructions
+- `.github/copilot-instructions.md` - Copilot repository-wide instructions
+- `.github/instructions/verified-freeze.instructions.md` - freeze immutability (path-scoped to `verified-2026-09-17/`)
+- `.github/agents/halal-trust-editor.agent.md` - specialist editor agent
+- `.github/prompts/ahte-platinum-asset-generation.prompt.md` - reusable asset workflow (IDE preview)
+- `.github/skills/ahte-source-governance/SKILL.md` - auto-loaded source governance skill
+- `.github/hooks/validate-freeze-integrity.json` - defense-in-depth freeze protection
+- `docs/TOOLING.md` - runtime-verified external tool registry (not project authority)
 
 ## Canonical verified package - 17 September 2026
 
 The current controlled compliance/market-validation baseline is:
 
 `master-standards-stack/verified-2026-09-17/`
+
+**Package composition: 16 content modules (`00`–`15`) + `MANIFEST.json`.**
 
 Contents:
 
@@ -87,7 +103,7 @@ Critical adjudications now frozen in the repository:
 ## IQ300 Master Standards Stack
 
 - `master-standards-stack/` - JAKIM/JSM standards intelligence and execution library
-- `master-standards-stack/verified-2026-09-17/` - current canonical verified control package
+- `master-standards-stack/verified-2026-09-17/` - current canonical verified control package (**16 modules + MANIFEST**)
 - `master-standards-stack/iq300-full-matrix/` - 613 source-backed MS 2400 requirement objects
 - `master-standards-stack/iq300-all-jakim-ms/` - earlier 17-standard catalogue/control library retained as supporting lineage
 - `master-standards-stack/process-flow-infographics/` - 17-standard process-flow atlas
@@ -171,15 +187,19 @@ Analytical evidence is purpose-limited: a `not detected` PCR/qPCR result does no
 - Secondary reports are source-adjudicated before their claims are promoted into controls.
 - Historical evidence remains attached to the source version applicable at the event date.
 
-## Project status - 18 September 2026 repository audit
+## Project status - 19 September 2026 repository audit
 
-The frozen standards baseline remains **17 September 2026**. The live repository has additionally completed and indexed the executive-command, doctrine/registry, importer/buyer, port/corridor and partner-folder expansion.
+The frozen standards baseline remains **17 September 2026** (**16 modules + MANIFEST**). The live repository has additionally completed and indexed the executive-command, doctrine/registry, importer/buyer, port/corridor, partner-folder and **agent control layer** expansion.
 
 Current completion audit:
 
 `00_EXECUTIVE_COMMAND/REPOSITORY_COMPLETION_AUDIT_2026-09-18.md`
 
-Repository state is **documentation-complete and gap-accounted** across standards, JAKIM operating controls, audit/evidence, sertu/stunning, najs/contamination, factory transformation, China manufacturer screening, GCC entry architecture, importer/buyer engagement, port/border governance, manufacturer economics, logistics/Shipment 001 controls, partner evidence boundaries and A-Z project governance.
+Agent control-layer audit:
+
+`00_EXECUTIVE_COMMAND/AGENT_CONTROL_LAYER_AUDIT_2026-09-19.md`
+
+Repository state is **documentation-complete and gap-accounted** across standards, JAKIM operating controls, audit/evidence, sertu/stunning, najs/contamination, factory transformation, China manufacturer screening, GCC entry architecture, importer/buyer engagement, port/border governance, manufacturer economics, logistics/Shipment 001 controls, partner evidence boundaries, A-Z project governance and agent/Copilot governance.
 
 External evidence that does not yet exist or is held by third parties remains explicitly gated: licensed non-supplied normative texts, official source for the reported 2026 JAKIM amendments, manufacturer private dossiers/certificates, importer/product approvals, buyer commitments, partner contracts, POs, live laboratory results/accreditation evidence, route/facility qualification and actual Shipment 001 events.
 
