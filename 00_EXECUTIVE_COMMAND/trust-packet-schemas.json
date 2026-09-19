@@ -1,9 +1,11 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "artifact": "trust-packet-schemas.json",
-  "version": "1.1.0",
-  "control_date": "2026-09-17",
-  "description": "JSON Schema registry for AHTE trust-packet components",
+  "version": "1.2.0",
+  "control_date": "2026-09-20",
+  "classification": "post-freeze schema extension",
+  "description": "JSON Schema registry for AHTE trust-packet components including IQ300 assurance objects",
+  "authority_note": "Schema presence does not create Halal certification or destination acceptance.",
   "schemas": {
     "identity_object": {
       "$id": "schema/trust-packet/identity.json",
@@ -29,7 +31,8 @@
         "scope": {"type": "string"},
         "validity_from": {"type": "string", "format": "date"},
         "validity_to": {"type": "string", "format": "date"},
-        "status": {"type": "string", "enum": ["active", "expired", "suspended", "contested"]}
+        "status": {"type": "string", "enum": ["active", "expired", "suspended", "contested"]},
+        "vc_id": {"type": ["string", "null"], "description": "Optional W3C VC identifier if an external issuer wrapped this object"}
       }
     },
     "evidence_object": {
@@ -43,7 +46,8 @@
         "class": {"type": "string", "enum": ["E1", "E2", "E3", "E4", "E5"]},
         "method": {"type": "string", "enum": ["scrape", "crawl", "search", "extract", "repository_fetch"]},
         "connector": {"type": "string"},
-        "http_status": {"type": "integer"}
+        "http_status": {"type": "integer"},
+        "scitt_receipt": {"type": ["string", "null"]}
       }
     },
     "custody_object": {
@@ -55,7 +59,8 @@
         "timestamp": {"type": "string", "format": "date-time"},
         "seal_id": {"type": "string"},
         "telemetry": {"type": "object"},
-        "location": {"type": "object"}
+        "location": {"type": "object"},
+        "epcis_event_id": {"type": ["string", "null"]}
       }
     },
     "audit_object": {
@@ -78,7 +83,8 @@
         "owner": {"type": "string"},
         "decision_point": {"type": "string"},
         "status": {"type": "string", "enum": ["pending", "approved", "rejected", "deferred"]},
-        "decision_timestamp": {"type": "string", "format": "date-time"}
+        "decision_timestamp": {"type": "string", "format": "date-time"},
+        "hitm_class": {"type": "string", "enum": ["D0", "D1", "D2", "D3", "D4", "D5", "D6"]}
       }
     },
     "trust_state_object": {
@@ -86,7 +92,7 @@
       "type": "object",
       "required": ["state", "derived_from"],
       "properties": {
-        "state": {"type": "string", "enum": ["verified", "unverified", "expired", "contested"]},
+        "state": {"type": "string", "enum": ["verified", "unverified", "expired", "contested", "held", "quarantined"]},
         "derived_from": {"type": "array", "items": {"type": "string"}},
         "authority_boundary_note": {"type": "string"}
       }
@@ -102,7 +108,118 @@
         "timestamp": {"type": "string", "format": "date-time"},
         "document_reference": {"type": "string"},
         "seal_id": {"type": "string"},
-        "condition": {"type": "string"}
+        "condition": {"type": "string"},
+        "epcis_event_id": {"type": ["string", "null"]}
+      }
+    },
+    "assessment_object": {
+      "$id": "schema/trust-packet/assessment.json",
+      "type": "object",
+      "required": ["assessment_id", "conclusion", "not_certification"],
+      "properties": {
+        "assessment_id": {"type": "string"},
+        "conclusion": {"type": "string"},
+        "confidence": {"type": "string", "enum": ["low", "medium", "high", "unset"]},
+        "model_id": {"type": "string"},
+        "not_certification": {"type": "boolean", "const": true},
+        "evidence_class_forbidden": {"type": "string", "const": "E5"}
+      }
+    },
+    "hitm_case_object": {
+      "$id": "schema/trust-packet/hitm-case.json",
+      "type": "object",
+      "required": ["case_id", "class", "reason", "status"],
+      "properties": {
+        "case_id": {"type": "string"},
+        "class": {"type": "string", "enum": ["D0", "D1", "D2", "D3", "D4", "D5", "D6"]},
+        "reason": {"type": "string"},
+        "jurisdiction": {"type": "string"},
+        "decision_type": {"type": "string"},
+        "status": {"type": "string", "enum": ["open", "escalated", "determined", "closed"]},
+        "policy_decision": {"type": "string", "enum": ["allow", "deny", "escalate"]},
+        "ai_confidence_used_as_bypass": {"type": "boolean", "const": false}
+      }
+    },
+    "authority_decision_object": {
+      "$id": "schema/trust-packet/authority-decision.json",
+      "type": "object",
+      "required": ["owner", "decision", "evidence_class"],
+      "properties": {
+        "owner": {"type": "string"},
+        "mandate_reference": {"type": "string"},
+        "decision": {"type": "string"},
+        "evidence_class": {"type": "string", "const": "E5"},
+        "signed_at": {"type": "string", "format": "date-time"},
+        "vc_id": {"type": ["string", "null"]},
+        "ahte_is_issuer": {"type": "boolean", "const": false}
+      }
+    },
+    "ai_provenance_object": {
+      "$id": "schema/trust-packet/ai-provenance.json",
+      "type": "object",
+      "required": ["model_id", "prompt_hash12", "output_hash12"],
+      "properties": {
+        "model_id": {"type": "string"},
+        "model_version": {"type": "string"},
+        "prompt_hash12": {"type": "string", "pattern": "^[A-Fa-f0-9]{12}$"},
+        "output_hash12": {"type": "string", "pattern": "^[A-Fa-f0-9]{12}$"},
+        "c2pa_manifest": {"type": ["string", "null"]}
+      }
+    },
+    "trust_vector_object": {
+      "$id": "schema/trust-packet/trust-vector.json",
+      "type": "object",
+      "required": ["hard_gates_passed", "score_is_sovereign"],
+      "properties": {
+        "dimensions": {
+          "type": "object",
+          "properties": {
+            "authority": {"type": "string"},
+            "evidence_provenance": {"type": "string"},
+            "identity": {"type": "string"},
+            "laboratory": {"type": "string"},
+            "audit": {"type": "string"},
+            "capa": {"type": "string"},
+            "material": {"type": "string"},
+            "process": {"type": "string"},
+            "custody": {"type": "string"},
+            "seal": {"type": "string"},
+            "destination": {"type": "string"},
+            "incident": {"type": "string"},
+            "cyber": {"type": "string"},
+            "human_decision": {"type": "string"}
+          }
+        },
+        "non_compensable": {
+          "type": "array",
+          "items": {"type": "string"},
+          "default": ["authority", "destination", "human_decision"]
+        },
+        "hard_gates_passed": {"type": "boolean"},
+        "score": {"type": ["number", "null"]},
+        "score_is_sovereign": {"type": "boolean", "const": false}
+      }
+    },
+    "release_decision_object": {
+      "$id": "schema/trust-packet/release-decision.json",
+      "type": "object",
+      "required": ["status", "is_certification"],
+      "properties": {
+        "status": {"type": "string", "enum": ["held", "released", "quarantined"]},
+        "is_certification": {"type": "boolean", "const": false},
+        "requires_d5_if_market_claim": {"type": "boolean", "const": true}
+      }
+    },
+    "fracture_event_object": {
+      "$id": "schema/trust-packet/fracture-event.json",
+      "type": "object",
+      "required": ["event_id", "trigger", "action"],
+      "properties": {
+        "event_id": {"type": "string"},
+        "trigger": {"type": "string"},
+        "action": {"type": "string", "enum": ["hold", "quarantine", "blast_radius", "reverify", "escalate_hitm"]},
+        "auto_release_forbidden": {"type": "boolean", "const": true},
+        "pilot_flag": {"type": "string"}
       }
     },
     "evidence_chain": {
@@ -144,7 +261,14 @@
         "port_custody": {"$ref": "schema/trust-packet/port-custody.json"},
         "audit": {"$ref": "schema/trust-packet/audit.json"},
         "authority_gate": {"$ref": "schema/trust-packet/authority-gate.json"},
-        "trust_state": {"$ref": "schema/trust-packet/trust-state.json"}
+        "trust_state": {"$ref": "schema/trust-packet/trust-state.json"},
+        "assessment": {"$ref": "schema/trust-packet/assessment.json"},
+        "hitm_case": {"$ref": "schema/trust-packet/hitm-case.json"},
+        "authority_decision": {"$ref": "schema/trust-packet/authority-decision.json"},
+        "ai_provenance": {"$ref": "schema/trust-packet/ai-provenance.json"},
+        "trust_vector": {"$ref": "schema/trust-packet/trust-vector.json"},
+        "release_decision": {"$ref": "schema/trust-packet/release-decision.json"},
+        "fracture_event": {"$ref": "schema/trust-packet/fracture-event.json"}
       }
     }
   }
