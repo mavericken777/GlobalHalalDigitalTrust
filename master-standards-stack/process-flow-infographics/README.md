@@ -2,12 +2,15 @@
 
 This directory is the visual execution layer for the **Amanah Halal Trust Ecosystem (AHTE)** standards library.
 
+> AHTE is an evidence and decision-support platform. Official Halal certification and destination regulatory decisions remain with the competent authorities.
+
 ## Deliverables
 
+- `AHTE_HD_VISUAL_ATLAS.md` — complete mermaid graph set (canonical path, 17-standard router, evidence fabric, HITM plane, custody, sertu, lab boundary, audit, port, Shipment 001 corridor, exception states, recall, warehouse).
 - `00_AHTE_MASTER_JAKIM_MS_PROCESS_FLOW.svg` — master atlas covering the full standards universe.
 - `01_...` through `17_...` — one detailed process-flow SVG per represented standard.
 - `STANDARDS_FLOW_SPEC.json` — machine-readable standard/flow definitions.
-- `../../tools/generate_ahtem_infographics.py` — reproducible generator.
+- `../../tools/generate_ahtem_infographics.py` — reproducible SVG generator.
 - `../../.github/workflows/generate-ahtem-infographics.yml` — automatic regeneration on source/spec changes.
 
 ## Standards covered
@@ -34,10 +37,6 @@ This directory is the visual execution layer for the **Amanah Halal Trust Ecosys
 
 ## Common AHTE execution chain
 
-`Authority / Shariah basis → Scope → Requirement → Control → HCP → Evidence → Audit → Corrective action → Re-verification → Authority gate → Trust state → Release / continuous assurance`
+`Authority → Standard / Instrument → Clause / Requirement → Applicability → Control → HCP / SCCP → Evidence → Audit Test → Finding → Corrective Action → Re-verification → Authority Gate → Trust State → Operational Release`
 
-The graphics are **implementation-oriented paraphrases**. They do not reproduce copyrighted normative standard text.
-
-### MS 2636:2019 inclusion
-
-MS 2636:2019 is a current published NSC 09 Halal standard in JSM/MySOL for manufacturing and handling of particular medical devices as specified by the halal competent authority. Its contents include quality management, management responsibility, Halal Management System, halal fundamentals, QC, personnel/training/hygiene, premises/equipment, manufacturing/storage, transportation, documentation, materials, packaging/labelling, outsourced activities, internal audit, legal requirements, halal certificates/mark, and an annex on sertu. Official MySOL evidence: https://mysol.jsm.gov.my/preview-file/ (MS 2636:2019 preview).
+The graphics are **implementation-oriented paraphrases**. They do not reproduce copyrighted normative standard text. They do not imply JAKIM, MAIN, JAIN, GCC, laboratory or customs endorsement.
