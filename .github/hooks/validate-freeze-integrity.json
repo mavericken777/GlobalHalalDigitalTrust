@@ -1,0 +1,13 @@
+{
+  "name": "validate-freeze-integrity",
+  "description": "Prevent any tool call that would modify the verified standards snapshot. Defense-in-depth only; primary control is agent + path instructions.",
+  "hooks": {
+    "preToolUse": [
+      {
+        "matcher": "edit|execute",
+        "command": "bash",
+        "script": "git diff --name-only master-standards-stack/verified-2026-09-17/ 2>/dev/null | grep -q . && echo 'BLOCKED: frozen snapshot modification attempted' >&2 && exit 2 || exit 0"
+      }
+    ]
+  }
+}
