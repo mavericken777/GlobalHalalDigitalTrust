@@ -1,8 +1,9 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "artifact": "schema-registry.json",
-  "version": "1.1.0",
-  "control_date": "2026-09-17",
+  "version": "1.2.0",
+  "control_date": "2026-09-20",
+  "classification": "post-freeze schema index extension",
   "description": "Schema registry index for structured output domains",
   "schemas": {
     "evidence-chain": {"path": "trust-packet-schemas.json#/schemas/evidence_chain", "purpose": "Evidence chain analysis output"},
@@ -15,7 +16,18 @@
     "custody-object": {"path": "trust-packet-schemas.json#/schemas/custody_object", "purpose": "Custody object output"},
     "port-custody-object": {"path": "trust-packet-schemas.json#/schemas/port_custody_object", "purpose": "Port custody and clearance event output"},
     "audit-object": {"path": "trust-packet-schemas.json#/schemas/audit_object", "purpose": "Audit object output"},
-    "trust-state-object": {"path": "trust-packet-schemas.json#/schemas/trust_state_object", "purpose": "Trust state object output"}
+    "trust-state-object": {"path": "trust-packet-schemas.json#/schemas/trust_state_object", "purpose": "Trust state object output"},
+    "assessment-object": {"path": "trust-packet-schemas.json#/schemas/assessment_object", "purpose": "Machine assessment; never E5"},
+    "hitm-case-object": {"path": "trust-packet-schemas.json#/schemas/hitm_case_object", "purpose": "Reserved-decision case"},
+    "authority-decision-object": {"path": "trust-packet-schemas.json#/schemas/authority_decision_object", "purpose": "Signed competent-authority decision"},
+    "ai-provenance-object": {"path": "trust-packet-schemas.json#/schemas/ai_provenance_object", "purpose": "Model/prompt/hash envelope"},
+    "trust-vector-object": {"path": "trust-packet-schemas.json#/schemas/trust_vector_object", "purpose": "Descriptive trust vector; score secondary"},
+    "release-decision-object": {"path": "trust-packet-schemas.json#/schemas/release_decision_object", "purpose": "Operational release; not certification"},
+    "fracture-event-object": {"path": "trust-packet-schemas.json#/schemas/fracture_event_object", "purpose": "Trust-fracture event"}
   },
-  "enforcement_note": "Output is a formatting requirement; not decode-time enforced. Validate before delivery."
+  "related_registries": {
+    "hitm_classes": "hitm-decision-class-registry.json",
+    "path_map": "canonical-path-machine-map.json"
+  },
+  "enforcement_note": "Output is a formatting requirement; not decode-time enforced. Validate before delivery. Schema conformance does not create authority status."
 }
