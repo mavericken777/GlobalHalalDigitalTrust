@@ -1,0 +1,46 @@
+name: Gateway and OPA verification
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  policy-verification:
+    name: OPA policy tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: open-policy-agent/setup-opa@v2
+        with:
+          version: 0.68.0
+      - run: opa test -v runtime/policies/
+
+  system-integration:
+    name: Compose and e2e
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Boot stack
+        run: docker compose up -d --build
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Wait for OPA
+        run: |
+          for i in $(seq 1 30); do
+            if curl -sf http://127.0.0.1:8181/health >/dev/null; then exit 0; fi
+            sleep 2
+          done
+          docker compose logs
+          exit 1
+      - name: Install test deps
+        run: pip install -r runtime/gateway/requirements.txt
+      - name: E2E
+        env:
+          OPA_URL: http://127.0.0.1:8181/v1/data/halal/compliance
+        run: pytest -v tests/e2e/test_shipment_pipeline.py
+      - name: Teardown
+        if: always()
+        run: docker compose down -v
