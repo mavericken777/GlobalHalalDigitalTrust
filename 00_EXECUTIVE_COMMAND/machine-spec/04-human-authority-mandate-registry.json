@@ -1,0 +1,17 @@
+{
+  "artifact": "04-human-authority-mandate-registry.json",
+  "version": "0.1.0",
+  "control_date": "2026-09-20",
+  "classification": "post-freeze proposal — stub",
+  "authority_effect": "none",
+  "note": "Role classes only. Named officers and live mandates are EXTERNAL-GATE.",
+  "roles": [
+    {"id": "R-JAKIM", "body": "JAKIM", "scope": "Malaysia Halal certification / SPHM where applicable", "class": "D5", "mandate_status": "EXTERNAL-GATE"},
+    {"id": "R-MAIN-JAIN", "body": "MAIN / JAIN", "scope": "State Islamic religious authority functions as applicable", "class": "D5", "mandate_status": "EXTERNAL-GATE"},
+    {"id": "R-GCC-CA", "body": "Destination GCC competent authority", "scope": "Import / destination Halal acceptance", "class": "D5", "mandate_status": "EXTERNAL-GATE"},
+    {"id": "R-MUFTI", "body": "Competent religious authority", "scope": "Fatwa / instrument interpretation", "class": "D6", "mandate_status": "EXTERNAL-GATE"},
+    {"id": "R-HE", "body": "Appointed Halal Executive / quality owner", "scope": "D3 finding/CAPA classification", "class": "D3", "mandate_status": "TRANSACTION-GATE"},
+    {"id": "R-AUDITOR", "body": "Appointed auditor", "scope": "Audit finding confirmation", "class": "D3", "mandate_status": "TRANSACTION-GATE"}
+  ],
+  "ban": "AHTE / IQ300 is not a role in this registry for certification issuance."
+}

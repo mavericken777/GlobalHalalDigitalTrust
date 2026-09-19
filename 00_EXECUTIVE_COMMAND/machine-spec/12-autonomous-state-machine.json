@@ -1,0 +1,22 @@
+{
+  "artifact": "12-autonomous-state-machine.json",
+  "version": "0.1.0",
+  "control_date": "2026-09-20",
+  "classification": "post-freeze proposal",
+  "implementation": "not deployed",
+  "states": ["draft", "evidence_incomplete", "assessed", "hitm_open", "authority_pending", "authority_decided", "eligible", "released", "held", "quarantined", "contested", "withdrawn"],
+  "transitions": [
+    {"from": "draft", "to": "evidence_incomplete", "on": "packet_opened"},
+    {"from": "evidence_incomplete", "to": "assessed", "on": "D2_assessment", "object": "assessment_object"},
+    {"from": "assessed", "to": "hitm_open", "on": "D3_D6_detect"},
+    {"from": "assessed", "to": "eligible", "on": "hard_gates_pass_and_no_reserved"},
+    {"from": "hitm_open", "to": "authority_pending", "on": "D5_D6_case"},
+    {"from": "authority_pending", "to": "authority_decided", "on": "E5_authority_decision", "issuer": "competent_authority_not_ahte"},
+    {"from": "eligible", "to": "released", "on": "operational_release", "not": "certification"},
+    {"from": ["assessed", "eligible", "released"], "to": "held", "on": "fracture_D4"},
+    {"from": "held", "to": "eligible", "on": "human_determination_and_reverification"},
+    {"from": "held", "to": "authority_pending", "on": "escalated_D5"},
+    {"from": "released", "to": "withdrawn", "on": "authority_suspension"}
+  ],
+  "failure_closed": "undefined transition = remain or hold; never auto-certify"
+}

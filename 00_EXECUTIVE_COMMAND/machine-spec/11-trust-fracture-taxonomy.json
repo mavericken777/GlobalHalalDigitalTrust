@@ -1,0 +1,19 @@
+{
+  "artifact": "11-trust-fracture-taxonomy.json",
+  "version": "0.1.0",
+  "control_date": "2026-09-20",
+  "classification": "post-freeze proposal",
+  "pilot": "[PILOT: Shipment 001 — continuous trust-fracture monitoring]",
+  "events": [
+    {"code": "seal_break", "auto_hold": true, "auto_release": false, "likely_class": "D4"},
+    {"code": "lab_alert", "auto_hold": true, "auto_release": false, "likely_class": "D4", "may_escalate": "D5"},
+    {"code": "custody_gap", "auto_hold": true, "auto_release": false, "likely_class": "D4"},
+    {"code": "certificate_lapse", "auto_hold": true, "auto_release": false, "likely_class": "D5"},
+    {"code": "identity_mismatch", "auto_hold": true, "auto_release": false, "likely_class": "D3"},
+    {"code": "destination_hold", "auto_hold": true, "auto_release": false, "likely_class": "D5"},
+    {"code": "cyber", "auto_hold": true, "auto_release": false, "likely_class": "D4"},
+    {"code": "other", "auto_hold": true, "auto_release": false, "likely_class": "D4"}
+  ],
+  "loop": ["authorise", "continuous_evidence", "reconcile", "fracture?", "hold", "blast_radius", "re_verification", "resolved_release_OR_authority_HITM"],
+  "ban": "Do not instantiate events without transaction-native evidence."
+}

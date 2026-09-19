@@ -1,0 +1,19 @@
+{
+  "artifact": "09-hard-gate-rules.json",
+  "version": "0.1.0",
+  "control_date": "2026-09-20",
+  "classification": "post-freeze proposal",
+  "principle": "A failed hard-gate cannot be offset by a high score on other dimensions.",
+  "score_is_sovereign": false,
+  "gates": [
+    {"id": "HG-AUTH", "dimension": "authority_certificate", "fail_if": "required certificate missing, expired, suspended, or out of scope", "compensable": false, "class": "D5"},
+    {"id": "HG-ID", "dimension": "identity", "fail_if": "legal entity / factory / SKU / batch identity unresolved", "compensable": false},
+    {"id": "HG-LAB", "dimension": "laboratory", "fail_if": "positive prohibited analyte or contested lab packet used as HALAL", "compensable": false, "rule": "NOT DETECTED != HALAL"},
+    {"id": "HG-SEAL", "dimension": "seal", "fail_if": "seal break or seal-id mismatch without human close-out", "compensable": false, "class": "D4"},
+    {"id": "HG-CUSTODY", "dimension": "custody", "fail_if": "unexplained custody gap on the corridor", "compensable": false},
+    {"id": "HG-DEST", "dimension": "destination", "fail_if": "destination hold / refusal", "compensable": false, "class": "D5"},
+    {"id": "HG-HITM", "dimension": "human_decision", "fail_if": "open D5/D6 HITM case", "compensable": false}
+  ],
+  "eligible_state_space": "all hard-gates passed or explicitly waived by competent authority (E5)",
+  "score_function": "descriptive aggregate only after eligible_state_space == true"
+}

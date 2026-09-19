@@ -1,0 +1,20 @@
+{
+  "artifact": "02-ai-action-authority-matrix.json",
+  "version": "0.1.0",
+  "control_date": "2026-09-20",
+  "classification": "post-freeze proposal",
+  "source_classes": "../hitm-decision-class-registry.json",
+  "actions": [
+    {"action": "ingest_hash", "class": "D0", "ai_execute": true, "human": false},
+    {"action": "validate_schema", "class": "D0", "ai_execute": true, "human": false},
+    {"action": "apply_encoded_control", "class": "D1", "ai_execute": true, "human": false},
+    {"action": "assess", "class": "D2", "ai_execute": true, "human": false, "creates_e5": false},
+    {"action": "propose_ncr_grade", "class": "D3", "ai_execute": false, "ai_recommend": true, "human": true},
+    {"action": "hold", "class": "D4", "ai_execute": true, "human": false},
+    {"action": "release_from_hold", "class": "D4", "ai_execute": false, "human": true},
+    {"action": "malaysia_halal_decision", "class": "D5", "ai_execute": false, "human": true, "owner": ["JAKIM", "MAIN", "JAIN"]},
+    {"action": "destination_acceptance", "class": "D5", "ai_execute": false, "human": true, "owner": ["GCC competent authority"]},
+    {"action": "fatwa_or_instrument", "class": "D6", "ai_execute": false, "human": true}
+  ],
+  "ban": ["confidence_bypass_of_D5_D6", "assessment_as_E5", "not_detected_equals_halal"]
+}

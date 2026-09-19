@@ -1,0 +1,17 @@
+{
+  "artifact": "15-agent-runtime-permissions.json",
+  "version": "0.1.0",
+  "control_date": "2026-09-20",
+  "classification": "post-freeze proposal",
+  "identity": "SPIFFE/SPIRE recommended; not deployed",
+  "residual_risk": "Compromised node can mint co-located SVIDs; node hardening required.",
+  "permissions": [
+    {"workload": "spiffe://ahte.example/ingest", "allow": ["D0"]},
+    {"workload": "spiffe://ahte.example/control", "allow": ["D1"]},
+    {"workload": "spiffe://ahte.example/assess", "allow": ["D2"], "deny": ["D5", "D6", "issue_halal_vc"]},
+    {"workload": "spiffe://ahte.example/hitm-pep", "allow": ["evaluate_policy"], "deny": ["self_allow_reserved"]},
+    {"workload": "spiffe://ahte.example/fracture", "allow": ["D4_hold"], "deny": ["D4_release"]},
+    {"workload": "spiffe://ahte.example/release", "allow": ["operational_release_if_eligible"], "deny": ["certify"]}
+  ],
+  "trust_domain": "UNVERIFIED — example identifiers only"
+}
