@@ -14,7 +14,7 @@ Build a sovereign, federated and AI-enabled global digital trust infrastructure 
 
 AHTE operationalises Halal/Tayyib trust as a source-aware compliance and evidence graph rather than a certificate database.
 
-Canonical path:
+Canonical path (controlling doctrine — unchanged):
 
 `Authority -> Standard/Instrument -> Clause/Requirement -> Applicability -> Control -> HCP/SCCP -> Evidence -> Audit Test -> Finding -> Corrective Action -> Re-verification -> Authority Gate -> Trust State -> Operational Release`
 
@@ -26,17 +26,23 @@ The live repository command layer is maintained in `00_EXECUTIVE_COMMAND/`:
 
 - `00_EXECUTIVE_COMMAND/ABSOLUTE_MODE_SYSTEM_INSTRUCTION_v14.1.md` - current source/authority/canonical-path/flag operating instruction;
 - `00_EXECUTIVE_COMMAND/IQ300_DOCTRINE.md` - complete operational doctrine v3.1, including port/border and corridor integration;
+- `00_EXECUTIVE_COMMAND/IQ300_ASSURANCE_CONTROL_PLANE_SPEC_v0.1.md` - post-freeze proposal for the autonomous assurance plane (HITM PEP; AI does not issue certificates);
+- `00_EXECUTIVE_COMMAND/IQ300_2026_INTEROP_STACK.md` - VC 2.0, RFC 9943 SCITT, EPCIS 2.0, OPA, SPIFFE, C2PA 2.4 characterisation;
+- `00_EXECUTIVE_COMMAND/hitm-decision-class-registry.json` - D0-D6 reserved-decision classes;
+- `00_EXECUTIVE_COMMAND/canonical-path-machine-map.json` - machine-node to 14-node path map;
+- `00_EXECUTIVE_COMMAND/policies/hitm-default-deny.rego` - OPA default-deny draft;
 - `00_EXECUTIVE_COMMAND/live-source-registry.json` - controlled authority and canonical retrieval endpoints;
 - `00_EXECUTIVE_COMMAND/partner-registry.json` - project-designated partner roles with contractual/evidence gates;
 - `00_EXECUTIVE_COMMAND/port-authority-registry.json` - China/GCC port-customs authority references;
 - `00_EXECUTIVE_COMMAND/corridor-registry.json` - China -> GCC direct five-segment corridor model;
-- `00_EXECUTIVE_COMMAND/trust-packet-schemas.json` and `schema-registry.json` - machine-readable trust/evidence schema layer;
+- `00_EXECUTIVE_COMMAND/trust-packet-schemas.json` and `schema-registry.json` - machine-readable trust/evidence schema layer (v1.2.0 includes assessment, HITM, vector, decision objects);
 - `00_EXECUTIVE_COMMAND/commit-tag-taxonomy.json` - repository synchronization trigger taxonomy;
 - `00_EXECUTIVE_COMMAND/project-file-curation.json` - curated Project-source strategy with PROJECT-REPO fallback;
 - `00_EXECUTIVE_COMMAND/REPOSITORY_COMPLETION_AUDIT_2026-09-18.md` - current chat-to-repository completion audit;
-- `00_EXECUTIVE_COMMAND/AGENT_CONTROL_LAYER_AUDIT_2026-09-19.md` - agent control-layer addition audit (post-freeze proposal).
+- `00_EXECUTIVE_COMMAND/AGENT_CONTROL_LAYER_AUDIT_2026-09-19.md` - agent control-layer addition audit (post-freeze proposal);
+- `00_EXECUTIVE_COMMAND/IQ300_ASSURANCE_CONTROL_PLANE_AUDIT_2026-09-20.md` - control-plane addition ledger.
 
-The controlled standards freeze remains `master-standards-stack/verified-2026-09-17/` (**16 content modules `00`–`15` + `MANIFEST.json`**). Post-freeze command, port, corridor, partner and agent-control artifacts do not rewrite the frozen standards package.
+The controlled standards freeze remains `master-standards-stack/verified-2026-09-17/` (**16 content modules `00`–`15` + `MANIFEST.json`**). Post-freeze command, port, corridor, partner, agent-control and assurance-plane artifacts do not rewrite the frozen standards package.
 
 ## Agent control layer
 
@@ -50,6 +56,18 @@ GitHub Copilot / agent governance (post-freeze proposal; does not alter the veri
 - `.github/skills/ahte-source-governance/SKILL.md` - auto-loaded source governance skill
 - `.github/hooks/validate-freeze-integrity.json` - defense-in-depth freeze protection
 - `docs/TOOLING.md` - runtime-verified external tool registry (not project authority)
+
+## IQ300 assurance control plane (proposal)
+
+Target design (not promoted into freeze or v3.1 path):
+
+- IQ300 automates the assurance system around authority; it does not automate authority away.
+- HITM is a policy enforcement point (OPA default deny). High AI confidence cannot skip D5/D6 gates.
+- Five sovereign objects: Evidence, Assessment, HITM Case, Authority Decision, Trust State.
+- Trust vector is primary; score is descriptive and non-sovereign.
+- 2026 bindings characterised: W3C VC 2.0, IETF RFC 9943, GS1 EPCIS 2.0, OPA, SPIFFE/SPIRE, C2PA 2.4.
+
+Promotion requires explicit `[DOCTRINE-CRITICAL]` maintainer acceptance. Runtime remain `[ENGINEERING-GATE]`.
 
 ## Canonical verified package - 17 September 2026
 
@@ -174,7 +192,7 @@ Partner operating-role designations are kept distinct from executed contractual 
 
 Malaysian Standards are technical normative instruments. Malaysia Halal certification decisions remain with the competent Halal authority under the applicable certification/legal framework. Destination import and halal decisions remain with the relevant GCC authority and importer/regulatory process.
 
-No AI model, laboratory result, QR code, blockchain record, manufacturer declaration, sensor stream or platform event independently creates official Halal certification.
+No AI model, laboratory result, QR code, blockchain record, manufacturer declaration, sensor stream, trust vector, trust score or platform event independently creates official Halal certification.
 
 Analytical evidence is purpose-limited: a `not detected` PCR/qPCR result does not by itself establish halal status. Generic sanitation does not substitute for sertu. A recognised certification body's listing does not prove a particular manufacturer certificate is current or scope-correct.
 
@@ -187,9 +205,9 @@ Analytical evidence is purpose-limited: a `not detected` PCR/qPCR result does no
 - Secondary reports are source-adjudicated before their claims are promoted into controls.
 - Historical evidence remains attached to the source version applicable at the event date.
 
-## Project status - 19 September 2026 repository audit
+## Project status - 20 September 2026
 
-The frozen standards baseline remains **17 September 2026** (**16 modules + MANIFEST**). The live repository has additionally completed and indexed the executive-command, doctrine/registry, importer/buyer, port/corridor, partner-folder and **agent control layer** expansion.
+The frozen standards baseline remains **17 September 2026** (**16 modules + MANIFEST**). The live repository has additionally indexed the executive-command, doctrine/registry, importer/buyer, port/corridor, partner-folder, agent control layer and **IQ300 assurance control-plane proposal**.
 
 Current completion audit:
 
@@ -199,9 +217,13 @@ Agent control-layer audit:
 
 `00_EXECUTIVE_COMMAND/AGENT_CONTROL_LAYER_AUDIT_2026-09-19.md`
 
-Repository state is **documentation-complete and gap-accounted** across standards, JAKIM operating controls, audit/evidence, sertu/stunning, najs/contamination, factory transformation, China manufacturer screening, GCC entry architecture, importer/buyer engagement, port/border governance, manufacturer economics, logistics/Shipment 001 controls, partner evidence boundaries, A-Z project governance and agent/Copilot governance.
+Assurance control-plane audit:
 
-External evidence that does not yet exist or is held by third parties remains explicitly gated: licensed non-supplied normative texts, official source for the reported 2026 JAKIM amendments, manufacturer private dossiers/certificates, importer/product approvals, buyer commitments, partner contracts, POs, live laboratory results/accreditation evidence, route/facility qualification and actual Shipment 001 events.
+`00_EXECUTIVE_COMMAND/IQ300_ASSURANCE_CONTROL_PLANE_AUDIT_2026-09-20.md`
+
+Repository state is **documentation-complete and gap-accounted** across standards, JAKIM operating controls, audit/evidence, sertu/stunning, najs/contamination, factory transformation, China manufacturer screening, GCC entry architecture, importer/buyer engagement, port/border governance, manufacturer economics, logistics/Shipment 001 controls, partner evidence boundaries, A-Z project governance, agent/Copilot governance and the proposed assurance control plane.
+
+External evidence that does not yet exist or is held by third parties remains explicitly gated: licensed non-supplied normative texts, official source for the reported 2026 JAKIM amendments, manufacturer private dossiers/certificates, importer/product approvals, buyer commitments, partner contracts, POs, live laboratory results/accreditation evidence, route/facility qualification, actual Shipment 001 events, and runtime OPA/SCITT/EPCIS/SPIRE deployment.
 
 ## IQ300 doctrine
 
