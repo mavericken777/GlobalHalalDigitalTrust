@@ -4,8 +4,9 @@
 
 - Current operating instruction artifact: `ABSOLUTE_MODE_SYSTEM_INSTRUCTION_v14.1.md`
 - Current doctrine artifact: `IQ300_DOCTRINE.md` v3.1
-- Controlled standards freeze: `master-standards-stack/verified-2026-09-17/`
+- Controlled standards freeze: `master-standards-stack/verified-2026-09-17/` (**16 content modules `00`–`15` + `MANIFEST.json`**)
 - Post-freeze repository completion audit: `REPOSITORY_COMPLETION_AUDIT_2026-09-18.md`
+- Agent control-layer audit: `AGENT_CONTROL_LAYER_AUDIT_2026-09-19.md`
 - Default pilot corridor: China → GCC direct
 - Shipment 001: architecture/evidence-gate complete; transaction not instantiated
 
@@ -20,6 +21,7 @@ This directory is the command, doctrine, machine-readable governance and source-
 | `MASTER_DISCUSSION_DECISION_LOG_2026.md` | Executive decision lineage | CONTROLLED |
 | `OCTOBER_2026_STRATEGIC_IMPLEMENTATION_MISSION.md` | Strategic implementation mission | CONTROLLED |
 | `REPOSITORY_COMPLETION_AUDIT_2026-09-18.md` | Chat-to-repository completion and integrity audit | CURRENT AUDIT |
+| `AGENT_CONTROL_LAYER_AUDIT_2026-09-19.md` | GitHub Copilot / agent control-layer addition audit | CURRENT POST-FREEZE PROPOSAL |
 
 ## Registry artifacts
 
@@ -33,6 +35,19 @@ This directory is the command, doctrine, machine-readable governance and source-
 | `project-file-curation.json` | High-frequency Project source curation and PROJECT-REPO fallback |
 | `trust-packet-schemas.json` | Draft 2020-12 trust/evidence/custody/audit/authority/trust-state schema definitions |
 | `schema-registry.json` | Structured-output schema index |
+
+## Related repository agent control (root / `.github`)
+
+| Artifact | Purpose |
+|---|---|
+| `AGENTS.md` (repository root) | Cross-agent repository instructions |
+| `.github/copilot-instructions.md` | Copilot repository-wide instructions |
+| `.github/instructions/verified-freeze.instructions.md` | Path-scoped freeze immutability |
+| `.github/agents/halal-trust-editor.agent.md` | Specialist editor agent |
+| `.github/prompts/ahte-platinum-asset-generation.prompt.md` | Reusable asset workflow (IDE) |
+| `.github/skills/ahte-source-governance/SKILL.md` | Auto-loaded source governance skill |
+| `.github/hooks/validate-freeze-integrity.json` | Defense-in-depth freeze check |
+| `docs/TOOLING.md` | Runtime-verified external tool registry (not project authority) |
 
 ## Canonical path
 
