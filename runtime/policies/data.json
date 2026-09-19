@@ -16,5 +16,18 @@
       "authority": "SIMULATED_REGISTRY_ONLY",
       "not_jakim_listing": true
     }
+  },
+  "accredited_registry": {
+    "FIXTURE-MY-PL-1049": {
+      "name": "Demo northern processing fixture",
+      "status": "ACTIVE",
+      "valid_until": "2028-12-31T23:59:59Z",
+      "not_jakim_listing": true
+    }
+  },
+  "corridor_weights": {
+    "MYS": { "shafii": 1.0, "hanafi": 0.0, "maliki": 0.0, "hanbali": 0.0, "note": "DEMO_WEIGHTS_NOT_STATUTE" },
+    "ARE": { "shafii": 0.25, "hanafi": 0.25, "maliki": 0.25, "hanbali": 0.25, "note": "DEMO_WEIGHTS_NOT_STATUTE" },
+    "SAU": { "shafii": 0.1, "hanafi": 0.1, "maliki": 0.1, "hanbali": 0.7, "note": "DEMO_WEIGHTS_NOT_STATUTE" }
   }
 }
