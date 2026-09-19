@@ -3,9 +3,10 @@
   "artifact": "trust-packet-schemas.json",
   "version": "1.2.0",
   "control_date": "2026-09-20",
-  "classification": "post-freeze schema extension",
-  "description": "JSON Schema registry for AHTE trust-packet components including IQ300 assurance objects",
-  "authority_note": "Schema presence does not create Halal certification or destination acceptance.",
+  "classification": "post-freeze proposal schema extension",
+  "authority_effect": "none",
+  "description": "JSON Schema registry for AHTE trust-packet components. Schema conformance does not create authority status.",
+  "supersedes": "1.1.0",
   "schemas": {
     "identity_object": {
       "$id": "schema/trust-packet/identity.json",
@@ -32,7 +33,7 @@
         "validity_from": {"type": "string", "format": "date"},
         "validity_to": {"type": "string", "format": "date"},
         "status": {"type": "string", "enum": ["active", "expired", "suspended", "contested"]},
-        "vc_id": {"type": ["string", "null"], "description": "Optional W3C VC identifier if an external issuer wrapped this object"}
+        "ahte_does_not_issue": {"type": "boolean", "const": true}
       }
     },
     "evidence_object": {
@@ -40,14 +41,14 @@
       "type": "object",
       "required": ["source", "hash_sha256_first_12", "retrieval_timestamp", "class"],
       "properties": {
-        "source": {"type": "string", "format": "uri"},
+        "source": {"type": "string"},
         "hash_sha256_first_12": {"type": "string", "pattern": "^[A-Fa-f0-9]{12}$"},
         "retrieval_timestamp": {"type": "string", "format": "date-time"},
         "class": {"type": "string", "enum": ["E1", "E2", "E3", "E4", "E5"]},
-        "method": {"type": "string", "enum": ["scrape", "crawl", "search", "extract", "repository_fetch"]},
+        "method": {"type": "string", "enum": ["scrape", "crawl", "search", "extract", "repository_fetch", "instrument", "operator_record"]},
         "connector": {"type": "string"},
         "http_status": {"type": "integer"},
-        "scitt_receipt": {"type": ["string", "null"]}
+        "scitt_receipt_id": {"type": "string"}
       }
     },
     "custody_object": {
@@ -60,7 +61,7 @@
         "seal_id": {"type": "string"},
         "telemetry": {"type": "object"},
         "location": {"type": "object"},
-        "epcis_event_id": {"type": ["string", "null"]}
+        "epcis_event_id": {"type": "string"}
       }
     },
     "audit_object": {
@@ -84,7 +85,7 @@
         "decision_point": {"type": "string"},
         "status": {"type": "string", "enum": ["pending", "approved", "rejected", "deferred"]},
         "decision_timestamp": {"type": "string", "format": "date-time"},
-        "hitm_class": {"type": "string", "enum": ["D0", "D1", "D2", "D3", "D4", "D5", "D6"]}
+        "hitm_class": {"type": "string", "enum": ["D5", "D6"]}
       }
     },
     "trust_state_object": {
@@ -94,7 +95,8 @@
       "properties": {
         "state": {"type": "string", "enum": ["verified", "unverified", "expired", "contested", "held", "quarantined"]},
         "derived_from": {"type": "array", "items": {"type": "string"}},
-        "authority_boundary_note": {"type": "string"}
+        "authority_boundary_note": {"type": "string"},
+        "not_certification": {"type": "boolean", "const": true}
       }
     },
     "port_custody_object": {
@@ -108,73 +110,85 @@
         "timestamp": {"type": "string", "format": "date-time"},
         "document_reference": {"type": "string"},
         "seal_id": {"type": "string"},
-        "condition": {"type": "string"},
-        "epcis_event_id": {"type": ["string", "null"]}
+        "condition": {"type": "string"}
       }
     },
     "assessment_object": {
       "$id": "schema/trust-packet/assessment.json",
       "type": "object",
-      "required": ["assessment_id", "conclusion", "not_certification"],
+      "required": ["assessment_id", "model_id", "conclusion", "evidence_refs", "creates_authority_decision"],
       "properties": {
         "assessment_id": {"type": "string"},
-        "conclusion": {"type": "string"},
-        "confidence": {"type": "string", "enum": ["low", "medium", "high", "unset"]},
         "model_id": {"type": "string"},
-        "not_certification": {"type": "boolean", "const": true},
-        "evidence_class_forbidden": {"type": "string", "const": "E5"}
+        "model_version": {"type": "string"},
+        "prompt_hash12": {"type": "string", "pattern": "^[A-Fa-f0-9]{12}$"},
+        "conclusion": {"type": "string"},
+        "confidence": {"type": "string", "enum": ["low", "medium", "high", "unscored"]},
+        "evidence_refs": {"type": "array", "items": {"type": "string"}},
+        "creates_authority_decision": {"type": "boolean", "const": false},
+        "evidence_class": {"type": "string", "enum": ["E1", "E2", "E3", "E4"], "description": "Never E5"},
+        "hitm_class": {"type": "string", "const": "D2"}
       }
     },
     "hitm_case_object": {
       "$id": "schema/trust-packet/hitm-case.json",
       "type": "object",
-      "required": ["case_id", "class", "reason", "status"],
+      "required": ["case_id", "class", "jurisdiction", "decision_type", "status"],
       "properties": {
         "case_id": {"type": "string"},
-        "class": {"type": "string", "enum": ["D0", "D1", "D2", "D3", "D4", "D5", "D6"]},
-        "reason": {"type": "string"},
+        "class": {"type": "string", "enum": ["D3", "D4", "D5", "D6"]},
         "jurisdiction": {"type": "string"},
         "decision_type": {"type": "string"},
-        "status": {"type": "string", "enum": ["open", "escalated", "determined", "closed"]},
-        "policy_decision": {"type": "string", "enum": ["allow", "deny", "escalate"]},
-        "ai_confidence_used_as_bypass": {"type": "boolean", "const": false}
+        "authority_mandate_ref": {"type": "string"},
+        "decision_scope": {"type": "string"},
+        "state_transition": {"type": "string"},
+        "status": {"type": "string", "enum": ["open", "escalated", "held", "human_determined", "closed"]},
+        "ai_confidence": {"type": "string", "enum": ["low", "medium", "high", "unscored"]},
+        "ai_confidence_may_bypass": {"type": "boolean", "const": false},
+        "opa_decision_log_ref": {"type": "string"}
       }
     },
     "authority_decision_object": {
       "$id": "schema/trust-packet/authority-decision.json",
       "type": "object",
-      "required": ["owner", "decision", "evidence_class"],
+      "required": ["decision_id", "owner", "decision_type", "outcome", "issued_by_ahte"],
       "properties": {
+        "decision_id": {"type": "string"},
         "owner": {"type": "string"},
-        "mandate_reference": {"type": "string"},
-        "decision": {"type": "string"},
+        "decision_type": {"type": "string"},
+        "outcome": {"type": "string", "enum": ["approved", "rejected", "deferred", "suspended"]},
+        "issued_by_ahte": {"type": "boolean", "const": false},
         "evidence_class": {"type": "string", "const": "E5"},
+        "hitm_class": {"type": "string", "enum": ["D5", "D6"]},
+        "vc_id": {"type": "string", "description": "Optional wrap of an EXTERNAL issuer VC; AHTE is not the Halal issuer"},
         "signed_at": {"type": "string", "format": "date-time"},
-        "vc_id": {"type": ["string", "null"]},
-        "ahte_is_issuer": {"type": "boolean", "const": false}
+        "mandate_ref": {"type": "string"}
       }
     },
     "ai_provenance_object": {
       "$id": "schema/trust-packet/ai-provenance.json",
       "type": "object",
-      "required": ["model_id", "prompt_hash12", "output_hash12"],
+      "required": ["model_id", "generated_at", "asset_hash12"],
       "properties": {
         "model_id": {"type": "string"},
         "model_version": {"type": "string"},
-        "prompt_hash12": {"type": "string", "pattern": "^[A-Fa-f0-9]{12}$"},
-        "output_hash12": {"type": "string", "pattern": "^[A-Fa-f0-9]{12}$"},
-        "c2pa_manifest": {"type": ["string", "null"]}
+        "prompt_hash12": {"type": "string"},
+        "generated_at": {"type": "string", "format": "date-time"},
+        "asset_hash12": {"type": "string", "pattern": "^[A-Fa-f0-9]{12}$"},
+        "c2pa_manifest_ref": {"type": "string"},
+        "digital_source_type": {"type": "string"},
+        "human_oversight": {"type": "string", "enum": ["none", "reviewed", "edited", "approved"]}
       }
     },
     "trust_vector_object": {
       "$id": "schema/trust-packet/trust-vector.json",
       "type": "object",
-      "required": ["hard_gates_passed", "score_is_sovereign"],
+      "required": ["dimensions", "hard_gates_passed", "score_is_sovereign"],
       "properties": {
         "dimensions": {
           "type": "object",
           "properties": {
-            "authority": {"type": "string"},
+            "authority_certificate": {"type": "string"},
             "evidence_provenance": {"type": "string"},
             "identity": {"type": "string"},
             "laboratory": {"type": "string"},
@@ -184,18 +198,21 @@
             "process": {"type": "string"},
             "custody": {"type": "string"},
             "seal": {"type": "string"},
+            "environment": {"type": "string"},
+            "traceability": {"type": "string"},
             "destination": {"type": "string"},
             "incident": {"type": "string"},
             "cyber": {"type": "string"},
             "human_decision": {"type": "string"}
           }
         },
-        "non_compensable": {
+        "hard_gates": {
           "type": "array",
           "items": {"type": "string"},
-          "default": ["authority", "destination", "human_decision"]
+          "description": "Non-compensable dimensions. Score cannot offset a failed hard-gate."
         },
         "hard_gates_passed": {"type": "boolean"},
+        "eligible_state_space": {"type": "boolean"},
         "score": {"type": ["number", "null"]},
         "score_is_sovereign": {"type": "boolean", "const": false}
       }
@@ -203,22 +220,28 @@
     "release_decision_object": {
       "$id": "schema/trust-packet/release-decision.json",
       "type": "object",
-      "required": ["status", "is_certification"],
+      "required": ["release_id", "is_certification", "status"],
       "properties": {
-        "status": {"type": "string", "enum": ["held", "released", "quarantined"]},
+        "release_id": {"type": "string"},
+        "status": {"type": "string", "enum": ["held", "released", "quarantined", "withdrawn"]},
         "is_certification": {"type": "boolean", "const": false},
-        "requires_d5_if_market_claim": {"type": "boolean", "const": true}
+        "requires_authority_gate": {"type": "boolean"},
+        "hitm_class": {"type": "string"},
+        "timestamp": {"type": "string", "format": "date-time"}
       }
     },
     "fracture_event_object": {
       "$id": "schema/trust-packet/fracture-event.json",
       "type": "object",
-      "required": ["event_id", "trigger", "action"],
+      "required": ["event_id", "trigger", "hold_applied", "auto_release_allowed"],
       "properties": {
         "event_id": {"type": "string"},
         "trigger": {"type": "string"},
-        "action": {"type": "string", "enum": ["hold", "quarantine", "blast_radius", "reverify", "escalate_hitm"]},
-        "auto_release_forbidden": {"type": "boolean", "const": true},
+        "taxonomy": {"type": "string", "enum": ["seal_break", "lab_alert", "custody_gap", "certificate_lapse", "identity_mismatch", "destination_hold", "cyber", "other"]},
+        "hold_applied": {"type": "boolean"},
+        "auto_release_allowed": {"type": "boolean", "const": false},
+        "blast_radius_refs": {"type": "array", "items": {"type": "string"}},
+        "hitm_class": {"type": "string", "const": "D4"},
         "pilot_flag": {"type": "string"}
       }
     },

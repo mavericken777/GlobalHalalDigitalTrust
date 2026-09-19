@@ -1,0 +1,21 @@
+{
+  "artifact": "policies/hitm-fixtures.json",
+  "version": "0.1.0",
+  "control_date": "2026-09-20",
+  "classification": "post-freeze proposal",
+  "note": "OPA input fixtures. Expected results assume policies/hitm-default-deny.rego. Not transaction evidence.",
+  "cases": [
+    {"id": "F01", "input": {"class": "D0", "action": "ingest"}, "expect_allow": true},
+    {"id": "F02", "input": {"class": "D1", "action": "apply_encoded_control"}, "expect_allow": true},
+    {"id": "F03", "input": {"class": "D2", "action": "assess", "creates_authority_decision": false}, "expect_allow": true},
+    {"id": "F04", "input": {"class": "D2", "action": "assess", "creates_authority_decision": true}, "expect_allow": false},
+    {"id": "F05", "input": {"class": "D4", "action": "hold"}, "expect_allow": true},
+    {"id": "F06", "input": {"class": "D4", "action": "release", "human_determination": false}, "expect_allow": false},
+    {"id": "F07", "input": {"class": "D4", "action": "release", "human_determination": true}, "expect_allow": true},
+    {"id": "F08", "input": {"class": "D5", "action": "certify", "ai_confidence": "high"}, "expect_allow": false, "expect_deny_reason": "confidence_bypass_forbidden"},
+    {"id": "F09", "input": {"class": "D6", "action": "fatwa", "ai_confidence": "high"}, "expect_allow": false},
+    {"id": "F10", "input": {"claim": "halal_from_not_detected"}, "expect_allow": false, "expect_deny_reason": "not_detected_is_not_halal"},
+    {"id": "F11", "input": {"object_type": "assessment_object", "evidence_class": "E5"}, "expect_allow": false, "expect_deny_reason": "assessment_is_not_e5"},
+    {"id": "F12", "input": {"class": "UNKNOWN"}, "expect_allow": false, "note": "undefined class is deny"}
+  ]
+}
