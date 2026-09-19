@@ -1,0 +1,21 @@
+{
+  "artifact": "canonical-path-machine-map.json",
+  "version": "0.1.0",
+  "control_date": "2026-09-20",
+  "classification": "post-freeze proposal",
+  "controlling_path": "Authority → Standard / Instrument → Clause / Requirement → Applicability → Control → HCP / SCCP → Evidence → Audit Test → Finding → Corrective Action → Re-verification → Authority Gate → Trust State → Operational Release",
+  "note": "Machine nodes refine the controlling path. They do not replace it until promoted.",
+  "map": [
+    {"machine_node": "AI Assessment", "controlling_node": "Evidence / Audit Test", "object": "assessment_object", "class": "D2"},
+    {"machine_node": "HITM Detector", "controlling_node": "Authority Gate (pre-gate PEP)", "object": "hitm_case_object", "class": "D3-D6"},
+    {"machine_node": "Human Determination", "controlling_node": "Authority Gate", "object": "authority_decision_object", "class": "D5-D6"},
+    {"machine_node": "Signed Authoritative Decision", "controlling_node": "Authority Gate", "object": "authority_decision_object", "class": "D5", "evidence_class": "E5"},
+    {"machine_node": "Cryptographic Trust Propagation", "controlling_node": "Trust State", "mechanism": "SCITT receipt and/or VC wrap of existing objects"},
+    {"machine_node": "Universal Trust Vector", "controlling_node": "Trust State", "object": "trust_vector_object"},
+    {"machine_node": "Trust Score", "controlling_node": "Trust State", "role": "descriptive scalar after hard-gates"},
+    {"machine_node": "Operational Release", "controlling_node": "Operational Release", "note": "not certification"},
+    {"machine_node": "Continuous Monitoring", "controlling_node": "Trust State (post-release)", "folder": "05_PLATINUM_REAL_TIME_MONITORING/"},
+    {"machine_node": "Trust Fracture / Auto-Hold", "controlling_node": "Trust State", "class": "D4"},
+    {"machine_node": "Blast-Radius Analysis", "controlling_node": "Corrective Action / Re-verification", "class": "D3-D4"}
+  ]
+}

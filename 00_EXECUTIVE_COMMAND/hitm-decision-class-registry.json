@@ -1,0 +1,84 @@
+{
+  "artifact": "hitm-decision-class-registry.json",
+  "version": "0.1.0",
+  "control_date": "2026-09-20",
+  "classification": "post-freeze proposal",
+  "authority_effect": "none",
+  "principle": "Low AI confidence may escalate. High AI confidence must never remove a mandatory D5 or D6 gate.",
+  "evaluator": "Open Policy Agent / Rego — policies/hitm-default-deny.rego",
+  "default": "deny",
+  "classes": [
+    {
+      "id": "D0",
+      "name": "Encoded operational ingest",
+      "examples": ["hash ingest", "schema validation", "telemetry append"],
+      "human_required": false,
+      "ai_may_execute": true,
+      "ai_confidence_may_bypass": false,
+      "maps_to_path": ["Evidence"]
+    },
+    {
+      "id": "D1",
+      "name": "Encoded control execution",
+      "examples": ["apply documented SOP step", "seal-id format check"],
+      "human_required": false,
+      "ai_may_execute": true,
+      "ai_confidence_may_bypass": false,
+      "maps_to_path": ["Control", "HCP / SCCP"]
+    },
+    {
+      "id": "D2",
+      "name": "Machine assessment",
+      "examples": ["applicability suggestion", "anomaly flag", "document completeness score"],
+      "human_required": false,
+      "ai_may_execute": true,
+      "creates_assessment_object": true,
+      "creates_authority_decision": false,
+      "maps_to_path": ["Evidence", "Audit Test"]
+    },
+    {
+      "id": "D3",
+      "name": "Finding / CAPA classification",
+      "examples": ["propose NCR grade", "propose CAPA owner"],
+      "human_required": true,
+      "human_role": "appointed auditor / Halal Executive / quality owner",
+      "ai_may_recommend_only": true,
+      "maps_to_path": ["Finding", "Corrective Action"]
+    },
+    {
+      "id": "D4",
+      "name": "Trust fracture hold",
+      "examples": ["auto-hold on seal break", "quarantine on lab-alert ingest"],
+      "auto_hold_allowed": true,
+      "auto_release_allowed": false,
+      "human_required_for_release": true,
+      "maps_to_path": ["Trust State", "Operational Release"]
+    },
+    {
+      "id": "D5",
+      "name": "Authority-gate reserved",
+      "examples": ["Malaysia Halal certification decision", "GCC import / destination Halal acceptance", "certificate suspension"],
+      "human_required": true,
+      "owner": ["JAKIM", "MAIN", "JAIN", "destination GCC competent authority"],
+      "ai_may_execute": false,
+      "ai_confidence_may_bypass": false,
+      "maps_to_path": ["Authority Gate"]
+    },
+    {
+      "id": "D6",
+      "name": "Sovereign / legal reserved",
+      "examples": ["fatwa determination", "statutory interpretation", "new instrument adoption"],
+      "human_required": true,
+      "owner": ["competent religious / legal authority"],
+      "ai_may_execute": false,
+      "ai_confidence_may_bypass": false,
+      "maps_to_path": ["Authority"]
+    }
+  ],
+  "hard_rules": [
+    "NOT DETECTED != HALAL",
+    "Assessment objects are never E5",
+    "Operational release is never certification",
+    "Undefined policy result is deny"
+  ]
+}
