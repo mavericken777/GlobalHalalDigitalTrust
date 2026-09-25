@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "artifact": "live-source-registry-addendum-2026-09-26.json",
+  "version": "0.1.0",
+  "status": "POST-FREEZE-PROPOSAL",
+  "base_registry": "00_EXECUTIVE_COMMAND/live-source-registry.json@1.1.0",
+  "base_freeze": "master-standards-stack/verified-2026-09-17/",
+  "control_date": "2026-09-26",
+  "proposals": [
+    {
+      "id": "malaysia.jsm_mysol_halal_catalogue_search",
+      "url": "https://mysol.jsm.gov.my/search-catalogue?is-advance=1&sector=204&page=1",
+      "issuing_entity": "Department of Standards Malaysia",
+      "class": "standards_bodies",
+      "use": "Current MySOL catalogue discovery for Halal-sector Malaysian Standards; catalogue metadata only, not a substitute for licensed normative text",
+      "verification_method": "Firecrawl web search restricted to official jsm.gov.my domain",
+      "verification_date": "2026-09-26",
+      "status": "OFFICIAL-DISCOVERY-ENDPOINT-FOUND",
+      "normative": false,
+      "hash_sha256_first_12": null,
+      "hash_status": "NOT_CAPTURED_SEARCH_RESULT_ONLY",
+      "promotion_requirement": "Live scrape/capture with required retrieval metadata before inclusion as a hashed live-source record"
+    }
+  ],
+  "unresolved": [
+    {
+      "id": "jakim.mpphm_2020_pindaan_2026_primary",
+      "claimed_source": "Pekeliling Pensijilan Halal Malaysia Bilangan 1 Tahun 2026 / MPPHM 2020 Pindaan 2026",
+      "status": "PRIMARY-SOURCE-NOT-RETRIEVED-IN-SESSION",
+      "owner": "JAKIM",
+      "blocking": "exact amendment wording, effective date, scope and applicability",
+      "note": "Secondary web results cite a 2026 amendment, but the controlled session did not retrieve an official JAKIM instrument. Do not promote secondary wording."
+    }
+  ],
+  "authority_boundary": "Catalogue discovery confirms where to look for standards metadata. It does not create certification authority or provide copyrighted normative clause text."
+}
