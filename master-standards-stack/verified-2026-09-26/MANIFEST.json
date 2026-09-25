@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "artifact": "verified-2026-09-26/MANIFEST.json",
+  "package_status": "POST-FREEZE-PROPOSAL",
+  "verified_date": "2026-09-26",
+  "base_freeze": "master-standards-stack/verified-2026-09-17/",
+  "base_repository_commit": "c2141cee5dcd84c0e778f77cef7c45856b12867e",
+  "purpose": "Claim-by-claim ingestion, reconciliation and source-control adjudication of the 43-page Platinum Tier Malaysian halal standards master PDF.",
+  "source": {
+    "file": "platinum_tier_ms_master.pdf",
+    "pages": 43,
+    "sha256": "4f1240560664c9a90caec6359d9715608d972e4d537b1cc7f2519a77d4c95893",
+    "sha12": "4f1240560664",
+    "class": "USER-SUPPLIED-COMPILED-REFERENCE",
+    "normative_status": "MIXED; NOT WHOLESALE NORMATIVE"
+  },
+  "artifacts": [
+    {
+      "path": "00_README.md",
+      "role": "package scope, freeze relationship, source boundary and open gates"
+    },
+    {
+      "path": "01_PLATINUM_TIER_MASTER_PDF_INGESTION_AUDIT.md",
+      "role": "human-readable nano audit and repository reconciliation"
+    },
+    {
+      "path": "02_PLATINUM_CLAIM_VERIFICATION_REGISTER.json",
+      "role": "machine-readable claim status, source locks and actions"
+    }
+  ],
+  "canonical_path": [
+    "Authority",
+    "Standard/Instrument",
+    "Clause/Requirement",
+    "Applicability",
+    "Control",
+    "HCP/SCCP",
+    "Evidence",
+    "Audit Test",
+    "Finding",
+    "Corrective Action",
+    "Re-verification",
+    "Authority Gate",
+    "Trust State",
+    "Operational Release"
+  ],
+  "open_gates": [
+    {
+      "id": "MPPHM-PINDAAN-2026-PRIMARY",
+      "owner": "JAKIM",
+      "blocking": "exact official Pekeliling/MPPHM amendment text, effective date, scope and applicability"
+    },
+    {
+      "id": "LICENSED-2025-STANDARD-DETAIL",
+      "owner": "Department of Standards Malaysia / licensed source holder",
+      "blocking": "exact normative subclauses and quantitative parameters where only public previews/secondary material are held"
+    }
+  ],
+  "authority_boundary": "Malaysian Standards are technical instruments. Certification decisions remain with JAKIM/MAIN/JAIN as applicable; destination release remains with competent destination authorities/importers. AHTE/IQ300 is an evidence, assurance, traceability and decision-support infrastructure.",
+  "promotion": "NOT PROMOTED TO DOCTRINE OR FREEZE"
+}
