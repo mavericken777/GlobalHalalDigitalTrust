@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "artifact": "MANIFEST.json",
+  "package": "verified-2026-09-26-v2",
+  "version": "2.0.0",
+  "status": "POST-FREEZE-PROPOSAL",
+  "control_date": "2026-09-26",
+  "freeze_boundary": "master-standards-stack/verified-2026-09-17/",
+  "predecessor_package": "master-standards-stack/verified-2026-09-26/",
+  "source": {
+    "filename": "platinum_tier_v2_illustrated.pdf",
+    "pages": 30,
+    "sha256": "f3696b038f419c24b94eb0da62e967a345bd2c3c5b70e2ea9c9ceb513f7f3c7e"
+  },
+  "comparator": {
+    "filename": "platinum_tier_ms_master.pdf",
+    "pages": 43,
+    "sha256": "4f1240560664c9a90caec6359d9715608d972e4d537b1cc7f2519a77d4c95893"
+  },
+  "repository_baseline": "073424900566e7c6a2d96b747473a36193005b03",
+  "artifacts": [
+    "00_README.md",
+    "01_ILLUSTRATED_V2_DELTA_AUDIT.md",
+    "02_ILLUSTRATED_V2_DIAGRAM_CLAIM_REGISTER.json"
+  ],
+  "authority_boundary": "Technical/visual evidence only; no artifact creates or substitutes for JAKIM/MAIN/JAIN certification, fatwa, laboratory accreditation or destination release."
+}
