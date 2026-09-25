@@ -28,26 +28,48 @@ The reference runtime can record evidence, assessments, HITM evaluations, assert
 
 `runtime/` — legacy/reference Trust Gateway + OPA demonstration stack. It contains fixture registries and demonstration thresholds. It must **not** be treated as the normative production control plane without source/version/applicability binding.
 
-## 26 September 2026 source-verification event
+## 26 September 2026 source-verification events
 
-A new 43-page user-supplied master reference, `platinum_tier_ms_master.pdf` (SHA12 `4f1240560664`), was nano-audited against the frozen standards package and repository.
+### Master PDF
 
-The post-freeze reconciliation is recorded under:
+A 43-page user-supplied master reference, `platinum_tier_ms_master.pdf` (SHA12 `4f1240560664`), was nano-audited against the frozen standards package and repository.
+
+Recorded under:
 
 `master-standards-stack/verified-2026-09-26/`
 
-Status: **POST-FREEZE PROPOSAL — not promoted into `verified-2026-09-17/` doctrine/freeze.**
+### Illustrated v2 PDF
 
-Key result:
+A 30-page illustrated derivative, `platinum_tier_v2_illustrated.pdf` (SHA12 `f3696b038f41`), containing 30 detailed process-flow diagrams, was separately delta-audited against both the master PDF and repository.
 
-- the 17-standard catalogue is materially consistent with the frozen repository;
-- the PDF is a mixed-source compilation, not a single authority-issued normative instrument;
-- exact 2026 MPPHM/MHMS amendment parameters, universal audit durations/cadences, fixed retention/training cycles, laboratory cut-offs, fatwa numeric translations and “universal acceptance criteria” remain source-locked unless independently verified;
-- the existing open gate for the primary JAKIM 2026 MPPHM amendment remains blocking.
+Recorded under:
 
-[OPEN GATE: PRIMARY SOURCE FOR MPPHM 2020 PINDAAN 2026 — owner: JAKIM — blocking: exact amendment text and applicability]
+`master-standards-stack/verified-2026-09-26-v2/`
 
-## Runtime source-lock gaps identified in the repository audit
+Status of both packages: **POST-FREEZE PROPOSAL — not promoted into `verified-2026-09-17/` doctrine/freeze.**
+
+Key v2 findings:
+
+- the 17-standard architecture remains materially consistent with the controlled repository;
+- the illustrated source is a mixed-source visual compilation, not an authority-issued normative instrument;
+- diagrams compress applicability and authority gates and therefore cannot compile directly to production policy;
+- v2 contains an internal source-quality conflict: cover `MS 2610:2014` vs body `MS 2610:2015`; the controlled catalogue remains unchanged;
+- figures 25-26 embed historical MS 1500:2009 stunning values and must not be represented as current MS 1500:2019 requirements;
+- figures 03/17/18 contain laboratory/PCR/Ct logic that remains analytical evidence only;
+- figures 19-20 contain MS1900 governance composition/cadence/reporting constants not established by the live public catalogue;
+- figures 02/21-24/28 operationalise claimed 2026 MPPHM amendment details that remain blocked pending JAKIM primary text.
+
+[OPEN GATE: PRIMARY SOURCE FOR MPPHM 2020 PINDAAN 2026 — owner: JAKIM — blocking: exact amendment text, effective date, scope and applicability]
+
+[OPEN GATE: SOURCE CONFLICT — V2-MS2610-YEAR — owner: Department of Standards Malaysia — blocking: illustrated-source metadata accuracy]
+
+[SOURCE-LOCKED: v2 historical stunning parameters for current operations — required: current JAKIM/DVS authority source + facility applicability]
+
+[SOURCE-LOCKED: v2 analytical thresholds — required: current licensed method text + laboratory validation/matrix scope]
+
+[SOURCE-LOCKED: v2 MS1900 governance constants — required: current licensed MS 1900:2025 clauses or competent-source instrument]
+
+## Runtime source-lock gaps identified in repository audits
 
 The legacy/reference `runtime/policies/` layer still includes demonstration constants such as fixed cold-chain bounds, a fixed spatial-segregation distance, fixture-based facility status and demonstration madhhab weighting/HTI logic. These values are **not promoted as Malaysian Standard/JAKIM normative rules** by this repository status.
 
@@ -63,6 +85,7 @@ Before any production use they must be replaced by source-bound control profiles
 - licensed standards text
 - official primary source for the claimed 2026 MPPHM amendment details
 - laboratory LIMS and accreditation
+- current authority applicability for historical stunning settings
 - carrier / port / customs APIs
 - executed commercial instruments
 - production IAM, HA, observability, key management
