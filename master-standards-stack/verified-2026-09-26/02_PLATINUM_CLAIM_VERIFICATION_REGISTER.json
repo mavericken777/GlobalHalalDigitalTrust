@@ -1,0 +1,231 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "artifact": "02_PLATINUM_CLAIM_VERIFICATION_REGISTER.json",
+  "version": "0.1.0",
+  "status": "POST-FREEZE-PROPOSAL",
+  "control_date": "2026-09-26",
+  "freeze_reference": "master-standards-stack/verified-2026-09-17/",
+  "source": {
+    "name": "platinum_tier_ms_master.pdf",
+    "pages": 43,
+    "sha256": "4f1240560664c9a90caec6359d9715608d972e4d537b1cc7f2519a77d4c95893",
+    "sha12": "4f1240560664",
+    "classification": "user-supplied compiled reference; mixed official, secondary, academic and derived content"
+  },
+  "states": [
+    "CONFIRMED",
+    "CONSISTENT_WITH_FREEZE",
+    "SECONDARY_ONLY",
+    "SOURCE_LOCKED",
+    "CANDIDATE_CONTROL",
+    "OVERGENERALIZED",
+    "OPEN_GATE"
+  ],
+  "claims": [
+    {
+      "claim_id": "PTM-001",
+      "pdf_page": 2,
+      "claim": "Operating standards universe contains 17 Malaysian halal-related standards/contexts.",
+      "state": "CONSISTENT_WITH_FREEZE",
+      "canonical_path_point": "Standard",
+      "repository_action": "retain existing 17-standard register"
+    },
+    {
+      "claim_id": "PTM-002",
+      "pdf_page": 2,
+      "claim": "MS 1500:2019 is the current project food baseline.",
+      "state": "CONSISTENT_WITH_FREEZE",
+      "canonical_path_point": "Standard",
+      "repository_action": "no freeze change"
+    },
+    {
+      "claim_id": "PTM-003",
+      "pdf_page": 2,
+      "claim": "MS 2400-1/-2/-3:2019 are the current project supply-chain standards for transportation, warehousing and retailing.",
+      "state": "CONFIRMED",
+      "canonical_path_point": "Standard",
+      "repository_action": "retain 613 source-backed MS2400 requirement objects"
+    },
+    {
+      "claim_id": "PTM-004",
+      "pdf_page": 2,
+      "claim": "MS 2738:2023 and MS 2803:2025 represent the current consumable-goods / animal bone-skin-hair architecture used for new work.",
+      "state": "CONSISTENT_WITH_FREEZE",
+      "canonical_path_point": "Standard",
+      "repository_action": "retain revision lineage"
+    },
+    {
+      "claim_id": "PTM-005",
+      "pdf_page": 31,
+      "claim": "MPPHM 2020 is amended by Pekeliling Pensijilan Halal Malaysia Bil. 1/2026 effective 1 April 2026.",
+      "state": "OPEN_GATE",
+      "canonical_path_point": "Authority",
+      "source_required": "official JAKIM circular/amended MPPHM source",
+      "repository_action": "do not promote exact amendment rules"
+    },
+    {
+      "claim_id": "PTM-006",
+      "pdf_page": 31,
+      "claim": "Specific MPPHM fee ranges presented in the PDF are current in 2026.",
+      "state": "SOURCE_LOCKED",
+      "canonical_path_point": "Requirement",
+      "source_required": "current official JAKIM fee schedule with scheme/category applicability"
+    },
+    {
+      "claim_id": "PTM-007",
+      "pdf_page": 31,
+      "claim": "SPHM validity is universally two years from issuance.",
+      "state": "SOURCE_LOCKED",
+      "canonical_path_point": "Authority Gate",
+      "source_required": "current JAKIM certificate-validity rule by applicable scheme/context"
+    },
+    {
+      "claim_id": "PTM-008",
+      "pdf_page": 31,
+      "claim": "Audit minimum is four days including two audit days and two travel days for one manufacturing address.",
+      "state": "SOURCE_LOCKED",
+      "canonical_path_point": "Audit Test",
+      "source_required": "current official JAKIM audit-duration instruction and applicability"
+    },
+    {
+      "claim_id": "PTM-009",
+      "pdf_page": 32,
+      "claim": "JAKIM document review is completed in 14 working days.",
+      "state": "SOURCE_LOCKED",
+      "canonical_path_point": "Audit Test",
+      "source_required": "current official service/procedure requirement"
+    },
+    {
+      "claim_id": "PTM-010",
+      "pdf_page": 32,
+      "claim": "Corrective action findings must universally close within 14 days.",
+      "state": "SOURCE_LOCKED",
+      "canonical_path_point": "Corrective Action",
+      "source_required": "authority-defined NCR/CAPA timeframe and severity/applicability"
+    },
+    {
+      "claim_id": "PTM-011",
+      "pdf_page": 32,
+      "claim": "Annual surveillance audit is universal.",
+      "state": "SOURCE_LOCKED",
+      "canonical_path_point": "Audit Test",
+      "source_required": "current JAKIM monitoring/surveillance cadence rule"
+    },
+    {
+      "claim_id": "PTM-012",
+      "pdf_page": 34,
+      "claim": "MHMS 2020 distinguishes IHCS for the relevant small/micro profile and HAS for the relevant medium/large profile.",
+      "state": "CONFIRMED",
+      "canonical_path_point": "Applicability",
+      "repository_action": "retain separate IHCS and HAS profiles"
+    },
+    {
+      "claim_id": "PTM-013",
+      "pdf_page": 34,
+      "claim": "Every certified operating branch requires a qualified Halal Executive under the 2026 amendment.",
+      "state": "SECONDARY_ONLY",
+      "canonical_path_point": "Control",
+      "source_required": "official JAKIM 2026 amendment"
+    },
+    {
+      "claim_id": "PTM-014",
+      "pdf_page": 34,
+      "claim": "New halal-sensitive staff require training within three months and refresher training every three years.",
+      "state": "SECONDARY_ONLY",
+      "canonical_path_point": "Control",
+      "source_required": "official JAKIM 2026 amendment"
+    },
+    {
+      "claim_id": "PTM-015",
+      "pdf_page": 34,
+      "claim": "Management review must occur semiannually.",
+      "state": "SECONDARY_ONLY",
+      "canonical_path_point": "Control",
+      "source_required": "official current MHMS/JAKIM requirement"
+    },
+    {
+      "claim_id": "PTM-016",
+      "pdf_page": 38,
+      "claim": "MHMS compliance records must universally be retained for at least three years.",
+      "state": "SECONDARY_ONLY",
+      "canonical_path_point": "Evidence",
+      "source_required": "official JAKIM 2026 amendment"
+    },
+    {
+      "claim_id": "PTM-017",
+      "pdf_page": 38,
+      "claim": "New SPHM applications require at least three months of active compliance records.",
+      "state": "SECONDARY_ONLY",
+      "canonical_path_point": "Applicability",
+      "source_required": "official JAKIM 2026 amendment"
+    },
+    {
+      "claim_id": "PTM-018",
+      "pdf_page": 40,
+      "claim": "Numeric alcohol limits presented as fatwa critical-limit translations can be used directly as universal machine rules.",
+      "state": "SOURCE_LOCKED",
+      "canonical_path_point": "Authority",
+      "source_required": "specific current fatwa instrument, context, jurisdiction and applicability",
+      "repository_action": "HITM escalation only until verified"
+    },
+    {
+      "claim_id": "PTM-019",
+      "pdf_page": 41,
+      "claim": "All raw materials must universally be halal-certified.",
+      "state": "OVERGENERALIZED",
+      "canonical_path_point": "Applicability",
+      "repository_action": "replace with material-risk/source/certification evidence logic bound to the applicable requirement"
+    },
+    {
+      "claim_id": "PTM-020",
+      "pdf_page": 41,
+      "claim": "All halal transportation must universally use dedicated transport.",
+      "state": "OVERGENERALIZED",
+      "canonical_path_point": "Control",
+      "repository_action": "use applicable MS2400 segregation/contamination controls rather than universal dedicated-only assertion"
+    },
+    {
+      "claim_id": "PTM-021",
+      "pdf_page": 41,
+      "claim": "PCR/DNA verification is required at receipt for all high-risk inputs.",
+      "state": "CANDIDATE_CONTROL",
+      "canonical_path_point": "Audit Test",
+      "source_required": "applicable standard/method/risk-plan or authority requirement",
+      "repository_action": "do not treat as universal"
+    },
+    {
+      "claim_id": "PTM-022",
+      "pdf_page": 41,
+      "claim": "MS 2627 testing uses the exact universal LOD and Ct ranges printed in the checklist.",
+      "state": "SOURCE_LOCKED",
+      "canonical_path_point": "Evidence",
+      "source_required": "licensed current method text / validated laboratory method"
+    },
+    {
+      "claim_id": "PTM-023",
+      "pdf_page": 41,
+      "claim": "MS 2809 universally requires at least 30 reference samples/class, >=95% sensitivity and annual independent validation.",
+      "state": "SOURCE_LOCKED",
+      "canonical_path_point": "Evidence",
+      "source_required": "current licensed MS 2809:2025 normative text"
+    },
+    {
+      "claim_id": "PTM-024",
+      "pdf_page": 41,
+      "claim": "MS 2810 universally requires the exact positive-control Ct value printed in the checklist.",
+      "state": "SOURCE_LOCKED",
+      "canonical_path_point": "Evidence",
+      "source_required": "current licensed MS 2810:2025 normative text / validated laboratory method"
+    },
+    {
+      "claim_id": "PTM-025",
+      "pdf_page": 42,
+      "claim": "The official Department of Standards Malaysia MySOL halal catalogue is available at the PDF-listed MySOL search endpoint.",
+      "state": "CONFIRMED",
+      "canonical_path_point": "Authority",
+      "repository_action": "add controlled live-source endpoint as catalogue discovery only"
+    }
+  ],
+  "non_negotiable_boundary": "No claim in this register creates or substitutes for JAKIM/MAIN/JAIN certification, fatwa authority, laboratory accreditation or GCC destination release.",
+  "promotion_rule": "A SOURCE_LOCKED, SECONDARY_ONLY, CANDIDATE_CONTROL or OPEN_GATE claim cannot become a production rule until the required source is captured, versioned, applicability-mapped and authority-gated."
+}
