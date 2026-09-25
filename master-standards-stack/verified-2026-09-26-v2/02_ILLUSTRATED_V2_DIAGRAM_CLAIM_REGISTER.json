@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "artifact": "02_ILLUSTRATED_V2_DIAGRAM_CLAIM_REGISTER.json",
+  "version": "1.0.0",
+  "control_date": "2026-09-26",
+  "status": "POST-FREEZE-PROPOSAL",
+  "source": {
+    "filename": "platinum_tier_v2_illustrated.pdf",
+    "sha256": "f3696b038f419c24b94eb0da62e967a345bd2c3c5b70e2ea9c9ceb513f7f3c7e",
+    "pages": 30
+  },
+  "predecessor": {
+    "path": "master-standards-stack/verified-2026-09-26/",
+    "source_sha12": "4f1240560664"
+  },
+  "freeze": "master-standards-stack/verified-2026-09-17/",
+  "open_gates": [
+    "PRIMARY SOURCE FOR MPPHM 2020 PINDAAN 2026",
+    "V2-MS2610-YEAR metadata conflict",
+    "current authority applicability for historical stunning parameters",
+    "licensed/current MS1900 exact governance clauses",
+    "validated lab-method thresholds"
+  ],
+  "figures": [
+    {"figure":1,"topic":"document_hierarchy","status":"PROPOSAL","adjudication":"architecture only; output validity/surveillance constants source-locked","production_rule_use":false},
+    {"figure":2,"topic":"certification_journey","status":"SOURCE_LOCKED","adjudication":"timings, branch executive, retention, validity, surveillance depend on unresolved primary source","production_rule_use":false},
+    {"figure":3,"topic":"food_manufacturing","status":"MIXED","adjudication":"process topology useful; PCR/Ct/dedicated logistics are not universal","production_rule_use":"ONLY_AFTER_SOURCE_APPLICABILITY_BINDING"},
+    {"figure":4,"topic":"sertu","status":"MIXED","adjudication":"core lifecycle retained; witness/release roles require applicability","production_rule_use":"ONLY_AFTER_SOURCE_APPLICABILITY_BINDING"},
+    {"figure":5,"topic":"ihcs_has","status":"MIXED","adjudication":"profile distinction retained; numbers/cadence source-locked","production_rule_use":"ONLY_AFTER_SOURCE_APPLICABILITY_BINDING"},
+    {"figure":6,"topic":"transportation","status":"MIXED","adjudication":"candidate MS2400 control flow; PCR/driver/dedication rules need binding","production_rule_use":"ONLY_AFTER_SOURCE_APPLICABILITY_BINDING"},
+    {"figure":7,"topic":"warehousing","status":"MIXED","adjudication":"candidate WMS flow; thresholds/spacing/lab release need binding","production_rule_use":"ONLY_AFTER_SOURCE_APPLICABILITY_BINDING"},
+    {"figure":8,"topic":"retailing","status":"MIXED","adjudication":"candidate retail flow","production_rule_use":"ONLY_AFTER_SOURCE_APPLICABILITY_BINDING"},
+    {"figure":9,"topic":"pharmaceutical_material","status":"MIXED","adjudication":"material provenance decision support only","production_rule_use":"ONLY_AFTER_SOURCE_APPLICABILITY_BINDING"},
+    {"figure":10,"topic":"gelatin_insulin_heparin","status":"SOURCE_LOCKED","adjudication":"fatwa/sector authority required","production_rule_use":false},
+    {"figure":11,"topic":"cosmetics_material","status":"MIXED","adjudication":"clause/fatwa applicability required","production_rule_use":"ONLY_AFTER_SOURCE_APPLICABILITY_BINDING"},
+    {"figure":12,"topic":"halal_built_in","status":"PROPOSAL","adjudication":"project transformation method","production_rule_use":false},
+    {"figure":13,"topic":"medical_device","status":"MIXED","adjudication":"integrated QMS candidate flow","production_rule_use":"ONLY_AFTER_SOURCE_APPLICABILITY_BINDING"},
+    {"figure":14,"topic":"medical_device_audit_cycle","status":"SOURCE_LOCKED","adjudication":"annual cadence not promoted","production_rule_use":false},
+    {"figure":15,"topic":"consumable_goods","status":"MIXED","adjudication":"sector flow candidate","production_rule_use":"ONLY_AFTER_SOURCE_APPLICABILITY_BINDING"},
+    {"figure":16,"topic":"ms2803_hcp","status":"MIXED","adjudication":"HCP methodology candidate","production_rule_use":"ONLY_AFTER_SOURCE_APPLICABILITY_BINDING"},
+    {"figure":17,"topic":"laboratory_workflow","status":"EVIDENCE_ONLY","adjudication":"method/lab/accreditation scope required","production_rule_use":"ONLY_AFTER_SOURCE_APPLICABILITY_BINDING"},
+    {"figure":18,"topic":"ct_decision_tree","status":"SOURCE_LOCKED","adjudication":"analytical cutoffs are method/validation dependent","production_rule_use":false},
+    {"figure":19,"topic":"ms1900_sccp","status":"MIXED","adjudication":"SCCP concept retained; cadence/retention locked","production_rule_use":"ONLY_AFTER_SOURCE_APPLICABILITY_BINDING"},
+    {"figure":20,"topic":"shariah_governance","status":"SOURCE_LOCKED","adjudication":"composition, qualification, reporting and cadence constants not established by live catalogue","production_rule_use":false},
+    {"figure":21,"topic":"halal_profession","status":"MIXED","adjudication":"competency context; branch mandate locked","production_rule_use":"ONLY_AFTER_SOURCE_APPLICABILITY_BINDING"},
+    {"figure":22,"topic":"has_ihcs_decision","status":"MIXED","adjudication":"profile distinction retained; retention/validity/surveillance locked","production_rule_use":"ONLY_AFTER_SOURCE_APPLICABILITY_BINDING"},
+    {"figure":23,"topic":"raw_material_masterlist","status":"PROPOSAL","adjudication":"configurable operational control; 30-day reminder/NCR classification not normative constant","production_rule_use":false},
+    {"figure":24,"topic":"halal_executive_branch","status":"SOURCE_LOCKED","adjudication":"depends on unresolved 2026 amendment","production_rule_use":false},
+    {"figure":25,"topic":"slaughter_flow","status":"HISTORICAL_MIXED","adjudication":"topology useful; embeds historical 2009 stunning values","production_rule_use":false},
+    {"figure":26,"topic":"stunning_parameters","status":"HISTORICAL","adjudication":"MS1500:2009 parameters; not current MS1500:2019 rule","production_rule_use":false},
+    {"figure":27,"topic":"imported_meat","status":"MIXED","adjudication":"authority workflow candidate; live DVS/JAKIM/port evidence needed","production_rule_use":"ONLY_AFTER_SOURCE_APPLICABILITY_BINDING"},
+    {"figure":28,"topic":"ncr_capa","status":"SOURCE_LOCKED","adjudication":"14-day closure/classification/retention need primary source","production_rule_use":false},
+    {"figure":29,"topic":"audit_management_review","status":"MIXED","adjudication":"improvement loop candidate; frequency locked","production_rule_use":"ONLY_AFTER_SOURCE_APPLICABILITY_BINDING"},
+    {"figure":30,"topic":"fatwa_application","status":"AUTHORITY_ESCALATION","adjudication":"must not imply platform/SAC creates fatwa","production_rule_use":false}
+  ],
+  "engine_rule": "No diagram node may compile directly to production policy without source/version/clause/applicability/effective-date/authority-gate binding."
+}
