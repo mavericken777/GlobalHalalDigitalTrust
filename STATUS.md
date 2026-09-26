@@ -8,6 +8,8 @@ The October 11–18 plan is [conditional](00_EXECUTIVE_COMMAND/OCTOBER_2026_STRA
 
 The latest pre-audit commit records a freeze lift, while older governance files still describe an immutable baseline. This audit preserves every baseline byte and flags the instruction conflict for maintainer resolution; no standards promotion is inferred.
 
+**China trip pack (added 2026-09-26):** [`CHINA_TRIP_2026/00_READ_THIS_FIRST.md`](CHINA_TRIP_2026/00_READ_THIS_FIRST.md). Non-binding scans are now registered under `partners/`. That does **not** close commercials, yards, or Shipment 001.
+
 ## What this repository is
 
 Adopted project specification **plus** a **local reference runtime** under `platform/`.
@@ -23,7 +25,7 @@ The reference runtime can record evidence, assessments, HITM evaluations, assert
 | Hosted OPA / SPIRE / SCITT / live EPCIS | **Not deployed.** Rego draft/reference policies + in-process PEP. |
 | Official Halal certification service | **Forbidden by the authority model/API.** |
 | JAKIM / JSM / GCC / lab / customs endorsement | **None on file.** |
-| Executed partner contracts | **None on file.** |
+| Executed partner **contracts** (priced, exclusive, SLA) | **None on file.** Non-binding MoUs/frameworks are catalogued in `CHINA_TRIP_2026/01_INSTRUMENT_REGISTER.md`. |
 | Instantiated Shipment 001 | **No.** Events are pilot-tagged and not transaction-native. |
 | External independent audit | **None.** |
 | Zero air gap to the real world | **False.** External authorities, labs, carriers and buyers are still outside this git repo. |
