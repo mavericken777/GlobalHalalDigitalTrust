@@ -11,9 +11,15 @@ License: [MIT](LICENSE) · Honest status: [STATUS.md](STATUS.md) · Governance: 
 
 **Source-integrity blocker:** two compressed MS 2400 requirements assets and the legacy master tarball are damaged. They are [quarantined](00_EXECUTIVE_COMMAND/artifact-quarantine-2026-09-26.json), not valid packages. Of the three compressed requirement datasets, only warehousing decodes (201 objects); the historical 613 figure is not the usable ingestion count.
 
+## Reported institutional relationships and 90-day target
+
+The maintainer's concurrent update at `a93bedbb6663` reports JAKIM/JSM endorsement, anticipated GCC authority engagement, and strategic relationships with the China food security laboratory and Sinotrans logistics/warehousing. These reports are preserved as **maintainer-provided claims**. Their exact scope and authority are not independently verified by this audit; underlying endorsement letters, exact legal entities and executed instruments remain evidence gates. An anticipated GCC endorsement is not a current endorsement.
+
+The maintainer also sets a **90-day Shipment 001 success target**. The mission pack provides a proposed post-trip 90-day plan; confirm the intended clock start with the mission lead. A target does not bypass product, buyer, authority, custody or destination-release gates.
+
 ## Mission (target, not present tense)
 
-Specify a federated, AI-assisted digital trust model for the Halal/Tayyib supply chain — from origin evidence through authority decision — so that a later implementation can be built without confusing documents with a live system.
+Build a federated, AI-assisted digital trust model for the Halal/Tayyib supply chain — from origin evidence through authority decision with Jakim MS Standards implementation integrated with a real time monitoring live system.
 
 ## Core principle
 

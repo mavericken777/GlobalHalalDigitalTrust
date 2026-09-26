@@ -75,3 +75,7 @@ The statement “no runtime” is obsolete: reference runtimes exist. The produc
 5. Intact MS 2400-1 and MS 2400-3 compressed originals or licensed source-controlled exports for restoration.
 
 Use a private authorized channel for passenger records and confidential instruments; this repository is public.
+
+## Concurrent main-branch update reconciled
+
+During publication, main advanced to `a93bedbb6663` (README change). Its build mission and 90-day Shipment 001 target are preserved. Reported JAKIM/JSM endorsement and strategic partner relationships are preserved with attribution to the maintainer; supporting letters, scope, exact entities and executed instruments were not present in that README edit. Anticipated GCC authority endorsement remains future, not completed. This is an evidence-status distinction, not a finding that the reported relationships do not exist.
