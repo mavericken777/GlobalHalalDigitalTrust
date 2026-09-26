@@ -396,12 +396,4 @@ The China system should be treated as a **China-side physical identity + traceab
 
 AHTE should provide the **federated evidence, integrity, HITM, authority-gate, trust-state and cross-border verification plane**.
 
-The decisive architectural principle is:
-
-`LABORATORY EVIDENCE → AHTE INTEGRITY + EVIDENCE GRAPH → HUMAN/AUTHORITY DECISION → TRUST STATE`
-
-not:
-
-`LABORATORY RESULT → AUTOMATIC HALAL CERTIFICATION`.
-
-That separation preserves the intended AI-assists / human-decides model while allowing the laboratory and traceability infrastructure to operate at machine speed.
+The integration preserves the intended AI-assists / human-decides operating model while allowing the laboratory and traceability infrastructure to operate at machine speed.
