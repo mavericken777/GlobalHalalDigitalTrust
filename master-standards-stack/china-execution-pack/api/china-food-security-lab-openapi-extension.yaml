@@ -1,0 +1,240 @@
+openapi: 3.0.3
+info:
+  title: AHTE China Food Safety Laboratory Evidence Extension
+  version: 0.1.0-proposal
+  description: >-
+    Proposal-level extension for ingesting method-controlled laboratory evidence
+    from the China Food Safety Innovation Center / participating laboratory into
+    AHTE. This contract does not assert JAKIM production connectivity or laboratory
+    recognition. Those remain external authority and contractual gates.
+servers:
+  - url: https://api.example.local/ahtE
+security:
+  - bearerAuth: []
+paths:
+  /v1/lab/test-requests:
+    post:
+      summary: Create a laboratory test request
+      operationId: createLabTestRequest
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/LabTestRequest'
+      responses:
+        '201': {description: Created}
+        '400': {description: Invalid request}
+        '409': {description: Duplicate or conflicting request}
+  /v1/lab/samples:
+    post:
+      summary: Register or receive a controlled sample
+      operationId: registerLabSample
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/LabSample'
+      responses:
+        '201': {description: Created}
+        '409': {description: Chain-of-custody conflict}
+  /v1/lab/results:
+    post:
+      summary: Submit a signed laboratory result
+      operationId: submitLabResult
+      parameters:
+        - {name: Idempotency-Key, in: header, required: true, schema: {type: string}}
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/LabResultEnvelope'
+      responses:
+        '202': {description: Accepted for validation}
+        '400': {description: Schema or scope failure}
+        '409': {description: Replay, duplicate or sequencing conflict}
+        '422': {description: Signature/hash/scope validation failure}
+  /v1/lab/results/{resultId}/verify:
+    get:
+      summary: Verify laboratory evidence integrity and status
+      operationId: verifyLabResult
+      parameters:
+        - {name: resultId, in: path, required: true, schema: {type: string}}
+      responses:
+        '200':
+          description: Verification result
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/LabVerificationResult'
+  /v1/authority-adapters/jakim/evidence:
+    post:
+      summary: Submit validated laboratory evidence to an authorised JAKIM adapter
+      operationId: submitEvidenceToJakimAdapter
+      description: >-
+        Proposal-only authority adapter. The endpoint must remain disabled until
+        JAKIM supplies an official interface specification and the required
+        integration authorisation/credentials are in force.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AuthorityEvidenceSubmission'
+      responses:
+        '202': {description: Accepted by configured authority adapter}
+        '403': {description: Adapter not authorised/enabled}
+        '409': {description: Duplicate authority submission}
+        '422': {description: Authority schema or evidence validation failure}
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+  schemas:
+    LabTestRequest:
+      type: object
+      required: [testRequestId, objectRefs, samplePlan, methodId, purpose]
+      properties:
+        testRequestId: {type: string}
+        objectRefs: {type: array, items: {type: string}}
+        samplePlan: {type: string}
+        methodId: {type: string}
+        methodVersion: {type: string}
+        purpose: {type: string, enum: [HALAL_ANALYTICAL_EVIDENCE, FOOD_SAFETY, AUTHENTICATION, OTHER]}
+        requestedBy: {type: string}
+        requestedAt: {type: string, format: date-time}
+    LabSample:
+      type: object
+      required: [sampleId, testRequestId, matrix, collectedAt, collectorId, custody]
+      properties:
+        sampleId: {type: string}
+        testRequestId: {type: string}
+        objectRefs: {type: array, items: {type: string}}
+        matrix: {type: string}
+        collectedAt: {type: string, format: date-time}
+        collectorId: {type: string}
+        sealId: {type: string}
+        condition: {type: string}
+        custody:
+          type: array
+          items:
+            $ref: '#/components/schemas/CustodyEvent'
+    CustodyEvent:
+      type: object
+      required: [eventId, fromActorId, toActorId, occurredAt]
+      properties:
+        eventId: {type: string}
+        fromActorId: {type: string}
+        toActorId: {type: string}
+        occurredAt: {type: string, format: date-time}
+        locationId: {type: string}
+        condition: {type: string}
+        evidenceRefs: {type: array, items: {type: string}}
+        signature: {type: string}
+    LabResultEnvelope:
+      type: object
+      required: [resultId, sampleId, laboratory, method, result, report, integrity, issuedAt]
+      properties:
+        resultId: {type: string}
+        sampleId: {type: string}
+        objectRefs: {type: array, items: {type: string}}
+        laboratory:
+          $ref: '#/components/schemas/LaboratoryIdentity'
+        method:
+          $ref: '#/components/schemas/MethodScope'
+        result:
+          type: object
+          required: [status]
+          properties:
+            status: {type: string}
+            value: {}
+            unit: {type: string}
+            qualifier: {type: string}
+            uncertainty: {type: string}
+            interpretation: {type: string}
+        report:
+          $ref: '#/components/schemas/ReportReference'
+        integrity:
+          $ref: '#/components/schemas/IntegrityEnvelope'
+        issuedAt: {type: string, format: date-time}
+        previousResultId:
+          type: string
+          nullable: true
+        previousResultHash:
+          type: string
+          nullable: true
+        jurisdiction: {type: string, default: CN}
+        purpose: {type: string, default: HALAL_ANALYTICAL_EVIDENCE}
+    LaboratoryIdentity:
+      type: object
+      required: [legalEntityId, facilityId]
+      properties:
+        legalEntityId: {type: string}
+        facilityId: {type: string}
+        name: {type: string}
+        country: {type: string}
+        accreditationBody: {type: string}
+        accreditationId: {type: string}
+        accreditationValidUntil: {type: string, format: date}
+        accreditationScheduleRef: {type: string}
+    MethodScope:
+      type: object
+      required: [methodId, methodVersion, scopeStatus]
+      properties:
+        methodId: {type: string}
+        methodVersion: {type: string}
+        methodSource: {type: string}
+        scopeStatus: {type: string, enum: [IN_SCOPE, OUT_OF_SCOPE, PENDING]}
+        matrix: {type: string}
+        validationRef: {type: string}
+        applicabilityRefs: {type: array, items: {type: string}}
+    ReportReference:
+      type: object
+      required: [reportId, reportVersion, reportHash]
+      properties:
+        reportId: {type: string}
+        reportVersion: {type: string}
+        reportUri: {type: string, format: uri}
+        issuedAt: {type: string, format: date-time}
+        reportHash: {type: string, pattern: '^sha256:[0-9a-fA-F]{64}$'}
+    IntegrityEnvelope:
+      type: object
+      required: [canonicalisation, contentHash, signatureAlgorithm, keyId, signature]
+      properties:
+        canonicalisation: {type: string, enum: [AHTE-CANONICAL-JSON-V1]}
+        contentHash: {type: string, pattern: '^sha256:[0-9a-fA-F]{64}$'}
+        signatureAlgorithm: {type: string}
+        keyId: {type: string}
+        signature: {type: string}
+        signedAt: {type: string, format: date-time}
+        previousEvidenceHash:
+          type: string
+          nullable: true
+    LabVerificationResult:
+      type: object
+      required: [valid, resultId, evidenceState]
+      properties:
+        valid: {type: boolean}
+        resultId: {type: string}
+        evidenceState: {type: string, enum: [RECEIVED, VERIFIED, HOLD, REVOKED, SUPERSEDED, INVALID]}
+        hashMatch: {type: boolean}
+        signatureValid: {type: boolean}
+        methodInScope: {type: boolean}
+        chainOfCustodyValid: {type: boolean}
+        reasons: {type: array, items: {type: string}}
+    AuthorityEvidenceSubmission:
+      type: object
+      required: [caseId, evidenceRefs, submissionHash]
+      properties:
+        caseId: {type: string}
+        evidenceRefs: {type: array, items: {type: string}}
+        decisionRefs: {type: array, items: {type: string}}
+        submissionHash: {type: string, pattern: '^sha256:[0-9a-fA-F]{64}$'}
+        requestedAction: {type: string}
+        jurisdiction: {type: string, default: MY}
+        sourceSystem: {type: string, default: AHTE}
+        submittedAt: {type: string, format: date-time}
