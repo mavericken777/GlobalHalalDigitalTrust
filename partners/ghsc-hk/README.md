@@ -1,15 +1,14 @@
 # GLOBAL HALAL SUPPLY CHAIN LIMITED (Hong Kong)
 
-**Status:** legal vehicle **on file**. Not a trading history.
+**Status: FORMED.** This is the corridor vehicle.
 
 | Field | Value |
 |---|---|
 | Name | GLOBAL HALAL SUPPLY CHAIN LIMITED |
 | Registry | Hong Kong Companies Registry |
 | Number | **79801544** |
-| Incorporation on scan | 11 February 2026 |
-| Role in this repo | Commercial interface for China–GCC Halal corridor work |
+| Incorporated | 11 February 2026 |
+| Role | HK commercial vehicle for the China–Malaysia–GCC Halal corridor |
+| Start papers | INST-004 Sinotrans MoU (3 Mar 2026); sits with INST-002 / INST-003 |
 
-Company name is not a trade mark grant and not a Halal licence.
-
-Related papers: INST-001 (certificate), INST-004 (Sinotrans MoU). See `CHINA_TRIP_2026/01_INSTRUMENT_REGISTER.md`.
+Company formed. MoU on file. Execution board: `CHINA_TRIP_2026/EXECUTION_BOARD.md`.

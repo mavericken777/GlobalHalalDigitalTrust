@@ -1,24 +1,30 @@
-# China trip working pack — read this first
+# China trip — foundation is on. Execute.
 
 Control date: 2026-09-26
 
-## What you can say in the room
+## Foundation (done)
 
-- GHSC HK exists (CR 79801544, incorporated 11 Feb 2026).
-- **Perak Halal Corporation is the Perak State Government GLC for the Halal industry, local and global.**
-- **Malaysia: State and Federal work as ONE** on Halal audit, certification and compliance. One MS set. One MYeHALAL file. One scheme. The Sultan is Head of Islam in Perak. The King is Head of the nation. Map: `MALAYSIA_HALAL_AUTHORITY_MAP.md`.
-- Sinotrans Overseas has chopped a non-binding 2-year MoU dated 3 Mar 2026 (HK law). Confidentiality binds. Price, exclusivity, revenue share do not.
-- JGC–Sinotrans Sep 2025 framework is a separate non-binding paper. Not automatically novated onto GHSC.
-- PHC–JGC MoU (27 Aug 2025) is commercial intent. It sits on top of the one Malaysian Halal system. It is not a second code.
-- NICFS / Hengqin is China food-safety / anti-counterfeit. It does not replace the Malaysian Halal system or SFDA / GSO.
-- This repo is the evidence library. It does not print the Malaysian Halal certificate.
+| Item | Status |
+|---|---|
+| Perak Halal Corporation — Perak State Government GLC, Halal industry local + global | On the corridor |
+| Malaysia Halal system — State + Federal as ONE for audit, certification, compliance | Doctrine locked |
+| JGC – PHC MoU (27 Aug 2025) | Start paper |
+| JGC – Sinotrans framework (Sep 2025) | Start paper |
+| **GLOBAL HALAL SUPPLY CHAIN LIMITED** HK CR **79801544** (11 Feb 2026) | Vehicle formed |
+| GHSC HK – Sinotrans Overseas MoU (3 Mar 2026), HK law | Start paper on the new vehicle |
 
-## What you cannot say
+The MoU is the start. The company is formed. This pack is the **execution file**, not a veto.
 
-- Exclusive logistics partner / Green Lane approved / AmanahGraph live in Sinotrans yards / Shipment 001 has sailed.
-- That a commercial MoU *is* the certificate.
-- That Malaysia runs two Halal standards.
+## This trip fills the operating annexes
 
-## Walk-out rule
+1. Sinotrans — named lane + named warehouse on the two split MoAs.  
+2. Printed names / titles / dates next to chops already on INST-004.  
+3. One-pager: JGC framework and GHSC MoU run as one corridor under GHSC HK.  
+4. NICFS — lab method list + code-map if they are in the room.  
+5. Retailers — Lulu / MAF-Carrefour / Tamimi / noon packs go out under GHSC HK letterhead.
 
-Leave with a named yard, a priced schedule, an initialled data page, or a written no. Another empty MoU is not a win.
+Templates already in the repo. Use them.
+
+## Room line
+
+“Perak State GLC. Malaysia State and Federal Halal as one. GHSC Hong Kong is incorporated. Sinotrans MoU is signed. We are here to name the yard, the lane, and the first SKU family.”

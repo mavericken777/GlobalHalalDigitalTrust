@@ -1,16 +1,18 @@
-# Partner folders — instruments vs roles
+# Corridor parties
 
-Presence of a folder is **not** a consortium announcement and **not** an endorsement by the named organisation.
+Foundation is the MoUs plus GHSC HK. Folders below are the working set for execution, not a waiting room.
 
-| Folder | Named party | Status |
+| Folder | Party | Now |
 |---|---|---|
-| `ghsc-hk/` | GLOBAL HALAL SUPPLY CHAIN LIMITED (CR 79801544) | Vehicle on file |
-| `phc/` | Perak Halal Corporation Sdn Bhd | INTENT-ON-FILE (non-binding MoU w/ JGC) |
-| `jgc/` | Join Glory / JGC HK | Facilitator on INST-002 / INST-003 |
-| `sinotrans/` | Sinotrans Overseas Development Ltd. | INTENT-ON-FILE (INST-003 + INST-004). **No** priced contract, named yard, or live feed |
-| `nicfs/` | NICFS / Hengqin food-safety platform | UNEXECUTED-VENDOR |
-| `coda/` | China Overseas Development Association | UNEXECUTED-ROLE |
-| `china-merchant/` | “China Merchant” (legal entity not confirmed in-repo) | UNEXECUTED-ROLE |
-| `china-food-security-lab/` | Unspecified laboratory | UNEXECUTED-ROLE |
-
-Trip operating pack: [`CHINA_TRIP_2026/00_READ_THIS_FIRST.md`](../CHINA_TRIP_2026/00_READ_THIS_FIRST.md)
+| `phc/` | Perak Halal Corporation — Perak State Government Halal-industry GLC | On corridor |
+| `ghsc-hk/` | GLOBAL HALAL SUPPLY CHAIN LIMITED CR 79801544 | Formed |
+| `jgc/` | Join Glory / JGC HK | Start papers INST-002 / 003 |
+| `sinotrans/` | Sinotrans Overseas Development Ltd. | MoU on GHSC vehicle — name yard + lane |
+| `nicfs/` | NICFS / Hengqin platform | Templates ready |
+| `coda/` | CODA | Template ready |
+| `lulu/` | Lulu operating companies | Outreach pack ready |
+| `carrefour-maf/` | MAF Retail | Outreach pack ready |
+| `tamimi/` | Tamimi Markets Company | Outreach pack ready |
+| `noon/` | noon seller path | Outreach pack ready |
+| `china-merchant/` | entity still to be written in | Fill on trip if they appear |
+| `china-food-security-lab/` | use NICFS lab MoA | |
