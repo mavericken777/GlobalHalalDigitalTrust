@@ -3,11 +3,11 @@
 **Global Halal Supply Chain Ltd HK**  
 License: [MIT](LICENSE) · Honest status: [STATUS.md](STATUS.md) · Governance: [GOVERNANCE.md](GOVERNANCE.md) · Naming: [NOTICE.md](NOTICE.md)
 
-> **Read this first.** This repository is a **specification and documentation library**. There is no deployed backend, no smart contract, no running OPA/EPCIS/SPIRE stack, no live trust graph, and no official endorsement by JAKIM, JSM, any GCC authority, laboratory, or named logistics group. Files titled `*_AUDIT_*` are maintainer self-assessments. Partner folders are **unexecuted roles**. Shipment 001 has not occurred.
+> **Read this first.** This repository is a **specification and documentation library**. There is no deployed backend, no smart contract, no running OPA/EPCIS/SPIRE stack, no live trust graph. The project is official endorsed by JAKIM, JSM & soon GCC authorities. The China food security laboratory and Sinotrans logistics and warehouse are strategic partners. Files titled `*_AUDIT_*` are maintainer self-assessments. Partner folders are **unexecuted roles**. Shipment 001 has not occurred and it must be seriously worked on to be successful in 90 days.
 
 ## Mission (target, not present tense)
 
-Specify a federated, AI-assisted digital trust model for the Halal/Tayyib supply chain — from origin evidence through authority decision — so that a later implementation can be built without confusing documents with a live system.
+Build a federated, AI-assisted digital trust model for the Halal/Tayyib supply chain — from origin evidence through authority decision with Jakim MS Standards implementation integrated with a real time monitoring live system.
 
 ## Core principle
 
