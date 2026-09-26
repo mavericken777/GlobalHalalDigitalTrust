@@ -137,15 +137,7 @@ components:
         signature: {type: string}
     LabResultEnvelope:
       type: object
-      required:
-        - resultId
-        - sampleId
-        - laboratory
-        - method
-        - result
-        - report
-        - integrity
-        - issuedAt
+      required: [resultId, sampleId, laboratory, method, result, report, integrity, issuedAt]
       properties:
         resultId: {type: string}
         sampleId: {type: string}
@@ -169,8 +161,12 @@ components:
         integrity:
           $ref: '#/components/schemas/IntegrityEnvelope'
         issuedAt: {type: string, format: date-time}
-        previousResultId: {type: [string, 'null']}
-        previousResultHash: {type: [string, 'null']}
+        previousResultId:
+          type: string
+          nullable: true
+        previousResultHash:
+          type: string
+          nullable: true
         jurisdiction: {type: string, default: CN}
         purpose: {type: string, default: HALAL_ANALYTICAL_EVIDENCE}
     LaboratoryIdentity:
@@ -215,7 +211,9 @@ components:
         keyId: {type: string}
         signature: {type: string}
         signedAt: {type: string, format: date-time}
-        previousEvidenceHash: {type: [string, 'null']}
+        previousEvidenceHash:
+          type: string
+          nullable: true
     LabVerificationResult:
       type: object
       required: [valid, resultId, evidenceState]
