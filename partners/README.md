@@ -1,14 +1,16 @@
-# Partner folders — UNEXECUTED ROLES
+# Partner folders — instruments vs roles
 
-**None of the organisations named below has an executed contract, MoU, or engagement letter on file in this repository.**
-
-A folder exists so that *if* a relationship is later evidenced, the role, gates and evidence class are already written down. Presence of a folder is **not** a partnership announcement.
+Presence of a folder is **not** a consortium announcement and **not** an endorsement by the named organisation.
 
 | Folder | Named party | Status |
 |---|---|---|
-| `coda/` | China Overseas Development Association (public org exists) | `UNEXECUTED-ROLE` — no controlling instrument on file |
-| `china-merchant/` | "China Merchant" (legal entity not confirmed in-repo) | `UNEXECUTED-ROLE` |
-| `sinotrans/` | Sinotrans (public logistics group exists) | `UNEXECUTED-ROLE` |
-| `china-food-security-lab/` | Unspecified laboratory | `UNEXECUTED-ROLE` — legal identity and accreditation not on file |
+| `ghsc-hk/` | GLOBAL HALAL SUPPLY CHAIN LIMITED (CR 79801544) | Vehicle on file |
+| `phc/` | Perak Halal Corporation Sdn Bhd | INTENT-ON-FILE (non-binding MoU w/ JGC) |
+| `jgc/` | Join Glory / JGC HK | Facilitator on INST-002 / INST-003 |
+| `sinotrans/` | Sinotrans Overseas Development Ltd. | INTENT-ON-FILE (INST-003 + INST-004). **No** priced contract, named yard, or live feed |
+| `nicfs/` | NICFS / Hengqin food-safety platform | UNEXECUTED-VENDOR |
+| `coda/` | China Overseas Development Association | UNEXECUTED-ROLE |
+| `china-merchant/` | “China Merchant” (legal entity not confirmed in-repo) | UNEXECUTED-ROLE |
+| `china-food-security-lab/` | Unspecified laboratory | UNEXECUTED-ROLE |
 
-Casual readers: do not treat these names as consortium members, customers, or endorsers.
+Trip operating pack: [`CHINA_TRIP_2026/00_READ_THIS_FIRST.md`](../CHINA_TRIP_2026/00_READ_THIS_FIRST.md)

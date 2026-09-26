@@ -1,29 +1,40 @@
-# Sinotrans — UNEXECUTED ROLE
+# Sinotrans Overseas — instrument on file, role still unexecuted
 
-> **Not a partner on file.** No executed contract, API integration, route qualification, or custody event exists in this repository. This folder is a proposed logistics role for a future pilot.
+**Status code:** `INTENT-ON-FILE / UNEXECUTED-COMMERCIAL`
 
-**Status code:** `UNEXECUTED-ROLE`  
-**Evidence class if later evidenced:** E4 (transaction/custody)  
-**Canonical path position if later evidenced:** Logistics qualification → Custody → Border release
+A folder is not an endorsement by Sinotrans. This repository still has **no** priced contract, **no** named qualified yard, **no** live API, and **no** Shipment 001 custody event.
 
-[PILOT: Shipment 001 — proposed logistics / custody role only]
+## Instruments now known (scans, 2026-09-26)
+
+| Ref | Paper | Character |
+|---|---|---|
+| INST-003 | JGC ↔ Sinotrans Strategic Cooperation Framework (Beijing Sep 2025) | Non-binding (cl. 7.2). PRC law excluding HK on that paper. Bilingual clash on exclusivity. Counterparty on HK side is **JGC**, not GHSC. |
+| INST-004 | GHSC HK ↔ Sinotrans Overseas Development Ltd. MoU, heading date **2026.03.03** | HK law. 2-year term. Non-binding except confidentiality. **No** price, exclusivity, or revenue share (cl. 5). Scope: selected hubs/warehouses, MS 2400 audit-readiness support, AmanahGraph data integration *subject to agreed technical protocols*, Green Lane as an engagement objective. |
+
+### INST-004 execution defects (fix on this trip)
+
+- GHSC Name / Title / Date lines blank (flourish only).
+- Sinotrans Name / Title / Date lines blank (chop + unnamed hand).
+- Sinotrans hand is **not** confirmed as the Sep 2025 legal representative 潘三胜.
+- No annex listing hubs, SKUs, rates, or data fields.
+
+Detail: `partners/sinotrans/MOU_GHSC_2026-03-03.md`  
+Trip asks: `CHINA_TRIP_2026/02_ASK_LIST_AND_SIGNING_PACK.md`
 
 ## Authority boundary
-Does not create Halal certification authority. Does not issue or replace customs, port, food-control, importer or destination Halal decisions. Naming Sinotrans here is not an endorsement by Sinotrans.
 
-## Contractual basis
-`[OPEN GATE: CONTRACTUAL BASIS — owner: Project — blocking: Logistics]`
+Does not create Halal certification authority. Does not issue or replace customs, port, food-control, importer or destination Halal decisions. MS 2400 alignment talk ≠ JAKIM certificate ≠ GCC Green Lane.
 
-## Contact
-`[OPEN GATE: PARTNER CONTACT — owner: Project — blocking: Coordination]`
+## Open gates (blocking operational use)
 
-## Open gates
-- exact legal entity / operating business unit
-- executed contractual basis
-- route, carrier and facility qualification per shipment
-- warehouse Halal-specific evidence per facility
-- API/telemetry specification actually implemented
-- GCC receiving acceptance per shipment
+- printed signatory identity on INST-004
+- novation / coexistence decision vs INST-003
+- named facility + operating unit
+- site qualification pack (zoning, cleaning SOP, temperature class)
+- initialled data protocol
+- priced pilot schedule
+- destination receiving acceptance **per shipment**
 
 ## Release rule
+
 No logistics folder authorises shipment release. Shipment 001 does not exist as a transaction.
