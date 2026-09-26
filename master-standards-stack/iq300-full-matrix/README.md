@@ -1,5 +1,7 @@
 # IQ300 - Full Clause-to-Control Intelligence Layer
 
+> **26 September integrity correction:** transport and retail gzip assets fail decompression/integrity checks. Only the warehousing file currently decodes (201 unique IDs). The historical 613-object claim below is not a verified usable ingestion count. Do not ingest the two damaged files. See [quarantine register](../../00_EXECUTIVE_COMMAND/artifact-quarantine-2026-09-26.json). Original bytes retained; intact source required.
+
 This package upgrades the Master Standards Stack into a machine-oriented regulatory control model.
 
 Primary clause-level source corpus:

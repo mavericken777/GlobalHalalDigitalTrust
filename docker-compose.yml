@@ -3,7 +3,7 @@ services:
     image: openpolicyagent/opa:0.68.0
     container_name: halal_opa_engine
     ports:
-      - "8181:8181"
+      - "127.0.0.1:8181:8181"
     volumes:
       - ./runtime/policies:/policies
     command:
@@ -25,9 +25,10 @@ services:
       dockerfile: Dockerfile
     container_name: halal_trust_gateway
     ports:
-      - "8000:8000"
+      - "127.0.0.1:8000:8000"
     environment:
       - OPA_URL=http://opa:8181/v1/data/halal/compliance
+      - OPA_ENDPOINT=http://opa:8181/v1/data/halal/platinum
       - ENVIRONMENT=reference
     depends_on:
       opa:

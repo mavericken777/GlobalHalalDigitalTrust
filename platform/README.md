@@ -22,10 +22,17 @@ Or: `docker compose up --build`
 - Enforces HITM default-deny in-process (and ships the `.rego` draft)
 - Refuses to mint Halal certificates or set `trust_state=CERTIFIED`
 - Treats `not_detected` lab results as evidence only
-- Marks partner and shipment objects as unevidenced unless flags are explicit
+- Marks corridor events as pilot-only; does not instantiate Shipment 001
+- Binds evidence and assessments to their object; negative decisions cannot become VERIFIED
+- Keeps self-asserted approvals PENDING because caller identity is not authenticated
+- Preserves restrictive trust states until an authenticated re-verification workflow exists
 
 ## What it does not do
 
 - Talk to live JAKIM/MYeHALAL, GCC single windows, Sinotrans, or lab LIMS
 - Deploy OPA/SPIRE/SCITT/EPCIS in production
 - Close TRANSACTION-GATE or SOURCE-LOCKED items
+
+## Reference limits
+
+MemoryStore is volatile and resets on restart. No production authentication, persistence or immutable audit log is implemented. Compose binds to localhost only. Use synthetic data; do not expose it publicly. See [mission demo runbook](../docs/OCTOBER_2026_DEMO_RUNBOOK.md).

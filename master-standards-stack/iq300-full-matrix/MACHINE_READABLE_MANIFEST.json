@@ -29,5 +29,12 @@
   ],
   "logic": "clause -> requirement intent -> applicability -> control -> HCP -> evidence -> audit test -> finding -> corrective action -> re-verification -> authority gate -> trust state",
   "sector_standard_freeze_rule": "Do not fabricate unavailable licensed numbered subclauses. Use family-level mappings until authoritative text is licensed and verified.",
-  "authority_rule": "IQ300 is an evidence, control and decision-support layer. It does not itself issue Malaysian Halal certification."
+  "authority_rule": "IQ300 is an evidence, control and decision-support layer. It does not itself issue Malaysian Halal certification.",
+  "integrity_review_2026_09_26": {
+    "status": "BLOCKED_PARTIAL_CORPUS",
+    "usable_decoded_objects": 201,
+    "historical_declared_objects": 613,
+    "note": "Transport truncated; retail CRC failure. Prior QA/count statements are historical, not current ingestion validation.",
+    "quarantine_register": "../../00_EXECUTIVE_COMMAND/artifact-quarantine-2026-09-26.json"
+  }
 }

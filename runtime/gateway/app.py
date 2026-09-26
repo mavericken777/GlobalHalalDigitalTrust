@@ -66,10 +66,10 @@ async def health_check():
 
 @app.post("/api/v1/credentials/issue", response_model=VerifiableCredential)
 async def issue_halal_credential(request: IssueCredentialRequest):
-    if "halal.gov" in request.issuer_did.lower() or "jakim" in request.issuer_did.lower():
+    if request.issuer_did != "did:web:example.local:ahte-reference":
         raise HTTPException(
             status_code=status.HTTP_403_FORBIDDEN,
-            detail="Refusing to mint credentials under a statutory-authority DID.",
+            detail="Reference gateway signs only its fixed demonstration issuer DID.",
         )
     issuance_timestamp = datetime.datetime.now(datetime.timezone.utc).isoformat()
     cred_id = f"urn:uuid:ahte:assertion:{request.subject.batchId}"
@@ -102,7 +102,9 @@ async def evaluate_epcis_telemetry(event: EPCISObjectEvent):
             opa_data = opa_response.json().get("result", {})
     except httpx.RequestError as exc:
         raise HTTPException(status_code=503, detail=f"OPA unreachable: {exc}") from exc
-    allowed = bool(opa_data.get("allow", False))
+    if not isinstance(opa_data, dict) or type(opa_data.get("allow")) is not bool:
+        raise HTTPException(502, "OPA returned no valid boolean decision")
+    allowed = opa_data["allow"]
     reason = opa_data.get("violation_reason") or ""
     notarized_payload = {
         "epcis_hash": epcis_hash,
@@ -158,7 +160,9 @@ async def evaluate_corridor_clearance(event: CorridorEvent):
             decision = res.json().get("result", {})
     except httpx.RequestError as exc:
         raise HTTPException(503, f"OPA unreachable: {exc}") from exc
-    allowed = bool(decision.get("allow", False))
+    if not isinstance(decision, dict) or type(decision.get("allow")) is not bool:
+        raise HTTPException(502, "OPA returned no valid boolean decision")
+    allowed = decision["allow"]
     quarantine = bool(decision.get("quarantine_required", False))
     try:
         if quarantine:

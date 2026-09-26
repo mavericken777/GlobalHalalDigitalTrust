@@ -2,10 +2,7 @@ services:
   api:
     build: .
     ports:
-      - "8080:8080"
+      - "127.0.0.1:8080:8080"
     environment:
       AHTE_ENV: reference
-    volumes:
-      - ahte-data:/data
-volumes:
-  ahte-data:
+# The reference MemoryStore is volatile; no persistence is claimed.

@@ -91,3 +91,7 @@ Supporting controlled artifacts include:
 ## Completion semantics
 
 `COMPLETE` means the repository workstream is evidence-accounted. External/source/transaction gates remain open until authoritative or transaction-native evidence exists. They must never be downgraded to assumed completion.
+
+## October 2026 current mission control
+
+[Eight-day mission](OCTOBER_2026_STRATEGIC_IMPLEMENTATION_MISSION.md) · [readiness audit](REPOSITORY_READINESS_AUDIT_2026-09-26.md) · [gate register](october-2026-readiness.json) · [source quarantine](artifact-quarantine-2026-09-26.json). These replace prior schedule/readiness assumptions without promoting normative source content.

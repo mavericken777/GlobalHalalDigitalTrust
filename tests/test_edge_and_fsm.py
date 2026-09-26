@@ -1,6 +1,6 @@
 from datetime import datetime, timezone
 
-from runtime_path import load_gateway
+from tests.runtime_path import load_gateway
 
 
 def test_seal_roundtrip():

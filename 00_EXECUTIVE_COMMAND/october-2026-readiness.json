@@ -1,0 +1,292 @@
+{
+  "artifact": "october-2026-readiness.json",
+  "version": "1.0",
+  "control_date": "2026-09-26",
+  "source": "operator itinerary and coordination update in request; proposed control actions",
+  "status": "NOT_TRAVEL_READY",
+  "dates": {
+    "start": "2026-10-11",
+    "end": "2026-10-18",
+    "timezone": "Asia/Hong_Kong",
+    "days": 8,
+    "nights": 7
+  },
+  "travellers": {
+    "malaysia": 3,
+    "hong_kong": 9,
+    "total": 12
+  },
+  "ownership_note": "Roles and deadlines are proposed unless explicitly reported by the operator; no outbound assignments or notifications sent.",
+  "gates": [
+    {
+      "id": "T01",
+      "action": "Resolve academy 13 Oct afternoon vs 14 Oct morning",
+      "proposed_owner": "Wen Jian + Beijing Sinotrans coordinator",
+      "target_date": "2026-09-28",
+      "status": "OPEN",
+      "closure_evidence_required": "Both host and transport coordinator approve one dated agenda",
+      "evidence_reference": null,
+      "domain": "mission"
+    },
+    {
+      "id": "T02",
+      "action": "Confirm 12-person roster and aliases; full name of retired SIRIM DG",
+      "proposed_owner": "Tenny / delegation secretariat",
+      "target_date": "2026-09-28",
+      "status": "OPEN",
+      "closure_evidence_required": "Private legal-name manifest; Carson and Cai roles resolved",
+      "evidence_reference": null,
+      "domain": "mission"
+    },
+    {
+      "id": "T03",
+      "action": "Select and ticket KUL-HKG, HKG-Beijing, SHA-CAN and HKG-KUL",
+      "proposed_owner": "Travel coordinator (appointment pending)",
+      "target_date": "2026-09-30",
+      "status": "OPEN",
+      "closure_evidence_required": "Verified private e-tickets; terminals, baggage, payer, cutoffs and change conditions",
+      "evidence_reference": null,
+      "domain": "mission"
+    },
+    {
+      "id": "T04",
+      "action": "Prepare and book 12 first-class Beijing South-Shanghai Hongqiao tickets",
+      "proposed_owner": "Beijing Sinotrans + travel coordinator",
+      "target_date": "2026-09-30",
+      "status": "OPEN",
+      "closure_evidence_required": "Release time checked in 12306; booking pursued when available; issued tickets and seating verified",
+      "evidence_reference": null,
+      "domain": "mission"
+    },
+    {
+      "id": "T05",
+      "action": "Confirm seven hotel nights and Mainland room allocation",
+      "proposed_owner": "Travel coordinator",
+      "target_date": "2026-09-30",
+      "status": "OPEN",
+      "closure_evidence_required": "Private vouchers, rooming/occupancy, breakfast, arrival times, cancellation and payer",
+      "evidence_reference": null,
+      "domain": "mission"
+    },
+    {
+      "id": "T06",
+      "action": "Complete lawful entry and cross-border document checks",
+      "proposed_owner": "Travel coordinator + each traveller",
+      "target_date": "2026-10-05",
+      "status": "OPEN",
+      "closure_evidence_required": "Carrier/competent-source checks for each passport/document and actual route; no scans in public Git",
+      "evidence_reference": null,
+      "domain": "mission"
+    },
+    {
+      "id": "T07",
+      "action": "Lock October 12 transport, ceremony time and airport departure cutoff",
+      "proposed_owner": "Tenny + Sinotrans Hong Kong",
+      "target_date": "2026-10-02",
+      "status": "OPEN",
+      "closure_evidence_required": "Written route/time/vehicle-luggage-capacity confirmation and backup contact",
+      "evidence_reference": null,
+      "domain": "mission"
+    },
+    {
+      "id": "T08",
+      "action": "Lock Beijing and Shanghai buses, station and hotel pickups",
+      "proposed_owner": "Sinotrans city coordinators",
+      "target_date": "2026-10-05",
+      "status": "OPEN",
+      "closure_evidence_required": "Named coordinators, vehicle capacity including luggage, addresses and pickup sheet",
+      "evidence_reference": null,
+      "domain": "mission"
+    },
+    {
+      "id": "T09",
+      "action": "Lock Guangzhou-Huizhou-Zhuhai ground route",
+      "proposed_owner": "Mr. Cai (identity pending)",
+      "target_date": "2026-10-05",
+      "status": "OPEN",
+      "closure_evidence_required": "Exact addresses, validated journey times, breaks, driver and contingency",
+      "evidence_reference": null,
+      "domain": "mission"
+    },
+    {
+      "id": "T10",
+      "action": "Choose October 18 border/airport transfer and hard departure cutoff",
+      "proposed_owner": "Tenny + Carson (identity pending)",
+      "target_date": "2026-10-05",
+      "status": "OPEN",
+      "closure_evidence_required": "Airline eligibility, lawful vehicle/coach bookings, buffer worksheet and escort handoff",
+      "evidence_reference": null,
+      "domain": "mission"
+    },
+    {
+      "id": "T11",
+      "action": "Approve venue, 2 writable banners, name cards, AV and buffet",
+      "proposed_owner": "GHSCL event lead (appointment pending)",
+      "target_date": "2026-10-05",
+      "status": "OPEN",
+      "closure_evidence_required": "Supplier proofs/quotes accepted; event run sheet; venue and dietary approval",
+      "evidence_reference": null,
+      "domain": "mission"
+    },
+    {
+      "id": "T12",
+      "action": "Confirm invited VVIPs and diplomatic titles by session",
+      "proposed_owner": "Protocol lead + Wu Xuejian",
+      "target_date": "2026-10-05",
+      "status": "OPEN",
+      "closure_evidence_required": "Written acceptances and titles; Chen Wei HK/Shanghai, no Beijing; Gao status settled",
+      "evidence_reference": null,
+      "domain": "mission"
+    },
+    {
+      "id": "T13",
+      "action": "Confirm meals, cruise, rest/prayer arrangements and costs",
+      "proposed_owner": "Hospitality lead (appointment pending)",
+      "target_date": "2026-10-05",
+      "status": "OPEN",
+      "closure_evidence_required": "Venue suitability, guest counts, quotations, approved budget and weather fallback",
+      "evidence_reference": null,
+      "domain": "mission"
+    },
+    {
+      "id": "S01",
+      "action": "Verify legal entities, signer mandates and bilingual M01-M06",
+      "proposed_owner": "PHC/GHSCL legal leads + counterparties",
+      "target_date": "2026-10-07",
+      "status": "OPEN",
+      "closure_evidence_required": "Authorized final versions and signature instructions; no unresolved obligations",
+      "evidence_reference": null,
+      "domain": "mission"
+    },
+    {
+      "id": "S02",
+      "action": "Resolve scope of two Sinotrans MOUs and proposed exclusivity",
+      "proposed_owner": "PHC/GHSCL commercial leads + Sinotrans",
+      "target_date": "2026-10-05",
+      "status": "OPEN",
+      "closure_evidence_required": "Approved scope/territory/term/KPIs, client protection, commercial and termination terms",
+      "evidence_reference": null,
+      "domain": "mission"
+    },
+    {
+      "id": "S03",
+      "action": "Verify academy, laboratory, center and Hengqin identities",
+      "proposed_owner": "Wen Jian + technical/legal leads",
+      "target_date": "2026-10-05",
+      "status": "OPEN",
+      "closure_evidence_required": "Exact entities/addresses, relationships, accreditation/method scope and mandate",
+      "evidence_reference": null,
+      "domain": "mission"
+    },
+    {
+      "id": "S04",
+      "action": "Obtain Bluamec/Blue Diamond/Ka Shui product and factory dossier",
+      "proposed_owner": "Dr. Zhang + supplier QA lead",
+      "target_date": "2026-10-07",
+      "status": "OPEN",
+      "closure_evidence_required": "SKU/SDS/COA/efficacy and claims evidence; factory identity and site access",
+      "evidence_reference": null,
+      "domain": "mission"
+    },
+    {
+      "id": "S05",
+      "action": "Agree CODA supplier funnel and Lulu procurement pathway",
+      "proposed_owner": "Wu Xuejian + CODA/Lulu focal persons",
+      "target_date": "2026-10-07",
+      "status": "OPEN",
+      "closure_evidence_required": "Confirmed meeting agenda, candidate intake fields and buyer requirements",
+      "evidence_reference": null,
+      "domain": "mission"
+    },
+    {
+      "id": "D01",
+      "action": "Run offline reference demonstration and backup rehearsal",
+      "proposed_owner": "GHSCL technical lead",
+      "target_date": "2026-10-08",
+      "status": "OPEN",
+      "closure_evidence_required": "Laptop rehearsal record at reviewed commit; synthetic data and interpreter/AV signoff",
+      "evidence_reference": null,
+      "domain": "mission"
+    },
+    {
+      "id": "D02",
+      "action": "Approve external claims and opening press material",
+      "proposed_owner": "PHC/GHSCL communications and legal leads",
+      "target_date": "2026-10-08",
+      "status": "OPEN",
+      "closure_evidence_required": "Approved text; no unsupported authority endorsement or live-platform claim",
+      "evidence_reference": null,
+      "domain": "mission"
+    },
+    {
+      "id": "G01",
+      "action": "Approve budget, payers and emergency/escalation arrangements",
+      "proposed_owner": "GHSCL mission lead",
+      "target_date": "2026-10-05",
+      "status": "OPEN",
+      "closure_evidence_required": "Cost sheet incl. air/rail/hotels/buses/cruise/printing/interpreters; travel insurance and contacts stored privately",
+      "evidence_reference": null,
+      "domain": "mission"
+    },
+    {
+      "id": "G02",
+      "action": "Complete final travel go/no-go review",
+      "proposed_owner": "Tenny + Malaysian delegation lead",
+      "target_date": "2026-10-09",
+      "status": "OPEN",
+      "closure_evidence_required": "T01-T13 and G01 reviewed with evidence; unresolved items explicitly accepted or plan changed",
+      "evidence_reference": null,
+      "domain": "mission"
+    },
+    {
+      "id": "G03",
+      "action": "Complete signing go/no-go review per instrument",
+      "proposed_owner": "Authorized PHC/GHSCL signatories",
+      "target_date": "2026-10-09",
+      "status": "OPEN",
+      "closure_evidence_required": "S01-S05 and instrument-specific conditions reviewed; defer unsigned/unapproved instruments",
+      "evidence_reference": null,
+      "domain": "mission"
+    },
+    {
+      "id": "P01",
+      "action": "Authenticate authority channels and production IAM/audit persistence",
+      "proposed_owner": "GHSCL engineering/security lead",
+      "target_date": "2026-11-17",
+      "status": "OPEN",
+      "closure_evidence_required": "Independent test evidence; not a prerequisite to a clearly labelled offline demo",
+      "evidence_reference": null,
+      "domain": "production"
+    },
+    {
+      "id": "P02",
+      "action": "Supply current licensed rules and authority applicability",
+      "proposed_owner": "Compliance lead + competent source owners",
+      "target_date": "2026-11-17",
+      "status": "OPEN",
+      "closure_evidence_required": "Source-bound rule profiles; JAKIM circular content/effective-date verification",
+      "evidence_reference": null,
+      "domain": "production"
+    },
+    {
+      "id": "P03",
+      "action": "Execute partner contracts and obtain product/importer/shipment evidence",
+      "proposed_owner": "Commercial/compliance leads",
+      "target_date": "2027-01-16",
+      "status": "OPEN",
+      "closure_evidence_required": "Actual contracts, buyer/PO, certificates, lab/custody/destination evidence; date is target not automatic release",
+      "evidence_reference": null,
+      "domain": "production"
+    },
+    {
+      "id": "P04",
+      "action": "Independent security, privacy and operational assurance",
+      "proposed_owner": "GHSCL steering group",
+      "target_date": "2027-01-16",
+      "status": "OPEN",
+      "closure_evidence_required": "Independent report and remediation; reference tests are not an external audit",
+      "evidence_reference": null,
+      "domain": "production"
+    }
+  ]
+}

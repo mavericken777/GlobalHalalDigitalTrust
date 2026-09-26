@@ -3,7 +3,13 @@
 **Global Halal Supply Chain Ltd HK**  
 License: [MIT](LICENSE) · Honest status: [STATUS.md](STATUS.md) · Governance: [GOVERNANCE.md](GOVERNANCE.md) · Naming: [NOTICE.md](NOTICE.md)
 
-> **Read this first.** This repository is a **specification and documentation library**. There is no deployed backend, no smart contract, no running OPA/EPCIS/SPIRE stack, no live trust graph, and no official endorsement by JAKIM, JSM, any GCC authority, laboratory, or named logistics group. Files titled `*_AUDIT_*` are maintainer self-assessments. Partner folders are **unexecuted roles**. Shipment 001 has not occurred.
+> **Read this first.** This repository contains specifications and **local reference implementations**, not a deployed or independently audited global platform. No official endorsement, executed partner agreement or completed Shipment 001 is evidenced here. See [STATUS.md](STATUS.md).
+
+## October 11–18 mission readiness
+
+**Conditional — not yet travel-ready or signature-ready.** Start with the [eight-day itinerary](00_EXECUTIVE_COMMAND/OCTOBER_2026_STRATEGIC_IMPLEMENTATION_MISSION.md), [signing and meeting pack](deliverables/30_OCTOBER_2026_SIGNING_AND_MEETING_PACK.md), [27-gate register](00_EXECUTIVE_COMMAND/october-2026-readiness.json), [audit](00_EXECUTIVE_COMMAND/REPOSITORY_READINESS_AUDIT_2026-09-26.md) and [offline demo](docs/OCTOBER_2026_DEMO_RUNBOOK.md).
+
+**Source-integrity blocker:** two compressed MS 2400 requirements assets and the legacy master tarball are damaged. They are [quarantined](00_EXECUTIVE_COMMAND/artifact-quarantine-2026-09-26.json), not valid packages. Of the three compressed requirement datasets, only warehousing decodes (201 objects); the historical 613 figure is not the usable ingestion count.
 
 ## Mission (target, not present tense)
 
@@ -18,13 +24,13 @@ Specify a federated, AI-assisted digital trust model for the Halal/Tayyib supply
 | Named in the tree | Actual state |
 |---|---|
 | Evidence Fabric / Digital Audit Twin / Trust Graph | Specified objects only |
-| HITM / OPA Rego | Draft policy text; no server |
+| HITM / OPA Rego | In-process reference PEP and local OPA Compose demo; no production deployment |
 | EPCIS / SCITT / SPIFFE / C2PA | Interop characterisation |
 | Partner folders | `UNEXECUTED-ROLE` — see [partners/README.md](partners/README.md) |
 | Shipment 001 | Pilot architecture; zero transaction events |
 | Economics / NPV | Internal assumptions |
-| `IQ300_AHTE_COMPLETE_MASTER_PACKAGE.tar.gz` | ~5.5 KB placeholder |
-| GitHub language "Python" | Infographic generator only |
+| `IQ300_AHTE_COMPLETE_MASTER_PACKAGE.tar.gz` | Corrupt historical archive; quarantined, do not distribute |
+| Python | Reference APIs, policy demonstrations, tests and generation/validation tools |
 | Dual China packs | Accretion; primary name `CHINA_EXECUTION_PACK/` |
 
 ## Canonical path (model)
@@ -39,7 +45,7 @@ Do not read historical `100% complete` phrasing as operational completion. It me
 
 ## Standards freeze
 
-Controlled documentation baseline: `master-standards-stack/verified-2026-09-17/` (16 modules + MANIFEST). Licensed MS normative wording is not redistributed.
+Historical documentation baseline (the latest commit lifted its edit freeze; normative promotion remains source-gated): `master-standards-stack/verified-2026-09-17/` (16 modules + MANIFEST). Licensed MS normative wording is not redistributed.
 
 ## 17-standard operating set (catalogue only)
 
