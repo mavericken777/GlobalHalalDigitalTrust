@@ -37,8 +37,13 @@ jobs:
           exit 1
       - name: Install test deps
         run: pip install -r runtime/gateway/requirements.txt
+      - name: Reference engine and unit tests
+        run: |
+          python -m pytest -q tests/test_edge_and_fsm.py tests/test_gateway_guards.py
+          python runtime/engine/verify_system.py
       - name: E2E
         env:
+          REQUIRE_OPA: "1"
           OPA_URL: http://127.0.0.1:8181/v1/data/halal/compliance
         run: pytest -v tests/e2e/test_shipment_pipeline.py
       - name: Teardown

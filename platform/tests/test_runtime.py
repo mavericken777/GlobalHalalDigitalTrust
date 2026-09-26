@@ -107,3 +107,53 @@ def test_emit_certificate_flag_denied():
         },
     )
     assert dec.status_code == 403
+
+
+def make_assessment(object_id="sku-a"):
+    ev = client.post("/v1/evidence", json={"object_id": object_id, "evidence_type": "doc", "actor": "qa"})
+    return client.post("/v1/assessments", json={"object_id": object_id, "evidence_ids": [ev.json()["id"]], "finding": "ok", "actor": "auditor"}).json()["id"]
+
+
+def record_decision(assessment_id, decision, object_id="sku-a"):
+    return client.post("/v1/authority-decisions", json={"object_id": object_id, "assessment_id": assessment_id, "actor": "asserted-officer", "actor_type": "human_authority", "decision": decision})
+
+
+def test_cross_object_evidence_rejected():
+    ev = client.post("/v1/evidence", json={"object_id": "sku-a", "evidence_type": "doc", "actor": "qa"})
+    r = client.post("/v1/assessments", json={"object_id": "sku-b", "evidence_ids": [ev.json()["id"]], "finding": "ok", "actor": "auditor"})
+    assert r.status_code == 400
+    assert client.get("/v1/trust-state/sku-b").status_code == 404
+
+
+def test_empty_assessment_rejected():
+    r = client.post("/v1/assessments", json={"object_id": "sku-a", "evidence_ids": [], "finding": "ok", "actor": "auditor"})
+    assert r.status_code == 400
+
+
+def test_cross_object_decision_rejected():
+    assert record_decision(make_assessment(), "approve", "sku-b").status_code == 400
+
+
+def test_self_asserted_authority_cannot_verify():
+    assert record_decision(make_assessment(), "approve").status_code == 200
+    state = client.get("/v1/trust-state/sku-a").json()["body"]
+    assert state["state"] == "PENDING"
+    assert state["authority_authenticated"] is False
+
+
+def test_negative_decision_does_not_verify_or_clear_hold():
+    aid = make_assessment()
+    assert record_decision(aid, "reject").status_code == 200
+    assert client.get("/v1/trust-state/sku-a").json()["body"]["state"] == "HOLD"
+    assert record_decision(aid, "approve").status_code == 200
+    assert client.get("/v1/trust-state/sku-a").json()["body"]["state"] == "HOLD"
+
+
+def test_unknown_decision_rejected():
+    assert record_decision(make_assessment(), "anything").status_code == 400
+
+
+def test_new_evidence_and_assessment_do_not_clear_restriction():
+    record_decision(make_assessment(), "revoke")
+    make_assessment()
+    assert client.get("/v1/trust-state/sku-a").json()["body"]["state"] == "REVOKED"

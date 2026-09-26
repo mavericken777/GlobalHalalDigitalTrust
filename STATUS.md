@@ -2,6 +2,12 @@
 
 Control date: 2026-09-26
 
+## Mission and current integrity findings
+
+The October 11–18 plan is [conditional](00_EXECUTIVE_COMMAND/OCTOBER_2026_STRATEGIC_IMPLEMENTATION_MISSION.md). The [audit](00_EXECUTIVE_COMMAND/REPOSITORY_READINESS_AUDIT_2026-09-26.md) supersedes older completion claims for current readiness. Two compressed MS 2400 assets and the legacy master archive are corrupt and quarantined; 201 warehousing objects decode, not the historically claimed full 613. No intact older Git version was found.
+
+The latest pre-audit commit records a freeze lift, while older governance files still describe an immutable baseline. This audit preserves every baseline byte and flags the instruction conflict for maintainer resolution; no standards promotion is inferred.
+
 ## What this repository is
 
 Adopted project specification **plus** a **local reference runtime** under `platform/`.

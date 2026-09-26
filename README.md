@@ -3,7 +3,19 @@
 **Global Halal Supply Chain Ltd HK**  
 License: [MIT](LICENSE) · Honest status: [STATUS.md](STATUS.md) · Governance: [GOVERNANCE.md](GOVERNANCE.md) · Naming: [NOTICE.md](NOTICE.md)
 
-> **Read this first.** This repository is a **specification and documentation library**. There is no deployed backend, no smart contract, no running OPA/EPCIS/SPIRE stack, no live trust graph. The project is official endorsed by JAKIM, JSM & soon GCC authorities. The China food security laboratory and Sinotrans logistics and warehouse are strategic partners. Files titled `*_AUDIT_*` are maintainer self-assessments. Partner folders are **unexecuted roles**. Shipment 001 has not occurred and it must be seriously worked on to be successful in 90 days.
+> **Read this first.** This repository contains specifications and **local reference implementations**, not a deployed or independently audited global platform. No official endorsement, executed partner agreement or completed Shipment 001 is evidenced here. See [STATUS.md](STATUS.md).
+
+## October 11–18 mission readiness
+
+**Conditional — not yet travel-ready or signature-ready.** Start with the [eight-day itinerary](00_EXECUTIVE_COMMAND/OCTOBER_2026_STRATEGIC_IMPLEMENTATION_MISSION.md), [signing and meeting pack](deliverables/30_OCTOBER_2026_SIGNING_AND_MEETING_PACK.md), [27-gate register](00_EXECUTIVE_COMMAND/october-2026-readiness.json), [audit](00_EXECUTIVE_COMMAND/REPOSITORY_READINESS_AUDIT_2026-09-26.md) and [offline demo](docs/OCTOBER_2026_DEMO_RUNBOOK.md).
+
+**Source-integrity blocker:** two compressed MS 2400 requirements assets and the legacy master tarball are damaged. They are [quarantined](00_EXECUTIVE_COMMAND/artifact-quarantine-2026-09-26.json), not valid packages. Of the three compressed requirement datasets, only warehousing decodes (201 objects); the historical 613 figure is not the usable ingestion count.
+
+## Reported institutional relationships and 90-day target
+
+The maintainer's concurrent update at `a93bedbb6663` reports JAKIM/JSM endorsement, anticipated GCC authority engagement, and strategic relationships with the China food security laboratory and Sinotrans logistics/warehousing. These reports are preserved as **maintainer-provided claims**. Their exact scope and authority are not independently verified by this audit; underlying endorsement letters, exact legal entities and executed instruments remain evidence gates. An anticipated GCC endorsement is not a current endorsement.
+
+The maintainer also sets a **90-day Shipment 001 success target**. The mission pack provides a proposed post-trip 90-day plan; confirm the intended clock start with the mission lead. A target does not bypass product, buyer, authority, custody or destination-release gates.
 
 ## Mission (target, not present tense)
 
@@ -18,13 +30,13 @@ Build a federated, AI-assisted digital trust model for the Halal/Tayyib supply c
 | Named in the tree | Actual state |
 |---|---|
 | Evidence Fabric / Digital Audit Twin / Trust Graph | Specified objects only |
-| HITM / OPA Rego | Draft policy text; no server |
+| HITM / OPA Rego | In-process reference PEP and local OPA Compose demo; no production deployment |
 | EPCIS / SCITT / SPIFFE / C2PA | Interop characterisation |
 | Partner folders | `UNEXECUTED-ROLE` — see [partners/README.md](partners/README.md) |
 | Shipment 001 | Pilot architecture; zero transaction events |
 | Economics / NPV | Internal assumptions |
-| `IQ300_AHTE_COMPLETE_MASTER_PACKAGE.tar.gz` | ~5.5 KB placeholder |
-| GitHub language "Python" | Infographic generator only |
+| `IQ300_AHTE_COMPLETE_MASTER_PACKAGE.tar.gz` | Corrupt historical archive; quarantined, do not distribute |
+| Python | Reference APIs, policy demonstrations, tests and generation/validation tools |
 | Dual China packs | Accretion; primary name `CHINA_EXECUTION_PACK/` |
 
 ## Canonical path (model)
@@ -39,7 +51,7 @@ Do not read historical `100% complete` phrasing as operational completion. It me
 
 ## Standards freeze
 
-Controlled documentation baseline: `master-standards-stack/verified-2026-09-17/` (16 modules + MANIFEST). Licensed MS normative wording is not redistributed.
+Historical documentation baseline (the latest commit lifted its edit freeze; normative promotion remains source-gated): `master-standards-stack/verified-2026-09-17/` (16 modules + MANIFEST). Licensed MS normative wording is not redistributed.
 
 ## 17-standard operating set (catalogue only)
 

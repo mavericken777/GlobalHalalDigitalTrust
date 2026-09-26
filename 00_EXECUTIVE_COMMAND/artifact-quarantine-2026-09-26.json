@@ -1,0 +1,29 @@
+{
+  "artifact": "artifact-quarantine-2026-09-26.json",
+  "version": "1.0",
+  "control_date": "2026-09-26",
+  "classification": "integrity finding; original bytes retained for lineage",
+  "items": [
+    {
+      "path": "master-standards-stack/IQ300_AHTE_COMPLETE_MASTER_PACKAGE.tar.gz",
+      "sha256": "d6234a1b7b9f06416d13f4a6df8aa60924e00a2c833ef59c86614e94a3f2570b",
+      "status": "QUARANTINED_DO_NOT_INGEST",
+      "failure": "Error -3 while decompressing data: invalid literal/lengths set",
+      "recovery": "Obtain an intact source-controlled original; sole historical Git version also has these bytes. No normative content reconstructed."
+    },
+    {
+      "path": "master-standards-stack/iq300-full-matrix/MS2400-32019_IQ300_REQUIREMENTS.json.gz",
+      "sha256": "1a8cc26a751c7cbc4035d2d8200d25badbccb46043807fa39a2260def1dcccea",
+      "status": "QUARANTINED_DO_NOT_INGEST",
+      "failure": "CRC check failed",
+      "recovery": "Obtain an intact source-controlled original; sole historical Git version also has these bytes. No normative content reconstructed."
+    },
+    {
+      "path": "master-standards-stack/iq300-full-matrix/MS2400-12019_IQ300_REQUIREMENTS.json.gz",
+      "sha256": "5328dd85d7b4de6dd98b4c0f102c162f68c23d2b001b7539978f7a9f26cba9bc",
+      "status": "QUARANTINED_DO_NOT_INGEST",
+      "failure": "Compressed file ended before the end-of-stream marker was reached",
+      "recovery": "Obtain an intact source-controlled original; sole historical Git version also has these bytes. No normative content reconstructed."
+    }
+  ]
+}

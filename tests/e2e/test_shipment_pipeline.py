@@ -73,8 +73,8 @@ async def test_full_shipment_pipeline():
             },
         }
         eval_res = await client.post("/api/v1/telemetry/evaluate", json=compliant_event)
-        if eval_res.status_code == 503:
-            pytest.skip("OPA not reachable from this process")
+        if eval_res.status_code == 503 and os.getenv("REQUIRE_OPA") != "1":
+            pytest.skip("OPA not reachable; set REQUIRE_OPA=1 to require integration")
         assert eval_res.status_code == 200
         eval_data = eval_res.json()
         assert eval_data["allowed"] is True

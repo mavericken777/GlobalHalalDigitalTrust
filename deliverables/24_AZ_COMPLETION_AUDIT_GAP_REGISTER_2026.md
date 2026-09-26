@@ -88,3 +88,7 @@ Root-level strategic files remain in existing directories. New compliance and ma
 ## 8. No-open-issue state
 
 GitHub issue search returned no open issues in the repository at the time of this audit. Pending work is therefore controlled through the gap matrix and external-gate register rather than unmanaged issues.
+
+## 26 September 2026 current-status overlay
+
+The historical no-open-issue and completeness statements above are superseded for current readiness by [the new audit](../00_EXECUTIVE_COMMAND/REPOSITORY_READINESS_AUDIT_2026-09-26.md), [mission gates](../00_EXECUTIVE_COMMAND/october-2026-readiness.json) and [artifact quarantine](../00_EXECUTIVE_COMMAND/artifact-quarantine-2026-09-26.json). Issue #1 remains unresolved for external/production work. Documentation coverage is not source integrity or operational readiness.
