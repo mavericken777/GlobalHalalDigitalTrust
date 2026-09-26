@@ -1,68 +1,87 @@
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "artifact": "partner-registry.json",
-  "version": "1.1.0",
-  "control_date": "2026-09-17",
-  "description": "Project-designated ecosystem partner registry for the AHTE China-GCC corridor pilot. Project role designation is distinct from executed contractual status.",
-  "authority_boundary_affirmation": "No partner creates official Halal certification. Malaysia certification decisions remain with JAKIM/MAIN/JAIN; destination decisions remain with competent GCC authorities/importers.",
+  "version": "2.0.0",
+  "control_date": "2026-09-26",
+  "description": "Corridor party registry after GHSC HK incorporation and start MoUs.",
+  "system": "Malaysia State and Federal Halal audit, certification and compliance operate as ONE. PHC is the Perak State Government GLC for the Halal industry, local and global.",
+  "vehicle": {
+    "id": "ghsc-hk",
+    "name": "GLOBAL HALAL SUPPLY CHAIN LIMITED",
+    "registry": "Hong Kong Companies Registry",
+    "number": "79801544",
+    "incorporated": "2026-02-11",
+    "path": "partners/ghsc-hk/"
+  },
   "partners": [
     {
-      "id": "coda",
-      "name": "CODA",
-      "project_status": "project_designated_strategic_partner",
-      "contractual_status": "OPEN-GATE",
-      "role": "China Enterprise Mobilisation & Export Enablement Backbone",
-      "canonical_path_position": ["Enterprise mobilisation", "Qualification"],
-      "evidence_class": ["E1", "E2"],
-      "authority_boundary": "Does not create Halal certification authority or substitute for authority gates.",
-      "repository_path": "partners/coda/",
-      "source_conflict_note": "Existing repository public-source profile supported proposed/candidate partnership until executed documentary evidence is attached.",
-      "open_gates": ["Programme eligibility", "Institutional mandate", "Funding authority", "Executed/controlling partnership instrument"],
-      "integration_points": ["Enterprise mobilisation", "Qualification", "Laboratory evidence coordination", "Halal readiness", "Digital trust onboarding"]
+      "id": "phc",
+      "name": "Perak Halal Corporation Sdn Bhd",
+      "role": "Perak State Government GLC — Halal industry local and global",
+      "instrument": "INST-002 MoU with JGC HK 2025-08-27",
+      "path": "partners/phc/"
     },
     {
-      "id": "china-food-security-lab",
-      "name": "China government food security laboratory",
-      "project_status": "project_designated_partner",
-      "contractual_status": "OPEN-GATE",
-      "role": "Analytical evidence generation",
-      "canonical_path_position": ["Evidence"],
-      "evidence_class": ["E3"],
-      "authority_boundary": "Does not create Halal certification. NOT DETECTED != HALAL. Evidence is purpose-limited.",
-      "repository_path": "partners/china-food-security-lab/",
-      "open_gates": ["Accreditation scope per test method", "Method validation status per test method", "GCC destination-market acceptance", "Contractual basis"],
-      "integration_points": ["Laboratory evidence generation", "E3 evidence production", "Analytical method execution"]
-    },
-    {
-      "id": "china-merchant",
-      "name": "China Merchant",
-      "project_status": "project_designated_strategic_partner",
-      "contractual_status": "OPEN-GATE",
-      "role": "China enterprise mobilisation and trade-enablement",
-      "canonical_path_position": ["Enterprise mobilisation", "Commercial terms"],
-      "evidence_class": ["E2", "E4"],
-      "authority_boundary": "Does not create Halal certification authority.",
-      "repository_path": "partners/china-merchant/",
-      "open_gates": ["Specific programme participation", "Commercial terms per transaction", "Contractual basis"],
-      "integration_points": ["Enterprise mobilisation", "Trade enablement", "Commercial terms negotiation", "Transaction facilitation"]
+      "id": "jgc",
+      "name": "Join Glory / JGC HK",
+      "role": "Facilitator on INST-002 and INST-003",
+      "instrument": "INST-002, INST-003",
+      "path": "partners/jgc/"
     },
     {
       "id": "sinotrans",
-      "name": "Sinotrans",
-      "project_status": "project_designated_logistics_warehouse_partner",
-      "contractual_status": "OPEN-GATE",
-      "role": "Halal Trusted Logistics Corridor + Digital Evidence Node",
-      "canonical_path_position": ["Logistics qualification", "Custody", "Border release"],
-      "evidence_class": ["E4"],
-      "authority_boundary": "Does not create Halal certification authority.",
-      "repository_path": "partners/sinotrans/",
-      "open_gates": ["Route selection per shipment", "Carrier qualification per shipment", "Warehouse halal-specific qualification evidence per facility", "GCC receiving acceptance", "Contractual basis"],
-      "integration_points": ["Adapter/API integration with existing systems", "Custody/seal/telemetry evidence as E4", "Facility-specific storage segregation/control qualification"]
+      "name": "Sinotrans Overseas Development Ltd.",
+      "role": "Logistics and warehouse operating partner",
+      "instrument": "INST-003 Sep 2025; INST-004 GHSC MoU 2026-03-03",
+      "next": "Name yard and lane on split MoAs",
+      "path": "partners/sinotrans/"
+    },
+    {
+      "id": "nicfs",
+      "name": "NICFS / Hengqin food-safety platform",
+      "role": "Origin identity and optional laboratory evidence",
+      "instrument": "templates MOA-NICFS-LAB and MOA-NICFS-TRACE",
+      "path": "partners/nicfs/"
+    },
+    {
+      "id": "coda",
+      "name": "China Overseas Development Association",
+      "role": "Institutional introductions",
+      "instrument": "MOA-CODA template",
+      "path": "partners/coda/"
+    },
+    {
+      "id": "lulu",
+      "name": "Lulu operating companies (see retailer dossier)",
+      "role": "GCC receiving / listing",
+      "path": "partners/lulu/",
+      "pack": "CHINA_TRIP_2026/RETAILERS/LULU/"
+    },
+    {
+      "id": "carrefour-maf",
+      "name": "Majid Al Futtaim Retail / Carrefour banner",
+      "role": "GCC receiving / listing",
+      "path": "partners/carrefour-maf/",
+      "pack": "CHINA_TRIP_2026/RETAILERS/CARREFOUR_MAF/"
+    },
+    {
+      "id": "tamimi",
+      "name": "Tamimi Markets Company",
+      "role": "KSA receiving / listing",
+      "path": "partners/tamimi/",
+      "pack": "CHINA_TRIP_2026/RETAILERS/TAMIMI/"
+    },
+    {
+      "id": "noon",
+      "name": "noon marketplace seller path",
+      "role": "Marketplace listing",
+      "path": "partners/noon/",
+      "pack": "CHINA_TRIP_2026/RETAILERS/NOON/"
+    },
+    {
+      "id": "china-merchant",
+      "name": "China Merchant (legal name to write in if engaged)",
+      "role": "Trade enablement — fill if they appear",
+      "path": "partners/china-merchant/"
     }
-  ],
-  "promotion_protocol": {
-    "trigger": "Any partner role expansion beyond current controlled scope",
-    "mechanism": "[PROMOTION: <partner> -> <doctrine artifact>]",
-    "review": "Canonical-path review with explicit supersession where applicable"
-  }
+  ]
 }

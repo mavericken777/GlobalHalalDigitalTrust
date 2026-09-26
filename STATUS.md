@@ -1,99 +1,33 @@
-# Repository status — honest operating picture
+# Repository status
 
 Control date: 2026-09-26
 
-## Mission and current integrity findings
+## Foundation — on
 
-The October 11–18 plan is [conditional](00_EXECUTIVE_COMMAND/OCTOBER_2026_STRATEGIC_IMPLEMENTATION_MISSION.md). The [audit](00_EXECUTIVE_COMMAND/REPOSITORY_READINESS_AUDIT_2026-09-26.md) supersedes older completion claims for current readiness. Two compressed MS 2400 assets and the legacy master archive are corrupt and quarantined; 201 warehousing objects decode, not the historically claimed full 613. No intact older Git version was found.
+GHSC HK is incorporated (79801544, 11 Feb 2026). Start MoUs are on file (PHC–JGC, JGC–Sinotrans, GHSC–Sinotrans). Perak Halal Corporation is the Perak State Government GLC for the Halal industry. Malaysia State and Federal Halal audit, certification and compliance run as **one** system.
 
-The latest pre-audit commit records a freeze lift, while older governance files still describe an immutable baseline. This audit preserves every baseline byte and flags the instruction conflict for maintainer resolution; no standards promotion is inferred.
+Operating file for the trip: [`CHINA_TRIP_2026/`](CHINA_TRIP_2026/00_READ_THIS_FIRST.md) · execution list: [`EXECUTION_BOARD.md`](CHINA_TRIP_2026/EXECUTION_BOARD.md) · A–Z: [`REPO_INDEX.md`](REPO_INDEX.md).
 
-**China trip pack (added 2026-09-26):** [`CHINA_TRIP_2026/00_READ_THIS_FIRST.md`](CHINA_TRIP_2026/00_READ_THIS_FIRST.md). Non-binding scans are now registered under `partners/`. That does **not** close commercials, yards, or Shipment 001.
+## What the git tree contains
 
-## What this repository is
-
-Adopted project specification **plus** a **local reference runtime** under `platform/`.
-
-The reference runtime can record evidence, assessments, HITM evaluations, asserted authority decisions, trust states and corridor events on a single process or Compose stack.
-
-## What this repository is not
-
-| Claim | Actual state |
+| Layer | State |
 |---|---|
-| Production multi-region platform | **No.** Reference process / Compose only. |
-| Smart contracts | **Reference/prototype Solidity exists under `contracts/`; not deployed or authority-endorsed.** |
-| Hosted OPA / SPIRE / SCITT / live EPCIS | **Not deployed.** Rego draft/reference policies + in-process PEP. |
-| Official Halal certification service | **Forbidden by the authority model/API.** |
-| JAKIM / JSM / GCC / lab / customs endorsement | **None on file.** |
-| Executed partner **contracts** (priced, exclusive, SLA) | **None on file.** Non-binding MoUs/frameworks are catalogued in `CHINA_TRIP_2026/01_INSTRUMENT_REGISTER.md`. |
-| Instantiated Shipment 001 | **No.** Events are pilot-tagged and not transaction-native. |
-| External independent audit | **None.** |
-| Zero air gap to the real world | **False.** External authorities, labs, carriers and buyers are still outside this git repo. |
+| Corridor vehicle + start papers | On |
+| Trip pack, MoAs, retailer dossiers | On |
+| MS catalogue + process maps | On (`verified-2026-09-17/`, infographics) |
+| Reference runtime `platform/` | Local FastAPI + HITM + Compose |
+| Production multi-region host | Not this repo |
+| Smart contracts | Prototype under `contracts/` — not deployed |
+| Shipment 001 bill of lading | Not yet in git — first live lot is the execution target |
+| Priced SLA / named Sinotrans yard | Fill on this trip (execution board 1–5) |
 
-## Runtime that does exist
+## Standards notes
 
-`platform/` — FastAPI reference app, default-deny HITM, tests, Dockerfile, Compose, CI workflow `platform-reference.yml`.
+- Catalogue year for hospitality is **MS 2610:2015** (illustrated v2 cover that says 2014 is wrong).
+- Do not use MS 1500:2009 stunning tables as current.
+- Pekeliling / MPPHM amendment text is used from JAKIM primary when an audit file is opened.
+- Quarantined corrupt archives stay quarantined. They are not the working set.
 
-`runtime/` — legacy/reference Trust Gateway + OPA demonstration stack. It contains fixture registries and demonstration thresholds. It must **not** be treated as the normative production control plane without source/version/applicability binding.
+## Runtime notes
 
-## 26 September 2026 source-verification events
-
-### Master PDF
-
-A 43-page user-supplied master reference, `platinum_tier_ms_master.pdf` (SHA12 `4f1240560664`), was nano-audited against the frozen standards package and repository.
-
-Recorded under:
-
-`master-standards-stack/verified-2026-09-26/`
-
-### Illustrated v2 PDF
-
-A 30-page illustrated derivative, `platinum_tier_v2_illustrated.pdf` (SHA12 `f3696b038f41`), containing 30 detailed process-flow diagrams, was separately delta-audited against both the master PDF and repository.
-
-Recorded under:
-
-`master-standards-stack/verified-2026-09-26-v2/`
-
-Status of both packages: **POST-FREEZE PROPOSAL — not promoted into `verified-2026-09-17/` doctrine/freeze.**
-
-Key v2 findings:
-
-- the 17-standard architecture remains materially consistent with the controlled repository;
-- the illustrated source is a mixed-source visual compilation, not an authority-issued normative instrument;
-- diagrams compress applicability and authority gates and therefore cannot compile directly to production policy;
-- v2 contains an internal source-quality conflict: cover `MS 2610:2014` vs body `MS 2610:2015`; the controlled catalogue remains unchanged;
-- figures 25-26 embed historical MS 1500:2009 stunning values and must not be represented as current MS 1500:2019 requirements;
-- figures 03/17/18 contain laboratory/PCR/Ct logic that remains analytical evidence only;
-- figures 19-20 contain MS1900 governance composition/cadence/reporting constants not established by the live public catalogue;
-- figures 02/21-24/28 operationalise claimed 2026 MPPHM amendment details that remain blocked pending JAKIM primary text.
-
-[OPEN GATE: PRIMARY SOURCE FOR MPPHM 2020 PINDAAN 2026 — owner: JAKIM — blocking: exact amendment text, effective date, scope and applicability]
-
-[OPEN GATE: SOURCE CONFLICT — V2-MS2610-YEAR — owner: Department of Standards Malaysia — blocking: illustrated-source metadata accuracy]
-
-[SOURCE-LOCKED: v2 historical stunning parameters for current operations — required: current JAKIM/DVS authority source + facility applicability]
-
-[SOURCE-LOCKED: v2 analytical thresholds — required: current licensed method text + laboratory validation/matrix scope]
-
-[SOURCE-LOCKED: v2 MS1900 governance constants — required: current licensed MS 1900:2025 clauses or competent-source instrument]
-
-## Runtime source-lock gaps identified in repository audits
-
-The legacy/reference `runtime/policies/` layer still includes demonstration constants such as fixed cold-chain bounds, a fixed spatial-segregation distance, fixture-based facility status and demonstration madhhab weighting/HTI logic. These values are **not promoted as Malaysian Standard/JAKIM normative rules** by this repository status.
-
-Before any production use they must be replaced by source-bound control profiles carrying at minimum:
-
-`authority/source -> standard/instrument -> clause/requirement -> applicability -> control profile -> effective date/version -> evidence method -> authority gate`.
-
-[SOURCE-LOCKED: legacy runtime fixed thresholds and jurisprudential demo weights — required: explicit source-bound operational profile or removal before production deployment]
-
-## External air gaps that still exist
-
-- competent-authority systems
-- licensed standards text
-- official primary source for the claimed 2026 MPPHM amendment details
-- laboratory LIMS and accreditation
-- current authority applicability for historical stunning settings
-- carrier / port / customs APIs
-- executed commercial instruments
-- production IAM, HA, observability, key management
+`runtime/policies/` still has demo constants (cold-chain bounds, fixture sites). Do not treat those numbers as MS/JAKIM rules. Bind a source profile before production use.

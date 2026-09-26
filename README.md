@@ -1,59 +1,29 @@
-# Global Halal Digital Trust Ecosystem
+# Global Halal Digital Trust
 
-**Global Halal Supply Chain Ltd HK**  
-License: [MIT](LICENSE) · Honest status: [STATUS.md](STATUS.md) · Governance: [GOVERNANCE.md](GOVERNANCE.md) · Naming: [NOTICE.md](NOTICE.md)
+**GLOBAL HALAL SUPPLY CHAIN LIMITED** · Hong Kong CR **79801544** · formed 11 February 2026
 
-> **Read this first.** This repository contains specifications and **local reference implementations**, not a deployed or independently audited global platform. No official endorsement, executed partner agreement or completed Shipment 001 is evidenced here. See [STATUS.md](STATUS.md).
+[Trip pack](CHINA_TRIP_2026/00_READ_THIS_FIRST.md) · [Execution board](CHINA_TRIP_2026/EXECUTION_BOARD.md) · [A–Z index](REPO_INDEX.md) · [STATUS](STATUS.md) · [Governance](GOVERNANCE.md) · [License](LICENSE)
 
-## October 11–18 mission readiness
+## Foundation (locked 2026-09-26)
 
-**Conditional — not yet travel-ready or signature-ready.** Start with the [eight-day itinerary](00_EXECUTIVE_COMMAND/OCTOBER_2026_STRATEGIC_IMPLEMENTATION_MISSION.md), [signing and meeting pack](deliverables/30_OCTOBER_2026_SIGNING_AND_MEETING_PACK.md), [27-gate register](00_EXECUTIVE_COMMAND/october-2026-readiness.json), [audit](00_EXECUTIVE_COMMAND/REPOSITORY_READINESS_AUDIT_2026-09-26.md) and [offline demo](docs/OCTOBER_2026_DEMO_RUNBOOK.md).
+- **Perak Halal Corporation** — Perak State Government GLC for the Halal industry, local and global.
+- **Malaysia Halal system** — State and Federal work as **ONE** on audit, certification and compliance. One MS set. One MYeHALAL path. Sultan is Head of Islam in Perak. The King is Head of the nation.
+- Start papers: PHC–JGC MoU (27 Aug 2025) · JGC–Sinotrans framework (Sep 2025) · **GHSC HK–Sinotrans MoU (3 Mar 2026)**.
+- Vehicle formed. MoU is the start. Trip executes the annexes (named yard, named lane, first SKU, retailer packs).
 
-**Source-integrity blocker:** two compressed MS 2400 requirements assets and the legacy master tarball are damaged. They are [quarantined](00_EXECUTIVE_COMMAND/artifact-quarantine-2026-09-26.json), not valid packages. Of the three compressed requirement datasets, only warehousing decodes (201 objects); the historical 613 figure is not the usable ingestion count.
+## What this repository is
 
-## Reported institutional relationships and 90-day target
+The operating file for that corridor: standards catalogue, evidence model, reference runtime (`platform/`), partner files, and the China trip pack.
 
-The maintainer's concurrent update at `a93bedbb6663` reports JAKIM/JSM endorsement, anticipated GCC authority engagement, and strategic relationships with the China food security laboratory and Sinotrans logistics/warehousing. These reports are preserved as **maintainer-provided claims**. Their exact scope and authority are not independently verified by this audit; underlying endorsement letters, exact legal entities and executed instruments remain evidence gates. An anticipated GCC endorsement is not a current endorsement.
-
-The maintainer also sets a **90-day Shipment 001 success target**. The mission pack provides a proposed post-trip 90-day plan; confirm the intended clock start with the mission lead. A target does not bypass product, buyer, authority, custody or destination-release gates.
-
-## Mission (target, not present tense)
-
-Build a federated, AI-assisted digital trust model for the Halal/Tayyib supply chain — from origin evidence through authority decision with Jakim MS Standards implementation integrated with a real time monitoring live system.
+The code under `platform/` is a **local reference** (FastAPI + default-deny HITM + Compose). It records evidence. It does not print a Malaysian Halal certificate and it is not a multi-region production network.
 
 ## Core principle
 
-> **Data stays where it belongs. Trust travels.**
+> Data stays where it belongs. Trust travels.
 
-## What exists today vs what is named
+`NOT DETECTED ≠ HALAL`.
 
-| Named in the tree | Actual state |
-|---|---|
-| Evidence Fabric / Digital Audit Twin / Trust Graph | Specified objects only |
-| HITM / OPA Rego | In-process reference PEP and local OPA Compose demo; no production deployment |
-| EPCIS / SCITT / SPIFFE / C2PA | Interop characterisation |
-| Partner folders | `UNEXECUTED-ROLE` — see [partners/README.md](partners/README.md) |
-| Shipment 001 | Pilot architecture; zero transaction events |
-| Economics / NPV | Internal assumptions |
-| `IQ300_AHTE_COMPLETE_MASTER_PACKAGE.tar.gz` | Corrupt historical archive; quarantined, do not distribute |
-| Python | Reference APIs, policy demonstrations, tests and generation/validation tools |
-| Dual China packs | Accretion; primary name `CHINA_EXECUTION_PACK/` |
-
-## Canonical path (model)
-
-`Authority → Standard/Instrument → Clause/Requirement → Applicability → Control → HCP/SCCP → Evidence → Audit Test → Finding → Corrective Action → Re-verification → Authority Gate → Trust State → Operational Release`
-
-Trust State is an internal model state. It is not a certificate.
-
-## Completeness language
-
-Do not read historical `100% complete` phrasing as operational completion. It means documentation workstreams are listed and missing external evidence is named. Preferred codes: `SPEC`, `DRAFT-STUB`, `SELF-ASSESS`, `SOURCE-LOCKED`, `UNEXECUTED-ROLE`, `TRANSACTION-GATE`, `ENGINEERING-GATE`.
-
-## Standards freeze
-
-Historical documentation baseline (the latest commit lifted its edit freeze; normative promotion remains source-gated): `master-standards-stack/verified-2026-09-17/` (16 modules + MANIFEST). Licensed MS normative wording is not redistributed.
-
-## 17-standard operating set (catalogue only)
+## 17-standard operating set (catalogue)
 
 1. MS 1500:2019 — Halal food  
 2. MS 2400-1:2019 — Transport  
@@ -73,20 +43,20 @@ Historical documentation baseline (the latest commit lifted its edit freeze; nor
 16. MS 2809:2025 — Chemometric authentication  
 17. MS 2810:2025 — Pig skin and hair identification  
 
-## Authority boundary
+Normative MS wording is not redistributed. Snapshot: `master-standards-stack/verified-2026-09-17/`.
 
-Malaysian Standards are technical instruments. Malaysia Halal decisions remain with the competent authority. Destination decisions remain with the relevant GCC process. No AI output, lab result, QR, blockchain record, folder name or trust score issues a certificate. `NOT DETECTED ≠ HALAL`.
+## Parties
 
-[OPEN GATE: PRIMARY SOURCE FOR MPPHM 2020 PINDAAN 2026]
+See [`partners/README.md`](partners/README.md). Retailer packs: [`CHINA_TRIP_2026/RETAILERS/`](CHINA_TRIP_2026/RETAILERS/).
 
-## Pilot
+## Canonical path
 
-`[PILOT: Shipment 001]` — China → GCC direct **architecture only**. Eligibility chain is specified and unevidenced.
+`Authority → Standard/Instrument → Clause → Applicability → Control → Evidence → Audit → Finding → CAPA → Re-verification → Decision → Trust State → Release`
 
-## Visuals
+Trust State is an internal model state, not the certificate.
 
-Process-flow SVGs and mermaid atlas: `master-standards-stack/process-flow-infographics/`.
+## Engineering notes (do not confuse with the commercial foundation)
 
-## IQ300 doctrine (intent)
-
-Source provenance first. Authority boundaries explicit. Evidence versioned. AI advisory. Decisions accountable.
+- Two legacy MS 2400 compressed assets and an old master tarball are corrupt and [quarantined](00_EXECUTIVE_COMMAND/artifact-quarantine-2026-09-26.json). Use the verified snapshot and playbooks, not those files.
+- Illustrated PDF v2 has a cover-year typo on MS 2610 (2014 vs 2015). Catalogue stays **MS 2610:2015**.
+- Shipment 001 is the first live lot to evidence — not yet a bill of lading in this git tree.
