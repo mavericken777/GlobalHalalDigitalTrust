@@ -11,16 +11,8 @@
     "halal awareness PDF",
     "JAKIM/Malaysian Halal standards compendia"
   ],
-  "complete_clause_level_objects": 613,
-  "by_standard": {
-    "MS 2400-1:2019": 187,
-    "MS 2400-2:2019": 201,
-    "MS 2400-3:2019": 225
-  },
   "machine_readable_assets": [
-    "MS2400-12019_IQ300_REQUIREMENTS.json.gz",
     "MS2400-22019_IQ300_REQUIREMENTS.json.gz",
-    "MS2400-32019_IQ300_REQUIREMENTS.json.gz",
     "requirement_schema.json",
     "SECTOR_FAMILY_CONTROL_MATRIX.md",
     "SOURCE_AND_GAP_REGISTER.md",
@@ -31,10 +23,27 @@
   "sector_standard_freeze_rule": "Do not fabricate unavailable licensed numbered subclauses. Use family-level mappings until authoritative text is licensed and verified.",
   "authority_rule": "IQ300 is an evidence, control and decision-support layer. It does not itself issue Malaysian Halal certification.",
   "integrity_review_2026_09_26": {
-    "status": "BLOCKED_PARTIAL_CORPUS",
+    "status": "SUPERSEDED_BY_2026_09_27_SOURCE_INDEX",
     "usable_decoded_objects": 201,
     "historical_declared_objects": 613,
-    "note": "Transport truncated; retail CRC failure. Prior QA/count statements are historical, not current ingestion validation.",
+    "note": "Historical 613 proposed controls omit 15 visible nested headings; two broken gzip files and master archive retired. The intact 201-object warehouse file is historical and not exhaustive.",
     "quarantine_register": "../../00_EXECUTIVE_COMMAND/artifact-quarantine-2026-09-26.json"
+  },
+  "historical_declared_objects": 613,
+  "historical_by_standard": {
+    "MS 2400-1:2019": 187,
+    "MS 2400-2:2019": 201,
+    "MS 2400-3:2019": 225
+  },
+  "source_index_2026_09_27": {
+    "manifest": "source-index-2026-09-27/SOURCE_INDEX_MANIFEST.json",
+    "archive": "source-index-2026-09-27/IQ300_MS2400_SOURCE_INDEX_2026-09-27.tar.gz",
+    "locators": 628,
+    "by_standard": [
+      192,
+      206,
+      230
+    ],
+    "scope": "clause IDs and PDF-page locators only; no normative content or control-object replacement"
   }
 }

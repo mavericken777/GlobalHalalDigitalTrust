@@ -11,7 +11,8 @@ Brand strings in this repository are **internal project names**. They do not imp
 | AHTE Platinum asset generation | Prompt/workflow name |
 | Digital Audit Twin / Evidence Fabric / Trust Graph | Specified objects; no production instance |
 | machine-spec/*.json files under ~2 KB | Treat as `DRAFT-STUB` until expanded and tested |
-| `IQ300_AHTE_COMPLETE_MASTER_PACKAGE.tar.gz` (~5.5 KB) | Placeholder archive, not a complete platform package |
+| Retired `IQ300_AHTE_COMPLETE_MASTER_PACKAGE.tar.gz` | Corrupt historical archive, deleted from current tree on 2026-09-27 |
+| `IQ300_MS2400_SOURCE_INDEX_2026-09-27.tar.gz` | Valid replacement package of clause IDs, PDF pages and manifest; no normative text or certification approval |
 | GitHub language = Python | Reflects the infographic generator, not a deployed Python service |
 
 ## Duplicate China folders

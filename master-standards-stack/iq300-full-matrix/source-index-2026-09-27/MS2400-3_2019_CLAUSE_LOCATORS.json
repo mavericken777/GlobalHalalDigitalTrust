@@ -1,0 +1,1625 @@
+{
+  "artifact": "MS2400-3_2019_CLAUSE_LOCATORS.json",
+  "version": "1.0",
+  "control_date": "2026-09-27",
+  "source": "MS2400-3_2019.pdf",
+  "source_sha256": "8e757fa1821edb7a246dbf3146d8e44533c4d32badf5c214b9ab7d32b1c61058",
+  "source_pdf_pages": 48,
+  "edition": "MS 2400-3:2019",
+  "classification": "LOCATORS_ONLY_NO_NORMATIVE_TEXT",
+  "extraction": "numbered headings in PDF body, sections 4-8; PDF pages 1-based",
+  "count": 230,
+  "locators": [
+    {
+      "clause": "4.1",
+      "pdf_page": 14,
+      "pdf_pages": [
+        14
+      ]
+    },
+    {
+      "clause": "4.2",
+      "pdf_page": 14,
+      "pdf_pages": [
+        14
+      ]
+    },
+    {
+      "clause": "4.2.1",
+      "pdf_page": 14,
+      "pdf_pages": [
+        14
+      ]
+    },
+    {
+      "clause": "4.2.1.1",
+      "pdf_page": 14,
+      "pdf_pages": [
+        14
+      ]
+    },
+    {
+      "clause": "4.2.1.2",
+      "pdf_page": 14,
+      "pdf_pages": [
+        14
+      ]
+    },
+    {
+      "clause": "4.2.2",
+      "pdf_page": 15,
+      "pdf_pages": [
+        15
+      ]
+    },
+    {
+      "clause": "4.2.2.1",
+      "pdf_page": 15,
+      "pdf_pages": [
+        15
+      ]
+    },
+    {
+      "clause": "4.2.2.1.1",
+      "pdf_page": 15,
+      "pdf_pages": [
+        15
+      ]
+    },
+    {
+      "clause": "4.2.2.1.2",
+      "pdf_page": 15,
+      "pdf_pages": [
+        15
+      ]
+    },
+    {
+      "clause": "4.2.2.2",
+      "pdf_page": 15,
+      "pdf_pages": [
+        15
+      ]
+    },
+    {
+      "clause": "4.2.2.2.1",
+      "pdf_page": 15,
+      "pdf_pages": [
+        15
+      ]
+    },
+    {
+      "clause": "4.2.2.2.2",
+      "pdf_page": 15,
+      "pdf_pages": [
+        15
+      ]
+    },
+    {
+      "clause": "4.3",
+      "pdf_page": 16,
+      "pdf_pages": [
+        16
+      ]
+    },
+    {
+      "clause": "4.3.1",
+      "pdf_page": 16,
+      "pdf_pages": [
+        16
+      ]
+    },
+    {
+      "clause": "4.3.1.1",
+      "pdf_page": 16,
+      "pdf_pages": [
+        16
+      ]
+    },
+    {
+      "clause": "4.3.1.2",
+      "pdf_page": 16,
+      "pdf_pages": [
+        16
+      ]
+    },
+    {
+      "clause": "4.3.1.3",
+      "pdf_page": 16,
+      "pdf_pages": [
+        16
+      ]
+    },
+    {
+      "clause": "4.3.2",
+      "pdf_page": 16,
+      "pdf_pages": [
+        16
+      ]
+    },
+    {
+      "clause": "4.3.2.1",
+      "pdf_page": 16,
+      "pdf_pages": [
+        16
+      ]
+    },
+    {
+      "clause": "4.3.2.2",
+      "pdf_page": 16,
+      "pdf_pages": [
+        16
+      ]
+    },
+    {
+      "clause": "4.3.3",
+      "pdf_page": 16,
+      "pdf_pages": [
+        16
+      ]
+    },
+    {
+      "clause": "4.3.3.1",
+      "pdf_page": 16,
+      "pdf_pages": [
+        16
+      ]
+    },
+    {
+      "clause": "4.3.3.2",
+      "pdf_page": 16,
+      "pdf_pages": [
+        16
+      ]
+    },
+    {
+      "clause": "4.3.4",
+      "pdf_page": 16,
+      "pdf_pages": [
+        16
+      ]
+    },
+    {
+      "clause": "4.3.4.1",
+      "pdf_page": 17,
+      "pdf_pages": [
+        17
+      ]
+    },
+    {
+      "clause": "4.3.4.1.1",
+      "pdf_page": 17,
+      "pdf_pages": [
+        17
+      ]
+    },
+    {
+      "clause": "4.3.4.1.2",
+      "pdf_page": 17,
+      "pdf_pages": [
+        17
+      ]
+    },
+    {
+      "clause": "4.3.4.1.3",
+      "pdf_page": 17,
+      "pdf_pages": [
+        17
+      ]
+    },
+    {
+      "clause": "4.3.4.1.4",
+      "pdf_page": 17,
+      "pdf_pages": [
+        17
+      ]
+    },
+    {
+      "clause": "4.3.4.1.5",
+      "pdf_page": 17,
+      "pdf_pages": [
+        17
+      ]
+    },
+    {
+      "clause": "4.3.4.2",
+      "pdf_page": 17,
+      "pdf_pages": [
+        17
+      ]
+    },
+    {
+      "clause": "4.3.4.2.1",
+      "pdf_page": 17,
+      "pdf_pages": [
+        17
+      ]
+    },
+    {
+      "clause": "4.3.4.2.2",
+      "pdf_page": 17,
+      "pdf_pages": [
+        17
+      ]
+    },
+    {
+      "clause": "4.3.4.2.3",
+      "pdf_page": 17,
+      "pdf_pages": [
+        17
+      ]
+    },
+    {
+      "clause": "4.3.4.2.4",
+      "pdf_page": 17,
+      "pdf_pages": [
+        17
+      ]
+    },
+    {
+      "clause": "4.3.4.2.5",
+      "pdf_page": 17,
+      "pdf_pages": [
+        17
+      ]
+    },
+    {
+      "clause": "4.3.4.3",
+      "pdf_page": 17,
+      "pdf_pages": [
+        17
+      ]
+    },
+    {
+      "clause": "4.3.4.3.1",
+      "pdf_page": 17,
+      "pdf_pages": [
+        17
+      ]
+    },
+    {
+      "clause": "4.3.4.3.2",
+      "pdf_page": 17,
+      "pdf_pages": [
+        17
+      ]
+    },
+    {
+      "clause": "4.3.4.4",
+      "pdf_page": 18,
+      "pdf_pages": [
+        18
+      ]
+    },
+    {
+      "clause": "4.3.4.4.1",
+      "pdf_page": 18,
+      "pdf_pages": [
+        18
+      ]
+    },
+    {
+      "clause": "4.3.4.4.2",
+      "pdf_page": 18,
+      "pdf_pages": [
+        18
+      ]
+    },
+    {
+      "clause": "4.3.4.4.3",
+      "pdf_page": 18,
+      "pdf_pages": [
+        18
+      ]
+    },
+    {
+      "clause": "4.3.4.5",
+      "pdf_page": 18,
+      "pdf_pages": [
+        18
+      ]
+    },
+    {
+      "clause": "4.3.4.5.1",
+      "pdf_page": 18,
+      "pdf_pages": [
+        18
+      ]
+    },
+    {
+      "clause": "4.3.4.5.2",
+      "pdf_page": 18,
+      "pdf_pages": [
+        18
+      ]
+    },
+    {
+      "clause": "4.3.4.6",
+      "pdf_page": 18,
+      "pdf_pages": [
+        18
+      ]
+    },
+    {
+      "clause": "4.3.4.6.1",
+      "pdf_page": 18,
+      "pdf_pages": [
+        18
+      ]
+    },
+    {
+      "clause": "4.3.4.6.2",
+      "pdf_page": 18,
+      "pdf_pages": [
+        18
+      ]
+    },
+    {
+      "clause": "4.3.4.6.3",
+      "pdf_page": 19,
+      "pdf_pages": [
+        19
+      ]
+    },
+    {
+      "clause": "4.3.4.6.4",
+      "pdf_page": 19,
+      "pdf_pages": [
+        19
+      ]
+    },
+    {
+      "clause": "4.3.4.7",
+      "pdf_page": 19,
+      "pdf_pages": [
+        19
+      ]
+    },
+    {
+      "clause": "4.3.4.7.1",
+      "pdf_page": 19,
+      "pdf_pages": [
+        19
+      ]
+    },
+    {
+      "clause": "4.3.4.7.1.1",
+      "pdf_page": 19,
+      "pdf_pages": [
+        19
+      ]
+    },
+    {
+      "clause": "4.3.4.7.1.2",
+      "pdf_page": 19,
+      "pdf_pages": [
+        19
+      ]
+    },
+    {
+      "clause": "4.3.4.7.2",
+      "pdf_page": 19,
+      "pdf_pages": [
+        19
+      ]
+    },
+    {
+      "clause": "4.3.4.7.2.1",
+      "pdf_page": 19,
+      "pdf_pages": [
+        19
+      ]
+    },
+    {
+      "clause": "4.3.4.7.2.2",
+      "pdf_page": 19,
+      "pdf_pages": [
+        19
+      ]
+    },
+    {
+      "clause": "4.3.4.7.2.3",
+      "pdf_page": 19,
+      "pdf_pages": [
+        19
+      ]
+    },
+    {
+      "clause": "4.4",
+      "pdf_page": 19,
+      "pdf_pages": [
+        19
+      ]
+    },
+    {
+      "clause": "4.5",
+      "pdf_page": 20,
+      "pdf_pages": [
+        20
+      ]
+    },
+    {
+      "clause": "5.1",
+      "pdf_page": 20,
+      "pdf_pages": [
+        20
+      ]
+    },
+    {
+      "clause": "5.1.1",
+      "pdf_page": 20,
+      "pdf_pages": [
+        20
+      ]
+    },
+    {
+      "clause": "5.1.2",
+      "pdf_page": 20,
+      "pdf_pages": [
+        20
+      ]
+    },
+    {
+      "clause": "5.2",
+      "pdf_page": 20,
+      "pdf_pages": [
+        20
+      ]
+    },
+    {
+      "clause": "5.2.1",
+      "pdf_page": 20,
+      "pdf_pages": [
+        20
+      ]
+    },
+    {
+      "clause": "5.2.2",
+      "pdf_page": 20,
+      "pdf_pages": [
+        20
+      ]
+    },
+    {
+      "clause": "5.2.3",
+      "pdf_page": 21,
+      "pdf_pages": [
+        21
+      ]
+    },
+    {
+      "clause": "5.3",
+      "pdf_page": 21,
+      "pdf_pages": [
+        21
+      ]
+    },
+    {
+      "clause": "5.3.1",
+      "pdf_page": 21,
+      "pdf_pages": [
+        21
+      ]
+    },
+    {
+      "clause": "5.3.2",
+      "pdf_page": 21,
+      "pdf_pages": [
+        21
+      ]
+    },
+    {
+      "clause": "5.4",
+      "pdf_page": 21,
+      "pdf_pages": [
+        21
+      ]
+    },
+    {
+      "clause": "5.4.1",
+      "pdf_page": 21,
+      "pdf_pages": [
+        21
+      ]
+    },
+    {
+      "clause": "5.4.2",
+      "pdf_page": 21,
+      "pdf_pages": [
+        21
+      ]
+    },
+    {
+      "clause": "5.4.2.1",
+      "pdf_page": 21,
+      "pdf_pages": [
+        21
+      ]
+    },
+    {
+      "clause": "5.4.2.2",
+      "pdf_page": 21,
+      "pdf_pages": [
+        21
+      ]
+    },
+    {
+      "clause": "5.4.3",
+      "pdf_page": 21,
+      "pdf_pages": [
+        21
+      ]
+    },
+    {
+      "clause": "5.4.3.1",
+      "pdf_page": 21,
+      "pdf_pages": [
+        21,
+        22
+      ]
+    },
+    {
+      "clause": "5.4.3.2",
+      "pdf_page": 22,
+      "pdf_pages": [
+        22
+      ]
+    },
+    {
+      "clause": "5.4.3.3",
+      "pdf_page": 22,
+      "pdf_pages": [
+        22
+      ]
+    },
+    {
+      "clause": "5.4.3.4",
+      "pdf_page": 22,
+      "pdf_pages": [
+        22
+      ]
+    },
+    {
+      "clause": "5.4.3.5",
+      "pdf_page": 22,
+      "pdf_pages": [
+        22
+      ]
+    },
+    {
+      "clause": "5.4.4",
+      "pdf_page": 22,
+      "pdf_pages": [
+        22
+      ]
+    },
+    {
+      "clause": "5.4.4.1",
+      "pdf_page": 22,
+      "pdf_pages": [
+        22
+      ]
+    },
+    {
+      "clause": "5.4.5",
+      "pdf_page": 22,
+      "pdf_pages": [
+        22
+      ]
+    },
+    {
+      "clause": "5.4.6",
+      "pdf_page": 22,
+      "pdf_pages": [
+        22
+      ]
+    },
+    {
+      "clause": "5.4.6.1",
+      "pdf_page": 22,
+      "pdf_pages": [
+        22
+      ]
+    },
+    {
+      "clause": "5.4.6.2",
+      "pdf_page": 23,
+      "pdf_pages": [
+        23
+      ]
+    },
+    {
+      "clause": "5.4.7",
+      "pdf_page": 23,
+      "pdf_pages": [
+        23
+      ]
+    },
+    {
+      "clause": "6.1",
+      "pdf_page": 23,
+      "pdf_pages": [
+        23
+      ]
+    },
+    {
+      "clause": "6.1.1",
+      "pdf_page": 23,
+      "pdf_pages": [
+        23
+      ]
+    },
+    {
+      "clause": "6.2",
+      "pdf_page": 23,
+      "pdf_pages": [
+        23
+      ]
+    },
+    {
+      "clause": "6.2.1",
+      "pdf_page": 23,
+      "pdf_pages": [
+        23
+      ]
+    },
+    {
+      "clause": "6.2.2",
+      "pdf_page": 23,
+      "pdf_pages": [
+        23
+      ]
+    },
+    {
+      "clause": "6.3",
+      "pdf_page": 23,
+      "pdf_pages": [
+        23
+      ]
+    },
+    {
+      "clause": "6.3.1",
+      "pdf_page": 24,
+      "pdf_pages": [
+        24
+      ]
+    },
+    {
+      "clause": "6.3.1.1",
+      "pdf_page": 24,
+      "pdf_pages": [
+        24
+      ]
+    },
+    {
+      "clause": "6.3.1.2",
+      "pdf_page": 24,
+      "pdf_pages": [
+        24
+      ]
+    },
+    {
+      "clause": "6.3.1.2.1",
+      "pdf_page": 24,
+      "pdf_pages": [
+        24
+      ]
+    },
+    {
+      "clause": "6.3.1.2.2",
+      "pdf_page": 24,
+      "pdf_pages": [
+        24
+      ]
+    },
+    {
+      "clause": "6.3.2",
+      "pdf_page": 24,
+      "pdf_pages": [
+        24
+      ]
+    },
+    {
+      "clause": "6.3.2.1",
+      "pdf_page": 24,
+      "pdf_pages": [
+        24
+      ]
+    },
+    {
+      "clause": "6.3.2.2",
+      "pdf_page": 24,
+      "pdf_pages": [
+        24
+      ]
+    },
+    {
+      "clause": "6.3.2.3",
+      "pdf_page": 24,
+      "pdf_pages": [
+        24
+      ]
+    },
+    {
+      "clause": "6.3.2.4",
+      "pdf_page": 24,
+      "pdf_pages": [
+        24
+      ]
+    },
+    {
+      "clause": "6.3.3",
+      "pdf_page": 24,
+      "pdf_pages": [
+        24
+      ]
+    },
+    {
+      "clause": "6.3.3.2",
+      "pdf_page": 25,
+      "pdf_pages": [
+        25
+      ]
+    },
+    {
+      "clause": "6.4",
+      "pdf_page": 25,
+      "pdf_pages": [
+        25
+      ]
+    },
+    {
+      "clause": "6.4.1",
+      "pdf_page": 25,
+      "pdf_pages": [
+        25
+      ]
+    },
+    {
+      "clause": "6.4.2",
+      "pdf_page": 25,
+      "pdf_pages": [
+        25
+      ]
+    },
+    {
+      "clause": "6.4.3",
+      "pdf_page": 25,
+      "pdf_pages": [
+        25
+      ]
+    },
+    {
+      "clause": "6.4.4",
+      "pdf_page": 25,
+      "pdf_pages": [
+        25
+      ]
+    },
+    {
+      "clause": "6.4.5",
+      "pdf_page": 25,
+      "pdf_pages": [
+        25
+      ]
+    },
+    {
+      "clause": "6.5",
+      "pdf_page": 25,
+      "pdf_pages": [
+        25
+      ]
+    },
+    {
+      "clause": "6.5.1",
+      "pdf_page": 25,
+      "pdf_pages": [
+        25
+      ]
+    },
+    {
+      "clause": "6.6",
+      "pdf_page": 25,
+      "pdf_pages": [
+        25
+      ]
+    },
+    {
+      "clause": "6.6.1",
+      "pdf_page": 25,
+      "pdf_pages": [
+        25
+      ]
+    },
+    {
+      "clause": "6.6.2",
+      "pdf_page": 26,
+      "pdf_pages": [
+        26
+      ]
+    },
+    {
+      "clause": "6.6.3",
+      "pdf_page": 26,
+      "pdf_pages": [
+        26
+      ]
+    },
+    {
+      "clause": "6.7",
+      "pdf_page": 26,
+      "pdf_pages": [
+        26
+      ]
+    },
+    {
+      "clause": "6.7.1",
+      "pdf_page": 26,
+      "pdf_pages": [
+        26
+      ]
+    },
+    {
+      "clause": "6.7.2",
+      "pdf_page": 26,
+      "pdf_pages": [
+        26
+      ]
+    },
+    {
+      "clause": "6.7.3",
+      "pdf_page": 26,
+      "pdf_pages": [
+        26
+      ]
+    },
+    {
+      "clause": "6.7.4",
+      "pdf_page": 26,
+      "pdf_pages": [
+        26
+      ]
+    },
+    {
+      "clause": "6.8",
+      "pdf_page": 26,
+      "pdf_pages": [
+        26
+      ]
+    },
+    {
+      "clause": "6.9",
+      "pdf_page": 26,
+      "pdf_pages": [
+        26
+      ]
+    },
+    {
+      "clause": "6.9.1",
+      "pdf_page": 26,
+      "pdf_pages": [
+        26
+      ]
+    },
+    {
+      "clause": "6.9.2",
+      "pdf_page": 26,
+      "pdf_pages": [
+        26
+      ]
+    },
+    {
+      "clause": "6.9.3",
+      "pdf_page": 26,
+      "pdf_pages": [
+        26
+      ]
+    },
+    {
+      "clause": "7.1",
+      "pdf_page": 27,
+      "pdf_pages": [
+        27
+      ]
+    },
+    {
+      "clause": "7.2",
+      "pdf_page": 27,
+      "pdf_pages": [
+        27
+      ]
+    },
+    {
+      "clause": "7.2.1",
+      "pdf_page": 27,
+      "pdf_pages": [
+        27
+      ]
+    },
+    {
+      "clause": "7.2.2",
+      "pdf_page": 27,
+      "pdf_pages": [
+        27
+      ]
+    },
+    {
+      "clause": "7.2.3",
+      "pdf_page": 27,
+      "pdf_pages": [
+        27
+      ]
+    },
+    {
+      "clause": "7.3",
+      "pdf_page": 27,
+      "pdf_pages": [
+        27
+      ]
+    },
+    {
+      "clause": "7.3.1",
+      "pdf_page": 27,
+      "pdf_pages": [
+        27
+      ]
+    },
+    {
+      "clause": "7.3.1.1",
+      "pdf_page": 27,
+      "pdf_pages": [
+        27
+      ]
+    },
+    {
+      "clause": "7.3.1.2",
+      "pdf_page": 27,
+      "pdf_pages": [
+        27
+      ]
+    },
+    {
+      "clause": "7.3.2",
+      "pdf_page": 28,
+      "pdf_pages": [
+        28
+      ]
+    },
+    {
+      "clause": "7.3.2.1",
+      "pdf_page": 28,
+      "pdf_pages": [
+        28
+      ]
+    },
+    {
+      "clause": "7.3.2.2",
+      "pdf_page": 28,
+      "pdf_pages": [
+        28
+      ]
+    },
+    {
+      "clause": "7.4",
+      "pdf_page": 28,
+      "pdf_pages": [
+        28
+      ]
+    },
+    {
+      "clause": "7.4.1",
+      "pdf_page": 28,
+      "pdf_pages": [
+        28
+      ]
+    },
+    {
+      "clause": "7.4.1.1",
+      "pdf_page": 28,
+      "pdf_pages": [
+        28
+      ]
+    },
+    {
+      "clause": "7.4.1.2",
+      "pdf_page": 28,
+      "pdf_pages": [
+        28
+      ]
+    },
+    {
+      "clause": "7.4.2",
+      "pdf_page": 28,
+      "pdf_pages": [
+        28
+      ]
+    },
+    {
+      "clause": "7.4.2.1",
+      "pdf_page": 28,
+      "pdf_pages": [
+        28
+      ]
+    },
+    {
+      "clause": "7.4.2.2",
+      "pdf_page": 28,
+      "pdf_pages": [
+        28
+      ]
+    },
+    {
+      "clause": "7.4.2.3",
+      "pdf_page": 28,
+      "pdf_pages": [
+        28
+      ]
+    },
+    {
+      "clause": "7.4.2.4",
+      "pdf_page": 28,
+      "pdf_pages": [
+        28
+      ]
+    },
+    {
+      "clause": "7.4.3",
+      "pdf_page": 28,
+      "pdf_pages": [
+        28
+      ]
+    },
+    {
+      "clause": "7.4.4",
+      "pdf_page": 28,
+      "pdf_pages": [
+        28
+      ]
+    },
+    {
+      "clause": "7.4.5",
+      "pdf_page": 28,
+      "pdf_pages": [
+        28
+      ]
+    },
+    {
+      "clause": "7.4.5.1",
+      "pdf_page": 28,
+      "pdf_pages": [
+        28
+      ]
+    },
+    {
+      "clause": "7.4.5.2",
+      "pdf_page": 28,
+      "pdf_pages": [
+        28
+      ]
+    },
+    {
+      "clause": "7.4.6",
+      "pdf_page": 29,
+      "pdf_pages": [
+        29
+      ]
+    },
+    {
+      "clause": "7.4.6.1",
+      "pdf_page": 29,
+      "pdf_pages": [
+        29
+      ]
+    },
+    {
+      "clause": "7.4.6.2",
+      "pdf_page": 29,
+      "pdf_pages": [
+        29
+      ]
+    },
+    {
+      "clause": "7.4.6.3",
+      "pdf_page": 29,
+      "pdf_pages": [
+        29
+      ]
+    },
+    {
+      "clause": "7.5",
+      "pdf_page": 29,
+      "pdf_pages": [
+        29
+      ]
+    },
+    {
+      "clause": "7.5.1",
+      "pdf_page": 29,
+      "pdf_pages": [
+        29
+      ]
+    },
+    {
+      "clause": "7.5.2",
+      "pdf_page": 29,
+      "pdf_pages": [
+        29
+      ]
+    },
+    {
+      "clause": "7.5.3",
+      "pdf_page": 30,
+      "pdf_pages": [
+        30
+      ]
+    },
+    {
+      "clause": "7.5.3.1",
+      "pdf_page": 30,
+      "pdf_pages": [
+        30
+      ]
+    },
+    {
+      "clause": "7.5.3.2",
+      "pdf_page": 30,
+      "pdf_pages": [
+        30
+      ]
+    },
+    {
+      "clause": "7.5.3.3",
+      "pdf_page": 30,
+      "pdf_pages": [
+        30
+      ]
+    },
+    {
+      "clause": "7.5.3.4",
+      "pdf_page": 30,
+      "pdf_pages": [
+        30
+      ]
+    },
+    {
+      "clause": "7.5.4",
+      "pdf_page": 30,
+      "pdf_pages": [
+        30
+      ]
+    },
+    {
+      "clause": "7.5.4.1",
+      "pdf_page": 30,
+      "pdf_pages": [
+        30
+      ]
+    },
+    {
+      "clause": "7.5.4.2",
+      "pdf_page": 30,
+      "pdf_pages": [
+        30
+      ]
+    },
+    {
+      "clause": "7.5.5",
+      "pdf_page": 30,
+      "pdf_pages": [
+        30
+      ]
+    },
+    {
+      "clause": "7.6",
+      "pdf_page": 30,
+      "pdf_pages": [
+        30
+      ]
+    },
+    {
+      "clause": "7.6.1",
+      "pdf_page": 30,
+      "pdf_pages": [
+        30
+      ]
+    },
+    {
+      "clause": "7.6.2",
+      "pdf_page": 30,
+      "pdf_pages": [
+        30
+      ]
+    },
+    {
+      "clause": "7.7",
+      "pdf_page": 30,
+      "pdf_pages": [
+        30
+      ]
+    },
+    {
+      "clause": "7.7.1",
+      "pdf_page": 30,
+      "pdf_pages": [
+        30
+      ]
+    },
+    {
+      "clause": "7.7.2",
+      "pdf_page": 31,
+      "pdf_pages": [
+        31
+      ]
+    },
+    {
+      "clause": "7.7.3",
+      "pdf_page": 31,
+      "pdf_pages": [
+        31
+      ]
+    },
+    {
+      "clause": "7.7.3.1",
+      "pdf_page": 31,
+      "pdf_pages": [
+        31
+      ]
+    },
+    {
+      "clause": "7.7.3.2",
+      "pdf_page": 31,
+      "pdf_pages": [
+        31
+      ]
+    },
+    {
+      "clause": "7.7.4",
+      "pdf_page": 31,
+      "pdf_pages": [
+        31
+      ]
+    },
+    {
+      "clause": "7.7.4.1",
+      "pdf_page": 31,
+      "pdf_pages": [
+        31
+      ]
+    },
+    {
+      "clause": "7.7.4.2",
+      "pdf_page": 31,
+      "pdf_pages": [
+        31
+      ]
+    },
+    {
+      "clause": "7.7.4.3",
+      "pdf_page": 31,
+      "pdf_pages": [
+        31
+      ]
+    },
+    {
+      "clause": "7.7.5",
+      "pdf_page": 31,
+      "pdf_pages": [
+        31
+      ]
+    },
+    {
+      "clause": "7.7.5.1",
+      "pdf_page": 31,
+      "pdf_pages": [
+        31
+      ]
+    },
+    {
+      "clause": "7.7.5.2",
+      "pdf_page": 31,
+      "pdf_pages": [
+        31
+      ]
+    },
+    {
+      "clause": "7.7.5.3",
+      "pdf_page": 31,
+      "pdf_pages": [
+        31
+      ]
+    },
+    {
+      "clause": "7.7.6",
+      "pdf_page": 32,
+      "pdf_pages": [
+        32
+      ]
+    },
+    {
+      "clause": "7.7.6.1",
+      "pdf_page": 32,
+      "pdf_pages": [
+        32
+      ]
+    },
+    {
+      "clause": "7.7.6.2",
+      "pdf_page": 32,
+      "pdf_pages": [
+        32
+      ]
+    },
+    {
+      "clause": "7.7.7",
+      "pdf_page": 32,
+      "pdf_pages": [
+        32
+      ]
+    },
+    {
+      "clause": "7.7.7.1",
+      "pdf_page": 32,
+      "pdf_pages": [
+        32
+      ]
+    },
+    {
+      "clause": "7.7.7.2",
+      "pdf_page": 32,
+      "pdf_pages": [
+        32
+      ]
+    },
+    {
+      "clause": "7.7.7.3",
+      "pdf_page": 32,
+      "pdf_pages": [
+        32
+      ]
+    },
+    {
+      "clause": "7.7.8",
+      "pdf_page": 32,
+      "pdf_pages": [
+        32
+      ]
+    },
+    {
+      "clause": "7.8",
+      "pdf_page": 32,
+      "pdf_pages": [
+        32
+      ]
+    },
+    {
+      "clause": "7.8.1",
+      "pdf_page": 32,
+      "pdf_pages": [
+        32
+      ]
+    },
+    {
+      "clause": "7.8.2",
+      "pdf_page": 32,
+      "pdf_pages": [
+        32
+      ]
+    },
+    {
+      "clause": "7.9",
+      "pdf_page": 33,
+      "pdf_pages": [
+        33
+      ]
+    },
+    {
+      "clause": "7.9.1",
+      "pdf_page": 33,
+      "pdf_pages": [
+        33
+      ]
+    },
+    {
+      "clause": "7.9.2",
+      "pdf_page": 33,
+      "pdf_pages": [
+        33
+      ]
+    },
+    {
+      "clause": "7.9.3",
+      "pdf_page": 33,
+      "pdf_pages": [
+        33
+      ]
+    },
+    {
+      "clause": "7.10",
+      "pdf_page": 33,
+      "pdf_pages": [
+        33
+      ]
+    },
+    {
+      "clause": "7.10.1",
+      "pdf_page": 33,
+      "pdf_pages": [
+        33
+      ]
+    },
+    {
+      "clause": "7.10.2",
+      "pdf_page": 33,
+      "pdf_pages": [
+        33
+      ]
+    },
+    {
+      "clause": "7.10.3",
+      "pdf_page": 33,
+      "pdf_pages": [
+        33
+      ]
+    },
+    {
+      "clause": "7.10.4",
+      "pdf_page": 33,
+      "pdf_pages": [
+        33
+      ]
+    },
+    {
+      "clause": "7.11",
+      "pdf_page": 33,
+      "pdf_pages": [
+        33
+      ]
+    },
+    {
+      "clause": "7.11.1",
+      "pdf_page": 33,
+      "pdf_pages": [
+        33
+      ]
+    },
+    {
+      "clause": "7.11.2",
+      "pdf_page": 33,
+      "pdf_pages": [
+        33
+      ]
+    },
+    {
+      "clause": "7.11.3",
+      "pdf_page": 33,
+      "pdf_pages": [
+        33
+      ]
+    },
+    {
+      "clause": "7.12",
+      "pdf_page": 33,
+      "pdf_pages": [
+        33
+      ]
+    },
+    {
+      "clause": "7.12.1",
+      "pdf_page": 33,
+      "pdf_pages": [
+        33
+      ]
+    },
+    {
+      "clause": "7.12.2",
+      "pdf_page": 33,
+      "pdf_pages": [
+        33
+      ]
+    },
+    {
+      "clause": "7.12.3",
+      "pdf_page": 33,
+      "pdf_pages": [
+        33
+      ]
+    },
+    {
+      "clause": "7.12.4",
+      "pdf_page": 33,
+      "pdf_pages": [
+        33
+      ]
+    },
+    {
+      "clause": "7.12.5",
+      "pdf_page": 34,
+      "pdf_pages": [
+        34
+      ]
+    },
+    {
+      "clause": "7.13",
+      "pdf_page": 34,
+      "pdf_pages": [
+        34
+      ]
+    },
+    {
+      "clause": "7.13.1",
+      "pdf_page": 34,
+      "pdf_pages": [
+        34
+      ]
+    },
+    {
+      "clause": "7.13.2",
+      "pdf_page": 34,
+      "pdf_pages": [
+        34
+      ]
+    },
+    {
+      "clause": "8.1",
+      "pdf_page": 34,
+      "pdf_pages": [
+        34
+      ]
+    },
+    {
+      "clause": "8.1.2",
+      "pdf_page": 34,
+      "pdf_pages": [
+        34
+      ]
+    },
+    {
+      "clause": "8.2",
+      "pdf_page": 34,
+      "pdf_pages": [
+        34
+      ]
+    },
+    {
+      "clause": "8.2.1",
+      "pdf_page": 34,
+      "pdf_pages": [
+        34
+      ]
+    },
+    {
+      "clause": "8.2.2",
+      "pdf_page": 34,
+      "pdf_pages": [
+        34
+      ]
+    },
+    {
+      "clause": "8.3",
+      "pdf_page": 34,
+      "pdf_pages": [
+        34
+      ]
+    },
+    {
+      "clause": "8.4",
+      "pdf_page": 35,
+      "pdf_pages": [
+        35
+      ]
+    },
+    {
+      "clause": "8.4.1",
+      "pdf_page": 35,
+      "pdf_pages": [
+        35
+      ]
+    },
+    {
+      "clause": "8.4.2",
+      "pdf_page": 35,
+      "pdf_pages": [
+        35
+      ]
+    }
+  ]
+}

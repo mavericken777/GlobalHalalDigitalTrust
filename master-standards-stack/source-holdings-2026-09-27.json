@@ -1,0 +1,79 @@
+{
+  "artifact": "source-holdings-2026-09-27.json",
+  "control_date": "2026-09-27",
+  "classification": "provenance inventory; source PDFs excluded from public repository",
+  "files": {
+    "(MHMS) 2020.pdf": {
+      "sha256": "8891fbc89c0883f80aed56ae090e352d20140d09b95876f3cfb3f04196bc1408",
+      "pdf_pages": 53,
+      "distribution": "PRIVATE_USER_SUPPLIED_REVIEW_ONLY",
+      "repository_copy": false
+    },
+    "HALAL INTERNAL\u00a0AUDIT sample.pdf": {
+      "sha256": "0b3cbb1c9e785f882afd2c0b9951c078bc092767bb5622d8f41992a57aad8a08",
+      "pdf_pages": 83,
+      "distribution": "PRIVATE_USER_SUPPLIED_REVIEW_ONLY",
+      "repository_copy": false
+    },
+    "HALAL QUALITY ASSURANCE PROCEDURE (SOP).pdf": {
+      "sha256": "bab8dd28939bf3d7acd0f3cf3331a4043c49d3f298d93e5af14360b978bd3b77",
+      "pdf_pages": 58,
+      "distribution": "PRIVATE_USER_SUPPLIED_REVIEW_ONLY",
+      "repository_copy": false
+    },
+    "Halal Audit Training.pdf": {
+      "sha256": "38a78ee5f89e1def7c85f7f1ba47580789cf0afe613c8465a89ecd8a1c15a89f",
+      "pdf_pages": 47,
+      "distribution": "PRIVATE_USER_SUPPLIED_REVIEW_ONLY",
+      "repository_copy": false
+    },
+    "Halal Lab.pdf": {
+      "sha256": "e20eab6ad1c8dcf2444ed8fe9c319dc89dd0f86f441cc8ea0be81784b3f0d389",
+      "pdf_pages": 40,
+      "distribution": "PRIVATE_USER_SUPPLIED_REVIEW_ONLY",
+      "repository_copy": false
+    },
+    "MANUAL PROSEDUR PENSIJILANHALAL MALAYSIA2020.pdf": {
+      "sha256": "3d27427023eebbba56c6537133066be6a436b6f141ae4b9884a05191f21cdae7",
+      "pdf_pages": 90,
+      "distribution": "PRIVATE_USER_SUPPLIED_REVIEW_ONLY",
+      "repository_copy": false
+    },
+    "MS2400-1_2019.pdf": {
+      "sha256": "1e5c635cbb434465f4deb43ffb0ae7a52040210eab46a517593390443bc4d7a2",
+      "pdf_pages": 42,
+      "distribution": "PRIVATE_USER_SUPPLIED_REVIEW_ONLY",
+      "repository_copy": false
+    },
+    "MS2400-2_2019.pdf": {
+      "sha256": "d6369596a188446a5916e0d7d946d56e2a0bdcf6675d01d1a9e1cff204ff6720",
+      "pdf_pages": 43,
+      "distribution": "PRIVATE_USER_SUPPLIED_REVIEW_ONLY",
+      "repository_copy": false
+    },
+    "MS2400-3_2019.pdf": {
+      "sha256": "8e757fa1821edb7a246dbf3146d8e44533c4d32badf5c214b9ab7d32b1c61058",
+      "pdf_pages": 48,
+      "distribution": "PRIVATE_USER_SUPPLIED_REVIEW_ONLY",
+      "repository_copy": false
+    },
+    "Sertu Menurut Perspektif Islam.pdf": {
+      "sha256": "74ef04b0fd5fba56c5091d0a5f05f2dfd551d88a0602d5889e023b0e8d4d5580",
+      "pdf_pages": 20,
+      "distribution": "PRIVATE_USER_SUPPLIED_REVIEW_ONLY",
+      "repository_copy": false
+    },
+    "platinum_tier_ms_master.pdf": {
+      "sha256": "4f1240560664c9a90caec6359d9715608d972e4d537b1cc7f2519a77d4c95893",
+      "pdf_pages": 43,
+      "distribution": "PRIVATE_USER_SUPPLIED_REVIEW_ONLY",
+      "repository_copy": false
+    },
+    "platinum_tier_v2_illustrated.pdf": {
+      "sha256": "f3696b038f419c24b94eb0da62e967a345bd2c3c5b70e2ea9c9ceb513f7f3c7e",
+      "pdf_pages": 30,
+      "distribution": "PRIVATE_USER_SUPPLIED_REVIEW_ONLY",
+      "repository_copy": false
+    }
+  }
+}
