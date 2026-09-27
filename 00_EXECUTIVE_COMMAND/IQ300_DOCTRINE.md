@@ -13,9 +13,9 @@
 
 ---
 
-## Current evidence-status overlay — 27 September 2026
+## Current evidence-status overlay — 28 September 2026
 
-This post-freeze correction controls present readiness and source usability; historical catalogue counts below are lineage, not proof of intact assets. MS 2400-1 and -3 compressed datasets and the legacy master tarball remain quarantined; only the MS 2400-2 compressed file currently decodes (201 unique IDs). The total 613 is historical and must not be reported as an ingestible verified set. The frozen 17 September directory remains unchanged.
+This post-freeze correction controls present readiness and source usability; historical catalogue counts below are lineage, not proof of intact assets. The two corrupt MS 2400 compressed datasets and legacy master tarball were retired from the current tree on 27 September 2026. The replacement source index has 628 unique numbered clause locators without licensed wording; it is not an exhaustive requirement or control dataset. The MS 2400-2 compressed file decodes (201 historical control objects) but omits five deeper headings. The former total 613 is historical and must not be reported as an ingestible verified set. The frozen 17 September directory remains unchanged.
 
 Partner roles and reported non-binding instruments are in `partner-registry.json` v2.1.0; reported intent is distinct from a priced service contract. NICFS and the legacy laboratory placeholder are not confirmed aliases. Current mission and signing readiness: `october-2026-readiness.json` and `../CHINA_TRIP_2026/SIGNING_MATRIX.md`.
 

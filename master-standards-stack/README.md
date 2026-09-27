@@ -49,7 +49,7 @@ The current IQ300 operating universe contains 17 standards/standard contexts:
 11. MS 2627:2017 — Detection of porcine DNA — Test method — Food and food products
 12. MS 2627-2:2025 — Detection of porcine DNA — Test method — Part 2: Cosmetics
 13. MS 1900:2025 — Shariah-based quality management system — Requirements
-14. MS 2691:2021 — Halal profession competency standard
+14. MS 2691:2021 — Halal profession — General requirements standard
 15. MS 2610:2015 — Muslim-friendly hospitality services — Requirements
 16. MS 2809:2025 — Authentication of products using chemometric techniques
 17. MS 2810:2025 — Consumable goods — Test method — Identification of pig skin and hair
@@ -61,6 +61,8 @@ Historical/withdrawn/replaced standards are retained as version lineage only and
 ### MS 2400 source locators (27 September 2026)
 
 The [post-freeze source index](iq300-full-matrix/source-index-2026-09-27/SOURCE_INDEX_MANIFEST.json) identifies 628 unique numbered headings in the supplied 2019 editions (transport 192, warehouse 206, retail 230). This is a locator count, not an exhaustive count of normative obligations. The legacy 613-object control claim is historical and omits 15 nested headings; two of its compressed datasets were corrupt and retired. Licensed full text is not distributed here.
+
+The [28 September batch review](19_SUPPLIED_PDF_RECONCILIATION_2026-09-28.md) records eight additional source identities and two duplicate copies. MS 2441-2:2014 is a sewage treatment standard outside this halal catalogue, and the supplied MS 2393:2010 edition cannot verify MS 2393:2023.
 
 ### Public structure verified
 

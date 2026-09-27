@@ -40,7 +40,7 @@ The code under `platform/` is a **local reference** (FastAPI + default-deny HITM
 11. MS 2627:2017 — Porcine DNA (food)
 12. MS 2627-2:2025 — Porcine DNA (cosmetics)
 13. MS 1900:2025 — Shariah-based QMS
-14. MS 2691:2021 — Halal profession competency
+14. MS 2691:2021 — Halal profession — General requirements
 15. MS 2610:2015 — Muslim-friendly hospitality
 16. MS 2809:2025 — Chemometric authentication
 17. MS 2810:2025 — Pig skin and hair identification
@@ -60,5 +60,5 @@ Trust State is an internal model state, not the certificate.
 ## Engineering notes (do not confuse with the commercial foundation)
 
 - Three corrupt legacy archives were [retired](00_EXECUTIVE_COMMAND/artifact-quarantine-2026-09-26.json). The [replacement MS 2400 source index](master-standards-stack/iq300-full-matrix/source-index-2026-09-27/SOURCE_INDEX_MANIFEST.json) has 628 numbered clause locators and no licensed standard text. The historical 613 proposed control objects were incomplete.
-- Illustrated PDF v2 has a cover-year typo on MS 2610 (2014 vs 2015). Catalogue stays **MS 2610:2015**.
+- The [28 September source review](master-standards-stack/19_SUPPLIED_PDF_RECONCILIATION_2026-09-28.md) checks ten additional attachments. MS 2441-2:2014 concerns sewage treatment and is outside the halal catalogue; the illustrated PDF mislabels MS 2610 as 2014, while its supplied primary edition is 2015.
 - Shipment 001 is the first live lot to evidence — not yet a bill of lading in this git tree.

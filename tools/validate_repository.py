@@ -61,6 +61,15 @@ def validate():
         assert all(1 <= p <= source['pages'] for x in locators for p in x['pdf_pages'])
         for suffix in ('1.1', '1.2', '2.1', '2.2', '2.3'):
             assert f'4.3.4.7.{suffix}' in {x['clause'] for x in locators}
+    prior = json.loads((ROOT / 'master-standards-stack/source-holdings-2026-09-27.json').read_text())['files']
+    batch = json.loads((ROOT / 'master-standards-stack/source-holdings-2026-09-28.json').read_text())
+    assert batch['batch_count'] == len(batch['files']) == 10
+    assert sum(item['sha256'] in {p['sha256'] for p in prior.values()} for item in batch['files'].values()) == batch['duplicate_prior_holding_count'] == 2
+    assert batch['files']['MS2441.pdf']['identity'].startswith('MS 2441-2:2014 On site sewage')
+    assert batch['files']['MS1480.pdf']['searchable_text_pages_over_100_chars'] == 0
+    assert batch['files']['MS2424-2019.pdf']['searchable_text_pages_over_100_chars'] == 0
+    for item in batch['files'].values():
+        assert len(item['sha256']) == 64 and item['pdf_pages'] > 0 and item['copy_in_repository'] is False
     gates = json.loads((ROOT / '00_EXECUTIVE_COMMAND/october-2026-readiness.json').read_text())
     dates = gates['dates']
     days = (date.fromisoformat(dates['end']) - date.fromisoformat(dates['start'])).days
