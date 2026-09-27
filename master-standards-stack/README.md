@@ -58,15 +58,9 @@ Historical/withdrawn/replaced standards are retained as version lineage only and
 
 ## Source-depth model
 
-### Source-verified numbered requirement objects
+### MS 2400 source locators (27 September 2026)
 
-`iq300-full-matrix/` contains 613 numbered MS 2400 requirement objects derived from the three controlled user-supplied licensed PDFs:
-
-- MS 2400-1:2019 Transportation — 187
-- MS 2400-2:2019 Warehousing — 201
-- MS 2400-3:2019 Retailing — 225
-
-These 613 source-backed objects take precedence over conflicting secondary-source MS2400 clause maps.
+The [post-freeze source index](iq300-full-matrix/source-index-2026-09-27/SOURCE_INDEX_MANIFEST.json) identifies 628 unique numbered headings in the supplied 2019 editions (transport 192, warehouse 206, retail 230). This is a locator count, not an exhaustive count of normative obligations. The legacy 613-object control claim is historical and omits 15 nested headings; two of its compressed datasets were corrupt and retired. Licensed full text is not distributed here.
 
 ### Public structure verified
 

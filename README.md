@@ -59,6 +59,6 @@ Trust State is an internal model state, not the certificate.
 
 ## Engineering notes (do not confuse with the commercial foundation)
 
-- Two legacy MS 2400 compressed assets and an old master tarball are corrupt and [quarantined](00_EXECUTIVE_COMMAND/artifact-quarantine-2026-09-26.json). Use the verified snapshot and playbooks, not those files.
+- Three corrupt legacy archives were [retired](00_EXECUTIVE_COMMAND/artifact-quarantine-2026-09-26.json). The [replacement MS 2400 source index](master-standards-stack/iq300-full-matrix/source-index-2026-09-27/SOURCE_INDEX_MANIFEST.json) has 628 numbered clause locators and no licensed standard text. The historical 613 proposed control objects were incomplete.
 - Illustrated PDF v2 has a cover-year typo on MS 2610 (2014 vs 2015). Catalogue stays **MS 2610:2015**.
 - Shipment 001 is the first live lot to evidence — not yet a bill of lading in this git tree.

@@ -1,0 +1,58 @@
+{
+  "artifact": "SOURCE_INDEX_MANIFEST.json",
+  "version": "1.0",
+  "control_date": "2026-09-27",
+  "scope": "Three source-held 2019 editions; no normative clause text or automatic control rules",
+  "sources": [
+    {
+      "name": "MS2400-1_2019.pdf",
+      "sha256": "1e5c635cbb434465f4deb43ffb0ae7a52040210eab46a517593390443bc4d7a2",
+      "pages": 42,
+      "locator_count": 192,
+      "locator_file": "MS2400-1_2019_CLAUSE_LOCATORS.json",
+      "locator_sha256": "9b4e09c3b635b12dd5464b839f62a38ee3791cc7afd6790ecf1f26f5326be00c",
+      "permission_to_redistribute": "NOT_ESTABLISHED",
+      "duplicate_identifiers": {}
+    },
+    {
+      "name": "MS2400-2_2019.pdf",
+      "sha256": "d6369596a188446a5916e0d7d946d56e2a0bdcf6675d01d1a9e1cff204ff6720",
+      "pages": 43,
+      "locator_count": 206,
+      "locator_file": "MS2400-2_2019_CLAUSE_LOCATORS.json",
+      "locator_sha256": "f5f86efdcabcbf5090d1ba1e8c8e753996f8bf8776a332d27adaab187a839feb",
+      "permission_to_redistribute": "NOT_ESTABLISHED",
+      "duplicate_identifiers": {
+        "7.10.4": [
+          32,
+          33
+        ]
+      }
+    },
+    {
+      "name": "MS2400-3_2019.pdf",
+      "sha256": "8e757fa1821edb7a246dbf3146d8e44533c4d32badf5c214b9ab7d32b1c61058",
+      "pages": 48,
+      "locator_count": 230,
+      "locator_file": "MS2400-3_2019_CLAUSE_LOCATORS.json",
+      "locator_sha256": "004cf70b0ee6d50dfc29a02c05ec6907b34eea5d0003b010a8fd78a5f3de2bf0",
+      "permission_to_redistribute": "NOT_ESTABLISHED",
+      "duplicate_identifiers": {
+        "5.4.3.1": [
+          21,
+          22
+        ],
+        "5.4.3.2": [
+          22,
+          22
+        ]
+      }
+    }
+  ],
+  "total_locators": 628,
+  "historical_object_count": 613,
+  "history_note": "The 187/201/225 control-object set omitted five deeply nested visible headings in each standard. It is not the full locator inventory.",
+  "license_boundary": "Original supplied PDFs are single-user licensed to third parties; copying/networking prohibited on their covers. They are excluded from this public package.",
+  "archive": "IQ300_MS2400_SOURCE_INDEX_2026-09-27.tar.gz",
+  "archive_scope": "Manifest and three clause/page locator JSON files only; not a replacement for proprietary source text or historical control mappings."
+}

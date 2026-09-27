@@ -1,25 +1,7 @@
-# IQ300 - Full Clause-to-Control Intelligence Layer
+# IQ300 source status (27 September 2026)
 
-> **26 September integrity correction:** transport and retail gzip assets fail decompression/integrity checks. Only the warehousing file currently decodes (201 unique IDs). The historical 613-object claim below is not a verified usable ingestion count. Do not ingest the two damaged files. See [quarantine register](../../00_EXECUTIVE_COMMAND/artifact-quarantine-2026-09-26.json). Original bytes retained; intact source required.
+The three user supplied MS 2400:2019 editions were checked page by page. The new [source index](source-index-2026-09-27/SOURCE_INDEX_MANIFEST.json) provides **628 unique numbered clause locators** across sections 4–8: 192 transport, 206 warehousing and 230 retail. It includes the PDF page for each occurrence of duplicate identifiers. The source PDFs themselves are excluded because their covers prohibit copying and networking under single user licences.
 
-This package upgrades the Master Standards Stack into a machine-oriented regulatory control model.
+The historical 613-object control count (187/201/225) missed five deep headings in each edition: `4.3.4.7.1.1`, `4.3.4.7.1.2`, `4.3.4.7.2.1`, `4.3.4.7.2.2`, `4.3.4.7.2.3`. It is **not** an exhaustive requirement inventory. The old transport and retail gzip files and master tarball failed integrity checks and have been retired from the current tree. The intact 201-object warehouse control file remains for historical lineage only. See the [retirement record](../../00_EXECUTIVE_COMMAND/artifact-quarantine-2026-09-26.json).
 
-Primary clause-level source corpus:
-- MS 2400-1:2019 - Transportation
-- MS 2400-2:2019 - Warehousing
-- MS 2400-3:2019 - Retailing
-
-Supporting source corpus:
-- supplied halal audit training PDF
-- supplied halal awareness PDF
-- supplied JAKIM/Malaysian Standards compendia
-
-The three uploaded MS 2400 PDFs yield 613 unique numbered requirement objects across clauses 4-8, including nested clauses such as 4.3.4.1.1 and 7.5.3.4.
-
-Canonical IQ300 path:
-
-`Clause -> Control Objective -> HCP -> Evidence -> Audit Test -> Finding -> Corrective Action -> Re-verification -> Authority Gate -> Trust State`
-
-Important boundary: the supplied sector-standard compendia do not contain the complete licensed numbered subclause text for every sector standard. IQ300 therefore does not fabricate missing subclauses. Those standards are preserved as family-level controls plus an explicit source-gap register until licensed official text is available for final objectization.
-
-Machine-readable assets in this folder are designed for ingestion by a compliance knowledge graph, rules engine, audit application or digital-twin service.
+The replacement archive contains only locator JSON files and its manifest, not the historical proposed controls, normative standard wording or an automatically approved compliance ruleset. A clause locator is not a certification determination.
