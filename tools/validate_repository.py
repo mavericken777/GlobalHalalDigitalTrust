@@ -70,6 +70,13 @@ def validate():
     assert batch['files']['MS2424-2019.pdf']['searchable_text_pages_over_100_chars'] == 0
     for item in batch['files'].values():
         assert len(item['sha256']) == 64 and item['pdf_pages'] > 0 and item['copy_in_repository'] is False
+    bundle = json.loads((ROOT / 'master-standards-stack/source-bundle-holdings-2026-09-28.json').read_text())
+    members = bundle['members']
+    assert bundle['integrity'] == 'ZIP_CRC_PASS' and bundle['actual_file_count'] == len(members) == 69
+    assert len({x['path'] for x in members}) == 69
+    assert {kind: sum(x['kind'] == kind for x in members) for kind in ('.pdf','.svg','.png','.html','.md')} == {'.pdf': 8, '.svg': 30, '.png': 30, '.html': 0, '.md': 1}
+    assert all(len(x['sha256']) == 64 and x['bytes'] > 0 for x in members)
+    assert bundle['declared_file_count_in_index'] == 80 and bundle['missing_declared_html_sources'] == 12
     gates = json.loads((ROOT / '00_EXECUTIVE_COMMAND/october-2026-readiness.json').read_text())
     dates = gates['dates']
     days = (date.fromisoformat(dates['end']) - date.fromisoformat(dates['start'])).days
