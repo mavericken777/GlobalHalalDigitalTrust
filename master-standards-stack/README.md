@@ -66,6 +66,8 @@ The [28 September batch review](19_SUPPLIED_PDF_RECONCILIATION_2026-09-28.md) re
 
 The [Platinum compilation review](20_PLATINUM_COMPILATION_REVIEW_2026-09-28.md) identifies duplicate secondary PDFs, invalid contents page ranges and a packaging-standard misclassification. It does not promote those compilations to normative source status.
 
+The [bundle triage](21_PLATINUM_BUNDLE_TRIAGE_2026-09-28.md) inventories the supplied 69-file ZIP. Its missing HTML sources and sector/edition errors block automatic ingestion as normative controls.
+
 ### Public structure verified
 
 The current package maps publicly verifiable clause structures, controls, HCPs, evidence, audit tests and authority gates for:
