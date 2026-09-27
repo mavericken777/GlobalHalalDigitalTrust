@@ -61,4 +61,5 @@ Trust State is an internal model state, not the certificate.
 
 - Three corrupt legacy archives were [retired](00_EXECUTIVE_COMMAND/artifact-quarantine-2026-09-26.json). The [replacement MS 2400 source index](master-standards-stack/iq300-full-matrix/source-index-2026-09-27/SOURCE_INDEX_MANIFEST.json) has 628 numbered clause locators and no licensed standard text. The historical 613 proposed control objects were incomplete.
 - The [28 September source review](master-standards-stack/19_SUPPLIED_PDF_RECONCILIATION_2026-09-28.md) checks ten additional attachments. MS 2441-2:2014 concerns sewage treatment and is outside the halal catalogue; the illustrated PDF mislabels MS 2610 as 2014, while its supplied primary edition is 2015.
+- The [Platinum compilation review](master-standards-stack/20_PLATINUM_COMPILATION_REVIEW_2026-09-28.md) records duplicate PDF hashes, invalid contents page references and a misidentified MS 2565:2014. Use primary editions for exact controls.
 - Shipment 001 is the first live lot to evidence — not yet a bill of lading in this git tree.

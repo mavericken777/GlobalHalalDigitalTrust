@@ -64,6 +64,8 @@ The [post-freeze source index](iq300-full-matrix/source-index-2026-09-27/SOURCE_
 
 The [28 September batch review](19_SUPPLIED_PDF_RECONCILIATION_2026-09-28.md) records eight additional source identities and two duplicate copies. MS 2441-2:2014 is a sewage treatment standard outside this halal catalogue, and the supplied MS 2393:2010 edition cannot verify MS 2393:2023.
 
+The [Platinum compilation review](20_PLATINUM_COMPILATION_REVIEW_2026-09-28.md) identifies duplicate secondary PDFs, invalid contents page ranges and a packaging-standard misclassification. It does not promote those compilations to normative source status.
+
 ### Public structure verified
 
 The current package maps publicly verifiable clause structures, controls, HCPs, evidence, audit tests and authority gates for:
