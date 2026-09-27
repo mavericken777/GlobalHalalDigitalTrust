@@ -1,15 +1,17 @@
 # Lulu — official trip dossier
 
+**Research lead, not a current-source verification.** Corporate identities, executives, banner rights, onboarding/tax policies and historical acquisitions below require dated official sources before external use. No verified contact or executed retailer relationship is recorded. Use the actual contracting entity and current counterparty requirements.
+
 ## Group
 
-- Listed vehicle: **Lulu Retail Holdings PLC**, ADGM, ADX ticker **LULU**, IR: investor.relations@ae.lulumea.com  
-- Founder group: LuLu Group International, Abu Dhabi (M. A. Yusuff Ali)  
+- Listed vehicle: **Lulu Retail Holdings PLC**, ADGM, ADX ticker **LULU**, IR: investor.relations@ae.lulumea.com
+- Founder group: LuLu Group International, Abu Dhabi (M. A. Yusuff Ali)
 - Public subsidiary lists (2025 annual / ADX materials) include, among others:
-  - Lulu Saudi Hypermarket (Single Shareholder) LLC — KSA retail  
-  - Lulu Hypermarket LLC, Dubai  
-  - Lulu Central Warehouse LLC — Single Owner (Dubai)  
-  - Gulf Star Commodities Co. — Sole Proprietorship LLC (UAE wholesale)  
-  - Lulu Logistics LLC, Dubai / Lulu Logistics (Single Person) LLC (KSA)  
+  - Lulu Saudi Hypermarket (Single Shareholder) LLC — KSA retail
+  - Lulu Hypermarket LLC, Dubai
+  - Lulu Central Warehouse LLC — Single Owner (Dubai)
+  - Gulf Star Commodities Co. — Sole Proprietorship LLC (UAE wholesale)
+  - Lulu Logistics LLC, Dubai / Lulu Logistics (Single Person) LLC (KSA)
   - Huda Shipping International Sole Proprietorship LLC
 
 Use the **operating company that will raise the PO or vendor code**, not the PLC, unless group protocol asks for the PLC on the cover.
@@ -24,10 +26,10 @@ One category manager + one import-compliance owner. One SKU family. Vendor regis
 
 ## Likely internal path (confirm, do not assume)
 
-1. Vendor registration / trade licence match  
-2. Category tasting / spec  
-3. Quality + Halal file  
-4. Commercial terms + listing  
+1. Vendor registration / trade licence match
+2. Category tasting / spec
+3. Quality + Halal file
+4. Commercial terms + listing
 5. First PO into Lulu Central Warehouse or KSA DC
 
 ## Contacts to obtain in the room

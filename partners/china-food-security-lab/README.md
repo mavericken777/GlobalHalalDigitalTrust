@@ -1,12 +1,7 @@
-# Proposed laboratory role — UNEXECUTED ROLE
+# Laboratory role and integration proposal
 
-> **Not a laboratory on file.** Title "China Government Food Security Laboratory" is a **project placeholder**. No legal laboratory identity, accreditation certificate, method scope, or contract is attached.
+The legacy laboratory identity remains unresolved; it is not automatically the NICFS platform or academy. Exact legal entity, site, accreditation/method scope, contract and authority acceptance remain open.
 
-**Status code:** `UNEXECUTED-ROLE`  
-**Do not imply** Chinese government sponsorship or accreditation.
+[Integration profile](AHTE_JAKIM_INTEGRATION_PROFILE_2026-09-26.md) incorporates draft PR #5 with source-claim qualification, corrected decision classes and aligned internal API route. The [OpenAPI proposal](../../master-standards-stack/china-execution-pack/api/china-food-security-lab-openapi-extension.yaml) specifies target interfaces only. No server or JAKIM connection is deployed by these files.
 
-## Authority boundary
-Does not create Halal certification. **NOT DETECTED ≠ HALAL.**
-
-## Contractual basis
-`[OPEN GATE: CONTRACTUAL BASIS — owner: Project — blocking: Evidence]`
+**NOT DETECTED ≠ HALAL.** Laboratory evidence is not certification. See the [identity crosswalk](../../00_EXECUTIVE_COMMAND/partner-registry.json) and [signing matrix](../../CHINA_TRIP_2026/SIGNING_MATRIX.md).

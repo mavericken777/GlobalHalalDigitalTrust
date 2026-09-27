@@ -1,12 +1,14 @@
 # Tamimi Markets — official trip dossier
 
+**Research lead, not a current-source verification.** Corporate identities, executives, banner rights, onboarding/tax policies and historical acquisitions below require dated official sources before external use. No verified contact or executed retailer relationship is recorded. Use the actual contracting entity and current counterparty requirements.
+
 ## Company
 
-- Banner: **Tamimi Markets**  
-- Vehicle to confirm: **Tamimi Markets Company**  
-- HQ / office commonly cited: Al Rakka Al Janubiya, Al Khobar, PO Box 6941; group roots in Dammam  
-- Family group: Tamimi Group of Companies (Sheikh Ali Abdullah Al-Tamimi line)  
-- Retail since 1979; public materials describe Tamimi as a **direct importer**  
+- Banner: **Tamimi Markets**
+- Vehicle to confirm: **Tamimi Markets Company**
+- HQ / office commonly cited: Al Rakka Al Janubiya, Al Khobar, PO Box 6941; group roots in Dammam
+- Family group: Tamimi Group of Companies (Sheikh Ali Abdullah Al-Tamimi line)
+- Retail since 1979; public materials describe Tamimi as a **direct importer**
 - Feb 2024: completion of 100% acquisition of **Al Raya For Food Stuffs Company JSC** (western KSA store base)
 
 ## Why this banner is on the trip

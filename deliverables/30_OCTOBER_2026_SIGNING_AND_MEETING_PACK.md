@@ -7,6 +7,10 @@
 
 [PROPOSAL: closes meeting-output and signing-readiness gaps — path point: Control / Evidence / Authority Gate]
 
+## Current controlled drafts
+
+The [signing matrix](../CHINA_TRIP_2026/SIGNING_MATRIX.md) now supplies M01–M06 draft paths, retains PHC on M01/M02/M05/M06, and restores the separate M04 entrusted-agriculture scope. Traceability integration is optional X01, not a replacement for M04. All remain proposals until authorised final versions are accepted.
+
 ## Signing register
 
 The itinerary identifies six intended instruments. This register does not invent their final titles or parties. Counsel and each signatory must settle those points before signature.
@@ -18,7 +22,7 @@ The itinerary identifies six intended instruments. This register does not invent
 | M03 | Academy, date disputed | GHSCL + stated China National Food Safety Innovation Center | Exact legal entity/site; laboratory accreditation and relevant method scope; agreed analytical cooperation text | Evidence protocol, sample custody, report format, permitted claims, authority interfaces |
 | M04 | Academy, date disputed | GHSCL + stated national agricultural science laboratory; entrusted agricultural development | Exact institution/lab identity and relationship to academy/center; project land/scope and party authority | Feasibility scope, accountable project lead, deliverables and milestone review |
 | M05 | Shanghai, 15 Oct | PHC + GHSCL + exact Sinotrans entity; global halal logistics cooperation | Entity/mandate verification, scope, territory, certification boundary, commercial/governance terms | Phase-1 corridor, named sites, operational sponsor and 90-day plan |
-| M06 | Shanghai, 15 Oct | Second Sinotrans MOU — distinct scope not provided | Separate title, parties, purpose and non-overlapping obligations; agreed bilingual text | Deliberate split between agreements, or recorded decision to consolidate |
+| M06 | Shanghai, 15 Oct | PHC + GHSCL + exact Sinotrans entity; proposed warehouse split (acceptance pending) | Separate title, parties, purpose and non-overlapping obligations; agreed bilingual text | Deliberate split between agreements, or recorded decision to consolidate |
 
 **Signing gate:** no final execution copy until legal names, authority, final version/hash, agreed languages and approved obligations are recorded. If not complete, use a discussion record or defer signature. The signing of an MOU does not activate a certified logistics service or authorize regulatory claims.
 

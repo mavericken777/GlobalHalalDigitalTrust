@@ -1,30 +1,28 @@
-# China trip — foundation is on. Execute.
+# China trip — execution pack
 
-Control date: 2026-09-26
+Control date: 2026-09-27. Supersedes the 26 September aggregate completion wording.
 
-## Foundation (done)
+GHSC incorporation (HK CR 79801544, 11 February 2026) and the PHC–JGC, JGC–Sinotrans and GHSC–Sinotrans start papers are recorded in the [instrument register](01_INSTRUMENT_REGISTER.md). The [evidence index](evidence-index.json) distinguishes maintainer summaries from original-source review. Incorporation and intent do not themselves close the travel and signing workstreams.
 
-| Item | Status |
+| Dimension | Current control |
 |---|---|
-| Perak Halal Corporation — Perak State Government GLC, Halal industry local + global | On the corridor |
-| Malaysia Halal system — State + Federal as ONE for audit, certification, compliance | Doctrine locked |
-| JGC – PHC MoU (27 Aug 2025) | Start paper |
-| JGC – Sinotrans framework (Sep 2025) | Start paper |
-| **GLOBAL HALAL SUPPLY CHAIN LIMITED** HK CR **79801544** (11 Feb 2026) | Vehicle formed |
-| GHSC HK – Sinotrans Overseas MoU (3 Mar 2026), HK law | Start paper on the new vehicle |
+| Travel | `NOT_TRAVEL_READY` — [execution board](EXECUTION_BOARD.md) and [decision worksheet](TRAVEL_DECISIONS.md) |
+| Signing | `NOT_SIGNING_READY` — [M01–M06 and optional instrument matrix](SIGNING_MATRIX.md) |
+| Authority roles | [Coordinated framework with distinct mandates](MALAYSIA_HALAL_AUTHORITY_MAP.md) |
+| Source meeting actions | [Kickoff reconciliation](KICKOFF_MINUTES_RECONCILIATION.md) |
+| Live outcomes | [Field log](FIELD_LOG.md); actual owners, dates and evidence |
 
-The MoU is the start. The company is formed. This pack is the **execution file**, not a veto.
+## Required commercial outputs
 
-## This trip fills the operating annexes
+1. Agree Sinotrans's named lane and warehouse and confirm the proposed two-instrument split.
+2. Obtain a jointly signed confirmation of INST-004 signers, mandates and actual execution dates. Never alter or backdate an existing original unilaterally.
+3. Agree whether JGC and GHSC papers remain parallel or are amended/assigned; all affected parties must approve.
+4. Confirm exact center, lab and agricultural institution identities. Keep analytical evidence, traceability and entrusted development as distinct scopes.
+5. Use PHC + GHSC + counterparty drafts for CODA, Lulu and both Sinotrans instruments. Other retailer outreach remains optional and unexecuted.
+6. Complete final bilingual text, controlling language, entity/signatory details and annexes before printing execution copies.
 
-1. Sinotrans — named lane + named warehouse on the two split MoAs.  
-2. Printed names / titles / dates next to chops already on INST-004.  
-3. One-pager: JGC framework and GHSC MoU run as one corridor under GHSC HK.  
-4. NICFS — lab method list + code-map if they are in the room.  
-5. Retailers — Lulu / MAF-Carrefour / Tamimi / noon packs go out under GHSC HK letterhead.
+## Proposed room line
 
-Templates already in the repo. Use them.
+“PHC and GHSC are advancing the corridor from the recorded start MoUs to named sites, lanes, products and counterparties. This trip is to agree those operating details. Certification and destination acceptance remain with the competent authorities.”
 
-## Room line
-
-“Perak State GLC. Malaysia State and Federal Halal as one. GHSC Hong Kong is incorporated. Sinotrans MoU is signed. We are here to name the yard, the lane, and the first SKU family.”
+No outreach, booking or signature is implied by a prepared template. The full eight-day itinerary is in the [mission file](../00_EXECUTIVE_COMMAND/OCTOBER_2026_STRATEGIC_IMPLEMENTATION_MISSION.md).

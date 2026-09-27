@@ -11,6 +11,7 @@ import json
 import subprocess
 import xml.etree.ElementTree as ET
 from datetime import date
+from trip_controls import validate as validate_trip_controls
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -50,8 +51,9 @@ def validate():
         assert gate['status'] in {'OPEN', 'CLOSED'}
         if gate['status'] == 'CLOSED':
             assert gate['evidence_reference'], 'cannot close without evidence'
-    if any(g['status'] == 'OPEN' and g['domain'] == 'mission' for g in gates['gates']):
+    if any(g['status'] == 'OPEN' and g['workstream'] == 'travel' for g in gates['gates']):
         assert gates['status'] == 'NOT_TRAVEL_READY'
+    validate_trip_controls()
     print(json.dumps({'structural_checks': 'PASS_WITH_QUARANTINE', 'artifacts': counts, 'mission_gates': len(ids),
                       'mission_status': gates['status'], 'authority_verified': False, 'quarantined_files': list(known)}))
 

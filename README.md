@@ -4,12 +4,14 @@
 
 [Trip pack](CHINA_TRIP_2026/00_READ_THIS_FIRST.md) · [Execution board](CHINA_TRIP_2026/EXECUTION_BOARD.md) · [A–Z index](REPO_INDEX.md) · [STATUS](STATUS.md) · [Governance](GOVERNANCE.md) · [License](LICENSE)
 
-## Foundation (locked 2026-09-26)
+## Commercial foundation (recorded 2026-09-26)
 
 - **Perak Halal Corporation** — Perak State Government GLC for the Halal industry, local and global.
-- **Malaysia Halal system** — State and Federal work as **ONE** on audit, certification and compliance. One MS set. One MYeHALAL path. Sultan is Head of Islam in Perak. The King is Head of the nation.
+- **Malaysia Halal system** — A coordinated national framework with distinct JAKIM/MAIN/JAIN mandates; PHC is the commercial industry participant. See the [authority map](CHINA_TRIP_2026/MALAYSIA_HALAL_AUTHORITY_MAP.md).
 - Start papers: PHC–JGC MoU (27 Aug 2025) · JGC–Sinotrans framework (Sep 2025) · **GHSC HK–Sinotrans MoU (3 Mar 2026)**.
 - Vehicle formed. MoU is the start. Trip executes the annexes (named yard, named lane, first SKU, retailer packs).
+
+**Readiness:** commercial foundation recorded; travel `NOT_TRAVEL_READY`; signing `NOT_SIGNING_READY`; reference software only. The [readiness register](00_EXECUTIVE_COMMAND/october-2026-readiness.json) and [execution board](CHINA_TRIP_2026/EXECUTION_BOARD.md) control closure. Reported source summaries are indexed separately from reviewed originals.
 
 ## What this repository is
 
@@ -25,23 +27,23 @@ The code under `platform/` is a **local reference** (FastAPI + default-deny HITM
 
 ## 17-standard operating set (catalogue)
 
-1. MS 1500:2019 — Halal food  
-2. MS 2400-1:2019 — Transport  
-3. MS 2400-2:2019 — Warehousing  
-4. MS 2400-3:2019 — Retailing  
-5. MS 2424:2019 — Pharmaceuticals  
-6. MS 2634:2019 — Cosmetics  
-7. MS 2636:2019 — Medical device  
-8. MS 2738:2023 — Consumable goods  
-9. MS 2803:2025 — Animal bone, skin and hair  
-10. MS 2393:2023 — Islamic terminology  
-11. MS 2627:2017 — Porcine DNA (food)  
-12. MS 2627-2:2025 — Porcine DNA (cosmetics)  
-13. MS 1900:2025 — Shariah-based QMS  
-14. MS 2691:2021 — Halal profession competency  
-15. MS 2610:2015 — Muslim-friendly hospitality  
-16. MS 2809:2025 — Chemometric authentication  
-17. MS 2810:2025 — Pig skin and hair identification  
+1. MS 1500:2019 — Halal food
+2. MS 2400-1:2019 — Transport
+3. MS 2400-2:2019 — Warehousing
+4. MS 2400-3:2019 — Retailing
+5. MS 2424:2019 — Pharmaceuticals
+6. MS 2634:2019 — Cosmetics
+7. MS 2636:2019 — Medical device
+8. MS 2738:2023 — Consumable goods
+9. MS 2803:2025 — Animal bone, skin and hair
+10. MS 2393:2023 — Islamic terminology
+11. MS 2627:2017 — Porcine DNA (food)
+12. MS 2627-2:2025 — Porcine DNA (cosmetics)
+13. MS 1900:2025 — Shariah-based QMS
+14. MS 2691:2021 — Halal profession competency
+15. MS 2610:2015 — Muslim-friendly hospitality
+16. MS 2809:2025 — Chemometric authentication
+17. MS 2810:2025 — Pig skin and hair identification
 
 Normative MS wording is not redistributed. Snapshot: `master-standards-stack/verified-2026-09-17/`.
 
@@ -51,7 +53,7 @@ See [`partners/README.md`](partners/README.md). Retailer packs: [`CHINA_TRIP_202
 
 ## Canonical path
 
-`Authority → Standard/Instrument → Clause → Applicability → Control → Evidence → Audit → Finding → CAPA → Re-verification → Decision → Trust State → Release`
+`Authority → Standard / Instrument → Clause / Requirement → Applicability → Control → HCP / SCCP → Evidence → Audit Test → Finding → Corrective Action → Re-verification → Authority Gate → Trust State → Operational Release`
 
 Trust State is an internal model state, not the certificate.
 

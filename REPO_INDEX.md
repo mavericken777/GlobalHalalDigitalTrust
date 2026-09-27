@@ -1,6 +1,9 @@
 # Repository index — A–Z operating map
 
-Control date: 2026-09-26  
+**27 September reconciliation:** commercial foundation is recorded; travel `NOT_TRAVEL_READY`; signing `NOT_SIGNING_READY`. Current controls: [signing matrix](CHINA_TRIP_2026/SIGNING_MATRIX.md), [execution board](CHINA_TRIP_2026/EXECUTION_BOARD.md). This supersedes earlier aggregate completion language below.
+
+
+Control date: 2026-09-27
 Vehicle: **GLOBAL HALAL SUPPLY CHAIN LIMITED** · Hong Kong CR **79801544** · formed 11 Feb 2026
 
 ## Start here
@@ -10,7 +13,7 @@ Vehicle: **GLOBAL HALAL SUPPLY CHAIN LIMITED** · Hong Kong CR **79801544** · f
 | Trip room line + foundation | [`CHINA_TRIP_2026/00_READ_THIS_FIRST.md`](CHINA_TRIP_2026/00_READ_THIS_FIRST.md) |
 | What to fill in China | [`CHINA_TRIP_2026/EXECUTION_BOARD.md`](CHINA_TRIP_2026/EXECUTION_BOARD.md) |
 | Papers already in hand | [`CHINA_TRIP_2026/01_INSTRUMENT_REGISTER.md`](CHINA_TRIP_2026/01_INSTRUMENT_REGISTER.md) |
-| Malaysia Halal system (State + Federal as ONE) | [`CHINA_TRIP_2026/MALAYSIA_HALAL_AUTHORITY_MAP.md`](CHINA_TRIP_2026/MALAYSIA_HALAL_AUTHORITY_MAP.md) |
+| Malaysia Halal system (coordinated framework / distinct mandates) | [`CHINA_TRIP_2026/MALAYSIA_HALAL_AUTHORITY_MAP.md`](CHINA_TRIP_2026/MALAYSIA_HALAL_AUTHORITY_MAP.md) |
 | MoA templates (CODA, Sinotrans x2, NICFS x2) | [`CHINA_TRIP_2026/MOA_TEMPLATES/`](CHINA_TRIP_2026/MOA_TEMPLATES/) |
 | Lulu / MAF-Carrefour / Tamimi / noon | [`CHINA_TRIP_2026/RETAILERS/`](CHINA_TRIP_2026/RETAILERS/) |
 | Runtime honesty (what the code actually is) | [`STATUS.md`](STATUS.md) |
@@ -30,7 +33,7 @@ Vehicle: **GLOBAL HALAL SUPPLY CHAIN LIMITED** · Hong Kong CR **79801544** · f
 | H | HITM / default-deny | `platform/` + `00_EXECUTIVE_COMMAND/policies/hitm-default-deny.rego` |
 | I | Instruments | `CHINA_TRIP_2026/01_INSTRUMENT_REGISTER.md` |
 | J | JAKIM / JAIPK / JSM — one system | authority map |
-| K | King / Sultan — Heads of Islam | authority map |
+| K | Known mandate / contracting entity | authority map |
 | L | Lulu + logistics MoA | `CHINA_TRIP_2026/RETAILERS/LULU/` + Sinotrans logistics MoA |
 | M | MS catalogue (17) | this README + `master-standards-stack/verified-2026-09-17/` |
 | N | NICFS lab + traceability | `partners/nicfs/` + two MoAs |
@@ -45,7 +48,7 @@ Vehicle: **GLOBAL HALAL SUPPLY CHAIN LIMITED** · Hong Kong CR **79801544** · f
 | W | Warehouse MoA | `MOA_SINOTRANS_WAREHOUSE.md` |
 | X | Execution board | `CHINA_TRIP_2026/EXECUTION_BOARD.md` |
 | Y | Year-control / Pekeliling 1/2026 | live JAKIM primary when used operationally |
-| Z | Zone / site annex — fill on trip | execution board lines 1–3 |
+| Z | Zone / site annex — fill on trip | execution board commercial outputs |
 
 ## Folder tree (working)
 
@@ -61,10 +64,10 @@ schemas/ contracts/ circuits/
 docs/
 ```
 
-## Fixed this pass
+## Current control changes — 27 September
 
-- Root README no longer says “not travel-ready” or “UNEXECUTED-ROLE” for parties that have start papers + a formed HK company.
-- STATUS no longer treats the trip pack as a footnote that cancels the MoUs.
-- Partner registry includes PHC, GHSC HK, JGC, NICFS and the four retailers.
-- Malaysia text is State + Federal as ONE.
-- Corrupt MS 2400 gzips stay quarantined (engineering fact, not a commercial veto).
+- Commercial foundation, travel, signing, demonstration and production are separate statuses.
+- The [signing matrix](CHINA_TRIP_2026/SIGNING_MATRIX.md) maps the original six instruments and four optional drafts.
+- Partner v2.1 restores structured authority/evidence fields and retains unresolved laboratory identities separately.
+- The [closure report](00_EXECUTIVE_COMMAND/RECONCILIATION_2026-09-27.md) records completed fixes and external dependencies.
+- Corrupt archives remain quarantined; no normative dataset is reconstructed from secondary PDFs.

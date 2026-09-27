@@ -13,3 +13,4 @@ jobs:
         with:
           python-version: "3.12"
       - run: python tools/validate_repository.py
+      - run: python -m unittest discover -s tests -p test_trip_controls.py

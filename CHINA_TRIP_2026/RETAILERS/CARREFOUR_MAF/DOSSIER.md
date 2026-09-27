@@ -1,10 +1,12 @@
 # Carrefour (Majid Al Futtaim Retail) — official trip dossier
 
+**Research lead, not a current-source verification.** Corporate identities, executives, banner rights, onboarding/tax policies and historical acquisitions below require dated official sources before external use. No verified contact or executed retailer relationship is recorded. Use the actual contracting entity and current counterparty requirements.
+
 ## Group
 
-- Operator: **Majid Al Futtaim Retail** / historic vehicle **Majid Al Futtaim Hypermarkets**, Dubai.  
-- Exclusive rights to operate the Carrefour banner in named MENA / Asia markets since 1995. MAF states it is the full owner of the grocery business; regional Carrefour is **not** Carrefour Group SA.  
-- CEO Retail (public MAF materials): Dr. Günther Helm.  
+- Operator: **Majid Al Futtaim Retail** / historic vehicle **Majid Al Futtaim Hypermarkets**, Dubai.
+- Exclusive rights to operate the Carrefour banner in named MENA / Asia markets since 1995. MAF states it is the full owner of the grocery business; regional Carrefour is **not** Carrefour Group SA.
+- CEO Retail (public MAF materials): Dr. Günther Helm.
 - Sister grocery brand: **HyperMax** (rolled out in some GCC markets as MAF localises). Public reporting in 2025: Carrefour exits / rebrands in some states; UAE statements indicated Carrefour remaining in the UAE at that time. **Confirm the banner on the door of the market you want before you print the MoA title.**
 
 ## Why this banner is on the trip

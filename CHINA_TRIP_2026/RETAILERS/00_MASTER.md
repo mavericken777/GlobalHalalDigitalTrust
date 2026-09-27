@@ -1,9 +1,9 @@
 # Official-trip retailer pack — Lulu, Carrefour (MAF), Tamimi, noon
 
-Control date: 2026-09-26  
+Control date: 2026-09-26
 Status: **outreach-ready templates and dossiers**. No executed instrument with any of the four is on file.
 
-These four names are the **destination receiving layer** of the China → Malaysia evidence → GCC corridor. They do not replace JAKIM, SFDA, GSO, ESMA, or customs. They decide whether a lot is **listed, received, or sold**.
+These four names are the **destination receiving layer** of the China → Malaysia evidence → GCC corridor. They do not replace JAKIM, SFDA, GSO, MoIAT, or customs. They decide whether a lot is **listed, received, or sold**.
 
 ## Who you actually write to
 
@@ -18,9 +18,9 @@ Sources for names: Lulu Retail Holdings PLC subsidiary lists in public ADX / 202
 
 ## Sequence on an official trip
 
-1. China origin + Sinotrans named site (or written deferral).  
-2. One SKU family with a complete evidence pack (see `COMMON_RECEIVING_PACK.md`).  
-3. Buyer meeting: category + import compliance, not a signing ceremony.  
+1. China origin + Sinotrans named site (or written deferral).
+2. One SKU family with a complete evidence pack (see `COMMON_RECEIVING_PACK.md`).
+3. Buyer meeting: category + import compliance, not a signing ceremony.
 4. MoA only if they ask for a paper. Empty annex = do not chop.
 
 ## What “complete” means for this layer
