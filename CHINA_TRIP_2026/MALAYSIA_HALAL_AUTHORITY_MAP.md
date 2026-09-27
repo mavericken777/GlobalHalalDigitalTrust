@@ -1,41 +1,25 @@
-# Malaysia Halal authority map — official trip brief
+# Malaysia Halal authority map — trip brief
 
-Control date: 2026-09-26
+Version: 1.1 · Control date: 2026-09-27 · Artifact: `CHINA_TRIP_2026/MALAYSIA_HALAL_AUTHORITY_MAP.md`.
+Supersedes the 2026-09-26 working draft where inconsistent.
+Commit: `fix(mission): reconcile signing and readiness controls [EVIDENCE-UPDATE]`.
+[PROPOSAL: trip preparation — path point: Control / Evidence / Authority Gate]
 
-## The rule
+Malaysia operates a coordinated halal framework. Common standards and national systems do not erase the distinct mandates or application jurisdiction of JAKIM, MAIN and JAIN. Do not promise that every application has identical reviewers or that a State GLC holds certification powers.
 
-**State and Federal work as ONE** on Halal audit, certification and compliance. There is not a Federal queue and a State queue. There is not a Perak standard and a Putrajaya standard. There is one Malaysian Halal system.
-
-## Constitutional frame
-
-- Islam is the religion of the Federation (Article 3).
-- Each Sultan is the Head of the religion of Islam in His State. In Perak: Sultan of Perak.
-- The Yang di-Pertuan Agong is King for the nation and Head of Islam for the Federal Territories.
-- MAIAMP aids and advises the Sultan in Perak.
-- JAIPK (including Bahagian Pengurusan Halal) is the State arm of the same national Halal administration (MYeHALAL, inspections, monitoring).
-- JAKIM is the federal backbone of that same scheme (MPPHM, national logo / SPHM, international recognition).
-- MS standards (JSM / DSM) are the single technical set used everywhere in Malaysia.
-
-## How the one system actually runs
-
-| Function | How it runs |
+| Participant | Role boundary for this trip |
 |---|---|
-| Standard | One MS set nationwide |
-| Procedure | One national manual set (MPPHM / MHMS and current JAKIM circulars) |
-| Application file | MYeHALAL — national system, State officers on the ground |
-| Audit / inspection | State religious department and Federal Halal machinery **together**, one file, one scheme |
-| Certification | One Malaysian Halal confirmation under that scheme — not a private logo, not a second State logo |
-| Compliance / monitoring | State + Federal on the same certificate, same premises, same non-conformance path |
-| Industry delivery in Perak | **Perak Halal Corporation** — Perak State Government GLC for the Halal industry, local and global, standing inside this one system |
+| JAKIM / MAIN / JAIN | Competent certification roles under the applicable framework; identify the actual responsible authority for each case |
+| JSM / DSM | Malaysian Standards; standards publication is distinct from certification decisions |
+| PHC | Perak State Government halal-industry GLC as recorded by the project; commercial coordination and industry development within documented mandate |
+| GHSC | Commercial vehicle and evidence coordination; no governmental certification powers |
+| Laboratory | Method- and matrix-specific analytical evidence; NOT DETECTED ≠ HALAL |
+| SFDA / Saudi Halal Center; UAE MoIAT and other relevant destination bodies | Destination-specific regulatory/conformity roles; match the product, service and jurisdiction |
+| GSO | Regional standardisation role; not a substitute for a national shipment-clearance decision |
+| Buyer/importer | Commercial acceptance and applicable importer responsibilities; cannot waive mandatory requirements |
 
-Do not brief China as “JAKIM in Putrajaya, and separately a Perak company.” Brief it as **Malaysia — Federal and State as one — with Perak’s State GLC as the industry arm.**
+**Trip wording:** “PHC and GHSC coordinate industry development and evidence readiness within Malaysia’s halal framework. Certification decisions remain with the competent authorities; destination acceptance is checked separately for the actual product and market.”
 
-## Trip line
+Source controls: [live-source registry](../00_EXECUTIVE_COMMAND/live-source-registry.json), [MPPHM/MHMS source-bound operating map](../master-standards-stack/verified-2026-09-17/02_JAKIM_MPPHM2020_MHMS2020_CONTROL_MANUAL.md). Exact mandates, amendments and applicable procedures must be attached to the case; this brief is not a delegation instrument.
 
-“Malaysia is an Islamic country. Every Sultan is the Head of Islam in His State. The King is the Head of the nation. JAKIM and the State religious authorities audit, certify and monitor as **one** system. Perak Halal Corporation is the Perak State Government GLC that delivers that Halal industry locally and globally.”
-
-## Still false (do not say)
-
-- That a commercial MoU *is* the certificate.
-- That a foreign warehouse is certified because a meeting was held.
-- That Malaysia runs two Halal codes.
+MoIAT’s official history records the merger of UAE ESMA into MoIAT: https://moiat.gov.ae/en/about-us/about-the-ministry (checked 2026-09-27). The reported 2026 circular URL redirected to the general Halal portal on this review; search snippets do not close the primary-text gate.

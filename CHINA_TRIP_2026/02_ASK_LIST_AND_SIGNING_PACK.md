@@ -4,25 +4,25 @@ Priority is **named assets + commercials + data**, not another framework.
 
 ## A. Must-get (blocking Shipment 001 talk)
 
-1. **Legal entity confirmation**  
+1. **Legal entity confirmation**
    Full registered name, unified social credit code, operating unit that will run the yard, authorised signatory + title, chop specimen.
 
-2. **Named facility list (minimum one)**  
+2. **Named facility list (minimum one)**
    Address, function (CFS / bonded / cold / dry), temperature class, whether Halal / non-Halal cargo already mixes, who holds the keys.
 
-3. **Site visit slot**  
+3. **Site visit slot**
    Date, escort name, what you are allowed to photograph, whether a zoning sketch can leave the site.
 
-4. **Commercial path**  
-   One of: rate card, pilot SLA, or written “commercials in 14 days owned by [name]”.  
+4. **Commercial path**
+   One of: rate card, pilot SLA, or written “commercials in 14 days owned by [name]”.
    INST-004 cl. 5 forbids treating the MoU as a rate agreement.
 
-5. **Data protocol one-pager**  
-   What leaves the yard (seal, SSCC, temp, GPS, exception), frequency, format, who signs the feed.  
+5. **Data protocol one-pager**
+   What leaves the yard (seal, SSCC, temp, GPS, exception), frequency, format, who signs the feed.
    AmanahGraph integration in INST-004 is **“subject to agreed technical protocols”** — that protocol does not exist until initialled.
 
-6. **Novation decision**  
-   Is INST-003 (JGC) dead, parallel, or assigned to GHSC? One sentence, both chops.
+6. **Novation decision**
+   Is INST-003 (JGC) dead, parallel, or assigned to GHSC? Written confirmation by all affected parties; no implied novation.
 
 ## B. Should-get
 
@@ -41,14 +41,14 @@ Priority is **named assets + commercials + data**, not another framework.
 
 ## D. Pocket scripts — one sentence each
 
-**On the MoU:**  
+**On the MoU:**
 “Good-faith cooperation is on paper. We are here to name the warehouse, the operating unit, and the data fields for a pilot — commercials in a separate schedule.”
 
-**On Halal:**  
+**On Halal:**
 “MS 2400 is the logistics standard we align to. Certification remains with the competent authority. We coordinate evidence; we do not stamp SPHM.”
 
-**On NICFS / micro-dot:**  
+**On NICFS / micro-dot:**
 “Useful physical identity layer for China origin. Separate from Malaysian Halal decision and from GCC import decision. If we use it, it is an evidence source, not a certificate.”
 
-**On AmanahGraph:**  
+**On AmanahGraph:**
 “We will take seal, SSCC, temperature, GPS and exception events. Live API comes after the protocol page, not before.”

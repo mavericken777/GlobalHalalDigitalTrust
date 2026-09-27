@@ -1,0 +1,85 @@
+{
+  "version": "1.0",
+  "control_date": "2026-09-27",
+  "privacy": "Store originals, passport details, signatures and private locators outside public Git. Hashes may be recorded without publishing originals.",
+  "items": [
+    {
+      "id": "INST-001",
+      "source_status": "REPOSITORY_SUMMARY_ONLY",
+      "original_sha256": null,
+      "private_custody_reference": null,
+      "reviewer": null,
+      "reviewed_at": null,
+      "closure_owner": "GHSC document custodian (appointment pending)",
+      "closure_required": "Original or certified copy; full hash; custodian; page/clauses reviewed; signer/mandate checks where applicable"
+    },
+    {
+      "id": "INST-002",
+      "source_status": "REPOSITORY_SUMMARY_ONLY",
+      "original_sha256": null,
+      "private_custody_reference": null,
+      "reviewer": null,
+      "reviewed_at": null,
+      "closure_owner": "GHSC document custodian (appointment pending)",
+      "closure_required": "Original or certified copy; full hash; custodian; page/clauses reviewed; signer/mandate checks where applicable"
+    },
+    {
+      "id": "INST-003",
+      "source_status": "REPOSITORY_SUMMARY_ONLY",
+      "original_sha256": null,
+      "private_custody_reference": null,
+      "reviewer": null,
+      "reviewed_at": null,
+      "closure_owner": "GHSC document custodian (appointment pending)",
+      "closure_required": "Original or certified copy; full hash; custodian; page/clauses reviewed; signer/mandate checks where applicable"
+    },
+    {
+      "id": "INST-004",
+      "source_status": "REPOSITORY_SUMMARY_ONLY",
+      "original_sha256": null,
+      "private_custody_reference": null,
+      "reviewer": null,
+      "reviewed_at": null,
+      "closure_owner": "GHSC document custodian (appointment pending)",
+      "closure_required": "Original or certified copy; full hash; custodian; page/clauses reviewed; signer/mandate checks where applicable"
+    },
+    {
+      "id": "INST-005",
+      "source_status": "SUPPLIED_MINUTES_TEXT_REVIEWED",
+      "original_sha256": null,
+      "private_custody_reference": null,
+      "reviewer": "Repository reconciliation review",
+      "reviewed_at": "2026-09-27",
+      "closure_owner": "GHSC document custodian (appointment pending)",
+      "closure_required": "Original or certified copy; full hash; custodian; page/clauses reviewed; signer/mandate checks where applicable",
+      "source_title": "Global Halal Supply Chain Ecosystem – Kickoff Meeting 0920（英文）.pdf",
+      "pages": 5,
+      "review_limit": "Extracted text reviewed; minutes not executed commercial or regulatory evidence; meeting year not inferred from filename"
+    },
+    {
+      "id": "INST-006",
+      "source_status": "REPOSITORY_SUMMARY_ONLY",
+      "original_sha256": null,
+      "private_custody_reference": null,
+      "reviewer": null,
+      "reviewed_at": null,
+      "closure_owner": "GHSC document custodian (appointment pending)",
+      "closure_required": "Original or certified copy; full hash; custodian; page/clauses reviewed; signer/mandate checks where applicable"
+    },
+    {
+      "id": "INST-007",
+      "source_status": "EXISTING_PDF_INGESTION_RECORDS",
+      "original_sha256": null,
+      "private_custody_reference": null,
+      "reviewer": null,
+      "reviewed_at": null,
+      "closure_owner": "GHSC document custodian (appointment pending)",
+      "closure_required": "Original or certified copy; full hash; custodian; page/clauses reviewed; signer/mandate checks where applicable",
+      "reference_paths": [
+        "master-standards-stack/verified-2026-09-26/MANIFEST.json",
+        "master-standards-stack/verified-2026-09-26-v2/MANIFEST.json"
+      ],
+      "review_limit": "Compiled secondary references; not replacements for damaged normative datasets"
+    }
+  ]
+}

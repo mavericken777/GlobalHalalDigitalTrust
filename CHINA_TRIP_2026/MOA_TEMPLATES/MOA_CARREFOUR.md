@@ -1,50 +1,10 @@
-# MEMORANDUM OF AGREEMENT — BUYER RECEIVING INTENT (TEMPLATE)
+# CARREFOUR — retired duplicate draft
 
-**Status:** TEMPLATE — not executed. **No Carrefour instrument is on file.**  
-**Ref:** MOA-CARREFOUR-2026-DRAFT-01  
-Spell the legal entity correctly for the market (e.g. Majid Al Futtaim / local licensee). Do not sign against the word “Carrefour” alone.
+Version: 1.1 · Control date: 2026-09-27 · Artifact: `CHINA_TRIP_2026/MOA_TEMPLATES/MOA_CARREFOUR.md`.
+Supersedes the 2026-09-26 working draft where inconsistent.
+Commit: `fix(mission): reconcile signing and readiness controls [EVIDENCE-UPDATE]`.
+[PROPOSAL: trip preparation — path point: Control / Evidence / Authority Gate]
 
-Between
+**SUPERSEDED — DO NOT PRINT OR SIGN THIS FILE.**
 
-**GLOBAL HALAL SUPPLY CHAIN LIMITED** (HK, No. 79801544) (“GHSC”)
-
-and
-
-**[LEGAL NAME OF CARREFOUR OPERATING / IMPORTING COMPANY]** (“Buyer”)  
-Market: [ ] UAE [ ] KSA [ ] other ______
-
----
-
-## 1. Purpose
-
-Evaluate nominated lots against Buyer specification. Not a PO. Not a listing.
-
-## 2. In scope
-
-Document exchange for one category. Optional factory or warehouse file review. Trial PO only if Buyer issues one.
-
-## 3. Out of scope
-
-Private-label development unless Annex C exists. Use of Carrefour marks. Claim of “preferred Halal corridor.”
-
-## 4. Authority firewall / publicity / commercials
-
-Same house rules as the Lulu template. Buyer specification ≠ regulator decision. No fees in this paper.
-
-## 5. Term / law
-
-Twelve months. Binding: confidentiality and publicity. Law: [ ] HK [ ] Buyer home ______
-
-## Annex A — Buyer required pack
-
-[ ] destination Halal body: ______  
-[ ] health / veterinary  
-[ ] SSCC + seal  
-[ ] temperature  
-[ ] lab method: ______  
-[ ] retailer quality questionnaire ref: ______
-
-## Signatures
-
-For Buyer — Name / Title / Date / Stamp  
-For GHSC — Name / Title / Date / Chop
+Use the single [controlled CARREFOUR draft](../RETAILERS/CARREFOUR_MAF/MOA.md), including its embedded Schedule D. This redirect replaces the former short signing form and does not amend any executed instrument.

@@ -1,7 +1,7 @@
 {
   "artifact": "october-2026-readiness.json",
-  "version": "1.0",
-  "control_date": "2026-09-26",
+  "version": "1.1",
+  "control_date": "2026-09-27",
   "source": "operator itinerary and coordination update in request; proposed control actions",
   "status": "NOT_TRAVEL_READY",
   "dates": {
@@ -26,7 +26,8 @@
       "status": "OPEN",
       "closure_evidence_required": "Both host and transport coordinator approve one dated agenda",
       "evidence_reference": null,
-      "domain": "mission"
+      "domain": "mission",
+      "workstream": "travel"
     },
     {
       "id": "T02",
@@ -36,7 +37,8 @@
       "status": "OPEN",
       "closure_evidence_required": "Private legal-name manifest; Carson and Cai roles resolved",
       "evidence_reference": null,
-      "domain": "mission"
+      "domain": "mission",
+      "workstream": "travel"
     },
     {
       "id": "T03",
@@ -46,17 +48,20 @@
       "status": "OPEN",
       "closure_evidence_required": "Verified private e-tickets; terminals, baggage, payer, cutoffs and change conditions",
       "evidence_reference": null,
-      "domain": "mission"
+      "domain": "mission",
+      "workstream": "travel"
     },
     {
       "id": "T04",
-      "action": "Prepare and book 12 first-class Beijing South-Shanghai Hongqiao tickets",
+      "action": "Confirm rail sale opening and book 12 first-class seats when available",
       "proposed_owner": "Beijing Sinotrans + travel coordinator",
-      "target_date": "2026-09-30",
+      "target_date": "2026-10-05",
       "status": "OPEN",
       "closure_evidence_required": "Release time checked in 12306; booking pursued when available; issued tickets and seating verified",
       "evidence_reference": null,
-      "domain": "mission"
+      "domain": "mission",
+      "workstream": "travel",
+      "planning_due": "2026-09-30"
     },
     {
       "id": "T05",
@@ -66,7 +71,8 @@
       "status": "OPEN",
       "closure_evidence_required": "Private vouchers, rooming/occupancy, breakfast, arrival times, cancellation and payer",
       "evidence_reference": null,
-      "domain": "mission"
+      "domain": "mission",
+      "workstream": "travel"
     },
     {
       "id": "T06",
@@ -76,7 +82,8 @@
       "status": "OPEN",
       "closure_evidence_required": "Carrier/competent-source checks for each passport/document and actual route; no scans in public Git",
       "evidence_reference": null,
-      "domain": "mission"
+      "domain": "mission",
+      "workstream": "travel"
     },
     {
       "id": "T07",
@@ -86,7 +93,8 @@
       "status": "OPEN",
       "closure_evidence_required": "Written route/time/vehicle-luggage-capacity confirmation and backup contact",
       "evidence_reference": null,
-      "domain": "mission"
+      "domain": "mission",
+      "workstream": "travel"
     },
     {
       "id": "T08",
@@ -96,7 +104,8 @@
       "status": "OPEN",
       "closure_evidence_required": "Named coordinators, vehicle capacity including luggage, addresses and pickup sheet",
       "evidence_reference": null,
-      "domain": "mission"
+      "domain": "mission",
+      "workstream": "travel"
     },
     {
       "id": "T09",
@@ -106,7 +115,8 @@
       "status": "OPEN",
       "closure_evidence_required": "Exact addresses, validated journey times, breaks, driver and contingency",
       "evidence_reference": null,
-      "domain": "mission"
+      "domain": "mission",
+      "workstream": "travel"
     },
     {
       "id": "T10",
@@ -116,7 +126,8 @@
       "status": "OPEN",
       "closure_evidence_required": "Airline eligibility, lawful vehicle/coach bookings, buffer worksheet and escort handoff",
       "evidence_reference": null,
-      "domain": "mission"
+      "domain": "mission",
+      "workstream": "travel"
     },
     {
       "id": "T11",
@@ -126,7 +137,8 @@
       "status": "OPEN",
       "closure_evidence_required": "Supplier proofs/quotes accepted; event run sheet; venue and dietary approval",
       "evidence_reference": null,
-      "domain": "mission"
+      "domain": "mission",
+      "workstream": "travel"
     },
     {
       "id": "T12",
@@ -136,7 +148,8 @@
       "status": "OPEN",
       "closure_evidence_required": "Written acceptances and titles; Chen Wei HK/Shanghai, no Beijing; Gao status settled",
       "evidence_reference": null,
-      "domain": "mission"
+      "domain": "mission",
+      "workstream": "travel"
     },
     {
       "id": "T13",
@@ -146,7 +159,8 @@
       "status": "OPEN",
       "closure_evidence_required": "Venue suitability, guest counts, quotations, approved budget and weather fallback",
       "evidence_reference": null,
-      "domain": "mission"
+      "domain": "mission",
+      "workstream": "travel"
     },
     {
       "id": "S01",
@@ -156,17 +170,19 @@
       "status": "OPEN",
       "closure_evidence_required": "Authorized final versions and signature instructions; no unresolved obligations",
       "evidence_reference": null,
-      "domain": "mission"
+      "domain": "mission",
+      "workstream": "signing"
     },
     {
       "id": "S02",
-      "action": "Resolve scope of two Sinotrans MOUs and proposed exclusivity",
+      "action": "Approve M05 logistics / M06 warehouse split; resolve existing-paper relationship and any requested exclusivity",
       "proposed_owner": "PHC/GHSCL commercial leads + Sinotrans",
       "target_date": "2026-10-05",
       "status": "OPEN",
       "closure_evidence_required": "Approved scope/territory/term/KPIs, client protection, commercial and termination terms",
       "evidence_reference": null,
-      "domain": "mission"
+      "domain": "mission",
+      "workstream": "signing"
     },
     {
       "id": "S03",
@@ -176,7 +192,8 @@
       "status": "OPEN",
       "closure_evidence_required": "Exact entities/addresses, relationships, accreditation/method scope and mandate",
       "evidence_reference": null,
-      "domain": "mission"
+      "domain": "mission",
+      "workstream": "signing"
     },
     {
       "id": "S04",
@@ -186,7 +203,8 @@
       "status": "OPEN",
       "closure_evidence_required": "SKU/SDS/COA/efficacy and claims evidence; factory identity and site access",
       "evidence_reference": null,
-      "domain": "mission"
+      "domain": "mission",
+      "workstream": "signing"
     },
     {
       "id": "S05",
@@ -196,7 +214,8 @@
       "status": "OPEN",
       "closure_evidence_required": "Confirmed meeting agenda, candidate intake fields and buyer requirements",
       "evidence_reference": null,
-      "domain": "mission"
+      "domain": "mission",
+      "workstream": "signing"
     },
     {
       "id": "D01",
@@ -206,7 +225,8 @@
       "status": "OPEN",
       "closure_evidence_required": "Laptop rehearsal record at reviewed commit; synthetic data and interpreter/AV signoff",
       "evidence_reference": null,
-      "domain": "mission"
+      "domain": "mission",
+      "workstream": "demonstration"
     },
     {
       "id": "D02",
@@ -216,7 +236,8 @@
       "status": "OPEN",
       "closure_evidence_required": "Approved text; no unsupported authority endorsement or live-platform claim",
       "evidence_reference": null,
-      "domain": "mission"
+      "domain": "mission",
+      "workstream": "communications"
     },
     {
       "id": "G01",
@@ -226,7 +247,8 @@
       "status": "OPEN",
       "closure_evidence_required": "Cost sheet incl. air/rail/hotels/buses/cruise/printing/interpreters; travel insurance and contacts stored privately",
       "evidence_reference": null,
-      "domain": "mission"
+      "domain": "mission",
+      "workstream": "travel"
     },
     {
       "id": "G02",
@@ -234,9 +256,10 @@
       "proposed_owner": "Tenny + Malaysian delegation lead",
       "target_date": "2026-10-09",
       "status": "OPEN",
-      "closure_evidence_required": "T01-T13 and G01 reviewed with evidence; unresolved items explicitly accepted or plan changed",
+      "closure_evidence_required": "T01-T13 and G01 CLOSED with evidence; otherwise change plan and update gates before marking travel READY. No blank waiver.",
       "evidence_reference": null,
-      "domain": "mission"
+      "domain": "mission",
+      "workstream": "travel"
     },
     {
       "id": "G03",
@@ -246,7 +269,8 @@
       "status": "OPEN",
       "closure_evidence_required": "S01-S05 and instrument-specific conditions reviewed; defer unsigned/unapproved instruments",
       "evidence_reference": null,
-      "domain": "mission"
+      "domain": "mission",
+      "workstream": "signing"
     },
     {
       "id": "P01",
@@ -256,7 +280,8 @@
       "status": "OPEN",
       "closure_evidence_required": "Independent test evidence; not a prerequisite to a clearly labelled offline demo",
       "evidence_reference": null,
-      "domain": "production"
+      "domain": "production",
+      "workstream": "production"
     },
     {
       "id": "P02",
@@ -266,7 +291,8 @@
       "status": "OPEN",
       "closure_evidence_required": "Source-bound rule profiles; JAKIM circular content/effective-date verification",
       "evidence_reference": null,
-      "domain": "production"
+      "domain": "production",
+      "workstream": "production"
     },
     {
       "id": "P03",
@@ -276,7 +302,8 @@
       "status": "OPEN",
       "closure_evidence_required": "Actual contracts, buyer/PO, certificates, lab/custody/destination evidence; date is target not automatic release",
       "evidence_reference": null,
-      "domain": "production"
+      "domain": "production",
+      "workstream": "production"
     },
     {
       "id": "P04",
@@ -286,7 +313,12 @@
       "status": "OPEN",
       "closure_evidence_required": "Independent report and remediation; reference tests are not an external audit",
       "evidence_reference": null,
-      "domain": "production"
+      "domain": "production",
+      "workstream": "production"
     }
-  ]
+  ],
+  "commercial_foundation": "RECORDED_INSTRUMENT_SUMMARIES",
+  "signing_status": "NOT_SIGNING_READY",
+  "demo_status": "REHEARSAL_PENDING",
+  "production_status": "NOT_PRODUCTION_READY"
 }

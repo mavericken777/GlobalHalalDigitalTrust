@@ -13,6 +13,12 @@
 
 ---
 
+## Current evidence-status overlay — 27 September 2026
+
+This post-freeze correction controls present readiness and source usability; historical catalogue counts below are lineage, not proof of intact assets. MS 2400-1 and -3 compressed datasets and the legacy master tarball remain quarantined; only the MS 2400-2 compressed file currently decodes (201 unique IDs). The total 613 is historical and must not be reported as an ingestible verified set. The frozen 17 September directory remains unchanged.
+
+Partner roles and reported non-binding instruments are in `partner-registry.json` v2.1.0; reported intent is distinct from a priced service contract. NICFS and the legacy laboratory placeholder are not confirmed aliases. Current mission and signing readiness: `october-2026-readiness.json` and `../CHINA_TRIP_2026/SIGNING_MATRIX.md`.
+
 ## PART I — DOCTRINE FOUNDATION
 
 ### 1.1 Core Principle
@@ -393,7 +399,7 @@ Sinotrans is designated by the project as the logistics/warehouse partner for Sh
 | CODA | Project-designated strategic partner | China enterprise mobilisation/export enablement | Enterprise mobilisation → Qualification | Existing repo public evidence supports candidate/proposed framework; executed mandate remains OPEN GATE |
 | China government food security laboratory | Project-designated partner | Analytical evidence generation | Evidence | Accreditation/method/GCC acceptance/contract OPEN GATE |
 | China Merchant | Project-designated strategic partner | Enterprise mobilisation/trade enablement | Enterprise mobilisation → Commercial terms | Contract/programme terms OPEN GATE |
-| Sinotrans | Project-designated logistics/warehouse partner | Trusted logistics corridor + Digital Evidence Node | Logistics qualification → Custody → Border release | Route/facility/contract/receiving evidence OPEN GATE |
+| Sinotrans | Project-designated logistics/warehouse partner | Trusted logistics corridor + Digital Evidence Node | Logistics qualification → Custody → Border release | Reported non-binding INST-003/004; priced scope, route/facility and receiving evidence OPEN GATE |
 
 ### 24.2 Authority Boundary
 No partner creates official Halal certification or sovereign customs/import clearance.
