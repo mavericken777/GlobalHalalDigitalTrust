@@ -12,6 +12,8 @@ GHSC incorporation (HK CR 79801544, 11 February 2026) and the PHC–JGC, JGC–S
 | Source meeting actions | [Kickoff reconciliation](KICKOFF_MINUTES_RECONCILIATION.md) |
 | Live outcomes | [Field log](FIELD_LOG.md); actual owners, dates and evidence |
 
+The supplied [Sinotrans playbook review](../master-standards-stack/22_SINOTRANS_PLAYBOOK_BUNDLE_REVIEW_2026-09-28.md) identifies false clause mappings and unapproved operating claims. Use the [October 15 acceptance worksheet](SINOTRANS_OCT15_ACCEPTANCE_WORKSHEET.md) for in-room decisions; it does not close any gate.
+
 ## Required commercial outputs
 
 1. Agree Sinotrans's named lane and warehouse and confirm the proposed two-instrument split.

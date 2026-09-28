@@ -77,6 +77,14 @@ def validate():
     assert {kind: sum(x['kind'] == kind for x in members) for kind in ('.pdf','.svg','.png','.html','.md')} == {'.pdf': 8, '.svg': 30, '.png': 30, '.html': 0, '.md': 1}
     assert all(len(x['sha256']) == 64 and x['bytes'] > 0 for x in members)
     assert bundle['declared_file_count_in_index'] == 80 and bundle['missing_declared_html_sources'] == 12
+    sinotrans = json.loads((ROOT / 'master-standards-stack/source-sinotrans-bundle-2026-09-28.json').read_text())
+    entries = sinotrans['members']
+    assert sinotrans['archive_integrity'] == 'ZIP_CRC_PASS'
+    assert sinotrans['ingestion_status'] == 'BLOCKED_SOURCE_CONFLICT' and sinotrans['repository_copy'] is False
+    assert sinotrans['member_count'] == len(entries) == len({x['path'] for x in entries}) == 15
+    assert [sum(x['kind'] == kind for x in entries) for kind in ('.pdf', '.svg', '.png')] == [1, 7, 7]
+    assert next(x['pdf_pages'] for x in entries if x['kind'] == '.pdf') == 33
+    assert all(len(x['sha256']) == 64 and x['bytes'] > 0 for x in entries)
     gates = json.loads((ROOT / '00_EXECUTIVE_COMMAND/october-2026-readiness.json').read_text())
     dates = gates['dates']
     days = (date.fromisoformat(dates['end']) - date.fromisoformat(dates['start'])).days
