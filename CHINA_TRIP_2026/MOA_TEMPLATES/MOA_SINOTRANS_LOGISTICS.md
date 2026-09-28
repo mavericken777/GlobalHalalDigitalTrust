@@ -2,7 +2,7 @@
 
 **Status:** TEMPLATE — not executed
 **Ref:** MOA-SINO-LOG-2026-DRAFT-01
-**Relationship to INST-004 (3 Mar 2026):** this paper is the **transport operating split**. It does not cancel INST-004 unless all affected Parties initial clause 12.
+**Relationship to INST-004 (3 Mar 2026):** proposed transport operating scope under the existing instrument; any amendment requires a separate written agreement signed by all affected Parties.
 
 Between
 
@@ -68,11 +68,9 @@ Non-binding except Schedule D. Not a partnership or JV.
 
 Hong Kong SAR.
 
-## 12. INST-004
+## 12. Existing instrument
 
-[ ] This paper sits **under** INST-004
-[ ] This paper **supersedes** INST-004 for logistics only
-Tick one. All affected Parties must sign any amendment.
+This draft does not amend or supersede INST-004. Any change to its scope, commercial terms or priority requires a separately identified written amendment signed by all affected Parties after review of the executed text.
 
 ## Annexes
 

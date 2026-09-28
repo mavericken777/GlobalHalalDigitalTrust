@@ -63,9 +63,9 @@ A zoned rack is not a Halal certificate. Destination and origin competent author
 
 Two years. Non-binding except Schedule D. Not a JV.
 
-## 10. INST-004
+## 10. Existing instrument
 
-[ ] sits under INST-004  [ ] supersedes INST-004 for the named site only
+This draft does not amend or supersede INST-004. A proposed site-specific change to the executed instrument requires a separately identified written amendment signed by all affected Parties after review of the executed text.
 
 ## Annexes
 
