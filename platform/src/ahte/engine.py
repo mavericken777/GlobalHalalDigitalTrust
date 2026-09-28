@@ -38,14 +38,6 @@ SEGMENTS = [
 ]
 
 
-def preserve_restriction(object_id, proposed):
-    current = STORE.trust_for(object_id)
-    restricted = {"HOLD", "REVOKED", "RECALLED", "EXPIRED", "DISPUTED"}
-    if current and current.body["state"] in restricted:
-        return current.body["state"]
-    return proposed
-
-
 def ingest_evidence(body: EvidenceIn):
     evaluate("record_evidence", DecisionClass.D0, body.actor_type)
     interpretation = None
@@ -60,10 +52,8 @@ def ingest_evidence(body: EvidenceIn):
         },
         "ev",
     )
-    STORE.put(
-        "trust",
-        {"object_id": body.object_id, "state": preserve_restriction(body.object_id, TrustState.pending.value), "reason": "evidence_recorded"},
-        "ts",
+    STORE.put_trust(
+        {"object_id": body.object_id, "state": TrustState.pending.value, "reason": "evidence_recorded"},
     )
     return rec
 
@@ -83,7 +73,7 @@ def assess(body: AssessmentIn):
         "as",
     )
     state = TrustState.hold if "ncr" in body.finding.lower() or "hold" in body.finding.lower() else TrustState.assessed
-    STORE.put("trust", {"object_id": body.object_id, "state": preserve_restriction(body.object_id, state.value), "assessment_id": rec.id}, "ts")
+    STORE.put_trust({"object_id": body.object_id, "state": state.value, "assessment_id": rec.id})
     STORE.put("hitm", {"object_id": body.object_id, "assessment_id": rec.id, "class": "D2"}, "hitm")
     return rec
 
@@ -108,11 +98,6 @@ def authority_decision(body: AuthorityDecisionIn):
     if decision not in states:
         raise ValueError("unsupported decision")
     state = states[decision]
-    current = STORE.trust_for(body.object_id)
-    if state == TrustState.pending and current and current.body["state"] in {
-        TrustState.hold.value, TrustState.revoked.value, TrustState.recalled.value, TrustState.expired.value
-    }:
-        state = TrustState(current.body["state"])
     rec = STORE.put(
         "decisions",
         {
@@ -123,8 +108,7 @@ def authority_decision(body: AuthorityDecisionIn):
         },
         "dec",
     )
-    STORE.put(
-        "trust",
+    STORE.put_trust(
         {
             "object_id": body.object_id,
             "state": state.value,
@@ -133,7 +117,6 @@ def authority_decision(body: AuthorityDecisionIn):
             "decision_id": rec.id,
             "not_a_certificate": True,
         },
-        "ts",
     )
     return rec
 

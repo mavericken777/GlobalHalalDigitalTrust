@@ -129,6 +129,10 @@ async def evaluate_epcis_telemetry(event: EPCISObjectEvent):
 async def evaluate_corridor_clearance(event: CorridorEvent):
     if not event.facility_id.startswith("FIXTURE-"):
         raise HTTPException(400, "facility_id must use FIXTURE- namespace")
+    if event.consignment_id not in LEDGER_DB and event.current_state != "COLD_CHAIN_IN_TRANSIT":
+        raise HTTPException(400, "new demo consignments must start at COLD_CHAIN_IN_TRANSIT")
+    if event.consignment_id in LEDGER_DB and event.current_state != LEDGER_DB[event.consignment_id]["current_state"]:
+        raise HTTPException(409, "current_state does not match recorded demo state")
     record = LEDGER_DB.get(event.consignment_id, {"current_state": event.current_state, "history": []})
     fsm = ConsignmentFSM(record["current_state"])
     distance = 10.0
@@ -183,10 +187,15 @@ async def evaluate_corridor_clearance(event: CorridorEvent):
         "consignment_id": event.consignment_id,
         "state": new_state,
         "allowed": allowed and new_state == "CUSTOMS_RELEASED",
+        "simulation_passed": allowed and new_state == "CUSTOMS_RELEASED",
         "hti_score": decision.get("hti_score", 0.0),
         "reasons": decision.get("reasons", []),
         "notarized_at": datetime.datetime.now(datetime.timezone.utc).isoformat(),
         "one_hop": True,
+        "pilot_only": True,
+        "authority_authenticated": False,
+        "operational_release": False,
+        "not_a_customs_clearance": True,
     }
     record["current_state"] = new_state
     record["history"].append(receipt)

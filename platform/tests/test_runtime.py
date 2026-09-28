@@ -2,6 +2,7 @@ from fastapi.testclient import TestClient
 
 from ahte.api import app
 from ahte.store import STORE
+from ahte.store import MemoryStore
 
 client = TestClient(app)
 
@@ -157,3 +158,17 @@ def test_new_evidence_and_assessment_do_not_clear_restriction():
     record_decision(make_assessment(), "revoke")
     make_assessment()
     assert client.get("/v1/trust-state/sku-a").json()["body"]["state"] == "REVOKED"
+
+
+def test_restrictions_survive_later_asserted_decisions():
+    aid = make_assessment()
+    assert record_decision(aid, "revoke").status_code == 200
+    assert record_decision(aid, "hold").status_code == 200
+    assert client.get("/v1/trust-state/sku-a").json()["body"]["state"] == "REVOKED"
+
+
+def test_atomic_trust_append_keeps_disputed_state():
+    store = MemoryStore()
+    store.put_trust({"object_id": "sku-1", "state": "DISPUTED"})
+    store.put_trust({"object_id": "sku-1", "state": "PENDING"})
+    assert store.trust_for("sku-1").body["state"] == "DISPUTED"
