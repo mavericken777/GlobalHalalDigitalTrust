@@ -1,0 +1,103 @@
+{
+  "artifact": "source-sinotrans-bundle-2026-09-28.json",
+  "control_date": "2026-09-28",
+  "bundle": "MS2400_Sinotrans_Playbook_Bundle.zip",
+  "sha256": "898083818696c799c3d6c36b57454f8037cfbfac85fa033510418ca35f8f9722",
+  "archive_integrity": "ZIP_CRC_PASS",
+  "ingestion_status": "BLOCKED_SOURCE_CONFLICT",
+  "repository_copy": false,
+  "member_count": 15,
+  "members": [
+    {
+      "path": "ms2400_playbook/MS2400_Playbook_Sinotrans.pdf",
+      "bytes": 461805,
+      "sha256": "a5836f05b2fa741b88700cc58a3db0d95703a6cf7f1f14876e159e03c2fe8bf2",
+      "kind": ".pdf",
+      "pdf_pages": 33
+    },
+    {
+      "path": "ms2400_playbook/diagrams/fig01_halal_certification_pipeline_7stages.png",
+      "bytes": 3199,
+      "sha256": "44bbc7214bb49716ee40215ae95172d221a4e72ce52770351596c68eea86364d",
+      "kind": ".png"
+    },
+    {
+      "path": "ms2400_playbook/diagrams/fig01_halal_certification_pipeline_7stages.svg",
+      "bytes": 5083,
+      "sha256": "519bce118b5d324bcea768c66670e4d6986f3c6a994deeedce758a9592ef4544",
+      "kind": ".svg"
+    },
+    {
+      "path": "ms2400_playbook/diagrams/fig02_MS2400-1_transport_swimlane.png",
+      "bytes": 4395,
+      "sha256": "1231a9d35ade130626ab9b17ce0b198170d27b0c9e5e6f31acc8b765722088d9",
+      "kind": ".png"
+    },
+    {
+      "path": "ms2400_playbook/diagrams/fig02_MS2400-1_transport_swimlane.svg",
+      "bytes": 9535,
+      "sha256": "40bf7e2ee8b17b1bd6bf6e8749d4e12eab7866da4df03f4aa9067ca7e5e2285a",
+      "kind": ".svg"
+    },
+    {
+      "path": "ms2400_playbook/diagrams/fig03_MS2400-2_warehouse_threezone_layout.png",
+      "bytes": 530,
+      "sha256": "b8311a8abbb66ffd2bf44ee08e7ae1c8a8fa08fff3f46d1ced2c6413073707ae",
+      "kind": ".png"
+    },
+    {
+      "path": "ms2400_playbook/diagrams/fig03_MS2400-2_warehouse_threezone_layout.svg",
+      "bytes": 6389,
+      "sha256": "72d821bcc69d38c52e203b05fbed3e31ea038972ba26708773d1a38cd0f98c6b",
+      "kind": ".svg"
+    },
+    {
+      "path": "ms2400_playbook/diagrams/fig04_sertu_7wash_swimlane.png",
+      "bytes": 3065,
+      "sha256": "ccb42c1a96740e3b9e25b960e45c0178e57755336ee56903019ee7321933bbbd",
+      "kind": ".png"
+    },
+    {
+      "path": "ms2400_playbook/diagrams/fig04_sertu_7wash_swimlane.svg",
+      "bytes": 5736,
+      "sha256": "30e32bbcb7afa6a1350bdbe46cd8ea2cbe0d9a7c13ca22da4e8cdf9f1cb01fc9",
+      "kind": ".svg"
+    },
+    {
+      "path": "ms2400_playbook/diagrams/fig05_MS2400-3_retail_workflow.png",
+      "bytes": 3104,
+      "sha256": "8fd9daf5985926076886f59dcd3bc2ff66e9b61acb244938714854b4d34f5897",
+      "kind": ".png"
+    },
+    {
+      "path": "ms2400_playbook/diagrams/fig05_MS2400-3_retail_workflow.svg",
+      "bytes": 5463,
+      "sha256": "ebb22b9c9bb7b49c003d19ad0973e68fa5e0557864428b4936482d1e72b302a5",
+      "kind": ".svg"
+    },
+    {
+      "path": "ms2400_playbook/diagrams/fig06_tamper_proof_5layer_stack.png",
+      "bytes": 540,
+      "sha256": "edb7700f31d75060e4ec7c93c453909b2b9e56d1c64c41dc8099ebf2bb1943ba",
+      "kind": ".png"
+    },
+    {
+      "path": "ms2400_playbook/diagrams/fig06_tamper_proof_5layer_stack.svg",
+      "bytes": 6768,
+      "sha256": "525c37e2055a9acbde39489aeadea2a3f8315c2ac7e21d94a6876a4ac8c83dd6",
+      "kind": ".svg"
+    },
+    {
+      "path": "ms2400_playbook/diagrams/fig07_universal_NCR_workflow.png",
+      "bytes": 3104,
+      "sha256": "15be5b0d4123a65a6459b2d1ecbb4fcdd56301633497ec101644f9614f01ac44",
+      "kind": ".png"
+    },
+    {
+      "path": "ms2400_playbook/diagrams/fig07_universal_NCR_workflow.svg",
+      "bytes": 4822,
+      "sha256": "fff66723055373728e8c070678561cc18918f64f302a84d5027fc56a62f825b7",
+      "kind": ".svg"
+    }
+  ]
+}
