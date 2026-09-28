@@ -1,6 +1,6 @@
 # Global Halal Digital Trust
 
-**GLOBAL HALAL SUPPLY CHAIN LIMITED** · Hong Kong CR **79801544** · formed 11 February 2026
+**GLOBAL HALAL SUPPLY CHAIN LIMITED** · Hong Kong CR **79801544** · incorporation recorded from the supplied scan dated 11 February 2026; original verification remains open
 
 [Trip pack](CHINA_TRIP_2026/00_READ_THIS_FIRST.md) · [Execution board](CHINA_TRIP_2026/EXECUTION_BOARD.md) · [A–Z index](REPO_INDEX.md) · [STATUS](STATUS.md) · [Governance](GOVERNANCE.md) · [License](LICENSE)
 
@@ -9,7 +9,7 @@
 - **Perak Halal Corporation** — Perak State Government GLC for the Halal industry, local and global.
 - **Malaysia Halal system** — A coordinated national framework with distinct JAKIM/MAIN/JAIN mandates; PHC is the commercial industry participant. See the [authority map](CHINA_TRIP_2026/MALAYSIA_HALAL_AUTHORITY_MAP.md).
 - Start papers: PHC–JGC MoU (27 Aug 2025) · JGC–Sinotrans framework (Sep 2025) · **GHSC HK–Sinotrans MoU (3 Mar 2026)**.
-- Vehicle formed. MoU is the start. Trip executes the annexes (named yard, named lane, first SKU, retailer packs).
+- Vehicle incorporation and non-binding MoU summaries are recorded. The trip aims to negotiate the annexes (named yard, lane, first SKU and retailer packs); acceptance and signatures remain open.
 
 **Readiness:** commercial foundation recorded; travel `NOT_TRAVEL_READY`; signing `NOT_SIGNING_READY`; reference software only. The [readiness register](00_EXECUTIVE_COMMAND/october-2026-readiness.json) and [execution board](CHINA_TRIP_2026/EXECUTION_BOARD.md) control closure. Reported source summaries are indexed separately from reviewed originals.
 

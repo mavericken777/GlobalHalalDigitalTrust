@@ -1,13 +1,13 @@
 # Corridor parties
 
-Foundation is the MoUs plus GHSC HK. Folders below are the working set for execution, not a waiting room.
+Project-recorded incorporation and non-binding start papers form the commercial working context. The [instrument register](../CHINA_TRIP_2026/01_INSTRUMENT_REGISTER.md) and [evidence index](../CHINA_TRIP_2026/evidence-index.json) distinguish reported papers from independently authenticated originals. A folder or draft does not prove counterparty execution, endorsement or site availability.
 
 | Folder | Party | Now |
 |---|---|---|
-| `phc/` | Perak Halal Corporation — Perak State Government Halal-industry GLC | On corridor |
-| `ghsc-hk/` | GLOBAL HALAL SUPPLY CHAIN LIMITED CR 79801544 | Formed |
+| `phc/` | Perak Halal Corporation — Perak State Government Halal-industry GLC | Proposed commercial lead; role reported |
+| `ghsc-hk/` | GLOBAL HALAL SUPPLY CHAIN LIMITED CR 79801544 | Formation recorded; original verification pending |
 | `jgc/` | Join Glory / JGC HK | Start papers INST-002 / 003 |
-| `sinotrans/` | Sinotrans Overseas Development Ltd. | MoU on GHSC vehicle — name yard + lane |
+| `sinotrans/` | Sinotrans Overseas Development Ltd. | Non-binding MoU summary recorded; exact signers/date and named yard/lane pending |
 | `nicfs/` | NICFS / Hengqin platform | Templates ready |
 | `coda/` | CODA | Template ready |
 | `lulu/` | Lulu operating companies | Outreach pack ready |
