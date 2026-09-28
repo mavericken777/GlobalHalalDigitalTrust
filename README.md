@@ -2,7 +2,7 @@
 
 **GLOBAL HALAL SUPPLY CHAIN LIMITED** · Hong Kong CR **79801544** · incorporation recorded from the supplied scan dated 11 February 2026; original verification remains open
 
-[Trip pack](CHINA_TRIP_2026/00_READ_THIS_FIRST.md) · [Execution board](CHINA_TRIP_2026/EXECUTION_BOARD.md) · [A–Z index](REPO_INDEX.md) · [STATUS](STATUS.md) · [Governance](GOVERNANCE.md) · [License](LICENSE)
+[Trip pack](CHINA_TRIP_2026/00_READ_THIS_FIRST.md) · [Execution board](CHINA_TRIP_2026/EXECUTION_BOARD.md) · [Repository audit](docs/REPOSITORY_DEEP_AUDIT_2026-09-28.md) · [A–Z index](REPO_INDEX.md) · [STATUS](STATUS.md) · [Governance](GOVERNANCE.md) · [License](LICENSE)
 
 ## Commercial foundation (recorded 2026-09-26)
 
