@@ -102,6 +102,10 @@ def validate():
     if any(g['status'] == 'OPEN' and g['workstream'] == 'travel' for g in gates['gates']):
         assert gates['status'] == 'NOT_TRAVEL_READY'
     validate_trip_controls()
+    status = (ROOT / 'STATUS.md').read_text()
+    assert gates['status'] in status, 'public status omits current travel readiness'
+    assert ('PASS_SOURCE_INDEX_ONLY' if not known else 'PASS_WITH_QUARANTINE') in status, 'public source status drifts from validator'
+    assert 'BLOCKED_SOURCE_CONFLICT' in status, 'Sinotrans bundle source lock missing from public status'
     print(json.dumps({'structural_checks': 'PASS_SOURCE_INDEX_ONLY' if not known else 'PASS_WITH_QUARANTINE', 'artifacts': counts, 'mission_gates': len(ids),
                       'mission_status': gates['status'], 'authority_verified': False, 'quarantined_files': list(known)}))
 

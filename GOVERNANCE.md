@@ -1,6 +1,6 @@
 # Governance
 
-Control date: 2026-09-20
+Control date: 2026-09-28
 
 ## Current control reality
 
@@ -9,10 +9,10 @@ Control date: 2026-09-20
 | Maintainer | Single GitHub account: `mavericken777` |
 | Signed commits | Not established as a repository rule |
 | Independent directors / multisig | None |
-| External issue / PR community | None at time of this file |
-| CI | Infographic SVG workflow only |
+| External governance review | No independent second control party evidenced; PR merges and CI do not establish one |
+| CI | Reference runtime, gateway/OPA, repository integrity and infographic workflows; passing them does not establish production assurance |
 | Backup governance | Not constituted |
-| License | MIT (see `LICENSE`) — documentation reuse is now permitted under that grant |
+| License | MIT for repository-owned material (`LICENSE`); third-party standards and other source-held PDFs are outside that grant |
 
 This repository does **not** currently implement a federated, multi-sovereign or multi-party control plane. Language such as "sovereign federated ecosystem" describes a **target architecture**, not present-day control.
 
