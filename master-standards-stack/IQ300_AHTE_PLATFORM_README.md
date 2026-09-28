@@ -40,7 +40,7 @@ Current catalogue verification is maintained against the JSM MySOL NSC 09 Halal 
 
 - `AMANAH_PLATFORM_AZ_MAPPING.md` — A-Z platform decomposition and standard-to-platform matrix.
 - `iq300-all-jakim-ms/` — Master standards register, full standards matrix, requirement/control/HCP/evidence architecture and standards lineage.
-- `iq300-full-matrix/` — 613 numbered MS 2400 requirement objects from the three supplied MS 2400 source PDFs.
+- `iq300-full-matrix/source-index-2026-09-27/` — 628 numbered MS 2400 clause/page locators; historical 613 proposed controls are incomplete and only the warehouse gzip remains intact.
 - `process-flow-infographics/` — complete 17-standard infographic atlas and automated generator.
 - `CHINA_EXECUTION_PACK/` — complete China implementation pack.
 - `china-deployment/CHINA_SOVEREIGN_HOD_DEBRIEF.md` — HOD decision and deployment package.
@@ -73,7 +73,7 @@ Every standard row maps to AHTE domains, HCP families, evidence profiles, audit 
 
 ## Machine-readable baseline
 
-The unified standards library contains **684 requirement/control objects**, including **613 individually numbered MS 2400 objects**. The China Execution Pack adds canonical event, rule, API, identity, trust-anchor and operating-gate specifications.
+The former **684 requirement/control object** total included **613 proposed MS 2400 objects** and is a historical design count, not an ingestible or exhaustive normative corpus. The current MS 2400 source index contains **628 unique numbered heading locators**; each control intent still needs clause-specific review. The China Execution Pack contains proposed event, rule, API, identity and operating-gate specifications, not a production system.
 
 ## Physical + digital binding
 

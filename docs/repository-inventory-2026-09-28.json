@@ -1,0 +1,2216 @@
+{
+  "artifact": "repository-inventory-2026-09-28.json",
+  "control_date": "2026-09-28",
+  "basis": "tracked worktree after source-retirement and issue-1 fixes; inventory file excluded to avoid self-hash recursion",
+  "base_commit": "c294c03e12e0b4a11daeefe0c83c3f7ec4f059ed",
+  "file_count": 364,
+  "by_kind": {
+    ".md": 232,
+    ".json": 54,
+    ".yml": 6,
+    "(none)": 4,
+    ".rego": 6,
+    ".circom": 1,
+    ".js": 1,
+    ".sol": 1,
+    ".yaml": 2,
+    ".csv": 3,
+    ".svg": 20,
+    ".json.gz": 1,
+    ".tar.gz": 1,
+    ".ini": 1,
+    ".txt": 2,
+    ".py": 29
+  },
+  "scope": "identity and format checks only; no full semantic review of each file, external evidence or production assurance",
+  "files": [
+    {
+      "path": ".github/agents/halal-trust-editor.agent.md",
+      "bytes": 5105,
+      "sha256": "ecbaee4b69194352d28762dec01dc879f8e7d6dbd03c45e1506a919004ed23aa",
+      "kind": ".md"
+    },
+    {
+      "path": ".github/copilot-instructions.md",
+      "bytes": 2494,
+      "sha256": "c1b18d3195b93d481b39d64b8ee69bee04dc02ccc3e1cca042b2d1d7ba8e809b",
+      "kind": ".md"
+    },
+    {
+      "path": ".github/hooks/validate-freeze-integrity.json",
+      "bytes": 364,
+      "sha256": "e9bf45acf015daae3b3df8fc2199b7ab7cefb526c20b64210ed8e3bfd047289c",
+      "kind": ".json"
+    },
+    {
+      "path": ".github/instructions/verified-freeze.instructions.md",
+      "bytes": 757,
+      "sha256": "c4c0f20065eda2f731ff6bc4d65559d9f65b6b44ead8956a859237dd06e80795",
+      "kind": ".md"
+    },
+    {
+      "path": ".github/prompts/ahte-platinum-asset-generation.prompt.md",
+      "bytes": 5468,
+      "sha256": "e93e5eb7bf850f1cb744ffa099ea929bedba191a2cb7727f6bf04a29038735fa",
+      "kind": ".md"
+    },
+    {
+      "path": ".github/skills/ahte-source-governance/SKILL.md",
+      "bytes": 2329,
+      "sha256": "36689a4ea7ac373957e1324b4b2f16baaac7eadecac7fdce0d73216bd7cebfc7",
+      "kind": ".md"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "bytes": 1428,
+      "sha256": "bc16c26afb57ee313786285999b6328ad9977894338dc358ee8c2f8b3c2a11c0",
+      "kind": ".yml"
+    },
+    {
+      "path": ".github/workflows/generate-ahtem-infographics.yml",
+      "bytes": 1179,
+      "sha256": "916b0c9d7a772abb20d6afd701a5e942c3aad90849ac3047739b3d24ca680da2",
+      "kind": ".yml"
+    },
+    {
+      "path": ".github/workflows/platform-reference.yml",
+      "bytes": 468,
+      "sha256": "03b52f359bbf4fce46e261878a637ca5dfa0d6c5aea74ac7b866fd226cdcdc86",
+      "kind": ".yml"
+    },
+    {
+      "path": ".github/workflows/repository-integrity.yml",
+      "bytes": 440,
+      "sha256": "d0708dc532931d0738589d46c377be165bd624a2dcf7217b46fe0a7ddc2ad3d9",
+      "kind": ".yml"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 45,
+      "sha256": "4cb18d750ab3d36453c88d0f1b380636848f501dadf444d3e442f2b7254ffe5f",
+      "kind": "(none)"
+    },
+    {
+      "path": "00_EXECUTIVE_COMMAND/ABSOLUTE_MODE_SYSTEM_INSTRUCTION_v14.1.md",
+      "bytes": 7318,
+      "sha256": "6d23fe12464579fdd6ace9abe3b6a4e01c28b48f38cf7132756421acb2a6149f",
+      "kind": ".md"
+    },
+    {
+      "path": "00_EXECUTIVE_COMMAND/AGENT_CONTROL_LAYER_AUDIT_2026-09-19.md",
+      "bytes": 4431,
+      "sha256": "7b620813203a291b9889a43dbbab69488e4fa1758f617b1c859754745f7786f9",
+      "kind": ".md"
+    },
+    {
+      "path": "00_EXECUTIVE_COMMAND/HONESTY_LAYER_2026-09-20.md",
+      "bytes": 810,
+      "sha256": "8b05ba2389eda10e7fa234256c93039fcb2aee3ee34f967b36003934cb646408",
+      "kind": ".md"
+    },
+    {
+      "path": "00_EXECUTIVE_COMMAND/IQ300_2026_INTEROP_STACK.md",
+      "bytes": 2766,
+      "sha256": "f7eb794b357032bddb1dd3cf8856f701ac76dce3bade107ac454f9b2e793dd66",
+      "kind": ".md"
+    },
+    {
+      "path": "00_EXECUTIVE_COMMAND/IQ300_ASSURANCE_CONTROL_PLANE_AUDIT_2026-09-20.md",
+      "bytes": 1598,
+      "sha256": "fff1ea7d3d7b28618225320e6c2ce500ccffb8bf78ada0f81869192517824fa4",
+      "kind": ".md"
+    },
+    {
+      "path": "00_EXECUTIVE_COMMAND/IQ300_ASSURANCE_CONTROL_PLANE_SPEC_v0.1.md",
+      "bytes": 4900,
+      "sha256": "38515ddaeb01b592917f1b74885ad6f17dfb7957f9488268268388f21ce51ed2",
+      "kind": ".md"
+    },
+    {
+      "path": "00_EXECUTIVE_COMMAND/IQ300_DOCTRINE.md",
+      "bytes": 32519,
+      "sha256": "2fe3ebe904a4eca522c8d10b1b146ac7a8ad9f5aeb1fe1bff2a5b7e784c6ce5b",
+      "kind": ".md"
+    },
+    {
+      "path": "00_EXECUTIVE_COMMAND/MASTER_DISCUSSION_DECISION_LOG_2026.md",
+      "bytes": 5242,
+      "sha256": "e6f46967b6943a97a25d28a45dbbfa9b272e5e93f64cbe6e77363fc8958054cf",
+      "kind": ".md"
+    },
+    {
+      "path": "00_EXECUTIVE_COMMAND/OCTOBER_2026_STRATEGIC_IMPLEMENTATION_MISSION.md",
+      "bytes": 11403,
+      "sha256": "87a08b0122350d25e8c7725bd13f5a7c3476520bf06522241876dd15c1c68f99",
+      "kind": ".md"
+    },
+    {
+      "path": "00_EXECUTIVE_COMMAND/README.md",
+      "bytes": 910,
+      "sha256": "72b793ac8a859ab7f33d2759370a8c1d703cfbec5e3bae4bbbef2eda0cd2d036",
+      "kind": ".md"
+    },
+    {
+      "path": "00_EXECUTIVE_COMMAND/RECONCILIATION_2026-09-27.md",
+      "bytes": 5959,
+      "sha256": "46b20c55bd462bea6d439c31481deb451186fafa80ea2518f7ef4487e2150421",
+      "kind": ".md"
+    },
+    {
+      "path": "00_EXECUTIVE_COMMAND/REPOSITORY_COMPLETION_AUDIT_2026-09-18.md",
+      "bytes": 11560,
+      "sha256": "ca65f98f8a3b87817b33bcf49cf33e16abb6a366bbdc08f4d928b888e8357621",
+      "kind": ".md"
+    },
+    {
+      "path": "00_EXECUTIVE_COMMAND/REPOSITORY_READINESS_AUDIT_2026-09-26.md",
+      "bytes": 10678,
+      "sha256": "597e6b593c7cbb8232f39b900fcd091a84010c6ff06d7141b55c21769bfdd06e",
+      "kind": ".md"
+    },
+    {
+      "path": "00_EXECUTIVE_COMMAND/SHIPMENT_001_ACCEPTANCE_TESTS.md",
+      "bytes": 2023,
+      "sha256": "3f185bf7e0657176ebb3fd49e7ca5bcf77d1cb7054dcd26bacf4c49b96e4b38f",
+      "kind": ".md"
+    },
+    {
+      "path": "00_EXECUTIVE_COMMAND/SPECIFICATION_ADOPTION_2026-09-20.md",
+      "bytes": 635,
+      "sha256": "3d1dbef9e02537e7c7d195686d914f0e48d01c23098388c2d0bc8e94f95d027c",
+      "kind": ".md"
+    },
+    {
+      "path": "00_EXECUTIVE_COMMAND/artifact-quarantine-2026-09-26.json",
+      "bytes": 2103,
+      "sha256": "32d54d8b85a5b687e664f21d7a8fd88faee7202ff8c465d6d7754f1447d730b4",
+      "kind": ".json"
+    },
+    {
+      "path": "00_EXECUTIVE_COMMAND/canonical-path-machine-map.json",
+      "bytes": 1992,
+      "sha256": "ff3f044a1f0e85c85e6a48938143a99f5d76362cef67ad35dbc41e05eb841cf6",
+      "kind": ".json"
+    },
+    {
+      "path": "00_EXECUTIVE_COMMAND/commit-tag-taxonomy.json",
+      "bytes": 1749,
+      "sha256": "46c3c916a2fb4353cb8c022200c1f57ead0cc4d3ab5a5b2a38984167cbbd6cd7",
+      "kind": ".json"
+    },
+    {
+      "path": "00_EXECUTIVE_COMMAND/corridor-registry.json",
+      "bytes": 3504,
+      "sha256": "d02100229752c18c76eecd29456a645b64785a1d6f28a3d89099ffeeac83d63a",
+      "kind": ".json"
+    },
+    {
+      "path": "00_EXECUTIVE_COMMAND/epcis-corridor-event-map.json",
+      "bytes": 1714,
+      "sha256": "2fbd1cf3c6c598eebcda2d91d169c50eab85a14122626070fa2dda0fd0db93d5",
+      "kind": ".json"
+    },
+    {
+      "path": "00_EXECUTIVE_COMMAND/hitm-decision-class-registry.json",
+      "bytes": 2992,
+      "sha256": "89ce9193c10f027db98712031064a8c706f6a471d1c851d9c5064963ce628cba",
+      "kind": ".json"
+    },
+    {
+      "path": "00_EXECUTIVE_COMMAND/live-source-registry-addendum-2026-09-26.json",
+      "bytes": 1950,
+      "sha256": "7ff1b0f942863e9ea2979a7c74ba0ff2476263b74574be83b9498349dcaae66b",
+      "kind": ".json"
+    },
+    {
+      "path": "00_EXECUTIVE_COMMAND/live-source-registry.json",
+      "bytes": 10044,
+      "sha256": "5161b0936cbba855dbe2f0a79209f55ab6ed99486cba003cef7df244c760553c",
+      "kind": ".json"
+    },
+    {
+      "path": "00_EXECUTIVE_COMMAND/machine-spec/01-agent-authority-model.md",
+      "bytes": 888,
+      "sha256": "9d9f65cb150edd5e3707e244c7cab0ad12ff99e0a6dfcf3436650d40c06aab05",
+      "kind": ".md"
+    },
+    {
+      "path": "00_EXECUTIVE_COMMAND/machine-spec/02-ai-action-authority-matrix.json",
+      "bytes": 1304,
+      "sha256": "fa1cc0fdd6c3c3dbf340d2a017e09db5f3f45f9be601b7b2f2255ded1f9d94ab",
+      "kind": ".json"
+    },
+    {
+      "path": "00_EXECUTIVE_COMMAND/machine-spec/04-human-authority-mandate-registry.json",
+      "bytes": 1354,
+      "sha256": "fb0426cd706edd63448855bae4b9474faa6557011226b50ac5307a6d67e66158",
+      "kind": ".json"
+    },
+    {
+      "path": "00_EXECUTIVE_COMMAND/machine-spec/09-hard-gate-rules.json",
+      "bytes": 1483,
+      "sha256": "b7d80222ee229f2e6b6217c8d07494373ebe860b91fc0afb0424c6d51ea469cd",
+      "kind": ".json"
+    },
+    {
+      "path": "00_EXECUTIVE_COMMAND/machine-spec/11-trust-fracture-taxonomy.json",
+      "bytes": 1243,
+      "sha256": "65fa21d5d5079aad557a794bc6d777246a123f668b67966a31b35043255d6dd4",
+      "kind": ".json"
+    },
+    {
+      "path": "00_EXECUTIVE_COMMAND/machine-spec/12-autonomous-state-machine.json",
+      "bytes": 1440,
+      "sha256": "5e2c6d3f2d52472276991fd58742ba171a946b32513fc7ff5c5ae44b0e633d74",
+      "kind": ".json"
+    },
+    {
+      "path": "00_EXECUTIVE_COMMAND/machine-spec/13-cryptographic-binding-profile.md",
+      "bytes": 732,
+      "sha256": "431b0385b0220782220f98303fa9ea58d8a8086657c588438276026df29e441d",
+      "kind": ".md"
+    },
+    {
+      "path": "00_EXECUTIVE_COMMAND/machine-spec/14-authority-aware-api.md",
+      "bytes": 905,
+      "sha256": "ea2a2eb941f834c708d9dd25b562ad5b2277d5773b22af5e273fb602d6faf1dc",
+      "kind": ".md"
+    },
+    {
+      "path": "00_EXECUTIVE_COMMAND/machine-spec/15-agent-runtime-permissions.json",
+      "bytes": 956,
+      "sha256": "e701da4478fdf9416e327e88fb8442b4a13294322ae4fb67fd43e8aa4fb1fc42",
+      "kind": ".json"
+    },
+    {
+      "path": "00_EXECUTIVE_COMMAND/machine-spec/16-auditability-layer.md",
+      "bytes": 692,
+      "sha256": "30f900db80333cbbbb93cce264e623d03f94e730ddd377d3c2e015289ca213a7",
+      "kind": ".md"
+    },
+    {
+      "path": "00_EXECUTIVE_COMMAND/machine-spec/README.md",
+      "bytes": 1217,
+      "sha256": "491a7cb47c385f793830a7d67af3a5aab998474a9ede41245cdd78315f8ac290",
+      "kind": ".md"
+    },
+    {
+      "path": "00_EXECUTIVE_COMMAND/october-2026-readiness.json",
+      "bytes": 12834,
+      "sha256": "46ae621f25ffbce559b3315f601b560038955f62c1559ecc214c0d6b8612992d",
+      "kind": ".json"
+    },
+    {
+      "path": "00_EXECUTIVE_COMMAND/partner-registry.json",
+      "bytes": 12907,
+      "sha256": "763b9671dfb1d3be6d01426bdb2bd975610d9f1d4ddb985c0129c745d890800a",
+      "kind": ".json"
+    },
+    {
+      "path": "00_EXECUTIVE_COMMAND/policies/hitm-default-deny.rego",
+      "bytes": 1255,
+      "sha256": "d551c7ef051a395646b10b8be512efb1ed9d37d428a713a03cf03a7016429bc4",
+      "kind": ".rego"
+    },
+    {
+      "path": "00_EXECUTIVE_COMMAND/policies/hitm-fixtures.json",
+      "bytes": 1723,
+      "sha256": "3b9c3897f3c4b4811f15975f5bec499fa0b4ba1d71f30224dad66857e00a221f",
+      "kind": ".json"
+    },
+    {
+      "path": "00_EXECUTIVE_COMMAND/port-authority-registry.json",
+      "bytes": 4490,
+      "sha256": "04aca81bb4f0f35c07ce9846b4a51e51bfd5d0510907b954b7d873ab1c8dba55",
+      "kind": ".json"
+    },
+    {
+      "path": "00_EXECUTIVE_COMMAND/project-file-curation.json",
+      "bytes": 4953,
+      "sha256": "3fcee7f7a05c568a56651f364261382b6354bac0489348622409c3f7f7a3ad70",
+      "kind": ".json"
+    },
+    {
+      "path": "00_EXECUTIVE_COMMAND/schema-registry.json",
+      "bytes": 3032,
+      "sha256": "c6274cf9e8dc20c081c2d4608d54e112085c1850867343504381272a8814ede5",
+      "kind": ".json"
+    },
+    {
+      "path": "00_EXECUTIVE_COMMAND/trust-packet-schemas.json",
+      "bytes": 13514,
+      "sha256": "8dc134680a9c043eafc93cba0862d94059c1ce3f20d1c4651bce82b33721a8a6",
+      "kind": ".json"
+    },
+    {
+      "path": "03_ECOSYSTEM_PARTNERS/PARTNER_RACI_INTEGRATION_MATRIX.md",
+      "bytes": 4658,
+      "sha256": "8b5ab70d4e7b108aa42084126ea2b21a90919273be1194223697620eb1e63fb5",
+      "kind": ".md"
+    },
+    {
+      "path": "05_PLATINUM_REAL_TIME_MONITORING/PLATINUM_FULL_STACK_ARCHITECTURE.md",
+      "bytes": 6301,
+      "sha256": "5203151610b0a2fdd9f2bf70b5e97a9ebf3e300c0a2de952a112951103b8d513",
+      "kind": ".md"
+    },
+    {
+      "path": "ADOPTION.md",
+      "bytes": 1800,
+      "sha256": "5285cab435f11fdc8c07e519d482b167463dfbe178423b3249aa5e574cbc26e1",
+      "kind": ".md"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 4855,
+      "sha256": "b4dfe73df24123658830e35c803b89a3c8885d6ff6319a087a6c538964828b0b",
+      "kind": ".md"
+    },
+    {
+      "path": "CHINA_TRIP_2026/00_READ_THIS_FIRST.md",
+      "bytes": 2655,
+      "sha256": "c4de4d6366640a17adf9c61d91a5b1919118dc787622d9d2f417f9ff533c4cdf",
+      "kind": ".md"
+    },
+    {
+      "path": "CHINA_TRIP_2026/01_INSTRUMENT_REGISTER.md",
+      "bytes": 3576,
+      "sha256": "e06c2d6fd83fc1ad96bc539efd856960127164c5d305da4344f000b8d8b040e5",
+      "kind": ".md"
+    },
+    {
+      "path": "CHINA_TRIP_2026/02_ASK_LIST_AND_SIGNING_PACK.md",
+      "bytes": 2914,
+      "sha256": "48afd5d0b9087f14978f263b008506e216623acdd402a797ea40819ff76d5232",
+      "kind": ".md"
+    },
+    {
+      "path": "CHINA_TRIP_2026/03_MEETING_RUN_OF_SHOW.md",
+      "bytes": 1556,
+      "sha256": "37c5b58cc9b5adc925e5ba026d32caa98c0c27afda7db3fecdf6ead2111d757f",
+      "kind": ".md"
+    },
+    {
+      "path": "CHINA_TRIP_2026/04_REPO_CROSSWALK.md",
+      "bytes": 1076,
+      "sha256": "5667db6d67cbd3d771563eafe5d3d4e4bb080b3514c14df799634519583ef6c3",
+      "kind": ".md"
+    },
+    {
+      "path": "CHINA_TRIP_2026/EXECUTION_BOARD.md",
+      "bytes": 5422,
+      "sha256": "4f173099fd8c2bd837208a00c562bd5076a316faceb6fba3e1ebe181380b0b09",
+      "kind": ".md"
+    },
+    {
+      "path": "CHINA_TRIP_2026/FIELD_LOG.md",
+      "bytes": 403,
+      "sha256": "2f974bed6bff55af047874d664803045f4aa79c48aa733279647fab52ca14cb6",
+      "kind": ".md"
+    },
+    {
+      "path": "CHINA_TRIP_2026/KICKOFF_MINUTES_RECONCILIATION.md",
+      "bytes": 2421,
+      "sha256": "0d2359a1f4c496ce0a383da3266acc6d9bd31fe0c64688fd03dbb64a8ae64f4d",
+      "kind": ".md"
+    },
+    {
+      "path": "CHINA_TRIP_2026/MALAYSIA_HALAL_AUTHORITY_MAP.md",
+      "bytes": 2608,
+      "sha256": "78b4277bbf6b60d27d11cef284e05e6d23093e2e4735531804654807aea85ab7",
+      "kind": ".md"
+    },
+    {
+      "path": "CHINA_TRIP_2026/MOA_TEMPLATES/00_REGISTER.md",
+      "bytes": 745,
+      "sha256": "060a639c285f364f0769715c7006c8bf21565465eca5a371c8a311d03f64b1ac",
+      "kind": ".md"
+    },
+    {
+      "path": "CHINA_TRIP_2026/MOA_TEMPLATES/COMMON_TERMS.md",
+      "bytes": 5623,
+      "sha256": "c0804783e245cec1cbd66f7768aec881ca13a31b1ac961d86e4fef73284cbe30",
+      "kind": ".md"
+    },
+    {
+      "path": "CHINA_TRIP_2026/MOA_TEMPLATES/MOA_AGRICULTURAL_DEVELOPMENT.md",
+      "bytes": 7600,
+      "sha256": "9680003ace08a5db84f4cfc2f7f96e16b3e66677e923f0f18b05144d2cf753e5",
+      "kind": ".md"
+    },
+    {
+      "path": "CHINA_TRIP_2026/MOA_TEMPLATES/MOA_CARREFOUR.md",
+      "bytes": 635,
+      "sha256": "afacd4fb0f69401dbbfe231b8e109be858a5b843ae70bf713be5b18aa2f7997a",
+      "kind": ".md"
+    },
+    {
+      "path": "CHINA_TRIP_2026/MOA_TEMPLATES/MOA_CODA.md",
+      "bytes": 9392,
+      "sha256": "6108eb5deeef344350c887d1cfb9fa3f051a393822ff452eb76e4ecc39439f9c",
+      "kind": ".md"
+    },
+    {
+      "path": "CHINA_TRIP_2026/MOA_TEMPLATES/MOA_LULU.md",
+      "bytes": 611,
+      "sha256": "87d188eb9b77b2f1941c21f49ce6074356687d5bb38265a63a01a908d9322b31",
+      "kind": ".md"
+    },
+    {
+      "path": "CHINA_TRIP_2026/MOA_TEMPLATES/MOA_NICFS_LAB.md",
+      "bytes": 8029,
+      "sha256": "e428060aa88ee899dfc8d2084e8c92691b57684b3b4a8b678d2e3970e045eb2b",
+      "kind": ".md"
+    },
+    {
+      "path": "CHINA_TRIP_2026/MOA_TEMPLATES/MOA_NICFS_TRACEABILITY.md",
+      "bytes": 7876,
+      "sha256": "7abb5426293a0973acd51f9d43cd16eb41dded5f62f379bfa547e33685c72676",
+      "kind": ".md"
+    },
+    {
+      "path": "CHINA_TRIP_2026/MOA_TEMPLATES/MOA_NOON.md",
+      "bytes": 611,
+      "sha256": "6453cfdbe722f36b68b8d49553b94475aa543618078ee885542139b6f8d9a519",
+      "kind": ".md"
+    },
+    {
+      "path": "CHINA_TRIP_2026/MOA_TEMPLATES/MOA_SINOTRANS_LOGISTICS.md",
+      "bytes": 9321,
+      "sha256": "403aab6ddc81152ab2d73986f9fbf2b9d7b1d100e0ac7c0243075d585b732321",
+      "kind": ".md"
+    },
+    {
+      "path": "CHINA_TRIP_2026/MOA_TEMPLATES/MOA_SINOTRANS_WAREHOUSE.md",
+      "bytes": 8972,
+      "sha256": "36469c205c21f298b3644ddfb974de3998eb8864e6a704fadec2ed07b3e2278e",
+      "kind": ".md"
+    },
+    {
+      "path": "CHINA_TRIP_2026/MOA_TEMPLATES/MOA_TAMIMI.md",
+      "bytes": 619,
+      "sha256": "a353cf0a353e1bd78545e2533235e6a999c77e13db43b44c5a923021dad5f615",
+      "kind": ".md"
+    },
+    {
+      "path": "CHINA_TRIP_2026/MOA_TEMPLATES/README.md",
+      "bytes": 770,
+      "sha256": "9932cf1be9c023a6a50e65aa9932ae0a39fe4e15ddd28e12a5b4e22a4f99869f",
+      "kind": ".md"
+    },
+    {
+      "path": "CHINA_TRIP_2026/RETAILERS/00_MASTER.md",
+      "bytes": 2328,
+      "sha256": "9bacc2c41178dc13e9fe9d65c9a83bd65e9862a67fd975936a9294c32cdd78d3",
+      "kind": ".md"
+    },
+    {
+      "path": "CHINA_TRIP_2026/RETAILERS/CARREFOUR_MAF/DOSSIER.md",
+      "bytes": 1947,
+      "sha256": "197034c42e7c287f569587c53119a30262b61351f4cec884baaa6106d7689eb9",
+      "kind": ".md"
+    },
+    {
+      "path": "CHINA_TRIP_2026/RETAILERS/CARREFOUR_MAF/MEETING_BRIEF.md",
+      "bytes": 381,
+      "sha256": "192f801c737457da56860a5372867a3f5c44743ceb74c795d7216e1d6ff2dce3",
+      "kind": ".md"
+    },
+    {
+      "path": "CHINA_TRIP_2026/RETAILERS/CARREFOUR_MAF/MOA.md",
+      "bytes": 7540,
+      "sha256": "e4ca4622a36e55c6ed62c78aeef22d6b3eeae633c83a03e18886151c2b73fd34",
+      "kind": ".md"
+    },
+    {
+      "path": "CHINA_TRIP_2026/RETAILERS/COMMON_RECEIVING_PACK.md",
+      "bytes": 2660,
+      "sha256": "c1a7477e641363c93be3f3cd7aef3b14bcbb8d147cfc651a2033420859ab1f71",
+      "kind": ".md"
+    },
+    {
+      "path": "CHINA_TRIP_2026/RETAILERS/LULU/DOSSIER.md",
+      "bytes": 2205,
+      "sha256": "e6e6e2955390873782cc6c040bb2d6c3d4a0009792fc7e634da428cd9d33d818",
+      "kind": ".md"
+    },
+    {
+      "path": "CHINA_TRIP_2026/RETAILERS/LULU/MEETING_BRIEF.md",
+      "bytes": 623,
+      "sha256": "f37b8f5fce8a38709516f694a981c026f7a293bbd8a682e972769fbb48953fc4",
+      "kind": ".md"
+    },
+    {
+      "path": "CHINA_TRIP_2026/RETAILERS/LULU/MOA.md",
+      "bytes": 9749,
+      "sha256": "8dae79c79fd06ca73b55a85a7e3a9030659f387c36408de98935a995275bbe80",
+      "kind": ".md"
+    },
+    {
+      "path": "CHINA_TRIP_2026/RETAILERS/NOON/DOSSIER.md",
+      "bytes": 1895,
+      "sha256": "90cc0b6d72c990e3f6818255bd2b319c5935f06a7ce4abcdda304b5f1431d853",
+      "kind": ".md"
+    },
+    {
+      "path": "CHINA_TRIP_2026/RETAILERS/NOON/MEETING_BRIEF.md",
+      "bytes": 314,
+      "sha256": "edd9e1919fd16513ff9c727d407748185a6871264c969aba5c29e1c14619313b",
+      "kind": ".md"
+    },
+    {
+      "path": "CHINA_TRIP_2026/RETAILERS/NOON/MOA.md",
+      "bytes": 7971,
+      "sha256": "4837e4d0b3a2e59fd40156fd7d825fbace8cc0c3d8af2a39f7146c8dc20f56e3",
+      "kind": ".md"
+    },
+    {
+      "path": "CHINA_TRIP_2026/RETAILERS/TAMIMI/DOSSIER.md",
+      "bytes": 1717,
+      "sha256": "c6ef54ab9cd73639a43d0d15236805371bee0f59278dcbc66af48151d1683b68",
+      "kind": ".md"
+    },
+    {
+      "path": "CHINA_TRIP_2026/RETAILERS/TAMIMI/MEETING_BRIEF.md",
+      "bytes": 271,
+      "sha256": "439e6266a3036dc00a05329696a772c6afb09104403dffc50d9100d1929ec324",
+      "kind": ".md"
+    },
+    {
+      "path": "CHINA_TRIP_2026/RETAILERS/TAMIMI/MOA.md",
+      "bytes": 7728,
+      "sha256": "ec8343c6da4dd6c5ddbb35b506a0f287e70cae38774f89451854a001ba926266",
+      "kind": ".md"
+    },
+    {
+      "path": "CHINA_TRIP_2026/SIGNING_MATRIX.md",
+      "bytes": 2295,
+      "sha256": "abd1a85a1430b03f7ca230dca30f062770b3507c57b9924fb05a22ba4018fa33",
+      "kind": ".md"
+    },
+    {
+      "path": "CHINA_TRIP_2026/SINOTRANS_OCT15_ACCEPTANCE_WORKSHEET.md",
+      "bytes": 2834,
+      "sha256": "44fdb02b15fd262e90830d8ed8669a69b39786c1ba1d70c15a819f55fd9377df",
+      "kind": ".md"
+    },
+    {
+      "path": "CHINA_TRIP_2026/TRAVEL_DECISIONS.md",
+      "bytes": 3179,
+      "sha256": "8b83a5f8811e1b5c3f2bffdb80615aa008cd5e2e5a59886922490355b5076bf0",
+      "kind": ".md"
+    },
+    {
+      "path": "CHINA_TRIP_2026/evidence-index.json",
+      "bytes": 3778,
+      "sha256": "72edc103ff5a43388879a8167d2bd0492b25cb24dc37e6f117e5073f9389e667",
+      "kind": ".json"
+    },
+    {
+      "path": "CHINA_TRIP_2026/signing-register.json",
+      "bytes": 3292,
+      "sha256": "737bbf1fa72be0a0e92bce136974977331180ae6f1bc3cb113aa235d197f11ec",
+      "kind": ".json"
+    },
+    {
+      "path": "COMPLIANCE_ALIGNMENT.md",
+      "bytes": 978,
+      "sha256": "66e005386d90e61329eaf9afd5fa9002204522d75332d82f727dfd88959ef445",
+      "kind": ".md"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "bytes": 554,
+      "sha256": "c58872c632e5daa506f0db952dd4b59906cfba02f9d116b0d80ed97f7f3cc30b",
+      "kind": ".md"
+    },
+    {
+      "path": "GOVERNANCE.md",
+      "bytes": 1816,
+      "sha256": "127e3a43e711d61c70d7548b7c17e30b18be93c12747cc2df5c6e44279b69ecc",
+      "kind": ".md"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1358,
+      "sha256": "66e70c95dec9519a6706dc1821f1031e0680309eb31622d6a09a1d16f2c4de97",
+      "kind": "(none)"
+    },
+    {
+      "path": "NOTICE.md",
+      "bytes": 1691,
+      "sha256": "e53e82050a1c20484d1bbada20d9e664c574d10f62693c7bce1e61215eaacee7",
+      "kind": ".md"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4985,
+      "sha256": "397f40c2a5be20e471694690dcd240d769278dc7792c34a80347a51ca7b2e27b",
+      "kind": ".md"
+    },
+    {
+      "path": "REPO_INDEX.md",
+      "bytes": 4763,
+      "sha256": "5672c29e108c69a890505f185e6ab96caa61467b866d2030d0e41c371cd8aa16",
+      "kind": ".md"
+    },
+    {
+      "path": "STATUS.md",
+      "bytes": 1971,
+      "sha256": "a18a420c31d2bd27cd89b8e7a02201e7b9a0ce4172f21a825ee9104ff169b674",
+      "kind": ".md"
+    },
+    {
+      "path": "circuits/HalalWhitelistVerifier.circom",
+      "bytes": 1384,
+      "sha256": "eda17e553513f5c327195d8444b19a81b0f445e4b49dfb3c44c0aef2d6ac799b",
+      "kind": ".circom"
+    },
+    {
+      "path": "circuits/README.md",
+      "bytes": 255,
+      "sha256": "27417147629218a4bbc5ebac602019350a9ad94a9c4d5d9ecffc5f7fb473e596",
+      "kind": ".md"
+    },
+    {
+      "path": "circuits/server.js",
+      "bytes": 404,
+      "sha256": "fc8e022c63329cbfa84f4657f2c2c776e2d0e94cbeee13688160d47fd909dcac",
+      "kind": ".js"
+    },
+    {
+      "path": "contracts/AmanahHalalEscrow.sol",
+      "bytes": 3608,
+      "sha256": "c4f868112d53ade83e60ff36a81d58677550d66f7efef9c4f1257f3447caaede",
+      "kind": ".sol"
+    },
+    {
+      "path": "contracts/README.md",
+      "bytes": 246,
+      "sha256": "34437cfa42e0d5037f541a714e3ce98dbb7a20ad9a86f572ec86ee70bedeca85",
+      "kind": ".md"
+    },
+    {
+      "path": "deliverables/00_EXECUTIVE_MASTER_BLUEPRINT.md",
+      "bytes": 4667,
+      "sha256": "0b35ecfdb5b7e549f348a4fe7c2ebaa3c3ac0b4d3d052a7499323b9a5f3dadaa",
+      "kind": ".md"
+    },
+    {
+      "path": "deliverables/01_MASTER_REQUIREMENTS.md",
+      "bytes": 4002,
+      "sha256": "a44164e8361ba180db4f6c8b9984dd5f9ef02ed4eabcbe9761ab52314c01b7c0",
+      "kind": ".md"
+    },
+    {
+      "path": "deliverables/02_REFERENCE_ARCHITECTURE.md",
+      "bytes": 3505,
+      "sha256": "55697932d2c07ef3f53751bac1781d35724a264e60ca2467b003cdf450cb8085",
+      "kind": ".md"
+    },
+    {
+      "path": "deliverables/03_AI_KNOWLEDGE_ONBOARDING.md",
+      "bytes": 3075,
+      "sha256": "2c0c8e3a788892a6dc80aa3c7e6300798a00f9e50fe03d80219426fe7d60ebe2",
+      "kind": ".md"
+    },
+    {
+      "path": "deliverables/04_DATA_SOVEREIGNTY_AND_EVIDENCE.md",
+      "bytes": 2450,
+      "sha256": "259c26dbd7e3310648333627b3dfc4977178f5193714f796f7f1a2fc9077c6e0",
+      "kind": ".md"
+    },
+    {
+      "path": "deliverables/05_CYBERSECURITY_AND_RESILIENCE.md",
+      "bytes": 2910,
+      "sha256": "162167104de7b9feda98e4b41b1e278d48e094ef0abbe1772084ed456857862d",
+      "kind": ".md"
+    },
+    {
+      "path": "deliverables/06_REGULATORY_LAB_EVIDENCE_MODEL.md",
+      "bytes": 3905,
+      "sha256": "30f4be8c67077ca78d434d65f587b2d0a2a8a8aec9aea8e077a34e6e05051bc1",
+      "kind": ".md"
+    },
+    {
+      "path": "deliverables/07_SINOTRANS_PLAYBOOK.md",
+      "bytes": 5404,
+      "sha256": "87573cc64b6fda99ca4889a74889e628e2bb57a886541c5631c6e102e9574522",
+      "kind": ".md"
+    },
+    {
+      "path": "deliverables/08_MANUFACTURER_PRODUCER_PLAYBOOK.md",
+      "bytes": 2083,
+      "sha256": "25445d98d7a81826ce7b3cbe17b3a16f3a27c0de0f7dba4e6646ba7946afc4fc",
+      "kind": ".md"
+    },
+    {
+      "path": "deliverables/09_RETAIL_IMPORTER_PLAYBOOK.md",
+      "bytes": 1830,
+      "sha256": "bfe16c328d0d1ccc6e3a23ac50e1149cc3426e689e4b307d69c8ed0d1a9c7016",
+      "kind": ".md"
+    },
+    {
+      "path": "deliverables/10_ESG_GLOBAL_CITIZEN_FRAMEWORK.md",
+      "bytes": 1885,
+      "sha256": "e8943261bc3bd3e3ffd07a172744fb0f39a63b31774ce8298a8eb6a4d5d0ffec",
+      "kind": ".md"
+    },
+    {
+      "path": "deliverables/11_TRUST_INDEX_AND_INTELLIGENCE.md",
+      "bytes": 1910,
+      "sha256": "5fff3bb94963ce37a58cb26eb7de51be64021b0d5fb322c5a5f7acac22a91f55",
+      "kind": ".md"
+    },
+    {
+      "path": "deliverables/12_GOVERNANCE_RISK_AND_ACCOUNTABILITY.md",
+      "bytes": 2169,
+      "sha256": "dd0da17f39930bfd2cf0956223a32d7be9f7f8ef3fa23d6ba5771952ff2ba04a",
+      "kind": ".md"
+    },
+    {
+      "path": "deliverables/13_BUSINESS_MODEL_AND_ECONOMICS.md",
+      "bytes": 2532,
+      "sha256": "c30cd34086193ca29ef203d4c8e15b6cded2c0f160905cb15d35236c5fb94a19",
+      "kind": ".md"
+    },
+    {
+      "path": "deliverables/14_API_AND_CANONICAL_DATA_MODEL.md",
+      "bytes": 2182,
+      "sha256": "8fbcc9354b92c6ccaaf008b98bc079bebb2b9030d2c916413796f9edbbc54914",
+      "kind": ".md"
+    },
+    {
+      "path": "deliverables/15_IMPLEMENTATION_ROADMAP.md",
+      "bytes": 2051,
+      "sha256": "ce718ae990622baff7a7f3f0001e84de25003b97066f2c17bb8674945703f6bb",
+      "kind": ".md"
+    },
+    {
+      "path": "deliverables/16_SOURCE_REGISTER_AND_CLAIMS.md",
+      "bytes": 3654,
+      "sha256": "7c7fb2a0b8ff059424eabf3754a2c20742a52df33b964d18e25f00ed902705af",
+      "kind": ".md"
+    },
+    {
+      "path": "deliverables/17_SINOTRANS_DATA_MAPPING.md",
+      "bytes": 2099,
+      "sha256": "269951dc96ad1aed3267f38c0f26aa27416c1bfe56ff29bccf5e25364b75f5ca",
+      "kind": ".md"
+    },
+    {
+      "path": "deliverables/18_SINOTRANS_PILOT_SOP.md",
+      "bytes": 2327,
+      "sha256": "f2e50e5fbe903b834d87a7341a0c218b857028d1ba82d19d505d3385aa54b66e",
+      "kind": ".md"
+    },
+    {
+      "path": "deliverables/19_SECURITY_ASSURANCE_TEST_PLAN.md",
+      "bytes": 1489,
+      "sha256": "3066c4a7d24b1ebd9f99e6a81e1f4ae5eb6538998c122ae8c4623505aae98fd2",
+      "kind": ".md"
+    },
+    {
+      "path": "deliverables/20_GLOBAL_GOVERNANCE_CHARTER.md",
+      "bytes": 1691,
+      "sha256": "b774e10afc811b68efb03d8edd9529db6e158836a708e13e4a8615cf5eabb4ab",
+      "kind": ".md"
+    },
+    {
+      "path": "deliverables/21_PARTNER_ENGAGEMENT_PLAYBOOK.md",
+      "bytes": 1757,
+      "sha256": "7d2ebb0bbe6ef9bbf48a7e2cc3d846322816adaffbe29b7004338f7270459994",
+      "kind": ".md"
+    },
+    {
+      "path": "deliverables/22_IQ300_JAKIM_MALAYSIAN_STANDARDS_INTELLIGENCE_LAYER.md",
+      "bytes": 21464,
+      "sha256": "8e83013d2afdfc6f519cb76d4723ef7fb6ed9488b80909c210306fcda4169bac",
+      "kind": ".md"
+    },
+    {
+      "path": "deliverables/23_MANUFACTURER_MARKET_VALIDATION_GCC_2026.md",
+      "bytes": 11974,
+      "sha256": "b237edb995762fdc2634ff859e4ec459257f2e8311b443246b0c426b7780e35a",
+      "kind": ".md"
+    },
+    {
+      "path": "deliverables/24_AZ_COMPLETION_AUDIT_GAP_REGISTER_2026.md",
+      "bytes": 5662,
+      "sha256": "9bf54182ecb6e5acf4d4a89d9df7ab4ad96278864472eceb0df71bbda3cc919b",
+      "kind": ".md"
+    },
+    {
+      "path": "deliverables/25_VERIFICATION_AND_SOURCE_REGISTER_2026.md",
+      "bytes": 2563,
+      "sha256": "6e1bcbb2babaa6e64066da17972dcb795c33e0fd1ba766b368e19fcf107e1a24",
+      "kind": ".md"
+    },
+    {
+      "path": "deliverables/26_GCC_IMPORTER_BUYER_ENGAGEMENT_PROTOCOL_2026.md",
+      "bytes": 5704,
+      "sha256": "29f79edf338becb2a3a9ab11f20426c9c26c60a50733a2a7cc2c1a8386c646fe",
+      "kind": ".md"
+    },
+    {
+      "path": "deliverables/27_MANUFACTURER_PUBLIC_CLAIM_VERIFICATION_REGISTER_2026.md",
+      "bytes": 5094,
+      "sha256": "2ea07903358303dcb3c04be808652727905f71d7127c0d37f14eec1e8609b42d",
+      "kind": ".md"
+    },
+    {
+      "path": "deliverables/28_IQ300_VERIFIED_JAKIM_MS_CHINA_GCC_MASTER_PACKAGE_2026.md",
+      "bytes": 2187,
+      "sha256": "8245cbd9c50b662348f7e851c5bff21ff77967ed79622467bd9bc9625b0258f6",
+      "kind": ".md"
+    },
+    {
+      "path": "deliverables/29_GLOBAL_PORT_AUTHORITIES_PROTOCOL_2026.md",
+      "bytes": 10027,
+      "sha256": "81ca2991fc43e79beab9161916f4ffac4b81172f0a131fe85314f9281c412dde",
+      "kind": ".md"
+    },
+    {
+      "path": "deliverables/30_OCTOBER_2026_SIGNING_AND_MEETING_PACK.md",
+      "bytes": 13416,
+      "sha256": "6d6d1139b7dabb0e9163d9459732c97f577338bbe4e76d88232145a21c88e650",
+      "kind": ".md"
+    },
+    {
+      "path": "docker-compose.yml",
+      "bytes": 1051,
+      "sha256": "2bbab9e48db8b5bde7ddedc7810938a0ea6d0a7d2e9fb59504d9ac8693f630cb",
+      "kind": ".yml"
+    },
+    {
+      "path": "docs/01-master-strategy.md",
+      "bytes": 4001,
+      "sha256": "c1622b4c8337de40563849cd726e658655bfc56f949e6f13cbf4be26228cebbb",
+      "kind": ".md"
+    },
+    {
+      "path": "docs/02-reference-architecture.md",
+      "bytes": 4079,
+      "sha256": "b81c04d184b764eb96f7dc08ea2d8b220fc586fc5f0c3617f0629c1782128bf1",
+      "kind": ".md"
+    },
+    {
+      "path": "docs/03-ai-architecture.md",
+      "bytes": 2495,
+      "sha256": "a9d7d2c34b8dc7cd52a0b26559b4fcaec7e34aec1077fa1916fd07ba968c88db",
+      "kind": ".md"
+    },
+    {
+      "path": "docs/04-cybersecurity-risk.md",
+      "bytes": 2847,
+      "sha256": "47998684b452e71ac0af06b82caff62a183c723898924a3fa8268a73b4009291",
+      "kind": ".md"
+    },
+    {
+      "path": "docs/05-regulatory-laboratory.md",
+      "bytes": 2661,
+      "sha256": "674b7ac85539c5a79b3db742a35cb94a519b4ddbcb54c324bcd4711362748bf6",
+      "kind": ".md"
+    },
+    {
+      "path": "docs/06-business-model.md",
+      "bytes": 3148,
+      "sha256": "92e4c825d5f40b46f2ec9bec07e4c45f1ba90295ec7fc0263f413d53844be292",
+      "kind": ".md"
+    },
+    {
+      "path": "docs/07-esg-global-citizen.md",
+      "bytes": 1689,
+      "sha256": "f95ef83874e951bddd902a6576c0fbda86b7442b0a3308ba4cae6a108cd9146e",
+      "kind": ".md"
+    },
+    {
+      "path": "docs/08-trust-index-intelligence.md",
+      "bytes": 1668,
+      "sha256": "527aa1d895f9c53db58acf32fc6576bcef57b31b85a25f7e4559cd8e1174e687",
+      "kind": ".md"
+    },
+    {
+      "path": "docs/09-governance.md",
+      "bytes": 2346,
+      "sha256": "0b8bb5dd783bf9fa5507c643c491bbdd8ba34fb45e5b8d82d521d7a16b8328a7",
+      "kind": ".md"
+    },
+    {
+      "path": "docs/10-implementation-roadmap.md",
+      "bytes": 2323,
+      "sha256": "616cce05524651f75c6fafa109663d0db8f7e95295608374059af1f4a04be342",
+      "kind": ".md"
+    },
+    {
+      "path": "docs/OCTOBER_2026_DEMO_RUNBOOK.md",
+      "bytes": 3180,
+      "sha256": "c7c36ee0a015e04e3c7cfd5c0fd31ed47b5ca680009fe343183f7b5d54302627",
+      "kind": ".md"
+    },
+    {
+      "path": "docs/REPOSITORY_DEEP_AUDIT_2026-09-28.md",
+      "bytes": 5037,
+      "sha256": "f005ab91e7f94a4e607500db2dccf28d549f15a779248b4d92c3c24a0b8b81d4",
+      "kind": ".md"
+    },
+    {
+      "path": "docs/TOOLING.md",
+      "bytes": 4081,
+      "sha256": "e995001dc75731326d55c57d1035efeb2c972ece2e66ee6930618b631831e45c",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/01_MASTER_STANDARDS_STACK.md",
+      "bytes": 9516,
+      "sha256": "9c49439c54df5363a7199bab3b0d9ffac4d57dfdb2f16bd330d4604203ba647a",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/02_MS2400_FULL_CLAUSE_CONTROL_MAP.md",
+      "bytes": 9290,
+      "sha256": "dba0d26f2833a683f37b900378aa3b915ab24a50f27fcf910e36c1b6170b3121",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/03_SECTOR_STANDARDS_CONTROL_MAP.md",
+      "bytes": 10565,
+      "sha256": "30a8525f07ed6bc18f741d9b408df46832ba6d129156af3f749f54fbb1414f4a",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/04_CERTIFICATION_AUDIT_SERTU_STUNNING.md",
+      "bytes": 7578,
+      "sha256": "f96363e6f3df8cbe550c8af81f283f43701595ae0f1f0000d6abea23b25384b2",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/05_IQ300_EVIDENCE_TRUST_PROCESS_FLOWS.md",
+      "bytes": 6187,
+      "sha256": "8e612921840888fc3c723239123007597ea10ad9247fe7b54b40d89acf9ab60c",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/06_SOURCE_PROVENANCE_AND_VERIFICATION.md",
+      "bytes": 6798,
+      "sha256": "cf69a7714454fbfaa9c4475807bf8debe43ef36442c8957bce792548f404bbdf",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/07_REQUIREMENT_OBJECT_SCHEMA.json",
+      "bytes": 1737,
+      "sha256": "21fbf4a7d0f16e08b95d7eebac945d22df25a0212b00da961b5c4df9cddf0139",
+      "kind": ".json"
+    },
+    {
+      "path": "master-standards-stack/08_HALAL_AWARENESS_AND_AUDIT_TRAINING_MAP.md",
+      "bytes": 3165,
+      "sha256": "7ae676e9150a573b37007dfcc3b34d6c2e1a0f18362c7ded2a1eba186016441c",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/09_MS2400_ANNEX_RISK_HCP_DETAILS.md",
+      "bytes": 4880,
+      "sha256": "f515231e22bf9a6fdf9ee529a70e413de1b085be63dfffc648b114e001495d02",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/10_JAKIM_MPPHM2020_MHMS2020_COMPLIANCE_MANUAL.md",
+      "bytes": 16293,
+      "sha256": "4c66d2d85e5eb81d66952ad421ed52fc3c1ff73a11049094635bdfee9b044424",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/11_ALL_APPLICABLE_MS_Halal_STANDARDS_2026_CONTROL_MANUAL.md",
+      "bytes": 7697,
+      "sha256": "096dabcfa53c622d2b13a5a279faa675058636b851f89edba2cd19f217ffb1e1",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/12_MS2400_CLAUSE_BY_CLAUSE_CONTROL_EVIDENCE_MATRIX_2026.md",
+      "bytes": 12115,
+      "sha256": "08ae9bb74e0d8eff675973da5224644a205b1d0d0c92e99b339d6f37b293f48f",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/16_ATTACHED_PDF_SOURCE_INGESTION_2026-09-18.md",
+      "bytes": 7642,
+      "sha256": "a32a34d9533526a545f14cad99d91b0bf2c3fa2d7041d725db47838d0e3edc91",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/17_ULTRA_DEEP_STANDARDS_PDF_RECONCILIATION_2026-09-19.md",
+      "bytes": 6716,
+      "sha256": "5601b651b65ea753ee15810cff98e67a640d3adaa7ab5c5f55bc1bced60f7562",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/18_SUPPLIED_PDF_SOURCE_REVIEW_2026-09-27.md",
+      "bytes": 3658,
+      "sha256": "5c24c1290dd383c483149897acbc2096b1cccbc4e430c9afbebc1646bcd3a3a9",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/18_ULTRA_DEEP_CLAUSE_CONTROL_CANDIDATE_MATRIX_2026-09-19.md",
+      "bytes": 9650,
+      "sha256": "e104d15497f3e70e5ad74bef98f6b70e4b93161bfa19df967ab8ab5892f9094c",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/19_SUPPLIED_PDF_RECONCILIATION_2026-09-28.md",
+      "bytes": 4665,
+      "sha256": "3f9156d18101a26f941cd341f476030e0207b90fbd8f7ca57327f07794794105",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/20_PLATINUM_COMPILATION_REVIEW_2026-09-28.md",
+      "bytes": 3770,
+      "sha256": "3e2aa5fb981952a59398ec7a83e99ba053113a7d55a31f8bcec5a4b7a7eabf01",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/21_PLATINUM_BUNDLE_TRIAGE_2026-09-28.md",
+      "bytes": 5087,
+      "sha256": "027e46a8d680e842eb56243e0546ed0ded91febe374970b2d5c6c367e23d00c1",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/22_SINOTRANS_PLAYBOOK_BUNDLE_REVIEW_2026-09-28.md",
+      "bytes": 5230,
+      "sha256": "8fe8703122500a131fb637982af410fae4d11287e5111e0b19d9c83c70115ab7",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/26_OFFICIAL_CURRENT_VERIFICATION_ADDENDUM_2026.md",
+      "bytes": 1301,
+      "sha256": "14c5e3367834836470af3e2908e42bb87a559211dc4b3e4fd7583d75a8271904",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/AHTE_PLATINUM_REAL_TIME_MONITORING_STACK.md",
+      "bytes": 5278,
+      "sha256": "ca97be322dd3612ae2337b2aa0d5383910619f76a0fa23036333d1551a636c5d",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/AMANAH_PLATFORM_AZ_MAPPING.md",
+      "bytes": 11338,
+      "sha256": "8f415c84cfea5891426bc52cdad1734551600bd50eaef5e8194d1895b7e882a0",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/CHINA_EXECUTION_PACK/00_README.md",
+      "bytes": 4646,
+      "sha256": "6a3d99720be2208e95d49458542eda82e646f7932039d2e1ef9ee1b2372df6ca",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/CHINA_EXECUTION_PACK/01_DEPARTMENT_RACI.md",
+      "bytes": 4563,
+      "sha256": "892d4464792e5676bfb1050d590671607ab5adc822657e22b80ce67535d0dea8",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/CHINA_EXECUTION_PACK/02_RULE_PRECEDENCE_ENGINE.md",
+      "bytes": 5105,
+      "sha256": "6a980c9371702f7836a0c816e166b1103757819e64953dbc052e7d8aa369fb27",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/CHINA_EXECUTION_PACK/03_SHIPMENT_001_EVENT_CATALOGUE.md",
+      "bytes": 4472,
+      "sha256": "9e28ae3e3612c2c0cf8fdeb8dbc5a34bf905d2ac3efd00fb87c6be8df84b2439",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/CHINA_EXECUTION_PACK/04_FACTORY_SYSTEM_API_CONTRACTS.md",
+      "bytes": 3640,
+      "sha256": "c2d8c08104b0996d78c5825f517c818eef2c396e752f9c1fe9243ef7411f9f59",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/CHINA_EXECUTION_PACK/05_SMART_GLASS_AUDIT_SPECIFICATION.md",
+      "bytes": 3589,
+      "sha256": "54d3786ef9a6df1ba597d97b5d17e4a8ed6d212fe23df7a77359cd0e362c6210",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/CHINA_EXECUTION_PACK/06_PORT_OFFICER_UI_WORKFLOW.md",
+      "bytes": 3581,
+      "sha256": "f2235623336f46bac45d444fd1c1dd8de24b82b51c09b82a1e6fa3bf22742ece",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/CHINA_EXECUTION_PACK/07_CRYPTOGRAPHIC_TRUST_ANCHOR_ARCHITECTURE.md",
+      "bytes": 4308,
+      "sha256": "8932a852e68396d3301faee5834d5c6cae682339cabc991b2ae902f79bc0d44d",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/CHINA_EXECUTION_PACK/08_CHINA_PILOT_SHIPMENT001_GCC_RELEASE_PLAYBOOK.md",
+      "bytes": 5755,
+      "sha256": "111d18ba1344dc2cc6c6bd9ae16fa3334937f66a63373806943f0504d2caabc5",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/CHINA_EXECUTION_PACK/09_MASTER_STANDARDS_FULL_MATRIX.md",
+      "bytes": 7665,
+      "sha256": "bde839d200934a57a538ad89c612ee5c5a8a472431ac58e9a44128e60b247986",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/CHINA_EXECUTION_PACK/10_MACHINE_READABLE_EXECUTION_PACK.json",
+      "bytes": 5021,
+      "sha256": "7879560f0ca4f8dbd455be076f634e366a10f6ad0247a810f2941943a61770b5",
+      "kind": ".json"
+    },
+    {
+      "path": "master-standards-stack/IQ300_AHTE_PLATFORM_README.md",
+      "bytes": 5559,
+      "sha256": "4fb6a14c2c30599f3c04373bcdfc940a66c555242b411e23e8ba99db24ed085b",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/POST_FREEZE_LIFT_2026-09-26.md",
+      "bytes": 3428,
+      "sha256": "a8547fc70cf7dfb121c99e20ca5a486163a1825cdb752b513bb38f23622bdddc",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/POST_FREEZE_VERIFICATION.md",
+      "bytes": 1931,
+      "sha256": "45f99123e77de154b91ea7e7014bc6e8ebf18a208247f474183b0ab5711ec46f",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/README.md",
+      "bytes": 10941,
+      "sha256": "2a6095f99b6e84c3bca8c5e8b4ab8c82098cec25950844439b08a3056cc28ccc",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/attached-source-ingestion-registry-2026-09-18.json",
+      "bytes": 2546,
+      "sha256": "e06d89f2f301be24903505288eced7b854f41d68743a8e5441b2926c13f7638b",
+      "kind": ".json"
+    },
+    {
+      "path": "master-standards-stack/china-deployment/CHINA_COUNTERPART_INTERFACE_MATRIX.md",
+      "bytes": 3986,
+      "sha256": "4043864f38f0f5d987af7953720878981d69da00e5877d96f904161043016d8c",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/china-deployment/CHINA_SOVEREIGN_HOD_DEBRIEF.md",
+      "bytes": 18073,
+      "sha256": "b50c406a74820372031a36224d1b220ceb90efff190bd061d469e476941bd965",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/china-deployment/DATA_SOVEREIGNTY_ARCHITECTURE.md",
+      "bytes": 4271,
+      "sha256": "83fd7b3c6f0f7c49edfb53765b939e7700aeb7ad9d7526c2cd3d2a3b72f42c96",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/china-deployment/MANUFACTURER_ONBOARDING_DOSSIER.md",
+      "bytes": 3349,
+      "sha256": "6a614ecbf58944078269a827e11ebe833ad5f7d7e8069f0ce49769ee549ca9b8",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/china-deployment/MS_2636_2019_AHTE_CONTROL_MAP.md",
+      "bytes": 4691,
+      "sha256": "4a298e66740de212101ee604437cf2d5991a423989e395671bb54062b5680408",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/china-deployment/PORT_CUSTOMS_GATEWAY_SPEC.md",
+      "bytes": 2851,
+      "sha256": "2213637a7260ff3146d810332d89c9e2121d190436c0283b23ab661bdc41ec48",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/china-deployment/SHIPMENT_001_TRUST_PACKET_SCHEMA.json",
+      "bytes": 2350,
+      "sha256": "01267b239780fc69e5bda1452d9accf9ef3c5e65dbcdde632bebcc4c721219be",
+      "kind": ".json"
+    },
+    {
+      "path": "master-standards-stack/china-execution-pack/00_MASTER_CHINA_EXECUTION_MODEL.md",
+      "bytes": 8047,
+      "sha256": "a2204cfb74cdf49a8d9adb78d68208befa29b934c348c4648f648608fda3c27a",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/china-execution-pack/01_CHINA_HOD_RACI.md",
+      "bytes": 9252,
+      "sha256": "212d927713e6f79b5bd0a7e44993a61c25e2838a6745f69e6febc9a01bbc0252",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/china-execution-pack/02_RULE_PRECEDENCE_ENGINE.md",
+      "bytes": 8089,
+      "sha256": "c90d23ffb6917ed86494e0dd957a12b7f36d17ae58c6c2aba4995682bdb0d61e",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/china-execution-pack/03_SHIPMENT_001_EVENT_CATALOGUE.md",
+      "bytes": 9739,
+      "sha256": "4a0fe082c9eda513a30159a6a8b5e8255d21b8160d9acc8f048040ef0a30bd69",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/china-execution-pack/04_FACTORY_SYSTEM_API_CONTRACTS.md",
+      "bytes": 6228,
+      "sha256": "162c6a2133c68df6039db9e329a33a6e42cf43f92d60581cdc8ed810c5cb2238",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/china-execution-pack/05_SMART_GLASS_AUDIT_SPEC.md",
+      "bytes": 5675,
+      "sha256": "20b7081ca6b93e9d4731555d7c991c41b2bb55e69503fa1df3aab981d8662d58",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/china-execution-pack/06_PORT_OFFICER_UI_WORKFLOW.md",
+      "bytes": 5931,
+      "sha256": "57b5fcaa2aa21ee044c9ce2965638b01c544d9c15c049ce73914226c09f7c61c",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/china-execution-pack/07_CRYPTOGRAPHIC_TRUST_ANCHOR_ARCHITECTURE.md",
+      "bytes": 6006,
+      "sha256": "72bf9515c043e3ba7a8f61391aae39ce7012c929c27a8593337cdb539a987efd",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/china-execution-pack/08_CHINA_PILOT_SHIPMENT_001_GCC_RELEASE_PLAYBOOK.md",
+      "bytes": 8985,
+      "sha256": "1a444a87e9b0a195ecb100a31c05fd39a514d1edb705b0a3b38563ba9ad3adc8",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/china-execution-pack/CANONICAL_POINTER.md",
+      "bytes": 322,
+      "sha256": "4ea9cb03c15142d321cfef830b633a06d9a530499d867e8a60612b39d9482d3c",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/china-execution-pack/README.md",
+      "bytes": 10142,
+      "sha256": "641c1771fdba6a4e9557661371482498680e5ac1948a7f7f51699e2db8836e77",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/china-execution-pack/api/ahtE-factory-openapi.yaml",
+      "bytes": 13300,
+      "sha256": "b076b89f4b608f18e37832f3d8fc7501cad662cc676a7e182052b2f7f462c477",
+      "kind": ".yaml"
+    },
+    {
+      "path": "master-standards-stack/china-execution-pack/api/china-food-security-lab-openapi-extension.yaml",
+      "bytes": 15235,
+      "sha256": "2b096de67b3771f981d7796cc6a1fbac26bc2451d254d756e3bc14518f68c9e6",
+      "kind": ".yaml"
+    },
+    {
+      "path": "master-standards-stack/china-execution-pack/data/CHINA_HOD_INTERFACE_REGISTER.csv",
+      "bytes": 2464,
+      "sha256": "19456e33e6e5a60a38c2fbc94ccbbfcca5f1e64d2ddf8323fc76e0efcf98889e",
+      "kind": ".csv",
+      "data_rows": 13
+    },
+    {
+      "path": "master-standards-stack/china-execution-pack/data/SHIPMENT_001_EVENT_REGISTER.csv",
+      "bytes": 5155,
+      "sha256": "1b2f4f3d4dd159f3d1df2f53738346b277531fe867adb6f2fa5e5e2b0810997a",
+      "kind": ".csv",
+      "data_rows": 62
+    },
+    {
+      "path": "master-standards-stack/china-execution-pack/schemas/authority-decision.schema.json",
+      "bytes": 1421,
+      "sha256": "706b0f03b7e677977173f4d940c3728cda5e248e73265d6cb4a5204ce44fa1c2",
+      "kind": ".json"
+    },
+    {
+      "path": "master-standards-stack/china-execution-pack/schemas/custody-transfer.schema.json",
+      "bytes": 1199,
+      "sha256": "9271a7027666cdec326ae91972f09718cd31270acd0218d235fe6ae086cc27e5",
+      "kind": ".json"
+    },
+    {
+      "path": "master-standards-stack/china-execution-pack/schemas/shipment-001-event.schema.json",
+      "bytes": 1822,
+      "sha256": "ad587210520be06abb1624aa8acbe7db1e294978cdb147a47d361acd61e3c822",
+      "kind": ".json"
+    },
+    {
+      "path": "master-standards-stack/china-execution-pack/schemas/trust-assertion.schema.json",
+      "bytes": 1443,
+      "sha256": "6718bc6b1bc469ab826419f38b20e50a4558d40d88c11ad9e906a44f52fa745c",
+      "kind": ".json"
+    },
+    {
+      "path": "master-standards-stack/iq300-all-jakim-ms/01_MASTER_STANDARDS_REGISTER.md",
+      "bytes": 14816,
+      "sha256": "95c73ff0d3c211a120276ed7a612fcd498ca4d110813ee26a7dda1e17538ac50",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/iq300-all-jakim-ms/02_UNIFIED_CLAUSE_CONTROL_HCP_MATRIX.md",
+      "bytes": 9684,
+      "sha256": "3a1125105c16144ef1dcfe5de6760ee401a9395aea538df48c9e5a1b159ea5dc",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/iq300-all-jakim-ms/03_COMPLETE_MERMAID_PROCESS_FLOWS.md",
+      "bytes": 5387,
+      "sha256": "8934d97d81baccfd02e1cba723d41e0d9f2226b865800b0391be4fdfa7261aed",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/iq300-all-jakim-ms/04_IQ300_STANDARD_CATALOGUE_AND_MAPPING.csv",
+      "bytes": 5657,
+      "sha256": "c5fa8ea09f9edf69e2249f8bc1ead359a5a46a7416f733ec8aa92e379fa5d424",
+      "kind": ".csv",
+      "data_rows": 16
+    },
+    {
+      "path": "master-standards-stack/iq300-all-jakim-ms/05_SOURCE_COVERAGE_GAP_AND_FREEZE_REGISTER.md",
+      "bytes": 4007,
+      "sha256": "4713a37397964718b85670f4613d473e9bcc736c4c7d15c529d7d49b30adef22",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/iq300-all-jakim-ms/06_AUTHORITY_GATE_AND_AUDIT_TEST_CATALOG.md",
+      "bytes": 3606,
+      "sha256": "0ae46ec050cab6c8fe7770707e9826e0e58fc3e3d7d428e47accd4986bff207c",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/iq300-all-jakim-ms/07_MACHINE_READABLE_STANDARD_OBJECT_MODEL.json",
+      "bytes": 1482,
+      "sha256": "6ef19c514a4f574c8073e71120878a68baa2702fff509f00bf68d1734723df0a",
+      "kind": ".json"
+    },
+    {
+      "path": "master-standards-stack/iq300-all-jakim-ms/08_VISUAL_MASTER_ARCHITECTURE.svg",
+      "bytes": 3353,
+      "sha256": "161bd6a93af36fc2d26fb50b62936b5f51a8392e31401bef0122aee89ff8d992",
+      "kind": ".svg"
+    },
+    {
+      "path": "master-standards-stack/iq300-all-jakim-ms/09_STANDARDS_COVERAGE_MATRIX.svg",
+      "bytes": 4435,
+      "sha256": "c9fa5b69bcfb5054c40f13d757ee174c19356e15bd1aa9bc521d45ced3bab096",
+      "kind": ".svg"
+    },
+    {
+      "path": "master-standards-stack/iq300-all-jakim-ms/README.md",
+      "bytes": 4082,
+      "sha256": "5d44d230e475d7a7a44bc223cb072b5582acc89c6f1e75ceefbfe517c3e09af5",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/iq300-full-matrix/ANNEX_MAP.md",
+      "bytes": 1399,
+      "sha256": "5b47a8edcfdabcb0f1adbe0b7486877c4acf77d1b7dbc8f9259af71e53ea1065",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/iq300-full-matrix/AUTHORITY_GATE_CATALOG.md",
+      "bytes": 799,
+      "sha256": "9ac504deeee7683ec0936cd6d88be6245f2cd7c05b67d6f26f4e36e79303b78a",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/iq300-full-matrix/CONTROL_CATALOG.md",
+      "bytes": 1193,
+      "sha256": "baea12a1c69b9eb0bb8668e866353a9520c05a76bb0d8f820155ded93d974ff5",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/iq300-full-matrix/IQ300_MASTER_UPGRADE.md",
+      "bytes": 2343,
+      "sha256": "edc4c4a2859b2962bae57d9b1d367cc82adfa9eea481f3fb7059d0e79ed1bf5a",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/iq300-full-matrix/IQ300_MATRIX_QA_REPORT.json",
+      "bytes": 1542,
+      "sha256": "6ea0b432d2858339e44b50bb9551341894d0f146191d354dc453191d85f7a899",
+      "kind": ".json"
+    },
+    {
+      "path": "master-standards-stack/iq300-full-matrix/MACHINE_READABLE_MANIFEST.json",
+      "bytes": 2191,
+      "sha256": "b5e80d7c641a6256f9f73a283c0a4a326709680503333511d1e33630eee166bf",
+      "kind": ".json"
+    },
+    {
+      "path": "master-standards-stack/iq300-full-matrix/MS2400-22019_IQ300_REQUIREMENTS.json.gz",
+      "bytes": 11803,
+      "sha256": "6314b87022bda1acddaf402347ba0450018451c110cf41043a5db0ff491af728",
+      "kind": ".json.gz"
+    },
+    {
+      "path": "master-standards-stack/iq300-full-matrix/PROCESS_FLOWS.md",
+      "bytes": 1993,
+      "sha256": "35592878f793210c9ccf6097c9626e44d0f0547f9373c5c7027c82da4a324757",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/iq300-full-matrix/README.md",
+      "bytes": 1274,
+      "sha256": "3b42fc73aa79f5e770c209666f823c040eb0c16c57de38b4a2d0fdeb024ff475",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/iq300-full-matrix/SECTOR_FAMILY_CONTROL_MATRIX.md",
+      "bytes": 3374,
+      "sha256": "2f6520abfe6baea7abe694d8d17548a5f0daf55aa909e69eb761b5e7a2adfa08",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/iq300-full-matrix/SOURCE_AND_GAP_REGISTER.md",
+      "bytes": 1373,
+      "sha256": "756ac79be76b976f774c2ecc4d86b1be5774ce9dae159eb613ab3fb3fae4734b",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/iq300-full-matrix/TEST_LIBRARY.md",
+      "bytes": 1271,
+      "sha256": "4b40ed02382f180d403d2873112f305db0a66929b1966fe83a5fdd22df496a11",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/iq300-full-matrix/requirement_schema.json",
+      "bytes": 1595,
+      "sha256": "0f8c1342b43ab3acc836ba24f31270583d8e8ec20105cdfd92a4e575cfcc6551",
+      "kind": ".json"
+    },
+    {
+      "path": "master-standards-stack/iq300-full-matrix/source-index-2026-09-27/IQ300_MS2400_SOURCE_INDEX_2026-09-27.tar.gz",
+      "bytes": 3301,
+      "sha256": "7a3b8922c3f14e554863379b8287a4133a7d655b61a377378394a3e5d4109a04",
+      "kind": ".tar.gz",
+      "archive_members": 4
+    },
+    {
+      "path": "master-standards-stack/iq300-full-matrix/source-index-2026-09-27/MS2400-1_2019_CLAUSE_LOCATORS.json",
+      "bytes": 19834,
+      "sha256": "9b4e09c3b635b12dd5464b839f62a38ee3791cc7afd6790ecf1f26f5326be00c",
+      "kind": ".json"
+    },
+    {
+      "path": "master-standards-stack/iq300-full-matrix/source-index-2026-09-27/MS2400-2_2019_CLAUSE_LOCATORS.json",
+      "bytes": 21280,
+      "sha256": "f5f86efdcabcbf5090d1ba1e8c8e753996f8bf8776a332d27adaab187a839feb",
+      "kind": ".json"
+    },
+    {
+      "path": "master-standards-stack/iq300-full-matrix/source-index-2026-09-27/MS2400-3_2019_CLAUSE_LOCATORS.json",
+      "bytes": 23701,
+      "sha256": "004cf70b0ee6d50dfc29a02c05ec6907b34eea5d0003b010a8fd78a5f3de2bf0",
+      "kind": ".json"
+    },
+    {
+      "path": "master-standards-stack/iq300-full-matrix/source-index-2026-09-27/SOURCE_INDEX_MANIFEST.json",
+      "bytes": 2278,
+      "sha256": "5b00fb8963ab7a1b8694423327bfdb3154b2b9cdbe78697fe8b55dc5c0afe6f3",
+      "kind": ".json"
+    },
+    {
+      "path": "master-standards-stack/process-flow-infographics/00_AHTE_MASTER_JAKIM_MS_PROCESS_FLOW.svg",
+      "bytes": 73029,
+      "sha256": "2ebcf8e9730569be60c8238ef18d4dd48274edb4a94be9459b12a64ea7debb14",
+      "kind": ".svg"
+    },
+    {
+      "path": "master-standards-stack/process-flow-infographics/01_MS_1500_2019_PROCESS_FLOW.svg",
+      "bytes": 6953,
+      "sha256": "4fb0df5c549d1959c8caeb6a86b5ea6821457672615ac250a0886c094892ac23",
+      "kind": ".svg"
+    },
+    {
+      "path": "master-standards-stack/process-flow-infographics/02_MS_2400_1_2019_PROCESS_FLOW.svg",
+      "bytes": 6957,
+      "sha256": "bab4b117e1d2b73c431557f903434ad1f07ba4c9ce24d54566e707e83d1ed9a0",
+      "kind": ".svg"
+    },
+    {
+      "path": "master-standards-stack/process-flow-infographics/03_MS_2400_2_2019_PROCESS_FLOW.svg",
+      "bytes": 6975,
+      "sha256": "9965c16801eb78d5c3f5acf2ce29c5a48c867b6d20d00e5f8ef10e582140ff7c",
+      "kind": ".svg"
+    },
+    {
+      "path": "master-standards-stack/process-flow-infographics/04_MS_2400_3_2019_PROCESS_FLOW.svg",
+      "bytes": 6952,
+      "sha256": "2725f3e8ee51831d7c0d533417eeee46010f8350c8cf23846f43848cb769025f",
+      "kind": ".svg"
+    },
+    {
+      "path": "master-standards-stack/process-flow-infographics/05_MS_2424_2019_PROCESS_FLOW.svg",
+      "bytes": 6951,
+      "sha256": "ceefe68dff72b2fd0c7474ca22a29cf1ec3d247258bca9488644d0fe96c91927",
+      "kind": ".svg"
+    },
+    {
+      "path": "master-standards-stack/process-flow-infographics/06_MS_2634_2019_PROCESS_FLOW.svg",
+      "bytes": 6976,
+      "sha256": "f58d144edfb87a280215c836b9fa429d14ba897e0a297c6f48563ad11188d0cb",
+      "kind": ".svg"
+    },
+    {
+      "path": "master-standards-stack/process-flow-infographics/07_MS_2738_2023_PROCESS_FLOW.svg",
+      "bytes": 6930,
+      "sha256": "4b87e42676356b2f4b819cf060ec453e88effdf1a099a1b26f3c12651f0c5c28",
+      "kind": ".svg"
+    },
+    {
+      "path": "master-standards-stack/process-flow-infographics/08_MS_2803_2025_PROCESS_FLOW.svg",
+      "bytes": 6933,
+      "sha256": "d08d6d48069fb64d01b80b3b88067aa19c5861ab1d502ecfaa11b542a1f1e7cc",
+      "kind": ".svg"
+    },
+    {
+      "path": "master-standards-stack/process-flow-infographics/09_MS_2809_2025_PROCESS_FLOW.svg",
+      "bytes": 6969,
+      "sha256": "8cec148461b7acf139b12f773fadf91a3bb64ff62fdc8d5243281581170cbcbd",
+      "kind": ".svg"
+    },
+    {
+      "path": "master-standards-stack/process-flow-infographics/10_MS_2810_2025_PROCESS_FLOW.svg",
+      "bytes": 6938,
+      "sha256": "2fd1981bb1b5c21a4fdf8c19639e62eeead707417df7faea35866dd8e8b11491",
+      "kind": ".svg"
+    },
+    {
+      "path": "master-standards-stack/process-flow-infographics/11_MS_2393_2023_PROCESS_FLOW.svg",
+      "bytes": 6861,
+      "sha256": "f66fa6c7cda11c385502bd140987712a852dbab60a671bbaceaec7aab6f589fc",
+      "kind": ".svg"
+    },
+    {
+      "path": "master-standards-stack/process-flow-infographics/12_MS_2627_2017_PROCESS_FLOW.svg",
+      "bytes": 6939,
+      "sha256": "7c4c819f7d8a0699cdd6bef9453051801a82520c0b3f130e9f1c57c6b0418fb3",
+      "kind": ".svg"
+    },
+    {
+      "path": "master-standards-stack/process-flow-infographics/13_MS_2627_2_2025_PROCESS_FLOW.svg",
+      "bytes": 6942,
+      "sha256": "757ff5700a748e31de198d702ab85495c18dffcaf4c8823fcf75a03ede1f4216",
+      "kind": ".svg"
+    },
+    {
+      "path": "master-standards-stack/process-flow-infographics/14_MS_1900_2025_PROCESS_FLOW.svg",
+      "bytes": 6963,
+      "sha256": "810794a266d4edbd11f5f2e541b800b573047dfff4afcb7ebb1b31d049ff9f83",
+      "kind": ".svg"
+    },
+    {
+      "path": "master-standards-stack/process-flow-infographics/15_MS_2691_2021_PROCESS_FLOW.svg",
+      "bytes": 6933,
+      "sha256": "9ee6db92bf2ec6050163999429f036cbe37da259c999a57e64b751fb10635883",
+      "kind": ".svg"
+    },
+    {
+      "path": "master-standards-stack/process-flow-infographics/16_MS_2610_2015_PROCESS_FLOW.svg",
+      "bytes": 6959,
+      "sha256": "5a042f0dda670e9f962f5575cb21eda5fc00b69405a9d2c53f2d12d86404317b",
+      "kind": ".svg"
+    },
+    {
+      "path": "master-standards-stack/process-flow-infographics/17_MS_2636_2019_PROCESS_FLOW.svg",
+      "bytes": 7023,
+      "sha256": "350ff9da63575a65d66b5a1eaca23fa788dc8b989d0963a97fec0b5519c66cba",
+      "kind": ".svg"
+    },
+    {
+      "path": "master-standards-stack/process-flow-infographics/AHTE_HD_VISUAL_ATLAS.md",
+      "bytes": 9006,
+      "sha256": "48587659fd39b0e175cfc0318da41c3b4be99767aca44d716c9649aa3ef85964",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/process-flow-infographics/README.md",
+      "bytes": 3633,
+      "sha256": "83b32a5e81a802ba2ba8b39c9391f1f3eb88b3cb8e2568a289576b5ad956add3",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/process-flow-infographics/STANDARDS_FLOW_SPEC.json",
+      "bytes": 8566,
+      "sha256": "9dfb8f967a8727a6f0a5d23ce27c06b568758205e3b5eee95448253f316624e4",
+      "kind": ".json"
+    },
+    {
+      "path": "master-standards-stack/source-bundle-holdings-2026-09-28.json",
+      "bytes": 16704,
+      "sha256": "0764bd31db70f0fa467045c9d6b8ec050847a63b70fc9f2edea94c4ff0a5d06b",
+      "kind": ".json"
+    },
+    {
+      "path": "master-standards-stack/source-holdings-2026-09-27.json",
+      "bytes": 3081,
+      "sha256": "4665eacadf39f2fdc2620e9ccaf3e84b5c8b064c8989368af4a20dadca660a4a",
+      "kind": ".json"
+    },
+    {
+      "path": "master-standards-stack/source-holdings-2026-09-28.json",
+      "bytes": 5021,
+      "sha256": "0d7816b98f9dc5fd70cb2d98f95dc09610891860f783d019d78adda733d3cb78",
+      "kind": ".json"
+    },
+    {
+      "path": "master-standards-stack/source-sinotrans-bundle-2026-09-28.json",
+      "bytes": 3672,
+      "sha256": "0e30d56d50b1b8831cd0f761a25e7194c3d283cdc7c956b75412e0edaa0d5374",
+      "kind": ".json"
+    },
+    {
+      "path": "master-standards-stack/ultra-deep-candidate-control-registry-2026-09-19.json",
+      "bytes": 6168,
+      "sha256": "de08cacd1ca26b84594063030bd0da3090a65391073eb17842cf28078f32c7cd",
+      "kind": ".json"
+    },
+    {
+      "path": "master-standards-stack/ultra-deep-standards-ingestion-registry-2026-09-19.json",
+      "bytes": 1314,
+      "sha256": "12f212e8e994982ed5a4ae7bc6b97b8c2df66a27f471ce4406effaaf4c9454f9",
+      "kind": ".json"
+    },
+    {
+      "path": "master-standards-stack/verified-2026-09-17/00_README.md",
+      "bytes": 9257,
+      "sha256": "7a94c9d8e872918bf3022c855313fd842b318557681eb6dbc1e24fd8b34ca40e",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/verified-2026-09-17/01_MASTER_CATALOGUE_REVISION_REGISTER.md",
+      "bytes": 8919,
+      "sha256": "a486723555a8c24cff40de2509a370a8f17e3ce5b5e8696a245ef05b94c07201",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/verified-2026-09-17/02_JAKIM_MPPHM2020_MHMS2020_CONTROL_MANUAL.md",
+      "bytes": 19134,
+      "sha256": "cab6091e66fbafd8a59748295a9b3b781d36e35fb0a71fda490dfc19795a0166",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/verified-2026-09-17/03_ALL_MS_CLAUSE_CONTROL_EVIDENCE_MANUAL.md",
+      "bytes": 30529,
+      "sha256": "15f6cf96cfd6135a79ca1f7fe0edd85616a8161a7187770bb84e3aa3f98243c8",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/verified-2026-09-17/04_SERTU_STUNNING_PROTOCOL_LINKAGE.md",
+      "bytes": 8621,
+      "sha256": "3735067dc0f499271edc07f9df99e64b954ff50f202d5a2574e6cb208cf82b33",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/verified-2026-09-17/05_AUDIT_EVIDENCE_AUTHORITY_TEST_LIBRARY.md",
+      "bytes": 14176,
+      "sha256": "eb014e8723291a666b4d47e824c6dc405be273142f4e28b73889efdf1317cc1d",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/verified-2026-09-17/06_CHINA_GCC_MANUFACTURER_MARKET_VALIDATION.md",
+      "bytes": 17557,
+      "sha256": "5e1afb2a0c45f55ff883a30c0f4157c8cfa12360ce3115b074ab1841915f209e",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/verified-2026-09-17/07_AZ_COMPLETION_EXTERNAL_GATE_REGISTER.md",
+      "bytes": 12491,
+      "sha256": "e4e6cbd3984551cdd2b900c703da9e19d9de259fa5b33272ec61f668a976ff55",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/verified-2026-09-17/08_SOURCE_VERIFICATION_REGISTER.md",
+      "bytes": 11420,
+      "sha256": "869ec0b8784ed02507102ce3a693897fe216a3e1c2f115db41539388b982ce49",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/verified-2026-09-17/09_REPOSITORY_INTEGRITY_AUDIT.md",
+      "bytes": 4030,
+      "sha256": "650d2103d431d487dbf3b51fc6c4673760081217d365ed5b33fd96aa0132533e",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/verified-2026-09-17/10_ATTACHED_PDF_DEEP_DIVE_RECONCILIATION.md",
+      "bytes": 15644,
+      "sha256": "2eef33316753e8823a5fb68e356adf478143e61e50ea7296688b5d8be5284da0",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/verified-2026-09-17/11_AUDIT_CLOSURE_TRACEABILITY_GOVERNANCE_MODEL.md",
+      "bytes": 12531,
+      "sha256": "7f0d34df6dc4877e074b3956a41ab644b5aceac92879c2200e76da2de9ac8343",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/verified-2026-09-17/12_MANUFACTURER_ECONOMIC_AND_MARKET_DECISION_MODEL.md",
+      "bytes": 12661,
+      "sha256": "6be77974c48e8d96eb07ff95b66d582a9a0cff0d174d5fbd851d51bda93caef1",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/verified-2026-09-17/13_NAJS_CONTAMINATION_AND_RELEASE_DECISION_MODEL.md",
+      "bytes": 7027,
+      "sha256": "1c2d91eb214829454c9a64e664945274f12acd57145cab0e29be2380629eeb33",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/verified-2026-09-17/14_HALAL_BUILT_IN_RETROFIT_FACTORY_TRANSFORMATION_MODEL.md",
+      "bytes": 7126,
+      "sha256": "9f580a45c5b17272d19fb112f086e73e504f56d7a0de1334e149ae897ed7a4bf",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/verified-2026-09-17/15_POST_PDF_INGESTION_INTEGRITY_AUDIT.md",
+      "bytes": 10388,
+      "sha256": "3ebde37baca42e72f72a53defa31a2edfe082b89fc6e292363a7bc508988cfda",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/verified-2026-09-17/MANIFEST.json",
+      "bytes": 6186,
+      "sha256": "e87923c273919953fd25211daa175906ed42ea26a863a21b71b3111bb1e8ced9",
+      "kind": ".json"
+    },
+    {
+      "path": "master-standards-stack/verified-2026-09-26-v2/00_README.md",
+      "bytes": 2883,
+      "sha256": "71a20c97fbfc96c9b7e3ca6b208d79ab1c137a397b3a3ed203142b6b4535ea04",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/verified-2026-09-26-v2/01_ILLUSTRATED_V2_DELTA_AUDIT.md",
+      "bytes": 15540,
+      "sha256": "ebcc7e67fcedef641fbbf59224ef736896eceeaec5458c4254f5230fa07809ac",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/verified-2026-09-26-v2/02_ILLUSTRATED_V2_DIAGRAM_CLAIM_REGISTER.json",
+      "bytes": 6542,
+      "sha256": "d6e444e1611b78d6d3b9c7f8f6ab02dd652b728af508412217ae9043d233c612",
+      "kind": ".json"
+    },
+    {
+      "path": "master-standards-stack/verified-2026-09-26-v2/MANIFEST.json",
+      "bytes": 1089,
+      "sha256": "40118efcb393ebcee548e9329c95c9c29d16bd300363e0580505735fb4f34a61",
+      "kind": ".json"
+    },
+    {
+      "path": "master-standards-stack/verified-2026-09-26/00_README.md",
+      "bytes": 6035,
+      "sha256": "c5e1e9a807c327c1c160ba23aec340e1940f850db41cc838be28e023f5ceda70",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/verified-2026-09-26/01_PLATINUM_TIER_MASTER_PDF_INGESTION_AUDIT.md",
+      "bytes": 14465,
+      "sha256": "5dc2e1b40056ae2dc65efa372efe9a299c78744d7b0b226e24c0b8c28b51d7b6",
+      "kind": ".md"
+    },
+    {
+      "path": "master-standards-stack/verified-2026-09-26/02_PLATINUM_CLAIM_VERIFICATION_REGISTER.json",
+      "bytes": 9455,
+      "sha256": "88bfe5a7ec7063f37c4956b11902be67d1232f0ff193fdafc7ec140b1312db75",
+      "kind": ".json"
+    },
+    {
+      "path": "master-standards-stack/verified-2026-09-26/MANIFEST.json",
+      "bytes": 2369,
+      "sha256": "3314b208e8d59b9c7c32581637037259c3cbb27e04bf50b363f214e8fce662ad",
+      "kind": ".json"
+    },
+    {
+      "path": "partners/README.md",
+      "bytes": 1356,
+      "sha256": "d3e507d28d726486a11fc19cbf11cf6db6f98af5f9f16f7dbfb09985402300c4",
+      "kind": ".md"
+    },
+    {
+      "path": "partners/carrefour-maf/README.md",
+      "bytes": 309,
+      "sha256": "0fbb04656e063ffa90ca0a9b1251e9093d2e6118edab9c1d69644194155cf48b",
+      "kind": ".md"
+    },
+    {
+      "path": "partners/china-food-security-lab/AHTE_JAKIM_INTEGRATION_PROFILE_2026-09-26.md",
+      "bytes": 16484,
+      "sha256": "e29fc643ae90a07b5c2606c48c52edc95f008abeac1d6a72eea0dc329678218e",
+      "kind": ".md"
+    },
+    {
+      "path": "partners/china-food-security-lab/README.md",
+      "bytes": 867,
+      "sha256": "659ab2b7e1c4bdb993461d6d5183f3111f9195e5922578b8e65578141b5364af",
+      "kind": ".md"
+    },
+    {
+      "path": "partners/china-merchant/README.md",
+      "bytes": 491,
+      "sha256": "e10d5a23347fe1fb1f45ac7f8b2e3c931d7e526cdec4b1c82acfb2d4ddf4e9df",
+      "kind": ".md"
+    },
+    {
+      "path": "partners/coda/INTEGRATION_AND_ENTERPRISE_ENABLEMENT_MODEL.md",
+      "bytes": 6087,
+      "sha256": "bf481f863fc6127698bada8ac7df0d408bd895adcd5f8d1b5dc0849cc7c46d12",
+      "kind": ".md"
+    },
+    {
+      "path": "partners/coda/README.md",
+      "bytes": 741,
+      "sha256": "9fcd4932cf858bd6e8997d483364dab84145ea41c93713efb2ca8fd6720543c0",
+      "kind": ".md"
+    },
+    {
+      "path": "partners/coda/proposed-mou-framework.md",
+      "bytes": 6203,
+      "sha256": "910ecd5ccdf4d4d11757c4fdcf1b1dfd2d3773fd76639852f220949b3b0d35ad",
+      "kind": ".md"
+    },
+    {
+      "path": "partners/coda/strategic-partnership-plan.md",
+      "bytes": 4612,
+      "sha256": "badddf28858d6531b83d5bcd8e3981d27de7b85251b5902d59cb136bdcac9aed",
+      "kind": ".md"
+    },
+    {
+      "path": "partners/ghsc-hk/README.md",
+      "bytes": 529,
+      "sha256": "e57a154607848674d6d1bc1f0f4e1743b75d86d0037a51a876371dd89bfc820f",
+      "kind": ".md"
+    },
+    {
+      "path": "partners/jgc/README.md",
+      "bytes": 328,
+      "sha256": "f668a0dc866b259971e019eba0ae84cb1789ab5faed63ab10c7de37299140769",
+      "kind": ".md"
+    },
+    {
+      "path": "partners/lulu/README.md",
+      "bytes": 358,
+      "sha256": "57546e7389835e0503c81be0e9ffc843dcdb747834d470454747a7bcd4be9b5a",
+      "kind": ".md"
+    },
+    {
+      "path": "partners/nicfs/README.md",
+      "bytes": 671,
+      "sha256": "b4a7b2e2b00ef15513503e993c615c61e869dac8c8d8bdf1ac0ebd262cbc1c95",
+      "kind": ".md"
+    },
+    {
+      "path": "partners/noon/README.md",
+      "bytes": 272,
+      "sha256": "cf43b60fc4a780b26be89bd6954873d5cbcbd314462aca3df396fd1c1a3ddd0e",
+      "kind": ".md"
+    },
+    {
+      "path": "partners/phc/README.md",
+      "bytes": 380,
+      "sha256": "766d8aa1aa9dd23cd267566a0dce339bced2029f4ff814b831ec04165d1f2150",
+      "kind": ".md"
+    },
+    {
+      "path": "partners/sinotrans/MOU_GHSC_2026-03-03.md",
+      "bytes": 1741,
+      "sha256": "582f1fc83ee2f0a689cff9f2bc6fb93b5d9bd0486ea5be3136664f94944f918b",
+      "kind": ".md"
+    },
+    {
+      "path": "partners/sinotrans/README.md",
+      "bytes": 640,
+      "sha256": "4b78eedf8070f79cfe6e21b958a1a3d44b877277e89275ae844483fbb38ab9d3",
+      "kind": ".md"
+    },
+    {
+      "path": "partners/tamimi/README.md",
+      "bytes": 302,
+      "sha256": "21e1e468a460e5f3392dcf47d73da005b1de641730f53583f7b51bc8a24cd7a3",
+      "kind": ".md"
+    },
+    {
+      "path": "platform/Dockerfile",
+      "bytes": 257,
+      "sha256": "1e5ad044043f58d5a4541eee2bc83a84160c63d2864417d909b17c383e0abb25",
+      "kind": "(none)"
+    },
+    {
+      "path": "platform/README.md",
+      "bytes": 1578,
+      "sha256": "350b828b11eceaf8fd62309c754e03070ff5f160c74e974f8d8dbff341e20b6e",
+      "kind": ".md"
+    },
+    {
+      "path": "platform/docker-compose.yml",
+      "bytes": 182,
+      "sha256": "c21cedf78bd36b0cbcb7ba387466d3b59201458b004a7398bd45d88b8008594d",
+      "kind": ".yml"
+    },
+    {
+      "path": "platform/policies/hitm-default-deny.rego",
+      "bytes": 508,
+      "sha256": "d1a69bef9d9e444d005ac6daf8d87dbe64c3d7c02451fdc27b6d94137e217ad0",
+      "kind": ".rego"
+    },
+    {
+      "path": "platform/pytest.ini",
+      "bytes": 26,
+      "sha256": "363381771127e3479fe49773659cc2a8dc2b2f727459ebd057ac39e79e98a94e",
+      "kind": ".ini"
+    },
+    {
+      "path": "platform/requirements.txt",
+      "bytes": 78,
+      "sha256": "053d77afdd076a9006f57cac98e7ddef359b77435a67719dbb1ef11cd60be471",
+      "kind": ".txt"
+    },
+    {
+      "path": "platform/src/ahte/__init__.py",
+      "bytes": 50,
+      "sha256": "3cf5750a9756fbdc07c967574472fce4cb587bef87b5b899fbf08edb18344ae1",
+      "kind": ".py"
+    },
+    {
+      "path": "platform/src/ahte/api.py",
+      "bytes": 2321,
+      "sha256": "f13b4127d352c16e334f7051348733968f12ce24231ed0c601768a61e84d4a63",
+      "kind": ".py"
+    },
+    {
+      "path": "platform/src/ahte/engine.py",
+      "bytes": 4892,
+      "sha256": "b7eba898cb4dc472e146171eb129961922f426adda034f5d83a37d5bc7b43213",
+      "kind": ".py"
+    },
+    {
+      "path": "platform/src/ahte/hitm.py",
+      "bytes": 1344,
+      "sha256": "61166cdc45ac585f2856f44222f0fe2c335aa61e1d07dc23141691acb556ea18",
+      "kind": ".py"
+    },
+    {
+      "path": "platform/src/ahte/models.py",
+      "bytes": 1967,
+      "sha256": "b8851d72a9d29c7a8744dbdf5b87ddf517404caf07f88004c235f5013bd4b5b5",
+      "kind": ".py"
+    },
+    {
+      "path": "platform/src/ahte/store.py",
+      "bytes": 1102,
+      "sha256": "c85b38f9e2469f20d94ee8a8969de46b530b2b6fbfb2bf933a56f5bbbb798020",
+      "kind": ".py"
+    },
+    {
+      "path": "platform/tests/test_runtime.py",
+      "bytes": 5282,
+      "sha256": "fb31478db2c8739c393b00bb907acb09fe688e23892ff6d967f832d02e3ec986",
+      "kind": ".py"
+    },
+    {
+      "path": "runtime/README.md",
+      "bytes": 476,
+      "sha256": "70856337a329d7ba0f6300370b177a2c8b5a52671dd530a62b94209f9a5a1ae0",
+      "kind": ".md"
+    },
+    {
+      "path": "runtime/engine/README.md",
+      "bytes": 395,
+      "sha256": "ea68b3e1e83a98d1dde9e33b49fd730e7d81a20ff76f21606c51279755f03076",
+      "kind": ".md"
+    },
+    {
+      "path": "runtime/engine/engine.py",
+      "bytes": 9051,
+      "sha256": "3f8ad2086cb13ade410221bc1ef3325893f99bbc78a9c1ab461ea5914387da85",
+      "kind": ".py"
+    },
+    {
+      "path": "runtime/engine/verify_system.py",
+      "bytes": 2312,
+      "sha256": "75706fa3d1468af29e1895aac7e6bb72bcc07459c5ae5151cb666a4bb5ccb701",
+      "kind": ".py"
+    },
+    {
+      "path": "runtime/gateway/Dockerfile",
+      "bytes": 316,
+      "sha256": "78c8be4ab47a40dd4167618729e8b9487ce0f4cf255a3214e1a0214fe34b3833",
+      "kind": "(none)"
+    },
+    {
+      "path": "runtime/gateway/app.py",
+      "bytes": 8373,
+      "sha256": "1e74d5a2722a5faacaf8a17c42d452c2ce08eae4a794eb72a01c0a626e18096d",
+      "kind": ".py"
+    },
+    {
+      "path": "runtime/gateway/crypto.py",
+      "bytes": 2476,
+      "sha256": "92c77ea08a6804542357f9e9a95f7880665a2eef31468d33d34b3a746457626f",
+      "kind": ".py"
+    },
+    {
+      "path": "runtime/gateway/edge_ingest.py",
+      "bytes": 2031,
+      "sha256": "54844cd54fcccaee5e8d3caba6d948f8e46854d249fb8ba1465917f3281fcc8b",
+      "kind": ".py"
+    },
+    {
+      "path": "runtime/gateway/fsm.py",
+      "bytes": 1377,
+      "sha256": "b05760cccf81f60c2b3426369da92aebc3318ed7d1773fcef402727b5ba377bb",
+      "kind": ".py"
+    },
+    {
+      "path": "runtime/gateway/models.py",
+      "bytes": 1578,
+      "sha256": "cd89b8e3ab7f79ca8908a468f81f9bee20d972696216a3331ea22714f279452e",
+      "kind": ".py"
+    },
+    {
+      "path": "runtime/gateway/requirements.txt",
+      "bytes": 131,
+      "sha256": "5c2214b8a0ddd7e579fac6455d748e85596b55459d253ae2af13b3f7c1dc256d",
+      "kind": ".txt"
+    },
+    {
+      "path": "runtime/policies/data.json",
+      "bytes": 1128,
+      "sha256": "7f422560eebe844d8319c4f0dedbbcfe4a5f3864bcb7daeb34f18a317daf1a2e",
+      "kind": ".json"
+    },
+    {
+      "path": "runtime/policies/halal_gate.rego",
+      "bytes": 1017,
+      "sha256": "03f8f5c4a7f1bc274f8c126c27797f2194ffe05190f15bcbb7c1f4beb4bb116d",
+      "kind": ".rego"
+    },
+    {
+      "path": "runtime/policies/halal_gate_test.rego",
+      "bytes": 1684,
+      "sha256": "26bffd981a86586241fa747bb93397589fdcf875d96ac27e76ab56dda498eb48",
+      "kind": ".rego"
+    },
+    {
+      "path": "runtime/policies/halal_master.rego",
+      "bytes": 2496,
+      "sha256": "741b85d9045225ac32ffd0c7ec688e5a3f85cc7359a30516c0881e44b57cfc2d",
+      "kind": ".rego"
+    },
+    {
+      "path": "runtime/policies/halal_master_test.rego",
+      "bytes": 2406,
+      "sha256": "a6894007690d170c13d8e37cc3133b200eeed716e337ddcbc7d6867f14625759",
+      "kind": ".rego"
+    },
+    {
+      "path": "schemas/halal_credential_schema.json",
+      "bytes": 1517,
+      "sha256": "c69fc8460055934005e3f58da0a91352bc25df009e73e3a3df72c713596d5535",
+      "kind": ".json"
+    },
+    {
+      "path": "tests/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": ".py"
+    },
+    {
+      "path": "tests/e2e/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": ".py"
+    },
+    {
+      "path": "tests/e2e/test_shipment_pipeline.py",
+      "bytes": 4217,
+      "sha256": "d26a97d4173f958bc2340514ffc5a82863465902b72094225fdd6121599e87f2",
+      "kind": ".py"
+    },
+    {
+      "path": "tests/runtime_path.py",
+      "bytes": 368,
+      "sha256": "95f51afc3ae9124ec82593dabdaa880406416323d22c2811899dff152263506d",
+      "kind": ".py"
+    },
+    {
+      "path": "tests/test_edge_and_fsm.py",
+      "bytes": 932,
+      "sha256": "35743b51f54c067fe77b14fd137416ad3941444fd57262e1bfa2aa302fa5dc40",
+      "kind": ".py"
+    },
+    {
+      "path": "tests/test_gateway_guards.py",
+      "bytes": 772,
+      "sha256": "cb57b0c44da113103cdc1fcb823602616731aba59409f1bacd46023e478088e0",
+      "kind": ".py"
+    },
+    {
+      "path": "tests/test_trip_controls.py",
+      "bytes": 1624,
+      "sha256": "eff77c4326816c6be87583f4dcdf5dadd0887bba0be468d960a015a373dad5a5",
+      "kind": ".py"
+    },
+    {
+      "path": "tools/audit_repository_files.py",
+      "bytes": 1994,
+      "sha256": "625567256ceba6ab557b3d851ba94f69e8ee677947963b609a275c6fe4baf779",
+      "kind": ".py"
+    },
+    {
+      "path": "tools/build_ms2400_source_index.py",
+      "bytes": 5369,
+      "sha256": "860399b5f6cc0c383a56c31177b8e9265c5e5d2effbba6f006d0aa4849ad3441",
+      "kind": ".py"
+    },
+    {
+      "path": "tools/check_local_links.py",
+      "bytes": 1347,
+      "sha256": "9d84f241d62603ede2fa0cd020a9c247d39af375bc1508f0e4c939dd834ff268",
+      "kind": ".py"
+    },
+    {
+      "path": "tools/generate_ahtem_infographics.py",
+      "bytes": 7445,
+      "sha256": "2cca870bf78955d980a77d8dc062d3514ba09284506ee40f76b2d9886d38f4da",
+      "kind": ".py"
+    },
+    {
+      "path": "tools/inventory_platinum_bundle.py",
+      "bytes": 1874,
+      "sha256": "e950f64aa688a2230c713b7f56b5da604e48e5d96efd00bf52f7ec023befde02",
+      "kind": ".py"
+    },
+    {
+      "path": "tools/inventory_sinotrans_bundle.py",
+      "bytes": 1703,
+      "sha256": "733c5d6cf0c291d15588e6da62af4b7805a9fc5c9e743b23d0c45cee0f831e8f",
+      "kind": ".py"
+    },
+    {
+      "path": "tools/trip_controls.py",
+      "bytes": 6869,
+      "sha256": "1a7a0bc0ec13ac1e647d56dd339f10e3ae6aba36a84698845a0dd01db2db9b63",
+      "kind": ".py"
+    },
+    {
+      "path": "tools/validate_repository.py",
+      "bytes": 7167,
+      "sha256": "f536f239b55aa350f1ef651cc61c853f33745ebb02302d6369d2bfd316bc9573",
+      "kind": ".py"
+    }
+  ]
+}

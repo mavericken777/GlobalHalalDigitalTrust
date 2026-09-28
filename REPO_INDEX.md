@@ -1,10 +1,10 @@
 # Repository index — A–Z operating map
 
-**27 September reconciliation:** commercial foundation is recorded; travel `NOT_TRAVEL_READY`; signing `NOT_SIGNING_READY`. Current controls: [signing matrix](CHINA_TRIP_2026/SIGNING_MATRIX.md), [execution board](CHINA_TRIP_2026/EXECUTION_BOARD.md). This supersedes earlier aggregate completion language below.
+**28 September reconciliation:** commercial foundation is recorded; travel `NOT_TRAVEL_READY`; signing `NOT_SIGNING_READY`. Current controls: [signing matrix](CHINA_TRIP_2026/SIGNING_MATRIX.md), [execution board](CHINA_TRIP_2026/EXECUTION_BOARD.md). This supersedes earlier aggregate completion language below.
 
 
-Control date: 2026-09-27
-Vehicle: **GLOBAL HALAL SUPPLY CHAIN LIMITED** · Hong Kong CR **79801544** · formed 11 Feb 2026
+Control date: 2026-09-28
+Vehicle: **GLOBAL HALAL SUPPLY CHAIN LIMITED** · Hong Kong CR **79801544** on the project-supplied incorporation scan dated 11 Feb 2026; original verification remains open.
 
 ## Start here
 
@@ -64,10 +64,10 @@ schemas/ contracts/ circuits/
 docs/
 ```
 
-## Current control changes — 27 September
+## Current control changes — 28 September
 
 - Commercial foundation, travel, signing, demonstration and production are separate statuses.
 - The [signing matrix](CHINA_TRIP_2026/SIGNING_MATRIX.md) maps the original six instruments and four optional drafts.
 - Partner v2.1 restores structured authority/evidence fields and retains unresolved laboratory identities separately.
 - The [closure report](00_EXECUTIVE_COMMAND/RECONCILIATION_2026-09-27.md) records completed fixes and external dependencies.
-- Corrupt archives remain quarantined; no normative dataset is reconstructed from secondary PDFs.
+- Three corrupt legacy archives were retired on 27 September. The valid replacement holds 628 MS 2400 clause/page locators without licensed text or completed control rules; the historical 613-object assertion is incomplete. See [source status](STATUS.md) and [retirement ledger](00_EXECUTIVE_COMMAND/artifact-quarantine-2026-09-26.json).

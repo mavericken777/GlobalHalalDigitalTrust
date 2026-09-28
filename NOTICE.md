@@ -14,6 +14,7 @@ Brand strings in this repository are **internal project names**. They do not imp
 | Retired `IQ300_AHTE_COMPLETE_MASTER_PACKAGE.tar.gz` | Corrupt historical archive, deleted from current tree on 2026-09-27 |
 | `IQ300_MS2400_SOURCE_INDEX_2026-09-27.tar.gz` | Valid replacement package of clause IDs, PDF pages and manifest; no normative text or certification approval |
 | GitHub language = Python | Reflects the infographic generator, not a deployed Python service |
+| `contracts/AmanahHalalEscrow.sol` | Undeployed sample with its own `Apache-2.0` SPDX header; review that file's licence separately from the repository MIT grant before reuse |
 
 ## Duplicate China folders
 

@@ -4,6 +4,10 @@
 
 It is the **controlling specification** for Global Halal Supply Chain Ltd HK work in this repository.
 
+## Current evidence overlay — 28 September 2026
+
+The 20 September decision below remains a first-party adoption of the project specification. Later maintainer-supplied incorporation and non-binding PHC/JGC/Sinotrans papers are recorded in the [instrument register](CHINA_TRIP_2026/01_INSTRUMENT_REGISTER.md), with original/signatory verification pending. The later local reference runtime includes an OPA-dependent demo path; no persistent production service or authority connection is established. Read the dated “no instrument/no OPA server” statements below as a 20 September snapshot, not the current evidence status. See [STATUS.md](STATUS.md).
+
 ## What adoption means
 
 - The 14-node canonical path is the project path.

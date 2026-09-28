@@ -29,8 +29,7 @@ def validate():
     counts = {'json': 0, 'gzip_json': 0, 'svg': 0}
     for name in filter(None, files):
         path = ROOT / name
-        if not path.exists():
-            continue  # tracked deletion in the current worktree
+        assert path.is_file(), f'missing tracked file: {name}'
         if name in known:
             continue
         if name.endswith('.json'):
