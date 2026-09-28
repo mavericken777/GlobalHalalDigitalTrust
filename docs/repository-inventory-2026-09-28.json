@@ -2,7 +2,7 @@
   "artifact": "repository-inventory-2026-09-28.json",
   "control_date": "2026-09-28",
   "basis": "tracked worktree after source-retirement and issue-1 fixes; inventory file excluded to avoid self-hash recursion",
-  "base_commit": "c294c03e12e0b4a11daeefe0c83c3f7ec4f059ed",
+  "base_commit": "27b7b8107e7b51b6e44eeae2cef154014b720f66",
   "file_count": 364,
   "by_kind": {
     ".md": 232,
@@ -446,8 +446,8 @@
     },
     {
       "path": "CHINA_TRIP_2026/MOA_TEMPLATES/MOA_CODA.md",
-      "bytes": 9392,
-      "sha256": "6108eb5deeef344350c887d1cfb9fa3f051a393822ff452eb76e4ecc39439f9c",
+      "bytes": 9913,
+      "sha256": "3d149bb18678bfcb734da094a4561331d0463c07826a491b2468695cd86fbffa",
       "kind": ".md"
     },
     {
@@ -476,14 +476,14 @@
     },
     {
       "path": "CHINA_TRIP_2026/MOA_TEMPLATES/MOA_SINOTRANS_LOGISTICS.md",
-      "bytes": 9321,
-      "sha256": "403aab6ddc81152ab2d73986f9fbf2b9d7b1d100e0ac7c0243075d585b732321",
+      "bytes": 9425,
+      "sha256": "98140b6f98069156a98771b551c6c6f1e06dd6dc7dc0f908b60ae04de4d9932e",
       "kind": ".md"
     },
     {
       "path": "CHINA_TRIP_2026/MOA_TEMPLATES/MOA_SINOTRANS_WAREHOUSE.md",
-      "bytes": 8972,
-      "sha256": "36469c205c21f298b3644ddfb974de3998eb8864e6a704fadec2ed07b3e2278e",
+      "bytes": 9135,
+      "sha256": "c306fff8541d5b2d871ffe2741dbcf941975ab3c11c72f1590d77592367ff2d5",
       "kind": ".md"
     },
     {
@@ -1992,8 +1992,8 @@
     },
     {
       "path": "platform/src/ahte/engine.py",
-      "bytes": 4892,
-      "sha256": "b7eba898cb4dc472e146171eb129961922f426adda034f5d83a37d5bc7b43213",
+      "bytes": 4192,
+      "sha256": "326c872bef7469745afd8b11117a1608106aa1b1467ea1381a9ad99a88bb9d92",
       "kind": ".py"
     },
     {
@@ -2010,20 +2010,20 @@
     },
     {
       "path": "platform/src/ahte/store.py",
-      "bytes": 1102,
-      "sha256": "c85b38f9e2469f20d94ee8a8969de46b530b2b6fbfb2bf933a56f5bbbb798020",
+      "bytes": 2012,
+      "sha256": "cf0e9089ce6363a5967454df4835887ca5715a6c762a2e4af13ec3625b8eec01",
       "kind": ".py"
     },
     {
       "path": "platform/tests/test_runtime.py",
-      "bytes": 5282,
-      "sha256": "fb31478db2c8739c393b00bb907acb09fe688e23892ff6d967f832d02e3ec986",
+      "bytes": 5883,
+      "sha256": "e95db04a1491981cea5b3a51d6e16aaca891b28f55eb90dae3ab52756f51b36f",
       "kind": ".py"
     },
     {
       "path": "runtime/README.md",
-      "bytes": 476,
-      "sha256": "70856337a329d7ba0f6300370b177a2c8b5a52671dd530a62b94209f9a5a1ae0",
+      "bytes": 1016,
+      "sha256": "b7317314b734740523451339500e65c217383eec997cfada8c408ad4a8a411c5",
       "kind": ".md"
     },
     {
@@ -2052,8 +2052,8 @@
     },
     {
       "path": "runtime/gateway/app.py",
-      "bytes": 8373,
-      "sha256": "1e74d5a2722a5faacaf8a17c42d452c2ce08eae4a794eb72a01c0a626e18096d",
+      "bytes": 8990,
+      "sha256": "00ce520c5c23a8d7dd8937e9afdef1b73482ee9cf3ec9c141cd60f5d06ffdbb7",
       "kind": ".py"
     },
     {
@@ -2154,8 +2154,8 @@
     },
     {
       "path": "tests/test_gateway_guards.py",
-      "bytes": 772,
-      "sha256": "cb57b0c44da113103cdc1fcb823602616731aba59409f1bacd46023e478088e0",
+      "bytes": 3438,
+      "sha256": "6845ff0eeaf777c3fcbf246db3b66aa14d26f6ca4172498f43064f67917b9bc2",
       "kind": ".py"
     },
     {

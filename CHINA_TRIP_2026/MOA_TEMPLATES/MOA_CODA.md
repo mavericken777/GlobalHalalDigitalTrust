@@ -48,7 +48,7 @@ This MoA does not set fees, exclusivity, or revenue share. Any introduction fee 
 
 ## 6. Pipeline and data
 
-Introduced-party contact data is confidential. Nany Party uploads the other’s member list into a public repo, pitch deck, or press note without written consent.
+Introduced-party contact data is confidential. No Party may upload another Party's member list to a public repository, pitch deck or press note without that Party's prior written consent. Annex B must identify the data fields, recipients, permitted uses, safeguards and retention period before any personal contact list is exchanged.
 
 ## 7. Publicity
 
@@ -66,6 +66,9 @@ Statements of intent. **Binding only:** Schedule D. Not a partnership, JV, or ag
 
 CODA focal: Name ______ Title ______ Email ______ WeChat ______
 GHSC focal: Name ______ Title ______ Email ______ WeChat ______
+PHC focal: Name ______ Title ______ Email ______ WeChat ______
+
+The focal points above coordinate work only. Each Party must also complete the registered notice address and authorised contact required by Schedule D5 before execution.
 
 ## 11. Governing law
 
@@ -74,7 +77,7 @@ Schedule D6 applies; any negotiated change must be explicit in the execution ver
 ## Annexes (must not be empty at signing)
 
 - Annex A — first three introduction sectors / parks
-- Annex B — workshop calendar (90 days)
+- Annex B — proposed 90-day workshop calendar and contact-data transfer protocol; leave data transfer pending until fields, roles and safeguards are agreed
 - Annex C — commercial schedule (optional, separate signature)
 
 ## Signatures
