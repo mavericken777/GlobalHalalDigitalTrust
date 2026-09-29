@@ -1,8 +1,10 @@
 # AHTE reference runtime
 
-Runnable **reference implementation** of the adopted specification.
+Runnable **reference implementation** of the adopted project specification.
 
-This is not a substitute for JAKIM, GCC authorities, laboratory accreditation, customs systems, or executed partner networks.
+[PROPOSAL: implementation alignment to the post-freeze D0-D6 registry — path point: Control → Evidence → Authority Gate → Trust State]
+
+This is not a substitute for JAKIM, MAIN/JAIN, GCC authorities, laboratory accreditation, customs systems, or executed partner networks.
 
 ## Run
 
@@ -16,10 +18,24 @@ uvicorn ahte.api:app --app-dir src --host 127.0.0.1 --port 8080
 
 Or: `docker compose up --build`
 
+## Decision-class binding
+
+The reference PEP follows `00_EXECUTIVE_COMMAND/hitm-decision-class-registry.json`:
+
+- D0 — encoded operational ingest
+- D1 — encoded control execution
+- D2 — machine assessment; creates assessment objects only
+- D3 — finding / CAPA classification; human accountability
+- D4 — trust-fracture HOLD; automatic release prohibited
+- D5 — competent-authority gate reserved; human authority only
+- D6 — sovereign / legal reserved; no executable action in this runtime
+
+High AI confidence never bypasses D5/D6. Undefined policy results deny.
+
 ## What it does
 
-- Stores evidence, assessments, HITM cases, authority decisions, trust states, corridor events
-- Enforces HITM default-deny in-process (and ships the `.rego` draft)
+- Stores evidence, assessments, HITM cases, asserted authority decisions, trust states and corridor events
+- Enforces HITM default-deny in-process and via a Rego policy fixture
 - Refuses to mint Halal certificates or set `trust_state=CERTIFIED`
 - Treats `not_detected` lab results as evidence only
 - Marks corridor events as pilot-only; does not instantiate Shipment 001
@@ -31,6 +47,7 @@ Or: `docker compose up --build`
 
 - Talk to live JAKIM/MYeHALAL, GCC single windows, Sinotrans, or lab LIMS
 - Deploy OPA/SPIRE/SCITT/EPCIS in production
+- Execute D6 sovereign/legal decisions
 - Close TRANSACTION-GATE or SOURCE-LOCKED items
 
 ## Reference limits
