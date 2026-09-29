@@ -59,7 +59,9 @@ def ingest_evidence(body: EvidenceIn):
 
 
 def assess(body: AssessmentIn):
-    evaluate("record_assessment", DecisionClass.D1, body.actor_type)
+    # D2 is machine assessment under the current canonical registry. It may create
+    # an assessment object but never an authority decision.
+    evaluate("record_assessment", DecisionClass.D2, body.actor_type)
     if not body.evidence_ids:
         raise ValueError("assessment requires evidence")
     missing = [eid for eid in body.evidence_ids if STORE.get("evidence", eid) is None]
@@ -69,12 +71,27 @@ def assess(body: AssessmentIn):
         raise ValueError("evidence belongs to another object")
     rec = STORE.put(
         "assessments",
-        {**body.model_dump(), "path_node": "Finding", "ai_may_not_decide": True},
+        {**body.model_dump(), "path_node": "Audit Test", "ai_may_not_decide": True, "decision_class": "D2"},
         "as",
     )
-    state = TrustState.hold if "ncr" in body.finding.lower() or "hold" in body.finding.lower() else TrustState.assessed
-    STORE.put_trust({"object_id": body.object_id, "state": state.value, "assessment_id": rec.id})
-    STORE.put("hitm", {"object_id": body.object_id, "assessment_id": rec.id, "class": "D2"}, "hitm")
+    fracture = "ncr" in body.finding.lower() or "hold" in body.finding.lower()
+    if fracture:
+        # D4 may auto-HOLD a trust fracture; release still requires human
+        # determination and re-verification.
+        evaluate("hold", DecisionClass.D4, ActorType.system)
+        STORE.put_trust({"object_id": body.object_id, "state": TrustState.hold.value, "assessment_id": rec.id})
+        STORE.put(
+            "hitm",
+            {
+                "object_id": body.object_id,
+                "assessment_id": rec.id,
+                "class": "D3",
+                "reason": "finding_requires_human_accountability",
+            },
+            "hitm",
+        )
+    else:
+        STORE.put_trust({"object_id": body.object_id, "state": TrustState.assessed.value, "assessment_id": rec.id})
     return rec
 
 
@@ -90,10 +107,16 @@ def authority_decision(body: AuthorityDecisionIn):
         raise ValueError("assessment not found")
     if assessment.body["object_id"] != body.object_id:
         raise ValueError("assessment belongs to another object")
-    states = {"record": TrustState.pending, "approve": TrustState.pending,
-              "release": TrustState.pending, "reject": TrustState.hold,
-              "hold": TrustState.hold, "revoke": TrustState.revoked,
-              "recall": TrustState.recalled, "expire": TrustState.expired}
+    states = {
+        "record": TrustState.pending,
+        "approve": TrustState.pending,
+        "release": TrustState.pending,
+        "reject": TrustState.hold,
+        "hold": TrustState.hold,
+        "revoke": TrustState.revoked,
+        "recall": TrustState.recalled,
+        "expire": TrustState.expired,
+    }
     decision = body.decision.strip().lower()
     if decision not in states:
         raise ValueError("unsupported decision")
@@ -104,6 +127,7 @@ def authority_decision(body: AuthorityDecisionIn):
             **body.model_dump(),
             "certificate_issued": False,
             "path_node": "Authority Gate",
+            "decision_class": "D5",
             "note": "Record of an asserted authority act; AHTE is not the issuing body",
         },
         "dec",

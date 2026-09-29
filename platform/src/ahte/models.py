@@ -24,13 +24,14 @@ class ActorType(str, Enum):
 
 
 class DecisionClass(str, Enum):
-    D0 = "D0"  # evidence intake
-    D1 = "D1"  # assessment
-    D2 = "D2"  # hitm case open
-    D3 = "D3"  # hold / exception
-    D4 = "D4"  # re-verification
-    D5 = "D5"  # authority decision record (not a certificate)
-    D6 = "D6"  # operational release recommendation only
+    # Canonical source: 00_EXECUTIVE_COMMAND/hitm-decision-class-registry.json
+    D0 = "D0"  # encoded operational ingest
+    D1 = "D1"  # encoded control execution
+    D2 = "D2"  # machine assessment
+    D3 = "D3"  # finding / CAPA classification; human accountable
+    D4 = "D4"  # trust-fracture hold; no automatic release
+    D5 = "D5"  # competent-authority gate reserved
+    D6 = "D6"  # sovereign / legal reserved
 
 
 class TrustState(str, Enum):
