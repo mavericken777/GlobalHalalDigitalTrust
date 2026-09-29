@@ -1,5 +1,6 @@
 package ahte.hitm_test
 
+import rego.v1
 import data.ahte.hitm
 
 test_d2_assessment_allowed if {
