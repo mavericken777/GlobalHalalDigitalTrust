@@ -1,5 +1,7 @@
 package ahte.hitm
 
+import rego.v1
+
 default allow := false
 
 # Advisory AI confidence never authorises D5/D6.
