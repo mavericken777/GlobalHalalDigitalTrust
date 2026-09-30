@@ -22,8 +22,13 @@ This section records the current project architecture decisions for implementati
 8. **China laboratory and traceability integration is a China-side evidence/identity plane feeding AHTE.** Laboratory evidence remains evidence, not automatic certification. `NOT DETECTED != HALAL` remains a hard rule.
 9. **Website/platform implementation must represent the full ecosystem**, not a generic halal logistics site, not MS2400-only and not a blockchain-certification narrative.
 10. **The reference runtime is not production.** The FastAPI reference implementation and `platform/web` prototype do not prove production deployment.
+11. **No artificial implementation blocks or feature limits.** The complete production-target architecture must be built now. Missing external APIs, credentials, partner feeds, authority connections, laboratory interfaces, sensor streams, production datasets or financial counterparties must be handled by replaceable development/sandbox providers at the real integration boundary—not by deleting, disabling, hiding, downgrading or indefinitely feature-flagging the intended capability. Development state must remain clearly distinguishable from live production evidence.
 
-Current controlling target-architecture artifact: `CURRENT_TARGET_ARCHITECTURE_2026-09-30.md`.
+Current controlling target-architecture artifacts:
+
+- `CURRENT_TARGET_ARCHITECTURE_2026-09-30.md`
+- `current-target-architecture-2026-09-30.json` v1.1.0+
+- `IMPLEMENTATION_COMPLETENESS_RULE_2026-09-30.md`
 
 ## Core architecture decisions
 
@@ -32,6 +37,7 @@ Current controlling target-architecture artifact: `CURRENT_TARGET_ARCHITECTURE_2
 3. **Certificate != Trust.** Trust requires linking the certified identity to the actual product/batch and preserving relevant custody, condition and evidence events.
 4. Halal and Tayyib must be treated together, with a strict distinction: Halal certification is a legal/religious determination; Tayyib monitoring covers product integrity, safety/quality/environmental and custody conditions relevant to the applicable risk model.
 5. Sovereign data remains with the appropriate source system where possible. The global layer should use APIs, selective disclosure and cryptographic integrity references.
+6. **External readiness gates are not product feature blocks.** Architecture and user journeys remain complete while live external activation is represented through explicit connector-state metadata.
 
 ## China enterprise strategy
 
@@ -81,6 +87,8 @@ The intended chain is:
 
 Laboratory systems remain authoritative for their own results. The trust layer should consume authorised references and integrity metadata.
 
+If production laboratory/LIMS connectivity is not available during development, the complete sample/custody/method/result/integrity workflow is still implemented through a replaceable development provider. No synthetic result is represented as real laboratory evidence.
+
 ## Sinotrans strategy
 
 Sinotrans is treated as a potential Halal Trusted Logistics Corridor + Warehouse/Digital Evidence Node. Existing Sinotrans systems should be integrated through adapters/APIs rather than replaced for the pilot.
@@ -89,11 +97,15 @@ The operating scope covers transportation, warehousing, handling, handovers, doc
 
 Default physical pilot corridor: **China → GCC direct**.
 
+If production Sinotrans APIs are unavailable during development, the complete WMS/TMS/Y2T/MIS/EDI/IoT adapter contracts, event model and role UI remain implemented with development providers.
+
 ## Port/customs strategy
 
 Port/customs users require an authorised minimum-necessary trust interface capable of resolving shipment identity, container/seal, custody, document/evidence references, authority status references, exceptions and inspection/sampling/release events.
 
 AHTE records and propagates official port/customs events; it does not manufacture official clearance/release.
+
+Absence of a live sovereign endpoint must not remove the port/customs application. Use a development provider until production access exists and label its state accordingly.
 
 ## AI/ML strategy
 
@@ -117,6 +129,8 @@ AI confidence must not bypass mandatory human/authority decision classes.
 
 GHSCL operates the digital infrastructure and continuous monitoring function. The Command Center is designed for 24/7 visibility, alerting, escalation, predictive analysis and preemptive strategy across the complete corridor. JAKIM is connected through the direct authorised API path according to actual production scope.
 
+The Command Center must remain fully represented in development through controlled data providers if live partner/authority feeds are absent; development events must not be represented as production events.
+
 ## Shariah financing / Takaful / tokenomics strategy
 
 The target platform includes a controlled Shariah Financing API plane fed by authorised trust/trade data.
@@ -131,6 +145,8 @@ Potential services:
 - tokenomics/digital-value mechanisms where legally and Shariah approved.
 
 No specific bank, Takaful product, token classification, token economics or regulatory approval is established by this log unless separately documented.
+
+The complete integration plane, portal flows and adapter contracts should nevertheless be built without artificial product limitation; real external decisions remain with the competent financial/Shariah/regulatory actors.
 
 ## October 2026 mission
 
@@ -154,6 +170,8 @@ A transaction candidate should not proceed simply because a product is certified
 - evidence/audit trail;
 - exception/corrective-action mechanism.
 
+A development-mode platform may simulate the workflow with synthetic data for implementation/testing, but it must not claim that the transaction has occurred.
+
 ## Repository architecture direction
 
 The repository should progressively segregate the programme into governance, partner, Halal/Tayyib, Platinum monitoring, China Trust/laboratory, logistics, DPP, traceability, GCC access, B2B trade, finance/support, pilot, October mission, playbooks, SOPs, diagrams/infographics, commercial, legal, research, technical, API, database, command center and dashboards.
@@ -166,6 +184,8 @@ The project must explicitly label:
 - proposals;
 - assumptions;
 - items requiring verification;
-- signed/contracted commitments.
+- signed/contracted commitments;
+- development/sandbox data;
+- live/production data.
 
-Do not represent a future partner, regulator, laboratory or programme as confirmed merely because discussions or invitations exist.
+Do not represent a future partner, regulator, laboratory or programme as confirmed merely because discussions, development adapters or invitations exist.
