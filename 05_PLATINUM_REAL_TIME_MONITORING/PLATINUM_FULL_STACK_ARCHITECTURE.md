@@ -264,10 +264,10 @@ The target-state design specifies direct authority-system connectivity so author
 Preferred pattern:
 
 ```text
-COMPETENT AUTHORITY SYSTEM
+JAKIM / COMPETENT AUTHORITY
            ^  |
            |  v
-     AUTHORITY API GATEWAY
+       DIRECT JAKIM API
            ^  |
            |  v
           AHTE
@@ -276,7 +276,7 @@ COMPETENT AUTHORITY SYSTEM
  warehouse / logistics / GCC
 ```
 
-The authority gateway should isolate authority connectivity from ordinary commercial applications and enforce:
+The internal Direct JAKIM API adapter isolates authority connectivity from ordinary commercial applications. It is an implementation boundary, not an external intermediary or separate authority. The controlling topology is **AHTE ⇄ Direct JAKIM API ⇄ JAKIM**. The adapter must enforce:
 
 - strong service authentication;
 - role and scope authorization;

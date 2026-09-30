@@ -214,4 +214,4 @@ The event stream must permit reconstruction of:
 
 ## 6. Event registry controls
 
-Each event type is versioned independently. Changes require schema compatibility testing, migration rules and consumer impact assessment. Event consumers include factory systems, logistics, AHTE, authority gateways, destination systems and analytics.
+Each event type is versioned independently. Changes require schema compatibility testing, migration rules and consumer impact assessment. Event consumers include factory systems, logistics, AHTE, the internal Direct JAKIM API adapter and other competent-authority interfaces within their actual mandates, destination systems and analytics.
