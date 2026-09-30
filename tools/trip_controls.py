@@ -70,12 +70,12 @@ def _capture(pattern, content, label):
     return match.group(1)
 
 def documented_readiness(path, content):
-    """Parse the explicitly labelled controlled readiness fields, never substrings.
+    """Parse explicitly labelled controlled readiness fields, never substrings.
 
     Public documents may legitimately mention operator-reported states alongside the
-    controlled register state. Validation therefore extracts the labelled field and
-    compares the complete token, so TRAVEL_READY cannot satisfy NOT_TRAVEL_READY (or
-    vice versa) merely because one token is a substring of the other.
+    controlled register state. Validation extracts the labelled field and compares the
+    complete token, so TRAVEL_READY cannot satisfy NOT_TRAVEL_READY (or vice versa)
+    merely because one token is a substring of the other.
     """
     if path == 'README.md':
         match = re.search(
@@ -113,7 +113,7 @@ def validate(root=ROOT):
     assert len({i['id'] for i in instruments})==len(instruments)
     assert len({i['path'] for i in instruments})==len(instruments), 'competing scopes share one signing draft'
     original={i['id']:i for i in instruments if i['id'].startswith('M')}
-    assert set(original)=={f'M{i}' for i in []} or set(original)=={f'M{i:02}' for i in range(1,7)}
+    assert set(original)=={f'M{i:02}' for i in range(1,7)}
     block=common_block(root)
     for i in instruments:
         content=(root/i['path']).read_text()
