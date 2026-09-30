@@ -1,5 +1,8 @@
 # Implementation Roadmap
 
+> Current project control — 1 October 2026: China → GCC direct; Malaysia is governance/assurance/authority-connectivity unless separately scoped. Authority topology: AHTE ⇄ Direct JAKIM API ⇄ JAKIM. [PILOT: Shipment 001 — China → GCC direct; NOT-INSTANTIATED]. Build the full target architecture now with clearly labelled replaceable development providers; phase dates govern activation/scale, not omission of capability. Competent humans/authorities retain decisions.
+
+
 ## Phase 0 — Foundation (0-90 days)
 
 - Establish governance working group.
@@ -15,7 +18,7 @@
 
 ## Phase 1 — Pilot (3-6 months)
 
-Target: China -> Malaysia controlled Halal logistics corridor.
+Target: China -> GCC direct controlled Halal logistics corridor. Malaysia is the governance/assurance/authority-connectivity plane unless a physical hop is separately scoped.
 
 Components:
 - manufacturer onboarding;

@@ -1,8 +1,11 @@
 # Sinotrans Pilot SOP
 
+> Current project control — 1 October 2026: China → GCC direct; Malaysia is governance/assurance/authority-connectivity unless separately scoped. Authority topology: AHTE ⇄ Direct JAKIM API ⇄ JAKIM. [PILOT: Shipment 001 — China → GCC direct; NOT-INSTANTIATED]. Build the full target architecture now with clearly labelled replaceable development providers; phase dates govern activation/scale, not omission of capability. Competent humans/authorities retain decisions.
+
+
 ## Pilot objective
 
-Demonstrate that a China-to-Malaysia Halal logistics corridor can exchange trusted logistics evidence without replacing existing operational systems or centralizing sensitive national data.
+Demonstrate that a China-to-GCC direct Halal logistics corridor can exchange trusted logistics evidence without replacing existing operational systems or centralizing sensitive national data.
 
 ## Roles
 
