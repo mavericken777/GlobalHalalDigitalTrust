@@ -5,15 +5,36 @@
 | Field | Value |
 |---|---|
 | Artifact | `WEBSITE_REBUILD_MASTER_SPEC_v2_2026-09-30.md` |
-| Revision | v2.0.0 |
+| Revision | v2.1.0 |
 | Control date | 2026-09-30 |
 | Classification | Post-freeze public website / portal architecture |
 | Freeze impact | None |
 | Authority effect | None |
 | Governing project architecture | `00_EXECUTIVE_COMMAND/CURRENT_TARGET_ARCHITECTURE_2026-09-30.md` |
+| Machine architecture registry | `00_EXECUTIVE_COMMAND/current-target-architecture-2026-09-30.json` v1.1.0+ |
 | Supersedes | `docs/WEBSITE_REBUILD_MASTER_SPEC_2026-09-30.md` where inconsistent |
 
 [PROPOSAL: closes website/public-platform parity gap — path point: Authority → Standard / Instrument → Applicability → Control → Evidence → Audit → Authority Gate → Trust State → Operational Release]
+
+## 0. Implementation principle — full target system, no artificial blocks
+
+**FULL ARCHITECTURE NOW → REAL CONNECTORS WHEN AVAILABLE → NO REDESIGN REQUIRED.**
+
+The website/platform rebuild must not remove, disable, downgrade, hide, defer or omit an intended capability merely because an external API, credential, partner feed, authority connection, laboratory interface, sensor stream, production dataset, financial counterparty or live shipment is unavailable in the development environment.
+
+For every unavailable external dependency, implement:
+
+1. the complete production domain model;
+2. the complete production integration interface/adapter contract;
+3. the complete UI/workflow/state machine;
+4. a replaceable development/sandbox/mock provider at the same boundary;
+5. explicit connection-state labelling so development data is never represented as live production evidence.
+
+Development mocks substitute **connectivity/data only**. They must never substitute away capability.
+
+Do not use `coming soon`, permanent feature flags, blank pages, disabled navigation or demo-only reductions as substitutes for required target functionality.
+
+Do not fabricate live JAKIM decisions, laboratory results, Sinotrans telemetry, customs release, GCC acceptance, financing approval, Takaful underwriting, token regulatory/Shariah status or Shipment 001 transaction evidence.
 
 ## 1. Purpose
 
@@ -28,6 +49,7 @@ Primary goals:
 5. Expose role-based public/partner verification experiences.
 6. Present AI/ML predictive analytics and preemptive strategies as decision-support infrastructure.
 7. Present the 24/7 GHSCL + JAKIM Command Center as a first-class operating layer.
+8. Preserve the complete target architecture even where production connectors are not yet provisioned.
 
 Core proposition:
 
@@ -151,6 +173,8 @@ Capabilities:
 - AI evidence-gap/anomaly/contradiction support;
 - human auditor sign-off.
 
+If physical smart-glass hardware is unavailable during development, the complete wearable workflow remains implemented using a development device provider.
+
 ### Lab and origin
 
 Visual:
@@ -245,19 +269,23 @@ Public diagram:
 
 No public endpoint names, credentials, internal schemas, secret keys or security-sensitive details.
 
+The full direct-JAKIM workflow must exist in development through a replaceable provider if production credentials are unavailable; the UI must clearly distinguish development/sandbox from production-connected state.
+
 ### Sinotrans
 
 Dedicated section:
 
 `Factory/warehouse → Sinotrans WMS/TMS/Y2T/MIS/EDI/IoT → secure adapter/API → canonical AHTE events → Command Center → port/GCC`
 
-Show warehouse + end-to-end logistics, not transport alone.
+Show warehouse + end-to-end logistics, not transport alone. If live Sinotrans APIs are unavailable, keep the complete workflow operational against a development provider and clearly label provider state.
 
 ### Port & Customs API
 
 Show authorised officer journey:
 
 `Authenticate → scan/lookup shipment → reconcile container/seal → view authorised trust packet → inspect documents/evidence/exceptions → record inspection/sampling → hold/release under sovereign authority → signed event returned to AHTE`
+
+Origin and GCC destination officer surfaces must be fully implemented even before live sovereign endpoints are connected.
 
 ### Shariah Finance / Takaful / Tokenomics
 
@@ -281,6 +309,8 @@ Clearly state:
 - Halal certification is not financing approval;
 - Takaful operator retains underwriting/claim decision;
 - tokenisation does not itself create title, regulatory approval or Shariah compliance.
+
+The complete finance/Takaful/tokenomics integration architecture and UI must be built even where live counterparties are not yet connected; use development providers without representing them as live institutions.
 
 ## 5. Required pages
 
@@ -349,7 +379,7 @@ Officer API/trust gateway, custody/inspection/release and sovereign decision bou
 
 ### `/shariah-finance`
 
-Target Shariah financing API, Takaful and tokenomics plane with clear external decision boundaries.
+Target Shariah financing API, Takaful and tokenomics plane with clear external decision boundaries and complete development-mode workflows.
 
 ### `/ecosystem`
 
@@ -396,7 +426,7 @@ Routes:
 
 ## 6. Authenticated portal surfaces
 
-The production architecture should reserve separate role-based applications for:
+The production architecture must provide separate role-based applications for:
 
 - Manufacturer
 - Auditor / Smart Glass
@@ -409,7 +439,7 @@ The production architecture should reserve separate role-based applications for:
 - Finance / Takaful
 - Administrator / Governance
 
-Do not force these into a single generic dashboard.
+Do not force these into a single generic dashboard. Do not omit a portal because its external production connector is not yet available; use the corresponding development provider.
 
 ## 7. State vocabulary
 
@@ -419,11 +449,19 @@ Do not force these into a single generic dashboard.
 
 ### Certification / authority state
 
-Display separately and map to actual authority-system values.
+Display separately and map to actual authority-system values when production connected. Development/sandbox values must be visibly identified as such.
 
 ### Supply-chain state
 
 `origin verified · sample/lab · manufactured · packed · warehouse received · shipment created · sealed · in transit · port hold/release · GCC arrived · received · accepted · exception`
+
+### Connector state
+
+Every external integration must expose one of:
+
+`development-provider-active · sandbox-connected · production-connected · production-credentials-required`
+
+Connector state must never be conflated with authority/trust/supply-chain state.
 
 ## 8. Design direction
 
@@ -464,7 +502,11 @@ Preferred implementation:
 - accessibility;
 - separate staging/production;
 - telemetry/observability;
-- testable API mocks/adapters for undeployed external systems.
+- typed production adapter contracts;
+- replaceable development/sandbox providers for unavailable external systems;
+- explicit connector-state metadata;
+- event-first domain architecture;
+- no UI/domain redesign required when a real external connector replaces a development provider.
 
 Public content should consume governed data from:
 
@@ -489,6 +531,8 @@ Never expose:
 - authority security controls.
 
 Use minimum-necessary selective disclosure.
+
+Security requirements must not be implemented as arbitrary feature deletion. Preserve complete capability with correct identity, permission, disclosure and connector-state controls.
 
 ## 11. Acceptance criteria
 
@@ -516,15 +560,21 @@ The rebuild is not complete until all of the following are demonstrable:
 20. Mobile, accessibility and EN/中文/العربية/BM architecture are supported.
 21. No stale China→Malaysia pilot language controls current public narrative.
 22. No prototype/reference runtime is described as production.
+23. Every required external integration has a complete production adapter contract.
+24. Every unavailable production integration has a replaceable development/sandbox provider rather than an omitted feature.
+25. No required target capability is hidden behind a permanent feature flag, disabled navigation or `coming soon` placeholder.
+26. Public/portal screens truthfully distinguish development/sandbox/production connection state.
+27. The platform can execute the complete target journeys in development mode without falsely claiming real-world approvals or events.
 
 ## 12. Implementation order
 
 ### Wave 0 — repository/content parity
 
-- ingest current target architecture registry;
+- ingest current target architecture registry v1.1.0+;
 - reconcile stale routes/copy;
 - establish controlled content source;
-- build shared design system and status vocabulary.
+- build shared design system and status vocabulary;
+- establish typed external adapter contracts and connector-state model.
 
 ### Wave 1 — public platform
 
@@ -538,6 +588,10 @@ Trust Record lookup → product/batch/shipment result pages → QR/NFC route →
 
 Manufacturer → Auditor → Laboratory → Logistics → GHSCL Command Center → JAKIM view → Port/Customs → GCC Importer → Finance/Takaful → Admin/Governance.
 
+### Wave 4 — complete development integration providers
+
+Implement end-to-end replaceable development providers for JAKIM, laboratory/LIMS, Sinotrans, origin port/customs, GCC port/customs, importer/retailer, finance, Takaful and tokenomics where production connectors are absent.
+
 ## 13. Master public narrative
 
-> **Global Halal Supply Chain Limited operates the international digital infrastructure for a complete China-origin to GCC-destination Halal trust chain. AHTE continuously links applicable standards, raw-material provenance, laboratory evidence, manufacturer controls, AI-assisted smart-glass audits, cryptographic evidence integrity, Sinotrans warehousing and logistics, port/border events and GCC receiving into a live trust graph. AI/ML predicts risk and generates preemptive strategies for authorised human review. A 24/7 GHSCL and JAKIM-connected Command Center monitors the operating chain, while direct JAKIM API connectivity propagates authorised status and human authority decisions. The platform also provides controlled interfaces for port authorities and a target Shariah-financing/Takaful/tokenomics plane without conflating digital trust with certification, customs authority, credit approval or underwriting decisions.**
+> **Global Halal Supply Chain Limited operates the international digital infrastructure for a complete China-origin to GCC-destination Halal trust chain. AHTE continuously links applicable standards, raw-material provenance, laboratory evidence, manufacturer controls, AI-assisted smart-glass audits, cryptographic evidence integrity, Sinotrans warehousing and logistics, port/border events and GCC receiving into a live trust graph. AI/ML predicts risk and generates preemptive strategies for authorised human review. A 24/7 GHSCL and JAKIM-connected Command Center monitors the operating chain, while direct JAKIM API connectivity propagates authorised status and human authority decisions. The platform also provides controlled interfaces for port authorities and a complete target Shariah-financing/Takaful/tokenomics integration plane without conflating digital trust with certification, customs authority, credit approval or underwriting decisions. Where production connectors are not yet provisioned, the full capability remains implemented through replaceable development providers so the production connector can be introduced without architectural redesign.**
