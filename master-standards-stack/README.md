@@ -4,13 +4,13 @@ This folder is the consolidated JAKIM / Department of Standards Malaysia Halal s
 
 ## Canonical verified baseline
 
-The controlled current package is:
+The controlled verified package is:
 
 `verified-2026-09-17/`
 
-It consolidates the current standards catalogue, revision/supersession register, JAKIM MPPHM 2020/MHMS 2020 operating layer, all-standard clause/control/evidence mapping, sertu and stunning/protocol linkage, audit/evidence test library, China -> GCC manufacturer validation, A-Z gap accounting, source register and the deep-dive ingestion of the user-supplied compliance/market-validation PDFs.
+It consolidates the standards catalogue, revision/supersession register, JAKIM MPPHM 2020/MHMS 2020 operating layer, clause/control/evidence mapping, sertu and stunning/protocol linkage, audit/evidence test library, China -> GCC manufacturer validation, A-Z gap accounting, source register and deep-dive ingestion of supplied compliance/market-validation PDFs.
 
-Use `verified-2026-09-17/MANIFEST.json` as the machine-readable package declaration.
+Use `verified-2026-09-17/MANIFEST.json` as the machine-readable package declaration. Post-freeze target architecture is controlled separately by `../00_EXECUTIVE_COMMAND/CURRENT_TARGET_ARCHITECTURE_2026-09-30.md` and does not rewrite this verified freeze.
 
 ### Current verified package modules
 
@@ -34,7 +34,7 @@ Use `verified-2026-09-17/MANIFEST.json` as the machine-readable package declarat
 
 ## Standards universe
 
-The current IQ300 operating universe contains 17 standards/standard contexts:
+The current IQ300 verified operating universe contains 17 standards/standard contexts:
 
 1. MS 1500:2019 — Halal food — General requirements
 2. MS 2400-1:2019 — Halal supply chain management system — Transportation
@@ -54,7 +54,7 @@ The current IQ300 operating universe contains 17 standards/standard contexts:
 16. MS 2809:2025 — Authentication of products using chemometric techniques
 17. MS 2810:2025 — Consumable goods — Test method — Identification of pig skin and hair
 
-Historical/withdrawn/replaced standards are retained as version lineage only and must not silently override current editions.
+Historical/withdrawn/replaced standards are retained as version lineage only and must not silently override current editions. Post-freeze source additions/conflicts are handled by the controlled source/verification process rather than silently rewriting the verified package.
 
 ## Source-depth model
 
@@ -115,7 +115,7 @@ The attached compliance PDF reports 2026 changes, but exact details remain `SECO
 
 ## Attached PDF source adjudication
 
-Two new user sources were ingested and reconciled:
+Two user sources were ingested and reconciled:
 
 - `compliance_manual.pdf` - 74 pages, secondary compliance reference;
 - `market_validation.pdf` - 48 pages, secondary market/economics reference.
@@ -154,20 +154,24 @@ MS 2627, MS 2627-2, MS 2809 and MS 2810 are evidence-producing methods/standards
 - `process-flow-infographics/` — 17-standard process-flow atlas and generation assets
 - `AMANAH_PLATFORM_AZ_MAPPING.md` — A-Z platform decomposition
 - `AHTE_PLATINUM_REAL_TIME_MONITORING_STACK.md` — continuous/assisted/evidence/authority monitoring architecture
-- `CHINA_EXECUTION_PACK/` and `china-execution-pack/` — China deployment and Shipment 001 execution assets
+- `CHINA_EXECUTION_PACK/` — **sole canonical** China deployment / Shipment 001 execution pack after the 30 September consolidation
 - `china-deployment/` — China sovereign/data/counterpart implementation materials
+
+Do not recreate `master-standards-stack/china-execution-pack/`; its richer/unique content was migrated into `CHINA_EXECUTION_PACK/` and the duplicate lineage was retired. See `../00_EXECUTIVE_COMMAND/OBSOLETE_ARTIFACT_RETIREMENT_2026-09-30.md`.
 
 ## China -> GCC direct execution
 
-[PILOT: Shipment 001]
+[PILOT: Shipment 001 — China → GCC direct]
 
-The canonical pilot corridor is **China -> GCC direct**.
+The canonical pilot corridor is **China -> GCC direct**. Malaysia is the governance/assurance and direct-JAKIM-authority-connectivity plane unless a physical Malaysia hop is separately scoped.
 
 The verified package includes a ten-manufacturer primary-source screen and a qualification workflow. No manufacturer public website claim is treated as a valid shipment certificate, GCC import approval or commercial commitment.
 
 Shipment 001 release requires:
 
 `factory/SKU evidence -> exact halal certificate and issuer/scope/validity -> destination recognition/importer/product/label controls -> buyer/PO -> pilot batch -> logistics qualification -> container/seal/custody -> border release -> receiving verification`.
+
+Post-freeze target execution additionally carries the consolidated lab/traceability plane, smart-glass audit, direct JAKIM API, PHC+JAKIM authorised human workflow, Sinotrans warehouse/logistics, port APIs, 24/7 GHSCL+JAKIM Command Center, AI/ML predictive/preemptive functions and Shariah-financing/Takaful/tokenomics transaction-support plane as specified in the current target architecture.
 
 ## Current official source entry points
 
@@ -180,6 +184,6 @@ Individual current standards/procedure versions must be rechecked in the officia
 
 ## Governance boundary
 
-Malaysian Standards are technical normative instruments. Certification remains within the competent Halal authority and applicable legal/certification framework. AHTE supports evidence, controls, traceability, auditability and decision workflows; it does not independently issue or override Malaysia Halal certification.
+Malaysian Standards are technical normative instruments. Certification remains within the competent Halal authority and applicable legal/certification framework. AHTE supports evidence, controls, traceability, auditability, prediction/preemption and decision workflows; it does not independently issue or override Malaysia Halal certification.
 
-Licensed normative text is not reproduced in this repository. `SOURCE-LOCKED` status is a controlled truth condition, not a documentation omission.
+Licensed normative text is not reproduced in this repository. `SOURCE-LOCKED` status is a controlled truth condition, not a product feature limitation.
