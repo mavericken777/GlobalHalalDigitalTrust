@@ -1,4 +1,6 @@
-# 02 — China ↔ Malaysia ↔ GCC Rule-Precedence Engine
+# 02 — China Origin / Malaysian Assurance / GCC Destination Rule-Precedence Engine
+
+Physical corridor: **China → GCC direct**. Malaysia is the governance/assurance and authority-connectivity plane unless a physical movement is separately scoped. The jurisdictions below determine applicable rules; they do not define transit legs.
 
 ## 1. Purpose
 
