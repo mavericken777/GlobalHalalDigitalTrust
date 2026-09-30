@@ -1,5 +1,7 @@
 # IQ300 Post-Freeze Verification Package — 26 September 2026 — v2 Illustrated
 
+> HISTORICAL / SUPERSEDED / NON-CONTROLLING for current architecture and readiness. Retained source-ingestion/audit evidence only; original source decisions and unresolved normative source locks retain their evidential meaning. The sole verified freeze is verified-2026-09-17/; current architecture is controlled by 00_EXECUTIVE_COMMAND/CURRENT_TARGET_ARCHITECTURE_2026-09-30.md.
+
 [PROPOSAL: closes illustrated-v2 visual-control reconciliation gap — path point: Standard/Instrument -> Applicability -> Control -> Evidence -> Audit Test]
 
 This package is the versioned successor to `master-standards-stack/verified-2026-09-26/`. It does **not** modify or supersede the frozen doctrine at `master-standards-stack/verified-2026-09-17/`.

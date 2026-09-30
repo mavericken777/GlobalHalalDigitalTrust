@@ -1,5 +1,8 @@
 # CODA Strategic Partnership Plan
 
+> Current project control — 1 October 2026: China → GCC direct; Malaysia is governance/assurance/authority-connectivity unless separately scoped. Authority topology: AHTE ⇄ Direct JAKIM API ⇄ JAKIM. [PILOT: Shipment 001 — China → GCC direct; NOT-INSTANTIATED]. Build the full target architecture now with clearly labelled replaceable development providers; phase dates govern activation/scale, not omission of capability. Competent humans/authorities retain decisions.
+
+
 ## Executive proposition
 
 CODA can serve as a China-facing institutional and industrial-development bridge for the Global Halal Digital Trust Ecosystem. The objective is not to centralize sovereign authority, but to create a trusted pathway through which qualified Chinese manufacturers, producers, laboratories, logistics providers, investors and other organizations can participate in an interoperable global ecosystem.
@@ -101,7 +104,7 @@ All financial mechanics require negotiation and definitive contractual documenta
 
 **Phase 2 — 60–120 days:** MoU finalization, pilot architecture, API/data mapping, security assessment.
 
-**Phase 3 — 120–240 days:** controlled China–Malaysia pilot, manufacturer onboarding, laboratory/evidence workflows and logistics integration.
+**Phase 3 — 120–240 days:** controlled China → GCC direct pilot, manufacturer onboarding, laboratory/evidence workflows and logistics integration.
 
 **Phase 4 — 240–365 days:** evaluate KPIs, expand participants, prepare additional trade corridors and investment package.
 

@@ -1,5 +1,7 @@
 # IQ300 Post-Freeze Verification Package — 26 September 2026
 
+> HISTORICAL / SUPERSEDED / NON-CONTROLLING for current architecture and readiness. Retained source-ingestion/audit evidence only; original source decisions and unresolved normative source locks retain their evidential meaning. The sole verified freeze is verified-2026-09-17/; current architecture is controlled by 00_EXECUTIVE_COMMAND/CURRENT_TARGET_ARCHITECTURE_2026-09-30.md.
+
 [PROPOSAL: closes platinum master-PDF reconciliation gap — path point: Authority -> Standard -> Clause -> Applicability -> Control -> HCP/SCCP -> Evidence]
 
 ## Status and relationship to the freeze

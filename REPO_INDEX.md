@@ -132,3 +132,16 @@ docs/                     website/codex/implementation specifications
 - Partner v2.1 restores structured authority/evidence fields and retains unresolved laboratory identities separately.
 - The [closure report](00_EXECUTIVE_COMMAND/RECONCILIATION_2026-09-27.md) records completed fixes and external dependencies.
 - Three corrupt legacy archives were retired on 27 September. The valid replacement holds 628 MS 2400 clause/page locators without licensed text or completed control rules; the historical 613-object assertion is incomplete. See [source status](STATUS.md) and [retirement ledger](00_EXECUTIVE_COMMAND/artifact-quarantine-2026-09-26.json).
+
+## Current controlling domains — 1 October 2026
+
+| Domain | Controlling artifact |
+|---|---|
+| Target architecture | [Current target](00_EXECUTIVE_COMMAND/CURRENT_TARGET_ARCHITECTURE_2026-09-30.md) |
+| Implementation completeness | [Implementation rule](00_EXECUTIVE_COMMAND/IMPLEMENTATION_COMPLETENESS_RULE_2026-09-30.md) |
+| Readiness state | [Readiness register](00_EXECUTIVE_COMMAND/october-2026-readiness.json) |
+| Signing instruments | [Signing register](CHINA_TRIP_2026/signing-register.json) |
+| Source bindings and registries | [Executive control index](00_EXECUTIVE_COMMAND/README.md) |
+| Verified standards | [Immutable freeze](master-standards-stack/verified-2026-09-17/00_README.md) |
+
+The 26 September ingestion packages are historical audit evidence, not alternative current freezes. Legacy roadmap/Sinotrans/CODA physical-pilot language is aligned to China → GCC direct. Project implementation does not instantiate Shipment 001 or create authority/finance decisions.
