@@ -4,6 +4,27 @@
 
 Preserve the strategic decisions and working concepts arising from the project discussion so that future deliverables remain consistent and do not silently drift.
 
+## 30 September 2026 current architecture overlay
+
+This section records the current project architecture decisions for implementation, website rebuilding and Codex execution. It does not modify the immutable `master-standards-stack/verified-2026-09-17/` freeze.
+
+[PROPOSAL: reconciles current architecture decisions — path point: Authority → Standard / Instrument → Applicability → Control → Evidence → Authority Gate → Trust State → Operational Release]
+
+### Current operating decisions
+
+1. **Default physical corridor is China → GCC direct.** Malaysia is the governance/assurance plane unless a Malaysia physical hop is separately scoped. Older China→Malaysia pilot language does not control Shipment 001.
+2. **JAKIM integration is direct JAKIM API.** Public architecture should not insert an unnecessary generic gateway between AHTE and JAKIM. Exact production endpoints, credentials, schemas and permissions remain controlled implementation inputs.
+3. **24/7 GHSCL + JAKIM Command Center is a first-class operating layer.** It continuously monitors manufacturer, laboratory, HCP/SCCP, authority status, Sinotrans warehouse/logistics, shipment/container/seal, ports, GCC receiving, CAPA, evidence freshness, trust fractures, predictive risk and recall state.
+4. **AI/ML predictive analytics are paired with preemptive strategy.** Existing Evidence Gap, Anomaly, Contradiction, Trust Fracture, Predictive Compliance and Recall Blast-Radius engines are extended by an explicit Preemptive Strategy Engine. AI may recommend/escalate and apply configured D4 holds; it must not bypass D5/D6 or auto-release human-reserved holds.
+5. **Sinotrans integration includes end-to-end logistics and warehouse real-time monitoring.** Integrate existing Y2T/MIS/EDI/WMS/TMS/IoT and related systems through secure adapters/APIs rather than replacing them.
+6. **Port authorities receive an authorised API/trust interface.** AHTE supports identity, trust packet, container/seal, evidence, inspection/sampling and official hold/release event exchange. Port/customs statutory authority remains sovereign.
+7. **Shariah Financing API is part of the target platform.** The target plane includes Islamic financing, trade finance, Takaful underwriting/claims evidence and tokenomics/digital-value mechanisms where legally, contractually, regulatorily and Shariah approved. AHTE trust is not credit approval; Halal certification is not financing approval; tokenization does not by itself change title, regulatory or Shariah status.
+8. **China laboratory and traceability integration is a China-side evidence/identity plane feeding AHTE.** Laboratory evidence remains evidence, not automatic certification. `NOT DETECTED != HALAL` remains a hard rule.
+9. **Website/platform implementation must represent the full ecosystem**, not a generic halal logistics site, not MS2400-only and not a blockchain-certification narrative.
+10. **The reference runtime is not production.** The FastAPI reference implementation and `platform/web` prototype do not prove production deployment.
+
+Current controlling target-architecture artifact: `CURRENT_TARGET_ARCHITECTURE_2026-09-30.md`.
+
 ## Core architecture decisions
 
 1. The programme is **Global Halal Digital Trust & Trade / Halal Tayyib infrastructure**, not a simple certification database.
@@ -62,9 +83,54 @@ Laboratory systems remain authoritative for their own results. The trust layer s
 
 ## Sinotrans strategy
 
-Sinotrans is treated as a potential Halal Trusted Logistics Corridor + Digital Evidence Node. Existing Sinotrans systems should be integrated through adapters/APIs rather than replaced for the pilot.
+Sinotrans is treated as a potential Halal Trusted Logistics Corridor + Warehouse/Digital Evidence Node. Existing Sinotrans systems should be integrated through adapters/APIs rather than replaced for the pilot.
 
-The operating scope should cover transportation, warehousing, handling, handovers, documentation, telemetry, exceptions and evidence mapped to applicable supplied MS 2400 requirements.
+The operating scope covers transportation, warehousing, handling, handovers, documentation, telemetry, exceptions and evidence mapped to the complete applicable control framework, including relevant MS 2400 requirements where applicable.
+
+Default physical pilot corridor: **China → GCC direct**.
+
+## Port/customs strategy
+
+Port/customs users require an authorised minimum-necessary trust interface capable of resolving shipment identity, container/seal, custody, document/evidence references, authority status references, exceptions and inspection/sampling/release events.
+
+AHTE records and propagates official port/customs events; it does not manufacture official clearance/release.
+
+## AI/ML strategy
+
+The assurance stack includes:
+
+- Evidence Gap Predictor;
+- Anomaly Engine;
+- Contradiction Engine;
+- Trust Fracture Engine;
+- Predictive Compliance Engine;
+- Recall Blast-Radius Engine;
+- Preemptive Strategy Engine.
+
+Target operating loop:
+
+`observe -> correlate -> detect -> predict -> impact analysis -> preemptive strategy -> authorised action -> outcome -> feedback`
+
+AI confidence must not bypass mandatory human/authority decision classes.
+
+## 24/7 Command Center strategy
+
+GHSCL operates the digital infrastructure and continuous monitoring function. The Command Center is designed for 24/7 visibility, alerting, escalation, predictive analysis and preemptive strategy across the complete corridor. JAKIM is connected through the direct authorised API path according to actual production scope.
+
+## Shariah financing / Takaful / tokenomics strategy
+
+The target platform includes a controlled Shariah Financing API plane fed by authorised trust/trade data.
+
+Potential services:
+
+- Islamic trade finance;
+- purchase/order financing;
+- inventory/shipment financing;
+- Takaful underwriting and claims evidence;
+- asset/shipment state verification;
+- tokenomics/digital-value mechanisms where legally and Shariah approved.
+
+No specific bank, Takaful product, token classification, token economics or regulatory approval is established by this log unless separately documented.
 
 ## October 2026 mission
 
@@ -90,7 +156,7 @@ A transaction candidate should not proceed simply because a product is certified
 
 ## Repository architecture direction
 
-The repository should progressively segregate the programme into governance, partner, Halal/Tayyib, Platinum monitoring, China Trust/laboratory, logistics, DPP, traceability, GCC access, B2B trade, finance/support, pilot, October mission, playbooks, SOPs, diagrams/infographics, commercial, legal, research, technical, API, database and dashboards.
+The repository should progressively segregate the programme into governance, partner, Halal/Tayyib, Platinum monitoring, China Trust/laboratory, logistics, DPP, traceability, GCC access, B2B trade, finance/support, pilot, October mission, playbooks, SOPs, diagrams/infographics, commercial, legal, research, technical, API, database, command center and dashboards.
 
 ## Evidence discipline
 
