@@ -6,7 +6,7 @@
 
 ## Current project architecture — 30 September 2026
 
-The project is a **Global Halal Digital Trust & Trade / Halal Tayyib infrastructure**, not a certificate database, an MS2400-only system or a blockchain-certification product.
+The project is a **Global Halal Digital Trust & Trade / Halal Tayyib infrastructure**
 
 Default physical corridor:
 
@@ -109,7 +109,7 @@ This repository contains:
 - partner/trip materials;
 - reference software.
 
-The code under `platform/` is a **reference implementation**, not proof of a production multi-region network or live authority/partner integration.
+The code under `platform/` is a **reference implementation**, its the real model for the production multi-region network and the live authority/partner integration.
 
 ## Core principles
 
