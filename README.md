@@ -84,6 +84,8 @@ Start papers recorded in the repository include PHC–JGC, JGC–Sinotrans and G
 
 Commercial foundation is recorded; current repository status remains controlled by [`STATUS.md`](STATUS.md).
 
+The [readiness register](00_EXECUTIVE_COMMAND/october-2026-readiness.json) records travel as `NOT_TRAVEL_READY` and signing as `NOT_SIGNING_READY`. Operator-reported `TRAVEL_READY` wording in the status and trip pack is not yet reconciled with the register's open travel gates and missing closure references. This describes repository evidence completeness; it does not determine whether the delegation can travel. Reconciliation requires confirmed gate updates and evidence references, followed by execution-board regeneration.
+
 Target architecture completeness and production readiness are separate:
 
 - target architecture may be fully built with development providers;

@@ -1,6 +1,6 @@
 """Validate trip/document controls; render the board without asserting real-world readiness.
 
-Version 1.0, 2026-09-27. Existing executed instruments are outside this tool's scope.
+Version 1.1, 2026-10-01. Existing executed instruments are outside this tool's scope.
 """
 from pathlib import Path
 import argparse
@@ -64,6 +64,39 @@ def sync_terms(root=ROOT):
         assert text.count(START)==text.count(END)==1
         path.write_text(re.sub(re.escape(START)+'.*?'+re.escape(END),lambda _:block,text,flags=re.S))
 
+def _capture(pattern, content, label):
+    match = re.search(pattern, content, flags=re.M)
+    assert match, f'missing controlled headline field: {label}'
+    return match.group(1)
+
+def documented_readiness(path, content):
+    """Parse explicitly labelled controlled readiness fields, never substrings.
+
+    Public documents may legitimately mention operator-reported states alongside the
+    controlled register state. Validation extracts the labelled field and compares the
+    complete token, so TRAVEL_READY cannot satisfy NOT_TRAVEL_READY (or vice versa)
+    merely because one token is a substring of the other.
+    """
+    if path == 'README.md':
+        match = re.search(
+            r'\[readiness register\]\([^)]+\) records travel as `([^`]+)` and signing as `([^`]+)`\.',
+            content,
+            flags=re.M,
+        )
+        assert match, f'missing controlled headline fields: {path}'
+        return {'status': match.group(1), 'signing_status': match.group(2)}
+    if path == 'STATUS.md':
+        return {
+            'status': _capture(r'^\| Travel \|.*?controlled register `([^`]+)` \|', content, f'{path}:travel'),
+            'signing_status': _capture(r'^\| Signing \| `([^`]+)` \|', content, f'{path}:signing'),
+        }
+    if path == 'CHINA_TRIP_2026/00_READ_THIS_FIRST.md':
+        return {
+            'status': _capture(r'^\| Travel \|.*?controlled register `([^`]+)`.*?\|$', content, f'{path}:travel'),
+            'signing_status': _capture(r'^\| Signing \| `([^`]+)`.*?\|$', content, f'{path}:signing'),
+        }
+    raise AssertionError(f'unregistered readiness headline document: {path}')
+
 def validate(root=ROOT):
     data=load(READY_PATH,root)
     assert all(data.get(k)==v for k,v in derive_status(data).items()), 'stale derived readiness; run --render'
@@ -73,8 +106,9 @@ def validate(root=ROOT):
         assert CANONICAL in (root/path).read_text(), f'canonical path drift: {path}'
     for status_file in ['README.md', 'STATUS.md', 'CHINA_TRIP_2026/00_READ_THIS_FIRST.md']:
         content=(root/status_file).read_text()
+        documented=documented_readiness(status_file, content)
         for key in ['status', 'signing_status']:
-            assert data[key] in content, f'stale headline status: {status_file}'
+            assert documented[key] == data[key], f'stale headline status: {status_file}:{key} expected {data[key]} got {documented[key]}'
     instruments=load(SIGNING_PATH,root)['instruments']
     assert len({i['id'] for i in instruments})==len(instruments)
     assert len({i['path'] for i in instruments})==len(instruments), 'competing scopes share one signing draft'
