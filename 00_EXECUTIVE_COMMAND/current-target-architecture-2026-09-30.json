@@ -1,11 +1,23 @@
 {
   "artifact": "current-target-architecture-2026-09-30.json",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "control_date": "2026-09-30",
   "classification": "post-freeze proposal architecture registry",
   "freeze_boundary": "master-standards-stack/verified-2026-09-17/",
   "authority_effect": "none",
   "supersedes_project_level_conflicts_before": "2026-09-30",
+  "implementation_principle": {
+    "name": "FULL ARCHITECTURE NOW -> REAL CONNECTORS WHEN AVAILABLE -> NO REDESIGN REQUIRED",
+    "no_artificial_blocks": true,
+    "requirements": [
+      "Build the complete production-target architecture, interfaces, schemas, workflows, UI states and integration boundaries now.",
+      "Do not remove, disable, downgrade or omit intended capability merely because an external API, credential, partner feed, authority connection, laboratory interface, sensor stream, production dataset, bank/Takaful integration or transaction is not yet available in the development environment.",
+      "Where an external dependency is unavailable, implement a replaceable adapter/sandbox/mock preserving the exact production integration boundary and complete user journey.",
+      "Development mocks may substitute data/connectivity only; they must never reduce the target functionality or become a permanent architectural limitation.",
+      "Do not impose arbitrary feature caps on manufacturer onboarding, evidence ingestion, smart-glass auditing, laboratory integration, traceability, digital twins, immutable evidence, JAKIM connectivity, logistics monitoring, port/customs access, GCC workflows, command-center analytics, AI/ML, predictive/preemptive strategies, finance/Takaful/tokenomics, multilingual capability, portals, APIs or future scale.",
+      "Do not fabricate live authority approvals, lab results, credentials, partner events, customs releases, financing approvals, Takaful underwriting decisions or production telemetry. Preserve complete target functionality while keeping source/transaction truth explicit."
+    ]
+  },
   "canonical_path": [
     "Authority",
     "Standard / Instrument",
@@ -179,6 +191,14 @@
     {
       "stale": "passive command-center analytics",
       "use": "24/7 monitoring, prediction, preemptive strategy, escalation and intervention operating layer"
+    },
+    {
+      "stale": "development dependency used to disable or omit target capability",
+      "use": "complete production-target capability with replaceable development adapter/mock until the real connector is available"
+    },
+    {
+      "stale": "tokenomics hidden behind a permanent feature block merely because a live counterparty is not yet connected",
+      "use": "fully designed tokenomics integration plane and UI/contract architecture, with transaction execution bound to real legal/Shariah/regulatory approvals"
     }
   ]
 }
