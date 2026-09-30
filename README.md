@@ -2,30 +2,128 @@
 
 **GLOBAL HALAL SUPPLY CHAIN LIMITED** · Hong Kong CR **79801544** · incorporation recorded from the supplied scan dated 11 February 2026; original verification remains open
 
-[Trip pack](CHINA_TRIP_2026/00_READ_THIS_FIRST.md) · [Execution board](CHINA_TRIP_2026/EXECUTION_BOARD.md) · [Repository audit](docs/REPOSITORY_DEEP_AUDIT_2026-09-28.md) · [A–Z index](REPO_INDEX.md) · [STATUS](STATUS.md) · [Governance](GOVERNANCE.md) · [License](LICENSE)
+[Current target architecture](00_EXECUTIVE_COMMAND/CURRENT_TARGET_ARCHITECTURE_2026-09-30.md) · [Implementation completeness rule](00_EXECUTIVE_COMMAND/IMPLEMENTATION_COMPLETENESS_RULE_2026-09-30.md) · [Codex rebuild prompt](docs/CODEX_PLATFORM_REBUILD_MASTER_PROMPT_2026-09-30.md) · [Website spec v2.1+](docs/WEBSITE_REBUILD_MASTER_SPEC_v2_2026-09-30.md) · [Trip pack](CHINA_TRIP_2026/00_READ_THIS_FIRST.md) · [Execution board](CHINA_TRIP_2026/EXECUTION_BOARD.md) · [A–Z index](REPO_INDEX.md) · [STATUS](STATUS.md)
 
-## Commercial foundation (recorded 2026-09-26)
+## Current project architecture — 30 September 2026
+
+The project is a **Global Halal Digital Trust & Trade / Halal Tayyib infrastructure**, not a certificate database, an MS2400-only system or a blockchain-certification product.
+
+Default physical corridor:
+
+**China → GCC direct**
+
+Malaysia is the governance/assurance and authority-connectivity plane unless a Malaysia physical movement is explicitly scoped.
+
+[PILOT: Shipment 001 — China → GCC direct]
+
+Target operating chain:
+
+```text
+VERIFIED RAW-MATERIAL ORIGIN
+→ SUPPLIER / PRODUCER
+→ SAMPLE / SEAL / CHAIN OF CUSTODY
+→ CHINA LABORATORY SYSTEM
+→ SIGNED SCIENTIFIC EVIDENCE
+→ MANUFACTURER / FACTORY SYSTEMS
+→ STANDARDS / APPLICABILITY
+→ HCP / SCCP / CONTROLS
+→ SMART-GLASS AI-ASSISTED SITE AUDIT
+→ FINDING / CAPA / RE-VERIFICATION
+→ DIRECT JAKIM API / HUMAN AUTHORITY WORKFLOW
+→ AHTE TRUST-STATE PROPAGATION
+→ PACKAGING / BATCH / LOT / PALLET
+→ SINOTRANS WAREHOUSE
+→ SINOTRANS END-TO-END LOGISTICS
+→ CONTAINER / SEAL / TELEMETRY / CUSTODY
+→ ORIGIN PORT / CUSTOMS API
+→ INTERNATIONAL TRANSIT
+→ GCC PORT / CUSTOMS API
+→ IMPORTER / DESTINATION WAREHOUSE
+→ DISTRIBUTION / RETAIL
+→ BUYER / CONSUMER AUTHORISED VERIFICATION
+```
+
+Across the chain:
+
+```text
+AHTE
++ 24/7 GHSCL + JAKIM-connected Command Center
++ AI/ML predictive analytics
++ Preemptive Strategy Engine
++ cryptographic/tamper-evident evidence integrity
++ role-based authorised transparency
+```
+
+Target transaction-support plane:
+
+`Authorised AHTE trust/trade data → Shariah Financing API → Islamic financing / Takaful / tokenomics`
+
+## No artificial implementation blocks
+
+**FULL ARCHITECTURE NOW → REAL CONNECTORS WHEN AVAILABLE → NO REDESIGN REQUIRED.**
+
+Missing production APIs, credentials, partner feeds, lab interfaces, port systems, financial counterparties or transaction data do **not** justify deleting, hiding, disabling or downgrading the target capability. Implement the complete production interface/workflow with replaceable development/sandbox providers until the real connector is available.
+
+Development state must be clearly labelled and must not be represented as real authority, partner or transaction evidence.
+
+## Commercial foundation
 
 - **Perak Halal Corporation** — Perak State Government GLC for the Halal industry, local and global.
-- **Malaysia Halal system** — A coordinated national framework with distinct JAKIM/MAIN/JAIN mandates; PHC is the commercial industry participant. See the [authority map](CHINA_TRIP_2026/MALAYSIA_HALAL_AUTHORITY_MAP.md).
-- Start papers: PHC–JGC MoU (27 Aug 2025) · JGC–Sinotrans framework (Sep 2025) · **GHSC HK–Sinotrans MoU (3 Mar 2026)**.
-- Vehicle incorporation and non-binding MoU summaries are recorded. The trip aims to negotiate the annexes (named yard, lane, first SKU and retailer packs); acceptance and signatures remain open.
+- **GHSCL Hong Kong** — international operating and digital-infrastructure vehicle.
+- **AHTE** — continuous standards, evidence, compliance, traceability and trust intelligence.
+- **Direct JAKIM API** — target authority-system connectivity according to authorised production scope.
+- **Sinotrans** — target warehouse + end-to-end logistics real-time evidence integration.
+- **China laboratory / traceability plane** — scientific evidence and physical/digital identity integration.
+- **Port/customs interfaces** — authorised minimum-necessary trust/API access; sovereign decisions remain with competent authorities.
+- **GCC destination layer** — importer, customs, authority, warehouse, distributor, retailer and verification.
+- **Shariah Finance/Takaful/tokenomics** — target transaction-support plane; independent financial/Shariah/regulatory decisions remain external.
 
-**Readiness:** commercial foundation recorded; travel `NOT_TRAVEL_READY`; signing `NOT_SIGNING_READY`; reference software only. The [readiness register](00_EXECUTIVE_COMMAND/october-2026-readiness.json) and [execution board](CHINA_TRIP_2026/EXECUTION_BOARD.md) control closure. Reported source summaries are indexed separately from reviewed originals.
+Start papers recorded in the repository include PHC–JGC, JGC–Sinotrans and GHSC HK–Sinotrans instruments/summaries. Execution status remains controlled by the trip/signing registers; a prepared or reported instrument is not automatically a production integration.
+
+## Readiness
+
+Commercial foundation is recorded; current repository status remains controlled by [`STATUS.md`](STATUS.md).
+
+Target architecture completeness and production readiness are separate:
+
+- target architecture may be fully built with development providers;
+- production activation requires real external permissions, security controls, credentials, counterparties and transaction-native evidence;
+- Shipment 001 remains uninstantiated until transaction evidence exists.
 
 ## What this repository is
 
-The operating file for that corridor: standards catalogue, evidence model, reference runtime (`platform/`), partner files, and the China trip pack.
+This repository contains:
 
-The code under `platform/` is a **local reference** (FastAPI + default-deny HITM + Compose). It records evidence. It does not print a Malaysian Halal certificate and it is not a multi-region production network.
+- governance and doctrine;
+- standards/applicability architecture;
+- evidence/trust schemas;
+- China execution pack;
+- laboratory integration architecture;
+- smart-glass audit specification;
+- Sinotrans warehouse/logistics integration;
+- port/customs workflows;
+- Platinum real-time monitoring;
+- Command Center architecture;
+- Shariah Financing API/Takaful/tokenomics architecture;
+- website/Codex build specifications;
+- partner/trip materials;
+- reference software.
 
-## Core principle
+The code under `platform/` is a **reference implementation**, not proof of a production multi-region network or live authority/partner integration.
 
-> Data stays where it belongs. Trust travels.
+## Core principles
 
-`NOT DETECTED ≠ HALAL`.
+> **Data stays where it belongs. Trust travels.**
 
-## 17-standard operating set (catalogue)
+> **Certificate ≠ Trust.**
+
+> **NOT DETECTED ≠ HALAL.**
+
+> **AI assists; competent humans/authorities decide where the decision class requires them.**
+
+A hash proves integrity of the hashed content after creation; it does not by itself prove truth, authority or Halal status.
+
+## 17-standard operating catalogue
 
 1. MS 1500:2019 — Halal food
 2. MS 2400-1:2019 — Transport
@@ -45,23 +143,22 @@ The code under `platform/` is a **local reference** (FastAPI + default-deny HITM
 16. MS 2809:2025 — Chemometric authentication
 17. MS 2810:2025 — Pig skin and hair identification
 
-Normative MS wording is not redistributed. Snapshot: `master-standards-stack/verified-2026-09-17/`.
+AHTE is not limited to MS2400. It resolves the complete applicable Malaysian/JAKIM operating framework plus destination requirements and applicable contractual requirements.
 
-## Parties
-
-See [`partners/README.md`](partners/README.md). Retailer packs: [`CHINA_TRIP_2026/RETAILERS/`](CHINA_TRIP_2026/RETAILERS/).
+Normative MS wording is source-governed and not redistributed. Verified snapshot: `master-standards-stack/verified-2026-09-17/`.
 
 ## Canonical path
 
 `Authority → Standard / Instrument → Clause / Requirement → Applicability → Control → HCP / SCCP → Evidence → Audit Test → Finding → Corrective Action → Re-verification → Authority Gate → Trust State → Operational Release`
 
-Trust State is an internal model state, not the certificate.
+Trust State is a machine-readable evidence/operational state, not the certificate.
 
-## Engineering notes (do not confuse with the commercial foundation)
+## Current engineering controls
 
-- Three corrupt legacy archives were [retired](00_EXECUTIVE_COMMAND/artifact-quarantine-2026-09-26.json). The [replacement MS 2400 source index](master-standards-stack/iq300-full-matrix/source-index-2026-09-27/SOURCE_INDEX_MANIFEST.json) has 628 numbered clause locators and no licensed standard text. The historical 613 proposed control objects were incomplete.
-- The [28 September source review](master-standards-stack/19_SUPPLIED_PDF_RECONCILIATION_2026-09-28.md) checks ten additional attachments. MS 2441-2:2014 concerns sewage treatment and is outside the halal catalogue; the illustrated PDF mislabels MS 2610 as 2014, while its supplied primary edition is 2015.
-- The [Platinum compilation review](master-standards-stack/20_PLATINUM_COMPILATION_REVIEW_2026-09-28.md) records duplicate PDF hashes, invalid contents page references and a misidentified MS 2565:2014. Use primary editions for exact controls.
-- The [Platinum ZIP triage](master-standards-stack/21_PLATINUM_BUNDLE_TRIAGE_2026-09-28.md) finds an intact 69-file bundle whose index claims 80 files and 12 absent HTML sources. Its standards/assay/business claims require primary-source review.
-- The [Sinotrans playbook bundle review](master-standards-stack/22_SINOTRANS_PLAYBOOK_BUNDLE_REVIEW_2026-09-28.md) blocks fabricated clause mappings and unapproved SOP/technology claims from operational use; the [October 15 worksheet](CHINA_TRIP_2026/SINOTRANS_OCT15_ACCEPTANCE_WORKSHEET.md) tracks the actual acceptance evidence.
-- Shipment 001 is the first live lot to evidence — not yet a bill of lading in this git tree.
+- The verified freeze `master-standards-stack/verified-2026-09-17/` is unchanged.
+- Three corrupt legacy archives remain retired/quarantined; do not reconstruct normative content from corrupted assets.
+- The replacement MS2400 source index is an index/locator asset, not licensed normative text or a complete control set.
+- The reviewed derived Sinotrans MS2400 playbook bundle must not override verified source/control mappings where conflicts exist.
+- `platform/` reference runtime and `platform/web/` prototype are not the complete production platform.
+- Current website/Codex implementation is governed by the v2.1+ website specification and v2.1+ Codex master prompt.
+- Current machine architecture registry v1.1.0+ carries the no-artificial-block implementation rule.
