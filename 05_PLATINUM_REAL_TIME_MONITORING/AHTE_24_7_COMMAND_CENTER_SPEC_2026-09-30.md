@@ -2,7 +2,7 @@
 
 ## Metadata
 
-- Revision: v1.0.0
+- Revision: v1.1.0
 - Control date: 2026-09-30
 - Classification: post-freeze operating architecture
 - Governing topology: `../00_EXECUTIVE_COMMAND/CURRENT_TARGET_ARCHITECTURE_2026-09-30.md`
@@ -13,19 +13,27 @@
 
 ## 1. Mission
 
-Provide a continuously operating command-center layer for the China-origin → GCC-destination trust corridor that can observe, correlate, detect, predict, generate preemptive strategies, assign ownership, escalate, support controlled holds, follow CAPA/re-verification and maintain an auditable operational picture across the complete trust graph.
+Provide a continuously operating command-center layer for the China-origin → GCC-destination trust corridor that is **monitored 24/7 by GHSCL operational roles and authorised JAKIM authority-side roles** and can observe, correlate, detect, predict, generate preemptive strategies, assign ownership, escalate, support controlled holds, follow CAPA/re-verification and maintain an auditable operational picture across the complete trust graph.
+
+Joint monitoring means shared, role-governed visibility over the relevant real-time trust picture. It does **not** collapse institutional responsibilities or permissions. GHSCL performs digital-platform/corridor operations and coordination; JAKIM retains authority-side monitoring, review and formal authority-decision scope according to the authorised production interface and mandate.
 
 The Command Center is not a substitute for competent-authority certification, customs release, laboratory competence, manufacturer responsibility, bank credit approval or Takaful underwriting.
 
-## 2. Operator model
+## 2. Joint operator model
 
-### GHSCL
+### GHSCL — 24/7 operational monitoring
 
-GHSCL is the international operating/digital-infrastructure vehicle responsible for the continuous monitoring/orchestration function.
+GHSCL is the international operating/digital-infrastructure vehicle responsible for continuous platform/corridor monitoring, event correlation, operational ownership assignment, partner coordination, exception orchestration, evidence/trust-state visibility and escalation within its lawful/contractual scope.
 
-### JAKIM-connected authority roles
+### JAKIM — 24/7 authorised authority-side monitoring
 
-JAKIM is connected through the direct authorised API path according to actual production scope. Authority users receive the visibility/actions granted by their real mandate and interface permissions.
+Authorised JAKIM roles jointly monitor the Command Center through the direct JAKIM API / authority interface according to actual production scope. JAKIM users receive authority-relevant evidence, status, alerts, cases and actions granted by their real mandate and interface permissions.
+
+The platform must not downgrade this to a passive JAKIM read-only concept unless the actual authorised production scope requires that restriction. The target architecture must support the full authorised authority-side workflow, with the live permission set supplied by JAKIM at integration time.
+
+### PHC + JAKIM human authority workflow
+
+For this project operating model, formal certification approval/disapproval is performed through the authorised **PHC + JAKIM human workflow**, including Mufti/scholars/authorised halal officers/decision-makers as applicable. AI/AHTE may assist, predict and route; they do not make the formal certification decision.
 
 ### Other roles
 
@@ -41,7 +49,7 @@ JAKIM is connected through the direct authorised API path according to actual pr
 ## 3. Core operating loop
 
 ```text
-OBSERVE
+OBSERVE 24/7 — GHSCL + AUTHORISED JAKIM ROLES
 ↓
 INGEST + VALIDATE
 ↓
@@ -91,7 +99,7 @@ Monitor:
 - audit schedule/status;
 - authority/certification status references.
 
-### 4.2 Laboratory
+### 4.2 Laboratory + China traceability
 
 Monitor:
 
@@ -104,7 +112,11 @@ Monitor:
 - report/signature/hash;
 - evidence acceptance;
 - corrected/withdrawn reports;
-- re-test requirement.
+- re-test requirement;
+- product/batch/physical-code binding;
+- one-item-one-code / packaging aggregation state where integrated;
+- anti-counterfeit / anti-diversion / abnormal-scan events;
+- scan geography/velocity anomalies where authorised.
 
 ### 4.3 Smart-glass audit
 
@@ -177,16 +189,18 @@ Monitor:
 - acceptance/hold;
 - retail/distribution progression.
 
-### 4.8 Finance/Takaful
+### 4.8 Finance/Takaful/tokenomics support plane
 
-Where separately authorised, display only operational support status such as:
+Where separately authorised, display operational support status such as:
 
 - finance evidence packet ready/requested;
+- financing workflow status supplied by the authorised counterparty;
 - Takaful underwriting evidence packet ready/requested;
 - claim evidence packet opened;
-- operational hold affecting finance/insurance prerequisites.
+- operational hold affecting finance/insurance prerequisites;
+- tokenized/digital-value asset reference and verification state where legally/Shariah approved.
 
-Do not display internal credit/underwriting decisions unless provided by the competent counterparty and authorised for that user.
+Do not infer or manufacture bank credit decisions, Takaful underwriting/claims decisions, ownership/title or token regulatory/Shariah status.
 
 ## 5. Global command views
 
@@ -194,8 +208,9 @@ Do not display internal credit/underwriting decisions unless provided by the com
 
 Map overlays:
 
+- China raw-material origin / supplier;
 - China factory/origin;
-- laboratory;
+- laboratory / traceability identity plane;
 - Sinotrans warehouse;
 - current shipment position;
 - origin port;
@@ -206,7 +221,7 @@ Map overlays:
 
 ### 5.2 Trust-state matrix
 
-Rows: facilities/products/batches/shipments.
+Rows: facilities/products/materials/batches/shipments.
 
 Columns:
 
@@ -218,6 +233,7 @@ Columns:
 - open exceptions;
 - CAPA;
 - prediction risk;
+- preemptive strategy;
 - last verified;
 - owner.
 
@@ -256,6 +272,8 @@ Suggested machine-operational alerts:
 - `CHAIN_OF_CUSTODY_BREAK`
 - `LAB_SCOPE_EXCEPTION`
 - `LAB_QC_FAILURE`
+- `TRACEABILITY_BINDING_EXCEPTION`
+- `COUNTERFEIT_OR_DIVERSION_SIGNAL`
 - `HCP_EXCEPTION`
 - `SCCP_EXCEPTION`
 - `AUDIT_FINDING_OPEN`
@@ -293,13 +311,15 @@ Severity is not certification status.
 - D1 — encoded control execution;
 - D2 — machine assessment;
 - D3 — human finding/CAPA accountability;
-- D4 — trust-fracture hold; auto-hold may be configured, auto-release forbidden;
+- D4 — trust-fracture hold; auto-hold may be configured, auto-release forbidden where human release is required;
 - D5 — competent-authority gate;
-- D6 — sovereign/legal.
+- D6 — sovereign/legal/fatwa.
 
-The Command Center must show the class and next authorised actor for every escalated case.
+The Command Center must show the class and next authorised actor for every escalated case. No model confidence score bypasses D5/D6.
 
-## 9. Preemptive Strategy Engine
+## 9. AI/ML predictive analytics + Preemptive Strategy Engine
+
+The Command Center must support descriptive, diagnostic, predictive and preemptive/prescriptive analysis.
 
 ### Inputs
 
@@ -312,6 +332,7 @@ The Command Center must show the class and next authorised actor for every escal
 - CAPA recurrence;
 - audit findings;
 - sample/lab patterns;
+- traceability/scan anomaly patterns;
 - evidence expiry horizon;
 - authority-status changes;
 - destination requirements.
@@ -352,7 +373,8 @@ OutcomeRefs[]
 - schedule calibration before a high-risk measurement period;
 - move stock to compliant warehouse zone;
 - pre-stage recall notification/evidence where blast radius is growing;
-- add targeted smart-glass checks at a facility with recurring evidence gaps.
+- add targeted smart-glass checks at a facility with recurring evidence gaps;
+- investigate repeated product-code scans inconsistent with the intended GCC route.
 
 ## 10. Evidence integrity
 
@@ -368,11 +390,15 @@ Recommended linkage:
 
 ### GHSCL operator
 
-Broad operational view within contractual/lawful scope.
+Broad operational/corridor view within contractual/lawful scope.
 
 ### JAKIM authorised authority role
 
-Authority-relevant evidence/status, human decision workflow and audit trail according to actual mandate/interface permissions.
+Authority-relevant evidence/status, alerts, human decision workflow and audit trail according to actual mandate/interface permissions, with 24/7 Command Center monitoring support.
+
+### PHC authorised project role
+
+Institutional/industry workflow and the applicable project human-review/certification workflow scope coordinated with JAKIM according to the implemented process.
 
 ### Manufacturer
 
@@ -380,7 +406,7 @@ Own facility/product/material/evidence/CAPA view.
 
 ### Laboratory
 
-Sample/method/result/custody scope.
+Sample/method/result/custody/traceability scope.
 
 ### Sinotrans
 
@@ -431,35 +457,48 @@ Target controls:
 - audit trail;
 - key/credential rotation;
 - incident response;
-- read-only degraded mode if external authority/partner APIs fail.
+- complete connector-state handling;
+- development/sandbox provider when a live external connector is unavailable.
 
-The system must never show a dependency failure as an implied approval/success.
+A production dependency failure must never be shown as implied approval/success. It must also not be used as an artificial reason to delete or disable the target feature.
 
-## 14. UX acceptance criteria
+## 14. No-artificial-block implementation rule
+
+**FULL ARCHITECTURE NOW → REAL CONNECTORS WHEN AVAILABLE → NO REDESIGN REQUIRED.**
+
+The Command Center target implementation must include all required role views, queues, state machines, alerting, predictive/preemptive functions and adapter boundaries even before every production integration credential is available. Development/sandbox providers may replace external connectivity only; they may not replace the capability itself.
+
+## 15. UX acceptance criteria
 
 The Command Center is incomplete unless it can demonstrate:
 
 1. China→GCC corridor map;
 2. object-level trust state;
 3. separate authority/certification and supply-chain states;
-4. lab/sample pipeline;
-5. HCP/SCCP exceptions;
-6. smart-glass findings;
-7. Sinotrans warehouse/logistics;
-8. container/seal/telemetry;
-9. port/customs events;
-10. GCC receiving;
-11. predictive risk queue;
-12. preemptive strategies;
-13. D4 hold and human release rule;
-14. CAPA/re-verification;
-15. recall blast-radius traversal;
-16. evidence/source drill-down;
-17. role-based disclosure;
-18. full audit timeline.
+4. raw-material/supplier risk;
+5. lab/sample/traceability pipeline;
+6. HCP/SCCP exceptions;
+7. smart-glass findings;
+8. Sinotrans warehouse/logistics;
+9. container/seal/telemetry;
+10. port/customs events;
+11. GCC receiving;
+12. predictive risk queue;
+13. preemptive strategies;
+14. D4 hold and human release rule;
+15. CAPA/re-verification;
+16. recall blast-radius traversal;
+17. evidence/source drill-down;
+18. role-based disclosure;
+19. full audit timeline;
+20. joint 24/7 GHSCL + authorised JAKIM monitoring state;
+21. direct JAKIM API connector state;
+22. finance/Takaful/tokenomics support-state view where authorised.
 
-## 15. Production boundary
+## 16. Production boundary
 
 A UI prototype or synthetic event stream is not proof that the live JAKIM, Sinotrans, laboratory, port/customs, GCC or finance systems are connected.
 
 Production status requires implemented authentication, partner/authority permissions, real data contracts, persistence, auditability, security testing, availability controls and transaction-native evidence.
+
+This production-evidence boundary is not a product feature block.
