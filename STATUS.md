@@ -43,7 +43,7 @@ For unavailable external systems, the platform should implement the complete pro
 | Target architecture | `DOC-COMPLETE / POST-FREEZE-PROPOSAL` | Consolidated 30 Sep architecture; verified freeze unchanged |
 | Implementation completeness rule | `ACTIVE` | Required capability must remain architecturally complete even when external systems are not production-connected |
 | Commercial foundation | Incorporation and non-binding start papers recorded from maintainer-supplied scans/summaries | [Instrument register](CHINA_TRIP_2026/01_INSTRUMENT_REGISTER.md); exact original/custody/signatory checks remain open |
-| Travel | TRAVEL_READY` | Tickets, rooming, legal-name roster, academy schedule and airport/border routing |
+| Travel | Operator-reported `TRAVEL_READY`; controlled register `NOT_TRAVEL_READY` | Operator headline and register disagree. Travel gates remain OPEN with no closure references in the register; ticketing, rooming, roster, schedule and routing confirmation must be reconciled there. |
 | Signing | `NOT_SIGNING_READY` | M01–M06 mapped; entity mandates, final bilingual text and counterparties' acceptance pending |
 | Demonstration | `REHEARSAL_PENDING` | Reference tests pass; travel laptop, offline backup and AV rehearsal not evidenced |
 | Production | `NOT_PRODUCTION_READY` | Reference stack only; live authority/partner/lab/port/GCC/finance integrations are not independently evidenced as production |
