@@ -1,87 +1,213 @@
-# 07 — CRYPTOGRAPHIC TRUST-ANCHOR ARCHITECTURE
+# 07 — Cryptographic Trust-Anchor Architecture
 
 ## 1. Objective
 
-Bind identities, evidence, physical custody and authority decisions into a tamper-evident trust graph that can be independently verified without exposing unnecessary source data.
+Create a verifiable trust layer that binds identities, evidence, authority decisions and critical physical events without making a blockchain ledger the trust root.
 
 ## 2. Trust hierarchy
 
-`ROOT TRUST AUTHORITY -> JURISDICTION TRUST DOMAIN -> ORGANISATION CA -> FACILITY / DEVICE CERTIFICATE -> USER / ROLE CREDENTIAL -> EVENT SIGNATURE`
+```text
+ROOT TRUST AUTHORITY
+        ↓
+JURISDICTION TRUST ANCHOR
+        ↓
+ORGANISATION TRUST DOMAIN
+        ↓
+SYSTEM / SERVICE CERTIFICATE
+        ↓
+DEVICE / USER KEY
+        ↓
+SIGNED EVENT / ASSERTION
+        ↓
+EVIDENCE HASH / OBJECT PROOF
+```
 
-The root should be held under multi-party governance. No single operator should control issuance, approval and emergency recovery simultaneously.
+## 3. Key classes
 
-## 3. Cryptographic primitives
+| Key class | Purpose | Rotation |
+|---|---|---|
+| Root signing key | Root-of-trust certificate/signing | Rare, ceremony controlled |
+| Jurisdiction anchor key | National/authority trust domain | Policy-defined |
+| Organisation CA key | Issue organisational certificates | Controlled lifecycle |
+| Service key | API/event signing | Frequent |
+| Device key | Smart-glass/port device identity | Frequent / on compromise |
+| User signing key | Human signature where required | Role-controlled |
+| Evidence hash key | Integrity/authentication functions | Cryptoperiod policy |
 
-- SHA-256 or stronger approved hash for content/event digests.
-- Ed25519 or approved equivalent for application-level signing where supported by platform policy.
-- TLS 1.3 for transport.
-- X.509 certificates for infrastructure identity.
-- Hardware-backed keys in TPM/HSM/secure element for high-value signing keys.
-- Optional Merkle batching for high-volume evidence anchoring.
+## 4. Hardware protection
 
-## 4. Evidence integrity
+High-value authority and organisational keys should be stored in HSMs or equivalent hardware-backed security modules. Field-device keys should use secure elements/TPM/TEE capabilities where available.
 
-For each evidence item:
+## 5. Algorithms
 
-`raw artifact -> canonicalisation -> content hash -> metadata hash -> evidence manifest -> actor signature -> storage pointer`.
+The implementation profile shall use current, widely supported cryptographic primitives approved by the deployment security authority. Recommended baseline:
 
-The stored hash does not substitute for retaining the evidence where the applicable retention policy requires the original.
+- SHA-256 or stronger approved hash for content integrity.
+- Ed25519/ECDSA or approved equivalent for signatures where ecosystem compatibility allows.
+- TLS 1.3 for transport where supported.
+- AES-256-GCM or approved equivalent for symmetric encryption.
 
-## 5. Event hash chain
+The exact algorithm profile is frozen in the security standard and may be updated without changing business object identifiers.
 
-Each event references `previous_event_hash`. The resulting chain provides sequence integrity. Periodic Merkle roots can be anchored to an independent trust service or authority-controlled ledger.
+## 6. Evidence integrity
 
-## 6. Physical-digital binding
+```text
+RAW EVIDENCE
+   ↓
+CANONICAL SERIALISATION
+   ↓
+CONTENT HASH
+   ↓
+EVIDENCE MANIFEST
+   ↓
+SIGNATURE
+   ↓
+EVIDENCE OBJECT
+```
 
-### Seal binding
-`seal_id + container_id + shipment_id + application_event + custodian + location + time + seal_image_digest + signer`.
+Any derivative annotation is linked to the original evidence hash rather than replacing it.
 
-### Pallet binding
-`pallet_id + contained_lots + loading_event + loading_actor + container_id`.
+## 7. Event signature
 
-### Batch binding
-`batch_id + formula_version + source_materials + production_events + evidence_set + release_state`.
+Critical events use:
 
-## 7. Credential classes
+`CanonicalEvent → PayloadHash → EventDigest → Sign(Device/User/Service key) → SignatureEnvelope`.
 
-`AUTHORITY-CRED`, `AUDITOR-CRED`, `QA-CRED`, `LAB-CRED`, `LOGISTICS-CRED`, `PORT-OFFICER-CRED`, `SYSTEM-CRED`, `DEVICE-CRED`.
+The event carries `PreviousEventID` and, for critical chains, `PreviousEventHash` to make alteration/reordering detectable.
 
-Every credential has issuer, subject, role, jurisdiction, start/end time, revocation pointer and permitted scopes.
+## 8. Authority decision object
 
-## 8. Key lifecycle
+An authority decision contains:
 
-`GENERATE -> REGISTER -> ACTIVATE -> MONITOR -> ROTATE -> REVOKE -> ARCHIVE`.
+- DecisionID.
+- IssuerAuthorityID.
+- IssuerRole.
+- Scope.
+- EffectiveFrom/Until.
+- DecisionType.
+- Related application/case.
+- Product/batch/lot references.
+- Supporting evidence references.
+- Conditions/exceptions.
+- Signature.
+- KeyID.
+- Trust-anchor chain.
 
-Emergency revocation must propagate to gateways and mobile devices. New keys must not retroactively invalidate already-signed events; verification uses the certificate state at event time.
+## 9. Trust assertion
 
-## 9. Selective disclosure
+A cross-border trust assertion is intentionally smaller than the source evidence package.
 
-Create signed assertions that expose only required fields, e.g. `batch identity`, `status`, `authority decision`, `seal integrity`, `test result class`, without exposing the complete factory dossier.
+```json
+{
+  "TrustAssertionID":"TA-SHP001-0001",
+  "Issuer":"AUTH-...",
+  "SubjectObjects":["LOT-...","CONT-...","SHIP-001"],
+  "Scope":"Shipment 001 China → GCC",
+  "ValidFrom":"...",
+  "ValidUntil":"...",
+  "State":"VERIFIED|RELEASED|HOLD|...",
+  "DecisionRefs":[],
+  "EvidenceHashes":[],
+  "ExceptionFlags":[],
+  "VerificationEndpoint":"...",
+  "Jurisdiction":"CN→SA|CN→AE",
+  "IssuedAt":"...",
+  "Signature":{ "keyId":"...","value":"..." }
+}
+```
 
-The verifier receives an assertion plus proof that it was issued under a trusted credential and references the underlying evidence object.
+## 10. Selective disclosure
 
-## 10. Data-zone architecture
+A verifier should be able to prove:
 
-China-resident source records remain in the China-controlled zone when required. Malaysia and GCC zones retain their own authoritative or locally required records. A cross-border trust gateway exchanges signed assertions, hashes, identifiers and authorised evidence packets.
+- the issuer is trusted;
+- the assertion is current;
+- a specific lot/container belongs to the shipment;
+- the referenced decision is active;
+- evidence hashes match;
+- no unresolved exception is hidden in the disclosed scope.
 
-## 11. Anti-replay controls
+The verifier should not automatically receive detailed employee data, internal production records or unrelated supplier information.
 
-Every command/event includes unique ID, issuer, issued-at, expiry where appropriate, nonce/idempotency key and monotonic sequence. Duplicate events are rejected or safely de-duplicated.
+## 11. Revocation
 
-## 12. Key ceremonies
+Support:
 
-Root creation, organisation onboarding, authority credential issuance and disaster recovery use documented multi-person ceremonies with recorded approvals, offline recovery material and independent witnesses where governance requires.
+- key revocation;
+- device revocation;
+- organisation credential suspension;
+- authority decision withdrawal;
+- trust assertion invalidation;
+- certificate status update.
 
-## 13. Verification API
+Use OCSP/CRL or an ecosystem-appropriate status service for certificates and a dedicated signed status event model for business trust objects.
 
-`GET /trust/v1/verify/{assertion_id}` returns issuer, subject, status, issued-at, expiry, signature verification state, underlying object references and policy scope.
+## 12. Time integrity
 
-`POST /trust/v1/verify-bundle` verifies a shipment evidence package and returns a structured verification report.
+Critical events require:
 
-## 14. Security event model
+- trusted source timestamp;
+- local device timestamp;
+- reconciliation timestamp;
+- time-source metadata.
 
-`E-KEY-ISSUED`, `E-KEY-ROTATED`, `E-KEY-REVOKED`, `E-CREDENTIAL-SUSPENDED`, `E-EVIDENCE-SEALED`, `E-ANCHOR-CREATED`, `E-ANCHOR-VERIFIED`, `E-VERIFICATION-FAILED`.
+Clock drift beyond policy creates `E-TIME-EXCEPTION` and may force review for high-value events.
 
-## 15. Recovery
+## 13. Key compromise response
 
-Backup keys and recovery procedures are jurisdiction-aware. Recovery cannot create a new authority decision; it only restores the ability to verify or issue under already-approved authority.
+```text
+DETECT
+ ↓
+REVOKE KEY
+ ↓
+ISOLATE DEVICE/SERVICE
+ ↓
+IDENTIFY AFFECTED EVENTS
+ ↓
+REVALIDATE TRUST CHAIN
+ ↓
+RE-ISSUE ASSERTIONS WHERE REQUIRED
+ ↓
+INVESTIGATE
+ ↓
+CLOSE INCIDENT
+```
+
+## 14. Blockchain policy
+
+AHTE may optionally anchor event/evidence digests into a distributed ledger for additional tamper-evidence, but the business source of truth remains the governed AHTE event/evidence store and the authority decision registry.
+
+## 15. Cross-border trust
+
+The trust packet crosses jurisdictions as a signed assertion. Detailed source evidence remains accessible through controlled verification endpoints or lawful request workflows.
+
+China's Network Data Security Management Regulation requires security measures including encryption, backup, access control and authentication, and sets governance obligations for data provision and processing. citeturn748828search0 The CAC's 2024 cross-border data provisions also require lawful processing and security safeguards for regulated data transfers. citeturn164534search0
+
+## 16. Trust-anchor registry
+
+```text
+TrustAnchorID
+Jurisdiction
+Authority/Organisation
+KeyID
+Algorithm
+CertificateChain
+ValidFrom
+ValidUntil
+RevocationEndpoint
+Status
+PolicyVersion
+```
+
+## 17. Security acceptance tests
+
+- Invalid signature rejected.
+- Expired credential rejected.
+- Revoked credential rejected.
+- Altered evidence hash detected.
+- Event-chain break detected.
+- Wrong issuer rejected.
+- Wrong scope rejected.
+- Replay attempt detected.
+- Key rotation preserves historical verification.
+- Selective disclosure excludes unapproved fields.

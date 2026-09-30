@@ -1,145 +1,217 @@
-# 03 — SHIPMENT 001 COMPLETE EVENT CATALOGUE
+# 03 — Shipment 001 Complete Event Catalogue
 
-## Event envelope
+## 1. Event envelope
 
-Every event uses:
+Every Shipment 001 event uses the common envelope:
 
-`event_id`, `event_type`, `schema_version`, `occurred_at`, `recorded_at`, `issuer_org`, `issuer_role`, `jurisdiction`, `subject_id`, `parent_event_id`, `correlation_id`, `location_id`, `device_id`, `payload`, `evidence_refs`, `signature`, `previous_event_hash`, `event_hash`.
+```json
+{
+  "EventID": "EVT-...",
+  "EventType": "E-...",
+  "EventVersion": "1.0",
+  "OccurredAt": "2026-...Z",
+  "RecordedAt": "2026-...Z",
+  "TimeSource": "device|server|authority",
+  "ActorID": "ACT-...",
+  "ActorRole": "...",
+  "OrganisationID": "ORG-...",
+  "Jurisdiction": "CN|MY|SA|AE|GCC",
+  "LocationID": "LOC-...",
+  "DeviceID": "DEV-...",
+  "ObjectRefs": [],
+  "PreviousEventID": "EVT-...",
+  "EvidenceRefs": [],
+  "Payload": {},
+  "ResultingState": "...",
+  "Integrity": {"PayloadHash":"sha256:..."},
+  "Signature": {"Algorithm":"...","KeyID":"...","Value":"..."}
+}
+```
 
-## Lifecycle catalogue
+## 2. Lifecycle catalogue
 
-### Programme / factory
-- `E-ORG-ONBOARD` — organisation created/approved for pilot participation.
-- `E-FACILITY-REGISTERED` — facility identity and site boundary established.
-- `E-SCOPE-CLASSIFIED` — product/process/jurisdiction scope classified.
-- `E-STANDARD-APPLIED` — applicable standard set bound to scope.
-- `E-ROLE-ASSIGNED` — accountable role assigned.
-- `E-TRAINING-COMPLETE` — required training completed.
+### A. Programme and organisation
 
-### Materials and suppliers
-- `E-SUPPLIER-REGISTERED`
-- `E-MATERIAL-REGISTERED`
-- `E-MATERIAL-DOSSIER-COMPLETE`
-- `E-MATERIAL-APPROVED`
-- `E-MATERIAL-REJECTED`
-- `E-MATERIAL-LOT-RECEIVED`
-- `E-MATERIAL-QUARANTINED`
-- `E-MATERIAL-RELEASED`
+| Event | Trigger | Minimum payload | Result |
+|---|---|---|---|
+| `E-PROGRAMME-OPEN` | Pilot formally opened | programme, sponsor, scope | ACTIVE |
+| `E-ORG-ONBOARD` | Participant admitted | legal identity, scope, owner | ONBOARDED |
+| `E-FACILITY-REGISTERED` | Factory/site registered | site, address, facility class | REGISTERED |
+| `E-ROLE-ASSIGNED` | Operational role assigned | actor, role, authority/scope | ACTIVE |
+| `E-COMPETENCE-VERIFIED` | Competence checked | qualification, validity, scope | VERIFIED |
 
-### Production
-- `E-FORMULA-VERSIONED`
-- `E-PROCESS-VERSIONED`
-- `E-HCP-OPEN`
-- `E-HCP-MONITOR`
-- `E-HCP-EXCEPTION`
-- `E-LINE-READY`
-- `E-PRODUCTION-START`
-- `E-SAMPLE-COLLECTED`
-- `E-LAB-SUBMITTED`
-- `E-LAB-RESULT`
-- `E-BATCH-CREATED`
-- `E-BATCH-RELEASED`
-- `E-BATCH-HOLD`
-- `E-BATCH-REJECTED`
+### B. Product and standards
 
-### Audit / authority
-- `E-AUDIT-OPEN`
-- `E-AUDIT-OBSERVATION`
-- `E-FINDING`
-- `E-CAR-OPEN`
-- `E-CAR-CLOSE`
-- `E-REVERIFICATION`
-- `E-AUTHORITY-SUBMISSION`
-- `E-AUTHORITY-DECISION`
-- `E-CERTIFICATE-ISSUED`
-- `E-CERTIFICATE-SUSPENDED`
+| Event | Trigger | Minimum payload | Result |
+|---|---|---|---|
+| `E-SCOPE-CLASSIFIED` | Product/transaction scope classified | commodity, markets, activity | SCOPE-SET |
+| `E-STANDARD-APPLIED` | Requirement pack activated | standard IDs, versions, jurisdiction | APPLIED |
+| `E-REQUIREMENT-RESOLVED` | Precedence engine resolves rules | ruleset, conflicts, controls | READY |
+| `E-HCP-OPEN` | HCP instantiated | HCP, risk, owner, control | OPEN |
+| `E-HCP-MONITOR` | Control monitoring recorded | observation, measurement, result | MONITORED |
 
-### Packaging / identity
-- `E-PACKAGING-LOT-CREATED`
-- `E-UNIT-ID-BOUND`
-- `E-PALLET-CREATED`
-- `E-PALLET-LOADED`
-- `E-PALLET-UNLOADED`
-- `E-CONTAINER-ASSIGNED`
-- `E-SEAL-APPLIED`
-- `E-SEAL-INSPECTED`
-- `E-SEAL-BROKEN`
+### C. Supplier/material provenance
 
-### China export and logistics
-- `E-BOOKING-CREATED`
-- `E-CARRIER-ASSIGNED`
-- `E-VEHICLE-VERIFIED`
-- `E-CUSTODY-TRANSFER`
-- `E-EXPORT-DOCUMENT-SET`
-- `E-EXPORT-DECLARATION`
-- `E-EXPORT-RELEASE`
-- `E-PORT-IN`
-- `E-PORT-INSPECTION`
-- `E-PORT-OUT`
-- `E-DEPARTURE`
-- `E-TRANSIT-MILESTONE`
-- `E-ETA-UPDATED`
+| Event | Trigger | Minimum payload | Result |
+|---|---|---|---|
+| `E-SUPPLIER-REGISTERED` | Supplier accepted | identity, scope | REGISTERED |
+| `E-MATERIAL-CREATED` | Material object created | material ID, source class | CREATED |
+| `E-MATERIAL-RECEIVED` | Material arrives | supplier, batch, quantity, docs | RECEIVED |
+| `E-MATERIAL-VERIFIED` | Source/specification verified | evidence, verifier, status | VERIFIED |
+| `E-MATERIAL-REJECTED` | Material fails control | reason, containment | HOLD |
 
-### GCC border / destination
-- `E-GCC-PREARRIVAL`
-- `E-GCC-CUSTOMS-FILING`
-- `E-GCC-DOCUMENT-VERIFICATION`
-- `E-GCC-PHYSICAL-INSPECTION`
-- `E-GCC-SAMPLE-COLLECTED`
-- `E-GCC-HOLD`
-- `E-GCC-RELEASE`
-- `E-DESTINATION-CUSTODY-TRANSFER`
-- `E-WAREHOUSE-RECEIPT`
-- `E-WAREHOUSE-RELEASE`
-- `E-RETAIL-RECEIPT`
-- `E-RETAIL-RELEASE`
+### D. Manufacturing
 
-### Trust / incident / recall
-- `E-TRUST-STATE-CHANGED`
-- `E-EXCEPTION-OPEN`
-- `E-EXCEPTION-CLOSED`
-- `E-INCIDENT-OPEN`
-- `E-INCIDENT-CONTAINED`
-- `E-RECALL-OPEN`
-- `E-RECALL-BLAST-RADIUS`
-- `E-RECALL-WITHDRAWAL`
-- `E-RECALL-CLOSE`
+| Event | Trigger | Minimum payload | Result |
+|---|---|---|---|
+| `E-BATCH-CREATED` | Production batch starts | product, formula, batch ID | ACTIVE |
+| `E-PROCESS-START` | Production begins | work order, equipment, operator | IN-PROCESS |
+| `E-PROCESS-HCP-CHECK` | HCP check | HCP, observation, evidence | PASS/EXCEPTION |
+| `E-BATCH-COMPLETED` | Manufacturing complete | yield, lot IDs, records | COMPLETE |
+| `E-PACKAGING-VERIFIED` | Packaging/label controls complete | packaging version, lot | VERIFIED |
+| `E-LOT-RELEASE` | Lot authorised internally | lot, criteria, approver | RELEASED |
 
-## Trust states
+### E. Evidence and laboratory
 
-`INITIAL -> EVIDENCE-COMPLETE -> ASSESSED -> VERIFIED -> VERIFIED-WITH-EXCEPTION -> RELEASED`
+| Event | Trigger | Minimum payload | Result |
+|---|---|---|---|
+| `E-EVIDENCE-CAPTURED` | Evidence attached | source, hash, object refs | LINKED |
+| `E-SAMPLE-COLLECTED` | Sample taken | sample, matrix, method, seal | IN-LAB/TRANSIT |
+| `E-SAMPLE-CUSTODY` | Sample transferred | from/to, seal, time | CUSTODIED |
+| `E-LAB-RECEIPT` | Lab accepts sample | sample, condition | RECEIVED |
+| `E-LAB-RESULT` | Test completed | method, controls, result, report | RESULTED |
+| `E-LAB-REVIEW` | Technical review | reviewer, interpretation | REVIEWED |
 
-Failure/control states: `HOLD`, `QUARANTINED`, `DISPUTED`, `CORRECTIVE-ACTION`, `RE-VERIFICATION`, `EXPIRED`, `SUSPENDED`, `REVOKED`, `RECALLED`.
+### F. Audit and authority
 
-## Event sequencing requirements
+| Event | Trigger | Minimum payload | Result |
+|---|---|---|---|
+| `E-AUDIT-OPEN` | Audit begins | scope, team, site | OPEN |
+| `E-AUDIT-OBSERVATION` | Observation captured | requirement, evidence, location | RECORDED |
+| `E-FINDING` | Nonconformity/observation opened | severity, requirement, evidence | FINDING |
+| `E-CAR-OPEN` | Corrective action opened | owner, cause, action | CORRECTIVE-ACTION |
+| `E-CAR-CLOSE` | Action evidence accepted | evidence, effectiveness | CLOSED |
+| `E-REVERIFICATION` | Follow-up verification | scope, evidence, result | VERIFIED/REJECTED |
+| `E-AUTHORITY-DECISION` | Competent decision recorded | authority, decision, scope, validity | DECIDED |
 
-1. A batch cannot be released without its required material/process evidence and applicable audit/authority conditions.
-2. A pallet must point to one or more released batch/lot objects.
-3. Container loading must point to the pallet set and loading event.
-4. Seal application creates a unique seal object and links container + custody owner + timestamp + location.
-5. Every custody transfer records outgoing and receiving actors.
-6. A seal-break event automatically opens an exception and requires inspection/reconciliation before onward release.
-7. GCC border release references the shipment dossier and all destination-required checks.
-8. Warehouse release inherits the released shipment state but may add destination-specific controls.
-9. Recall can propagate backwards and forwards through the graph.
+### G. Shipment construction
 
-## Correlation identifiers
+| Event | Trigger | Minimum payload | Result |
+|---|---|---|---|
+| `E-SHIPMENT-CREATED` | Shipment 001 opened | shipment, route, importer | OPEN |
+| `E-PALLET-CREATED` | Pallet built | pallet, lot list, quantity | BUILT |
+| `E-CONTAINER-ASSIGNED` | Container assigned | container, shipment | ASSIGNED |
+| `E-SEAL-APPLIED` | Seal applied | seal ID, actor, image | SEALED |
+| `E-LOAD-COMPLETED` | Container loading finished | load plan, reconciliation | LOADED |
+| `E-ORIGIN-RECONCILIATION` | Origin check passed | docs, objects, discrepancies | PASS/HOLD |
+| `E-EXPORT-PACKET-SEALED` | Border packet locked | packet ID, hashes, issuer | SEALED |
 
-Use stable correlation IDs for:
-- `PROGRAMME-001`
-- `FACTORY-<id>`
-- `PRODUCT-<sku>`
-- `BATCH-<id>`
-- `PALLET-<id>`
-- `CONTAINER-<id>`
-- `SHIPMENT-001`
-- `CASE-<authority-case>`
-- `RECALL-<id>`
+### H. China logistics and export
 
-## Exception triggers
+| Event | Trigger | Minimum payload | Result |
+|---|---|---|---|
+| `E-CARRIER-ACCEPTANCE` | Carrier takes custody | shipment, condition | IN-CUSTODY |
+| `E-CUSTODY-TRANSFER` | Custody changes | from/to, time, location, condition | TRANSFERRED |
+| `E-VEHICLE-ARRIVAL` | Vehicle reaches node | vehicle, shipment | ARRIVED |
+| `E-GATE-CHECK` | Gate entry/exit | identity, seal, status | CLEARED/HOLD |
+| `E-PORT-INSPECTION` | Port/customs inspection | officer, packet, findings | CLEARED/HOLD |
+| `E-EXPORT-RELEASE` | Export clearance | declaration ref, release actor | RELEASED |
 
-Seal discrepancy, temperature excursion where applicable, identity mismatch, unexpected location, unapproved subcontractor, expired evidence, document mismatch, analytical contradiction, unauthorised material substitution, facility/process change, broken custody, border hold, consumer complaint and recall notice.
+### I. Transit
 
-## Immutability rule
+| Event | Trigger | Minimum payload | Result |
+|---|---|---|---|
+| `E-TRANSIT-DEPARTURE` | Vessel/air/road departure | carrier, departure, seal | IN-TRANSIT |
+| `E-CONDITION-CAPTURED` | Condition telemetry recorded | temperature/location/etc. | RECORDED |
+| `E-ROUTE-EXCEPTION` | Route/condition event | exception, evidence | HOLD/REVIEW |
+| `E-ARRIVAL-PORT` | GCC port arrival | port, container, seal | ARRIVED |
 
-An event is append-only. Correction occurs by a superseding event referencing the original. The trust graph records both.
+### J. GCC border
+
+| Event | Trigger | Minimum payload | Result |
+|---|---|---|---|
+| `E-GCC-PACKET-PRESENTED` | Import presentation | importer, packet | PRESENTED |
+| `E-SEAL-VERIFIED` | Physical seal checked | expected/actual, evidence | VERIFIED/MISMATCH |
+| `E-DOCUMENT-RECONCILIATION` | Docs checked | declaration, product, certificate refs | PASS/EXCEPTION |
+| `E-GCC-INSPECTION` | Destination inspection | authority, observations | PASS/HOLD |
+| `E-IMPORT-RELEASE` | Customs/authority release | decision, validity | RELEASED |
+
+### K. Destination warehouse and retail
+
+| Event | Trigger | Minimum payload | Result |
+|---|---|---|---|
+| `E-DEST-WAREHOUSE-RECEIPT` | Container received | seal, quantity, condition | RECEIVED |
+| `E-DEST-QUARANTINE` | Destination hold | reason, scope | QUARANTINED |
+| `E-DEST-RECONCILIATION` | Physical-vs-digital match | variance report | PASS/EXCEPTION |
+| `E-DEST-RELEASE` | Warehouse release | approver, scope | RELEASED |
+| `E-DISTRIBUTION-DISPATCH` | Retail delivery dispatched | logistic unit, destination | DISPATCHED |
+| `E-RETAIL-RECEIPT` | Retail receives | unit, condition | RECEIVED |
+| `E-CONSUMER-VERIFICATION` | Verification service used | assertion ID, result | VERIFIED/NOT-VERIFIED |
+
+### L. Exceptions and recall
+
+| Event | Trigger | Minimum payload | Result |
+|---|---|---|---|
+| `E-SEAL-BROKEN` | Seal mismatch/break | expected/actual, place, evidence | HOLD |
+| `E-ID-MISMATCH` | Identity mismatch | expected/actual IDs | HOLD |
+| `E-EVIDENCE-CONTRADICTION` | Contradictory records | evidence refs, contradiction | REVIEW |
+| `E-CUSTODY-GAP` | Missing custody hop | previous/next event | REVIEW/HOLD |
+| `E-TRUST-FRACTURE` | Graph dependency broken | affected nodes | REVIEW/HOLD |
+| `E-RECALL-OPEN` | Recall initiated | scope, reason, authority | RECALLED |
+| `E-RECALL-TRACEBACK` | Affected origin identified | object graph | SCOPED |
+| `E-RECALL-TRACEFORWARD` | Downstream scope identified | lots, pallets, locations | SCOPED |
+| `E-RECALL-CLOSE` | Recall completed | disposition evidence | CLOSED |
+
+## 3. Mandatory event invariants
+
+1. Event IDs are unique.
+2. Event versions are explicit.
+3. Actor identity is mandatory for controlled events.
+4. Physical events reference the physical object.
+5. Digital events reference the source record when one exists.
+6. Critical events form a hash/signature chain.
+7. A state transition cannot be generated without the event that caused it.
+8. Replays are idempotent.
+9. Out-of-order events are quarantined for reconciliation rather than silently merged.
+10. Event deletion is prohibited from the operational ledger; correction occurs by a compensating event.
+
+## 4. Shipment 001 critical-path sequence
+
+```text
+PRODUCT_SCOPE
+ → MATERIAL_VERIFICATION
+ → FACILITY/AUDIT
+ → BATCH
+ → LOT_RELEASE
+ → PALLET
+ → CONTAINER
+ → SEAL
+ → ORIGIN_RECONCILIATION
+ → CARRIER_CUSTODY
+ → EXPORT_RELEASE
+ → TRANSIT
+ → GCC_ARRIVAL
+ → SEAL_VERIFICATION
+ → DESTINATION_RECONCILIATION
+ → IMPORT_RELEASE
+ → WAREHOUSE_RELEASE
+ → RETAIL
+ → VERIFICATION
+```
+
+## 5. Event-sourcing requirements
+
+The event stream must permit reconstruction of:
+
+- current shipment state;
+- every custody holder;
+- every physical identity relation;
+- every applicable rule set at event time;
+- every evidence object used;
+- every authority decision in force;
+- every exception and resolution;
+- the exact affected scope for recall.
+
+## 6. Event registry controls
+
+Each event type is versioned independently. Changes require schema compatibility testing, migration rules and consumer impact assessment. Event consumers include factory systems, logistics, AHTE, authority gateways, destination systems and analytics.

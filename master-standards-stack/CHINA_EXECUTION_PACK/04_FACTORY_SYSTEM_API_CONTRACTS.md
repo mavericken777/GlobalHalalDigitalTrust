@@ -1,90 +1,251 @@
-# 04 — FACTORY-SYSTEM API CONTRACTS
+# 04 — Factory-System API Contracts
 
-## 1. Integration target
+## 1. Integration objective
 
-The AHTE factory connector sits between AHTE and the manufacturer’s ERP/MES/WMS/QMS/LIMS/serialization and access-control systems. The connector should minimise modification of the factory core systems while guaranteeing identity, evidence and event integrity.
+Connect AHTE to the factory's existing operational systems without forcing replacement of ERP, MES, QMS, WMS, LIMS, HR/identity, document-management or IoT platforms.
 
-## 2. Canonical interfaces
+## 2. Source-of-truth rule
 
-### Factory → AHTE
-- `POST /v1/facilities`
-- `POST /v1/products`
-- `POST /v1/materials`
-- `POST /v1/suppliers`
-- `POST /v1/formulas`
-- `POST /v1/process-versions`
-- `POST /v1/batches`
-- `POST /v1/production-events`
-- `POST /v1/samples`
-- `POST /v1/lab-results`
-- `POST /v1/evidence`
-- `POST /v1/nonconformities`
+| Object | Preferred system of record | AHTE role |
+|---|---|---|
+| Legal entity / site | ERP / corporate master | Reference + trust identity |
+| Product / SKU | ERP / PLM | Identity + standards binding |
+| Formula / BOM | ERP / PLM | Versioned assurance object |
+| Production order | MES/ERP | Event source |
+| Process record | MES | HCP execution evidence |
+| Material receipt | WMS/ERP | Provenance evidence |
+| Inventory status | WMS | State synchronisation |
+| NCR/CAPA | QMS | Finding/CAR linkage |
+| Lab sample/result | LIMS | Analytical evidence |
+| Training/role | HR/LMS/identity | Competence object |
+| SOP/specification | DMS/QMS | Controlled-document evidence |
+| Sensor telemetry | IoT/SCADA | Condition evidence |
+| Shipment / booking | TMS/ERP | Logistics object |
 
-### AHTE → Factory
-- `GET /v1/requirements/{scope}`
-- `GET /v1/hcp-plans/{product}`
-- `GET /v1/release-state/{batch}`
-- `GET /v1/authority-gates/{object}`
-- `POST /v1/holds`
-- `POST /v1/release-instructions`
-- `POST /v1/change-notices`
+AHTE becomes the **cross-system trust graph**, not the only operational source.
 
-## 3. Event-first pattern
+## 3. Interface patterns
 
-Transactions that change trust or release state should emit a business event as the system of record. REST is the transport; event identity and ordering are the trust primitive.
+- REST/JSON for synchronous master-data and command interfaces.
+- Webhooks/event bus for operational events.
+- SFTP/object gateway only where legacy systems cannot support APIs.
+- Offline edge gateway for factory/field environments with intermittent connectivity.
+- mTLS for service-to-service transport.
+- OAuth 2.0/OIDC or equivalent enterprise identity for user-facing APIs.
+- Signed event envelopes for critical business events.
 
-Example envelope:
+## 4. Common headers
+
+```text
+Authorization: Bearer <token>
+X-Tenant-ID: <tenant>
+X-Trace-ID: <trace>
+X-Event-ID: <event>
+X-Schema-Version: 1.0
+X-Request-Timestamp: <iso8601>
+Idempotency-Key: <stable-key>
+```
+
+## 5. Core API resources
+
+### Organisation / facility
+
+`POST /v1/organisations`
+
+`POST /v1/facilities`
+
+`GET /v1/facilities/{facilityId}`
+
+### Product / material
+
+`POST /v1/products`
+
+`POST /v1/materials`
+
+`POST /v1/suppliers`
+
+`POST /v1/products/{productId}/requirements:resolve`
+
+### Batch / lot
+
+`POST /v1/batches`
+
+`GET /v1/batches/{batchId}`
+
+`POST /v1/batches/{batchId}/hcp-checks`
+
+`POST /v1/lots/{lotId}:release`
+
+### Evidence
+
+`POST /v1/evidence`
+
+`GET /v1/evidence/{evidenceId}`
+
+`POST /v1/evidence/{evidenceId}:verify`
+
+### Laboratory
+
+`POST /v1/samples`
+
+`POST /v1/samples/{sampleId}/custody`
+
+`POST /v1/lab-results`
+
+### Audit
+
+`POST /v1/audits`
+
+`POST /v1/audits/{auditId}/observations`
+
+`POST /v1/findings`
+
+`POST /v1/corrective-actions`
+
+### Shipment
+
+`POST /v1/shipments`
+
+`POST /v1/shipments/{shipmentId}/pallets`
+
+`POST /v1/shipments/{shipmentId}/containers`
+
+`POST /v1/containers/{containerId}/seals`
+
+`POST /v1/custody-transfers`
+
+`POST /v1/shipments/{shipmentId}/export-packet:seal`
+
+### Trust
+
+`GET /v1/objects/{objectId}/trust`
+
+`GET /v1/shipments/{shipmentId}/trust-assertion`
+
+`POST /v1/trust-assertions:verify`
+
+## 6. Factory event subscriptions
+
+AHTE should consume, where available:
+
+```text
+material.received
+material.released
+material.rejected
+workorder.started
+hcp.checked
+process.completed
+batch.created
+batch.completed
+lot.created
+lot.released
+ncr.opened
+capa.closed
+sample.collected
+lab.resulted
+shipment.created
+pallet.created
+container.assigned
+seal.applied
+shipment.loaded
+shipment.released
+```
+
+## 7. Event mapping
+
+| Factory event | AHTE event |
+|---|---|
+| Work order started | `E-PROCESS-START` |
+| Material receipt | `E-MATERIAL-RECEIVED` |
+| HCP inspection | `E-HCP-MONITOR` / `E-PROCESS-HCP-CHECK` |
+| Batch close | `E-BATCH-COMPLETED` |
+| NCR creation | `E-FINDING` + `E-CAR-OPEN` where applicable |
+| Sample collection | `E-SAMPLE-COLLECTED` |
+| Lab result | `E-LAB-RESULT` |
+| Palletisation | `E-PALLET-CREATED` |
+| Container loading | `E-LOAD-COMPLETED` |
+| Seal application | `E-SEAL-APPLIED` |
+| Carrier handover | `E-CUSTODY-TRANSFER` |
+
+## 8. Material API payload
 
 ```json
 {
-  "event_id":"EVT-BATCH-000001",
-  "event_type":"E-BATCH-CREATED",
-  "schema_version":"1.0",
-  "occurred_at":"2026-09-15T00:00:00Z",
-  "issuer_org":"FACTORY-001",
-  "issuer_role":"QA_LEAD",
-  "subject_id":"BATCH-001",
-  "correlation_id":"SHIPMENT-001",
-  "payload":{},
-  "evidence_refs":[],
-  "previous_event_hash":"sha256:..."
+  "materialId":"MAT-001",
+  "supplierId":"SUP-001",
+  "supplierBatch":"S-BATCH-01",
+  "description":"...",
+  "sourceClass":"animal|plant|synthetic|mineral|microbial|mixed|unknown",
+  "countryOfOrigin":"CN",
+  "specificationRefs":[],
+  "certificateRefs":[],
+  "riskClass":"H|M|L",
+  "effectiveVersion":"v1",
+  "evidenceRefs":[]
 }
 ```
 
-## 4. Idempotency
+## 9. HCP check payload
 
-Every write request must provide `Idempotency-Key`. A retry of an accepted key returns the original result and never creates a duplicate business event.
+```json
+{
+  "hcpCheckId":"HCPCHK-001",
+  "hcpId":"HCP-...",
+  "objectId":"BATCH-...",
+  "performedBy":"ACT-...",
+  "performedAt":"...",
+  "result":"PASS|EXCEPTION|FAIL",
+  "measurements":[],
+  "observation":"...",
+  "evidenceRefs":[],
+  "deviceId":"DEV-...",
+  "signature":{ "keyId":"...","value":"..." }
+}
+```
 
-## 5. Batch release contract
+## 10. Idempotency
 
-Required input: batch ID, product ID, formula version, production start/end, source material IDs, applicable HCP statuses, test/sample references, deviations, packaging lot, responsible QA actor.
+Every POST creating a business event accepts an idempotency key. A repeated request returns the original event/object result. Business events are append-only; corrections use compensating events.
 
-AHTE returns: release state, blocking controls, unresolved exceptions, required authority action, trust graph references.
+## 11. Error model
 
-## 6. Change control
+```json
+{
+  "code":"AHTE-RULE-CONFLICT",
+  "message":"Applicable requirements conflict",
+  "traceId":"...",
+  "objectId":"...",
+  "details":[],
+  "retryable":false,
+  "nextAction":"AUTHORITY_REVIEW"
+}
+```
 
-Formula, supplier, source material, manufacturing site, critical process parameter, packaging material, outsourced process, storage conditions or product claims can trigger re-evaluation. The factory connector must notify AHTE before production use where the change-control rule requires prior review.
+## 12. Data minimisation
 
-## 7. LIMS integration
+Factory APIs must support field-level projection so the China zone can share a minimal trust packet without exporting detailed personnel, production or commercially sensitive records unnecessarily.
 
-Sample ID is immutable. Result payload binds matrix, method ID/version, lab ID, analyst, controls, result, interpretation, instrument and chain-of-custody references. A result without sample identity is not accepted into the evidentiary graph.
+## 13. OT/IT boundary
 
-## 8. WMS integration
+AHTE must not directly control safety-critical industrial equipment from the trust layer. The preferred pattern is:
 
-Warehouse status transitions must support `QUARANTINED`, `RELEASED`, `HOLD`, `REJECTED`, `RETURNED`, `RECALLED`. Inventory movement references batch/lot, pallet and container where applicable.
+`OT/PLC/SCADA → MES/Edge → validated integration gateway → AHTE event API`.
 
-## 9. Security
+AHTE may record condition states and HCP evidence but should not become an unmanaged control-plane bridge into production equipment.
 
-TLS for transport; mutual TLS for system-to-system trust where supported; short-lived access tokens; role-based scopes; signed event envelopes; network allowlists; replay protection; clock-drift monitoring; audit logging.
+## 14. API acceptance tests
 
-## 10. Versioning
+- Correct object identity binding.
+- Duplicate-event rejection/idempotent replay.
+- Schema validation.
+- Signature validation for critical events.
+- Out-of-order event handling.
+- Offline event reconciliation.
+- Permission enforcement.
+- Data projection by jurisdiction.
+- Evidence attachment.
+- Trust-state update only after valid event processing.
 
-APIs are versioned by major version in the path. Additive fields are backward-compatible; changes to event meaning require a schema version increment and migration test.
+## 15. Versioning
 
-## 11. Availability model
-
-Factories can operate in disconnected mode. Local gateway persists signed events, evidence references and device identity; synchronisation uses ordered replay with conflict detection.
-
-## 12. Minimum audit trail
-
-`request -> authentication -> authorisation -> input hash -> business decision -> event ID -> evidence refs -> response -> operator identity -> timestamp`.
+API versions use `/v1`, `/v2`, etc. Event schemas carry independent versions. Backward-compatible additions do not break existing consumers; breaking changes require a new major version and migration period.
