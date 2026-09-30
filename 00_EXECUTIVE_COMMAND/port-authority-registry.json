@@ -1,11 +1,34 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "artifact": "port-authority-registry.json",
-  "version": "1.1.0",
-  "control_date": "2026-09-17",
+  "version": "1.2.0",
+  "control_date": "2026-09-30",
   "freeze_boundary": "master-standards-stack/verified-2026-09-17/",
-  "description": "Port/customs authority references for the China-GCC direct pilot. Consult before corridor clearance/release activity.",
+  "classification": "post-freeze port/corridor registry extension",
+  "description": "Port/customs authority references and target AHTE API/trust-interface model for the China-GCC direct pilot. Consult before corridor clearance/release activity.",
   "authority_boundary": "Port/customs authorities operate under sovereign mandates. AHTE does not issue, modify or substitute official clearance, release or Halal certification decisions.",
+  "implementation_principle": "FULL ARCHITECTURE NOW -> REAL CONNECTORS WHEN AVAILABLE -> NO REDESIGN REQUIRED",
+  "api_trust_interface": {
+    "status": "TARGET",
+    "purpose": "Give authorised port/customs/inspection users minimum-necessary shipment identity, evidence, custody, condition and exception context and accept attributable official inspection/hold/release events.",
+    "required_functions": [
+      "authenticate officer/service/device",
+      "lookup shipment",
+      "resolve product/batch/container/seal",
+      "retrieve authorised trust packet",
+      "retrieve certification/authority-status reference",
+      "retrieve laboratory evidence reference",
+      "retrieve document/evidence references",
+      "retrieve custody history",
+      "retrieve telemetry/condition exceptions",
+      "record inspection/sampling",
+      "record sovereign hold/release reference",
+      "return signed/attributable authority or custody event"
+    ],
+    "connector_states": ["development-provider-active", "sandbox-connected", "production-credentials-required", "production-connected"],
+    "no_artificial_block_rule": "Absence of a live sovereign endpoint must not remove the port/customs capability from the target platform. Use a replaceable development provider until production access exists, with explicit non-production labelling.",
+    "live_activation_requires": ["actual authority interface/permission", "authentication/authorization profile", "approved data contract", "security controls", "transaction-specific port/country scope"]
+  },
   "origin_ports": {
     "china": [
       {
@@ -16,8 +39,9 @@
         "competent_authority_url": "http://www.customs.gov.cn/",
         "class": "authority_primary",
         "status": "EXTERNAL-GATE",
+        "target_connector_state": "production-credentials-required",
         "evidence_required": ["Port capability confirmation", "Halal-compatible handling capability if required", "Export process documentation", "Terminal cut-off times", "Coordination with Sinotrans"],
-        "open_gates": ["Specific origin port selection per shipment"]
+        "open_gates": ["Specific origin port selection per shipment", "Actual authority/API integration scope"]
       }
     ]
   },
@@ -31,8 +55,9 @@
         "competent_authority_urls": ["https://zatca.gov.sa/en/Pages/default.aspx", "https://www.sfda.gov.sa/en"],
         "class": "authority_primary",
         "status": "EXTERNAL-GATE",
+        "target_connector_state": "production-credentials-required",
         "evidence_required": ["SFDA import registration", "Arabic labelling compliance where applicable", "Halal certificate requirement check for applicable product", "Customs clearance documentation", "Inspection/sampling readiness"],
-        "open_gates": ["Specific destination port selection", "Per-category SFDA inspection requirements"]
+        "open_gates": ["Specific destination port selection", "Per-category SFDA inspection requirements", "Actual authority/API integration scope"]
       }
     ],
     "uae": [
@@ -44,8 +69,9 @@
         "competent_authority_urls": ["https://icp.gov.ae/en/about-icp/uae-customs-en/", "https://www.moiat.gov.ae/en"],
         "class": "authority_primary",
         "status": "EXTERNAL-GATE",
+        "target_connector_state": "production-credentials-required",
         "evidence_required": ["MoIAT Halal programme conformance as applicable", "Applicable UAE/GSO standards", "Customs clearance documentation", "Emirate-level import procedures"],
-        "open_gates": ["Specific destination port selection", "Emirate-specific procedures"]
+        "open_gates": ["Specific destination port selection", "Emirate-specific procedures", "Actual authority/API integration scope"]
       }
     ],
     "other_gcc": [
@@ -56,8 +82,9 @@
         "competent_authority": "To be confirmed per destination",
         "class": "authority_primary",
         "status": "EXTERNAL-GATE",
+        "target_connector_state": "production-credentials-required",
         "evidence_required": ["National customs rules", "National standards and Halal recognition rules"],
-        "open_gates": ["Destination country selection", "National authority confirmation"]
+        "open_gates": ["Destination country selection", "National authority confirmation", "Actual authority/API integration scope"]
       }
     ]
   },
