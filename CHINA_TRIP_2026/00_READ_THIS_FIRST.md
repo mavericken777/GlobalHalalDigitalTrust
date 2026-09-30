@@ -6,7 +6,7 @@ GHSC incorporation (HK CR 79801544, 11 February 2026) and the PHC–JGC, JGC–S
 
 | Dimension | Current control |
 |---|---|
-| Travel | `NOT_TRAVEL_READY` — [execution board](EXECUTION_BOARD.md) and [decision worksheet](TRAVEL_DECISIONS.md) |
+| Travel | 'TRAVEL_READY` — [execution board](EXECUTION_BOARD.md) and [decision worksheet](TRAVEL_DECISIONS.md) |
 | Signing | `NOT_SIGNING_READY` — [M01–M06 and optional instrument matrix](SIGNING_MATRIX.md) |
 | Authority roles | [Coordinated framework with distinct mandates](MALAYSIA_HALAL_AUTHORITY_MAP.md) |
 | Source meeting actions | [Kickoff reconciliation](KICKOFF_MINUTES_RECONCILIATION.md) |
