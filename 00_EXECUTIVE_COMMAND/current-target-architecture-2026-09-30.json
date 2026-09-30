@@ -1,204 +1,96 @@
 {
   "artifact": "current-target-architecture-2026-09-30.json",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "control_date": "2026-09-30",
   "classification": "post-freeze proposal architecture registry",
   "freeze_boundary": "master-standards-stack/verified-2026-09-17/",
   "authority_effect": "none",
-  "supersedes_project_level_conflicts_before": "2026-09-30",
+  "requirements_traceability": "00_EXECUTIVE_COMMAND/PLATFORM_REQUIREMENTS_TRACEABILITY_2026-09-30.md",
   "implementation_principle": {
     "name": "FULL ARCHITECTURE NOW -> REAL CONNECTORS WHEN AVAILABLE -> NO REDESIGN REQUIRED",
     "no_artificial_blocks": true,
-    "requirements": [
-      "Build the complete production-target architecture, interfaces, schemas, workflows, UI states and integration boundaries now.",
-      "Do not remove, disable, downgrade or omit intended capability merely because an external API, credential, partner feed, authority connection, laboratory interface, sensor stream, production dataset, bank/Takaful integration or transaction is not yet available in the development environment.",
-      "Where an external dependency is unavailable, implement a replaceable adapter/sandbox/mock preserving the exact production integration boundary and complete user journey.",
-      "Development mocks may substitute data/connectivity only; they must never reduce the target functionality or become a permanent architectural limitation.",
-      "Do not impose arbitrary feature caps on manufacturer onboarding, evidence ingestion, smart-glass auditing, laboratory integration, traceability, digital twins, immutable evidence, JAKIM connectivity, logistics monitoring, port/customs access, GCC workflows, command-center analytics, AI/ML, predictive/preemptive strategies, finance/Takaful/tokenomics, multilingual capability, portals, APIs or future scale.",
-      "Do not fabricate live authority approvals, lab results, credentials, partner events, customs releases, financing approvals, Takaful underwriting decisions or production telemetry. Preserve complete target functionality while keeping source/transaction truth explicit."
-    ]
+    "no_arbitrary_feature_caps": true,
+    "development_provider_replaces_connectivity_not_capability": true,
+    "fabricate_live_external_state": false
   },
-  "canonical_path": [
-    "Authority",
-    "Standard / Instrument",
-    "Clause / Requirement",
-    "Applicability",
-    "Control",
-    "HCP / SCCP",
-    "Evidence",
-    "Audit Test",
-    "Finding",
-    "Corrective Action",
-    "Re-verification",
-    "Authority Gate",
-    "Trust State",
-    "Operational Release"
-  ],
+  "canonical_path": ["Authority","Standard / Instrument","Clause / Requirement","Applicability","Control","HCP / SCCP","Evidence","Audit Test","Finding","Corrective Action","Re-verification","Authority Gate","Trust State","Operational Release"],
   "default_corridor": {
     "origin": "China",
     "destination": "GCC",
     "physical_route": "China -> GCC direct",
-    "malaysia_role": "governance / assurance plane unless separately scoped as a physical hop",
+    "malaysia_role": "governance / assurance / authority-connectivity plane unless a physical hop is separately scoped",
     "pilot": "Shipment 001",
     "pilot_status": "NOT-INSTANTIATED"
   },
+  "authority_workflow": {
+    "connectivity": "AHTE <-> DIRECT JAKIM API <-> JAKIM",
+    "public_intermediary": null,
+    "nur_ai_platform_hop": false,
+    "project_formal_certification_review": "PHC + JAKIM authorised human workflow",
+    "participants": ["PHC authorised project roles","JAKIM authorised halal officers / decision-makers","Mufti / scholars as applicable to the implemented authority process"],
+    "ai_makes_formal_certification_decision": false
+  },
   "actors": {
-    "phc": {
-      "name": "Perak Halal Corporation",
-      "role": "Perak State Government halal-industry GLC operating locally and internationally"
-    },
-    "ghscl": {
-      "name": "Global Halal Supply Chain Limited, Hong Kong",
-      "role": "international operating and digital-infrastructure vehicle",
-      "command_center": "24/7 operating function"
-    },
-    "ahte": {
-      "role": "continuous standards, evidence, compliance, traceability and trust intelligence"
-    },
-    "jakim": {
-      "role": "competent-authority system / human authority workflow",
-      "integration": "direct authorised JAKIM API"
-    },
-    "laboratory": {
-      "role": "scientific evidence producer within qualified scope",
-      "creates_certification": false
-    },
-    "sinotrans": {
-      "role": "end-to-end logistics and warehouse operating partner",
-      "integration": "existing systems / Y2T / MIS / EDI / WMS / TMS / IoT -> secure adapter/API -> AHTE"
-    },
-    "port_customs": {
-      "role": "sovereign border/inspection/release authority",
-      "integration": "authorised API/trust interface",
-      "ahte_overrides_decision": false
-    },
-    "finance": {
-      "role": "Shariah financing / Takaful / tokenomics target plane",
-      "decision_authority": "bank/financier/Takaful operator/competent regulator as applicable"
-    }
+    "phc": {"role": "Perak State Government halal-industry GLC operating locally and internationally within the project ecosystem"},
+    "ghscl": {"role": "international operating and digital-infrastructure vehicle", "command_center_role": "24/7 corridor/platform operational monitoring"},
+    "ahte": {"role": "continuous standards, applicability, evidence, compliance, traceability and trust intelligence"},
+    "jakim": {"role": "competent-authority system and authorised human workflow", "integration": "direct authorised JAKIM API", "command_center_role": "24/7 authorised authority-side monitoring"},
+    "laboratory": {"role": "scientific evidence producer within applicable competence/scope", "creates_certification": false},
+    "sinotrans": {"role": "end-to-end warehouse and logistics operating partner", "integration": "existing WMS/TMS/Y2T/MIS/EDI/IoT -> secure adapter/API -> AHTE"},
+    "port_customs": {"role": "sovereign border/inspection/release authority", "integration": "authorised API/trust interface", "ahte_overrides_decision": false},
+    "finance_takaful": {"role": "Shariah financing / Takaful / approved tokenomics transaction-support plane", "decision_authority": "financier / Takaful operator / competent regulator or Shariah authority as applicable"}
+  },
+  "china_traceability_lab": {
+    "capabilities": ["enterprise/product identity","one-item-one-code","microdot / QR / VOID physical identity where deployed","product/batch/code binding","unit -> box -> carton -> pallet aggregation","consumer/channel verification","anti-diversion / abnormal-scan events","scan/channel analytics","controlled sampling","sample seal and custody","laboratory accession","method/QC","technical review","signed laboratory result/report","evidence hash/signature"],
+    "extended_aggregation": "unit -> box -> carton -> pallet -> logistic unit -> container -> shipment -> GCC destination inventory",
+    "hard_rule": "NOT_DETECTED != HALAL",
+    "current_profile": "partners/china-food-security-lab/AHTE_CHINA_LAB_TRACEABILITY_INTEGRATION_PROFILE_2026-09-30.md"
+  },
+  "manufacturer_onboarding": ["manufacturer identified","legal entity / due diligence","facility qualification","product / SKU","formula / BOM","ingredients / raw materials","suppliers","origin provenance","existing evidence / certification references","ERP / MES / QMS / WMS / LIMS / IoT / DMS inventory","AHTE digital twin","standards / applicability","HCP / SCCP","evidence gap","remediation / training","laboratory / sample plan","smart-glass pre-audit / audit","finding / CAPA","re-verification","direct JAKIM API / PHC+JAKIM human workflow","formal authority status","continuous monitoring","China->GCC market enablement"],
+  "smart_glass": {
+    "identity": ["DeviceID","AuditorID","MFA","role/scope policy"],
+    "evidence": ["scan","image","video","document","voice","sensor/location where permitted","local hash/signature","offline queue/reconciliation"],
+    "workflow": ["assigned audit","facility/scope","requirements/HCP","physical walkthrough","object scan","observation/evidence","AI assist","auditor assessment","finding","CAR/CAPA","re-verification","signed session","sync/reconcile"]
   },
   "ai_ml": {
-    "modules": [
-      "Evidence Gap Predictor",
-      "Anomaly Engine",
-      "Contradiction Engine",
-      "Trust Fracture Engine",
-      "Predictive Compliance Engine",
-      "Recall Blast-Radius Engine",
-      "Preemptive Strategy Engine"
-    ],
-    "preemptive_flow": [
-      "live evidence / telemetry / history",
-      "prediction",
-      "impact / blast-radius analysis",
-      "preemptive strategy generation",
-      "policy / human review as required",
-      "preventive action",
-      "outcome capture",
-      "feedback"
-    ],
-    "cannot": [
-      "bypass D5 authority gate",
-      "bypass D6 sovereign/legal decision",
-      "automatically release a D4 hold reserved for human decision",
-      "silently issue, alter or revoke official Halal certification"
-    ]
+    "modes": ["descriptive","diagnostic","predictive","preemptive / prescriptive"],
+    "modules": ["Evidence Gap Predictor","Anomaly Engine","Contradiction Engine","Trust Fracture Engine","Predictive Compliance Engine","Recall Blast-Radius Engine","Preemptive Strategy Engine"],
+    "decision_controls": {"d5_bypass": false,"d6_bypass": false,"automatic_d4_release": false}
   },
   "command_center": {
-    "operators": ["GHSCL", "JAKIM authorised authority-side roles"],
-    "mode": "24/7",
-    "domains": [
-      "manufacturer/facility",
-      "supplier/raw material",
-      "laboratory/sample",
-      "HCP/SCCP",
-      "smart-glass audit",
-      "authority status",
-      "Sinotrans warehouse",
-      "Sinotrans logistics",
-      "container/seal",
-      "telemetry",
-      "route/geofence",
-      "custody",
-      "ports",
-      "GCC receiving",
-      "CAPA",
-      "evidence expiry",
-      "trust fracture",
-      "predictive risk",
-      "preemptive strategy",
-      "recall"
-    ]
+    "monitoring_mode": "JOINT_24_7",
+    "operators": ["GHSCL operational roles","JAKIM authorised authority-side roles"],
+    "same_permissions": false,
+    "domains": ["manufacturer/facility","supplier/raw-material/origin","China traceability/anti-counterfeit","laboratory/sample","HCP/SCCP","smart-glass audit","authority/certification status","Sinotrans warehouse","Sinotrans logistics","shipment/container/seal","telemetry/route/geofence","custody","origin/GCC ports","GCC receiving","CAPA/re-verification","evidence integrity/expiry","trust fracture","predictive risk","preemptive strategy","recall/blast radius","finance/Takaful support state where authorised"]
   },
-  "physical_chain": [
-    "verified raw-material origin",
-    "supplier / producer",
-    "identity / provenance / lot",
-    "sample / seal / chain of custody",
-    "China laboratory",
-    "signed scientific evidence",
-    "raw-material release / hold",
-    "manufacturer / factory systems",
-    "standards / applicability",
-    "HCP / SCCP / controls",
-    "smart-glass audit",
-    "finding / CAPA / re-verification",
-    "direct JAKIM API / human authority workflow",
-    "authority status",
-    "AHTE trust state",
-    "packaging / batch / lot / pallet",
-    "Sinotrans warehouse",
-    "Sinotrans logistics",
-    "container / seal / telemetry / custody",
-    "origin port/customs API",
-    "international transit",
-    "GCC port/customs API",
-    "destination release",
-    "importer / warehouse / distribution / retail",
-    "authorised buyer / consumer verification"
-  ],
+  "sinotrans": {
+    "scope": ["booking/order","warehouse receipt/dispatch","zone/segregation/storage","inventory/batch genealogy","pickup","vehicle","pallet/lot","container","seal","loading","route/geofence","telemetry","custody handovers","port transfer","customs-document references","proof of delivery","damage/tamper/route/telemetry exceptions"],
+    "replace_existing_systems": false
+  },
+  "port_customs_api": {
+    "scope": ["shipment lookup","product/batch/container/seal reconciliation","authorised trust packet","authority/certification-status reference","lab/document/evidence references","custody history","telemetry exceptions","inspection/sampling events","hold/release event ingestion","signed authority/custody event return"],
+    "sovereign_decision_remains_external": true
+  },
   "finance_plane": {
     "status": "PROPOSAL_TARGET",
     "api": "Shariah Financing API",
-    "services": [
-      "Islamic trade financing",
-      "purchase/order financing",
-      "inventory/shipment financing",
-      "Takaful underwriting",
-      "Takaful claims evidence",
-      "asset-state verification",
-      "tokenomics / digital-value mechanisms where legally and Shariah approved"
-    ],
-    "boundaries": [
-      "AHTE trust state is not a credit decision",
-      "Halal certification is not a financing approval",
-      "tokenization does not itself change ownership/title/regulatory/Shariah status"
-    ]
+    "services": ["Islamic trade financing","purchase/order financing","inventory/shipment financing","Takaful underwriting","Takaful claims evidence","asset/collateral state verification","tokenomics / digital-value mechanisms where legally, regulatorily and Shariah approved"],
+    "halal_certification_equals_finance_approval": false,
+    "ahte_trust_state_equals_credit_decision": false
   },
+  "states_are_distinct": ["formal certification / authority state","AHTE trust state","supply-chain state","port/customs release state","financing state","Takaful state","token/digital-asset state"],
+  "data_sovereignty": {"model": "federated", "principle": "Data stays where it belongs; trust travels", "cross_border_default": "minimum-necessary signed assertions / references / hashes / scoped metadata"},
+  "experiences": ["public website","manufacturer portal","supplier/material workflows","laboratory/sample interface","smart-glass auditor interface","24/7 GHSCL+JAKIM Command Center","Sinotrans warehouse/logistics integration views","port/customs API/officer interface","GCC importer/receiving view","retailer/buyer view","consumer verification","finance/Takaful purpose-specific interface","administration/security/governance"],
+  "languages": ["English","Simplified Chinese","Malay","Arabic / RTL"],
+  "physical_chain": ["verified raw-material origin","producer / supplier / provenance / lot","physical+digital identity","sample / seal / chain of custody","China traceability + laboratory system","signed scientific evidence","manufacturer / factory systems","product / formula / BOM / material / process","standards / applicability","control / HCP / SCCP","smart-glass audit","finding / CAPA / re-verification","direct JAKIM API","PHC + JAKIM authorised human review / approve-disapprove workflow","formal authority status","AHTE trust-state propagation","unit / box / carton / pallet","Sinotrans warehouse","Sinotrans end-to-end logistics","container / seal / telemetry / custody","origin port/customs API","international transit","GCC port/customs API","destination inspection/release","importer / destination warehouse / distribution / retail","authorised buyer / consumer verification"],
+  "canonical_china_pack": "master-standards-stack/CHINA_EXECUTION_PACK/",
+  "retired_lineage": "master-standards-stack/china-execution-pack/",
   "supersession_rules": [
-    {
-      "stale": "China -> Malaysia pilot wording",
-      "use": "China -> GCC direct"
-    },
-    {
-      "stale": "China -> Malaysia -> GCC physical corridor wording",
-      "use": "China origin -> GCC destination; Malaysia governance/assurance unless separately scoped"
-    },
-    {
-      "stale": "generic public authority gateway between AHTE and JAKIM",
-      "use": "direct JAKIM API topology"
-    },
-    {
-      "stale": "passive command-center analytics",
-      "use": "24/7 monitoring, prediction, preemptive strategy, escalation and intervention operating layer"
-    },
-    {
-      "stale": "development dependency used to disable or omit target capability",
-      "use": "complete production-target capability with replaceable development adapter/mock until the real connector is available"
-    },
-    {
-      "stale": "tokenomics hidden behind a permanent feature block merely because a live counterparty is not yet connected",
-      "use": "fully designed tokenomics integration plane and UI/contract architecture, with transaction execution bound to real legal/Shariah/regulatory approvals"
-    }
+    {"stale":"China -> Malaysia pilot wording","use":"China -> GCC direct"},
+    {"stale":"China -> Malaysia -> GCC mandatory physical route","use":"China origin -> GCC destination; Malaysia governance/assurance unless separately scoped"},
+    {"stale":"generic public authority gateway or NurAI hop between AHTE and JAKIM","use":"direct JAKIM API"},
+    {"stale":"passive command-center analytics","use":"joint 24/7 GHSCL operational + authorised JAKIM authority-side monitoring with predictive/preemptive escalation"},
+    {"stale":"transport-only Sinotrans scope","use":"end-to-end warehouse + logistics real-time integration"},
+    {"stale":"development dependency used to disable target capability","use":"complete target capability + replaceable sandbox/development provider until real connector is available"}
   ]
 }
