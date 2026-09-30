@@ -6,144 +6,152 @@
 |---|---|
 | Artifact | `CURRENT_TARGET_ARCHITECTURE_2026-09-30.md` |
 | Folder | `00_EXECUTIVE_COMMAND/` |
-| Revision | v1.0.0 |
+| Revision | v1.2.0 |
 | Control date | 2026-09-30 |
 | Classification | Post-freeze target architecture consolidation |
 | Freeze impact | None — `master-standards-stack/verified-2026-09-17/` remains immutable |
-| Authority effect | None by itself; this file records project target architecture and source precedence |
-| Supersedes | Conflicting project-level architecture statements dated before 2026-09-30, except frozen verified source artifacts and explicit competent-authority instruments |
+| Authority effect | None by itself; records the project target architecture and source precedence |
+| Companion controls | `current-target-architecture-2026-09-30.json`; `IMPLEMENTATION_COMPLETENESS_RULE_2026-09-30.md`; `PLATFORM_REQUIREMENTS_TRACEABILITY_2026-09-30.md` |
+| Supersedes | Conflicting project-level architecture statements dated before this revision, except frozen verified source artifacts and explicit competent-authority instruments |
 
 [PROPOSAL: consolidates current target architecture — path point: Authority → Standard / Instrument → Clause / Requirement → Applicability → Control → HCP / SCCP → Evidence → Audit Test → Finding → Corrective Action → Re-verification → Authority Gate → Trust State → Operational Release]
 
 ## 1. Governing project topology
 
-The project is a **Global Halal Digital Trust & Trade / Halal Tayyib infrastructure**, not a certificate database and not a standalone blockchain application.
-
-The operating topology is:
+The project is a **Global Halal Digital Trust & Trade / Halal Tayyib infrastructure**, not a certificate database, not an MS 2400-only system, not a standalone blockchain application and not a generic logistics dashboard.
 
 ```text
 MALAYSIAN HALAL GOVERNANCE / AUTHORITY PLANE
         │
         ├── JAKIM
-        │     └── Direct authorised JAKIM API connection
+        │     └── DIRECT AUTHORISED JAKIM API
         │
         └── PHC
               Perak State Government halal-industry GLC
               local + international industry role
+              │
+              └── PHC + JAKIM authorised human certification workflow
+                  including Mufti / scholars / authorised officers as applicable
 
 GLOBAL HALAL SUPPLY CHAIN LIMITED — HONG KONG
         │
         ├── International operating / digital-infrastructure vehicle
         ├── China → GCC corridor orchestration
-        ├── Ecosystem integration
-        └── 24/7 Command Center operating function
+        ├── Ecosystem and partner integration
+        └── 24/7 Command Center operating role
                 │
                 v
                AHTE
-    Standards / Evidence / Compliance / Traceability / Trust Intelligence
+ Standards / Applicability / Controls / Evidence / Traceability / Trust Intelligence
                 │
-        ┌───────┼────────┬──────────┬─────────────┐
-        │       │        │          │             │
-     China   Laboratory Factory   Sinotrans    Port/GCC
-     origin   evidence   systems   logistics    interfaces
-        │       │        │          │             │
-        └───────┴────────┴──────────┴─────────────┘
+        ┌───────┼────────┬──────────┬─────────────┬──────────────┐
+        │       │        │          │             │              │
+     China   Laboratory Factory   Sinotrans    Port/GCC      Finance/Takaful
+     origin   + trace    systems   logistics    APIs          API plane
+        │       │        │          │             │              │
+        └───────┴────────┴──────────┴─────────────┴──────────────┘
                 │
         Continuous attributable evidence
                 │
-        Cryptographic integrity anchoring
+        Cryptographic integrity + append-only history
                 │
-       AI/ML predictive assurance
+        Digital twins + evidence/trust graph
                 │
-       Preemptive strategy generation
+        AI/ML anomaly + predictive assurance
                 │
-       24/7 human command-center oversight
+        Preemptive Strategy Engine
                 │
-      Direct JAKIM API / authority workflow
+        24/7 GHSCL + authorised JAKIM joint monitoring
                 │
-         Human authority decisions
+        Human / authority action where required
                 │
-          Trust-state propagation
+        Direct JAKIM API / authority status
                 │
-           China → GCC release
+        AHTE trust-state propagation
+                │
+             China → GCC
 ```
 
 ## 2. Non-negotiable role separation
 
-The following roles are connected but must not be collapsed:
+`PHC ≠ GHSCL ≠ AHTE ≠ laboratory ≠ Sinotrans ≠ port/customs authority ≠ AI ≠ bank ≠ Takaful operator ≠ competent-authority decision`
 
-`PHC ≠ GHSCL ≠ AHTE ≠ laboratory ≠ Sinotrans ≠ port/customs authority ≠ AI ≠ competent-authority decision`
+- **PHC** — Perak State Government halal-industry GLC operating locally and internationally within the project ecosystem.
+- **GHSCL Hong Kong** — international operating and digital-infrastructure vehicle; corridor and 24/7 platform-operation role.
+- **AHTE** — continuous standards, applicability, control, evidence, traceability, compliance and trust-intelligence fabric.
+- **Direct JAKIM API** — the project authority-system connectivity path. Do not insert NurAI or an unnecessary external middleware layer in public/system topology.
+- **Project formal certification workflow** — approval/disapproval is performed through the authorised **PHC + JAKIM human workflow**, including Mufti/scholars/authorised halal officers or other authorised decision-makers as applicable. AI/AHTE assists but does not make the formal certification decision.
+- **Laboratory** — creates scientific/analytical evidence within its applicable competence/scope; a result is not certification.
+- **Sinotrans** — end-to-end logistics and warehouse execution with real-time custody/telemetry evidence integration.
+- **Port/customs authority** — retains sovereign release/inspection power; AHTE provides an authorised trust/API interface and records returned official events.
+- **Bank/financier** — retains credit/legal/Shariah financing decision authority.
+- **Takaful operator** — retains underwriting/claims authority.
+- **AI/ML** — monitoring, correlation, anomaly detection, prediction, impact analysis and strategy recommendation under D0–D6 controls.
 
-- **PHC** is the Perak State Government halal-industry GLC operating locally and internationally within the project ecosystem.
-- **GHSCL Hong Kong** is the international operating and digital-infrastructure vehicle.
-- **AHTE** is the continuous standards, evidence, traceability, compliance and trust-intelligence layer.
-- **JAKIM API** is the direct authority-system connectivity path specified for this project. Public and technical materials must not insert an unnecessary generic intermediary between AHTE and JAKIM where the intended topology is direct API connectivity.
-- **Laboratories** create analytical evidence within their authorised/qualified scope; laboratory evidence does not independently create Halal certification.
-- **Sinotrans** provides end-to-end logistics and warehouse execution plus real-time custody/telemetry evidence through integration with existing systems.
-- **Port/customs authorities** retain sovereign statutory authority. AHTE provides an API/trust-resolution interface but does not create port/customs release decisions.
-- **AI/ML** performs monitoring, analytics, anomaly detection, prediction and strategy recommendation subject to decision-class controls.
-- **Formal authority decisions** remain human/competent-authority decisions under the applicable framework.
+## 3. Default corridor and physical chain
 
-## 3. Canonical physical chain
+Default physical corridor: **China → GCC direct**.
 
-Default corridor: **China → GCC direct**.
+Malaysia is the governance/assurance and authority-connectivity plane unless a physical Malaysia movement is explicitly and separately scoped.
 
-Malaysia is the governance/assurance plane unless a physical Malaysia movement is separately scoped. Do not describe the default Shipment 001 route as China → Malaysia → GCC.
+[PILOT: Shipment 001 — first controlled China→GCC proof-of-execution]
+
+Shipment 001 remains a pilot object until transaction-native evidence exists.
 
 ```text
 VERIFIED RAW-MATERIAL ORIGIN
 ↓
-SUPPLIER / PRODUCER
+PRODUCER / SUPPLIER / LOT / PROVENANCE
 ↓
-IDENTITY / PROVENANCE / LOT
+PHYSICAL + DIGITAL IDENTITY
 ↓
-SAMPLE + SEAL + CHAIN OF CUSTODY
+SAMPLE PLAN / SAMPLE ID / COLLECTION / SEAL / CHAIN OF CUSTODY
 ↓
-CHINA LABORATORY SYSTEM
+CHINA LABORATORY + TRACEABILITY / ANTI-COUNTERFEIT SYSTEM
 ↓
-SIGNED SCIENTIFIC EVIDENCE
+METHOD / QC / TECHNICAL REVIEW / SIGNED SCIENTIFIC EVIDENCE
 ↓
 RAW-MATERIAL RELEASE / HOLD
 ↓
-MANUFACTURER / FACTORY
+MANUFACTURER / FACILITY
 ↓
 ERP / MES / QMS / WMS / LIMS / IoT / DMS / IDENTITY
 ↓
-PRODUCT / FORMULA / BOM / PROCESS
+PRODUCT / SKU / FORMULA / BOM / MATERIAL / SUPPLIER / PROCESS
 ↓
-APPLICABLE STANDARDS + REQUIREMENTS
+APPLICABLE MS + JAKIM OPERATING REQUIREMENTS + DESTINATION REQUIREMENTS
 ↓
-HCP / SCCP / CONTROLS
+CONTROL → HCP / SCCP → EXPECTED EVIDENCE
 ↓
 SMART-GLASS AI-ASSISTED SITE AUDIT
 ↓
-FINDING / CAR / CAPA
+FINDING → CAR / CAPA → RE-VERIFICATION
 ↓
-RE-VERIFICATION
+DIRECT JAKIM API
 ↓
-DIRECT JAKIM API / HUMAN AUTHORITY WORKFLOW
+PHC + JAKIM AUTHORISED HUMAN REVIEW / APPROVE-DISAPPROVE WORKFLOW
 ↓
-FORMAL DECISION / AUTHORITY STATUS
+FORMAL AUTHORITY STATUS EVENT
 ↓
-AHTE TRUST-STATE PROPAGATION
+AHTE AUTHORITY-LINKED TRUST-STATE PROPAGATION
 ↓
-PACKAGING / BATCH / LOT / PALLET
+UNIT / BOX / CARTON / BATCH / LOT / PALLET
 ↓
 SINOTRANS WAREHOUSE
 ↓
 SINOTRANS END-TO-END LOGISTICS
 ↓
-CONTAINER / SEAL / TELEMETRY / CUSTODY
+VEHICLE / CONTAINER / SEAL / CUSTODY / TELEMETRY / GEOFENCE
 ↓
-ORIGIN PORT / CUSTOMS API INTERFACE
+CHINA PORT / CUSTOMS API
 ↓
 EXPORT / LOADING
 ↓
 INTERNATIONAL TRANSIT
 ↓
-GCC PORT / CUSTOMS API INTERFACE
+GCC PORT / CUSTOMS API
 ↓
-DESTINATION INSPECTION / RELEASE
+DESTINATION INSPECTION / HOLD / RELEASE
 ↓
 IMPORTER / DESTINATION WAREHOUSE
 ↓
@@ -152,18 +160,14 @@ DISTRIBUTION / RETAIL
 BUYER / CONSUMER AUTHORISED VERIFICATION
 ```
 
-[PILOT: Shipment 001 — first controlled China→GCC proof-of-execution]
+## 4. Four synchronized chains
 
-Shipment 001 remains uninstantiated until transaction-native evidence exists.
+Every material object/event must preserve four linked chains:
 
-## 4. Four synchronized trust chains
-
-Every operational design must preserve four synchronized chains:
-
-1. **Physical chain** — raw material → factory → warehouse → logistics → port → GCC.
-2. **Identity/custody chain** — actor → facility → product → batch → sample → pallet → container → seal → handover.
-3. **Evidence chain** — certificates/references → laboratory → process → HCP/SCCP → audit → CAPA → telemetry → custody → receiving.
-4. **Authority/trust-state chain** — direct authority status/decision → AHTE trust state → operational release/hold/quarantine/recall.
+1. **Physical** — raw material → factory → warehouse → logistics → port → GCC → retail.
+2. **Identity/custody** — actor → facility → material/product → sample/batch → pallet → container/seal → handover.
+3. **Evidence** — source/certificate references → lab → process/HCP/SCCP → audit → CAPA → telemetry/custody → receiving.
+4. **Authority/trust-state** — direct authority decision/status → AHTE trust state → operational release/hold/quarantine/recall.
 
 Minimum material event tuple:
 
@@ -171,20 +175,21 @@ Minimum material event tuple:
 
 ## 5. AHTE functional architecture
 
-AHTE shall contain or integrate the following logical engines:
+### 5.1 Standards / regulatory intelligence
 
-### 5.1 Standards and applicability
+AHTE resolves the complete applicable Malaysian/JAKIM framework, not MS 2400 alone:
 
-- complete applicable Malaysian Halal standards corpus;
+- applicable Malaysian Standards and editions;
 - JAKIM operative certification instruments;
-- MPPHM / MHMS / applicable protocols, circulars and authority instructions;
-- product/sector requirements;
-- destination-market requirements;
-- contractual buyer/importer requirements where applicable;
-- version/effective-date/supersession handling;
-- dynamic `ResolvedRequirementSet` generation.
+- MPPHM / MHMS / HAS / IHCS as applicable;
+- protocols, circulars, fatwa/authority instructions as applicable;
+- sector/product requirements;
+- laboratory method/version requirements;
+- GCC destination-market requirements;
+- buyer/importer contractual controls where lawful/applicable;
+- version/effective-date/supersession history.
 
-AHTE must not be hard-coded around MS 2400 alone.
+Output: versioned `ResolvedRequirementSet` / applicability object.
 
 ### 5.2 Control / HCP / SCCP
 
@@ -192,13 +197,11 @@ AHTE must not be hard-coded around MS 2400 alone.
 
 ### 5.3 Evidence graph
 
-Every material trust claim resolves to attributable evidence, object identity and integrity metadata.
+Every material trust claim resolves to source identity, object identity, timestamp, actor/system/device, evidence reference, applicable requirement/control, verification state and integrity metadata.
 
-### 5.4 Digital twins
+### 5.4 Digital twins and object genealogy
 
-Core hierarchy:
-
-`Programme → Organisation → Facility → Product → Formula/Version → Material → Supplier → Process → HCP → Batch → Lot → Logistic Unit → Shipment → Destination Inventory → Retail Unit`
+`Programme → Organisation → Facility → Product → Formula/Version → Material → Supplier → Process → HCP/SCCP → Batch → Lot → Unit/Box/Carton/Pallet → Logistic Unit → Container/Seal → Shipment → Destination Inventory → Retail Unit`
 
 ### 5.5 Trust-state engine
 
@@ -206,37 +209,77 @@ Primary lifecycle:
 
 `INITIAL → EVIDENCE-COMPLETE → ASSESSED → VERIFIED → RELEASED`
 
-Exception states include:
+Exception/lifecycle states include:
 
 `HOLD · QUARANTINED · DISPUTED · CORRECTIVE-ACTION · RE-VERIFICATION · EXPIRED · SUSPENDED · REVOKED · RECALLED`
 
-Certification state, AHTE trust state and supply-chain state must be displayed as separate objects.
+Certification/authority state, AHTE trust state, supply-chain state, port/customs state and finance/Takaful state are distinct objects.
 
-## 6. AI/ML predictive and preemptive assurance
+## 6. Manufacturer onboarding factory
 
-Existing AHTE assurance modules are retained:
+Manufacturer onboarding is a first-class workflow:
+
+`Manufacturer identified → legal entity/KYB → facility qualification → product/SKU → formula/BOM → ingredients/raw materials → suppliers → origin provenance → existing certification/evidence → ERP/MES/QMS/WMS/LIMS/IoT system inventory → AHTE digital twin → applicable requirements → HCP/SCCP → evidence gap → remediation/training → laboratory/sample plan → smart-glass pre-audit/site audit → findings/CAPA → re-verification → direct JAKIM API/human authority workflow → formal status → continuous monitoring → China→GCC shipment/market enablement`.
+
+The architecture must scale to many manufacturers/products/facilities without arbitrary caps or bespoke redesign per participant.
+
+## 7. China traceability / anti-counterfeit + laboratory plane
+
+The China physical/digital identity plane supports:
+
+- enterprise/product identity;
+- one-item-one-code;
+- microdot / QR / VOID/tamper-evident physical token where deployed;
+- product/batch/code binding;
+- unit → box → carton → pallet aggregation;
+- consumer/channel verification;
+- anti-diversion/abnormal-scan events;
+- scan/channel analytics.
+
+AHTE extends that identity chain through container/shipment/GCC objects.
+
+Laboratory target chain:
+
+`Sampling authorisation → SampleID → collection → collector/time/location → seal → custody transfers → lab receipt → condition → accession → aliquot/sub-sample → method execution → QC → technical review → authorised signatory → signed report/result → canonicalisation → content hash → signed evidence manifest → AHTE`.
+
+**Hard rule:** `NOT_DETECTED ≠ HALAL`.
+
+A displayed quality-report document becomes a verified laboratory result only after source identity, sample, method/scope, report provenance and integrity controls are satisfied.
+
+## 8. Smart-glass audit
+
+`Device identity + Auditor identity + MFA + role/scope policy`
+
+`Assigned audit → facility/scope → applicable requirement/HCP package → physical walkthrough → object scan → observation → image/video/document/voice/sensor evidence → local hash/signature → AI assist → auditor assessment → finding → CAR/CAPA → re-verification → signed session → offline/online reconciliation`.
+
+Original media remain immutable evidence objects; annotations/corrections are separate linked objects.
+
+## 9. AI/ML predictive + preemptive assurance
+
+Required assurance engines include:
 
 - Evidence Gap Predictor;
 - Anomaly Engine;
 - Contradiction Engine;
 - Trust Fracture Engine;
 - Predictive Compliance Engine;
-- Recall Blast-Radius Engine.
-
-This target architecture adds an explicit **Preemptive Strategy Engine**.
+- Recall Blast-Radius Engine;
+- explicit **Preemptive Strategy Engine**.
 
 ```text
 LIVE EVIDENCE + TELEMETRY + HISTORY
 ↓
-FEATURE / CONTEXT ASSEMBLY
+CONTEXT / FEATURE ASSEMBLY
 ↓
-RISK / FAILURE PREDICTION
+ANOMALY + RISK / FAILURE PREDICTION
 ↓
-IMPACT + BLAST-RADIUS ANALYSIS
+IMPACT / BLAST-RADIUS ANALYSIS
 ↓
 PREEMPTIVE STRATEGY GENERATION
 ↓
-POLICY / HUMAN REVIEW AS REQUIRED
+DECISION-CLASS / POLICY CHECK
+↓
+HUMAN / POLICY REVIEW AS REQUIRED
 ↓
 PREVENTIVE ACTION
 ↓
@@ -245,293 +288,182 @@ OUTCOME CAPTURE
 MODEL / RULE FEEDBACK
 ```
 
-Preemptive strategies may include:
+Predictions/strategies are first-class auditable objects carrying model/version, inputs/evidence, horizon, score/confidence, explanation/drivers, affected objects, recommended actions, decision class, reviewer/action and outcome.
 
-- targeted re-sampling;
-- extra audit attention;
-- supplier verification;
-- route change recommendation;
-- earlier maintenance/calibration;
-- additional segregation checks;
-- temporary hold recommendation;
-- enhanced receiving inspection;
-- evidence refresh before expiry;
-- CAPA initiation recommendation;
-- recall-readiness preparation.
+AI may perform D0/D1/D2 and configured D4 holds under policy. AI does not bypass D5/D6. Automatic D4 release is prohibited where human release is required.
 
-AI output must retain:
+## 10. 24/7 GHSCL + JAKIM Command Center
 
-`model_id + model_version + feature/input references + timestamp + score/confidence + explanation metadata + recommended action + reviewer/decision linkage`
+The Command Center is a first-class operating plane, **jointly monitored 24/7 by GHSCL operational roles and authorised JAKIM authority-side roles**.
 
-AI may recommend, prioritize, alert and apply configured D4 HOLD controls. AI must not bypass mandatory D5/D6 decisions or automatically release a hold reserved for human decision.
+Shared monitoring does not mean identical authority:
 
-## 7. 24/7 GHSCL + JAKIM Command Center target model
+- GHSCL — digital infrastructure, corridor monitoring, partner coordination, exception ownership/orchestration and operational analytics within scope.
+- JAKIM — authority-relevant monitoring, evidence/status visibility and authority workflow/actions according to actual mandate and direct API permissions.
 
-The Command Center is a first-class operating layer, not a dashboard-only concept.
+Monitor continuously:
 
-Target monitoring domains:
+- manufacturer/facility/onboarding state;
+- suppliers/raw-materials/origin changes;
+- lab/sample/traceability/anti-counterfeit pipeline;
+- HCP/SCCP/process exceptions;
+- smart-glass audit/findings/CAPA;
+- certification/authority status synchronization;
+- Sinotrans warehouse/inventory state;
+- logistics/route/custody/container/seal/telemetry;
+- origin and GCC port/customs status;
+- importer/GCC receiving/warehouse/retail progression;
+- evidence integrity, expiry/staleness and trust fractures;
+- predictive risks and preemptive strategies;
+- recall/blast-radius cases;
+- finance/Takaful support-state where authorised.
 
-- manufacturer/facility operational status;
-- supplier/raw-material changes;
-- laboratory/sample pipeline;
-- HCP/SCCP exceptions;
-- smart-glass audit findings;
-- certification/authority-status synchronization;
-- Sinotrans warehouse status;
-- shipment/container/seal status;
-- environmental telemetry;
-- route/geofence deviation;
-- custody completeness;
-- origin/destination port status;
-- GCC receiving;
-- unresolved CAPA;
-- evidence expiry/staleness;
-- trust fractures;
-- predictive risk;
-- recommended preemptive strategies;
-- recalls and blast radius.
+Operating loop:
 
-Command Center operating loop:
+`Observe → validate/correlate → detect → predict → model impact → generate preemptive strategy → prioritize/assign → alert/escalate/hold under policy → human/authority action → CAPA/re-verification → trust-state update → close/escalate/recall → outcome feedback`.
 
-```text
-OBSERVE 24/7
-↓
-CORRELATE
-↓
-DETECT
-↓
-PREDICT
-↓
-GENERATE PREEMPTIVE STRATEGY
-↓
-PRIORITISE
-↓
-ASSIGN OWNER
-↓
-ALERT / ESCALATE / HOLD WHERE POLICY ALLOWS
-↓
-HUMAN / AUTHORITY ACTION
-↓
-CAPA / RE-VERIFICATION
-↓
-CLOSE OR ESCALATE
-↓
-MEASURE OUTCOME
-```
+## 11. Sinotrans end-to-end warehouse + logistics integration
 
-GHSCL operates the digital infrastructure and continuous monitoring function. JAKIM has the direct authorised authority-system interface/view according to the implemented API scope. Exact production permissions, endpoints and credentials remain controlled implementation inputs and are not published in public website content.
+Target integration:
 
-## 8. Laboratory integration
+`Sinotrans Y2T/MIS/EDI/WMS/TMS/IoT/existing systems → secure adapter/API → schema validation → policy → event normalizer → AHTE canonical logistics event → evidence/integrity → Command Center`.
 
-Target architecture:
+Required domains include booking/order, warehouse receipt/dispatch, zone/segregation/storage, inventory/batch genealogy, pickup, vehicle, pallet/lot, container, seal, loading, route/geofence, environmental/commodity telemetry, custody handovers, port transfer, customs document reference, proof of delivery, damage/tamper/route/telemetry exceptions.
 
-```text
-Source lot
-→ Sample ID
-→ Collection
-→ Seal
-→ Custody transfers
-→ Laboratory receipt/accession
-→ Method execution
-→ QC
-→ Technical review
-→ Signed result/report
-→ Canonicalisation
-→ Cryptographic digest
-→ Signed evidence envelope
-→ AHTE
-→ Direct JAKIM API workflow where authorised
-→ Human authority review
-```
+AHTE integrates; it does not require wholesale replacement of Sinotrans systems.
 
-`NOT DETECTED ≠ HALAL` remains a hard engine rule.
+## 12. Port / customs API plane
 
-The China traceability/anti-counterfeit system is a physical/digital identity source integrated with the laboratory and AHTE trust graph; it does not create certification.
-
-## 9. Smart-glass audit
-
-Retain the canonical wearable workflow:
-
-`Device identity + Auditor identity + MFA + role/scope policy`
-
-`Assigned audit → facility/scope → applicable requirements/HCPs → object scan → observation → media/document/sensor evidence → local hash → AI assist → auditor assessment → finding/CAR → re-verification → signed session → sync/reconcile`
-
-Original media are immutable evidence objects; annotations/supersession remain separate.
-
-## 10. Sinotrans integration
-
-Sinotrans is the designated logistics and warehouse operating partner in the target corridor architecture.
-
-Integration target:
-
-`Sinotrans existing systems / Y2T / MIS / EDI / WMS / TMS / IoT → secure adapter/API → event normalizer → AHTE canonical logistics event → evidence/integrity layer → Command Center`
-
-Required evidence domains:
-
-- booking;
-- pickup;
-- vehicle/container identity;
-- pallet/lot mapping;
-- seal application and status;
-- warehouse receipt/dispatch;
-- segregation/storage evidence;
-- temperature/humidity or commodity-specific telemetry;
-- route/geofence;
-- custody handover;
-- port transfer;
-- customs document references;
-- proof of delivery;
-- damage/tamper/route/telemetry exceptions.
-
-Do not replace Sinotrans operational systems merely to join AHTE.
-
-## 11. Port / customs API plane
-
-Authorised port/customs users must be given an API/trust gateway supporting minimum-necessary operational verification.
-
-Target resources/functions:
+Origin-China and GCC destination port/customs users receive authorised minimum-necessary API/trust interfaces supporting:
 
 - shipment lookup;
 - product/batch/container/seal reconciliation;
-- authorised trust packet;
-- certification/authority-status reference;
-- laboratory evidence reference;
-- document/evidence references;
+- trust packet / certification-authority status reference;
+- lab/evidence/document references;
 - custody history;
 - telemetry/condition exceptions;
 - inspection/sampling events;
 - hold/release event ingestion;
 - signed authority/custody event return.
 
-AHTE records and propagates official port/customs events; it does not create or override sovereign clearance decisions.
+Port/customs authorities retain sovereign release/inspection powers. AHTE records and propagates the official state; it never manufactures clearance.
 
-## 12. Shariah financing API / Takaful / tokenomics target plane
+## 13. Shariah Financing API / Takaful / tokenomics plane
 
-[PROPOSAL: extends existing Finance / Islamic Finance architecture — path point: Control / Evidence / transaction support]
+[PROPOSAL: post-freeze transaction-support plane — path point: Control / Evidence / transaction support]
 
-The target architecture includes a **Shariah Financing API** connected to authorised transaction/trust data.
+`AHTE authorised trust/trade data → Shariah Financing API → Islamic trade/purchase/order/inventory/shipment financing + Takaful underwriting/claims evidence + asset/collateral verification + tokenomics/digital-value mechanisms where legally, regulatorily and Shariah approved`.
 
-Logical services:
+Separation rules:
 
-```text
-AHTE AUTHORISED TRUST / TRADE DATA
-↓
-SHARIAH FINANCING API
-├── Islamic trade financing
-├── purchase/order financing
-├── inventory / shipment financing
-├── Takaful underwriting
-├── Takaful claims evidence
-├── collateral / asset-state verification
-└── tokenomics / digital-value mechanisms where legally and Shariah approved
-```
+- halal certification ≠ financing approval;
+- AHTE trust state ≠ credit decision;
+- financing decision remains with the financier;
+- Takaful underwriting/claim decision remains with the Takaful operator;
+- tokenization does not itself create title, ownership, legal status, Shariah approval or regulatory approval.
 
-Critical separation:
+## 14. Cryptographic integrity and evidence history
 
-- AHTE trust state is not a credit decision.
-- Halal certification is not a financing approval.
-- Bank/financier retains credit/legal/Shariah decision authority.
-- Takaful operator retains underwriting/claim authority.
-- Tokenization does not change ownership, title, regulatory, Shariah or authority status by itself.
+Pattern:
 
-No live bank/Takaful/tokenomics counterparty, product structure, token classification or regulatory approval is asserted by this architecture record until documented.
+`Original source → canonical representation → content hash → signed evidence manifest → append-only/tamper-evident history → optional external/DLT anchor → later verification`.
 
-## 13. Cryptographic integrity
+Use strong identity/authentication, signatures, hardware-backed keys where appropriate, algorithm agility, revocation, trusted time, anti-replay, idempotency, evidence lineage, append-only supersession/correction, selective disclosure and jurisdictional data controls.
 
-Every material evidence object should be attributable, versioned and integrity-protected.
+Hashing proves integrity after creation, not truth or authority.
 
-Preferred pattern:
+## 15. Interoperability / sovereign data architecture
 
-`Original source record → canonical representation → content hash → signed evidence manifest → append-only/tamper-evident history → optional external/DLT anchor → later verification`
+Operational systems remain systems of record within their domain where appropriate:
 
-A hash proves integrity after creation, not truth or competent authority.
-
-Use:
-
-- strong identity and authentication;
-- signatures where appropriate;
-- hardware-backed keys for high-value roles/services/devices where feasible;
-- algorithm agility;
-- revocation;
-- trusted time;
-- anti-replay;
-- idempotency;
-- append-only correction/supersession;
-- selective disclosure;
-- data-sovereignty controls.
-
-## 14. API and interoperability principle
-
-AHTE integrates with existing systems rather than forcing wholesale replacement.
-
-System-of-record examples:
-
-- ERP/PLM — legal entity/product/formula;
-- MES — production/process execution;
+- ERP/PLM — company/product/formula;
+- MES — production execution;
 - QMS — NCR/CAPA;
-- WMS — inventory/warehouse state;
+- WMS — inventory/warehouse;
 - LIMS — analytical evidence;
-- IoT/SCADA/edge — condition telemetry;
-- TMS/logistics — shipment/custody;
-- authority systems — authority decisions/status;
-- bank/Takaful systems — finance/underwriting decisions.
+- IoT/SCADA/edge — telemetry;
+- TMS/logistics — transport/custody;
+- traceability/serialization platform — physical/product code and scan events;
+- JAKIM — authority decisions/status;
+- port/customs — sovereign inspection/release;
+- bank/Takaful — financing/underwriting decisions.
 
-Cross-border exchange follows minimum-necessary, policy-approved assertion/proof exchange rather than uncontrolled replication of source records.
+**Data stays where it belongs; trust travels.** Cross-border exchange uses policy-approved minimum-necessary assertions, evidence references, hashes, signatures and scoped metadata instead of uncontrolled replication.
 
-## 15. Website and public-communications requirements
+## 16. Experience architecture
 
-All public surfaces must represent:
+Do not collapse the ecosystem into one generic dashboard. Target surfaces include:
 
-- China origin → GCC destination as the default physical corridor;
-- Malaysia as the governance/assurance plane unless physically in route;
-- manufacturer onboarding as a first-class journey;
-- laboratory/sample chain before manufacturing release;
-- smart-glass AI-assisted audit;
-- complete standards/applicability intelligence;
-- direct JAKIM API connectivity;
+- public institutional/educational website;
+- manufacturer onboarding/operations portal;
+- supplier/material evidence workflows;
+- laboratory/sample portal/interface;
+- smart-glass auditor interface;
+- Sinotrans logistics/warehouse integration and views;
 - 24/7 GHSCL + JAKIM Command Center;
-- AI/ML predictive analytics and preemptive strategies;
-- Sinotrans end-to-end warehouse/logistics integration;
-- port/customs API access;
-- evidence integrity / immutable hash anchoring;
-- Shariah financing API / Takaful / tokenomics target plane;
-- role-based transparency;
-- separate trust/certification/supply-chain states.
+- port/customs API/officer interface;
+- GCC importer/receiving view;
+- retailer/buyer view;
+- consumer verification;
+- finance/Takaful purpose-specific interface;
+- administration/security/governance surfaces.
 
-Do not expose credentials, endpoint secrets, manufacturer formulas, laboratory confidential data or raw authority-system security details.
+Public verification exposes authorised provenance/trust/certification/custody fields, not confidential formulas, raw authority records, pricing or unrestricted personal/commercial data.
 
-## 16. Source precedence for project implementation
+Multilingual readiness: English, Simplified Chinese, Malay and Arabic/RTL.
 
-Use the following order when project artifacts disagree:
+## 17. No-artificial-block implementation rule
 
-1. `master-standards-stack/verified-2026-09-17/` for frozen verified material within its defined scope.
-2. Current competent-authority instruments and controlled source registries for authority/normative claims.
-3. `00_EXECUTIVE_COMMAND/IQ300_DOCTRINE.md`, machine registries and canonical-path controls.
-4. This current target architecture for post-freeze project topology and user-authorised architecture decisions dated 2026-09-30.
-5. Current domain specifications: Platinum, China execution, laboratory, Sinotrans, ports, website.
-6. Historical/derived drafts only where not conflicting with the above.
+**FULL ARCHITECTURE NOW → REAL CONNECTORS WHEN AVAILABLE → NO REDESIGN REQUIRED.**
 
-This file does not rewrite the verified freeze and does not manufacture authority facts.
+Unavailable credentials/APIs/devices/data do not justify removing, hiding, permanently disabling, downgrading or arbitrarily limiting a target capability.
 
-## 17. Explicit supersessions/corrections
+For an unavailable live dependency implement:
 
-For project implementation after 2026-09-30:
+`production domain model → production adapter contract → explicit connector state → replaceable development/sandbox provider → full workflow/UI/tests → production connector replacement without redesign`.
 
-- `China → Malaysia` pilot wording in older Sinotrans material does **not** control Shipment 001; use **China → GCC direct**.
-- `China → Malaysia → GCC` wording in older GHSCL corridor descriptions is replaced by **China origin → GCC destination**, with Malaysia as the governance/assurance plane unless an actual Malaysia physical hop is explicitly scoped.
-- Generic public `Authority API Gateway` diagrams must not obscure the intended **direct JAKIM API** topology.
-- The Command Center must not be represented as passive analytics; it is a 24/7 monitoring, escalation and intervention operating layer.
-- Predictive analytics must be paired with an explicit preemptive-strategy workflow.
-- Sinotrans integration includes **warehouse + end-to-end logistics real-time monitoring**, not transportation alone.
-- Port authorities receive an authorised API/trust interface; sovereign decisions remain theirs.
-- Finance architecture includes the Shariah Financing API target plane with Takaful and tokenomics, subject to actual legal/Shariah/regulatory/counterparty implementation.
-- `platform/` reference runtime is not production infrastructure.
-- `platform/web/` prototype is not the completed multi-surface website/platform.
+No arbitrary caps on manufacturers, products, facilities, materials, suppliers, evidence, shipments, audits, standards, roles, jurisdictions, connectors or languages.
 
-## 18. Completion boundary
+This does not remove legitimate authority/security gates and does not permit fabricated live JAKIM approvals, laboratory results, Sinotrans events, customs releases, GCC acceptance, finance/Takaful decisions, token approvals or Shipment 001 evidence.
 
-Documentation of the target architecture does not itself prove production deployment.
+## 18. Public/website requirements
 
-Production classification requires implemented and tested integrations, security controls, identity/authentication, persistence, auditability, contractual/authority permissions and transaction-native evidence.
+All public and platform specifications must represent the complete model above, including direct JAKIM API, PHC + JAKIM authorised human certification workflow, raw-material-origin traceability, China lab/traceability identity plane, smart glass, standards/applicability, Sinotrans warehouse/logistics, port APIs, GCC destination, 24/7 joint GHSCL/JAKIM monitoring, AI/ML predictive + preemptive functions, evidence integrity and Shariah financing/Takaful/tokenomics as a distinct transaction-support plane.
 
-The project target architecture, however, is now consolidated in one post-freeze control artifact for implementation, website rebuilding and Codex execution.
+Do not use `NurAI` as a platform integration hop. Do not present blockchain/QR/lab/AI/AHTE as certification authority.
+
+## 19. Source precedence
+
+When project artifacts disagree:
+
+1. `master-standards-stack/verified-2026-09-17/` — frozen verified material within its defined scope.
+2. Current competent-authority instruments / controlled source registries — authority/normative claims.
+3. `IQ300_DOCTRINE.md`, decision-class/machine registries, schema registry and canonical-path controls.
+4. This target architecture + machine target + implementation completeness + platform requirements traceability — post-freeze target topology/implementation.
+5. Current domain specifications — Platinum/Command Center, canonical China execution pack, laboratory/traceability, Sinotrans, ports, finance, website/Codex.
+6. Historical/derived drafts only where not conflicting.
+
+This precedence does not rewrite frozen source evidence.
+
+## 20. Explicit supersessions / cleanup rules
+
+For current implementation:
+
+- old `China → Malaysia` or mandatory `China → Malaysia → GCC` pilot wording does not control Shipment 001; use China→GCC direct;
+- generic public `Authority API Gateway` must not obscure direct JAKIM API topology;
+- old split China lab profile/addendum is superseded by the consolidated 30 September profile;
+- the duplicate lowercase `master-standards-stack/china-execution-pack/` lineage is retired after its richer/unique content is moved into canonical `master-standards-stack/CHINA_EXECUTION_PACK/`;
+- obsolete website v1 pointer/spec is removed after v2.1+ is confirmed as controlling;
+- historical audits/frozen artifacts are retained when they document historical state rather than act as current control;
+- `platform/` reference runtime is not production infrastructure;
+- `platform/web/` reference experience is not the full authenticated platform.
+
+Artifact retirement must preserve unique requirements and record old path → replacement in `OBSOLETE_ARTIFACT_RETIREMENT_2026-09-30.md`.
+
+## 21. Production boundary
+
+Target architecture completeness and external/production readiness are different facts.
+
+Production classification requires the relevant implemented authentication, persistence, security, identity, external permissions/contracts, real interface/data contracts, auditability, availability controls and transaction-native evidence.
+
+External dependencies are connection/evidence gates — **not artificial product-feature blocks**.
