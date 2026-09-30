@@ -1,8 +1,7 @@
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "artifact": "schema-registry.json",
-  "version": "1.2.0",
-  "control_date": "2026-09-20",
+  "version": "1.3.0",
+  "control_date": "2026-09-30",
   "classification": "post-freeze schema index extension",
   "description": "Schema registry index for structured output domains",
   "schemas": {
@@ -23,11 +22,16 @@
     "ai-provenance-object": {"path": "trust-packet-schemas.json#/schemas/ai_provenance_object", "purpose": "Model/prompt/hash envelope"},
     "trust-vector-object": {"path": "trust-packet-schemas.json#/schemas/trust_vector_object", "purpose": "Descriptive trust vector; score secondary"},
     "release-decision-object": {"path": "trust-packet-schemas.json#/schemas/release_decision_object", "purpose": "Operational release; not certification"},
-    "fracture-event-object": {"path": "trust-packet-schemas.json#/schemas/fracture_event_object", "purpose": "Trust-fracture event"}
+    "fracture-event-object": {"path": "trust-packet-schemas.json#/schemas/fracture_event_object", "purpose": "Trust-fracture event"},
+    "command-center-alert-object": {"path": "target-extension-schemas-2026-09-30.json#/schemas/command_center_alert_object", "purpose": "24/7 command-center alert and escalation object"},
+    "prediction-object": {"path": "target-extension-schemas-2026-09-30.json#/schemas/prediction_object", "purpose": "AI/ML predictive-risk object; never authority decision"},
+    "preemptive-strategy-object": {"path": "target-extension-schemas-2026-09-30.json#/schemas/preemptive_strategy_object", "purpose": "AI/ML preemptive-strategy recommendation and review object"},
+    "finance-evidence-packet-object": {"path": "target-extension-schemas-2026-09-30.json#/schemas/finance_evidence_packet_object", "purpose": "Purpose-limited trust/trade evidence packet for finance/Takaful/tokenomics support"}
   },
   "related_registries": {
     "hitm_classes": "hitm-decision-class-registry.json",
-    "path_map": "canonical-path-machine-map.json"
+    "path_map": "canonical-path-machine-map.json",
+    "current_target_architecture": "current-target-architecture-2026-09-30.json"
   },
-  "enforcement_note": "Output is a formatting requirement; not decode-time enforced. Validate before delivery. Schema conformance does not create authority status."
+  "enforcement_note": "Output is a formatting requirement; not decode-time enforced. Validate before delivery. Schema conformance does not create authority, certification, financing or underwriting status."
 }

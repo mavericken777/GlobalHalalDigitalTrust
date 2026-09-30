@@ -1,0 +1,118 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "artifact": "target-extension-schemas-2026-09-30.json",
+  "version": "0.1.0",
+  "control_date": "2026-09-30",
+  "classification": "post-freeze proposal schema extension",
+  "authority_effect": "none",
+  "description": "Target-state schemas for command-center alerts, machine prediction, preemptive strategy and Shariah-finance evidence packets. Schema conformance does not create authority, credit, underwriting or certification status.",
+  "$defs": {
+    "id_array": {
+      "type": "array",
+      "items": {"type": "string", "minLength": 1},
+      "uniqueItems": true
+    }
+  },
+  "schemas": {
+    "command_center_alert_object": {
+      "$id": "schema/target/command-center-alert.json",
+      "type": "object",
+      "required": ["alert_id", "trigger", "severity", "subject_objects", "detected_at", "status", "decision_class", "creates_authority_decision"],
+      "properties": {
+        "alert_id": {"type": "string", "minLength": 1},
+        "trigger": {"type": "string", "minLength": 1},
+        "taxonomy": {"type": "string", "minLength": 1},
+        "severity": {"type": "string", "enum": ["S0", "S1", "S2", "S3", "S4", "S5"]},
+        "subject_objects": {"$ref": "#/$defs/id_array"},
+        "shipment_id": {"type": ["string", "null"]},
+        "event_refs": {"$ref": "#/$defs/id_array"},
+        "evidence_refs": {"$ref": "#/$defs/id_array"},
+        "prediction_ref": {"type": ["string", "null"]},
+        "strategy_ref": {"type": ["string", "null"]},
+        "detected_at": {"type": "string", "format": "date-time"},
+        "owner_role": {"type": ["string", "null"]},
+        "decision_class": {"type": "string", "enum": ["D0", "D1", "D2", "D3", "D4", "D5", "D6"]},
+        "status": {"type": "string", "enum": ["open", "assigned", "held", "in_review", "capa", "reverification", "closed", "escalated", "recalled"]},
+        "creates_authority_decision": {"type": "boolean", "const": false}
+      },
+      "additionalProperties": false
+    },
+    "prediction_object": {
+      "$id": "schema/target/prediction.json",
+      "type": "object",
+      "required": ["prediction_id", "model_id", "generated_at", "subject_objects", "risk_type", "evidence_refs", "creates_authority_decision"],
+      "properties": {
+        "prediction_id": {"type": "string", "minLength": 1},
+        "model_id": {"type": "string", "minLength": 1},
+        "model_version": {"type": "string"},
+        "generated_at": {"type": "string", "format": "date-time"},
+        "subject_objects": {"$ref": "#/$defs/id_array"},
+        "risk_type": {"type": "string", "minLength": 1},
+        "predicted_failure": {"type": "string"},
+        "score": {"type": ["number", "null"]},
+        "confidence": {"type": "string", "enum": ["low", "medium", "high", "unscored"]},
+        "horizon": {"type": ["string", "null"]},
+        "evidence_refs": {"$ref": "#/$defs/id_array"},
+        "feature_refs": {"$ref": "#/$defs/id_array"},
+        "explanation": {"type": "string"},
+        "blast_radius_refs": {"$ref": "#/$defs/id_array"},
+        "decision_class": {"type": "string", "const": "D2"},
+        "creates_authority_decision": {"type": "boolean", "const": false}
+      },
+      "additionalProperties": false
+    },
+    "preemptive_strategy_object": {
+      "$id": "schema/target/preemptive-strategy.json",
+      "type": "object",
+      "required": ["strategy_id", "prediction_id", "subject_objects", "recommended_action", "decision_class", "status", "generated_at", "creates_authority_decision"],
+      "properties": {
+        "strategy_id": {"type": "string", "minLength": 1},
+        "prediction_id": {"type": "string", "minLength": 1},
+        "subject_objects": {"$ref": "#/$defs/id_array"},
+        "recommended_action": {"type": "string", "minLength": 1},
+        "alternative_actions": {"type": "array", "items": {"type": "string"}},
+        "expected_impact": {"type": "string"},
+        "urgency": {"type": "string", "enum": ["low", "medium", "high", "critical"]},
+        "evidence_refs": {"$ref": "#/$defs/id_array"},
+        "model_id": {"type": "string"},
+        "model_version": {"type": "string"},
+        "confidence": {"type": "string", "enum": ["low", "medium", "high", "unscored"]},
+        "explanation": {"type": "string"},
+        "decision_class": {"type": "string", "enum": ["D2", "D3", "D4", "D5", "D6"]},
+        "required_human_role": {"type": ["string", "null"]},
+        "generated_at": {"type": "string", "format": "date-time"},
+        "expires_at": {"type": ["string", "null"], "format": "date-time"},
+        "status": {"type": "string", "enum": ["proposed", "queued", "approved", "rejected", "executed", "expired", "superseded"]},
+        "outcome_refs": {"$ref": "#/$defs/id_array"},
+        "creates_authority_decision": {"type": "boolean", "const": false}
+      },
+      "additionalProperties": false
+    },
+    "finance_evidence_packet_object": {
+      "$id": "schema/target/finance-evidence-packet.json",
+      "type": "object",
+      "required": ["packet_id", "purpose", "requesting_party", "subject_objects", "issued_at", "disclosure_policy", "creates_financing_decision", "creates_takaful_decision"],
+      "properties": {
+        "packet_id": {"type": "string", "minLength": 1},
+        "purpose": {"type": "string", "enum": ["trade_finance", "purchase_order_finance", "inventory_finance", "shipment_finance", "takaful_underwriting", "takaful_claim", "asset_state_verification", "tokenomics_support", "other"]},
+        "requesting_party": {"type": "string", "minLength": 1},
+        "subject_objects": {"$ref": "#/$defs/id_array"},
+        "formal_authority_status_ref": {"type": ["string", "null"]},
+        "ahte_trust_state_ref": {"type": ["string", "null"]},
+        "supply_chain_state_ref": {"type": ["string", "null"]},
+        "evidence_refs": {"$ref": "#/$defs/id_array"},
+        "custody_refs": {"$ref": "#/$defs/id_array"},
+        "exception_refs": {"$ref": "#/$defs/id_array"},
+        "integrity_manifest_ref": {"type": ["string", "null"]},
+        "issued_at": {"type": "string", "format": "date-time"},
+        "valid_until": {"type": ["string", "null"], "format": "date-time"},
+        "disclosure_policy": {"type": "string", "minLength": 1},
+        "signature_or_auth_ref": {"type": ["string", "null"]},
+        "creates_financing_decision": {"type": "boolean", "const": false},
+        "creates_takaful_decision": {"type": "boolean", "const": false},
+        "is_halal_certification": {"type": "boolean", "const": false}
+      },
+      "additionalProperties": false
+    }
+  }
+}

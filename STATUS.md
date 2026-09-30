@@ -1,17 +1,51 @@
 # Repository status
 
-Control date: 2026-09-28. This is a repository evidence status, not a certification or travel approval.
+Control date: 2026-09-30. This is a repository evidence status, not a certification, travel approval or production-activation statement.
+
+## 30 September architecture synchronization
+
+The current **target architecture** is now consolidated in:
+
+- `00_EXECUTIVE_COMMAND/CURRENT_TARGET_ARCHITECTURE_2026-09-30.md`
+- `00_EXECUTIVE_COMMAND/current-target-architecture-2026-09-30.json`
+- `docs/WEBSITE_REBUILD_MASTER_SPEC_v2_2026-09-30.md`
+- `docs/CODEX_PLATFORM_REBUILD_MASTER_PROMPT_2026-09-30.md`
+- `05_PLATINUM_REAL_TIME_MONITORING/PLATINUM_COMMAND_CENTER_INTEGRATION_ADDENDUM_2026-09-30.md`
+- `05_PLATINUM_REAL_TIME_MONITORING/AHTE_24_7_COMMAND_CENTER_SPEC_2026-09-30.md`
+- `deliverables/31_SHARIAH_FINANCING_API_TAKAFUL_TOKENOMICS_ARCHITECTURE_2026.md`
+
+This synchronization records the intended project topology:
+
+- China → GCC direct physical corridor;
+- direct JAKIM API target connectivity;
+- 24/7 GHSCL + JAKIM-connected Command Center;
+- AI/ML predictive analytics + preemptive strategies;
+- Sinotrans end-to-end warehouse/logistics real-time integration;
+- port/customs API trust interfaces;
+- Shariah Financing API / Takaful / tokenomics target plane.
+
+**Architecture synchronization does not change production readiness.** The integrations above remain target-state until their real counterparties, permissions, production interfaces, security controls and transaction-native evidence are implemented and validated.
+
+[PILOT: Shipment 001 — China → GCC direct; still NOT-INSTANTIATED until transaction evidence exists]
+
+## Current evidence/readiness status
 
 | Dimension | State | Basis |
 |---|---|---|
+| Target architecture | `DOC-COMPLETE / POST-FREEZE-PROPOSAL` | Consolidated 30 Sep architecture; verified freeze unchanged |
 | Commercial foundation | Incorporation and non-binding start papers recorded from maintainer-supplied scans/summaries | [Instrument register](CHINA_TRIP_2026/01_INSTRUMENT_REGISTER.md); exact original/custody/signatory checks remain open |
 | Travel | `NOT_TRAVEL_READY` | Tickets, rooming, legal-name roster, academy schedule and airport/border routing have no closure evidence |
 | Signing | `NOT_SIGNING_READY` | M01–M06 mapped; entity mandates, final bilingual text and counterparties' acceptance pending |
 | Demonstration | `REHEARSAL_PENDING` | Reference tests pass; travel laptop, offline backup and AV rehearsal not evidenced |
-| Production | `NOT_PRODUCTION_READY` | Local reference stack; no independently evidenced authority or partner integration and assurance |
+| Production | `NOT_PRODUCTION_READY` | Reference stack only; live authority/partner/lab/port/GCC/finance integrations are not independently evidenced as production |
+| Direct JAKIM API | `TARGET / EXTERNAL+ENGINEERING GATE` | Project topology defined; production interface/permission/security implementation required |
+| 24/7 Command Center | `TARGET / ENGINEERING GATE` | Operating specification defined; production data/integrations/SRE implementation required |
+| Sinotrans real-time integration | `TARGET / EXTERNAL+ENGINEERING GATE` | Data mapping/playbook defined; production systems/API/site/lane/security agreement required |
+| Port/customs APIs | `TARGET / EXTERNAL+ENGINEERING GATE` | Protocol and officer workflow defined; actual sovereign interfaces/permissions required |
+| Shariah Finance/Takaful/tokenomics | `TARGET / EXTERNAL+ENGINEERING GATE` | Architecture defined; counterparties, product structure, Shariah/legal/regulatory decisions required |
 | MS 2400 source assets | `PASS_SOURCE_INDEX_ONLY` | Three corrupt legacy binaries retired from current tree; replacement archive has 628 clause/page locators, no licensed text or complete control rules |
-| New source bundles | `BLOCKED_SOURCE_CONFLICT` for Sinotrans playbook | ZIPs pass CRC; the Sinotrans document has false clause mappings and unapproved SOP/assay/technology claims |
+| Derived Sinotrans MS2400 bundle | `BLOCKED_SOURCE_CONFLICT` for normative use | Bundle review found false clause mappings and unapproved SOP/assay/technology claims |
 
 [Execution board](CHINA_TRIP_2026/EXECUTION_BOARD.md) · [Readiness register](00_EXECUTIVE_COMMAND/october-2026-readiness.json) · [Signing matrix](CHINA_TRIP_2026/SIGNING_MATRIX.md) · [Source retirement](00_EXECUTIVE_COMMAND/artifact-quarantine-2026-09-26.json) · [Sinotrans review](master-standards-stack/22_SINOTRANS_PLAYBOOK_BUNDLE_REVIEW_2026-09-28.md).
 
-Passing repository checks proves structure to their stated scope, not competent-authority endorsement, legal enforceability, issued bookings, independent audit or release of Shipment 001. Licensed standards PDFs and private travel records are not included in this Git tree.
+Passing repository checks proves structure to their stated scope, not competent-authority endorsement, legal enforceability, issued bookings, independent audit, production integration or release of Shipment 001. Licensed standards PDFs and private travel records are not included in this Git tree.

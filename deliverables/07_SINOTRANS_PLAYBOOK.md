@@ -1,170 +1,339 @@
 # Sinotrans Halal Digital Trust Playbook
 
+## Artifact status
+
+- Revision: v2.0.0
+- Control date: 2026-09-30
+- Governing architecture: `00_EXECUTIVE_COMMAND/CURRENT_TARGET_ARCHITECTURE_2026-09-30.md`
+- Default corridor: **China → GCC direct**
+- Pilot: `[PILOT: Shipment 001 — Sinotrans warehouse/logistics]`
+- Supersedes: prior China→Malaysia pilot wording in this file
+
+[PROPOSAL: aligns Sinotrans operating model to current project architecture — path point: Control → Evidence → Trust State → Operational Release]
+
 ## Purpose
 
-This playbook proposes how Sinotrans could become a preferred logistics trust node within the Global Halal Digital Trust Ecosystem. It is a strategic proposal, not a statement that Sinotrans has agreed to participate.
+Define how Sinotrans integrates its **end-to-end logistics and warehouse real-time monitoring** into the Global Halal Digital Trust Ecosystem as a logistics trust node and digital evidence source.
 
-## Why Sinotrans is a strong candidate
-
-Sinotrans publicly describes integrated logistics capabilities across sea, air, rail, road, warehousing and distribution, customs-related services and digital logistics. Its published material also describes EDI integration, information sharing, IoT-based visibility, Big Data, Cloud Computing, AI and Blockchain capabilities, and the Y2T digital logistics platform. Source: Sinotrans official website, accessed August 2026. See repository source register.
+The objective is not to replace Sinotrans operational systems. The objective is to bind Sinotrans warehouse, transport, custody, telemetry, container, seal, port and delivery events into AHTE through secure adapters/APIs.
 
 ## Strategic proposition
 
-Position the Sinotrans relationship as:
+**Halal Trusted Logistics Corridor + Warehouse and Digital Evidence Node**
 
-**Halal Trusted Logistics Corridor + Digital Evidence Node**
+```text
+MANUFACTURER / ORIGIN
+        ↓
+SINOTRANS WAREHOUSE
+        ↓
+SINOTRANS END-TO-END LOGISTICS
+        ↓
+ORIGIN PORT / CUSTOMS
+        ↓
+INTERNATIONAL TRANSIT
+        ↓
+GCC PORT / CUSTOMS
+        ↓
+DESTINATION WAREHOUSE / IMPORTER
+        ↓
+RETAIL / RECEIVING
+```
 
-The objective is not to replace Sinotrans systems. The objective is to add a Halal/Tayyib trust layer over existing logistics workflows through APIs and event adapters.
+Across the chain:
 
-## Operating model
+`identity + batch/lot + custody + seal + telemetry + evidence + timestamp + actor + location + integrity proof + exception state`
 
-### Stage 1 — Origin intake
+## System integration
+
+Preferred pattern:
+
+`Sinotrans Y2T / MIS / EDI / WMS / TMS / IoT / operational systems → secure adapter/API → schema validation → policy check → event normalizer → AHTE canonical event → evidence/integrity layer → trust graph → 24/7 Command Center`
+
+AHTE becomes the cross-system trust graph. Sinotrans operational systems remain authoritative for their own logistics and warehouse source records.
+
+## Stage 1 — Origin intake
+
+Capture and reconcile:
+
+- manufacturer identity;
+- facility identity;
+- product/SKU;
+- batch/lot;
+- raw-material provenance reference;
+- formal Halal authority-status reference where applicable;
+- laboratory evidence reference;
+- shipment/order identity;
+- destination market/importer;
+- handling/risk profile.
+
+Create/bind the AHTE shipment object without inventing transaction events that have not occurred.
+
+## Stage 2 — Warehouse receipt and qualification
 
 Capture:
-- manufacturer identity;
-- product identity;
-- batch/lot;
-- raw-material evidence reference;
-- Halal status reference;
-- laboratory evidence reference where applicable;
-- shipment order.
 
-Create a trusted shipment ID.
+- warehouse/facility ID;
+- receiving timestamp;
+- inbound shipment/lot/pallet IDs;
+- seal/condition check where applicable;
+- halal/non-halal segregation controls;
+- quarantine/released/rejected status;
+- zone/bin location;
+- temperature/humidity or product-specific environment where applicable;
+- storage handling evidence;
+- responsible operator;
+- exceptions and corrective action.
 
-### Stage 2 — Booking & documentation
+Warehouse evidence is a first-class real-time monitoring domain, not a secondary transport document.
 
-Link:
-- booking;
-- bill of lading / airway bill / delivery order;
+## Stage 3 — Booking and documentation
+
+Bind:
+
+- booking reference;
+- carrier/mode;
+- bill of lading / airway bill / delivery order as applicable;
 - packing list;
 - customs references;
-- container ID;
-- seal ID;
-- product/batch mapping.
+- container identity;
+- seal identity;
+- product/batch/pallet mapping;
+- planned route;
+- origin/destination port;
+- importer/consignee.
 
-Do not copy full documents into a global trust database. Retain document references and cryptographic hashes with sovereign source storage.
+Full confidential documents should remain in the appropriate source system where possible. AHTE should exchange controlled references, hashes, signatures and minimum necessary metadata.
 
-### Stage 3 — Pickup and loading
+## Stage 4 — Pickup, loading and sealing
 
-Generate a signed event for:
+Generate attributable events for:
+
 - pickup;
-- vehicle identity;
-- driver/authorized operator;
+- vehicle/driver or authorised operator identity;
 - loading location;
 - timestamp;
-- seal verification;
+- pallet/container mapping;
+- seal application;
 - load condition;
-- exceptions.
+- photographic/device evidence where required;
+- custody handover;
+- exception state.
 
-### Stage 4 — Transport
+Critical events should be integrity protected and idempotent.
 
-Where relevant, capture:
+## Stage 5 — Transport / international movement
+
+Where applicable, capture:
+
 - route milestones;
+- GNSS/geofence events;
 - container tracking;
-- transfer points;
-- temperature/environment telemetry;
-- delay exceptions;
-- tamper/seal alerts;
-- handovers.
+- temperature/humidity/cold-chain data;
+- tamper/door/open-close signals;
+- shock/vibration or other product-specific telemetry;
+- delays;
+- route deviation;
+- transfers/transshipment only where explicitly scoped;
+- custody handovers;
+- seal state.
 
-### Stage 5 — Port / border / customs
+Sensor selection is risk-based. Not every shipment requires every sensor.
 
-Link authorized customs and transport evidence. Record discrepancies and corrective action.
+## Stage 6 — Port / border / customs
 
-### Stage 6 — Warehousing
+AHTE should provide an authorised port/customs trust interface supporting:
 
-Digital controls should reflect the supplied MS 2400-2 requirements for integrity, segregation/separation, storage conditions, handling, records and outsourced service control.
+- shipment identity;
+- product/batch/container/seal reconciliation;
+- authorised trust packet;
+- evidence/document references;
+- certification/authority-status reference;
+- laboratory evidence reference;
+- custody history;
+- telemetry/condition exceptions;
+- inspection/sampling events;
+- official hold/release event return.
 
-### Stage 7 — Final delivery
+Port/customs authorities retain sovereign decision authority. Sinotrans/AHTE do not manufacture or override official release.
 
-Record:
-- dispatch;
-- destination;
-- authorized receiver;
-- proof of delivery;
-- condition exception;
-- evidence hash.
+## Stage 7 — GCC destination receiving
 
-### Stage 8 — Consumer/retail verification
+Capture:
 
-The final product identity links the logistics events to the consumer scan. The consumer sees only the authorized public view.
+- arrival;
+- terminal/port status;
+- seal reconciliation;
+- inspection/sampling outcome where available and authorised;
+- customs/border release reference;
+- destination warehouse receipt;
+- condition report;
+- importer/receiver identity;
+- discrepancies/damage;
+- custody transfer;
+- acceptance/hold status.
 
-## Sinotrans system integration
+## Stage 8 — Retail / buyer / consumer verification
 
-Use an adapter-first approach:
+The final product identity may expose an authorised view of:
 
-`Sinotrans/Y2T/MIS/EDI/IoT -> Secure API gateway -> Event normalizer -> Halal Trust event -> Evidence hash -> Sovereign evidence store`
+- origin provenance;
+- current certification/authority-status reference;
+- AHTE trust state;
+- batch/shipment identity;
+- custody milestones;
+- integrity verification;
+- material exceptions and disposition.
 
-No replacement of existing Sinotrans systems is required for a pilot.
+Public views must not disclose confidential contracts, pricing, private supplier records or unrelated personal data.
 
-## Halal control mapping
+## Real-time Command Center integration
 
-The supplied MS 2400-1 transportation standard highlights documented policy, internal Halal committee responsibility, source identification, risk assessment, control measures, monitoring, corrective action, recall/withdrawal and records. These should be implemented as logistics control objects and automated evidence checks.
+Sinotrans events feed the 24/7 GHSCL + JAKIM-connected Command Center.
+
+Priority monitored conditions:
+
+- warehouse segregation exception;
+- inventory status mismatch;
+- temperature/environment excursion;
+- seal/tamper event;
+- route/geofence deviation;
+- unplanned handling point;
+- missing custody handover;
+- documentation mismatch;
+- delayed port handoff;
+- destination hold;
+- damage/loss.
+
+Operational loop:
+
+`event → validation → correlation → anomaly/prediction → alert/hold where policy permits → owner assignment → corrective action → re-verification → closure`
+
+## AI/ML role
+
+AI/ML may:
+
+- detect missing logistics/warehouse evidence;
+- detect anomalous routes, handovers or dwell time;
+- predict likely temperature/condition failure;
+- identify trust-graph fractures;
+- calculate recall blast radius;
+- prioritise inspection;
+- recommend preemptive route, handling, sampling or receiving strategies.
+
+AI may not silently change an official certification, customs decision or destination-authority decision.
+
+## Halal/Tayyib control mapping
+
+Apply the complete applicable control framework, including relevant MS 2400 transport/warehouse requirements and any other applicable Malaysian/JAKIM or destination requirements.
+
+Do not use the reviewed derived Sinotrans MS 2400 training bundle as a substitute for the verified source/control stack where that bundle conflicts with source evidence.
 
 ## Exceptions
 
 Examples:
-- missing Halal evidence;
-- damaged seal;
+
+- missing/expired authority evidence;
+- damaged or mismatched seal;
 - route deviation;
 - unplanned handling point;
-- temperature deviation;
+- temperature/humidity excursion;
 - mixed/unclear load;
 - documentation mismatch;
-- unauthorized handover;
-- warehouse segregation breach.
+- unauthorised handover;
+- warehouse segregation breach;
+- missing custody event;
+- destination hold;
+- damage/loss.
 
-The AI should classify the risk, preserve evidence, notify authorized parties and recommend corrective action. It must not silently change certification status.
+Exceptions are append-only events. Do not overwrite history to hide a discrepancy.
 
-## KPI dashboard
+## KPIs
 
-Operational KPIs:
+Operational KPIs may include:
+
 - shipment visibility coverage;
-- percentage of events cryptographically evidenced;
+- warehouse event coverage;
+- percentage of critical events integrity evidenced;
 - evidence completeness;
-- on-time delivery;
-- exception rate;
-- average exception resolution time;
-- temperature excursion rate where applicable;
 - chain-of-custody completeness;
+- exception rate;
+- mean exception detection time;
+- mean exception resolution time;
+- temperature/condition excursion rate where applicable;
+- route deviation rate;
+- seal/tamper exception rate;
 - recall trace time;
 - audit preparation time;
-- duplicate data-entry reduction.
+- duplicate data-entry reduction;
+- API/event latency and availability.
 
-## Pilot proposal
+KPIs must be based on real telemetry/transactions; no synthetic KPI is to be represented as production performance.
 
-### Pilot corridor
+## Shipment 001 pilot
 
-China -> Malaysia, initially for a controlled set of Halal-sensitive products/raw materials.
+[PILOT: Shipment 001 — China → GCC direct]
 
-### Pilot participants
+The pilot physical corridor is **China → GCC direct**. Malaysia is the governance/assurance plane unless a Malaysia physical hop is separately authorised and scoped.
 
-- selected manufacturer;
-- Sinotrans operating unit;
-- authorized laboratory/testing provider where applicable;
-- Global Halal platform operator;
-- JAKIM/competent authority only through formal agreed channels;
-- selected destination warehouse/retailer.
+Pilot phases:
 
-### 90-day pilot phases
+### Phase 1 — Interface and site definition
 
-**Days 1-30:** mapping, data dictionary, security review, API design, process validation.
+- exact Sinotrans legal/operating entity;
+- warehouse/site;
+- lane;
+- system owner;
+- API/event fields;
+- security review;
+- evidence/control mapping.
 
-**Days 31-60:** controlled live shipment, evidence capture, dashboard and exception workflow.
+### Phase 2 — Controlled origin and warehouse rehearsal
 
-**Days 61-90:** multi-shipment validation, audit rehearsal, KPI review and scale decision.
+- manufacturer/batch identity;
+- warehouse receipt;
+- storage/segregation;
+- pallet/container mapping;
+- seal application;
+- synthetic/offline rehearsal only where live transaction evidence does not yet exist.
 
-## Commercial value for Sinotrans
+### Phase 3 — Live Shipment 001 when transaction gates close
 
-- differentiated Halal logistics offering;
-- stronger chain-of-custody evidence;
-- customer trust;
-- audit readiness;
+- actual booking;
+- actual batch/lot;
+- actual pickup/loading;
+- actual container/seal;
+- actual telemetry/custody;
+- origin port/customs;
+- transit;
+- GCC port/import;
+- destination receiving.
+
+### Phase 4 — Post-shipment assurance
+
+- evidence reconciliation;
+- KPI review;
+- exception review;
+- audit export;
+- lessons learned;
+- scale decision.
+
+## Commercial value
+
+Potential value to Sinotrans:
+
+- differentiated Halal/Tayyib logistics and warehousing offering;
+- stronger custody evidence;
+- real-time exception management;
+- faster audit preparation;
 - reduced manual evidence handling;
-- premium service opportunities;
-- access to new Halal trade corridors;
-- ESG and traceability services.
+- trusted China→GCC corridor services;
+- integration with manufacturer, laboratory, authority and GCC verification layers;
+- premium monitoring and assurance services where commercially agreed.
 
-## Important boundary
+## Authority boundary
 
-This playbook does not confer Halal certification on Sinotrans or any shipment. Certification/recognition remains a matter for the competent authority and applicable legal framework.
+Sinotrans provides logistics/warehouse execution and evidence. It does not create Malaysian Halal certification, GCC destination acceptance or sovereign customs release.
+
+The controlling path is:
+
+`Authority → Standard/Instrument → Applicability → Logistics/Warehouse Control → Evidence → Audit/Analytics → Finding/CAPA → Re-verification → Authority Gate → Trust State → Operational Release`.
