@@ -2,9 +2,10 @@
 
 ## Control metadata
 
-- Revision: v2.0.0
+- Revision: v2.1.0
 - Control date: 2026-09-30
 - Governing architecture: `00_EXECUTIVE_COMMAND/CURRENT_TARGET_ARCHITECTURE_2026-09-30.md`
+- Machine architecture registry: `00_EXECUTIVE_COMMAND/current-target-architecture-2026-09-30.json` v1.1.0+
 - Website specification: `docs/WEBSITE_REBUILD_MASTER_SPEC_v2_2026-09-30.md`
 - Freeze: `master-standards-stack/verified-2026-09-17/` — DO NOT MODIFY
 - Default pilot: `[PILOT: Shipment 001 — China → GCC direct]`
@@ -15,7 +16,79 @@
 
 You are rebuilding the Global Halal Digital Trust Ecosystem website/platform from the actual repository and local project, not from a generic brief.
 
-## 0. Working rules
+# 0. NON-NEGOTIABLE IMPLEMENTATION PRINCIPLE — NO ARTIFICIAL BLOCKS OR LIMITS
+
+**FULL ARCHITECTURE NOW → REAL CONNECTORS WHEN AVAILABLE → NO REDESIGN REQUIRED.**
+
+This instruction governs the entire build.
+
+Do **not** remove, disable, downgrade, hide, omit, defer, artificially cap or redesign an intended capability merely because an external API, credential, partner feed, authority connection, laboratory interface, sensor stream, production dataset, financing counterparty, Takaful operator, port system, logistics feed or real transaction is not presently available in the local development environment.
+
+Build the **complete production-target architecture now**, including:
+
+- all public routes;
+- all authenticated role surfaces;
+- complete domain models;
+- typed interfaces;
+- API contracts;
+- event schemas;
+- adapters;
+- portal states;
+- dashboards;
+- command-center views;
+- workflow state machines;
+- error/retry/reconciliation paths;
+- auditability;
+- security boundaries;
+- multilingual architecture;
+- integration boundaries;
+- predictive/preemptive analytics surfaces;
+- finance/Takaful/tokenomics integration surfaces;
+- complete verification flows.
+
+Where an external dependency is unavailable:
+
+1. implement the **real production integration boundary** as a typed adapter/interface;
+2. implement a replaceable sandbox/mock/test provider at that boundary;
+3. preserve the complete production workflow and user experience;
+4. expose dependency state truthfully (`sandbox`, `mock`, `not connected`, `production connected`) rather than deleting the feature;
+5. design the connector so the real integration can replace the development provider without rewriting domain logic or UI architecture.
+
+A development mock may substitute **connectivity/data**, but it must not reduce **capability**.
+
+Do not create arbitrary feature caps on:
+
+- manufacturer onboarding volume;
+- supplier/material depth;
+- evidence ingestion;
+- smart-glass auditing;
+- lab/LIMS integration;
+- traceability depth;
+- digital twins;
+- cryptographic evidence;
+- direct JAKIM connectivity;
+- Sinotrans warehouse/logistics monitoring;
+- port/customs API access;
+- GCC workflows;
+- Command Center monitoring;
+- AI/ML analytics;
+- predictive risk;
+- preemptive strategies;
+- recall traversal;
+- Shariah financing;
+- Takaful;
+- tokenomics;
+- stakeholder portals;
+- APIs;
+- languages;
+- geographic scale;
+- future partner/corridor scale.
+
+Do **not** use `TODO`, `coming soon`, permanent feature flags, disabled navigation, blank placeholder pages or demo-only architectural shortcuts as substitutes for the target capability. A temporary development adapter is acceptable only when the complete target workflow, interface and state model are implemented.
+
+Do not fabricate live authority approvals, lab results, credentials, Sinotrans events, port/customs releases, GCC acceptance, financing approvals, Takaful underwriting decisions, token regulatory status, production telemetry or transaction-native Shipment 001 evidence. **Truthfulness of live state is required; architectural completeness is also required. These are not contradictory.**
+
+# 1. Working rules
 
 1. **Inspect before editing.** Inventory the local project, framework, routes, components, assets, dependencies, build tooling, environment files, git status and deployment configuration first.
 2. **Preserve user work.** Do not reset, delete or overwrite unrelated uncommitted changes.
@@ -44,11 +117,12 @@ You are rebuilding the Global Halal Digital Trust Ecosystem website/platform fro
    - `docs/WEBSITE_REBUILD_MASTER_SPEC_v2_2026-09-30.md`
    - `STATUS.md`
 5. Where old project-level wording conflicts with the 30 Sep current target architecture, use the current target architecture. Do not use old China→Malaysia pilot wording.
-6. Separate **target architecture** from **production reality**. Do not claim undeployed integrations are already live merely because UI mocks exist.
+6. Separate **target architecture** from **production reality**. Do not claim undeployed integrations are already live merely because complete adapters/UI states exist.
 7. Do not hard-code secrets, credentials, production JAKIM endpoints, lab credentials, manufacturer formulas, private authority schemas or finance data.
-8. The platform must be built with clear adapters/mocks for external systems so real connectors can replace them without UI rewrites.
+8. Build external integrations behind complete adapter contracts so real connectors can replace development providers without domain/UI redesign.
+9. Do not interpret an unavailable external dependency as permission to omit the corresponding product capability.
 
-## 1. Core platform proposition
+# 2. Core platform proposition
 
 Build a complete Global Halal Digital Trust & Trade / Halal Tayyib infrastructure spanning:
 
@@ -96,7 +170,7 @@ Authorised AHTE trust/trade data
 → Islamic financing / Takaful / tokenomics
 ```
 
-## 2. Non-negotiable role model
+# 3. Non-negotiable role model
 
 Represent these as connected but separate roles:
 
@@ -116,7 +190,7 @@ Never visually imply that JAKIM is owned by, subordinate to or a commercial depa
 
 Never claim AI, blockchain, QR, hashes, sensors or lab results independently create Halal certification.
 
-## 3. Default corridor
+# 4. Default corridor
 
 The physical pilot corridor is:
 
@@ -126,7 +200,7 @@ Malaysia is the governance/assurance plane unless an explicit physical Malaysia 
 
 Mark Shipment 001 content as pilot where shown.
 
-## 4. Four synchronized chains
+# 5. Four synchronized chains
 
 The UI/data model must make these four chains reconcilable:
 
@@ -139,13 +213,13 @@ Minimum material event tuple:
 
 `WHO + WHAT + WHEN + WHERE + OBJECT + REQUIREMENT/CONTROL + EVIDENCE + VERIFIER + CURRENT STATE + INTEGRITY PROOF`
 
-## 5. Canonical path
+# 6. Canonical path
 
 Use this everywhere in architecture/content:
 
 `Authority → Standard / Instrument → Clause / Requirement → Applicability → Control → HCP / SCCP → Evidence → Audit Test → Finding → Corrective Action → Re-verification → Authority Gate → Trust State → Operational Release`
 
-## 6. AHTE engines
+# 7. AHTE engines
 
 Implement modular UI/data/service boundaries for:
 
@@ -174,7 +248,7 @@ Implement modular UI/data/service boundaries for:
 - Recall Blast-Radius Engine
 - Preemptive Strategy Engine
 
-## 7. Decision-class enforcement
+# 8. Decision-class enforcement
 
 Use repository D0–D6 semantics:
 
@@ -188,7 +262,7 @@ Use repository D0–D6 semantics:
 
 The UI must visibly separate recommendations, machine assessments, holds, authority decisions and operational releases.
 
-## 8. 24/7 Command Center
+# 9. 24/7 Command Center
 
 Create a first-class `/command-center` experience and reusable command-center components.
 
@@ -220,7 +294,7 @@ Operating flow:
 
 Design it like serious critical infrastructure, not a crypto trading dashboard.
 
-## 9. AI/ML predictive + preemptive UX
+# 10. AI/ML predictive + preemptive UX
 
 Every AI result must show:
 
@@ -246,7 +320,7 @@ Build sample cards for:
 
 No AI output should look like an official certificate or authority decision.
 
-## 10. Manufacturer onboarding application
+# 11. Manufacturer onboarding application
 
 Build complete journey:
 
@@ -273,7 +347,7 @@ Required data domains:
 - monitoring profile;
 - destination/importer/logistics readiness.
 
-## 11. Laboratory application
+# 12. Laboratory application
 
 Build sample-centric lifecycle:
 
@@ -292,13 +366,13 @@ Exceptions:
 
 Use the repository OpenAPI proposal as model guidance, but do not treat placeholder endpoints as live production endpoints.
 
-## 12. Smart-glass application
+# 13. Smart-glass application
 
 Required flow:
 
 `device identity + auditor identity + MFA + role/scope → assigned audit → site/scope → requirements/HCPs → scan object → capture evidence → local hash → AI assist → auditor assessment → finding/CAR → re-verification → sign → sync/reconcile`
 
-Support UI mocks/components for:
+Build the complete workflow and UI states for:
 
 - QR/DataMatrix/OCR/NFC;
 - still/video capture;
@@ -307,9 +381,15 @@ Support UI mocks/components for:
 - device trust status;
 - evidence hash;
 - object/requirement binding;
-- signed session.
+- signed session;
+- synchronization/reconciliation;
+- conflict detection;
+- revoked/expired device state;
+- finding/CAR/re-verification.
 
-## 13. Sinotrans logistics control tower
+When physical smart-glass hardware is unavailable locally, emulate the capture/device events through a development provider without removing the wearable workflow or changing its production contracts.
+
+# 14. Sinotrans logistics control tower
 
 Build dedicated role surface for:
 
@@ -332,9 +412,9 @@ Adapter topology:
 
 `Sinotrans WMS/TMS/Y2T/MIS/EDI/IoT → secure adapter/API → canonical AHTE event → trust graph → Command Center`
 
-Do not claim any synthetic KPI or placeholder integration is live.
+If production Sinotrans access is unavailable, use a replaceable Sinotrans development adapter with complete event contracts and realistic state transitions. Do not remove or downgrade the logistics/warehouse capability. Do not claim development events are real Sinotrans production events.
 
-## 14. Port/customs authority surface
+# 15. Port/customs authority surface
 
 Build `/ports-customs` and authenticated officer workspace.
 
@@ -352,13 +432,15 @@ Display clearly:
 
 These must not be merged into one badge.
 
-## 15. Direct JAKIM API
+Implement a complete port/customs adapter contract and development provider for both origin and GCC destination paths. Do not disable the port/customs experience because live government endpoints are not connected.
+
+# 16. Direct JAKIM API
 
 Architecture displayed publicly:
 
 `AHTE ⇄ Direct JAKIM API ⇄ JAKIM authority system / authorised human workflow`
 
-Internally implement an adapter interface with mock/sandbox mode.
+Implement the complete internal production adapter interface plus development/sandbox provider.
 
 Suggested application-side interface contract shape only:
 
@@ -371,31 +453,43 @@ interface JakimAuthorityAdapter {
 }
 ```
 
-Do NOT hard-code an unverified official URL or credential scheme.
+Do NOT hard-code an unverified official URL or credential scheme. Do NOT remove the direct-JAKIM workflow if production credentials are absent; keep the full workflow operational against the development provider with explicit connection-state labelling.
 
-## 16. Shariah Financing API / Takaful / tokenomics
+# 17. Shariah Financing API / Takaful / tokenomics
 
-Build target-state public page plus adapter interfaces, not a fake live financial product.
+Build the **complete target integration plane**, public page, portal surfaces, domain models and adapter contracts. Do not hide this behind a permanent feature flag and do not reduce it to a “coming soon” card merely because production counterparties are not yet connected.
 
-Functions:
+Required functions:
 
 - trade-finance eligibility evidence packet;
 - PO/order evidence;
 - inventory/shipment state;
 - trust assertion retrieval;
+- financing application/evidence workflow;
+- financing status callback/event model;
 - Takaful underwriting evidence packet;
+- policy/coverage reference model;
 - claim evidence/custody/incident packet;
+- claims status event model;
 - asset state verification;
-- tokenomics/digital-value module placeholder behind feature flag.
+- tokenized/digital-value asset representation model;
+- token lifecycle/state model;
+- asset/evidence binding;
+- transfer/encumbrance/reference hooks as applicable;
+- legal/Shariah/regulatory approval-state fields;
+- audit/history/integrity fields.
 
 Decision boundary:
 
 - AHTE does not approve financing;
 - AHTE does not underwrite Takaful;
-- tokenization does not create title or regulatory/Shariah approval;
-- bank/Takaful/regulator/human Shariah decisions stay external.
+- tokenization does not create title or regulatory/Shariah approval by itself;
+- bank/Takaful/regulator/human Shariah decisions stay external;
+- development providers must never be represented as live financial institutions.
 
-## 17. Verification experience
+If counterparties are absent, provide complete sandbox adapters and end-to-end development state machines so real providers can connect without redesign.
+
+# 18. Verification experience
 
 Build `/verify` supporting:
 
@@ -421,7 +515,7 @@ Result page sections:
 
 Use role-based redaction for private data.
 
-## 18. Data model foundations
+# 19. Data model foundations
 
 Represent at minimum:
 
@@ -435,11 +529,17 @@ Represent at minimum:
 - Control
 - HCP/SCCP
 - Evidence
+- EvidenceManifest
+- EvidenceIntegrityProof
 - Sample
+- SampleCustodyEvent
 - LabResult
 - Audit
+- AuditObservation
 - Finding
 - CAPA
+- Reverification
+- AuthorityCase
 - AuthorityDecision
 - TrustAssertion
 - TrustState
@@ -452,15 +552,47 @@ Represent at minimum:
 - CustodyTransfer
 - TelemetryEvent
 - PortEvent
+- PortInspection
 - FinanceEvidencePacket
+- FinancingCase
+- TakafulCase
+- TakafulClaim
+- TokenizedAssetReference
 - Alert
 - Prediction
 - PreemptiveStrategy
 - RecallCase
+- CommandCenterIncident
 
 Use stable IDs and event history. Do not silently overwrite material history; use version/supersession/compensating events.
 
-## 19. Security
+# 20. Event architecture
+
+Implement an event-first domain boundary. Critical state changes must be representable as attributable events with:
+
+`event_id + object_id + actor_id + occurred_at + jurisdiction + source_system + event_type + payload_ref + evidence_refs + requirement/control refs + content_hash + signature/authentication ref + previous_event + resulting_state`
+
+Required event families include:
+
+- manufacturer/onboarding;
+- material/supplier;
+- sample/lab;
+- manufacturing/HCP/SCCP;
+- audit/finding/CAPA;
+- authority status;
+- warehouse;
+- shipment/container/seal;
+- telemetry/geofence;
+- custody;
+- port/customs;
+- GCC receiving;
+- finance/Takaful;
+- prediction/preemptive strategy;
+- incident/recall.
+
+Support idempotency, out-of-order handling, replay protection concepts, offline reconciliation and compensating/corrective events.
+
+# 21. Security
 
 Build with:
 
@@ -477,11 +609,15 @@ Build with:
 - selective disclosure;
 - data-residency aware abstractions;
 - offline reconciliation patterns;
-- error states that never imply success when dependency is unavailable.
+- error states that never imply success when dependency is unavailable;
+- explicit provider/connection-state metadata;
+- key/credential rotation abstractions;
+- revocation-state handling;
+- immutable/tamper-evident evidence history abstractions.
 
 Do not bridge AHTE directly into safety-critical PLC/OT control. Use `OT/SCADA → MES/edge → validated integration gateway → AHTE`.
 
-## 20. Web design system
+# 22. Web design system
 
 Visual language:
 
@@ -506,9 +642,9 @@ Avoid:
 - fake government seals;
 - fake live telemetry presented as production data.
 
-## 21. Routes
+# 23. Required public routes
 
-Create or prepare:
+Create and fully implement:
 
 - `/`
 - `/how-it-works`
@@ -528,20 +664,37 @@ Create or prepare:
 - `/apply`
 - `/contact`
 
-Authenticated role apps may be nested under `/portal/*`.
+Do not leave any required route as an empty shell.
 
-## 22. Languages
+# 24. Authenticated role applications
 
-Prepare architecture for:
+Implement the architecture and usable development-mode surfaces for:
+
+- Manufacturer Portal
+- Auditor / Smart-Glass Workspace
+- Laboratory Console
+- Sinotrans / Logistics Control Tower
+- GHSCL Command Center
+- JAKIM Authority View
+- Port / Customs Officer Workspace
+- GCC Importer / Buyer Portal
+- Finance / Takaful Portal
+- Administrator / Governance Console
+
+These may be nested under `/portal/*`, but they must be distinct role experiences, not one generic dashboard with renamed headings.
+
+# 25. Languages
+
+Prepare complete routing/content architecture for:
 
 - English canonical copy
 - Simplified Chinese
 - Arabic
 - Bahasa Malaysia
 
-Do not machine-publish uncontrolled regulatory translations. Use translation files with review status metadata.
+Do not machine-publish uncontrolled regulatory translations. Use translation resources with review/source metadata. The presence of untranslated controlled regulatory text must not disable the multilingual application architecture.
 
-## 23. Content governance
+# 26. Content governance
 
 Do not duplicate source-sensitive claims in many components.
 
@@ -555,9 +708,16 @@ Create governed content loaders for:
 - trust schema/status vocabulary;
 - controlled public copy.
 
-Build fallbacks so the site can run in local demo mode without external APIs.
+Public/application copy must distinguish:
 
-## 24. Required developer workflow
+- verified source fact;
+- project target architecture;
+- proposal;
+- pilot state;
+- development/sandbox state;
+- production/live state.
+
+# 27. Required developer workflow
 
 Before changing files, output a concise local audit:
 
@@ -574,7 +734,7 @@ Before changing files, output a concise local audit:
 - deployment config;
 - conflicts with this specification.
 
-Then implement in phases.
+Then implement in phases without stopping after the audit.
 
 After each phase:
 
@@ -588,87 +748,133 @@ After each phase:
 8. verify no secret exposure;
 9. report changed files and remaining real external dependencies.
 
-## 25. Implementation phases
+# 28. Implementation phases
 
-### Phase A — foundation
+## Phase A — foundation
 
-- architecture/content registry
-- design tokens
-- app shell
-- navigation
-- shared types
-- mock adapter interfaces
-- state vocabulary
-- identity/evidence timeline components
+- architecture/content registry;
+- design tokens;
+- app shell;
+- navigation;
+- shared types;
+- provider/adapter interfaces;
+- development providers for unavailable external systems;
+- state vocabulary;
+- identity/evidence timeline components;
+- event model;
+- role/permission model;
+- connection-state model.
 
-### Phase B — public website
+## Phase B — public website
 
 Implement all public routes and responsive design.
 
-### Phase C — verification
+## Phase C — verification
 
 Trust lookup, result pages, QR/NFC deep links, integrity display.
 
-### Phase D — portal prototypes
+## Phase D — authenticated role applications
 
-Manufacturer, Lab, Smart Glass, Sinotrans, Command Center, JAKIM view, Port/Customs, GCC Importer, Finance/Takaful.
+Manufacturer, Lab, Smart Glass, Sinotrans, Command Center, JAKIM view, Port/Customs, GCC Importer, Finance/Takaful and Admin/Governance.
 
-### Phase E — integration architecture
+## Phase E — integration architecture
 
-Typed external adapter interfaces, mocks/sandboxes, event bus abstraction, observability, error semantics.
+Typed external adapter interfaces, development providers, event bus abstraction, observability, error semantics, idempotency and reconciliation.
 
-### Phase F — hardening
+## Phase F — analytics/intelligence
 
-Accessibility, performance, security headers, tests, content-source validation, broken link scan, production build.
+Predictive analytics UI/data model, Preemptive Strategy Engine workflows, incident queues, ownership/escalation and outcome capture.
 
-## 26. Acceptance tests
+## Phase G — finance/Takaful/tokenomics
+
+Complete data models, adapters, portal workflows, evidence packet generation and sandbox state machines.
+
+## Phase H — hardening
+
+Accessibility, performance, security headers, tests, content-source validation, broken-link scan, production build, responsive QA and release notes.
+
+# 29. Acceptance tests
 
 The build is incomplete unless it demonstrates all of these:
 
 - China→GCC direct physical corridor;
+- Malaysia governance/assurance plane correctly represented;
 - raw-material origin start;
 - manufacturer onboarding;
+- supplier/material provenance;
 - lab/sample/custody;
 - smart-glass audit;
 - complete standards/applicability model;
-- direct JAKIM API topology;
+- direct JAKIM API topology and full adapter contract;
 - 24/7 Command Center;
 - AI/ML predictive risk;
 - preemptive strategies;
 - Sinotrans warehouse + logistics;
 - port/customs API workflow;
 - GCC receiving;
-- Shariah financing/Takaful/tokenomics target plane;
-- immutable/tamper-evident evidence explanation;
+- Shariah financing;
+- Takaful;
+- tokenomics integration plane;
+- immutable/tamper-evident evidence explanation and verification;
 - separate authority/certification, AHTE trust and supply-chain states;
 - role-based verification;
 - D0–D6 decision-class boundaries;
 - no fake live authority/partner integrations;
+- complete development providers where real connectors are absent;
+- no arbitrary disabled target features;
+- no `coming soon` substitute for required capabilities;
+- no permanent feature flag hiding required target architecture;
 - no modification to the verified freeze;
 - successful lint/typecheck/test/build.
 
-## 27. Completion report format
+# 30. Definition of done
+
+Do not declare the rebuild complete because the homepage looks finished.
+
+Done means:
+
+1. required public routes are implemented;
+2. required role applications are implemented to usable development-mode depth;
+3. domain models exist and are typed;
+4. adapter contracts exist for all external systems;
+5. development providers exist where production connectors are unavailable;
+6. core workflows execute end-to-end in development mode;
+7. connection/live status is truthful;
+8. evidence/trust/authority states remain separate;
+9. predictive/preemptive workflows execute;
+10. finance/Takaful/tokenomics architecture executes in sandbox mode without pretending to be live;
+11. tests/build pass;
+12. no required feature has been omitted simply because an external counterparty is not connected.
+
+# 31. Completion report format
 
 At the end provide:
 
-### Implemented
+## Implemented
 Exact routes/components/services/data models completed.
 
-### Reconciled
-Old copy/routes/architecture that were corrected, including China→Malaysia stale wording.
+## Reconciled
+Old copy/routes/architecture corrected, including China→Malaysia stale wording, generic authority-gateway wording and any MS2400-only framing.
 
-### Tested
+## Tested
 Commands and pass/fail results.
 
-### External integration placeholders
-Only real undeployed dependencies: JAKIM production API, lab/LIMS production credentials, Sinotrans production API access, port/customs production interfaces, GCC systems, finance/Takaful/tokenomics counterparties.
+## Adapter status
+For each external dependency, report one of:
 
-### Security
+- `development-provider-active`
+- `sandbox-connected`
+- `production-connected`
+- `production-credentials-required`
+
+Cover at minimum JAKIM, lab/LIMS, Sinotrans, origin port/customs, GCC port/customs, importer/retailer, finance, Takaful and tokenomics.
+
+## Security
 Any issues found and fixed.
 
-### Remaining gates
-Only items that cannot be closed locally without external systems/authority/counterparty inputs.
+## Remaining external inputs
+Only inputs that genuinely require an external authority/counterparty, such as production credentials, executed agreements, official schemas, transaction data or legal/Shariah approvals. Do not convert these external inputs into disabled product features.
 
-Do not stop after designing the homepage. Carry the rebuild through all required public routes, reusable system components, mock adapter interfaces, tests and production build.
+Do not stop after designing the homepage. Carry the rebuild through all required public routes, authenticated role surfaces, reusable system components, complete adapter interfaces, development providers, tests and production build.
 
 # END MASTER PROMPT
