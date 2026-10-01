@@ -1,0 +1,20 @@
+{
+  "artifact":"GlobalHalalDigitalTrust ↔ Amanah canonical deliverable index",
+  "version":"1.0.0",
+  "control_date":"2026-10-02",
+  "implementation_repo":"https://github.com/mavericken777/Amanah",
+  "implementation_main":"e18fca1221a83772ad7366840b8bd1d0e15b4f9f",
+  "freeze":"master-standards-stack/verified-2026-09-17/",
+  "items":[
+    {"domain":"architecture","source":"Amanah/docs/architecture/PLATFORM_ARCHITECTURE.md"},
+    {"domain":"data model","source":"Amanah/docs/architecture/DATA_MODEL.md"},
+    {"domain":"onboarding","source":"Amanah/app/(protected)/onboarding/page.tsx"},
+    {"domain":"API","source":"Amanah/docs/api/AMANAH_CANONICAL_API_CONTRACT_2026-10-02.yaml"},
+    {"domain":"hardware","source":"Amanah/docs/hardware/PLATINUM_HARDWARE_MASTER_BOM_2026-10-02.json"},
+    {"domain":"Sinotrans","source":"Amanah/docs/sinotrans/SINOTRANS_A_TO_Z_PLAYBOOK_2026-10-02.md"},
+    {"domain":"CODA","source":"Amanah/docs/coda/CODA_HARDWARE_FINANCING_EXECUTIVE_PACK_2026-10-02.md"},
+    {"domain":"operations","source":"Amanah/docs/operations/AMANAH_69_EXECUTION_REGISTER_2026-10-02.md"},
+    {"domain":"truth baseline","source":"Amanah/docs/operations/REFRESHED_TRUTH_BASELINE_2026-10-02.md"},
+    {"domain":"profile","source":"Amanah/docs/marketing/AMANAH_CORPORATE_PROFILE_2026-10-02.md"}
+  ]
+}
