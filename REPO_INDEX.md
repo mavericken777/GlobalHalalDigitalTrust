@@ -145,3 +145,18 @@ docs/                     website/codex/implementation specifications
 | Verified standards | [Immutable freeze](master-standards-stack/verified-2026-09-17/00_README.md) |
 
 The 26 September ingestion packages are historical audit evidence, not alternative current freezes. Legacy roadmap/Sinotrans/CODA physical-pilot language is aligned to China → GCC direct. Project implementation does not instantiate Shipment 001 or create authority/finance decisions.
+
+
+## 2 October canonical AMANAH binding
+
+| Domain | Canonical implementation |
+|---|---|
+| Full lifecycle / architecture | https://github.com/mavericken777/Amanah @ e18fca1221a |
+| Canonical data model | Amanah/config/canonical-domain-model-2026-10-02.json |
+| Manufacturer onboarding | Amanah/app/(protected)/onboarding/page.tsx |
+| API UAT | Amanah/docs/api/AMANAH_API_UAT_PACK_2026-10-02.md |
+| Platinum hardware | Amanah/docs/hardware/PLATINUM_HARDWARE_MASTER_BOM_2026-10-02.json |
+| Truth baseline | Amanah/docs/operations/REFRESHED_TRUTH_BASELINE_2026-10-02.md |
+| 69 programme register | Amanah/docs/operations/AMANAH_69_EXECUTION_REGISTER_2026-10-02.md |
+
+The cross-repository master index is 00_EXECUTIVE_COMMAND/MASTER_DELIVERABLE_INDEX_2026-10-02.json.
