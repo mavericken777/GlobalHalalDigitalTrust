@@ -66,3 +66,12 @@ For unavailable external systems, the platform should implement the complete pro
 [Execution board](CHINA_TRIP_2026/EXECUTION_BOARD.md) · [Readiness register](00_EXECUTIVE_COMMAND/october-2026-readiness.json) · [Signing matrix](CHINA_TRIP_2026/SIGNING_MATRIX.md) · [Source retirement](00_EXECUTIVE_COMMAND/artifact-quarantine-2026-09-26.json) · [Sinotrans review](master-standards-stack/22_SINOTRANS_PLAYBOOK_BUNDLE_REVIEW_2026-09-28.md).
 
 Passing repository checks proves structure to their stated scope, not competent-authority endorsement, legal enforceability, issued bookings, independent audit, production integration or release of Shipment 001. Licensed standards PDFs and private travel records are not included in this Git tree.
+
+
+## 2 October AMANAH execution binding
+
+Amanah main has now been promoted with the 69-section execution programme at e18fca1221a83772ad7366840b8bd1d0e15b4f9f. The implementation repository now contains the canonical post-freeze architecture/data model, normalized operating entities, manufacturer onboarding, API UAT, hardware RFQ reference catalogue, cross-consistency/red-team controls and associated China/Sinotrans/CODA deliverables.
+
+This does not activate external systems. JAKIM production API, partner production connectors, port/customs permissions, GCC acceptance, finance/Takaful onboarding, production hosting/identity UAT and real Shipment 001 evidence remain external gates.
+
+[PROJECT-REPO: https://github.com/mavericken777/Amanah — e18fca1221a — 2026-10-02 — canonical 69-programme implementation]
