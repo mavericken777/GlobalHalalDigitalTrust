@@ -4,16 +4,13 @@ from fastapi import FastAPI, HTTPException
 from fastapi.responses import JSONResponse
 
 from . import __version__, engine
+from .demo_scenario import run_demo
 from .hitm import HitmDenied
 from .models import AssessmentIn, AuthorityDecisionIn, CorridorEventIn, EvidenceIn
 from .mock_integrations import MOCK_HUB
 from .store import STORE
 
-app = FastAPI(
-    title="AHTE Global Halal Digital Trust Runtime",
-    version=__version__,
-    description="Complete demonstration runtime with replaceable mock integration providers.",
-)
+app = FastAPI(title="AHTE Global Halal Digital Trust Runtime", version=__version__, description="Complete demonstration runtime with replaceable mock integration providers.")
 
 @app.get("/health")
 def health():
@@ -21,8 +18,7 @@ def health():
             "providers": {"jakim": "MOCK", "laboratory": "MOCK", "sinotrans": "MOCK", "port_customs": "MOCK", "gcc": "MOCK", "finance": "MOCK"}}
 
 @app.get("/v1/canonical-path")
-def path():
-    return {"nodes": engine.CANONICAL, "corridor_segments": engine.SEGMENTS}
+def path(): return {"nodes": engine.CANONICAL, "corridor_segments": engine.SEGMENTS}
 
 @app.post("/v1/evidence")
 def post_evidence(body: EvidenceIn):
@@ -53,8 +49,7 @@ def trust(object_id: str):
     return rec.model_dump()
 
 @app.get("/v1/objects")
-def dump():
-    return {k: [x.model_dump() for x in STORE.list(k)] for k in STORE.tables}
+def dump(): return {k: [x.model_dump() for x in STORE.list(k)] for k in STORE.tables}
 
 @app.get("/v1/integrations")
 def integrations():
@@ -66,6 +61,9 @@ def integrations():
         {"name": "GCC_DESTINATION", "state": "MOCK", "production_boundary": "importer→warehouse→distribution→verification"},
         {"name": "SHARIAH_FINANCE", "state": "MOCK", "production_boundary": "trust data→finance/Takaful decision"},
     ]}
+
+@app.post("/v1/demo/run")
+def demo_run(payload: dict): return run_demo(payload.get("shipment_id", "SHIPMENT-001"), payload.get("object_id", "DEMO-PRODUCT-001"))
 
 @app.post("/v1/demo/integrations/jakim")
 def demo_jakim(payload: dict): return MOCK_HUB.jakim(payload.get("object_id", "DEMO-OBJECT"), payload.get("action", "status"))
