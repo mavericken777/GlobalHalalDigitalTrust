@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from . import engine
 from .mock_integrations import MOCK_HUB
-from .models import ActorType, AssessmentIn, EvidenceIn
+from .models import ActorType, AssessmentIn, CorridorEventIn, EvidenceIn
 
 
 def run_demo(shipment_id: str = "SHIPMENT-001", object_id: str = "DEMO-PRODUCT-001") -> dict:
@@ -28,8 +28,11 @@ def run_demo(shipment_id: str = "SHIPMENT-001", object_id: str = "DEMO-PRODUCT-0
     authority = MOCK_HUB.jakim(object_id, "review")
     logistics = MOCK_HUB.sinotrans(shipment_id)
     origin_port = MOCK_HUB.port_customs(shipment_id, "ORIGIN_PORT")
-    transit = engine.corridor_event(__import__(".models", fromlist=["CorridorEventIn"]).CorridorEventIn(
-        shipment_id=shipment_id, segment="maritime_transit", bizstep="in_transit", actor="demo-logistics"
+    transit = engine.corridor_event(CorridorEventIn(
+        shipment_id=shipment_id,
+        segment="maritime_transit",
+        bizstep="in_transit",
+        actor="demo-logistics",
     ))
     destination = MOCK_HUB.port_customs(shipment_id, "GCC_PORT")
     gcc = MOCK_HUB.gcc(shipment_id, "receive")
@@ -42,7 +45,7 @@ def run_demo(shipment_id: str = "SHIPMENT-001", object_id: str = "DEMO-PRODUCT-0
         "steps": [
             {"name": "laboratory", "result": lab},
             {"name": "evidence", "result": evidence.model_dump()},
-            {"name": "ahtе_assessment", "result": assessment.model_dump()},
+            {"name": "ahte_assessment", "result": assessment.model_dump()},
             {"name": "direct_jakim_api", "result": authority},
             {"name": "sinotrans", "result": logistics},
             {"name": "origin_port_customs", "result": origin_port},
