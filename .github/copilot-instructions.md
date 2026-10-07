@@ -12,13 +12,7 @@ Follow the root `AGENTS.md`.
 Before substantive work, read the current controlling artifacts identified by
 `README.md`, including the current Absolute Mode instruction and IQ300 Doctrine.
 
-Treat `master-standards-stack/verified-2026-09-17/` as an immutable verified
-snapshot (16 content modules `00`–`15` + `MANIFEST.json`). Never modify a frozen
-artifact in place.
-
-Use post-freeze command, registry, partner, corridor, implementation and
-agent-control artifacts where relevant, but never allow them to silently
-rewrite the frozen standards baseline.
+The former `master-standards-stack/verified-2026-09-17/` package has been removed. Use the current standards registry at `master-standards-stack/iq300-all-jakim-ms/01_MASTER_STANDARDS_REGISTER.md` together with the live-source registry and current JSM/JAKIM verification. Do not reintroduce the removed package as a current normative baseline.
 
 Never invent normative wording, certificates, approvals, laboratory results,
 accreditation scopes, contracts, customs decisions, purchase orders or shipment
