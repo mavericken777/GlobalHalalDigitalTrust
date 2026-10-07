@@ -20,6 +20,6 @@ Malaysia operates a coordinated halal framework. Common standards and national s
 
 **Trip wording:** “PHC and GHSC coordinate industry development and evidence readiness within Malaysia’s halal framework. Certification decisions remain with the competent authorities; destination acceptance is checked separately for the actual product and market.”
 
-Source controls: [live-source registry](../00_EXECUTIVE_COMMAND/live-source-registry.json), [MPPHM/MHMS source-bound operating map](../master-standards-stack/verified-2026-09-17/02_JAKIM_MPPHM2020_MHMS2020_CONTROL_MANUAL.md). Exact mandates, amendments and applicable procedures must be attached to the case; this brief is not a delegation instrument.
+Source controls: [live-source registry](../00_EXECUTIVE_COMMAND/live-source-registry.json), [MPPHM/MHMS source-bound operating map](../master-standards-stack/10_JAKIM_MPPHM2020_MHMS2020_COMPLIANCE_MANUAL.md). Exact mandates, amendments and applicable procedures must be attached to the case; this brief is not a delegation instrument.
 
 MoIAT’s official history records the merger of UAE ESMA into MoIAT: https://moiat.gov.ae/en/about-us/about-the-ministry (checked 2026-09-27). The reported 2026 circular URL redirected to the general Halal portal on this review; search snippets do not close the primary-text gate.

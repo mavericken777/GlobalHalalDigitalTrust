@@ -142,7 +142,7 @@ docs/                     website/codex/implementation specifications
 | Readiness state | [Readiness register](00_EXECUTIVE_COMMAND/october-2026-readiness.json) |
 | Signing instruments | [Signing register](CHINA_TRIP_2026/signing-register.json) |
 | Source bindings and registries | [Executive control index](00_EXECUTIVE_COMMAND/README.md) |
-| Verified standards | [Immutable freeze](master-standards-stack/verified-2026-09-17/00_README.md) |
+| Current standards registry | [Source-controlled register](master-standards-stack/iq300-all-jakim-ms/01_MASTER_STANDARDS_REGISTER.md) |
 
 The 26 September ingestion packages are historical audit evidence, not alternative current freezes. Legacy roadmap/Sinotrans/CODA physical-pilot language is aligned to China → GCC direct. Project implementation does not instantiate Shipment 001 or create authority/finance decisions.
 
