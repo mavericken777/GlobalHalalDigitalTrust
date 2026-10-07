@@ -147,7 +147,7 @@ A hash proves integrity of the hashed content after creation; it does not by its
 
 AHTE is not limited to MS2400. It resolves the complete applicable Malaysian/JAKIM operating framework plus destination requirements and applicable contractual requirements.
 
-Normative MS wording is source-governed and not redistributed. Verified snapshot: `master-standards-stack/verified-2026-09-17/`.
+Normative MS wording is source-governed and not redistributed. Current standards registry: `master-standards-stack/iq300-all-jakim-ms/01_MASTER_STANDARDS_REGISTER.md`; current authority/source status must be rechecked against JSM/JAKIM before operational reliance.
 
 ## Canonical path
 
@@ -157,7 +157,7 @@ Trust State is a machine-readable evidence/operational state, not the certificat
 
 ## Current engineering controls
 
-- The verified freeze `master-standards-stack/verified-2026-09-17/` is unchanged.
+- The superseded 17 September 2026 standards package has been removed from the current repository tree.
 - Three corrupt legacy archives remain retired/quarantined; do not reconstruct normative content from corrupted assets.
 - The replacement MS2400 source index is an index/locator asset, not licensed normative text or a complete control set.
 - The reviewed derived Sinotrans MS2400 playbook bundle must not override verified source/control mappings where conflicts exist.
