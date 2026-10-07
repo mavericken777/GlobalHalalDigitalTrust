@@ -2,15 +2,9 @@
 
 This folder is the consolidated JAKIM / Department of Standards Malaysia Halal standards intelligence and execution layer for the Amanah Halal Trust Ecosystem (AHTE).
 
-## Canonical verified baseline
+## Current standards control
 
-The controlled verified package is:
-
-`verified-2026-09-17/`
-
-It consolidates the standards catalogue, revision/supersession register, JAKIM MPPHM 2020/MHMS 2020 operating layer, clause/control/evidence mapping, sertu and stunning/protocol linkage, audit/evidence test library, China -> GCC manufacturer validation, A-Z gap accounting, source register and deep-dive ingestion of supplied compliance/market-validation PDFs.
-
-Use `verified-2026-09-17/MANIFEST.json` as the machine-readable package declaration. Post-freeze target architecture is controlled separately by `../00_EXECUTIVE_COMMAND/CURRENT_TARGET_ARCHITECTURE_2026-09-30.md` and does not rewrite this verified freeze.
+The former `verified-2026-09-17/` package has been removed because it was superseded. The current standards control is registry-driven through `iq300-all-jakim-ms/01_MASTER_STANDARDS_REGISTER.md`, current source registries, and live JSM/JAKIM verification. Exact normative wording remains source-locked and is not redistributed.
 
 ### Current verified package modules
 
@@ -34,7 +28,7 @@ Use `verified-2026-09-17/MANIFEST.json` as the machine-readable package declarat
 
 ## Standards universe
 
-The current IQ300 verified operating universe contains 17 standards/standard contexts:
+The current IQ300 operating universe contains 17 standards/standard contexts represented by the current registry:
 
 1. MS 1500:2019 — Halal food — General requirements
 2. MS 2400-1:2019 — Halal supply chain management system — Transportation
