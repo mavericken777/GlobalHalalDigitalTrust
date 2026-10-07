@@ -1,8 +1,18 @@
 # Repository status
 
-Control date: 2026-09-30. This is a repository evidence status, not a certification, travel approval or production-activation statement.
+Control date: 2026-10-07. This is a repository evidence status, not a certification, travel approval or production-activation statement.
 
-## 30 September architecture synchronization
+## 7 October controlling alignment
+
+The current cross-repository operating direction is maintained in [AMANAH’s 7 October platform execution prompt](https://github.com/mavericken777/Amanah/blob/main/docs/AMANAH_100_PERCENT_END_TO_END_MASTER_EXECUTION_PROMPT_2026-10-07.md) and [current platform summary](https://github.com/mavericken777/Amanah/blob/main/docs/operations/STATUS.md). This repository’s 30 September architecture files remain dated architecture references; they do not restore the removed 17 September standards package.
+
+- Physical corridor: **China → GCC direct**; Malaysia is the governance, assurance, standards and authority-connectivity plane unless a transaction explicitly scopes a physical Malaysia movement.
+- Authority topology: **AHTE ⇄ Direct JAKIM API ⇄ JAKIM**. PHC is an ecosystem/assurance institution; no unsupported certification authority is assigned to it.
+- Standards: dynamic, source-controlled and complete for applicable Malaysian/JAKIM governance, standards, procedures, protocols, circulars and destination requirements. MS 1500 / MS 2400 or the 17-entry catalogue alone is not the complete foundation. The retired 17 September package remains absent; use the current register and mark unavailable normative text `SOURCE-LOCKED`.
+- Market-side lifecycle explicitly includes GCC importer, receiving warehouse, distributor/3PL, retailer/marketplace, buyer and consumer verification, plus post-market exception/recall.
+- AI assists within its decision class. Competent humans/authorities retain certification, legal, sovereign release, finance and Takaful decisions. Shipment 001 remains not instantiated without transaction evidence.
+
+## 30 September architecture baseline (dated reference)
 
 The current **target architecture** is now consolidated in:
 
@@ -40,7 +50,7 @@ For unavailable external systems, the platform should implement the complete pro
 
 | Dimension | State | Basis |
 |---|---|---|
-| Target architecture | `DOC-COMPLETE / POST-FREEZE-PROPOSAL` | Consolidated 30 Sep architecture; verified freeze unchanged |
+| Target architecture | `DOC-COMPLETE / POST-FREEZE-PROPOSAL` | Consolidated 30 Sep architecture remains a dated reference; current operating alignment is the 7 Oct handoff |
 | Implementation completeness rule | `ACTIVE` | Required capability must remain architecturally complete even when external systems are not production-connected |
 | Commercial foundation | Incorporation and non-binding start papers recorded from maintainer-supplied scans/summaries | [Instrument register](CHINA_TRIP_2026/01_INSTRUMENT_REGISTER.md); exact original/custody/signatory checks remain open |
 | Travel | Operator-reported `TRAVEL_READY`; controlled register `NOT_TRAVEL_READY` | Operator headline and register disagree. Travel gates remain OPEN with no closure references in the register; ticketing, rooming, roster, schedule and routing confirmation must be reconciled there. |
@@ -68,10 +78,8 @@ For unavailable external systems, the platform should implement the complete pro
 Passing repository checks proves structure to their stated scope, not competent-authority endorsement, legal enforceability, issued bookings, independent audit, production integration or release of Shipment 001. Licensed standards PDFs and private travel records are not included in this Git tree.
 
 
-## 2 October AMANAH execution binding
+## 7 October AMANAH execution binding
 
-Amanah main has now been promoted with the 69-section execution programme at e18fca1221a83772ad7366840b8bd1d0e15b4f9f. The implementation repository now contains the canonical post-freeze architecture/data model, normalized operating entities, manufacturer onboarding, API UAT, hardware RFQ reference catalogue, cross-consistency/red-team controls and associated China/Sinotrans/CODA deliverables.
+Amanah’s current platform summary and 7 October master execution prompt define the current cross-repository lifecycle, standards scope, user experience and mission priorities. See [current summary](https://github.com/mavericken777/Amanah/blob/main/docs/operations/STATUS.md) and [master prompt](https://github.com/mavericken777/Amanah/blob/main/docs/AMANAH_100_PERCENT_END_TO_END_MASTER_EXECUTION_PROMPT_2026-10-07.md).
 
-This does not activate external systems. JAKIM production API, partner production connectors, port/customs permissions, GCC acceptance, finance/Takaful onboarding, production hosting/identity UAT and real Shipment 001 evidence remain external gates.
-
-[PROJECT-REPO: https://github.com/mavericken777/Amanah — e18fca1221a — 2026-10-02 — canonical 69-programme implementation]
+This binding does not activate external systems or create authority decisions. Direct JAKIM production connectivity, partner production integrations, port/customs permissions, GCC acceptance, finance/Takaful onboarding and real Shipment 001 evidence remain subject to their own authorization and validation.
