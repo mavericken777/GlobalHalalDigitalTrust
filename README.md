@@ -4,9 +4,11 @@
 
 [Current target architecture](00_EXECUTIVE_COMMAND/CURRENT_TARGET_ARCHITECTURE_2026-09-30.md) · [Implementation completeness rule](00_EXECUTIVE_COMMAND/IMPLEMENTATION_COMPLETENESS_RULE_2026-09-30.md) · [Codex rebuild prompt](docs/CODEX_PLATFORM_REBUILD_MASTER_PROMPT_2026-09-30.md) · [Website spec v2.1+](docs/WEBSITE_REBUILD_MASTER_SPEC_v2_2026-09-30.md) · [Trip pack](CHINA_TRIP_2026/00_READ_THIS_FIRST.md) · [Execution board](CHINA_TRIP_2026/EXECUTION_BOARD.md) · [A–Z index](REPO_INDEX.md) · [STATUS](STATUS.md)
 
-## Current project architecture — 30 September 2026
+## Current project architecture — aligned to 7 October 2026
 
-The project is a **Global Halal Digital Trust & Trade / Halal Tayyib infrastructure**
+The project is a **Global Halal Digital Trust & Trade / Halal Tayyib infrastructure**. This page follows the [7 October AMANAH execution prompt](https://github.com/mavericken777/Amanah/blob/main/docs/AMANAH_100_PERCENT_END_TO_END_MASTER_EXECUTION_PROMPT_2026-10-07.md) and [current operating summary](https://github.com/mavericken777/Amanah/blob/main/docs/operations/STATUS.md). The 30 September architecture artifacts remain dated references.
+
+The 7 October operating alignment keeps the complete applicable Malaysian/JAKIM framework source-controlled, gives GCC importers, distributors and retailers explicit operating workflows, and preserves the direct China → GCC physical corridor with Malaysia as the governance/assurance plane.
 
 Default physical corridor:
 
@@ -38,9 +40,11 @@ VERIFIED RAW-MATERIAL ORIGIN
 → ORIGIN PORT / CUSTOMS API
 → INTERNATIONAL TRANSIT
 → GCC PORT / CUSTOMS API
-→ IMPORTER / DESTINATION WAREHOUSE
-→ DISTRIBUTION / RETAIL
+→ GCC IMPORTER / RECEIVING INSPECTION / DESTINATION WAREHOUSE
+→ DISTRIBUTOR / 3PL CUSTODY AND STOCK MOVEMENT
+→ RETAILER / MARKETPLACE LISTING, RECEIVING AND RECALL
 → BUYER / CONSUMER AUTHORISED VERIFICATION
+→ POST-MARKET SURVEILLANCE / EXCEPTION / RECALL
 ```
 
 Across the chain:
@@ -111,7 +115,7 @@ This repository contains:
 - partner/trip materials;
 - reference software.
 
-The code under `platform/` is a **reference implementation**, its the real model for the production multi-region network and the live authority/partner integration.
+The code under `platform/` is a **reference implementation** of the target model; it is not evidence of live authority or partner integration.
 
 ## Core principles
 
@@ -125,7 +129,9 @@ The code under `platform/` is a **reference implementation**, its the real model
 
 A hash proves integrity of the hashed content after creation; it does not by itself prove truth, authority or Halal status.
 
-## 17-standard operating catalogue
+## Known 17-entry MS catalogue snapshot
+
+This catalogue is a known standards snapshot, not a complete or permanently capped framework. Applicable JAKIM/Malaysian requirements also include MPPHM, MHMS, HAS, IHCS, protocols, circulars, authority instructions, certification procedures, destination-market requirements, laboratory methods and superseding versions/amendments. Use the current source-controlled register and verify primary sources before operational reliance.
 
 1. MS 1500:2019 — Halal food
 2. MS 2400-1:2019 — Transport
@@ -145,7 +151,7 @@ A hash proves integrity of the hashed content after creation; it does not by its
 16. MS 2809:2025 — Chemometric authentication
 17. MS 2810:2025 — Pig skin and hair identification
 
-AHTE is not limited to MS2400. It resolves the complete applicable Malaysian/JAKIM operating framework plus destination requirements and applicable contractual requirements.
+AHTE is not limited to this catalogue or to MS 1500/MS 2400. It resolves the complete applicable Malaysian/JAKIM operating framework plus destination requirements and applicable contractual requirements.
 
 Normative MS wording is source-governed and not redistributed. Current standards registry: `master-standards-stack/iq300-all-jakim-ms/01_MASTER_STANDARDS_REGISTER.md`; current authority/source status must be rechecked against JSM/JAKIM before operational reliance.
 
