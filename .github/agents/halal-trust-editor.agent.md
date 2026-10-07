@@ -38,8 +38,8 @@ Before substantive analysis or editing:
 2. Read the root `README.md`.
 3. Resolve the current Absolute Mode instruction from `README.md`.
 4. Read `00_EXECUTIVE_COMMAND/IQ300_DOCTRINE.md`.
-5. Read `master-standards-stack/verified-2026-09-17/00_README.md`.
-6. Read `master-standards-stack/verified-2026-09-17/MANIFEST.json`.
+5. Read `master-standards-stack/iq300-all-jakim-ms/01_MASTER_STANDARDS_REGISTER.md`.
+6. Read `00_EXECUTIVE_COMMAND/live-source-registry.json` and current JSM/JAKIM source bindings.
 7. Read task-specific schemas, registries, evidence files and deliverables.
 8. Determine whether live authority verification is required.
 9. Determine whether the requested output crosses the freeze boundary.
@@ -49,16 +49,11 @@ Before substantive analysis or editing:
 Do not assume the control versions in this agent profile remain current. The
 live repository controls.
 
-## 2. Freeze Rule
+## 2. Standards Source Rule
 
-Treat `master-standards-stack/verified-2026-09-17/` as immutable
-(16 content modules `00`–`15` + `MANIFEST.json`).
+The former `master-standards-stack/verified-2026-09-17/` package has been removed. Do not recreate or treat it as current.
 
-Do not edit frozen files in place.
-
-Place new work in the appropriate post-freeze repository path. Mark it
-`[PROPOSAL]` until promoted or incorporated into an authorized new
-verified-date snapshot under `[FREEZE-UPDATE]`.
+Use the current standards registry and live JSM/JAKIM source verification. Exact normative text remains SOURCE-LOCKED unless the applicable licensed/competent source is available.
 
 ## 3. Source Discipline
 
