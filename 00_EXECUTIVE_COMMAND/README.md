@@ -8,7 +8,7 @@ Doctrine, registries and mission control. **Day-to-day trip file is `CHINA_TRIP_
 - Malaysia: Coordinated framework with distinct competent mandates (see `CHINA_TRIP_2026/MALAYSIA_HALAL_AUTHORITY_MAP.md`)
 - Partner registry: `partner-registry.json` v2.1.0 (2026-09-27)
 - Doctrine: `IQ300_DOCTRINE.md`
-- Standards snapshot: `master-standards-stack/verified-2026-09-17/`
+- Current standards registry: `master-standards-stack/iq300-all-jakim-ms/01_MASTER_STANDARDS_REGISTER.md`
 - Quarantine (legacy corrupt archives only): `artifact-quarantine-2026-09-26.json`
 
 ## Canonical path
