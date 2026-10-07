@@ -6,29 +6,15 @@ This folder is the consolidated JAKIM / Department of Standards Malaysia Halal s
 
 The former `verified-2026-09-17/` package has been removed because it was superseded. The current standards control is registry-driven through `iq300-all-jakim-ms/01_MASTER_STANDARDS_REGISTER.md`, current source registries, and live JSM/JAKIM verification. Exact normative wording remains source-locked and is not redistributed.
 
-### Current verified package modules
+### Current source-controlled standards assets
 
-- `00_README.md` - controlled package index and source hierarchy
-- `01_MASTER_CATALOGUE_REVISION_REGISTER.md` - 17-standard catalogue and revision lineage
-- `02_JAKIM_MPPHM2020_MHMS2020_CONTROL_MANUAL.md` - JAKIM certification operating layer
-- `03_ALL_MS_CLAUSE_CONTROL_EVIDENCE_MANUAL.md` - full standards-to-control/evidence mapping
-- `04_SERTU_STUNNING_PROTOCOL_LINKAGE.md` - sertu and slaughter/stunning precedence
-- `05_AUDIT_EVIDENCE_AUTHORITY_TEST_LIBRARY.md` - test/evidence/authority gate library
-- `06_CHINA_GCC_MANUFACTURER_MARKET_VALIDATION.md` - China -> GCC manufacturer pre-qualification
-- `07_AZ_COMPLETION_EXTERNAL_GATE_REGISTER.md` - A-Z completion and external-gate control
-- `08_SOURCE_VERIFICATION_REGISTER.md` - authority/source and uploaded-PDF provenance register
-- `09_REPOSITORY_INTEGRITY_AUDIT.md` - baseline repository integrity audit
-- `10_ATTACHED_PDF_DEEP_DIVE_RECONCILIATION.md` - 74-page compliance + 48-page market report reconciliation
-- `11_AUDIT_CLOSURE_TRACEABILITY_GOVERNANCE_MODEL.md` - governance, records, traceability, recall, change-control and audit closure
-- `12_MANUFACTURER_ECONOMIC_AND_MARKET_DECISION_MODEL.md` - evidence-backed readiness/cost/NPV/payback/scenario model
-- `13_NAJS_CONTAMINATION_AND_RELEASE_DECISION_MODEL.md` - najs/contamination/cleaning/sertu/release logic
-- `14_HALAL_BUILT_IN_RETROFIT_FACTORY_TRANSFORMATION_MODEL.md` - Halal Built-In vs retrofit manufacturer transformation
-- `15_POST_PDF_INGESTION_INTEGRITY_AUDIT.md` - final repository/source/conflict/routing/open-gate verification after PDF ingestion
-- `MANIFEST.json` - machine-readable declaration
+The former `verified-2026-09-17/` package and its module set have been removed. Do not reference or reconstruct those files as current assets. The active registry is [`iq300-all-jakim-ms/01_MASTER_STANDARDS_REGISTER.md`](iq300-all-jakim-ms/01_MASTER_STANDARDS_REGISTER.md). Source-index, control-library and governance materials elsewhere in this repository are supporting records with their own provenance and scope; they are not a replacement frozen package.
 
-## Standards universe
+## Malaysian/JAKIM standards framework
 
-The current IQ300 operating universe contains 17 standards/standard contexts represented by the current registry:
+The registry is dynamic and source-controlled. This 17-entry catalogue below is a known MS snapshot, not a complete or permanently capped framework. Applicability includes the full relevant Malaysian/JAKIM governance and certification framework (including MPPHM, MHMS, HAS, IHCS, protocols, circulars, authority instructions and procedures), applicable Malaysian Standards, laboratory methods, Shariah/governance instruments, destination-market requirements, amendments and superseding versions. Never present MS 1500 and MS 2400, or this snapshot alone, as the complete foundation. Where authoritative normative text is unavailable, record `DATA NOT AVAILABLE — SOURCE-LOCKED`; do not invent clauses.
+
+The current catalogue snapshot contains these 17 standards/standard contexts:
 
 1. MS 1500:2019 — Halal food — General requirements
 2. MS 2400-1:2019 — Halal supply chain management system — Transportation
@@ -48,7 +34,7 @@ The current IQ300 operating universe contains 17 standards/standard contexts rep
 16. MS 2809:2025 — Authentication of products using chemometric techniques
 17. MS 2810:2025 — Consumable goods — Test method — Identification of pig skin and hair
 
-Historical/withdrawn/replaced standards are retained as version lineage only and must not silently override current editions. Post-freeze source additions/conflicts are handled by the controlled source/verification process rather than silently rewriting the verified package.
+Historical/withdrawn/replaced standards are retained as version lineage only and must not silently override current editions. Post-freeze source additions/conflicts are handled by the controlled source/verification process through dated, source-provenanced updates to the active registry. The removed package remains absent.
 
 ## Source-depth model
 
@@ -94,7 +80,7 @@ Every requirement object is source/version aware. Historical events remain bound
 
 ## JAKIM operating layer
 
-The verified package maps:
+The current source-controlled materials map:
 
 - all 71 MPPHM (Domestic) 2020 procedure headings into operational controls/evidence/authority gates;
 - all 13 MHMS 2020 HAS elements;
