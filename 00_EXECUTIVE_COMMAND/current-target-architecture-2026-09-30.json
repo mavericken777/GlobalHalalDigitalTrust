@@ -3,7 +3,8 @@
   "version": "1.2.0",
   "control_date": "2026-09-30",
   "classification": "post-freeze proposal architecture registry",
-  "freeze_boundary": "master-standards-stack/verified-2026-09-17/",
+  "standards_control": "master-standards-stack/iq300-all-jakim-ms/01_MASTER_STANDARDS_REGISTER.md",
+  "standards_source_rule": "Current JSM/JAKIM verification; exact normative text source-locked",
   "authority_effect": "none",
   "requirements_traceability": "00_EXECUTIVE_COMMAND/PLATFORM_REQUIREMENTS_TRACEABILITY_2026-09-30.md",
   "implementation_principle": {
