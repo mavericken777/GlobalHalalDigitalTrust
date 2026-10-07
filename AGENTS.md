@@ -35,8 +35,8 @@ As of this control date, the primary controls are:
 
 1. `00_EXECUTIVE_COMMAND/ABSOLUTE_MODE_SYSTEM_INSTRUCTION_v14.1.md`
 2. `00_EXECUTIVE_COMMAND/IQ300_DOCTRINE.md`
-3. `master-standards-stack/verified-2026-09-17/00_README.md`
-4. `master-standards-stack/verified-2026-09-17/MANIFEST.json`
+3. `master-standards-stack/README.md`
+4. `master-standards-stack/iq300-all-jakim-ms/01_MASTER_STANDARDS_REGISTER.md`
 5. `00_EXECUTIVE_COMMAND/live-source-registry.json`
 6. `00_EXECUTIVE_COMMAND/partner-registry.json`
 7. `00_EXECUTIVE_COMMAND/port-authority-registry.json`
@@ -95,7 +95,7 @@ AI and the platform never issue official Halal certificates.
 - `05_PLATINUM_REAL_TIME_MONITORING/` — monitoring architecture
 - `deliverables/` — numbered documentary deliverables (`00`–`29` present)
 - `docs/` — ecosystem documentation and `TOOLING.md`
-- `master-standards-stack/verified-2026-09-17/` — controlled freeze (immutable)
+- `master-standards-stack/iq300-all-jakim-ms/` — current standards intelligence/control registry
 - `master-standards-stack/process-flow-infographics/` — process-flow visuals
 - `partners/` — coda, sinotrans, china-merchant, china-food-security-lab
 - `tools/` — generation tooling
