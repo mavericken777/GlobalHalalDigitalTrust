@@ -1,15 +1,17 @@
 ---
-applyTo: "master-standards-stack/verified-2026-09-17/**/*"
+applyTo: "master-standards-stack/**/*"
 ---
 
-# FREEZE LIFTED — 2026-09-26
+# CURRENT STANDARDS SOURCE CONTROL — 2026-10-07
 
-Previous freeze on `master-standards-stack/verified-2026-09-17/**/*` is **revoked** by operator directive.
+The former `master-standards-stack/verified-2026-09-17/` package has been removed as superseded.
 
-- Lifted by: operator request (remove freeze and blocks)
-- Date: 2026-09-26
-- Reason: Update required after Platinum Tier v2 illustrated + master PDF ingestion and live JSM/JAKIM verification (MS 2810:2025 confirmed; Pekeliling Pensijilan Halal Malaysia Bil. 1/2026 confirmed as Pindaan MPPHM 2020).
+Current standards control is registry-driven through:
 
-Successor working set lives under `master-standards-stack/` (non-frozen paths) and `master-standards-stack/verified-2026-09-26/` when created.
+- `master-standards-stack/iq300-all-jakim-ms/01_MASTER_STANDARDS_REGISTER.md`
+- `00_EXECUTIVE_COMMAND/live-source-registry.json`
+- current Department of Standards Malaysia / JAKIM sources.
 
-The 2026-09-17 snapshot may be retained for historical audit only; it is no longer immutable-protected.
+Do not reintroduce the removed 17 September package as a current normative baseline.
+
+Exact normative text remains SOURCE-LOCKED and must be verified against the current licensed/competent source before production use.
