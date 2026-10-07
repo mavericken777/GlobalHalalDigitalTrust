@@ -6,8 +6,8 @@
 | Artifact | `IQ300_DOCTRINE.md` |
 | Revision | v3.1 (Complete + Port/Corridor Integration) |
 | Companion | `ABSOLUTE_MODE_SYSTEM_INSTRUCTION_v14.1.md` |
-| Freeze boundary | `master-standards-stack/verified-2026-09-17/` |
-| Control date | 17 September 2026 |
+| Standards control | `master-standards-stack/iq300-all-jakim-ms/01_MASTER_STANDARDS_REGISTER.md` + current JSM/JAKIM source registry |
+| Control date | 7 October 2026 |
 | Status | Post-freeze governance artifact; operating reference subject to freeze/promotion protocol |
 | Commit message | `docs(doctrine): publish complete IQ300 operational doctrine v3.1 [DOCTRINE-CRITICAL]` |
 
@@ -15,7 +15,7 @@
 
 ## Current evidence-status overlay — 28 September 2026
 
-This post-freeze correction controls present readiness and source usability; historical catalogue counts below are lineage, not proof of intact assets. The two corrupt MS 2400 compressed datasets and legacy master tarball were retired from the current tree on 27 September 2026. The replacement source index has 628 unique numbered clause locators without licensed wording; it is not an exhaustive requirement or control dataset. The MS 2400-2 compressed file decodes (201 historical control objects) but omits five deeper headings. The former total 613 is historical and must not be reported as an ingestible verified set. The frozen 17 September directory remains unchanged.
+This post-freeze correction controls present readiness and source usability; historical catalogue counts below are lineage, not proof of intact assets. The two corrupt MS 2400 compressed datasets and legacy master tarball were retired from the current tree on 27 September 2026. The replacement source index has 628 unique numbered clause locators without licensed wording; it is not an exhaustive requirement or control dataset. The MS 2400-2 compressed file decodes (201 historical control objects) but omits five deeper headings. The former total 613 is historical and must not be reported as an ingestible verified set. The former 17 September standards directory has been removed from the current repository tree.
 
 Partner roles and reported non-binding instruments are in `partner-registry.json` v2.1.0; reported intent is distinct from a priced service contract. NICFS and the legacy laboratory placeholder are not confirmed aliases. Current mission and signing readiness: `october-2026-readiness.json` and `../CHINA_TRIP_2026/SIGNING_MATRIX.md`.
 
@@ -125,7 +125,7 @@ A row is complete only when source status is known. Where licensed normative tex
 - Current status/control domains verified with detailed normative subclauses source-locked: five standards.
 
 ### 4.3 Revision Control
-Historical/withdrawn/replaced editions are version lineage only. They must never silently override current production profiles. Old MS 1500:2009 slaughter/stunning parameters are not hard-coded as current MS 1500:2019 requirements. Future revisions trigger change control.
+Historical/withdrawn/replaced editions are version lineage only; the removed 17 September package is not a current control source. They must never silently override current production profiles. Old MS 1500:2009 slaughter/stunning parameters are not hard-coded as current MS 1500:2019 requirements. Future revisions trigger change control.
 
 ---
 
