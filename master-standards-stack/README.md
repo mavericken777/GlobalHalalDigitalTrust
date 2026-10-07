@@ -4,27 +4,27 @@ This folder is the consolidated JAKIM / Department of Standards Malaysia Halal s
 
 ## Current standards control
 
-The former `verified-2026-09-17/` package has been removed because it was superseded. The current standards control is registry-driven through `iq300-all-jakim-ms/01_MASTER_STANDARDS_REGISTER.md`, current source registries, and live JSM/JAKIM verification. Exact normative wording remains source-locked and is not redistributed.
+The immutable `verified-2026-09-17/` baseline is retained as a read-only, source-bound snapshot of the 17 September 2026 control package. Its presence is not a claim that every listed source remains current today. Current applicability is determined from `iq300-all-jakim-ms/01_MASTER_STANDARDS_REGISTER.md`, versioned post-freeze source registers and current JSM/JAKIM evidence. Any later package must be separately dated/versioned with source metadata and provenance; do not edit the frozen directory.
 
-### Current verified package modules
+### Immutable 17 September baseline modules
 
-- `00_README.md` - controlled package index and source hierarchy
-- `01_MASTER_CATALOGUE_REVISION_REGISTER.md` - 17-standard catalogue and revision lineage
-- `02_JAKIM_MPPHM2020_MHMS2020_CONTROL_MANUAL.md` - JAKIM certification operating layer
-- `03_ALL_MS_CLAUSE_CONTROL_EVIDENCE_MANUAL.md` - full standards-to-control/evidence mapping
-- `04_SERTU_STUNNING_PROTOCOL_LINKAGE.md` - sertu and slaughter/stunning precedence
-- `05_AUDIT_EVIDENCE_AUTHORITY_TEST_LIBRARY.md` - test/evidence/authority gate library
-- `06_CHINA_GCC_MANUFACTURER_MARKET_VALIDATION.md` - China -> GCC manufacturer pre-qualification
-- `07_AZ_COMPLETION_EXTERNAL_GATE_REGISTER.md` - A-Z completion and external-gate control
-- `08_SOURCE_VERIFICATION_REGISTER.md` - authority/source and uploaded-PDF provenance register
-- `09_REPOSITORY_INTEGRITY_AUDIT.md` - baseline repository integrity audit
-- `10_ATTACHED_PDF_DEEP_DIVE_RECONCILIATION.md` - 74-page compliance + 48-page market report reconciliation
-- `11_AUDIT_CLOSURE_TRACEABILITY_GOVERNANCE_MODEL.md` - governance, records, traceability, recall, change-control and audit closure
-- `12_MANUFACTURER_ECONOMIC_AND_MARKET_DECISION_MODEL.md` - evidence-backed readiness/cost/NPV/payback/scenario model
-- `13_NAJS_CONTAMINATION_AND_RELEASE_DECISION_MODEL.md` - najs/contamination/cleaning/sertu/release logic
-- `14_HALAL_BUILT_IN_RETROFIT_FACTORY_TRANSFORMATION_MODEL.md` - Halal Built-In vs retrofit manufacturer transformation
-- `15_POST_PDF_INGESTION_INTEGRITY_AUDIT.md` - final repository/source/conflict/routing/open-gate verification after PDF ingestion
-- `MANIFEST.json` - machine-readable declaration
+- [`00_README.md`](verified-2026-09-17/00_README.md) - controlled package index and source hierarchy
+- [`01_MASTER_CATALOGUE_REVISION_REGISTER.md`](verified-2026-09-17/01_MASTER_CATALOGUE_REVISION_REGISTER.md) - 17-standard catalogue and revision lineage
+- [`02_JAKIM_MPPHM2020_MHMS2020_CONTROL_MANUAL.md`](verified-2026-09-17/02_JAKIM_MPPHM2020_MHMS2020_CONTROL_MANUAL.md) - JAKIM certification operating layer
+- [`03_ALL_MS_CLAUSE_CONTROL_EVIDENCE_MANUAL.md`](verified-2026-09-17/03_ALL_MS_CLAUSE_CONTROL_EVIDENCE_MANUAL.md) - full standards-to-control/evidence mapping
+- [`04_SERTU_STUNNING_PROTOCOL_LINKAGE.md`](verified-2026-09-17/04_SERTU_STUNNING_PROTOCOL_LINKAGE.md) - sertu and slaughter/stunning precedence
+- [`05_AUDIT_EVIDENCE_AUTHORITY_TEST_LIBRARY.md`](verified-2026-09-17/05_AUDIT_EVIDENCE_AUTHORITY_TEST_LIBRARY.md) - test/evidence/authority gate library
+- [`06_CHINA_GCC_MANUFACTURER_MARKET_VALIDATION.md`](verified-2026-09-17/06_CHINA_GCC_MANUFACTURER_MARKET_VALIDATION.md) - China -> GCC manufacturer pre-qualification
+- [`07_AZ_COMPLETION_EXTERNAL_GATE_REGISTER.md`](verified-2026-09-17/07_AZ_COMPLETION_EXTERNAL_GATE_REGISTER.md) - A-Z completion and external-gate control
+- [`08_SOURCE_VERIFICATION_REGISTER.md`](verified-2026-09-17/08_SOURCE_VERIFICATION_REGISTER.md) - authority/source and uploaded-PDF provenance register
+- [`09_REPOSITORY_INTEGRITY_AUDIT.md`](verified-2026-09-17/09_REPOSITORY_INTEGRITY_AUDIT.md) - baseline repository integrity audit
+- [`10_ATTACHED_PDF_DEEP_DIVE_RECONCILIATION.md`](verified-2026-09-17/10_ATTACHED_PDF_DEEP_DIVE_RECONCILIATION.md) - 74-page compliance + 48-page market report reconciliation
+- [`11_AUDIT_CLOSURE_TRACEABILITY_GOVERNANCE_MODEL.md`](verified-2026-09-17/11_AUDIT_CLOSURE_TRACEABILITY_GOVERNANCE_MODEL.md) - governance, records, traceability, recall, change-control and audit closure
+- [`12_MANUFACTURER_ECONOMIC_AND_MARKET_DECISION_MODEL.md`](verified-2026-09-17/12_MANUFACTURER_ECONOMIC_AND_MARKET_DECISION_MODEL.md) - evidence-backed readiness/cost/NPV/payback/scenario model
+- [`13_NAJS_CONTAMINATION_AND_RELEASE_DECISION_MODEL.md`](verified-2026-09-17/13_NAJS_CONTAMINATION_AND_RELEASE_DECISION_MODEL.md) - najs/contamination/cleaning/sertu/release logic
+- [`14_HALAL_BUILT_IN_RETROFIT_FACTORY_TRANSFORMATION_MODEL.md`](verified-2026-09-17/14_HALAL_BUILT_IN_RETROFIT_FACTORY_TRANSFORMATION_MODEL.md) - Halal Built-In vs retrofit manufacturer transformation
+- [`15_POST_PDF_INGESTION_INTEGRITY_AUDIT.md`](verified-2026-09-17/15_POST_PDF_INGESTION_INTEGRITY_AUDIT.md) - final repository/source/conflict/routing/open-gate verification after PDF ingestion
+- [`MANIFEST.json`](verified-2026-09-17/MANIFEST.json) - machine-readable declaration
 
 ## Standards universe
 

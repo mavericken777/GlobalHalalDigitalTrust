@@ -1,8 +1,8 @@
 # Current Standards Source Control
 
-**Control date:** 2026-10-07
+**Control date:** 2026-10-08
 
-The former `master-standards-stack/verified-2026-09-17/` standards package has been removed from the current repository tree at the operator's explicit direction.
+The complete `master-standards-stack/verified-2026-09-17/` package is retained unchanged as the immutable, source-bound 17 September 2026 baseline. This is a dated point-in-time snapshot; its presence does not imply that every source remains current. Any post-freeze update must be separately versioned and dated with source metadata and provenance.
 
 ## Current controlling standards source
 

@@ -125,7 +125,7 @@ A row is complete only when source status is known. Where licensed normative tex
 - Current status/control domains verified with detailed normative subclauses source-locked: five standards.
 
 ### 4.3 Revision Control
-Historical/withdrawn/replaced editions are version lineage only; the removed 17 September package is not a current control source. They must never silently override current production profiles. Old MS 1500:2009 slaughter/stunning parameters are not hard-coded as current MS 1500:2019 requirements. Future revisions trigger change control.
+Historical/withdrawn/replaced editions remain version lineage only. Preserve the immutable 17 September baseline at `master-standards-stack/verified-2026-09-17/` as a dated point-in-time snapshot; its presence does not make superseded editions current control. Current production profiles follow current source verification, and historical snapshots never silently override them. Old MS 1500:2009 slaughter/stunning parameters are not hard-coded as current MS 1500:2019 requirements. Future revisions trigger change control.
 
 ---
 
