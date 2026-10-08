@@ -51,21 +51,14 @@ As of this control date, the primary controls are:
 Do not assume a hard-coded version remains current. Check the root `README.md`
 and repository state before relying on a command version.
 
-## 3. Freeze Boundary
+## 3. Standards Source Control
 
-The current controlled standards freeze is:
-
-`master-standards-stack/verified-2026-09-17/`
-
-**16 content modules (`00`–`15`) + `MANIFEST.json`.**
-
-Treat that directory as an immutable verified snapshot.
-
-Do not edit, replace, rename or delete a frozen artifact in place.
-
-Corrections or expansions must use a versioned post-freeze artifact, explicit
-supersession, a new verified-date snapshot under `[FREEZE-UPDATE]`, or an
-identified `[SOURCE-LOCKED]` / `[OPEN GATE]` / `[PROPOSAL]` state.
+The controlling standards source is the dynamic, source-controlled registry at
+`master-standards-stack/iq300-all-jakim-ms/01_MASTER_STANDARDS_REGISTER.md`,
+interpreted with current JAKIM/JSM sources and the complete applicable Malaysian
+Halal governance framework. Maintain provenance and version history for every
+source change. Do not silently overwrite evidence; identify supersession,
+source-locked text, open gates and proposals clearly.
 
 ## 4. Non-Negotiable Rules
 
