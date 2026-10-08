@@ -578,7 +578,7 @@ RELEASE / HOLD UNDER AUTHORITY
 
 IQ300 provides evidence interoperability; it does not replace statutory customs or border authority.
 
-## 25. China → GCC Shipment 001 control chain
+## 25. China → GCC shipment workflow control chain
 
 ```text
 CHINA MANUFACTURER
@@ -612,7 +612,7 @@ RETAIL
 CONSUMER VERIFICATION
 ```
 
-Shipment 001 is the primary physical proof-of-execution and acceptance test for the architecture.
+shipment workflow is the primary physical proof-of-execution and acceptance test for the architecture.
 
 ## 26. AI assurance modules
 
@@ -722,7 +722,7 @@ Before production or external publication, independently verify:
 6. Current JAKIM circulars and relevant fatwa/authority instruments.
 7. Current status and scope of laboratories and analytical methods.
 8. Current international-manufacturer application requirements.
-9. Destination-country/GCC requirements for each Shipment 001 SKU.
+9. Destination-country/GCC requirements for each shipment workflow SKU.
 10. Data-protection, cybersecurity, cross-border data and evidence-retention requirements.
 
 ## 31. Architectural conclusion

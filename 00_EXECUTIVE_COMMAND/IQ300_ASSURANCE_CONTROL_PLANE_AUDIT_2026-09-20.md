@@ -21,7 +21,7 @@
 - `policies/hitm-default-deny.rego`
 - `policies/hitm-fixtures.json` (F01–F12)
 - `epcis-corridor-event-map.json`
-- `SHIPMENT_001_ACCEPTANCE_TESTS.md`
+- `shipment_workflow_ACCEPTANCE_TESTS.md`
 - `trust-packet-schemas.json` v1.2.0
 - `schema-registry.json` v1.2.0
 
@@ -29,7 +29,7 @@
 
 - `master-standards-stack/verified-2026-09-17/` not modified
 - 14-node controlling path not replaced in doctrine / README / AGENTS / v14.1
-- No invented certificates, SKUs, POs, lab results, or Shipment 001 events
+- No invented certificates, SKUs, POs, lab results, or shipment workflow events
 - Interop citations are public-specification characterisations, not AHTE authority
 
 ## Still open (correctly)
@@ -37,5 +37,5 @@
 - Runtime OPA / SPIRE / SCITT / EPCIS deployment — ENGINEERING-GATE
 - Official VC issuer for E5 — EXTERNAL-GATE (JAKIM / GCC)
 - Licensed MS / MPPHM Pindaan 2026 text — SOURCE-LOCKED
-- Shipment 001 transaction evidence — TRANSACTION-GATE
+- shipment workflow transaction evidence — TRANSACTION-GATE
 - Copilot IDE behavioural tests — maintainer-owned

@@ -75,7 +75,7 @@ AHTE and AI do not issue official Halal certificates.
 Do not use wording, icons, seals, badges, colours, marks or layouts that could
 reasonably imply government endorsement, JAKIM/MAIN/JAIN certification, GCC
 authority approval, laboratory accreditation, customs clearance, or instantiated
-Shipment 001.
+shipment workflow.
 
 ## 4. Canonical Path
 
@@ -88,14 +88,14 @@ Do not render an internal trust state as official certification.
 
 ## 5. Pilot Separation
 
-Mark Shipment 001 content:
+Mark shipment workflow content:
 
-`[PILOT: Shipment 001 — <component>]`
+`[PILOT: shipment workflow — <component>]`
 
 Keep permanent architecture visually and textually separate from proposed
 manufacturers, SKUs, importer/buyer, logistics route, and simulated events.
 
-Do not represent Shipment 001 as instantiated unless transaction-native
+Do not represent shipment workflow as instantiated unless transaction-native
 evidence exists.
 
 ## 6. Repository Placement
@@ -104,7 +104,7 @@ evidence exists.
 - numbered reports and corporate documents → `deliverables/`
 - ecosystem documentation → `docs/`
 - standards process flows → `master-standards-stack/process-flow-infographics/`
-- Shipment 001 execution assets → `master-standards-stack/CHINA_EXECUTION_PACK/`
+- shipment workflow execution assets → `master-standards-stack/CHINA_EXECUTION_PACK/`
 - partner-specific content → `partners/<partner-slug>/`
 - generators and validators → `tools/`
 - GitHub agents, instructions and prompts → `.github/`

@@ -63,7 +63,7 @@ def integrations():
     ]}
 
 @app.post("/v1/demo/run")
-def demo_run(payload: dict): return run_demo(payload.get("shipment_id", "SHIPMENT-001"), payload.get("object_id", "DEMO-PRODUCT-001"))
+def demo_run(payload: dict): return run_demo(payload.get("shipment_id", "shipment-workflow"), payload.get("object_id", "DEMO-PRODUCT-001"))
 
 @app.post("/v1/demo/integrations/jakim")
 def demo_jakim(payload: dict): return MOCK_HUB.jakim(payload.get("object_id", "DEMO-OBJECT"), payload.get("action", "status"))
@@ -72,13 +72,13 @@ def demo_jakim(payload: dict): return MOCK_HUB.jakim(payload.get("object_id", "D
 def demo_lab(payload: dict): return MOCK_HUB.laboratory(payload.get("object_id", "DEMO-OBJECT"), payload.get("result", "NOT_DETECTED"))
 
 @app.post("/v1/demo/integrations/sinotrans")
-def demo_sinotrans(payload: dict): return MOCK_HUB.sinotrans(payload.get("shipment_id", "SHIPMENT-001"), payload.get("status", "IN_TRANSIT"))
+def demo_sinotrans(payload: dict): return MOCK_HUB.sinotrans(payload.get("shipment_id", "shipment-workflow"), payload.get("status", "IN_TRANSIT"))
 
 @app.post("/v1/demo/integrations/port-customs")
-def demo_port(payload: dict): return MOCK_HUB.port_customs(payload.get("shipment_id", "SHIPMENT-001"), payload.get("port", "ORIGIN_PORT"))
+def demo_port(payload: dict): return MOCK_HUB.port_customs(payload.get("shipment_id", "shipment-workflow"), payload.get("port", "ORIGIN_PORT"))
 
 @app.post("/v1/demo/integrations/gcc")
-def demo_gcc(payload: dict): return MOCK_HUB.gcc(payload.get("shipment_id", "SHIPMENT-001"), payload.get("action", "receive"))
+def demo_gcc(payload: dict): return MOCK_HUB.gcc(payload.get("shipment_id", "shipment-workflow"), payload.get("action", "receive"))
 
 @app.post("/v1/demo/integrations/finance")
 def demo_finance(payload: dict): return MOCK_HUB.finance(payload.get("object_id", "DEMO-OBJECT"), payload.get("action", "quote"))

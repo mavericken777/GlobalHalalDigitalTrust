@@ -2,7 +2,7 @@
 
 **Control date:** 17 September 2026  
 **Source basis:** user-supplied `compliance_manual.pdf`, reconciled with the canonical standards/JAKIM control stack.  
-**Use:** manufacturer onboarding, factory transformation planning and [PILOT: Shipment 001] readiness.  
+**Use:** manufacturer onboarding, factory transformation planning, and evidence-linked market qualification.
 **Boundary:** secondary-source timing/cost claims are not treated as mandatory or universal; actual controls are resolved from the applicable current standards, certification instruments, facility and destination requirements.
 
 ## 1. Purpose
@@ -138,7 +138,7 @@ No generic PDF cost range is used as a budget without quotation/evidence.
 
 ## 11. Factory qualification gates
 
-A manufacturer cannot progress to [PILOT: Shipment 001] merely because retrofit work is planned.
+A manufacturer cannot progress to [PILOT: shipment workflow] merely because retrofit work is planned.
 
 Required states:
 
@@ -173,4 +173,4 @@ Recommended objects:
 
 ## 13. Completion state
 
-This module closes the implementation-method gap in the uploaded compliance manual by turning `Halal Built-In` and `retrofit` into controlled factory-transformation pathways tied to standards, evidence, audit closure and Shipment 001 readiness rather than generic time/cost assumptions.
+This module closes the implementation-method gap in the uploaded compliance manual by turning `Halal Built-In` and `retrofit` into controlled factory-transformation pathways tied to standards, evidence, audit closure and shipment workflow readiness rather than generic time/cost assumptions.

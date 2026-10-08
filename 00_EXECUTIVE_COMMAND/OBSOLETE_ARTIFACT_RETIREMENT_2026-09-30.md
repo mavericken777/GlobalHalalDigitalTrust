@@ -29,12 +29,12 @@ The former duplicate lowercase lineage has been retired after its richer/unique 
 | `.../00_MASTER_CHINA_EXECUTION_MODEL.md` | `CHINA_EXECUTION_PACK/00_MASTER_CHINA_EXECUTION_MODEL.md` | Same richer current content promoted |
 | `.../01_CHINA_HOD_RACI.md` | `CHINA_EXECUTION_PACK/01_CHINA_HOD_RACI.md` | Rich HOD/RACI retained |
 | `.../02_RULE_PRECEDENCE_ENGINE.md` | `CHINA_EXECUTION_PACK/02_RULE_PRECEDENCE_ENGINE.md` | Rich rule-precedence model retained |
-| `.../03_SHIPMENT_001_EVENT_CATALOGUE.md` | `CHINA_EXECUTION_PACK/03_SHIPMENT_001_EVENT_CATALOGUE.md` | Full event catalogue retained |
+| `.../03_shipment_workflow_EVENT_CATALOGUE.md` | `CHINA_EXECUTION_PACK/03_shipment_workflow_EVENT_CATALOGUE.md` | Full event catalogue retained |
 | `.../04_FACTORY_SYSTEM_API_CONTRACTS.md` | `CHINA_EXECUTION_PACK/04_FACTORY_SYSTEM_API_CONTRACTS.md` | Full factory contract retained |
 | `.../05_SMART_GLASS_AUDIT_SPEC.md` | `CHINA_EXECUTION_PACK/05_SMART_GLASS_AUDIT_SPEC.md` | Full smart-glass spec retained |
 | `.../06_PORT_OFFICER_UI_WORKFLOW.md` | `CHINA_EXECUTION_PACK/06_PORT_OFFICER_UI_WORKFLOW.md` | Full port workflow retained |
 | `.../07_CRYPTOGRAPHIC_TRUST_ANCHOR_ARCHITECTURE.md` | `CHINA_EXECUTION_PACK/07_CRYPTOGRAPHIC_TRUST_ANCHOR_ARCHITECTURE.md` | Full cryptographic architecture retained |
-| `.../08_CHINA_PILOT_SHIPMENT_001_GCC_RELEASE_PLAYBOOK.md` | `CHINA_EXECUTION_PACK/08_CHINA_PILOT_SHIPMENT_001_GCC_RELEASE_PLAYBOOK.md` | Full China→GCC playbook retained |
+| `.../08_CHINA_PILOT_shipment_workflow_GCC_RELEASE_PLAYBOOK.md` | `CHINA_EXECUTION_PACK/08_CHINA_PILOT_shipment_workflow_GCC_RELEASE_PLAYBOOK.md` | Full China→GCC playbook retained |
 | `.../api/ahtE-factory-openapi.yaml` | `CHINA_EXECUTION_PACK/api/ahtE-factory-openapi.yaml` | API contract retained |
 | `.../api/china-food-security-lab-openapi-extension.yaml` | `CHINA_EXECUTION_PACK/api/china-food-security-lab-openapi-extension.yaml` | Lab API contract retained |
 | `.../schemas/*.schema.json` | `CHINA_EXECUTION_PACK/schemas/*.schema.json` | Execution schemas retained |
@@ -47,7 +47,7 @@ The following shorter competing files in the uppercase pack were retired because
 |---|---|
 | `master-standards-stack/CHINA_EXECUTION_PACK/01_DEPARTMENT_RACI.md` | `01_CHINA_HOD_RACI.md` |
 | `master-standards-stack/CHINA_EXECUTION_PACK/05_SMART_GLASS_AUDIT_SPECIFICATION.md` | `05_SMART_GLASS_AUDIT_SPEC.md` |
-| `master-standards-stack/CHINA_EXECUTION_PACK/08_CHINA_PILOT_SHIPMENT001_GCC_RELEASE_PLAYBOOK.md` | `08_CHINA_PILOT_SHIPMENT_001_GCC_RELEASE_PLAYBOOK.md` |
+| `master-standards-stack/CHINA_EXECUTION_PACK/08_CHINA_shipment_workflow001_GCC_RELEASE_PLAYBOOK.md` | `08_CHINA_PILOT_shipment_workflow_GCC_RELEASE_PLAYBOOK.md` |
 
 Retained canonical upper-pack assets not replaced by the lowercase lineage include `09_MASTER_STANDARDS_FULL_MATRIX.md` and `10_MACHINE_READABLE_EXECUTION_PACK.json`.
 

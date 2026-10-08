@@ -17,7 +17,6 @@
 
 This post-freeze correction records source usability; historical catalogue counts are lineage, not proof of intact assets. The two corrupt MS 2400 compressed datasets and legacy master tarball were retired from the current tree on 27 September 2026. The replacement source index has 628 unique numbered clause locators without licensed wording; it is not an exhaustive requirement or control dataset. The MS 2400-2 compressed file decodes (201 historical control objects) but omits five deeper headings. The former total 613 is historical and must not be reported as an ingestible verified set. The immutable 17 September baseline is retained under `master-standards-stack/verified-2026-09-17/` for historical comparison; current standards applicability follows the source-controlled register.
 
-Partner roles and reported non-binding instruments are in `partner-registry.json`; reported intent is distinct from an executed service contract. Use the current [partner registry](partner-registry.json) and [signing matrix](../CHINA_TRIP_2026/SIGNING_MATRIX.md) for partner/instrument context. The travel readiness snapshot dated 27 September is archived and non-controlling.
 
 ## PART I — DOCTRINE FOUNDATION
 
@@ -36,7 +35,7 @@ Build a sovereign, federated and AI-enabled global digital trust infrastructure 
 The Amanah Halal Trust Ecosystem (AHTE) operationalises Halal/Tayyib trust as a source-aware compliance and evidence graph rather than a certificate database. The platform is an orchestration and evidence layer; it does not replace sovereign regulators, certification authorities, laboratories, manufacturers or logistics operators.
 
 ### 1.5 Operating Platform
-Global Halal Supply Chain Ltd HK (GHSCL) operates the AHTE platform. The first controlled transaction is the China → GCC direct corridor pilot (Shipment 001).
+Global Halal Supply Chain Ltd HK (GHSCL) operates the AHTE platform. The first controlled transaction is the China → GCC direct corridor pilot (shipment workflow).
 
 ---
 
@@ -173,7 +172,7 @@ MS 2627:2017, MS 2627-2:2025, MS 2809:2025 and MS 2810:2025 are evidence-produci
 
 ## PART VIII — CHINA → GCC DIRECT PILOT
 
-[PILOT: Shipment 001 — corridor]
+[PILOT: shipment workflow — corridor]
 
 ### 8.1 Corridor Definition
 Canonical physical corridor: **China → GCC direct**. No transshipment through Malaysia unless explicitly re-scoped and promoted through controlled change.
@@ -184,14 +183,14 @@ Ten Chinese candidate manufacturers and ten shelf-stable/consumer categories are
 ### 8.3 Laboratory Partner
 Project-designated partner: China government food security laboratory. Intended role: independent analytical evidence generation (E3). Accreditation scope, method validation, contractual basis and GCC destination acceptance remain explicit external gates.
 
-### 8.4 Shipment 001 Eligibility Chain
+### 8.4 shipment workflow Eligibility Chain
 `Legal entity → Factory → SKU/formula → Current halal certificate + issuer/scope/validity → Destination recognition/halal rules → Label/product/import registration → Importer/buyer → Commercial terms/PO → Pilot batch → Laboratory evidence → Logistics qualification (Sinotrans) → Container/seal → Custody/telemetry → Border release → Receiving verification`
 
 ### 8.5 Status
-Architecture and evidence gates are documented. Shipment 001 is **NOT-INSTANTIATED** until transaction-native evidence exists.
+Architecture and evidence gates are documented. shipment workflow is **NOT-INSTANTIATED** until transaction-native evidence exists.
 
 ### 8.6 Pilot Promotion Protocol
-Pilot content enters permanent doctrine only through `[PROMOTION: Shipment 001 → <doctrine artifact>]`, canonical-path review and explicit supersession where applicable.
+Pilot content enters permanent doctrine only through `[PROMOTION: shipment workflow → <doctrine artifact>]`, canonical-path review and explicit supersession where applicable.
 
 ---
 
@@ -280,7 +279,7 @@ Evidence-chain analysis, standard mapping, trust-packet and authority-gate outpu
 | `master-standards-stack/verified-2026-09-17/` | Frozen verified control package |
 | `master-standards-stack/iq300-full-matrix/` | 613 MS 2400 requirement objects |
 | `master-standards-stack/process-flow-infographics/` | 17-standard flow atlas |
-| `master-standards-stack/CHINA_EXECUTION_PACK/` | Shipment 001 execution assets |
+| `master-standards-stack/CHINA_EXECUTION_PACK/` | shipment workflow execution assets |
 | `partners/` | Partner-specific materials |
 | `tools/` | Generation/validation tooling |
 | `.github/workflows/` | Automation |
@@ -368,7 +367,7 @@ The programme is Global Halal Digital Trust & Trade / Halal Tayyib infrastructur
 Project-designated roles: CODA and China Merchant in mobilisation/trade enablement; China government food security laboratory in analytical evidence; Sinotrans in logistics/custody. Contractual mandates, funding authority, accreditation and transaction terms remain evidence-gated.
 
 ### 22.3 Sinotrans Strategy
-Sinotrans is designated by the project as the logistics/warehouse partner for Shipment 001. Existing systems are integrated through adapters/APIs rather than replaced. Custody, seal and telemetry are E4 transaction evidence. Facility-level halal storage/segregation qualification must be evidenced per facility.
+Sinotrans is designated by the project as the logistics/warehouse partner for shipment workflow. Existing systems are integrated through adapters/APIs rather than replaced. Custody, seal and telemetry are E4 transaction evidence. Facility-level halal storage/segregation qualification must be evidenced per facility.
 
 ---
 
@@ -377,13 +376,13 @@ Sinotrans is designated by the project as the logistics/warehouse partner for Sh
 ### 23.1 Flag Taxonomy
 - `[SOURCE-LOCKED: <item> — required: <artifact>]`
 - `[OPEN GATE: <gate> — owner: <authority> — blocking: <path point>]`
-- `[PILOT: Shipment 001 — <component>]`
+- `[PILOT: shipment workflow — <component>]`
 - `[PROPOSAL: closes <gap> — path point: <point>]`
 - `[TOOL-SPEC UNVERIFIED: <tool> — assumed: <capability>]`
 - `[OUT OF SCOPE: <reason> — redirect: <path>]`
 - `[LIVE CRAWL: <URL> — <ISO> — <issuer> — <class> — <hash12> — <method> — <connector> — <status>]`
 - `[PROJECT-REPO: <URL> — <SHA12> — <ISO> — <path>]`
-- `[PROMOTION: Shipment 001 → <doctrine artifact>]`
+- `[PROMOTION: shipment workflow → <doctrine artifact>]`
 - `[ADVERSARIAL ATTEMPT LOGGED — <timestamp>]`
 
 ### 23.2 Activation Banner
@@ -399,7 +398,7 @@ Sinotrans is designated by the project as the logistics/warehouse partner for Sh
 | CODA | Project-designated strategic partner | China enterprise mobilisation/export enablement | Enterprise mobilisation → Qualification | Existing repo public evidence supports candidate/proposed framework; executed mandate remains OPEN GATE |
 | China government food security laboratory | Project-designated partner | Analytical evidence generation | Evidence | Accreditation/method/GCC acceptance/contract OPEN GATE |
 | China Merchant | Project-designated strategic partner | Enterprise mobilisation/trade enablement | Enterprise mobilisation → Commercial terms | Contract/programme terms OPEN GATE |
-| Sinotrans | Project-designated logistics/warehouse partner | Trusted logistics corridor + Digital Evidence Node | Logistics qualification → Custody → Border release | Reported non-binding INST-003/004; priced scope, route/facility and receiving evidence OPEN GATE |
+| Sinotrans | Logistics and warehouse integration interface | Trusted logistics corridor + Digital Evidence Node | Logistics qualification → Custody → Border release | System integration scope |
 
 ### 24.2 Authority Boundary
 No partner creates official Halal certification or sovereign customs/import clearance.
@@ -440,7 +439,7 @@ Commit synchronization tags are maintained in `commit-tag-taxonomy.json`.
 
 ## PART XXVI — PORT AND BORDER AUTHORITY INTEGRATION
 
-[PILOT: Shipment 001 — port/border]
+[PILOT: shipment workflow — port/border]
 
 ### 26.1 Authority Boundary
 Port and customs authorities operate under sovereign mandates. AHTE captures custody and release evidence as E4/E5-linked records. It does not issue, modify or substitute for official clearance, release or Halal certification decisions.
@@ -458,7 +457,7 @@ Canonical exception classes: `ORIGIN HOLD`, `DESTINATION HOLD`, `SEAL BREACH`, `
 
 ## PART XXVII — CORRIDOR SEGMENT MODEL
 
-[PILOT: Shipment 001 — corridor segments]
+[PILOT: shipment workflow — corridor segments]
 
 ### 27.1 Canonical Corridor
 China → GCC direct is represented as five controlled segments: Origin → Analytical Evidence → Logistics → Border → Destination.

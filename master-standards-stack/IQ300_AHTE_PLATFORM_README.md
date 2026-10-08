@@ -4,7 +4,7 @@
 
 Map the Amanah Halal Trust Ecosystem end-to-end against the JAKIM/JSM Malaysian Halal standards architecture and operationalise the resulting controls, evidence, audit, authority and trade workflows across the China → GCC direct physical corridor. Malaysia is the governance/assurance and authority-connectivity plane unless a physical Malaysia movement is separately scoped.
 
-Current authority topology: **AHTE ⇄ Direct JAKIM API ⇄ JAKIM**. [PILOT: Shipment 001 — China → GCC direct; NOT-INSTANTIATED].
+Current authority topology: **AHTE ⇄ Direct JAKIM API ⇄ JAKIM**. [PILOT: shipment workflow — China → GCC direct; NOT-INSTANTIATED].
 
 ## Sovereign doctrine
 
@@ -57,12 +57,12 @@ The pack contains:
 
 1. Department-by-department China/Malaysia/GCC RACI.
 2. China-origin, Malaysian assurance and GCC-destination rule-precedence engine; this is jurisdiction resolution, not a physical route.
-3. Complete Shipment 001 event catalogue.
+3. Complete shipment workflow event catalogue.
 4. Factory ERP/MES/QMS/WMS/LIMS/API integration contracts.
 5. Smart-glass audit specification.
 6. Port officer UI/workflow specification.
 7. Cryptographic trust-anchor architecture.
-8. China Pilot → Shipment 001 → GCC Release operating playbook.
+8. China Pilot → shipment workflow → GCC Release operating playbook.
 9. Machine-readable execution manifest.
 
 ## Full Master Standards Matrix

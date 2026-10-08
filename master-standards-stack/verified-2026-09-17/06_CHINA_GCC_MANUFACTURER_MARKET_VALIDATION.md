@@ -6,7 +6,7 @@
 
 ## 1. Purpose and decision standard
 
-This dossier converts the initial ten-product/ten-manufacturer discovery set into a controlled pre-qualification pipeline for Shipment 001.
+This dossier converts the initial ten-product/ten-manufacturer discovery set into a controlled pre-qualification pipeline for shipment workflow.
 
 A manufacturer is not `approved` because its website displays a halal logo, an ISO/BRC/HACCP mark or a Middle East export claim. Public information establishes discovery and commercial plausibility only. Shipment eligibility requires the exact legal entity, factory, SKU, formulation, certificate issuer/scope/validity, destination recognition, label, importer, commercial order and batch/shipment evidence.
 
@@ -20,7 +20,7 @@ Current Saudi Food and Drug Authority controls require imported food to comply w
 
 For meat, poultry and their products, SFDA currently states that a halal slaughter certificate is mandatory. Other categories remain subject to the product's ingredients, claims and applicable requirements. Prepacked-food information must comply with Saudi/GSO labelling requirements; Arabic information is mandatory under the applicable labelling framework.
 
-**Saudi Shipment 001 gates:**
+**Saudi shipment workflow gates:**
 
 `Saudi importer legal eligibility -> SFDA account/importer profile -> exact food item registration where required -> HS/category confirmation -> label/Arabic compliance -> ingredient/additive conformity -> halal certificate/issuer/scope as applicable -> health/origin/lab documents as applicable -> customs/border documentation -> consignment/release`.
 
@@ -30,13 +30,13 @@ UAE MoIAT administers the federal Halal Products Control framework and publishes
 
 MoIAT's live registered-Halal-certification-body list currently includes active China-based certification bodies. This is useful for sourcing, but the exact issuer, certificate field/scope, dates and product/factory coverage must be checked at qualification time.
 
-**UAE Shipment 001 gates:**
+**UAE shipment workflow gates:**
 
 `UAE importer -> food/product registration/municipality or competent food-authority requirement -> product/category conformity -> Arabic/approved label -> halal body recognition and exact certificate scope where applicable -> customs/import docs -> port/food-control release`.
 
 ### 2.3 Bahrain, Kuwait, Oman and Qatar
 
-No Saudi or UAE approval is extrapolated to the remaining GCC states. For every target country the importer must supply a current destination checklist before Shipment 001 is committed:
+No Saudi or UAE approval is extrapolated to the remaining GCC states. For every target country the importer must supply a current destination checklist before shipment workflow is committed:
 
 `competent food authority -> importer licence -> product registration -> halal/issuer recognition -> label language/content -> additive/ingredient limits -> shelf-life rules -> health/origin certificates -> laboratory requirements -> border process -> customs/tariff/HS -> retail/distributor requirement`.
 
@@ -148,7 +148,7 @@ Each candidate must provide a controlled data room containing:
 
 ## 7. Evidence-status pipeline
 
-`DISCOVERED -> PUBLIC-CLAIM-VERIFIED -> DATA-ROOM-RECEIVED -> LEGAL-ENTITY-VERIFIED -> FACTORY-VERIFIED -> HALAL-CERTIFICATE-VERIFIED -> MATERIAL/SKU-QUALIFIED -> DESTINATION-REGULATORY-QUALIFIED -> BUYER/IMPORTER-ACCEPTED -> COMMERCIAL-APPROVED -> PILOT-BATCH-APPROVED -> SHIPMENT-001-ELIGIBLE`.
+`DISCOVERED -> PUBLIC-CLAIM-VERIFIED -> DATA-ROOM-RECEIVED -> LEGAL-ENTITY-VERIFIED -> FACTORY-VERIFIED -> HALAL-CERTIFICATE-VERIFIED -> MATERIAL/SKU-QUALIFIED -> DESTINATION-REGULATORY-QUALIFIED -> BUYER/IMPORTER-ACCEPTED -> COMMERCIAL-APPROVED -> PILOT-BATCH-APPROVED -> shipment-workflow-ELIGIBLE`.
 
 No state is skipped.
 
@@ -188,9 +188,9 @@ Commercial decisions must then incorporate:
 - payment/credit terms;
 - recall/liability allocation.
 
-No manufacturer is labelled a `hotcake` based solely on category popularity. The only defensible Shipment 001 choice is the SKU that clears evidence, regulatory, buyer and economics gates simultaneously.
+No manufacturer is labelled a `hotcake` based solely on category popularity. The only defensible shipment workflow choice is the SKU that clears evidence, regulatory, buyer and economics gates simultaneously.
 
-## 10. Shipment 001 recommended selection logic
+## 10. shipment workflow recommended selection logic
 
 The pilot should minimise unnecessary technical/regulatory complexity while still proving the AHTE trust thread. The decision engine should therefore compare eligible SKUs across:
 
@@ -223,7 +223,7 @@ No opaque numeric score is required. Use a traffic-light evidence matrix per can
 
 ## 12. Sinotrans pilot integration
 
-Once a SKU becomes `SHIPMENT-001-ELIGIBLE`, the logistics qualification pack binds:
+Once a SKU becomes `shipment-workflow-ELIGIBLE`, the logistics qualification pack binds:
 
 `manufacturer release -> loading location -> vehicle/container identity -> container cleanliness/history risk -> segregation -> seal -> export handoff -> port gate -> vessel/route -> telemetry where applicable -> destination port -> border inspection/hold/release -> receiving warehouse -> importer receipt`.
 
@@ -231,7 +231,7 @@ Applicable MS 2400 controls form the project assurance overlay. Destination law 
 
 ## 13. Current completion statement
 
-**Completed now:** category discovery; 10 manufacturer primary-source screen; current public halal/quality/export claim register; Saudi/UAE regulatory architecture; current Saudi retail-presence signals; qualification data-room schema; certificate-validation workflow; commercial validation model; Shipment 001 eligibility gates.
+**Completed now:** category discovery; 10 manufacturer primary-source screen; current public halal/quality/export claim register; Saudi/UAE regulatory architecture; current Saudi retail-presence signals; qualification data-room schema; certificate-validation workflow; commercial validation model; shipment workflow eligibility gates.
 
 **Not factually closable without third-party/private evidence:** actual current certificate files and issuer confirmation for each manufacturer; precise target SKU formulas; signed supplier quotations/MOQs; GCC importer and product registrations; retailer/distributor buyer commitment; purchase order; pilot batch; container booking; customs/border release; delivered shipment.
 

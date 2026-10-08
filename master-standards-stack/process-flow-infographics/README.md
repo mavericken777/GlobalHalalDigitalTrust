@@ -6,7 +6,7 @@ This directory is the visual execution layer for the **Amanah Halal Trust Ecosys
 
 ## Deliverables
 
-- `AHTE_HD_VISUAL_ATLAS.md` — complete mermaid graph set (canonical path, 17-standard router, evidence fabric, HITM plane, custody, sertu, lab boundary, audit, port, Shipment 001 corridor, exception states, recall, warehouse).
+- `AHTE_HD_VISUAL_ATLAS.md` — complete mermaid graph set (canonical path, 17-standard router, evidence fabric, HITM plane, custody, sertu, lab boundary, audit, port, shipment workflow corridor, exception states, recall, warehouse).
 - `00_AHTE_MASTER_JAKIM_MS_PROCESS_FLOW.svg` — master atlas covering the full standards universe.
 - `01_...` through `17_...` — one detailed process-flow SVG per represented standard.
 - `STANDARDS_FLOW_SPEC.json` — machine-readable standard/flow definitions.

@@ -100,7 +100,7 @@ flowchart LR
     EVT --> DEC[Release / Hold under competent authority]
 ```
 
-## 9. Shipment 001 graph
+## 9. shipment workflow graph
 
 `China manufacturer -> material provenance -> audit/lab evidence -> authority/certification -> batch -> pallet/carton -> container/seal -> China logistics -> port/export -> transit -> GCC port/customs -> warehouse -> distribution -> retail -> consumer verification`.
 

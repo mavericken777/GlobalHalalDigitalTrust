@@ -60,15 +60,39 @@
       "pages": 74,
       "sha256": "3cd4d9ac0ba99adcff98be7860f2a008bd1c6cc31ec99a4069e9e5784f70dc10",
       "classification": "SECONDARY-REFERENCE",
-      "accepted_for": ["cross-cutting governance", "traceability", "supplier risk", "document hierarchy", "audit-readiness patterns", "source leads"],
-      "not_authoritative_for": ["normative clause wording", "MS 2400 clause structure where conflicting with licensed source", "unverified 2026 amendment details"]
+      "accepted_for": [
+        "cross-cutting governance",
+        "traceability",
+        "supplier risk",
+        "document hierarchy",
+        "audit-readiness patterns",
+        "source leads"
+      ],
+      "not_authoritative_for": [
+        "normative clause wording",
+        "MS 2400 clause structure where conflicting with licensed source",
+        "unverified 2026 amendment details"
+      ]
     },
     "market_validation": {
       "pages": 48,
       "sha256": "5aeff302514c9486fe829f14dfd7d46c0633894a396628cfd43f3da6ff01e9cc",
       "classification": "SECONDARY-MARKET-REFERENCE",
-      "accepted_for": ["cost stack", "NPV/payback model structure", "scenario variables", "readiness prompts", "supplier/partner risk", "funding due-diligence categories"],
-      "not_authoritative_for": ["fixed ROI/payback", "automatic MRA market access", "blanket mandatory-export claims", "fixed grant capture", "fixed readiness scores"]
+      "accepted_for": [
+        "cost stack",
+        "NPV/payback model structure",
+        "scenario variables",
+        "readiness prompts",
+        "supplier/partner risk",
+        "funding due-diligence categories"
+      ],
+      "not_authoritative_for": [
+        "fixed ROI/payback",
+        "automatic MRA market access",
+        "blanket mandatory-export claims",
+        "fixed grant capture",
+        "fixed readiness scores"
+      ]
     }
   },
   "pdf_reconciliation": {
@@ -88,10 +112,14 @@
   },
   "market_validation": {
     "manufacturer_candidates_public_claim_screened": 10,
-    "destination_profiles": ["Saudi Arabia", "United Arab Emirates", "GCC country-specific template"],
+    "destination_profiles": [
+      "Saudi Arabia",
+      "United Arab Emirates",
+      "GCC country-specific template"
+    ],
     "economic_model": "evidence-backed variable-input NPV/payback/readiness framework",
     "retail_signal": "Saudi current packaged/canned-food category presence used as a screening signal, not a market-size forecast",
-    "shipment_001_status": "architecture and evidence gates complete; transaction not instantiated until external evidence exists"
+    "shipment_workflow_status": "architecture and evidence gates complete; transaction not instantiated until external evidence exists"
   },
   "repository_integrity": {
     "root_readme_synchronized": true,
@@ -131,5 +159,9 @@
   ],
   "production_freeze_rule": "Recheck current JAKIM/JAIN/MAIN, Department of Standards Malaysia/MySOL, destination regulator, certificate issuer/recognition, product/import and transaction sources immediately before operational reliance.",
   "copyright_rule": "Do not redistribute Malaysian Standards normative text; retain licensed sources under controlled access and store derived control objects with provenance.",
-  "generated_by": "IQ300 project workflow"
+  "generated_by": "IQ300 project workflow",
+  "repository_revision": {
+    "date": "2026-10-09",
+    "change": "Removed project-specific transaction identifiers and trip-administration material; retained standards and control-model reference."
+  }
 }

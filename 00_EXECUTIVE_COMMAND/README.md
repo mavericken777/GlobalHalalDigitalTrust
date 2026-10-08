@@ -1,18 +1,14 @@
-# 00_EXECUTIVE_COMMAND
+# Executive architecture references
 
-Doctrine, registries and mission control. **Day-to-day trip file is `CHINA_TRIP_2026/`.**
+This directory contains the platform doctrine, architecture registries, machine-readable schemas, and source-control references.
 
-## Now
+## Core references
 
-- Vehicle: GHSC HK 79801544
-- Malaysia: Coordinated framework with distinct competent mandates (see `CHINA_TRIP_2026/MALAYSIA_HALAL_AUTHORITY_MAP.md`)
-- Partner registry: `partner-registry.json` v2.1.0 (2026-09-27)
-- Doctrine: `IQ300_DOCTRINE.md`
-- Current standards registry: `master-standards-stack/iq300-all-jakim-ms/01_MASTER_STANDARDS_REGISTER.md`
-- Quarantine (legacy corrupt archives only): `artifact-quarantine-2026-09-26.json`
+- [Current target architecture](CURRENT_TARGET_ARCHITECTURE_2026-09-30.md)
+- [IQ300 doctrine](IQ300_DOCTRINE.md)
+- [Partner-role registry](partner-registry.json)
+- [Current standards register](../master-standards-stack/iq300-all-jakim-ms/01_MASTER_STANDARDS_REGISTER.md)
+- [Repository guide](../REPO_INDEX.md)
+- [Platform overview](../STATUS.md)
 
-## Canonical path
-
-`Authority → Standard / Instrument → Clause / Requirement → Applicability → Control → HCP / SCCP → Evidence → Audit Test → Finding → Corrective Action → Re-verification → Authority Gate → Trust State → Operational Release`
-
-`NOT DETECTED ≠ HALAL`. Trust State is not the certificate. The certificate lives in the one Malaysian Halal system.
+The architecture preserves the distinction between evidence and authority decisions, and between intended integration interfaces and verified live connections.

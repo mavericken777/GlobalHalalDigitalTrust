@@ -14,7 +14,7 @@ This matrix converts the China HOD discussion into departmental work packages. I
 | Industrial digitisation | MIIT / local industrial authorities | Which factory digital systems can interface with AHTE? | ERP/MES/WMS/QMS/LIMS integration pattern | Select pilot factory stack |
 | Conformity / accreditation | Chinese accreditation and certification ecosystem | How should competent conformity evidence and certificates be represented? | Credential/attestation schema | Define participating assessment bodies |
 | Local implementation | Beijing / provincial / municipal bodies as applicable | Which pilot sites, demonstration environments and operating approvals are needed? | Pilot execution plan | Establish local programme office |
-| Logistics | Carrier / port / warehouse operators | How are physical custody and seal events digitally bound? | Custody + seal event API | Run Shipment 001 rehearsal |
+| Logistics | Carrier / port / warehouse operators | How are physical custody and seal events digitally bound? | Custody + seal event API | Run shipment workflow rehearsal |
 | Laboratory | Qualified laboratories | Which methods, sample chains and result formats are accepted? | Method registry + result schema | Nominate labs |
 | GCC destination | Importers + destination authorities | What destination-specific evidence and import events are required? | Jurisdiction rule pack | Define Saudi/UAE first-wave requirements |
 

@@ -17,7 +17,7 @@
 
 ## 1. PURPOSE
 
-Perform an end-to-end reconciliation of the requirements and tasks stated in the controlling chat against the live GitHub repository, verify that the required doctrine, registries, protocols, partner folders, standards package and Shipment 001 architecture are present, identify stale/conflicting repository states, and distinguish completed repository work from source/external/transaction gates that cannot legitimately be fabricated.
+Perform an end-to-end reconciliation of the requirements and tasks stated in the controlling chat against the live GitHub repository, verify that the required doctrine, registries, protocols, partner folders, standards package and shipment workflow architecture are present, identify stale/conflicting repository states, and distinguish completed repository work from source/external/transaction gates that cannot legitimately be fabricated.
 
 ## 2. AUTHORITY BOUNDARY
 
@@ -100,9 +100,9 @@ Status: **COMPLETE AND PRESERVED.** This audit does not mutate the frozen packag
 | Process-flow visual system | Master atlas + 17 per-standard flows present |
 | Exact detailed subclauses not held for selected standards | Explicitly SOURCE-LOCKED; not fabricated |
 
-## 7. CHINA → GCC / SHIPMENT 001 RECONCILIATION
+## 7. CHINA → GCC / shipment workflow RECONCILIATION
 
-[PILOT: Shipment 001 — completion audit]
+[PILOT: shipment workflow — completion audit]
 
 Canonical physical route remains:
 
@@ -114,7 +114,7 @@ Machine-readable execution state is aligned through `master-standards-stack/CHIN
 - `standards_count = 17`;
 - Malaysia/JAKIM/JSM retained as an assurance/standards reference layer, **not a physical transit leg**.
 
-Shipment 001 remains correctly `NOT-INSTANTIATED`. Repository architecture is complete; transaction-native evidence cannot exist until a real manufacturer/SKU/importer/order/shipment is selected and executed.
+shipment workflow remains correctly `NOT-INSTANTIATED`. Repository architecture is complete; transaction-native evidence cannot exist until a real manufacturer/SKU/importer/order/shipment is selected and executed.
 
 ## 8. MANUFACTURER / MARKET WORK
 
@@ -193,4 +193,4 @@ At the audited head, the project state is:
 
 `REPOSITORY-DOCUMENTATION-COMPLETE / COMMAND-LAYER-COMPLETE / DOCTRINE-COMPLETE / SCHEMA-REGISTRY-COMPLETE / PORT-CORRIDOR-LAYER-COMPLETE / PARTNER-FOLDER-COMPLETE / VERIFIED-STANDARDS-PACKAGE-PRESERVED / SOURCE-CONFLICTS-ACCOUNTED / EXTERNAL-GATES-EXPLICIT / CHINA-GCC-DIRECT / NO-FABRICATED-AUTHORITY-CLAIMS`
 
-Completion is evidence-accounted. It does **not** assert that Shipment 001 has occurred or that external authorities/partners have supplied evidence that does not yet exist.
+Completion is evidence-accounted. It does **not** assert that shipment workflow has occurred or that external authorities/partners have supplied evidence that does not yet exist.

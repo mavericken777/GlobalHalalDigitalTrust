@@ -1,8 +1,8 @@
 {
   "artifact": "partner-registry.json",
   "version": "2.4.2",
-  "control_date": "2026-10-08",
-  "description": "Corridor party registry aligned to the complete China-origin -> GCC-destination target architecture, direct JAKIM API, PHC + JAKIM authorised human certification workflow, joint 24/7 Command Center, named China laboratory institution with separately governed traceability integration, and no-artificial-block implementation rule.",
+  "control_date": "2026-10-09",
+  "description": "Partner registry of intended platform roles and integration surfaces. It does not represent private negotiations, draft instruments, or unverified commercial commitments.",
   "system": "Coordinated Malaysia governance/assurance framework; PHC state halal-industry role; GHSCL international operating/digital-infrastructure role; AHTE trust fabric; direct JAKIM API; China -> GCC direct physical corridor unless separately rescoped.",
   "governing_architecture": "00_EXECUTIVE_COMMAND/CURRENT_TARGET_ARCHITECTURE_2026-09-30.md",
   "requirements_traceability": "00_EXECUTIVE_COMMAND/PLATFORM_REQUIREMENTS_TRACEABILITY_2026-09-30.md",
@@ -18,7 +18,6 @@
     "id": "ghscl-hk",
     "name": "GLOBAL HALAL SUPPLY CHAIN LIMITED",
     "registry": "Hong Kong Companies Registry",
-    "number": "79801544",
     "incorporated": "2026-02-11",
     "path": "partners/ghsc-hk/",
     "role": "International operating and digital-infrastructure vehicle for the China-origin to GCC-destination trust corridor",
@@ -32,7 +31,7 @@
       "role": "Malaysia competent-authority system / authorised human authority workflow",
       "integration": "direct authorised JAKIM API",
       "command_center_role": "24/7 authorised authority-side monitoring according to implemented mandate/interface permissions",
-      "project_human_workflow": "PHC + JAKIM authorised human certification review, including Mufti/scholars/authorised halal officers or decision-makers as applicable",
+      "project_human_workflow": "Competent authorities retain all formal certification decisions; ecosystem institutions provide scoped coordination and evidence support.",
       "ai_makes_formal_certification_decision": false,
       "connector_state": "production-credentials-required",
       "development_provider_required": true,
@@ -57,8 +56,7 @@
     {
       "id": "phc",
       "name": "Perak Halal Corporation Sdn Bhd",
-      "role": "Perak State Government GLC — Halal industry local and global",
-      "instrument": "INST-002 MoU with JGC HK 2025-08-27",
+      "role": "Perak State Government halal-industry GLC providing ecosystem and assurance coordination.",
       "path": "partners/phc/",
       "canonical_path_position": [
         "Control",
@@ -69,29 +67,20 @@
         "E1",
         "E2"
       ],
-      "authority_boundary": "PHC is the state halal-industry institutional layer in the project. The project formal certification workflow is PHC + JAKIM authorised human review; JAKIM/MAIN/JAIN and other competent authorities retain their lawful mandates. AI/AHTE do not make the certification decision.",
+      "authority_boundary": "Competent authorities retain formal certification decisions. PHC is represented in its state halal-industry role.",
       "integration_points": [
         "Manufacturer onboarding",
         "Institutional/industry coordination",
         "Controlled evidence workflow",
-        "PHC + JAKIM authorised human certification workflow",
         "Command Center operational coordination where authorised"
       ],
       "connector_state": "development-provider-active",
-      "connector_state_note": "Project role can be represented in the complete target platform before live external system integration; development state is not proof of an executed mandate.",
-      "contractual_status": "REPORTED_NONBINDING_INSTRUMENT",
-      "project_status": "project_designated_role",
-      "open_gates": [
-        "Exact contracting entity and mandate",
-        "Final executed operating scope"
-      ],
       "repository_path": "partners/phc/"
     },
     {
       "id": "jgc",
       "name": "Join Glory / JGC HK",
-      "role": "Facilitator on INST-002 and INST-003",
-      "instrument": "INST-002, INST-003",
+      "role": "Enterprise mobilisation and trade coordination interface",
       "path": "partners/jgc/",
       "canonical_path_position": [
         "Control",
@@ -102,13 +91,7 @@
         "E2"
       ],
       "authority_boundary": "No commercial facilitator creates official Halal certification or destination release.",
-      "open_gates": [
-        "Exact contracting entity and mandate",
-        "Final executed operating scope"
-      ],
       "connector_state": "development-provider-active",
-      "contractual_status": "REPORTED_NONBINDING_INSTRUMENT",
-      "project_status": "project_designated_role",
       "integration_points": [
         "Controlled document and evidence exchange"
       ],
@@ -118,8 +101,6 @@
       "id": "sinotrans",
       "name": "Sinotrans Overseas Development Ltd.",
       "role": "End-to-end logistics and warehouse operating partner with real-time monitoring/evidence integration",
-      "instrument": "INST-003 Sep 2025; INST-004 GHSC MoU 2026-03-03",
-      "next": "Name legal operating entity, warehouse/site and China-GCC lane on split MoAs",
       "path": "partners/sinotrans/",
       "canonical_path_position": [
         "Evidence",
@@ -130,13 +111,6 @@
         "E4"
       ],
       "authority_boundary": "Does not create Halal certification, port/customs release or GCC destination-authority status.",
-      "open_gates": [
-        "Named route/site/lane per shipment",
-        "Warehouse qualification evidence per facility",
-        "Production API/system access and security agreement",
-        "GCC receiving acceptance",
-        "Contractual basis"
-      ],
       "integration_points": [
         "Y2T/MIS/EDI/WMS/TMS/IoT adapter/API integration",
         "Warehouse receipt/segregation/storage/dispatch evidence",
@@ -160,15 +134,12 @@
         "port handoff",
         "delivery"
       ],
-      "contractual_status": "REPORTED_NONBINDING_INSTRUMENT",
-      "project_status": "project_designated_role",
       "repository_path": "partners/sinotrans/"
     },
     {
       "id": "nicfs",
       "name": "NICFS / Hengqin food-safety platform",
       "role": "China-side physical identity / traceability / anti-counterfeit source and optional laboratory-evidence integration",
-      "instrument": "templates MOA-NICFS-LAB and MOA-NICFS-TRACE",
       "path": "partners/nicfs/",
       "canonical_path_position": [
         "Identity",
@@ -180,11 +151,6 @@
         "E2"
       ],
       "authority_boundary": "Traceability/authenticity data and laboratory evidence do not independently create Halal certification.",
-      "open_gates": [
-        "Exact contracting entity and mandate",
-        "Final executed operating scope",
-        "Production system interface"
-      ],
       "integration_points": [
         "Enterprise/product identity",
         "One-item-one-code",
@@ -196,15 +162,12 @@
       ],
       "connector_state": "production-credentials-required",
       "development_provider_required": true,
-      "contractual_status": "DRAFT_OR_PROPOSED",
-      "project_status": "project_designated_role",
       "repository_path": "partners/nicfs/"
     },
     {
       "id": "coda",
       "name": "China Overseas Development Association",
       "role": "Institutional introductions and proposed China enterprise mobilisation/export enablement backbone",
-      "instrument": "MOA-CODA template",
       "path": "partners/coda/",
       "canonical_path_position": [
         "Enterprise mobilisation",
@@ -215,12 +178,6 @@
         "E2"
       ],
       "authority_boundary": "Does not create Halal certification authority or substitute for authority gates.",
-      "open_gates": [
-        "Programme eligibility",
-        "Institutional mandate",
-        "Funding authority",
-        "Executed/controlling partnership instrument"
-      ],
       "integration_points": [
         "Enterprise mobilisation",
         "Qualification",
@@ -229,8 +186,6 @@
         "Digital trust onboarding"
       ],
       "connector_state": "development-provider-active",
-      "contractual_status": "DRAFT_OR_PROPOSED",
-      "project_status": "project_designated_role",
       "repository_path": "partners/coda/"
     },
     {
@@ -238,7 +193,6 @@
       "name": "Lulu operating companies (see retailer dossier)",
       "role": "GCC receiving / listing",
       "path": "partners/lulu/",
-      "pack": "CHINA_TRIP_2026/RETAILERS/LULU/",
       "canonical_path_position": [
         "Evidence",
         "Receiving Verification"
@@ -248,11 +202,6 @@
         "E2"
       ],
       "authority_boundary": "Commercial receiving/listing does not replace official Halal or destination-authority decisions.",
-      "open_gates": [
-        "Exact contracting entity and mandate",
-        "Final executed operating scope",
-        "Production receiving/API integration"
-      ],
       "integration_points": [
         "Controlled document and evidence exchange",
         "Receiving verification",
@@ -261,8 +210,6 @@
       ],
       "connector_state": "production-credentials-required",
       "development_provider_required": true,
-      "contractual_status": "DRAFT_OR_PROPOSED",
-      "project_status": "project_designated_role",
       "repository_path": "partners/lulu/"
     },
     {
@@ -270,7 +217,6 @@
       "name": "Majid Al Futtaim Retail / Carrefour banner",
       "role": "GCC receiving / listing",
       "path": "partners/carrefour-maf/",
-      "pack": "CHINA_TRIP_2026/RETAILERS/CARREFOUR_MAF/",
       "canonical_path_position": [
         "Evidence",
         "Receiving Verification"
@@ -280,11 +226,6 @@
         "E2"
       ],
       "authority_boundary": "Commercial receiving/listing does not replace official Halal or destination-authority decisions.",
-      "open_gates": [
-        "Exact contracting entity and mandate",
-        "Final executed operating scope",
-        "Production receiving/API integration"
-      ],
       "integration_points": [
         "Controlled document and evidence exchange",
         "Receiving verification",
@@ -293,8 +234,6 @@
       ],
       "connector_state": "production-credentials-required",
       "development_provider_required": true,
-      "contractual_status": "DRAFT_OR_PROPOSED",
-      "project_status": "project_designated_role",
       "repository_path": "partners/carrefour-maf/"
     },
     {
@@ -302,7 +241,6 @@
       "name": "Tamimi Markets Company",
       "role": "KSA receiving / listing",
       "path": "partners/tamimi/",
-      "pack": "CHINA_TRIP_2026/RETAILERS/TAMIMI/",
       "canonical_path_position": [
         "Evidence",
         "Receiving Verification"
@@ -312,11 +250,6 @@
         "E2"
       ],
       "authority_boundary": "Commercial receiving/listing does not replace official Halal or destination-authority decisions.",
-      "open_gates": [
-        "Exact contracting entity and mandate",
-        "Final executed operating scope",
-        "Production receiving/API integration"
-      ],
       "integration_points": [
         "Controlled document and evidence exchange",
         "Receiving verification",
@@ -325,8 +258,6 @@
       ],
       "connector_state": "production-credentials-required",
       "development_provider_required": true,
-      "contractual_status": "DRAFT_OR_PROPOSED",
-      "project_status": "project_designated_role",
       "repository_path": "partners/tamimi/"
     },
     {
@@ -334,7 +265,6 @@
       "name": "noon marketplace seller path",
       "role": "Marketplace listing",
       "path": "partners/noon/",
-      "pack": "CHINA_TRIP_2026/RETAILERS/NOON/",
       "canonical_path_position": [
         "Evidence",
         "Receiving / Listing"
@@ -344,11 +274,6 @@
         "E2"
       ],
       "authority_boundary": "Marketplace/listing decisions remain distinct from authority certification and destination acceptance.",
-      "open_gates": [
-        "Exact contracting entity and mandate",
-        "Final executed operating scope",
-        "Production marketplace/API integration"
-      ],
       "integration_points": [
         "Controlled document and evidence exchange",
         "Authorised trust-record lookup",
@@ -356,8 +281,6 @@
       ],
       "connector_state": "production-credentials-required",
       "development_provider_required": true,
-      "contractual_status": "DRAFT_OR_PROPOSED",
-      "project_status": "project_designated_role",
       "repository_path": "partners/noon/"
     },
     {
@@ -374,14 +297,7 @@
         "E4"
       ],
       "authority_boundary": "Does not create Halal certification authority.",
-      "open_gates": [
-        "Specific programme participation",
-        "Commercial terms per transaction",
-        "Contractual basis"
-      ],
       "connector_state": "development-provider-active",
-      "contractual_status": "DRAFT_OR_PROPOSED",
-      "project_status": "project_designated_role",
       "integration_points": [
         "Enterprise mobilisation",
         "Trade enablement",
@@ -393,8 +309,6 @@
     {
       "id": "china-food-security-lab",
       "name": "National Food Safety (Hengqin) Innovation Center under Chinese Academy of Agricultural Sciences, China",
-      "project_status": "project_designated_partner",
-      "contractual_status": "OPEN-GATE",
       "role": "China-origin laboratory institution for analytical evidence generation and laboratory integration",
       "canonical_path_position": [
         "Evidence",
@@ -406,15 +320,6 @@
       "authority_boundary": "Does not create Halal certification. NOT_DETECTED != HALAL. Evidence is purpose-limited.",
       "repository_path": "partners/china-food-security-lab/",
       "current_profile": "partners/china-food-security-lab/AHTE_CHINA_LAB_TRACEABILITY_INTEGRATION_PROFILE_2026-09-30.md",
-      "open_gates": [
-        "Contracting legal entity and registered site",
-        "Accreditation scope per test method",
-        "Method validation status",
-        "Production system interface",
-        "JAKIM production API/interface permissions",
-        "GCC destination-market acceptance",
-        "Contractual basis"
-      ],
       "integration_points": [
         "Sample/custody evidence",
         "Method/QC/signed result",
@@ -437,7 +342,6 @@
         "integrity verification",
         "traceability/physical-code binding"
       ],
-      "identity_relation": "Project-designated institution name: National Food Safety (Hengqin) Innovation Center under Chinese Academy of Agricultural Sciences, China. Its relationship to the separate NICFS / physical identity / traceability platform remains unverified; do not conflate entities without an authoritative instrument.",
       "path": "partners/china-food-security-lab/",
       "identity_update": "partners/china-food-security-lab/CHINA_LAB_INSTITUTION_IDENTITY_UPDATE_2026-10-08.md"
     }

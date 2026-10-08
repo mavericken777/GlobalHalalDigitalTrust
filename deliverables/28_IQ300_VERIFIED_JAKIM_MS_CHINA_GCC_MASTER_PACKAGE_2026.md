@@ -34,7 +34,7 @@ The package is **documentation-complete and gap-accounted** for the 17 September
 
 **China -> GCC direct.**
 
-Malaysia/JAKIM/JSM is represented as a standards, assurance, authority and trust-reference layer where applicable. It is not a physical transit leg for Shipment 001 unless a later approved transaction record explicitly changes the route.
+Malaysia/JAKIM/JSM is represented as a standards, assurance, authority and trust-reference layer where applicable. It is not a physical transit leg for shipment workflow unless a later approved transaction record explicitly changes the route.
 
 ## Machine-readable manifest
 

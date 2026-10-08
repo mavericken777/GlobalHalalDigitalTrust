@@ -5,7 +5,7 @@
   "control_date": "2026-09-30",
   "freeze_boundary": "master-standards-stack/verified-2026-09-17/",
   "classification": "post-freeze corridor registry extension",
-  "description": "Canonical project corridor definition for China-GCC direct Shipment 001, including cross-cutting authority connectivity, Command Center, AI/ML and transaction-support planes.",
+  "description": "Canonical project corridor definition for China-GCC direct shipment workflow, including cross-cutting authority connectivity, Command Center, AI/ML and transaction-support planes.",
   "implementation_principle": "FULL ARCHITECTURE NOW -> REAL CONNECTORS WHEN AVAILABLE -> NO REDESIGN REQUIRED",
   "connector_states": ["development-provider-active", "sandbox-connected", "production-credentials-required", "production-connected"],
   "corridor": {
@@ -15,7 +15,7 @@
     "physical_route": "China -> GCC direct",
     "malaysia_role": "governance / assurance / direct JAKIM authority-connectivity plane unless separately scoped as a physical hop",
     "transshipment_rule": "No transshipment through Malaysia unless explicitly re-scoped and controlled as a proposal/change",
-    "scope": "Shipment 001 qualification and execution model",
+    "scope": "shipment workflow qualification and execution model",
     "status": "PILOT"
   },
   "cross_cutting_planes": {
@@ -109,14 +109,14 @@
       "open_gates": ["Importer identification", "Destination market", "Product category", "Destination authority/import requirements", "Production receiving/API connectivity"]
     }
   ],
-  "pilot_shipment": {
-    "id": "shipment-001",
-    "name": "Shipment 001",
+  "shipment_workflow": {
+    "id": "shipment-workflow",
+    "name": "shipment workflow",
     "status": "NOT-INSTANTIATED",
-    "pilot_flag": "[PILOT: Shipment 001 — China → GCC direct]",
+    "pilot_flag": "[PILOT: shipment workflow — China → GCC direct]",
     "eligibility_chain": ["Legal entity", "Factory", "SKU / formula", "Current halal certificate + issuer / scope / validity", "Destination issuer recognition / halal rules", "Label / product / import registration", "Importer / buyer", "Commercial terms / PO", "Pilot batch", "Laboratory evidence", "Audit/CAPA/re-verification as applicable", "Authority-linked status", "Logistics qualification", "Warehouse", "Container / seal", "Custody / telemetry", "Origin border release", "GCC border release", "Receiving verification"],
     "open_gates": ["Manufacturer selection", "SKU selection", "Importer / buyer identification", "PO issuance", "Batch production", "Booking confirmation", "Export / import documentation", "Actual lab evidence", "Actual authority status/decision", "Border release and receipt"],
-    "development_rule": "The complete Shipment 001 workflow may be exercised with clearly labelled synthetic/development data, but no event is marked as actually occurred until transaction-native evidence exists."
+    "development_rule": "The complete shipment workflow workflow may be exercised with clearly labelled synthetic/development data, but no event is marked as actually occurred until transaction-native evidence exists."
   },
   "implementation_boundary": {
     "external_gates_block": "live external activation and factual production claims",

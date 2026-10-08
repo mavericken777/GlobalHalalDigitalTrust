@@ -1,8 +1,8 @@
 # Global Halal Digital Trust
 
-**GLOBAL HALAL SUPPLY CHAIN LIMITED** · Hong Kong CR **79801544** · incorporation recorded from the supplied scan dated 11 February 2026; original verification remains open
+The platform is operated by **GLOBAL HALAL SUPPLY CHAIN LIMITED** as its international digital-infrastructure vehicle.
 
-[Current target architecture](00_EXECUTIVE_COMMAND/CURRENT_TARGET_ARCHITECTURE_2026-09-30.md) · [Implementation completeness rule](00_EXECUTIVE_COMMAND/IMPLEMENTATION_COMPLETENESS_RULE_2026-09-30.md) · [Codex rebuild prompt](docs/CODEX_PLATFORM_REBUILD_MASTER_PROMPT_2026-09-30.md) · [Website spec v2.1+](docs/WEBSITE_REBUILD_MASTER_SPEC_v2_2026-09-30.md) · [Trip pack](CHINA_TRIP_2026/00_READ_THIS_FIRST.md) · [A–Z index](REPO_INDEX.md) · [STATUS](STATUS.md)
+[Current target architecture](00_EXECUTIVE_COMMAND/CURRENT_TARGET_ARCHITECTURE_2026-09-30.md) · [Implementation completeness rule](00_EXECUTIVE_COMMAND/IMPLEMENTATION_COMPLETENESS_RULE_2026-09-30.md) · [Codex rebuild prompt](docs/CODEX_PLATFORM_REBUILD_MASTER_PROMPT_2026-09-30.md) · [Website spec v2.1+](docs/WEBSITE_REBUILD_MASTER_SPEC_v2_2026-09-30.md) · [A–Z index](REPO_INDEX.md) · [STATUS](STATUS.md)
 
 ## Current project architecture — aligned to 8 October 2026
 
@@ -15,8 +15,6 @@ Default physical corridor:
 **China → GCC direct**
 
 Malaysia is the governance/assurance and authority-connectivity plane unless a Malaysia physical movement is explicitly scoped.
-
-[PILOT: Shipment 001 — China → GCC direct]
 
 Target operating chain:
 
@@ -82,13 +80,9 @@ Development state must be clearly labelled and must not be represented as real a
 - **GCC destination layer** — importer, customs, authority, warehouse, distributor, retailer and verification.
 - **Shariah Finance/Takaful/tokenomics** — target transaction-support plane; independent financial/Shariah/regulatory decisions remain external.
 
-Start papers recorded in the repository include PHC–JGC, JGC–Sinotrans and GHSC HK–Sinotrans instruments/summaries. Execution status remains controlled by the trip/signing registers; a prepared or reported instrument is not automatically a production integration.
-
 ## Project status
 
-Use [`STATUS.md`](STATUS.md) for the current repository and implementation state. Mission planning records support partner coordination and do not control software delivery.
-
-Build the full target workflows with clearly identified development providers. Activate external integrations only with their real authorization, credentials, counterparties and transaction evidence. Shipment 001 remains a pilot and is not instantiated until transaction evidence exists.
+Use [`STATUS.md`](STATUS.md) for the current repository and implementation state. Build complete target workflows with clearly identified development providers and bind operational records to their source evidence and accountable actor.
 
 ## What this repository is
 

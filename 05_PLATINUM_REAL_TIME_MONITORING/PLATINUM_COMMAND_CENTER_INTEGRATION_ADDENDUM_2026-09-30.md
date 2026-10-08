@@ -290,9 +290,9 @@ A Platinum deployment aligned to this addendum should demonstrate:
 14. tokenomics functionality, if enabled later, is isolated behind its own legal/Shariah/regulatory controls;
 15. all public/private views keep certification state, trust state and operational state separate.
 
-## 11. Shipment 001 mapping
+## 11. shipment workflow mapping
 
-[PILOT: Shipment 001 — China → GCC direct]
+[PILOT: shipment workflow — China → GCC direct]
 
 For the pilot, the Command Center should be able to reconstruct:
 

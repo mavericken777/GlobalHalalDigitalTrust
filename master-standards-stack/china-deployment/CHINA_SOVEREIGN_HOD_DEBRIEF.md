@@ -190,7 +190,7 @@ MoIAT describes the UAE Halal National Mark as granted after verification agains
 
 `Booking -> vehicle/container qualification -> loading HCP -> seal applied -> digital custody transfer -> departure -> monitoring -> port handover -> destination arrival -> seal verification -> receiving inspection -> warehouse status`
 
-### Shipment 001 graph
+### shipment workflow graph
 
 `Manufacturer -> Batch -> Pallet -> Container -> Seal -> Shipment -> Carrier -> Origin Port -> Transit -> GCC Port -> Importer -> Warehouse -> Retail -> Verification`
 
@@ -225,7 +225,7 @@ Every model result should record model ID/version, input references, timestamp a
 | 0 | Governance setup | Named owners and mandates |
 | 1 | Digital foundation | Core objects and APIs validated |
 | 2 | Manufacturer activation | Pilot facilities audit-ready |
-| 3 | Shipment 001 | End-to-end physical/digital traceability demonstrated |
+| 3 | shipment workflow | End-to-end physical/digital traceability demonstrated |
 | 4 | GCC operations | Warehouse/retail and recall paths stable |
 | 5 | Scale | Federated multi-site/multi-route operation |
 
@@ -234,7 +234,7 @@ Every model result should record model ID/version, input references, timestamp a
 - **Week 1:** governance owners, identifiers, system map, pilots, data zones.
 - **Week 2:** site twins, standards/control ingestion, HCP/evidence templates, customs trust packet.
 - **Week 3:** dry-run audit, lab simulation, container/seal twin, carrier custody test, destination release simulation.
-- **Week 4:** integrated Shipment 001 rehearsal, incident/recall rehearsal, authority-decision rehearsal, HOD sign-off dossier.
+- **Week 4:** integrated shipment workflow rehearsal, incident/recall rehearsal, authority-decision rehearsal, HOD sign-off dossier.
 
 ## 15. HOD meeting outputs
 
@@ -275,7 +275,7 @@ master-standards-stack/
     CHINA_SOVEREIGN_HOD_DEBRIEF.md
     CHINA_COUNTERPART_INTERFACE_MATRIX.md
     DATA_SOVEREIGNTY_ARCHITECTURE.md
-    SHIPMENT_001_TRUST_PACKET_SCHEMA.json
+    shipment_workflow_TRUST_PACKET_SCHEMA.json
     MANUFACTURER_ONBOARDING_DOSSIER.md
     PORT_CUSTOMS_GATEWAY_SPEC.md
 ```

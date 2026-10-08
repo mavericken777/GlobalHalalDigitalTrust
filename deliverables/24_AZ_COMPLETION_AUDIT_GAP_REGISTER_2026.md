@@ -15,7 +15,7 @@
 - China execution pack and data-sovereignty architecture.
 - CODA enterprise enablement model.
 - Sinotrans playbook, data mapping and pilot SOP.
-- Shipment 001 event catalogue and China factory API contracts.
+- shipment workflow event catalogue and China factory API contracts.
 - AHTE Platinum real-time monitoring stack.
 - Port officer UI / border workflow.
 - Smart-glass audit specification.
@@ -43,7 +43,7 @@
 | P Platinum monitoring | Architecture present | Hardware/service deployment |
 | Q Quality | QMS/HACCP/Halal evidence model | Manufacturer evidence |
 | R Retail/GCC | Retail layer + candidates | Buyer onboarding |
-| S Shipment 001 | Event model and release gates present | Actual PO/shipment |
+| S shipment workflow | Event model and release gates present | Actual PO/shipment |
 | T Traceability | End-to-end model present | Live test |
 | U UX / interfaces | Port/smart-glass concepts present | Production implementation |
 | V Verification | Source registry and versioning present | Ongoing updates |
@@ -79,16 +79,14 @@ Root-level strategic files remain in existing directories. New compliance and ma
 ## 6. Completion status
 
 **Documentation and architecture:** complete for the repository snapshot audited on 17 September 2026.  
-**External operational completion:** not claimable as 100% until real certificates, contracts, importer approvals, lab evidence, logistics sign-offs and Shipment 001 evidence exist. This is an evidence boundary, not a documentation gap.
+**External operational completion:** not claimable as 100% until real certificates, contracts, importer approvals, lab evidence, logistics sign-offs and shipment workflow evidence exist. This is an evidence boundary, not a documentation gap.
 
 ## 7. Immediate operational gates already defined
 
-`Manufacturer -> document verification -> SKU freeze -> certificate scope -> label review -> importer -> logistics -> digital trust -> purchase order -> Shipment 001 -> GCC clearance -> receiving -> retail -> post-shipment audit.`
+`Manufacturer -> document verification -> SKU freeze -> certificate scope -> label review -> importer -> logistics -> digital trust -> purchase order -> shipment workflow -> GCC clearance -> receiving -> retail -> post-shipment audit.`
 
 ## 8. No-open-issue state
 
 GitHub issue search returned no open issues in the repository at the time of this audit. Pending work is therefore controlled through the gap matrix and external-gate register rather than unmanaged issues.
 
 ## 26 September 2026 current-status overlay
-
-The historical no-open-issue and completeness statements above are superseded for current project status by [the 26 September audit](../00_EXECUTIVE_COMMAND/REPOSITORY_READINESS_AUDIT_2026-09-26.md), the [archived 27 September mission-readiness snapshot](../CHINA_TRIP_2026/archive/readiness-register-2026-09-27.json) and [artifact quarantine](../00_EXECUTIVE_COMMAND/artifact-quarantine-2026-09-26.json). Issue #1 records historical external/production work. Documentation coverage is not source integrity or live-system evidence.

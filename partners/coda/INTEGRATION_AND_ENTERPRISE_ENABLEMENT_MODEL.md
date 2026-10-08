@@ -119,7 +119,7 @@ Core reusable objects:
 - manufacturers with digital identities;
 - Platinum devices deployed;
 - manufacturers matched to GCC buyers;
-- pilot shipments completed;
+- shipment workflows completed;
 - first transactions completed;
 - average onboarding cost and time;
 - support funding or cost-sharing successfully activated where available;

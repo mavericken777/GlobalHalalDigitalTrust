@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "AHTE Shipment 001 Trust Packet",
+  "title": "AHTE shipment workflow Trust Packet",
   "type": "object",
   "required": ["trustAssertionId", "jurisdiction", "shipment", "objects", "authority", "status", "issuedAt", "integrity"],
   "properties": {
