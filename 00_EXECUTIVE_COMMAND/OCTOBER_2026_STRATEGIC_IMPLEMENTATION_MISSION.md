@@ -7,11 +7,11 @@
 - Classification: project working plan; not booking evidence, signed agreement, or authority approval.
 - Commit: `fix(mission): reconcile October itinerary and reference safeguards [EVIDENCE-UPDATE]`
 
-[PROPOSAL: closes mission schedule and readiness gaps — path point: Control / Evidence]
+Working mission brief. It does not block software or repository delivery. Dates, attendance, and partner arrangements must be confirmed directly by the mission team.
 
-## Decision status
+## Mission plan
 
-**CONDITIONAL / NOT YET TRAVEL-READY.** Planning coverage does not establish operational completion. No tickets, reservation numbers, signed MOUs or attendance acceptances were supplied with this request. Sinotrans arrangements below are **operator-reported confirmations**, not independently authenticated correspondence.
+This is the operator-supplied working itinerary captured on 26 September 2026. It is not a current booking record; confirm itinerary, transport, attendance and accommodation details with the mission team.
 
 Travel: **11–18 October 2026, eight calendar days, seven nights**. All local times are UTC+08:00. No Shenzhen stop is included in the replacement itinerary. Opening: **Monday 12 October**, 25th floor, China Resources Building, Hong Kong; exact suite, event time, access and supplier booking remain to be confirmed.
 
@@ -28,7 +28,7 @@ Travel: **11–18 October 2026, eight calendar days, seven nights**. All local t
 
 ## Controlled itinerary
 
-| Date | Programme / supplied times | Transport and accommodation | Required output / unresolved gate |
+| Date | Programme / supplied times | Transport and accommodation | Meeting output / planning note |
 |---|---|---|---|
 | Sun 11 Oct | Three Malaysian delegates arrive Hong Kong in evening | KUL→HKG flight unselected; arrival pickup unassigned; **3 rooms, 1 night, breakfast**, near office | Arrival manifest, hotel vouchers, next-day briefing |
 | Mon 12 Oct | Opening ceremony; Turkish buffet; visit Sinotrans Overseas Hong Kong headquarters, Tsing Yi; evening flight to Beijing | Sinotrans reportedly supports hotel→China Resources Building→lunch→Tsing Yi→HKIA. **12 economy seats HKG→Beijing**; PEK/PKX unselected. Beijing Sinotrans pickup. Friendship Hotel, Haidian, tentative | Executive sponsor, Phase-1 implementation matrix, approved announcement, venue run sheet; airport/time gate |
@@ -39,13 +39,13 @@ Travel: **11–18 October 2026, eight calendar days, seven nights**. All local t
 | Sat 17 Oct | Guangzhou→Ka Shui International plant, Huizhou; plant visit and hosted lunch; drive to Mr. Wen's base, Zhuhai; seafood dinner | 3h Huizhou→Zhuhai is an **operator estimate only**; driver validates exact addresses, route, breaks and traffic. Zhuhai hotel | Plant/site identity and production evidence; no certification inference from product branding; protect evening rest |
 | Sun 18 Oct | **08:30 depart** for National Food Safety Innovation Center in Hengqin; short meeting; aim **leave by 10:30** for Macao; Chamber of Commerce lunch; internal debrief; escort to HKIA; flight to KUL | Border procedure, lawful vehicle arrangement, luggage and HKG airline/flight unselected. Tenny + Carson proposed escorts; restricted-area access cannot be assumed | Close action register; hard airport cutoff before fixing lunch/debrief; fallback omit optional debrief or move online |
 
-## Academy conflict — decision required before circulation
+## Academy schedule — alternatives in the 26 September plan
 
 **Plan A:** retain academy 13 Oct 14:30–18:00. Obtain Sinotrans's written amendment adding afternoon/dinner transfers. Use 14 Oct morning for Sinotrans/special meetings.
 
 **Plan B:** move academy to 14 Oct morning in line with later bus update. Release 13 Oct afternoon for preparation; replace the original Sinotrans/special meeting with academy. Reconfirm academy duration, lunch and rail connection.
 
-Neither option is approved by this document. **Owner: Wen Jian + Beijing Sinotrans coordinator; proposed resolution deadline 28 September.** Written host and transport agreement is the closure evidence. A bus itinerary alone does not prove a meeting has been rescheduled.
+Neither option is confirmed by this document. Check the current host and transport plan before circulation. A bus itinerary alone does not prove a meeting has been rescheduled.
 
 ## Reported Sinotrans confirmations — 26 September source record
 
@@ -70,7 +70,7 @@ Retain the original confirmation correspondence privately, with sender, date, ex
 ## Mission outputs and working files
 
 - [Signing and meeting pack](../deliverables/30_OCTOBER_2026_SIGNING_AND_MEETING_PACK.md)
-- [Readiness gates and proposed owners](october-2026-readiness.json)
+- [Superseded 27 September readiness snapshot](../CHINA_TRIP_2026/archive/readiness-register-2026-09-27.json) — historical only; its schedule/statuses are not current.
 - [Audit and closure report](REPOSITORY_READINESS_AUDIT_2026-09-26.md)
 - [Offline reference demo runbook](../docs/OCTOBER_2026_DEMO_RUNBOOK.md)
 

@@ -1,6 +1,6 @@
 # Travel decisions and confirmation worksheet
 
-Artifact: `CHINA_TRIP_2026/TRAVEL_DECISIONS.md` · v1.0 · 2026-09-27.
+Artifact: `CHINA_TRIP_2026/TRAVEL_DECISIONS.md` · v1.0 · 2026-09-27. **Historical planning snapshot; deadlines and proposals below are not current confirmations. Contact the mission team for current arrangements.**
 Commit: `fix(mission): reconcile signing and readiness controls [EVIDENCE-UPDATE]`.
 [PROPOSAL: itinerary execution — path point: Control / Evidence]
 
@@ -23,4 +23,4 @@ Flight departure ______ minus carrier check-in/bag-drop margin ______ minus tran
 
 ## Confirmation record (private details kept outside public Git)
 
-Gate ID ______; accepted owner ______; decision/version ______; confirmed local date/time ______; evidence hash/reference ______; reviewer/date ______; remaining conditions ______. Update the readiness JSON and regenerate the execution board only after evidence is recorded.
+Decision ______; responsible contact ______; confirmed local date/time ______; source/evidence reference ______; reviewer/date ______; follow-up ______. Keep private passenger and booking records outside public Git.

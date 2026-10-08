@@ -1,13 +1,14 @@
 # Execution board — commercial foundation and delivery
 
-Version: 1.2 · Control date: 2026-10-08 · Artifact: `CHINA_TRIP_2026/EXECUTION_BOARD.md`.
+Archived: 2026-10-08 · Underlying readiness snapshot: 2026-09-27 · Historical artifact; not current status.
 Supersedes the 2026-09-26 working draft where inconsistent.
 Commit: `fix(mission): reconcile signing and readiness controls [EVIDENCE-UPDATE]`.
 [PROPOSAL: trip preparation — path point: Control / Evidence / Authority Gate]
 
-Commercial foundation: GHSC incorporation and start MoUs are recorded in the [instrument register](01_INSTRUMENT_REGISTER.md); original-document review depth is in the [evidence index](evidence-index.json). This does not close travel, signing or production gates.
+Commercial foundation: GHSC incorporation and start MoUs are recorded in the [instrument register](../01_INSTRUMENT_REGISTER.md); original-document review depth is in the [evidence index](../evidence-index.json). This does not close travel, signing or production gates.
 
-The following table is generated from the readiness register by `python tools/trip_controls.py --render`. Owners and deadlines are proposed unless already confirmed by the operator. No notifications or bookings have been made by this update.
+The following table was generated from the readiness snapshot on 27 September 2026. Owners and deadlines were proposed unless explicitly confirmed at that time. It is retained for historical reference only.
+
 
 <!-- READINESS_START -->
 **status: `NOT_TRAVEL_READY`** · **signing_status: `NOT_SIGNING_READY`** · **demo_status: `REHEARSAL_PENDING`** · **production_status: `NOT_PRODUCTION_READY`**
@@ -46,4 +47,4 @@ The following table is generated from the readiness register by `python tools/tr
 
 ## In-room commercial outputs
 
-Sinotrans: exact contracting/operating entity, yard address, lane, authorised confirmation of INST-004 signers/dates, and written treatment of JGC/GHSC papers. Manufacturer/GHSC: first SKU, HS/category, receiving pack. Buyer: legal operating company and procurement/compliance owners. Laboratory: National Food Safety (Hengqin) Innovation Center under Chinese Academy of Agricultural Sciences, China; confirm contracting entity, registered site, accreditation/method scope and any relationship to the separate NICFS traceability platform. Record accepted owner, due date, private evidence reference and actual status in [FIELD_LOG.md](FIELD_LOG.md); these tasks do not become complete merely because a template exists.
+Sinotrans: exact contracting/operating entity, yard address, lane, authorised confirmation of INST-004 signers/dates, and written treatment of JGC/GHSC papers. Manufacturer/GHSC: first SKU, HS/category, receiving pack. Buyer: legal operating company and procurement/compliance owners. Laboratory: National Food Safety (Hengqin) Innovation Center under Chinese Academy of Agricultural Sciences, China; confirm contracting entity, registered site, accreditation/method scope and any relationship to the separate NICFS traceability platform. Record accepted owner, due date, private evidence reference and actual status in [FIELD_LOG.md](../FIELD_LOG.md); these tasks do not become complete merely because a template exists.

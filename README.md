@@ -2,7 +2,7 @@
 
 **GLOBAL HALAL SUPPLY CHAIN LIMITED** · Hong Kong CR **79801544** · incorporation recorded from the supplied scan dated 11 February 2026; original verification remains open
 
-[Current target architecture](00_EXECUTIVE_COMMAND/CURRENT_TARGET_ARCHITECTURE_2026-09-30.md) · [Implementation completeness rule](00_EXECUTIVE_COMMAND/IMPLEMENTATION_COMPLETENESS_RULE_2026-09-30.md) · [Codex rebuild prompt](docs/CODEX_PLATFORM_REBUILD_MASTER_PROMPT_2026-09-30.md) · [Website spec v2.1+](docs/WEBSITE_REBUILD_MASTER_SPEC_v2_2026-09-30.md) · [Trip pack](CHINA_TRIP_2026/00_READ_THIS_FIRST.md) · [Execution board](CHINA_TRIP_2026/EXECUTION_BOARD.md) · [A–Z index](REPO_INDEX.md) · [STATUS](STATUS.md)
+[Current target architecture](00_EXECUTIVE_COMMAND/CURRENT_TARGET_ARCHITECTURE_2026-09-30.md) · [Implementation completeness rule](00_EXECUTIVE_COMMAND/IMPLEMENTATION_COMPLETENESS_RULE_2026-09-30.md) · [Codex rebuild prompt](docs/CODEX_PLATFORM_REBUILD_MASTER_PROMPT_2026-09-30.md) · [Website spec v2.1+](docs/WEBSITE_REBUILD_MASTER_SPEC_v2_2026-09-30.md) · [Trip pack](CHINA_TRIP_2026/00_READ_THIS_FIRST.md) · [A–Z index](REPO_INDEX.md) · [STATUS](STATUS.md)
 
 ## Current project architecture — aligned to 8 October 2026
 
@@ -84,17 +84,11 @@ Development state must be clearly labelled and must not be represented as real a
 
 Start papers recorded in the repository include PHC–JGC, JGC–Sinotrans and GHSC HK–Sinotrans instruments/summaries. Execution status remains controlled by the trip/signing registers; a prepared or reported instrument is not automatically a production integration.
 
-## Readiness
+## Project status
 
-Commercial foundation is recorded; current repository status remains controlled by [`STATUS.md`](STATUS.md).
+Use [`STATUS.md`](STATUS.md) for the current repository and implementation state. Mission planning records support partner coordination and do not control software delivery.
 
-The [readiness register](00_EXECUTIVE_COMMAND/october-2026-readiness.json) records travel as `NOT_TRAVEL_READY` and signing as `NOT_SIGNING_READY`. Operator-reported `TRAVEL_READY` wording in the status and trip pack is not yet reconciled with the register's open travel gates and missing closure references. This describes repository evidence completeness; it does not determine whether the delegation can travel. Reconciliation requires confirmed gate updates and evidence references, followed by execution-board regeneration.
-
-Target architecture completeness and production readiness are separate:
-
-- target architecture may be fully built with development providers;
-- production activation requires real external permissions, security controls, credentials, counterparties and transaction-native evidence;
-- Shipment 001 remains uninstantiated until transaction evidence exists.
+Build the full target workflows with clearly identified development providers. Activate external integrations only with their real authorization, credentials, counterparties and transaction evidence. Shipment 001 remains a pilot and is not instantiated until transaction evidence exists.
 
 ## What this repository is
 
@@ -170,3 +164,9 @@ Trust State is a machine-readable evidence/operational state, not the certificat
 - `platform/` reference runtime and `platform/web/` prototype are not the complete production platform.
 - Current website/Codex implementation is governed by the v2.1+ website specification and v2.1+ Codex master prompt.
 - Current machine architecture registry v1.1.0+ carries the no-artificial-block implementation rule.
+
+## Current Amanah website implementation
+
+The latest public-site redesign is implemented in the Amanah repository under [PR #130](https://github.com/mavericken777/Amanah/pull/130), commit `91a19decf3ff429dee7cfaec7f6a6a5b24aab764`. It presents the complete, step-by-step product journey with a meaningful animated process view, uses Arial/Helvetica-style sans-serif typography, and identifies **Global Halal Supply Chain Limited**. It preserves the architecture and authority boundaries in this repository. The PR's GitHub CI checks pass; its Vercel preview checks are blocked by the provider's build-rate limit, so this revision is not merged or live on GitHub Pages. See the [website implementation alignment record](docs/WEBSITE_IMPLEMENTATION_ALIGNMENT_2026-10-08.md) for scope and release state.
+
+The public site and authenticated Amanah portal are implemented and released from the Amanah repository. This repository remains the canonical source for project doctrine, standards/source control, partner and mission records, architecture, and reference components; it does not maintain a second website implementation.

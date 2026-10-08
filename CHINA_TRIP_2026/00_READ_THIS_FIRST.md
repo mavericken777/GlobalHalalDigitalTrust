@@ -1,18 +1,15 @@
-# China trip — execution pack
+# China mission — project and partner materials
 
-Control date: 2026-09-27. Supersedes the 26 September aggregate completion wording.
+The trip pack contains partner, meeting, signing and operating material for the planned China → GCC work. Travel and meeting arrangements are managed by the mission team, separately from platform delivery.
 
-GHSC incorporation (HK CR 79801544, 11 February 2026) and the PHC–JGC, JGC–Sinotrans and GHSC–Sinotrans start papers are recorded in the [instrument register](01_INSTRUMENT_REGISTER.md). The [evidence index](evidence-index.json) distinguishes maintainer summaries from original-source review. Incorporation and intent do not themselves close the travel and signing workstreams.
+GHSC incorporation (HK CR 79801544, recorded from a supplied 11 February 2026 scan) and the PHC–JGC, JGC–Sinotrans and GHSC–Sinotrans start papers are documented in the [instrument register](01_INSTRUMENT_REGISTER.md). The [evidence index](evidence-index.json) distinguishes maintainer summaries from original-source review. Use the [signing matrix](SIGNING_MATRIX.md) for instrument status and the [field log](FIELD_LOG.md) for meeting outcomes.
 
-| Dimension | Current control |
+| Topic | Current project material |
 |---|---|
-| Travel | Operator-reported `TRAVEL_READY`; controlled register `NOT_TRAVEL_READY` — [readiness register](../00_EXECUTIVE_COMMAND/october-2026-readiness.json), [execution board](EXECUTION_BOARD.md) and [decision worksheet](TRAVEL_DECISIONS.md). Open travel gates require confirmed closure references before the register can reflect the operator headline. |
-| Signing | `NOT_SIGNING_READY` — [M01–M06 and optional instrument matrix](SIGNING_MATRIX.md) |
 | Authority roles | [Coordinated framework with distinct mandates](MALAYSIA_HALAL_AUTHORITY_MAP.md) |
-| Source meeting actions | [Kickoff reconciliation](KICKOFF_MINUTES_RECONCILIATION.md) |
-| Live outcomes | [Field log](FIELD_LOG.md); actual owners, dates and evidence |
-
-The supplied [Sinotrans playbook review](../master-standards-stack/22_SINOTRANS_PLAYBOOK_BUNDLE_REVIEW_2026-09-28.md) identifies false clause mappings and unapproved operating claims. Use the [October 15 acceptance worksheet](SINOTRANS_OCT15_ACCEPTANCE_WORKSHEET.md) for in-room decisions; it does not close any gate.
+| Meeting decisions | [Kickoff reconciliation](KICKOFF_MINUTES_RECONCILIATION.md) and [decision worksheet](TRAVEL_DECISIONS.md) |
+| Sinotrans partner discussions | [Acceptance worksheet](SINOTRANS_OCT15_ACCEPTANCE_WORKSHEET.md) |
+| Source review | [Sinotrans playbook review](../master-standards-stack/22_SINOTRANS_PLAYBOOK_BUNDLE_REVIEW_2026-09-28.md) |
 
 ## Required commercial outputs
 
@@ -27,4 +24,4 @@ The supplied [Sinotrans playbook review](../master-standards-stack/22_SINOTRANS_
 
 “PHC and GHSC are advancing the corridor from the recorded start MoUs to named sites, lanes, products and counterparties. This trip is to agree those operating details. Certification and destination acceptance remain with the competent authorities.”
 
-No outreach, booking or signature is implied by a prepared template. The full eight-day itinerary is in the [mission file](../00_EXECUTIVE_COMMAND/OCTOBER_2026_STRATEGIC_IMPLEMENTATION_MISSION.md).
+No outreach, booking or signature is implied by a prepared template. The detailed October schedule is a dated working plan in [`OCTOBER_2026_STRATEGIC_IMPLEMENTATION_MISSION.md`](../00_EXECUTIVE_COMMAND/OCTOBER_2026_STRATEGIC_IMPLEMENTATION_MISSION.md); confirm current arrangements with the mission team.

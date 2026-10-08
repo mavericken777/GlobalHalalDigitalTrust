@@ -23,6 +23,6 @@ The baseline at GitHub `main` commit `c294c03e12e0b4a11daeefe0c83c3f7ec4f059ed` 
 
 ## Remaining work that cannot be closed from repository edits
 
-The [execution board](../CHINA_TRIP_2026/EXECUTION_BOARD.md) lists travel T01–T13/G01–G02, signing S01–S05/G03, demonstration/communications D01–D02 and production P01–P04. The imminent travel decisions are the 13/14 October academy slot and lawful/private 12-person legal roster; flight/rail tickets, hotels, buses, venue, guest acceptances, budget and the Macao→HKIA hard cutoff need issued confirmations. Signing needs accepted bilingual texts and signatory mandates. Production requires authority/provenance inputs, working integrations and independent assurance. These are **open evidence gates**, not code defects and not waived by a passing structural validator.
+The [27 September execution-board snapshot](../CHINA_TRIP_2026/archive/execution-board-2026-09-27.md) recorded travel T01–T13/G01–G02, signing S01–S05/G03, demonstration/communications D01–D02 and production P01–P04. This paragraph describes that historical audit date; it is not current trip or software status.
 
 The next repository change should be tied to a specific evidence record or tested implementation. It must not declare travel, certification, third-party endorsement or production release from document completeness.

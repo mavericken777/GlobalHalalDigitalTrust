@@ -39,4 +39,4 @@ GHSCL/AHTE does not independently create competent-authority certification, cust
 
 Current target architecture: `../../00_EXECUTIVE_COMMAND/CURRENT_TARGET_ARCHITECTURE_2026-09-30.md`.
 
-Execution board: `../../CHINA_TRIP_2026/EXECUTION_BOARD.md`.
+Mission materials: `../../CHINA_TRIP_2026/00_READ_THIS_FIRST.md`.

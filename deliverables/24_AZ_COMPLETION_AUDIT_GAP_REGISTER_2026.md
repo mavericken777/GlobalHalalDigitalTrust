@@ -91,4 +91,4 @@ GitHub issue search returned no open issues in the repository at the time of thi
 
 ## 26 September 2026 current-status overlay
 
-The historical no-open-issue and completeness statements above are superseded for current readiness by [the new audit](../00_EXECUTIVE_COMMAND/REPOSITORY_READINESS_AUDIT_2026-09-26.md), [mission gates](../00_EXECUTIVE_COMMAND/october-2026-readiness.json) and [artifact quarantine](../00_EXECUTIVE_COMMAND/artifact-quarantine-2026-09-26.json). Issue #1 remains unresolved for external/production work. Documentation coverage is not source integrity or operational readiness.
+The historical no-open-issue and completeness statements above are superseded for current project status by [the 26 September audit](../00_EXECUTIVE_COMMAND/REPOSITORY_READINESS_AUDIT_2026-09-26.md), the [archived 27 September mission-readiness snapshot](../CHINA_TRIP_2026/archive/readiness-register-2026-09-27.json) and [artifact quarantine](../00_EXECUTIVE_COMMAND/artifact-quarantine-2026-09-26.json). Issue #1 records historical external/production work. Documentation coverage is not source integrity or live-system evidence.

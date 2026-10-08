@@ -15,9 +15,9 @@
 
 ## Current evidence-status overlay — 28 September 2026
 
-This post-freeze correction controls present readiness and source usability; historical catalogue counts below are lineage, not proof of intact assets. The two corrupt MS 2400 compressed datasets and legacy master tarball were retired from the current tree on 27 September 2026. The replacement source index has 628 unique numbered clause locators without licensed wording; it is not an exhaustive requirement or control dataset. The MS 2400-2 compressed file decodes (201 historical control objects) but omits five deeper headings. The former total 613 is historical and must not be reported as an ingestible verified set. The former 17 September standards directory has been removed from the current repository tree.
+This post-freeze correction records source usability; historical catalogue counts are lineage, not proof of intact assets. The two corrupt MS 2400 compressed datasets and legacy master tarball were retired from the current tree on 27 September 2026. The replacement source index has 628 unique numbered clause locators without licensed wording; it is not an exhaustive requirement or control dataset. The MS 2400-2 compressed file decodes (201 historical control objects) but omits five deeper headings. The former total 613 is historical and must not be reported as an ingestible verified set. The immutable 17 September baseline is retained under `master-standards-stack/verified-2026-09-17/` for historical comparison; current standards applicability follows the source-controlled register.
 
-Partner roles and reported non-binding instruments are in `partner-registry.json` v2.1.0; reported intent is distinct from a priced service contract. NICFS and the legacy laboratory placeholder are not confirmed aliases. Current mission and signing readiness: `october-2026-readiness.json` and `../CHINA_TRIP_2026/SIGNING_MATRIX.md`.
+Partner roles and reported non-binding instruments are in `partner-registry.json`; reported intent is distinct from an executed service contract. Use the current [partner registry](partner-registry.json) and [signing matrix](../CHINA_TRIP_2026/SIGNING_MATRIX.md) for partner/instrument context. The travel readiness snapshot dated 27 September is archived and non-controlling.
 
 ## PART I — DOCTRINE FOUNDATION
 
@@ -60,9 +60,9 @@ Global Halal Supply Chain Ltd HK (GHSCL) operates the AHTE platform. The first c
 | DOC-COMPLETE | Project documentation/control architecture is present and current for this snapshot. |
 | SOURCE-VERIFIED | Controlling source held/verified to the depth claimed. |
 | SOURCE-LOCKED | Exact licensed normative text is not held; architecture exists but wording/numbering is not invented. |
-| EXTERNAL-GATE | Closure requires evidence/actions from a manufacturer, authority, importer, buyer, logistics provider, bank or other third party. |
-| TRANSACTION-GATE | Cannot exist until a real SKU/order/shipment is created. |
-| ENGINEERING-GATE | Architecture is documented but production software/hardware requires implementation/testing. |
+| EXTERNAL ACTIVATION | A named external party must provide evidence or perform an action before that real-world workflow can proceed. |
+| TRANSACTION NOT INSTANTIATED | No real SKU/order/shipment exists yet; do not represent a pilot as a live transaction. |
+| IMPLEMENTATION STATUS | Distinguishes documented design, implemented workflow, tested integration, and verified production connection. |
 
 ---
 
