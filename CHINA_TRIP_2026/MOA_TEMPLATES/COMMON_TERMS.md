@@ -5,7 +5,7 @@ Supersedes the 2026-09-26 working draft where inconsistent.
 Commit: `fix(mission): reconcile signing and readiness controls [EVIDENCE-UPDATE]`.
 [PROPOSAL: trip preparation — path point: Control / Evidence / Authority Gate]
 
-The block below is embedded verbatim in each active draft. Update it with `python tools/trip_controls.py --sync-terms`. These are proposed terms for party/counsel review, not executed obligations.
+The block below is embedded verbatim in each active draft. Update it with `python tools/sync_moa_terms.py`. These are proposed terms for party/counsel review, not executed obligations.
 
 <!-- COMMON_TERMS_START -->
 ## Schedule D — common protective terms (proposed)

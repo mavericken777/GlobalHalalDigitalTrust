@@ -2,6 +2,13 @@
 
 Control date: 2026-10-08. This is a repository evidence status, not a certification, travel approval or production-activation statement.
 
+## Current state review — 8 October
+
+- GlobalHalalDigitalTrust `main` is at `e9690ce8656b36d6db5bbcab773d883a2ba9b62f` in the reviewed checkout. Main-branch repository integrity and runtime workflows have recent successful runs; see the [Repository integrity run](https://github.com/mavericken777/GlobalHalalDigitalTrust/actions/runs/37711628077) and [Gateway and OPA run](https://github.com/mavericken777/GlobalHalalDigitalTrust/actions/runs/37711628140). These checks do not establish external readiness.
+- The current Amanah website redesign is tracked in [Amanah PR #130](https://github.com/mavericken777/Amanah/pull/130), commit `91a19decf3ff429dee7cfaec7f6a6a5b24aab764`. Its code/build/browser/quality CI passes. Both Vercel preview checks report a build rate limit; the PR remains open and the public GitHub Pages site still serves the previous release. Details: [website implementation alignment](docs/WEBSITE_IMPLEMENTATION_ALIGNMENT_2026-10-08.md).
+- China mission details are maintained in the trip materials with the mission team; travel dates and bookings are not software release controls.
+- The immutable `master-standards-stack/verified-2026-09-17/` package was absent from the fetched `main` tree. This branch restores the exact 17-file package from commit `3d5cc29fabf7c3ed0da20cd938219fed83e74830` without editing its contents.
+
 ## 8 October controlling alignment
 
 The current cross-repository operating direction is maintained in [AMANAH’s 7 October platform execution prompt](https://github.com/mavericken777/Amanah/blob/main/docs/AMANAH_100_PERCENT_END_TO_END_MASTER_EXECUTION_PROMPT_2026-10-07.md) and [current platform summary](https://github.com/mavericken777/Amanah/blob/main/docs/operations/STATUS.md). This repository’s 30 September architecture files remain dated architecture references. Current standards applicability is governed by the dynamic source-controlled registry and current JAKIM/JSM sources.
@@ -38,42 +45,27 @@ This synchronization records the intended project topology:
 
 **FULL ARCHITECTURE NOW → REAL CONNECTORS WHEN AVAILABLE → NO REDESIGN REQUIRED.**
 
-An `EXTERNAL-GATE`, `ENGINEERING-GATE`, missing credential, missing production API or uninstantiated shipment is **not** permission to delete, disable, hide, downgrade or omit the corresponding target product capability.
-
-For unavailable external systems, the platform should implement the complete production contract and workflow with a replaceable development/sandbox provider while clearly identifying that provider as non-production. This preserves architectural completeness without fabricating real-world authority, partner or transaction evidence.
-
-**Architecture synchronization does not change production readiness.** The integrations above remain target-state until their real counterparties, permissions, production interfaces, security controls and transaction-native evidence are implemented and validated.
+Implement every target workflow against its production contract with a replaceable development provider. Clearly label simulated data. Connect real external systems when their interfaces and credentials are supplied; this does not limit current platform work.
 
 [PILOT: Shipment 001 — China → GCC direct; still NOT-INSTANTIATED until transaction evidence exists]
 
-## Current evidence/readiness status
+## Current platform status
 
 | Dimension | State | Basis |
 |---|---|---|
 | Target architecture | `DOC-COMPLETE / POST-FREEZE-PROPOSAL` | Consolidated 30 Sep architecture remains a dated reference; current operating alignment is the 7 Oct handoff |
 | Implementation completeness rule | `ACTIVE` | Required capability must remain architecturally complete even when external systems are not production-connected |
 | Commercial foundation | Incorporation and non-binding start papers recorded from maintainer-supplied scans/summaries | [Instrument register](CHINA_TRIP_2026/01_INSTRUMENT_REGISTER.md); exact original/custody/signatory checks remain open |
-| Travel | Operator-reported `TRAVEL_READY`; controlled register `NOT_TRAVEL_READY` | Operator headline and register disagree. Travel gates remain OPEN with no closure references in the register; ticketing, rooming, roster, schedule and routing confirmation must be reconciled there. |
-| Signing | `NOT_SIGNING_READY` | M01–M06 mapped; entity mandates, final bilingual text and counterparties' acceptance pending |
-| Demonstration | `REHEARSAL_PENDING` | Reference tests pass; travel laptop, offline backup and AV rehearsal not evidenced |
-| Production | `NOT_PRODUCTION_READY` | Reference stack only; live authority/partner/lab/port/GCC/finance integrations are not independently evidenced as production |
-| Direct JAKIM API | `TARGET / EXTERNAL+ENGINEERING GATE` | Complete target interface/workflow required now; production interface/permission/security implementation required for live state |
-| 24/7 Command Center | `TARGET / ENGINEERING GATE` | Complete command-center capability required now; production data/integrations/SRE implementation required for live operations |
-| Sinotrans real-time integration | `TARGET / EXTERNAL+ENGINEERING GATE` | Complete warehouse/logistics integration surface required now; production systems/API/site/lane/security agreement required for live state |
-| Port/customs APIs | `TARGET / EXTERNAL+ENGINEERING GATE` | Complete officer/API workflow required now; actual sovereign interfaces/permissions required for production use |
-| Shariah Finance/Takaful/tokenomics | `TARGET / EXTERNAL+ENGINEERING GATE` | Complete target architecture/workflows required now; counterparties, product structure, Shariah/legal/regulatory decisions required for live transaction use |
+| Production integrations | `DEVELOPMENT / NOT CONNECTED TO EXTERNAL PRODUCTION SYSTEMS` | Complete authority, laboratory, Sinotrans, port/customs, GCC and finance/Takaful workflows are part of the platform; use labelled development providers until production connections are supplied. |
+| Public website | `REDESIGN IN REVIEW` | Amanah PR #130 contains the current animated journey. |
 | MS 2400 source assets | `PASS_SOURCE_INDEX_ONLY` | Three corrupt legacy binaries retired from current tree; replacement archive has 628 clause/page locators, no licensed text or complete control rules |
-| Derived Sinotrans MS2400 bundle | `BLOCKED_SOURCE_CONFLICT` for normative use | Bundle review found false clause mappings and unapproved SOP/assay/technology claims |
+| Derived Sinotrans MS2400 bundle | `SOURCE CONFLICT — DO NOT USE FOR NORMATIVE MAPPING` | Bundle review found clause mappings and operating claims that are not source-verified. |
 
-## Status semantics
+## Integration model
 
-- `TARGET` means the capability belongs in the complete platform architecture.
-- `EXTERNAL-GATE` means live use requires an external party/instrument/approval; it does **not** mean remove the capability.
-- `ENGINEERING-GATE` means production implementation/validation remains; it does **not** mean replace the target with a blank placeholder.
-- `NOT_PRODUCTION_READY` means do not claim live deployment; it does **not** authorize architectural incompleteness.
-- Development providers may exercise complete workflows with synthetic/sandbox data provided they are clearly labelled and never represented as production evidence.
+Build each complete workflow against its production contract with a replaceable provider boundary. Clearly label development or synthetic data. Connect production providers when their interfaces and credentials are available.
 
-[Execution board](CHINA_TRIP_2026/EXECUTION_BOARD.md) · [Readiness register](00_EXECUTIVE_COMMAND/october-2026-readiness.json) · [Signing matrix](CHINA_TRIP_2026/SIGNING_MATRIX.md) · [Source retirement](00_EXECUTIVE_COMMAND/artifact-quarantine-2026-09-26.json) · [Sinotrans review](master-standards-stack/22_SINOTRANS_PLAYBOOK_BUNDLE_REVIEW_2026-09-28.md).
+[Signing matrix](CHINA_TRIP_2026/SIGNING_MATRIX.md) · [Source retirement](00_EXECUTIVE_COMMAND/artifact-quarantine-2026-09-26.json) · [Sinotrans review](master-standards-stack/22_SINOTRANS_PLAYBOOK_BUNDLE_REVIEW_2026-09-28.md) · [Website implementation alignment](docs/WEBSITE_IMPLEMENTATION_ALIGNMENT_2026-10-08.md).
 
 Passing repository checks proves structure to their stated scope, not competent-authority endorsement, legal enforceability, issued bookings, independent audit, production integration or release of Shipment 001. Licensed standards PDFs and private travel records are not included in this Git tree.
 

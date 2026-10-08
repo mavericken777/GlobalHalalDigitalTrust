@@ -56,7 +56,7 @@ The opening may proceed as a clearly described launch of the GHSCL initiative on
 
 ## What remains before 11 October
 
-The [27-gate register](october-2026-readiness.json) contains 23 mission gates and 4 production gates. Owners and dates are **proposed** unless the operator explicitly reported an arrangement; no external notifications have been sent.
+The 27-entry readiness register is retained as a dated planning record at [`../CHINA_TRIP_2026/archive/readiness-register-2026-09-27.json`](../CHINA_TRIP_2026/archive/readiness-register-2026-09-27.json). Its owners and dates were proposed unless explicitly reported at that time; this is historical evidence, not current project status.
 
 Critical path: resolve academy timing → confirm passenger/host identities → select and book travel/hotels → validate all transfers and return cutoff → settle instrument scope and authority → approve print/public claims → rehearse offline → final travel and signing go/no-go on 9 October.
 
