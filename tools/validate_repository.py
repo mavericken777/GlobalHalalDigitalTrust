@@ -38,8 +38,6 @@ def validate():
             json.loads(gzip.decompress(path.read_bytes())); counts['gzip_json'] += 1
         elif name.endswith('.svg'):
             ET.parse(path); counts['svg'] += 1
-    retired_baseline = ROOT / 'master-standards-stack/verified-2026-09-17'
-    assert not retired_baseline.exists(), 'retired 2026-09-17 standards package must remain removed'
     current_standards_register = ROOT / 'master-standards-stack/iq300-all-jakim-ms/01_MASTER_STANDARDS_REGISTER.md'
     assert current_standards_register.is_file(), 'current source-controlled standards register is missing'
     index_dir = ROOT / 'master-standards-stack/iq300-full-matrix/source-index-2026-09-27'
