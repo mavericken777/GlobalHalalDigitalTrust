@@ -1,18 +1,21 @@
-# China laboratory + traceability integration
+# National Food Safety (Hengqin) Innovation Center — laboratory evidence integration
 
-The current controlling integration profile is:
+**Named institution:** National Food Safety (Hengqin) Innovation Center under Chinese Academy of Agricultural Sciences, China.
 
-- [`AHTE_CHINA_LAB_TRACEABILITY_INTEGRATION_PROFILE_2026-09-30.md`](AHTE_CHINA_LAB_TRACEABILITY_INTEGRATION_PROFILE_2026-09-30.md)
-- canonical proposal OpenAPI: [`../../master-standards-stack/CHINA_EXECUTION_PACK/api/china-food-security-lab-openapi-extension.yaml`](../../master-standards-stack/CHINA_EXECUTION_PACK/api/china-food-security-lab-openapi-extension.yaml)
+The current controlling records are:
 
-The China-side system is treated as a **physical identity + item-level traceability + anti-counterfeit + laboratory evidence production plane** feeding AHTE. The consolidated profile covers one-item-one-code, microdot/QR/VOID physical identity, product/batch binding, unit→box→carton→pallet aggregation, consumer/channel verification, anti-diversion/scan analytics, controlled sampling, laboratory chain of custody, method/QC, signed results, evidence integrity, AI/ML predictive/preemptive assurance, direct JAKIM API connectivity and 24/7 GHSCL + authorised JAKIM Command Center monitoring.
+- [Institution identity update (8 October 2026)](CHINA_LAB_INSTITUTION_IDENTITY_UPDATE_2026-10-08.md)
+- [AHTE China laboratory + traceability integration profile](AHTE_CHINA_LAB_TRACEABILITY_INTEGRATION_PROFILE_2026-09-30.md)
+- [Proposal OpenAPI for laboratory evidence](../../master-standards-stack/CHINA_EXECUTION_PACK/api/china-food-security-lab-openapi-extension.yaml)
+
+The named laboratory institution contributes to the scientific-evidence workflow: controlled sampling, sample identity, chain of custody, method/QC, technical review, authorised signatory and signed report. The physical identity / item-level traceability / anti-counterfeit interface is a separate integration component unless an authoritative instrument confirms that it is operated by the same contracting entity.
+
+The integration profile covers product/batch binding, unit→box→carton→pallet aggregation, consumer/channel verification, anti-diversion/scan analytics, evidence integrity, AHTE event ingestion, direct JAKIM API authority workflow and the GHSCL + authorised JAKIM Command Center.
 
 Project authority topology:
 
-`China lab/traceability evidence → AHTE ⇄ DIRECT JAKIM API ⇄ JAKIM → PHC + JAKIM authorised human workflow → authority status → AHTE trust state`
+`China laboratory evidence → AHTE ⇄ DIRECT JAKIM API ⇄ JAKIM → authorised human workflow → authority status → AHTE trust state`
 
-**NOT DETECTED ≠ HALAL.** Laboratory evidence, QR/microdot/VOID identity, AI output and cryptographic hashes are assurance/evidence infrastructure; they do not independently create Halal certification.
+**NOT_DETECTED ≠ HALAL.** Laboratory evidence, QR/microdot/VOID identity, AI output and cryptographic hashes are assurance/evidence infrastructure; they do not independently create Halal certification.
 
-Exact laboratory legal entity/site, current accreditation/method scope, contractual role, production API credentials, JAKIM production interface and destination acceptance remain controlled implementation/evidence inputs. Their absence must not remove the target capability: **FULL ARCHITECTURE NOW → REAL CONNECTORS WHEN AVAILABLE → NO REDESIGN REQUIRED.**
-
-The earlier split 26 September profile and 30 September direct-API addendum have been superseded by the consolidated profile and are retired from the active tree; Git history retains their provenance.
+The contracting legal entity, registered site, current accreditation/method scope, contractual role, production API credentials, JAKIM production interface and destination acceptance remain controlled implementation/evidence inputs. Their absence must not remove the target capability: **FULL ARCHITECTURE NOW → REAL CONNECTORS WHEN AVAILABLE → NO REDESIGN REQUIRED.**
