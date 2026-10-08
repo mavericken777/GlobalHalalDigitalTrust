@@ -155,7 +155,7 @@ API -> API starting material -> excipient -> solvent/buffer/preservative/stabili
 Source and synthesis route are both control objects: catalyst, solvent, enzyme and other processing aids must be evaluated rather than assuming that chemical identity alone proves halal provenance.
 
 ### Vaccine / biologics HCP graph
-Cell/seed accession -> media/sera/trypsin/peptone -> adjuvant/carrier protein -> culture/harvest -> purification resins/enzymes/buffers -> formulation -> filling lot -> animal-house controls where present -> waste/rejected lots. The compendium explicitly requires the official Annex B table to be pulled from the JSM standard before a vaccine rule set is frozen.
+Cell/seed accession -> media/sera/trypsin/peptone -> adjuvant/carrier protein -> culture/harvest -> purification resins/enzymes/buffers -> formulation -> filling lot -> animal-house controls where present -> waste/rejected lots. The compendium explicitly requires the official Annex B table to be pulled from the JSM standard before a vaccine rule set is versioned.
 
 ## 6. MS 2634:2019 - Halal cosmetics
 
@@ -251,7 +251,7 @@ Supporting references identified by the supplied compendium include MS 1480, MS 
 16. Laboratory evidence and method validity.
 17. Packaging/labelling/claim control.
 18. Authority/certificate/logo separation.
-19. Version freeze.
+19. Version control.
 20. Physical/digital asset binding.
 
 ## 18. IQ300 trust states

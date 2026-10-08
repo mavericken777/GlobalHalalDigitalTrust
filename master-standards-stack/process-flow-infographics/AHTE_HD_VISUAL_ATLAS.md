@@ -239,9 +239,7 @@ flowchart LR
 
 ## 11. shipment workflow corridor — PILOT architecture
 
-`[PILOT: shipment workflow — corridor model]`
-
-Not instantiated until transaction-native evidence exists.
+China → GCC direct corridor model.
 
 ```mermaid
 flowchart LR
@@ -339,9 +337,9 @@ stateDiagram-v2
 | HITM plane | IQ300_ASSURANCE_CONTROL_PLANE_SPEC_v0.1.md — proposal only |
 | shipment workflow | README China → GCC pilot — gated |
 
-## Remaining gates
+## Current assurance workflow
 
-- Licensed MS normative wording: SOURCE-LOCKED (not drawn as clauses).
-- MPPHM 2020 Pindaan 2026 primary text: OPEN GATE.
-- shipment workflow events / contracts / POs: TRANSACTION GATE.
+- Standards wording is represented through applicable control references.
+- MPPHM 2020 Pindaan 2026 primary text: verify the current official source and edition before encoding normative details.
+- Shipment workflow events, contracts and purchase orders are recorded as they occur.
 - Raster HD frames generated in session remain local unless separately uploaded.

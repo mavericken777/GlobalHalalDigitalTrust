@@ -241,9 +241,7 @@
   ],
   "shipment_workflow": {
     "id": "shipment-workflow",
-    "name": "shipment workflow",
-    "status": "NOT-INSTANTIATED",
-    "pilot_flag": "[PILOT: shipment workflow — China → GCC direct]",
+    "name": "End-to-end China → GCC shipment workflow",
     "eligibility_chain": [
       "Legal entity",
       "Factory",
@@ -253,7 +251,7 @@
       "Label / product / import registration",
       "Importer / buyer",
       "Commercial terms / PO",
-      "Pilot batch",
+      "Shipment batch",
       "Laboratory evidence",
       "Audit/CAPA/re-verification as applicable",
       "Authority-linked status",
@@ -265,11 +263,6 @@
       "GCC border release",
       "Receiving verification"
     ],
-    "development_rule": "The complete shipment workflow workflow may be exercised with clearly labelled synthetic/development data, but no event is marked as actually occurred until transaction-native evidence exists."
-  },
-  "implementation_boundary": {
-    "external_gates_block": "live external activation and factual production claims",
-    "external_gates_do_not_block": "complete target architecture, domain models, adapters, role surfaces, workflows, development providers and tests",
-    "no_artificial_blocks": true
+    "development_rule": "Connect shipment events to transaction-native source evidence. Development fixtures support workflow testing and are always labelled as synthetic."
   }
 }

@@ -11,7 +11,7 @@
     "hcp",
     "evidence",
     "audit_tests",
-    "authority_gate",
+    "certification_decision",
     "trust_state_effect"
   ],
   "properties": {

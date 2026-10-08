@@ -25,7 +25,7 @@
     },
     {
       "tag": "[EVIDENCE-UPDATE]",
-      "meaning": "Adds/closes external gates",
+      "meaning": "Updates connected evidence and source status",
       "action": "Update A-Z completion/evidence registers",
       "owner": "Project maintainer"
     },

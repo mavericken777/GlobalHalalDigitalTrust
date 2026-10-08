@@ -13,7 +13,7 @@
     "hcp",
     "evidence_classes",
     "audit_test",
-    "authority_gate",
+    "certification_decision",
     "trust_state_effect"
   ],
   "properties": {

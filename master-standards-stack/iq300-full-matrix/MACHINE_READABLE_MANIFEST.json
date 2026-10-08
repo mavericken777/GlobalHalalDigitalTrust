@@ -1,49 +1,18 @@
 {
-  "package": "IQ300 Full Clause-to-Control Intelligence Layer",
-  "generated": "2026-09-15",
+  "package": "IQ300 full standards matrix",
+  "updated": "2026-10-09",
   "repository": "mavericken777/GlobalHalalDigitalTrust",
   "folder": "master-standards-stack/iq300-full-matrix",
-  "source_corpus": [
-    "MS 2400-1:2019 Transportation PDF",
-    "MS 2400-2:2019 Warehousing PDF",
-    "MS 2400-3:2019 Retailing PDF",
-    "halal audit training PDF",
-    "halal awareness PDF",
-    "JAKIM/Malaysian Halal standards compendia"
-  ],
-  "machine_readable_assets": [
-    "MS2400-22019_IQ300_REQUIREMENTS.json.gz",
+  "architecture": "Authority -> Standard/Instrument -> Requirement -> Applicability -> Control -> HCP -> Evidence -> Audit Test -> Finding -> Corrective Action -> Re-verification -> Certification Decision -> Trust State -> Operational Release",
+  "artifacts": [
     "requirement_schema.json",
+    "CONTROL_CATALOG.md",
     "SECTOR_FAMILY_CONTROL_MATRIX.md",
-    "SOURCE_AND_GAP_REGISTER.md",
     "TEST_LIBRARY.md",
-    "AUTHORITY_GATE_CATALOG.md"
+    "CERTIFICATION_DECISION_CATALOG.md",
+    "PROCESS_FLOWS.md"
   ],
-  "logic": "clause -> requirement intent -> applicability -> control -> HCP -> evidence -> audit test -> finding -> corrective action -> re-verification -> certification decision -> trust state",
-  "sector_standard_freeze_rule": "Do not fabricate unavailable licensed numbered subclauses. Use family-level mappings until authoritative text is licensed and verified.",
-  "authority_rule": "IQ300 is an evidence, control and decision-support layer. It does not itself issue Malaysian Halal certification.",
-  "integrity_review_2026_09_26": {
-    "status": "SUPERSEDED_BY_2026_09_27_SOURCE_INDEX",
-    "usable_decoded_objects": 201,
-    "historical_declared_objects": 613,
-    "note": "Historical 613 proposed controls omit 15 visible nested headings; two broken gzip files and master archive retired. The intact 201-object warehouse file is historical and not exhaustive.",
-    "quarantine_register": "../../00_EXECUTIVE_COMMAND/artifact-quarantine-2026-09-26.json"
-  },
-  "historical_declared_objects": 613,
-  "historical_by_standard": {
-    "MS 2400-1:2019": 187,
-    "MS 2400-2:2019": 201,
-    "MS 2400-3:2019": 225
-  },
-  "source_index_2026_09_27": {
-    "manifest": "source-index-2026-09-27/SOURCE_INDEX_MANIFEST.json",
-    "archive": "source-index-2026-09-27/IQ300_MS2400_SOURCE_INDEX_2026-09-27.tar.gz",
-    "locators": 628,
-    "by_standard": [
-      192,
-      206,
-      230
-    ],
-    "scope": "clause IDs and PDF-page locators only; no normative content or control-object replacement"
-  }
+  "decision_model": "AI/ML supports monitoring, evidence assessment and recommendations. Authorised JAKIM/JAIN/JAIM decision makers, muftis, scholars and halal auditors determine certification outcomes.",
+  "authority_topology": "AHTE ⇄ Direct JAKIM API ⇄ JAKIM",
+  "physical_corridor": "China → GCC direct"
 }

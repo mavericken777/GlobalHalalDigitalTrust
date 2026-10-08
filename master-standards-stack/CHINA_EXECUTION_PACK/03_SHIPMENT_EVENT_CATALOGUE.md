@@ -113,7 +113,7 @@ Every shipment workflow event uses the common envelope:
 | `E-CARRIER-ACCEPTANCE` | Carrier takes custody | shipment, condition | IN-CUSTODY |
 | `E-CUSTODY-TRANSFER` | Custody changes | from/to, time, location, condition | TRANSFERRED |
 | `E-VEHICLE-ARRIVAL` | Vehicle reaches node | vehicle, shipment | ARRIVED |
-| `E-GATE-CHECK` | Gate entry/exit | identity, seal, status | CLEARED/HOLD |
+| `E-CHECKPOINT-CHECK` | Checkpoint entry/exit | identity, seal, status | CLEARED/HOLD |
 | `E-PORT-INSPECTION` | Port/customs inspection | officer, packet, findings | CLEARED/HOLD |
 | `E-EXPORT-RELEASE` | Export clearance | declaration ref, release actor | RELEASED |
 

@@ -52,7 +52,7 @@ A row marked `PRESENT` means the target capability is represented in the current
 | P32 | Consumer/importer verification exposes authorised trust/certification/custody views without publishing confidential source data | Verification / selective disclosure | reference architecture; website spec; cryptographic architecture | PRESENT |
 | P33 | Data sovereignty is federated: sensitive source records stay with the responsible jurisdiction/system; minimum-necessary signed assertions/proofs may travel | Sovereignty / Evidence | reference architecture; China execution model; target architecture | PRESENT |
 | P34 | China is the origin/production ecosystem; GCC is the primary destination ecosystem; Malaysia is governance/assurance unless a physical Malaysia movement is explicitly scoped | Corridor | corridor registry; current target architecture | PRESENT |
-| P35 | shipment workflow is the first controlled China→GCC proof-of-execution and remains pilot until transaction-native evidence exists | Pilot | China execution pack; corridor registry | `[PILOT: shipment workflow]` |
+| P35 | China→GCC operating workflows connect shipment identity, evidence, custody, authority interfaces and GCC receiving | Physical chain / Evidence | China execution pack; corridor registry | PRESENT |
 | P36 | Public website, verification surface and authenticated stakeholder portals are separate experience classes; do not collapse the platform into one generic dashboard | Experience | website v2; Codex master prompt; reference architecture | PRESENT |
 | P37 | Roles include manufacturer, supplier, laboratory, auditor, PHC, JAKIM/authority, GHSCL Command Center, Sinotrans/logistics, warehouse, port/customs, importer/GCC, retailer, consumer, system and device identities | Identity / Experience | target architecture; website/Codex specs; RACI | PRESENT |
 | P38 | No artificial feature blocks, caps or disabled architecture because a live connector/credential/data set is not available | Implementation control | `IMPLEMENTATION_COMPLETENESS_RULE_2026-09-30.md` | PRESENT / MANDATORY |
@@ -133,7 +133,7 @@ An artifact may be deleted as obsolete only after:
 1. every unique substantive requirement has been preserved in its current replacement;
 2. all active references are repointed;
 3. a retirement entry records old path → replacement path → reason;
-4. frozen verified sources are left untouched;
+4. verified source versions are left untouched;
 5. historical audit records are not rewritten merely because they document an old state;
 6. repository validation passes after removal.
 

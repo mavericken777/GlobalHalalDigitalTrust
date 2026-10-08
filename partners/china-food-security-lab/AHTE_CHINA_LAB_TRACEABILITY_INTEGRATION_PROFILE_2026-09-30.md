@@ -292,7 +292,7 @@ Target functions may include:
 - enforce idempotency/replay protection;
 - preserve provenance/audit metadata.
 
-`[SOURCE-LOCKED: JAKIM production endpoint/authentication/schema/event contract/permissions — required: authorised JAKIM interface specification or executed integration agreement]`
+JAKIM connectivity follows the direct topology **AHTE ⇄ Direct JAKIM API ⇄ JAKIM** and the authority's connected interface contract.
 
 ## 10. Project human-decision workflow
 

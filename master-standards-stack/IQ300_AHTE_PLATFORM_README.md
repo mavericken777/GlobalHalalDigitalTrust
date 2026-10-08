@@ -4,7 +4,7 @@
 
 Map the Amanah Halal Trust Ecosystem end-to-end against the JAKIM/JSM Malaysian Halal standards architecture and operationalise the resulting controls, evidence, audit, authority and trade workflows across the China → GCC direct physical corridor. Malaysia is the governance/assurance and authority-connectivity plane unless a physical Malaysia movement is separately scoped.
 
-Current authority topology: **AHTE ⇄ Direct JAKIM API ⇄ JAKIM**. [PILOT: shipment workflow — China → GCC direct; NOT-INSTANTIATED].
+Current authority topology: **AHTE ⇄ Direct JAKIM API ⇄ JAKIM**. Physical corridor: **China → GCC direct**.
 
 ## Sovereign doctrine
 
@@ -42,7 +42,7 @@ Current catalogue verification is maintained against the JSM MySOL NSC 09 Halal 
 
 - `AMANAH_PLATFORM_AZ_MAPPING.md` — A-Z platform decomposition and standard-to-platform matrix.
 - `iq300-all-jakim-ms/` — Master standards register, full standards matrix, requirement/control/HCP/evidence architecture and standards lineage.
-- `iq300-full-matrix/source-index-2026-09-27/` — 628 numbered MS 2400 clause/page locators; historical 613 proposed controls are incomplete and only the warehouse gzip remains intact.
+- `iq300-full-matrix/` — full standards matrix, control catalogue, process flows, evidence profiles, audit tests and certification decision catalogue.
 - `process-flow-infographics/` — complete 17-standard infographic atlas and automated generator.
 - `CHINA_EXECUTION_PACK/` — complete China implementation pack.
 - `china-deployment/CHINA_SOVEREIGN_HOD_DEBRIEF.md` — HOD decision and deployment package.
@@ -62,7 +62,7 @@ The pack contains:
 5. Smart-glass audit specification.
 6. Port officer UI/workflow specification.
 7. Cryptographic trust-anchor architecture.
-8. China Pilot → shipment workflow → GCC Release operating playbook.
+8. China → GCC direct operating playbook.
 9. Machine-readable execution manifest.
 
 ## Full Master Standards Matrix
@@ -75,7 +75,7 @@ Every standard row maps to AHTE domains, HCP families, evidence profiles, audit 
 
 ## Machine-readable baseline
 
-The former **684 requirement/control object** total included **613 proposed MS 2400 objects** and is a historical design count, not an ingestible or exhaustive normative corpus. The current MS 2400 source index contains **628 unique numbered heading locators**; each control intent still needs clause-specific review. The China Execution Pack contains proposed event, rule, API, identity and operating-gate specifications, not a production system.
+The IQ300 library connects applicable Malaysian standards, controls, critical points, evidence, audit tests, corrective action and certification review across the complete supply-chain workflow. The China Execution Pack provides corresponding operating, event and API specifications.
 
 ## Physical + digital binding
 

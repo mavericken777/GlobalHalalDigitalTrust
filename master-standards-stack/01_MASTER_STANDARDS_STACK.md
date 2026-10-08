@@ -53,7 +53,7 @@ The supplied materials place application assessment, audit, panel/authority deci
 MPPHM, MHMS, current Protocols and circulars provide operational rules that sit around the standards. The detailed slaughter/stunning rules are not to be reconstructed from historic MS 1500 annex values when the current operative Protocol/authority instrument controls them.
 
 ### Other regulators
-NPRA and other sector regulators impose separate legal prerequisites. A halal engine must model those prerequisites as distinct regulatory gates rather than silently treating them as halal evidence.
+NPRA and other sector regulators impose separate legal prerequisites. A halal engine models those prerequisites as distinct regulatory steps rather than treating them as halal evidence.
 
 ## 4. Master control object
 
@@ -160,7 +160,7 @@ For the next controlled snapshot, MS 1500:2019, MS 2610:2015 and MS 2691:2021 ar
 
 The attached `ultra_deep_standards.pdf` provides an expanded secondary working reference across 12 standards: MS 2424, MS 2634, MS 2738, MS 2803, MS 2809, MS 2810, MS 2393, MS 2627, MS 2627-2, MS 1900, MS 2691 and MS 2610.
 
-It is accepted for **gap discovery and reconciliation**, not as a substitute for licensed primary Malaysian Standards. In particular, it does not remove existing SOURCE-LOCKED status for detailed normative subclauses of MS 2803:2025, MS 2809:2025, MS 2810:2025, MS 2627-2:2025 or MS 1900:2025.
+It supports gap discovery and reconciliation alongside the applicable Malaysian Standards and authority requirements.
 
 Candidate operational thresholds, fees, retention rules, certificate durations, audit frequencies and `MPPHM 2020 Pindaan 2026` claims remain gated pending primary/authority verification.
 

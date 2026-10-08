@@ -122,7 +122,7 @@ This is an interface map, not a claim that every institution must approve or ope
 | Logistics | How do carrier and port custody events bind to AHTE? | Custody integration protocol |
 | Industry systems | What can ERP/MES/WMS/QMS/LIMS expose? | Integration plan |
 | Laboratories | Which facilities and methods participate? | Lab network + method registry |
-| Scale | How does pilot become repeatable infrastructure? | Phase-gate roadmap |
+| Scale | How does the operating model become repeatable infrastructure? | Scale roadmap |
 
 ## 8. China data sovereignty architecture
 
@@ -220,7 +220,7 @@ Every model result should record model ID/version, input references, timestamp a
 
 ## 14. Pilot roadmap
 
-| Phase | Target | Exit gate |
+| Phase | Target | Completion outcome |
 |---|---|---|
 | 0 | Governance setup | Named owners and mandates |
 | 1 | Digital foundation | Core objects and APIs validated |

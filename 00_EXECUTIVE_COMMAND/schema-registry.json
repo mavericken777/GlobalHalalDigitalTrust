@@ -17,7 +17,7 @@
       "path": "trust-packet-schemas.json#/schemas/trust_packet",
       "purpose": "Trust-packet component output"
     },
-    "authority-gate": {
+    "certification-decision": {
       "path": "trust-packet-schemas.json#/schemas/certification_decision_object",
       "purpose": "Certification decision status output"
     },

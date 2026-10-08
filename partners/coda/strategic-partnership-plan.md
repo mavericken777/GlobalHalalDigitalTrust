@@ -1,6 +1,6 @@
 # CODA Strategic Partnership Plan
 
-> Current project control — 1 October 2026: China → GCC direct; Malaysia is governance/assurance/authority-connectivity unless separately scoped. Authority topology: AHTE ⇄ Direct JAKIM API ⇄ JAKIM. [PILOT: shipment workflow — China → GCC direct; NOT-INSTANTIATED]. Build the full target architecture now with clearly labelled replaceable development providers; phase dates govern activation/scale, not omission of capability. Competent humans/authorities retain decisions.
+The operating model uses the China → GCC direct corridor and the AHTE ⇄ Direct JAKIM API ⇄ JAKIM topology. PHC and JAKIM work in parallel across state and federal functions. AI/ML assists monitoring and recommendations; authorised human decision makers determine certification outcomes.
 
 
 ## Executive proposition

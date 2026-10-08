@@ -111,7 +111,7 @@ flowchart LR
     FILL --> LOT[Lot release]
 ```
 
-The supplied maximum-depth compendium expressly says the official Annex B table should be obtained before freezing every vaccine rule. IQ300 must preserve that as a source-verification gate.
+The supplied maximum-depth compendium directs users to the official Annex B table when applying vaccine requirements. IQ300 links those requirements to current source references.
 
 ---
 

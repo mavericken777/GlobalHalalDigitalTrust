@@ -20,7 +20,7 @@ Every standard is represented by an object with these logical fields:
 `risk_class`
 `evidence`
 `audit_tests`
-`authority_gate`
+`certification_decision`
 `digital_events`
 `failure_states`
 `corrective_action`
@@ -51,7 +51,7 @@ The supplied PDF is fully parsed into **187 individually numbered requirement ob
 
 ### MS 2400-2:2019 - Warehousing
 
-The supplied PDF is fully parsed into **201 individually numbered requirement objects** in `../iq300-full-matrix/MS2400-22019_IQ300_REQUIREMENTS.json.gz`. Core HCPs include inbound verification, quarantine/release/reject/return state transitions, segregation, storage conditions, pest/hygiene, traceability, dispatch, damaged/returned stock and outsourced warehousing.
+The warehouse control profile covers inbound verification, segregation, storage conditions, pest/hygiene, traceability, dispatch, damaged/returned stock and outsourced warehousing.
 
 ### MS 2400-3:2019 - Retailing
 
@@ -59,7 +59,7 @@ The supplied PDF is fully parsed into **225 individually numbered requirement ob
 
 ### MS 2424:2019 - Pharmaceuticals
 
-| Clause family | Primary control object | HCP focus | Evidence/test | Gate |
+| Clause family | Primary control object | HCP focus | Evidence/test | Decision owner |
 |---|---|---|---|---|
 | 4.1 | PH-QMS | halal embedded in quality system | DOC-01/REC-01 | AUTH-AUDIT |
 | 4.2 | PH-MGMT | policy, IHC, resources, records | DOC-01/INT-01 | AUTH-AUDIT |

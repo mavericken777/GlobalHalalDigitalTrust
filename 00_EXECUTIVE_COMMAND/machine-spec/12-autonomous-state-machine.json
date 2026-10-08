@@ -38,7 +38,7 @@
     {
       "from": "assessed",
       "to": "eligible",
-      "on": "hard_gates_pass_and_no_reserved"
+      "on": "assurance_checks_passed_and_no_reserved"
     },
     {
       "from": "hitm_open",

@@ -55,7 +55,7 @@ Inspection devices should cache only the minimum required operational data, reco
 
 ## 7. Physical infrastructure
 
-Recommended physical kit for the pilot: secure inspection tablet, identity reader where permitted, seal scanner/reader, package barcode/QR/NFC reader, camera, optional RFID capability, network connectivity, secure local storage for offline events, and a portable printer where operational documents are needed.
+Recommended physical kit for deployment: secure inspection tablet, identity reader where permitted, seal scanner/reader, package barcode/QR/NFC reader, camera, optional RFID capability, network connectivity, secure local storage for offline events, and a portable printer where operational documents are needed.
 
 ## 8. Auditability
 

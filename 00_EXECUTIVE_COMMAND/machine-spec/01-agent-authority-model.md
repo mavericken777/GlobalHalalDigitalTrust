@@ -1,6 +1,6 @@
 # 01 — Agent Authority Model
 
-[PROPOSAL] [ENGINEERING-GATE: runtime]
+Agent authority model for the AHTE runtime.
 
 ## Roles
 
@@ -12,7 +12,7 @@
 | HITM PEP (OPA) | Classify D0–certification determination; deny undefined | Treat model confidence as allow |
 | Fracture monitor | D4 auto-hold | Auto-release |
 | Authority wrapper | Hold/verify external VC / E5 | Issue Malaysia Halal / SPHM VC |
-| Release engine | Operational release after gates | Equate release with certification |
+| Release engine | Operational release follows completed checks and authorized decisions | Equate release with certification |
 
 ## Safety property
 

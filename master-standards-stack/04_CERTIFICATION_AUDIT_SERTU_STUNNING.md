@@ -5,7 +5,7 @@
 The supplied `halal audit.pdf` distinguishes two major audit stages:
 
 ### Adequacy audit
-A document/scope sufficiency gate before further application processing. The supplied material lists review of:
+A document and scope review before further application processing. The supplied material lists review of:
 
 - company profile;
 - factory location;
@@ -100,7 +100,7 @@ The supplied compendia connect certification operations to MPPHM 2020 and MHMS 2
 - panel/authority decision;
 - certification mark permissions.
 
-The supplied maximum-depth compendium describes an international-manufacturing route beginning 1 January 2024 with items including Malaysian-registered applicant, one manufacturing address, a minimum multi-day audit trip, HAS and a portal-described validity period. These are version-sensitive operational details and must be verified against the current official procedure before software hard-freeze.
+The supplied maximum-depth compendium describes an international-manufacturing route beginning 1 January 2024 with items including Malaysian-registered applicant, one manufacturing address, a minimum multi-day audit trip, HAS and a portal-described validity period. These are version-sensitive operational details and must be verified against the current official procedure before software deployment.
 
 ## 8. Certification object
 

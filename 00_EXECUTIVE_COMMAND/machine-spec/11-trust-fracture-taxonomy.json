@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "control_date": "2026-09-20",
   "classification": "current project artifact",
-  "pilot": "[PILOT: shipment workflow — continuous trust-fracture monitoring]",
   "events": [
     {
       "code": "seal_break",
@@ -65,5 +64,5 @@
     "re_verification",
     "resolved_release_OR_authority_HITM"
   ],
-  "ban": "Do not instantiate events without transaction-native evidence."
+  "event_integrity": "Operational events must be attributable to an object, actor, timestamp and evidence source; simulated events must be identified as simulated."
 }

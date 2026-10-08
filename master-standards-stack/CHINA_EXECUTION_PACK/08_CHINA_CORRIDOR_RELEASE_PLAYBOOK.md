@@ -23,58 +23,58 @@ Execute the first controlled China → GCC deployment as a complete physical + d
 ### Destination
 Start with a named GCC market and expand after the first shipment. The pack supports Saudi Arabia and UAE destination rule variants.
 
-## 3. Stage gates
+## 3. Journey stages
 
-### Gate 0 — Governance
+### Stage 0 — Governance
 **Inputs:** HOD mandate, programme sponsor, pilot scope.
 
 **Outputs:** signed programme charter, interface owners, technical workstreams.
 
 **Pass:** every interface has an accountable owner.
 
-### Gate 1 — Manufacturer activation
+### Stage 1 — Manufacturer activation
 **Inputs:** legal/site/product information.
 
 **Outputs:** facility twin, product objects, material dossiers, system inventory.
 
 **Pass:** factory can produce an auditable digital batch genealogy.
 
-### Gate 2 — Assurance readiness
+### Stage 2 — Assurance readiness
 **Inputs:** standards/control set, HCP model, evidence templates.
 
 **Outputs:** audit package, lab plan, corrective-action workflow.
 
 **Pass:** dry-run audit closes with traceable evidence.
 
-### Gate 3 — Shipment readiness
+### Stage 3 — Shipment readiness
 **Inputs:** released lots, packaging, pallets, logistics booking.
 
 **Outputs:** shipment object, container, seal, trust packet, export document set.
 
 **Pass:** 100% critical objects reconcile.
 
-### Gate 4 — Export
+### Stage 4 — Export
 **Inputs:** origin packet, declaration, physical cargo.
 
 **Outputs:** export release + signed custody event.
 
 **Pass:** origin inspection and system state match.
 
-### Gate 5 — GCC arrival
+### Stage 5 — GCC arrival
 **Inputs:** container, seal, trust packet, importer records.
 
 **Outputs:** destination inspection, import decision, warehouse receipt.
 
 **Pass:** seal/container/document reconciliation succeeds or exceptions are dispositioned.
 
-### Gate 6 — Destination release
+### Stage 6 — Destination release
 **Inputs:** import release, destination reconciliation.
 
 **Outputs:** warehouse release, distribution event.
 
 **Pass:** affected inventory objects are correctly scoped.
 
-### Gate 7 — Post-shipment
+### Stage 7 — Post-shipment
 **Inputs:** event stream, exceptions, audit results.
 
 **Outputs:** lessons, KPI report, scale decision.
@@ -98,7 +98,7 @@ Start with a named GCC market and expand after the first shipment. The pack supp
 
 ## 5. Four-week integrated sprint
 
-### Week 1 — Institutional + technical freeze
+### Week 1 — Institutional and technical scope definition
 
 - Confirm counterpart owners.
 - Confirm product roster.
@@ -131,12 +131,12 @@ Start with a named GCC market and expand after the first shipment. The pack supp
 
 ### Week 4 — shipment workflow rehearsal and release
 
-- Freeze shipment object.
+- Register shipment object.
 - Generate signed trust packet.
 - Reconcile all critical objects.
-- Execute origin gate.
+- Complete origin clearance and record authority evidence.
 - Execute physical shipment.
-- Execute destination gate.
+- Complete destination clearance and record authority evidence.
 - Perform recall drill after release.
 - Hold executive/HOD post-ship review.
 
@@ -221,7 +221,7 @@ shipment-workflow
 `HOLD → PHYSICAL INSPECTION → EVIDENCE → CUSTODY INVESTIGATION → AUTHORITY DECISION`
 
 ### Evidence contradiction
-`FREEZE AFFECTED OBJECTS → COMPARE SOURCES → IDENTIFY AUTHORITATIVE RECORD → CORRECT/ESCALATE`
+`HOLD AFFECTED OBJECTS → COMPARE SOURCES → IDENTIFY AUTHORITATIVE RECORD → CORRECT/ESCALATE`
 
 ### Route anomaly
 `ALERT → CHECK TELEMETRY → CHECK CUSTODY → VERIFY CONDITION → DECISION`
@@ -247,7 +247,7 @@ shipment-workflow
 
 After shipment workflow:
 
-`POST-SHIPMENT REVIEW → CONTROL TUNING → TEMPLATE FREEZE → SECOND MANUFACTURER → SECOND ROUTE/PRODUCT → MULTI-SITE → REGIONAL SCALE`.
+`POST-SHIPMENT REVIEW → CONTROL TUNING → CONTROLLED TEMPLATE VERSION → SECOND MANUFACTURER → SECOND ROUTE/PRODUCT → MULTI-SITE → REGIONAL SCALE`.
 
 The critical scale principle is template standardisation without forcing identical local implementation. The common objects/events remain stable while jurisdiction-specific rule packs and operating procedures can vary.
 

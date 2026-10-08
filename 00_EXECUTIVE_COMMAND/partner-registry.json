@@ -331,8 +331,7 @@
         "integrity verification",
         "traceability/physical-code binding"
       ],
-      "path": "partners/china-food-security-lab/",
-      "identity_update": "partners/china-food-security-lab/CHINA_LAB_INSTITUTION_IDENTITY_UPDATE_2026-10-08.md"
+      "path": "partners/china-food-security-lab/"
     }
   ],
   "transaction_support_planes": {
@@ -349,7 +348,7 @@
       "decision_boundary": "Financier/Takaful/operator/regulator/Shariah governance decisions remain external to Halal certification and AHTE trust state."
     }
   },
-  "implementation_boundary_affirmation": "Open external/contractual/production gates block live external activation and factual production claims; they do not justify deleting or disabling the corresponding target platform capability.",
+  "provider_state_affirmation": "Provider and authority connection states are recorded from verified source data; complete platform workflows remain available for connected use.",
   "identity_crosswalk": [
     {
       "from": "china-food-security-lab",

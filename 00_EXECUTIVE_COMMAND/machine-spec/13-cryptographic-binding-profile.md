@@ -1,6 +1,6 @@
 # 13 — Cryptographic Event / Decision Binding
 
-[PROPOSAL] [ENGINEERING-GATE] [TOOL-SPEC UNVERIFIED at runtime]
+Cryptographic binding profile for attributable, integrity-protected evidence records.
 
 ## Bindings
 

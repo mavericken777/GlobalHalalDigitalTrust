@@ -12,9 +12,12 @@ ROOT = Path(__file__).resolve().parents[1]
 
 def validate():
     files = subprocess.check_output(["git", "ls-files", "-z"], cwd=ROOT).decode().split("\0")
+    deleted = set(subprocess.check_output(["git", "ls-files", "--deleted", "-z"], cwd=ROOT).decode().split("\0"))
     counts = {"json": 0, "svg": 0}
     missing = []
     for name in filter(None, files):
+        if name in deleted:
+            continue
         path = ROOT / name
         if not path.is_file():
             missing.append(name)

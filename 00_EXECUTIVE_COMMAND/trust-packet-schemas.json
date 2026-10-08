@@ -555,7 +555,7 @@
       "type": "object",
       "required": [
         "dimensions",
-        "hard_gates_passed",
+        "assurance_checks_passed",
         "score_is_sovereign"
       ],
       "properties": {
@@ -719,9 +719,6 @@
         "hitm_class": {
           "type": "string",
           "const": "D4"
-        },
-        "pilot_flag": {
-          "type": "string"
         }
       }
     },
