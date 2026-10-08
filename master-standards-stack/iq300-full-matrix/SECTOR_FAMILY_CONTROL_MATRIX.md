@@ -2,7 +2,7 @@
 
 This is the maximum safe sector-level matrix supported by the supplied compendia without fabricating missing licensed subclauses.
 
-| Standard | Requirement family | Control | HCP | Evidence | Audit test | Authority gate |
+| Standard | Requirement family | Control | HCP | Evidence | Audit test | certification review |
 |---|---|---|---|---|---|---|
 | MS 1500:2019 | management responsibility | halal policy, roles, records, management oversight | GOV-SYS | policy, records, interviews | DOC-01/REC-01/INT-01 | AG-10/30 |
 | MS 1500:2019 | premises/facilities | hygienic, controlled and segregated environment | HCP-FACILITY | inspection, cleaning records | SITE-01/REC-01 | AG-10 |

@@ -72,7 +72,6 @@ All source-derived claims should identify the exact source class. Any future cor
 
 ## 9. 2026-09-18 attached-source ingestion
 
-[PROPOSAL: closes source-provenance gap - canonical path point: Standard / Instrument -> Evidence]
 
 | ID | Supplied source | SHA12 | Class | Use |
 |---|---|---|---|---|
@@ -89,13 +88,10 @@ All source-derived claims should identify the exact source class. Any future cor
 
 The secondary PDFs' 14-standard framing and references to `MPPHM 2020 Pindaan 2026` do not override the controlled 17-standard catalogue or establish exact authority text. Those issues remain explicit conflict/source gates.
 
-[OPEN GATE: SOURCE CONFLICT - secondary-14-vs-controlled-17 - owner: Department of Standards Malaysia/JAKIM as applicable - blocking: Standard / Instrument]
 
-[OPEN GATE: MPPHM-2026-PRIMARY-SOURCE - owner: JAKIM - blocking: Standard / Instrument]
 
 ## 10. 2026-09-19 ultra-deep secondary-compendium ingestion
 
-[PROPOSAL: closes secondary-source gap-discovery coverage - canonical path point: Standard / Instrument -> Evidence]
 
 | ID | Supplied source | SHA12 | Class | Use |
 |---|---|---|---|---|
@@ -103,10 +99,7 @@ The secondary PDFs' 14-standard framing and references to `MPPHM 2020 Pindaan 20
 
 The source is 56 physical PDF pages but uses internal pagination/TOC extending to pages 115-116 and claims exhaustive/verbatim coverage while acknowledging use of previews and secondary validation where official MS text is paywalled. Therefore its exact clause wording, numeric thresholds and authority-process claims are not promoted as primary-source facts.
 
-[OPEN GATE: ULTRA-DEEP-PAGINATION-INTEGRITY - owner: Project source curator - blocking: Evidence]
 
-[OPEN GATE: ULTRA-DEEP-VERBATIM-CLAIMS - owner: Department of Standards Malaysia / licensed primary source holder - blocking: Clause / Requirement]
 
-[OPEN GATE: ULTRA-DEEP-OPERATIONAL-THRESHOLDS - owner: applicable competent authority / primary standard holder - blocking: Control]
 
 Detailed reconciliation: `17_ULTRA_DEEP_STANDARDS_PDF_RECONCILIATION_2026-09-19.md`.

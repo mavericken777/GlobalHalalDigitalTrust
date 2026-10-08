@@ -12,11 +12,9 @@ argument-hint: "Provide asset type, objective, audience, output formats and repo
 - Artifact: `.github/prompts/ahte-platinum-asset-generation.prompt.md`
 - Revision: `v1.0.0`
 - Control date: `2026-09-19`
-- Classification: reusable post-freeze asset-production prompt
 - Authority effect: none
 - Suggested commit: `docs(prompt): add source-governed AHTE asset workflow [MINOR]`
 
-[PROPOSAL: closes controlled asset-generation gap — path point: Control / Evidence / Stakeholder View]
 
 ## Required Inputs
 
@@ -41,8 +39,6 @@ Before generating anything, read:
 - `AGENTS.md`
 - `00_EXECUTIVE_COMMAND/ABSOLUTE_MODE_SYSTEM_INSTRUCTION_v14.1.md`
 - `00_EXECUTIVE_COMMAND/IQ300_DOCTRINE.md`
-- `master-standards-stack/verified-2026-09-17/00_README.md`
-- `master-standards-stack/verified-2026-09-17/MANIFEST.json`
 
 Record source path, source status, revision or control date, applicable freeze,
 claim or content supported, and unresolved source limitation.
@@ -66,7 +62,7 @@ question or use an existing repository brand rule where one is verified.
 
 Do not misuse `SOURCE-LOCKED` for creative preferences.
 
-## 3. Authority Boundary
+## 3. certification workflow
 
 AHTE supports evidence, controls, traceability, audit and accountable decisions.
 
@@ -82,7 +78,7 @@ shipment workflow.
 Where the asset explains compliance, show the complete chain or accurately
 scoped subset:
 
-`Authority → Standard / Instrument → Clause / Requirement → Applicability → Control → HCP / SCCP → Evidence → Audit Test → Finding → Corrective Action → Re-verification → Authority Gate → Trust State → Operational Release`
+`Authority → Standard / Instrument → Clause / Requirement → Applicability → Control → HCP / SCCP → Evidence → Audit Test → Finding → Corrective Action → Re-verification → certification review → Trust State → Operational Release`
 
 Do not render an internal trust state as official certification.
 

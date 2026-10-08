@@ -1,6 +1,6 @@
-# IQ300 AUTHORITY GATES + AUDIT TEST CATALOG
+# IQ300 certification review + AUDIT TEST CATALOG
 
-## Authority gates
+## certification review
 
 | Gate | Function | Typical trigger |
 |---|---|---|
@@ -14,7 +14,7 @@
 | AUTH-OUTSOURCE | Outsourced activity control | CMO/lab/packer/warehouse/carrier |
 | AUTH-LEGAL | Regulatory gate | NPRA / trade description / other law |
 | AUTH-LAB | Laboratory evidence gate | method validity, scope and interpretation |
-| AUTH-VACCINE | Vaccine/biologic authority gate | fatwa/circular/authority acceptance |
+| AUTH-VACCINE | Vaccine/biologic certification review | fatwa/circular/authority acceptance |
 | AUTH-COMPETENCE | Professional competence gate | Halal Executive/auditor role |
 | AUTH-GOV | Governance/ontology gate | terminology, Shariah QMS, source freeze |
 

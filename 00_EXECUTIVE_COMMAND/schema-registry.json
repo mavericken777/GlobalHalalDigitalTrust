@@ -2,35 +2,113 @@
   "artifact": "schema-registry.json",
   "version": "1.4.0",
   "control_date": "2026-09-30",
-  "classification": "post-freeze schema index extension",
+  "classification": "current project artifact",
   "description": "Schema registry index for structured output domains",
   "schemas": {
-    "evidence-chain": {"path": "trust-packet-schemas.json#/schemas/evidence_chain", "purpose": "Evidence chain analysis output"},
-    "standard-mapping": {"path": "trust-packet-schemas.json#/schemas/standard_mapping", "purpose": "Standard-to-control mapping output"},
-    "trust-packet": {"path": "trust-packet-schemas.json#/schemas/trust_packet", "purpose": "Trust-packet component output"},
-    "authority-gate": {"path": "trust-packet-schemas.json#/schemas/authority_gate_object", "purpose": "Authority gate status output"},
-    "identity-object": {"path": "trust-packet-schemas.json#/schemas/identity_object", "purpose": "Identity object output"},
-    "certificate-object": {"path": "trust-packet-schemas.json#/schemas/certificate_object", "purpose": "Certificate object output"},
-    "evidence-object": {"path": "trust-packet-schemas.json#/schemas/evidence_object", "purpose": "Evidence object output"},
-    "custody-object": {"path": "trust-packet-schemas.json#/schemas/custody_object", "purpose": "Custody object output"},
-    "port-custody-object": {"path": "trust-packet-schemas.json#/schemas/port_custody_object", "purpose": "Port custody and clearance event output"},
-    "audit-object": {"path": "trust-packet-schemas.json#/schemas/audit_object", "purpose": "Audit object output"},
-    "trust-state-object": {"path": "trust-packet-schemas.json#/schemas/trust_state_object", "purpose": "Trust state object output"},
-    "assessment-object": {"path": "trust-packet-schemas.json#/schemas/assessment_object", "purpose": "Machine assessment; never E5"},
-    "hitm-case-object": {"path": "trust-packet-schemas.json#/schemas/hitm_case_object", "purpose": "Reserved-decision case"},
-    "authority-decision-object": {"path": "trust-packet-schemas.json#/schemas/authority_decision_object", "purpose": "Signed competent-authority decision"},
-    "ai-provenance-object": {"path": "trust-packet-schemas.json#/schemas/ai_provenance_object", "purpose": "Model/prompt/hash envelope"},
-    "trust-vector-object": {"path": "trust-packet-schemas.json#/schemas/trust_vector_object", "purpose": "Descriptive trust vector; score secondary"},
-    "release-decision-object": {"path": "trust-packet-schemas.json#/schemas/release_decision_object", "purpose": "Operational release; not certification"},
-    "fracture-event-object": {"path": "trust-packet-schemas.json#/schemas/fracture_event_object", "purpose": "Trust-fracture event"},
-    "connector-state-object": {"path": "target-extension-schemas-2026-09-30.json#/schemas/connector_state_object", "purpose": "External integration connection/environment truth without conflating development with production"},
-    "command-center-alert-object": {"path": "target-extension-schemas-2026-09-30.json#/schemas/command_center_alert_object", "purpose": "24/7 command-center alert and escalation object"},
-    "prediction-object": {"path": "target-extension-schemas-2026-09-30.json#/schemas/prediction_object", "purpose": "AI/ML predictive-risk object; never authority decision"},
-    "preemptive-strategy-object": {"path": "target-extension-schemas-2026-09-30.json#/schemas/preemptive_strategy_object", "purpose": "AI/ML preemptive-strategy recommendation and review object"},
-    "finance-evidence-packet-object": {"path": "target-extension-schemas-2026-09-30.json#/schemas/finance_evidence_packet_object", "purpose": "Purpose-limited trust/trade evidence packet for finance/Takaful/tokenomics support"},
-    "financing-case-object": {"path": "target-extension-schemas-2026-09-30.json#/schemas/financing_case_object", "purpose": "Provider-neutral financing case lifecycle; AHTE does not approve financing"},
-    "takaful-case-object": {"path": "target-extension-schemas-2026-09-30.json#/schemas/takaful_case_object", "purpose": "Provider-neutral Takaful underwriting/claim case; AHTE does not underwrite or decide claims"},
-    "tokenized-asset-reference-object": {"path": "target-extension-schemas-2026-09-30.json#/schemas/tokenized_asset_reference_object", "purpose": "Reference binding digital-value/token representations to real-world AHTE objects without creating title, Shariah, regulatory or Halal status"}
+    "evidence-chain": {
+      "path": "trust-packet-schemas.json#/schemas/evidence_chain",
+      "purpose": "Evidence chain analysis output"
+    },
+    "standard-mapping": {
+      "path": "trust-packet-schemas.json#/schemas/standard_mapping",
+      "purpose": "Standard-to-control mapping output"
+    },
+    "trust-packet": {
+      "path": "trust-packet-schemas.json#/schemas/trust_packet",
+      "purpose": "Trust-packet component output"
+    },
+    "authority-gate": {
+      "path": "trust-packet-schemas.json#/schemas/authority_gate_object",
+      "purpose": "Certification decision status output"
+    },
+    "identity-object": {
+      "path": "trust-packet-schemas.json#/schemas/identity_object",
+      "purpose": "Identity object output"
+    },
+    "certificate-object": {
+      "path": "trust-packet-schemas.json#/schemas/certificate_object",
+      "purpose": "Certificate object output"
+    },
+    "evidence-object": {
+      "path": "trust-packet-schemas.json#/schemas/evidence_object",
+      "purpose": "Evidence object output"
+    },
+    "custody-object": {
+      "path": "trust-packet-schemas.json#/schemas/custody_object",
+      "purpose": "Custody object output"
+    },
+    "port-custody-object": {
+      "path": "trust-packet-schemas.json#/schemas/port_custody_object",
+      "purpose": "Port custody and clearance event output"
+    },
+    "audit-object": {
+      "path": "trust-packet-schemas.json#/schemas/audit_object",
+      "purpose": "Audit object output"
+    },
+    "trust-state-object": {
+      "path": "trust-packet-schemas.json#/schemas/trust_state_object",
+      "purpose": "Trust state object output"
+    },
+    "assessment-object": {
+      "path": "trust-packet-schemas.json#/schemas/assessment_object",
+      "purpose": "Machine assessment; never E5"
+    },
+    "hitm-case-object": {
+      "path": "trust-packet-schemas.json#/schemas/hitm_case_object",
+      "purpose": "Reserved-decision case"
+    },
+    "authority-decision-object": {
+      "path": "trust-packet-schemas.json#/schemas/authority_decision_object",
+      "purpose": "Signed competent-authority decision"
+    },
+    "ai-provenance-object": {
+      "path": "trust-packet-schemas.json#/schemas/ai_provenance_object",
+      "purpose": "Model/prompt/hash envelope"
+    },
+    "trust-vector-object": {
+      "path": "trust-packet-schemas.json#/schemas/trust_vector_object",
+      "purpose": "Descriptive trust vector; score secondary"
+    },
+    "release-decision-object": {
+      "path": "trust-packet-schemas.json#/schemas/release_decision_object",
+      "purpose": "Operational release; not certification"
+    },
+    "fracture-event-object": {
+      "path": "trust-packet-schemas.json#/schemas/fracture_event_object",
+      "purpose": "Trust-fracture event"
+    },
+    "connector-state-object": {
+      "path": "target-extension-schemas-2026-09-30.json#/schemas/connector_state_object",
+      "purpose": "External integration connection/environment truth without conflating development with production"
+    },
+    "command-center-alert-object": {
+      "path": "target-extension-schemas-2026-09-30.json#/schemas/command_center_alert_object",
+      "purpose": "24/7 command-center alert and escalation object"
+    },
+    "prediction-object": {
+      "path": "target-extension-schemas-2026-09-30.json#/schemas/prediction_object",
+      "purpose": "AI/ML predictive-risk object; never authority decision"
+    },
+    "preemptive-strategy-object": {
+      "path": "target-extension-schemas-2026-09-30.json#/schemas/preemptive_strategy_object",
+      "purpose": "AI/ML preemptive-strategy recommendation and review object"
+    },
+    "finance-evidence-packet-object": {
+      "path": "target-extension-schemas-2026-09-30.json#/schemas/finance_evidence_packet_object",
+      "purpose": "Purpose-limited trust/trade evidence packet for finance/Takaful/tokenomics support"
+    },
+    "financing-case-object": {
+      "path": "target-extension-schemas-2026-09-30.json#/schemas/financing_case_object",
+      "purpose": "Provider-neutral financing case lifecycle; AHTE does not approve financing"
+    },
+    "takaful-case-object": {
+      "path": "target-extension-schemas-2026-09-30.json#/schemas/takaful_case_object",
+      "purpose": "Provider-neutral Takaful underwriting/claim case; AHTE does not underwrite or decide claims"
+    },
+    "tokenized-asset-reference-object": {
+      "path": "target-extension-schemas-2026-09-30.json#/schemas/tokenized_asset_reference_object",
+      "purpose": "Reference binding digital-value/token representations to real-world AHTE objects without creating title, Shariah, regulatory or Halal status"
+    }
   },
   "related_registries": {
     "hitm_classes": "hitm-decision-class-registry.json",

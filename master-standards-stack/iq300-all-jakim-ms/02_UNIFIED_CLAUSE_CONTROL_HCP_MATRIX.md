@@ -32,7 +32,7 @@ Every standard is represented by an object with these logical fields:
 
 ### MS 1500:2019 - Food
 
-| Requirement family | Control | HCP | Evidence | Audit test | Authority gate |
+| Requirement family | Control | HCP | Evidence | Audit test | certification review |
 |---|---|---|---|---|---|
 | Management responsibility | HALAL-MGMT | HALAL-MGMT | policy, records, interviews | DOC-01/REC-01/INT-01 | AUTH-CERT |
 | Premises/facilities | PREM-HYGIENE | PREM-HYGIENE | layout, inspection, cleaning, pest records | SITE-01/WIT-01 | AUTH-AUDIT |
@@ -154,10 +154,10 @@ Maps applicable sample classes, pig-origin identification evidence and explicit 
 
 `DOC-01` document review; `REC-01` record sampling; `SITE-01` site inspection; `INT-01` interview; `TRACE-01` forward/backward trace; `WIT-01` witness; `COMP-01` competence verification; `AUTH-01` authority evidence check; `LAB-01` laboratory evidence/method validity; `CHANGE-01` change-control review; `RECALL-01` withdrawal/recall simulation.
 
-## 5. Authority gate library
+## 5. certification review library
 
 `AUTH-AUDIT`; `AUTH-CERT`; `AUTH-LOGO`; `AUTH-MATERIAL`; `AUTH-SERTU`; `AUTH-PROTOCOL`; `AUTH-CHAIN`; `AUTH-OUTSOURCE`; `AUTH-LEGAL`; `AUTH-LAB`; `AUTH-VACCINE`; `AUTH-COMPETENCE`; `AUTH-GOV`.
 
 ## 6. Trust-state rule
 
-No result can skip from `PENDING` directly to `VERIFIED` without the required human assessment and authority gates. Laboratory evidence, AI inference, QR codes, blockchain records, manufacturer declarations and platform events are evidence/identity mechanisms, not substitutes for competent-authority certification.
+No result can skip from `PENDING` directly to `VERIFIED` without the required human assessment and certification review. Laboratory evidence, AI inference, QR codes, blockchain records, manufacturer declarations and platform events are evidence/identity mechanisms, not substitutes for competent-authority certification.

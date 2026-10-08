@@ -1,23 +1,24 @@
-# Platform overview
+# Project status
 
 Updated: 2026-10-09
 
-This repository contains the Global Halal Digital Trust target architecture and its reference software. It describes system capability and integration contracts; it does not issue Halal certification or replace a competent authority.
+This repository describes the current Global Halal Digital Trust ecosystem and its Amanah/AHTE implementation. The platform connects standards applicability, product and premises records, evidence, laboratory and audit workflows, production, custody, logistics, destination operations, monitoring and integrations.
 
-## Operating model
+## Current model
 
-- Physical corridor: **China → GCC direct**.
-- Authority connectivity: **AHTE ⇄ Direct JAKIM API ⇄ JAKIM**.
-- Malaysia provides the governance, standards, assurance, and authority-connectivity plane unless a transaction explicitly scopes a physical movement.
-- AI supports evidence review and risk analysis. Authorized humans and competent authorities retain decisions.
-- Evidence is provenance-linked and integrity-protected; an integrity hash alone does not establish truth.
+- Company: Global Halal Supply Chain Limited, Hong Kong.
+- Platform: Amanah/AHTE; end-to-end assurance and real-time monitoring across certified premises, SKUs, laboratories, production, warehouses and logistics.
+- Malaysia governance: PHC and JAKIM work in parallel across state and federal functions; JAKIM/JAIN/JAIM, muftis, scholars and authorised halal auditors make certification award and revocation decisions.
+- AI/ML: evidence support, anomaly detection, predictive analytics and preemptive strategy recommendations.
+- Authority integration: AHTE ⇄ Direct JAKIM API ⇄ JAKIM.
+- Physical corridor: China → GCC direct.
+- Operating domains: origin, suppliers, laboratory, audit, production, Sinotrans logistics, ports/customs, GCC receiving, distribution, retail, verification, Command Center and finance/Takaful interfaces.
 
-## Platform domains
+## Repository status
 
-The target platform covers manufacturer onboarding, current standards applicability, supplier and material traceability, laboratory evidence and custody, smart audit and corrective action, production monitoring, warehouse and transport custody, ports and customs interfaces, GCC receiving, retail verification, the 24/7 Command Center, and finance/Takaful integration contracts.
+- Current standards reference: `master-standards-stack/iq300-all-jakim-ms/01_MASTER_STANDARDS_REGISTER.md`.
+- Dated standards snapshots, freeze instructions and obsolete project audit bundles are removed from the active tree.
+- Private commercial instruments, signatures, personal identifiers, trip administration and transaction-specific records are outside this public repository.
+- Connector contracts and workflows remain in the repository; production states are reported only when configured and verified.
 
-## Source and release practice
-
-Use the current source-controlled standards register for normative applicability. The 17 September standards package remains a dated source reference; on 9 October 2026, project-specific transaction labels and trip-administration material were removed from the public repository at the owner's direction. Public repository content focuses on platform architecture and implementation interfaces. Agreements, signatory records, and private commercial negotiations are maintained outside this repository.
-
-See the [repository guide](REPO_INDEX.md), [architecture](00_EXECUTIVE_COMMAND/CURRENT_TARGET_ARCHITECTURE_2026-09-30.md), and [standards register](master-standards-stack/iq300-all-jakim-ms/01_MASTER_STANDARDS_REGISTER.md).
+The repository integrity, policy, gateway, reference-runtime and application checks are available in the [GitHub Actions page](https://github.com/mavericken777/GlobalHalalDigitalTrust/actions). The public website is published from the Amanah repository.

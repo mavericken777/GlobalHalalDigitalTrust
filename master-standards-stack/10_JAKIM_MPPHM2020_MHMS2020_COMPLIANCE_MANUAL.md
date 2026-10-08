@@ -10,7 +10,7 @@ This manual converts the current working JAKIM operating instruments into an aud
 
 JAKIM's official portal currently lists **Malaysian Halal Management System (MHMS) 2020** and **Malaysia Halal Certification Manual Procedure 2020 (MPPHM)** as certification references. JAKIM's 2020 annual report records that MPPHM (Domestic) 2020 was issued under the Trade Descriptions Act 2011 framework and that MHMS 2020 differentiates **IHCS** for micro/small industry from **HAS** for medium/large industry. [JAKIM portal; JAKIM Annual Report 2020]
 
-**Authority boundary:** IQ300 is a trust, evidence, control and decision-support layer. It does not issue Malaysian Halal certification, change a fatwa, replace a competent authority, or convert a laboratory result into certification.
+**certification workflow:** IQ300 is a trust, evidence, control and decision-support layer. It does not issue Malaysian Halal certification, change a fatwa, replace a competent authority, or convert a laboratory result into certification.
 
 ## 1. Master regulatory hierarchy
 

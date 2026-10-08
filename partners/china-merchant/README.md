@@ -4,8 +4,7 @@
 
 **Status code:** `UNEXECUTED-ROLE`
 
-## Authority boundary
+## certification workflow
 Does not create Halal certification authority. Naming is a project placeholder only.
 
 ## Contractual basis
-`[OPEN GATE: CONTRACTUAL BASIS — owner: Project — blocking: Commercial terms]`

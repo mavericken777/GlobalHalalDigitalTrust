@@ -4,13 +4,10 @@
 
 - Revision: v1.0.0
 - Control date: 2026-09-30
-- Classification: post-freeze architecture addendum
 - Companion: `PLATINUM_FULL_STACK_ARCHITECTURE.md`
 - Governing project topology: `../00_EXECUTIVE_COMMAND/CURRENT_TARGET_ARCHITECTURE_2026-09-30.md`
-- Freeze impact: none
 - Authority effect: none
 
-[PROPOSAL: closes Platinum command-center/integration gap — path point: Evidence → Audit Test → Finding → Corrective Action → Re-verification → Authority Gate → Trust State → Operational Release]
 
 ## 1. Purpose
 
@@ -23,7 +20,6 @@ Extend the Platinum full-stack monitoring architecture with the current project 
 - port/customs API trust interfaces;
 - Shariah Financing API / Takaful / tokenomics target integration.
 
-Where this addendum conflicts with older post-freeze project-level diagrams or descriptions, use this addendum together with the current target architecture. The verified 17 September freeze remains unchanged.
 
 ## 2. Platinum operating loop
 
@@ -114,7 +110,7 @@ The Command Center continuously monitors:
 - **JAKIM authorised roles:** authority-side visibility/action according to actual API scope and human mandate.
 - **AHTE:** computes/links evidence-derived operational trust states, risks and recommendations.
 
-The Command Center does not convert analytics into official authority decisions without the required human/authority gate.
+The Command Center does not convert analytics into official authority decisions without the required human/certification review.
 
 ### 4.3 Alert classes
 
@@ -180,7 +176,7 @@ Examples:
 - pre-position CAPA evidence before authority review;
 - schedule calibration before a sensor reliability risk becomes critical.
 
-The engine may recommend. It may apply configured D4 holds where policy allows. It must not auto-release a hold requiring human decision or bypass D5/D6.
+The engine may recommend. It may apply configured D4 holds where policy allows. It must not auto-release a hold requiring human decision or bypass authorised certification decision workflow.
 
 ## 6. Sinotrans warehouse + logistics integration
 
@@ -235,7 +231,6 @@ AHTE does not override sovereign port/customs decisions.
 
 ## 8. Shariah Financing API / Takaful / tokenomics
 
-[PROPOSAL: transaction-support integration]
 
 Authorised trust/trade events may be exposed through a separate finance API plane:
 

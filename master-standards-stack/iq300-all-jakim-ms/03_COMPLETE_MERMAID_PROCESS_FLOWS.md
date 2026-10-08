@@ -19,7 +19,7 @@ flowchart TD
  N --> O[Corrective Action]
  O --> P[Re-verification]
  P --> K
- M --> Q[Authority Gate]
+ M --> Q[certification review]
  Q -->|Pass| R[Authority Decision]
  Q -->|Hold| S[HOLD / DISPUTED / QUARANTINED]
  R --> T[Trust State]

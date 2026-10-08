@@ -1,12 +1,10 @@
 # AMANAH 69-Section Execution Binding
 
-**Control date:** 2026-10-02 | **Status:** CONTROLLING POST-FREEZE BINDING
 
 ## Live implementation binding
 - Amanah main: `e18fca1221a83772ad7366840b8bd1d0e15b4f9f`
 - Direct architecture: `AHTE ⇄ Direct JAKIM API ⇄ JAKIM`
 - Physical default corridor: `China → GCC direct`
-- Freeze: `master-standards-stack/verified-2026-09-17/` unchanged
 - Supabase schema extension: `canonical_domain_normalization_2026_10_02` applied successfully
 
 ## Repository implementation now covers

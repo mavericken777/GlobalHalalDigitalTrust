@@ -8,11 +8,11 @@ Current authority topology: **AHTE ⇄ Direct JAKIM API ⇄ JAKIM**. [PILOT: shi
 
 ## Sovereign doctrine
 
-AHTE treats the complete Malaysian Halal standards and governance architecture represented in the IQ300 library as the sovereign operating baseline for the ecosystem. The platform operationalises standards as authoritative system objects, controls, HCPs, evidence requirements, audit tests, authority gates, trust states and execution workflows.
+AHTE treats the complete Malaysian Halal standards and governance architecture represented in the IQ300 library as the sovereign operating baseline for the ecosystem. The platform operationalises standards as authoritative system objects, controls, HCPs, evidence requirements, audit tests, certification review, trust states and execution workflows.
 
 ## Core architecture
 
-`Authority -> Standard/Instrument -> Requirement -> Applicability -> Control -> HCP -> Evidence -> Audit Test -> Finding -> Corrective Action -> Re-verification -> Authority Gate -> Trust State -> Operational Release`
+`Authority -> Standard/Instrument -> Requirement -> Applicability -> Control -> HCP -> Evidence -> Audit Test -> Finding -> Corrective Action -> Re-verification -> certification review -> Trust State -> Operational Release`
 
 ## Current standards universe
 
@@ -71,7 +71,7 @@ The canonical full matrix is:
 
 `CHINA_EXECUTION_PACK/09_MASTER_STANDARDS_FULL_MATRIX.md`
 
-Every standard row maps to AHTE domains, HCP families, evidence profiles, audit tests, authority gates and process-flow infographics.
+Every standard row maps to AHTE domains, HCP families, evidence profiles, audit tests, certification review and process-flow infographics.
 
 ## Machine-readable baseline
 

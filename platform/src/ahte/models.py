@@ -30,7 +30,7 @@ class DecisionClass(str, Enum):
     D2 = "D2"  # machine assessment
     D3 = "D3"  # finding / CAPA classification; human accountable
     D4 = "D4"  # trust-fracture hold; no automatic release
-    D5 = "D5"  # competent-authority gate reserved
+    D5 = "D5"  # human certification decision workflow
     D6 = "D6"  # sovereign / legal reserved
 
 

@@ -5,11 +5,10 @@
 **Status code:** `UNEXECUTED-ROLE`  
 **Public-source status:** organisation exists; project relationship is proposed only
 
-## Authority boundary
+## certification workflow
 CODA does not create Halal certification authority and is not represented here as a government endorser of AHTE.
 
 ## Contractual basis
-`[OPEN GATE: CODA CONTRACTUAL BASIS — owner: Project — blocking: Enterprise mobilisation]`
 
 ## Open gates
 - executed/controlling partnership instrument

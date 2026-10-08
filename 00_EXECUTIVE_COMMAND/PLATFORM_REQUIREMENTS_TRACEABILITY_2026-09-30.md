@@ -7,11 +7,8 @@
 | Artifact | `PLATFORM_REQUIREMENTS_TRACEABILITY_2026-09-30.md` |
 | Revision | v1.0.0 |
 | Control date | 2026-09-30 |
-| Classification | Post-freeze user-furnished platform requirements reconciliation |
-| Freeze impact | None — `master-standards-stack/verified-2026-09-17/` remains unchanged |
 | Governing architecture | `CURRENT_TARGET_ARCHITECTURE_2026-09-30.md` + `current-target-architecture-2026-09-30.json` + `IMPLEMENTATION_COMPLETENESS_RULE_2026-09-30.md` |
 
-[PROPOSAL: closes full-platform traceability gap — path point: Authority → Standard / Instrument → Clause / Requirement → Applicability → Control → HCP / SCCP → Evidence → Audit Test → Finding → Corrective Action → Re-verification → Authority Gate → Trust State → Operational Release]
 
 ## 1. Purpose
 
@@ -33,24 +30,22 @@ A row marked `PRESENT` means the target capability is represented in the current
 | P08 | China traceability/anti-counterfeit system contributes enterprise/product identity, one-item-one-code, microdot/QR/VOID, unit→box→carton→pallet aggregation, verification, anti-diversion and scan analytics | Identity / Evidence / Traceability | China lab/traceability integration profile; target architecture lab plane | PRESENT + HARDENED IN CONSOLIDATION |
 | P09 | Manufacturer onboarding covers legal entity, facility, product/SKU, formula/BOM, raw materials, suppliers, origin, systems, digital twin, applicability, HCP/SCCP, evidence gaps, remediation/training, lab, smart audit, CAPA, re-verification, authority workflow and continuous monitoring | Applicability → Operational Release | standards intelligence layer; CODA enablement model; website/Codex master specs | PRESENT |
 | P10 | Smart-glass audit includes auditor/device identity, MFA, scope, scans, image/video/document/voice/sensor evidence, offline-first queue, local hash/signature, AI assist, findings, CAR/CAPA and re-verification | Evidence → Re-verification | canonical China execution pack smart-glass specification | PRESENT |
-| P11 | AHTE integrates **directly with the JAKIM API**. Do not insert NurAI or an unnecessary public intermediary | Authority Gate | current target architecture; machine target; lab direct-API alignment | PRESENT |
-| P12 | Formal certification approval/disapproval in the project operating model is performed through the **PHC + JAKIM authorised human workflow**, including Mufti/scholars/authorised officers as applicable; AI/AHTE do not make the certification decision | Authority Gate | project target architecture + this traceability control | PRESENT + EXPLICITLY HARDENED |
+| P11 | AHTE integrates **directly with the JAKIM API**. Do not insert NurAI or an unnecessary public intermediary | certification review | current target architecture; machine target; lab direct-API alignment | PRESENT |
+| P12 | Formal certification approval/disapproval in the project operating model is performed through the **PHC + JAKIM authorised human workflow**, including Mufti/scholars/authorised officers as applicable; AI/AHTE do not make the certification decision | certification review | project target architecture + this traceability control | PRESENT + EXPLICITLY HARDENED |
 | P13 | Every material evidence object has attributable provenance and cryptographic integrity protection; corrections use append-only supersession rather than silent overwrite | Evidence | cryptographic trust-anchor architecture; IQ300 doctrine; current target architecture | PRESENT |
-| P14 | QR/NFC/blockchain/DLT/hashes are integrity/access mechanisms, not certification authorities | Evidence / Authority boundary | doctrine; cryptographic architecture; interop stack | PRESENT |
+| P14 | QR/NFC/blockchain/DLT/hashes are integrity/access mechanisms, not certification authorities | Evidence / certification workflow | doctrine; cryptographic architecture; interop stack | PRESENT |
 | P15 | Sinotrans integrates end-to-end warehouse + logistics real-time monitoring, not transportation alone | Evidence / custody | `deliverables/07_SINOTRANS_PLAYBOOK.md` v2; data mapping; current target architecture | PRESENT |
 | P16 | Sinotrans scope includes warehouse receipt/dispatch, segregation/storage, booking, pickup, pallet/lot, vehicle/container, seal, custody, route/geofence, telemetry, port handoff and proof of delivery | Evidence / custody | Sinotrans playbook/data mapping; Platinum stack | PRESENT |
 | P17 | Origin and GCC port/customs authorities receive authorised API/trust interfaces for shipment, container/seal, documents, evidence, inspection/sampling, hold/release and signed return events | Authority / custody | Global Port Authorities Protocol; Port Officer workflow; current target architecture | PRESENT |
-| P18 | Port/customs sovereign decisions remain with the port/customs authority; AHTE records and propagates, never manufactures clearance | Authority boundary | port protocol; doctrine | PRESENT |
-| P19 | Shariah Financing API is a first-class plane for Islamic trade financing, Takaful underwriting/claims and tokenomics/digital-value mechanisms where legally/Shariah approved | Transaction support | `deliverables/31_SHARIAH_FINANCING_API_TAKAFUL_TOKENOMICS_ARCHITECTURE_2026.md` | PRESENT — POST-FREEZE TARGET |
+| P18 | Port/customs sovereign decisions remain with the port/customs authority; AHTE records and propagates, never manufactures clearance | certification workflow | port protocol; doctrine | PRESENT |
 | P20 | Financing, Takaful and tokenomics decisions/states remain separate from halal certification and AHTE trust state | Authority/decision separation | finance architecture; standards intelligence role matrix | PRESENT |
 | P21 | 24/7 Command Center is jointly monitored by **GHSCL operational roles and authorised JAKIM authority-side roles** | Experience / Authority / Monitoring | Command Center specification; current target; this traceability control | PRESENT + EXPLICITLY HARDENED |
 | P22 | Shared Command Center monitoring does not make GHSCL and JAKIM permissions identical: GHSCL handles platform/corridor operations; JAKIM retains authority-side monitoring/decision scope | Governance | Command Center specification; current target | PRESENT + HARDENED |
 | P23 | Command Center continuously monitors manufacturer/facility, materials/suppliers, lab, HCP/SCCP, smart audits, authority status, Sinotrans/WMS/logistics, shipment/container/seal, telemetry, ports, GCC receiving, CAPA, evidence integrity/expiry, recalls | Evidence → Operational Release | Command Center specification; Platinum stack | PRESENT |
 | P24 | AI/ML supports descriptive, diagnostic, predictive and preemptive assurance | Audit Test / prevention | target architecture; Command Center; predictive modules | PRESENT |
 | P25 | AI modules include evidence-gap, anomaly, contradiction, trust-fracture, predictive-compliance and recall blast-radius functions | Audit Test / Finding | IQ300 standards intelligence; target architecture | PRESENT |
-| P26 | Explicit Preemptive Strategy Engine converts evidence-linked predictions into governed preventive interventions and captures outcome feedback | Prevention / CAPA | current target; target extension schemas; Command Center | PRESENT — POST-FREEZE TARGET |
 | P27 | Command Center supports alert → acknowledge → assign → investigate → intervene → CAPA/re-verification → close/escalate → outcome measurement | Finding → Re-verification | Command Center specification | PRESENT |
-| P28 | D0–D6 decision classes govern AI/human authority; D5/D6 cannot be bypassed; D4 automatic hold cannot be automatically released where human release is required | Authority Gate | decision-class registry; action matrix; reference runtime | PRESENT |
+| P28 | D0–certification determination decision classes govern AI/human authority; authorised certification decision workflow cannot be bypassed; D4 automatic hold cannot be automatically released where human release is required | certification review | decision-class registry; action matrix; reference runtime | PRESENT |
 | P29 | AHTE uses digital twins, evidence graph, trust graph, trust packets, object genealogy and recall traversal rather than a single trust-score database | Evidence / Trust State | doctrine; trust-packet schemas; China execution model | PRESENT |
 | P30 | Physical/digital object hierarchy covers organisation → facility → product → formula/version → material/supplier/process/HCP → batch/lot → pallet/logistic unit → shipment → container/seal → destination inventory → retail unit | Digital Twin | China execution model; target architecture | PRESENT |
 | P31 | Complete real-time monitoring analytics feed the GHSCL + JAKIM Command Center continuously | Monitoring | Platinum stack; Command Center | PRESENT |
@@ -65,7 +60,7 @@ A row marked `PRESENT` means the target capability is represented in the current
 | P40 | Architectural completeness must never fabricate live JAKIM decisions, lab results, Sinotrans telemetry, customs release, GCC acceptance, finance/Takaful approval or shipment workflow events | Evidence integrity | implementation completeness rule; honesty layer | PRESENT / MANDATORY |
 | P41 | System must support multilingual readiness for English, Simplified Chinese, Malay and Arabic/RTL | Experience | website v2; Codex master prompt | PRESENT |
 | P42 | Real-time architecture is event-driven and preserves identity, provenance, actor, timestamp, control/requirement, evidence, state and integrity proof on material events | Evidence / event fabric | doctrine; China event catalogue; target architecture | PRESENT |
-| P43 | Laboratory result `NOT_DETECTED` is evidence only and never equals `HALAL` | Evidence / Authority boundary | lab profile; doctrine; runtime | PRESENT / HARD RULE |
+| P43 | Laboratory result `NOT_DETECTED` is evidence only and never equals `HALAL` | Evidence / certification workflow | lab profile; doctrine; runtime | PRESENT / HARD RULE |
 | P44 | Certification state, AHTE trust state, supply-chain state, customs/port release state, financing state and Takaful state are distinct | Trust State / Authority | target architecture; finance architecture; port protocol | PRESENT |
 | P45 | External systems remain systems of record where appropriate: ERP/MES/QMS/WMS/LIMS/IoT/TMS/JAKIM/port/bank/Takaful; AHTE is the cross-system trust fabric | Interoperability | reference architecture; factory API contracts; target architecture | PRESENT |
 
@@ -129,7 +124,7 @@ No capability above may be treated as complete merely because it has prose docum
 
 `domain schema + state machine + role UI/API + production adapter contract + development/sandbox provider where needed + connector state + error/retry/reconciliation + identity/access + audit history + evidence/integrity linkage + tests + no-redesign replacement path`.
 
-This acceptance test does not remove legitimate D4/D5/D6 human/authority controls.
+This acceptance test does not remove legitimate D4/authorised certification decision workflow human/authority controls.
 
 ## 5. Deletion rule
 

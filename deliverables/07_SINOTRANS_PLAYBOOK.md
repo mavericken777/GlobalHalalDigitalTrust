@@ -9,7 +9,6 @@
 - Pilot: `[PILOT: shipment workflow — Sinotrans warehouse/logistics]`
 - Supersedes: prior China→Malaysia pilot wording in this file
 
-[PROPOSAL: aligns Sinotrans operating model to current project architecture — path point: Control → Evidence → Trust State → Operational Release]
 
 ## Purpose
 
@@ -330,10 +329,10 @@ Potential value to Sinotrans:
 - integration with manufacturer, laboratory, authority and GCC verification layers;
 - premium monitoring and assurance services where commercially agreed.
 
-## Authority boundary
+## certification workflow
 
 Sinotrans provides logistics/warehouse execution and evidence. It does not create Malaysian Halal certification, GCC destination acceptance or sovereign customs release.
 
 The controlling path is:
 
-`Authority → Standard/Instrument → Applicability → Logistics/Warehouse Control → Evidence → Audit/Analytics → Finding/CAPA → Re-verification → Authority Gate → Trust State → Operational Release`.
+`Authority → Standard/Instrument → Applicability → Logistics/Warehouse Control → Evidence → Audit/Analytics → Finding/CAPA → Re-verification → certification review → Trust State → Operational Release`.

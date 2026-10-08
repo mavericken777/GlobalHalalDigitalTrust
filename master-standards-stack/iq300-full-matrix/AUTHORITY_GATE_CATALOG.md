@@ -1,4 +1,4 @@
-# IQ300 Authority Gate Catalog
+# IQ300 certification review Catalog
 
 | Gate | Meaning | Typical trigger |
 |---|---|---|

@@ -1,37 +1,28 @@
 # Repository guide
 
-This repository contains the Global Halal Digital Trust architecture, reference platform, public website source, and implementation specifications.
+This is the working project repository for Global Halal Supply Chain Limited and the Global Halal Digital Trust ecosystem.
 
-## Start here
-
-| Area | Controlling reference |
+| Project area | Current location |
 |---|---|
-| Current platform architecture | [Target architecture](00_EXECUTIVE_COMMAND/CURRENT_TARGET_ARCHITECTURE_2026-09-30.md) |
-| Authority and trust doctrine | [IQ300 doctrine](00_EXECUTIVE_COMMAND/IQ300_DOCTRINE.md) |
-| Current standards source map | [Master standards register](master-standards-stack/iq300-all-jakim-ms/01_MASTER_STANDARDS_REGISTER.md) |
-| Public site | [Amanah / GHSCL website](https://mavericken777.github.io/Amanah/) |
-| Website specification | [Website rebuild specification](docs/WEBSITE_REBUILD_MASTER_SPEC_v2_2026-09-30.md) |
-| Runtime and implementation status | [Repository status](STATUS.md) |
-| Partner-facing system roles | [Ecosystem roles](partners/README.md) |
+| Company and operating model | `README.md`, `STATUS.md`, `00_EXECUTIVE_COMMAND/CURRENT_TARGET_ARCHITECTURE_2026-09-30.md` |
+| Current standards reference | `master-standards-stack/iq300-all-jakim-ms/01_MASTER_STANDARDS_REGISTER.md` |
+| China operating workflows | `master-standards-stack/CHINA_EXECUTION_PACK/` |
+| Process-flow visuals | `master-standards-stack/process-flow-infographics/` |
+| Command Center | `05_PLATINUM_REAL_TIME_MONITORING/` |
+| Reference software and interfaces | `platform/`, `runtime/`, `contracts/`, `schemas/`, `circuits/` |
+| Partner integration roles | `partners/`, `03_ECOSYSTEM_PARTNERS/` |
+| Project implementation specifications | `deliverables/`, `docs/` |
+| Contribution and agent guidance | `CONTRIBUTING.md`, `AGENTS.md` |
 
-## End-to-end operating path
+## Product path
 
 ```text
-China origin → manufacturer and suppliers → standards and controls → laboratory evidence → human audit and corrective action → competent-authority decision → AHTE trust state → warehouse and logistics custody → ports and customs → GCC importer and receiving → distribution, retail, verification, and ongoing monitoring
+China origin → manufacturers and materials → standards applicability and evidence
+→ laboratory and audit workflows → production and batch records
+→ Sinotrans custody and logistics → ports/customs → GCC receiving
+→ distribution, retail, verification, and monitoring
 ```
 
-The physical corridor is China → GCC direct. Malaysia is the governance, assurance, standards, and authority-connectivity plane unless a specific transaction defines otherwise.
+The platform connects the AHTE ⇄ Direct JAKIM API ⇄ JAKIM workflow and monitors the complete product and premises assurance journey in real time. PHC and JAKIM work in parallel; JAKIM/JAIN/JAIM, muftis, scholars and authorised halal auditors decide certification award and revocation through their applicable processes. AI/ML assists with monitoring, prediction and preemptive strategies. The physical corridor is China → GCC direct.
 
-## Repository layout
-
-| Directory | Contents |
-|---|---|
-| `00_EXECUTIVE_COMMAND/` | Architecture, doctrine, registries, and schemas |
-| `master-standards-stack/` | Standards references, control models, and China-to-GCC integration assets |
-| `platform/` and `reference-runtime/` | Reference services, policy, and runtime components |
-| `ghscl-website/` | Public site source and presentation assets |
-| `partners/` | Public descriptions of target partner roles and interfaces |
-| `deliverables/` | Platform and operating-model specifications |
-| `docs/` | Website, architecture, and implementation references |
-
-Public repository materials describe the platform and its interfaces. Commercial agreements, trip administration, signatory records, and private negotiations are managed outside this repository.
+Commercial contracts, private trip administration, personal identifiers, signatory data, and transaction-specific records do not belong in this public repository.

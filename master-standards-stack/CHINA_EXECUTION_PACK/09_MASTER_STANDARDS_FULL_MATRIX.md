@@ -28,7 +28,7 @@ This matrix consolidates the current JSM/MySOL NSC 09 — Halal standards repres
 
 ## Cross-standard process architecture
 
-`Authority -> Scope -> Standard Set -> Requirement -> Applicability -> Control Objective -> Control -> HCP -> Evidence -> Audit Test -> Finding -> Corrective Action -> Re-verification -> Authority Gate -> Trust State -> Physical/Digital Release`
+`Authority -> Scope -> Standard Set -> Requirement -> Applicability -> Control Objective -> Control -> HCP -> Evidence -> Audit Test -> Finding -> Corrective Action -> Re-verification -> certification review -> Trust State -> Physical/Digital Release`
 
 ## AHTE A-Z linkage
 
@@ -79,4 +79,4 @@ MS 2636:2019 catalogue source: `https://mysol.jsm.gov.my/search-catalogue?keywor
 
 Each matrix row maps to:
 
-`standard -> edition/status -> applicability profile -> requirement object set -> control family -> HCP family -> evidence profile -> audit test -> authority gate -> trust-state transitions -> physical/digital process flow`.
+`standard -> edition/status -> applicability profile -> requirement object set -> control family -> HCP family -> evidence profile -> audit test -> certification review -> trust-state transitions -> physical/digital process flow`.

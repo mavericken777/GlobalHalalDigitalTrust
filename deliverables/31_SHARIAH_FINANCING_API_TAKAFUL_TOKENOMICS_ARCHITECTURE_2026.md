@@ -7,13 +7,10 @@
 | Artifact | `31_SHARIAH_FINANCING_API_TAKAFUL_TOKENOMICS_ARCHITECTURE_2026.md` |
 | Revision | v1.1.0 |
 | Control date | 2026-09-30 |
-| Classification | Post-freeze target transaction-support architecture |
-| Freeze impact | None |
 | Authority effect | None |
 | Governing architecture | `../00_EXECUTIVE_COMMAND/CURRENT_TARGET_ARCHITECTURE_2026-09-30.md` |
 | Implementation rule | `../00_EXECUTIVE_COMMAND/IMPLEMENTATION_COMPLETENESS_RULE_2026-09-30.md` |
 
-[PROPOSAL: closes Shariah-finance API architecture gap — path point: Control / Evidence / transaction support]
 
 ## 0. No artificial implementation blocks
 
@@ -318,7 +315,6 @@ Signature/AuthRef
 ConnectorState
 ```
 
-Production schemas are registered in the companion post-freeze finance schema artifact and indexed through the project schema registry.
 
 ## 11. Financing case state model
 
@@ -344,8 +340,8 @@ The state machine is provider-neutral. Live financial decision states must resol
 - AI risk assessment: D2;
 - proposed exception/CAPA: D3;
 - configured operational hold: D4;
-- Halal authority decision: D5;
-- sovereign/legal/Shariah instrument determination: D6 or relevant external competent process.
+- Halal authority decision: certification review;
+- sovereign/legal/Shariah instrument determination: certification determination or relevant external competent process.
 
 Credit approval, Takaful underwriting/claim and financial regulatory decisions are external decision domains and must not be represented as AHTE-issued authority events unless a future controlled schema explicitly models them as external decisions.
 
@@ -409,13 +405,9 @@ No financing approval, Takaful policy or token issuance is implied by documentin
 
 ## 17. External gates
 
-[OPEN GATE: FINANCE COUNTERPARTY — owner: bank/financier — blocking: live transaction-support activation]
 
-[OPEN GATE: TAKAFUL COUNTERPARTY — owner: Takaful operator — blocking: live underwriting/claims activation]
 
-[OPEN GATE: SHARIAH STRUCTURE — owner: appointed Shariah governance/competent review — blocking: live product/token activation]
 
-[OPEN GATE: TOKEN LEGAL/REGULATORY CLASSIFICATION — owner: competent legal/regulatory process — blocking: live tokenomics deployment]
 
 These gates block **live external activation**, not the complete target software architecture.
 

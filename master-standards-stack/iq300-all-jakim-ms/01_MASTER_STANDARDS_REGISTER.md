@@ -34,7 +34,7 @@ Product / Service MS             Supply-chain MS
              Finding / CAR / Re-test
                        |
                        v
-                Authority Gate
+                Decision Record
                        |
                        v
                   Trust State

@@ -12,9 +12,9 @@ Base path: `/v0/assurance` (not a certification API).
 | POST | `/hitm/evaluate` | PEP | Body → OPA; default deny |
 | POST | `/hold` | D4 | Auto-hold allowed |
 | POST | `/release` | D4/ops | Requires human_determination when from hold; `is_certification=false` |
-| POST | `/authority-decisions` | D5 | Accepts **external** E5 / VC; rejects AHTE-as-issuer |
+| POST | `/authority-decisions` | certification review | Accepts **external** E5 / VC; rejects AHTE-as-issuer |
 | GET | `/state/{packet_id}` | — | trust_state + vector; score secondary |
 
 Every mutating call records `actor`, `spiffe_id` (when runtime exists), `opa_decision_log_ref`.
 
-Error `403 authority_gate_reserved` on D5/D6 machine execute.
+Error `403 authority_gate_reserved` on authorised certification decision workflow machine execute.

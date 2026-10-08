@@ -2,7 +2,6 @@
 
 Runnable **reference implementation** of the adopted project specification.
 
-[PROPOSAL: implementation alignment to the post-freeze D0-D6 registry — path point: Control → Evidence → Authority Gate → Trust State]
 
 This is not a substitute for JAKIM, MAIN/JAIN, GCC authorities, laboratory accreditation, customs systems, or executed partner networks.
 
@@ -27,10 +26,10 @@ The reference PEP follows `00_EXECUTIVE_COMMAND/hitm-decision-class-registry.jso
 - D2 — machine assessment; creates assessment objects only
 - D3 — finding / CAPA classification; human accountability
 - D4 — trust-fracture HOLD; automatic release prohibited
-- D5 — competent-authority gate reserved; human authority only
-- D6 — sovereign / legal reserved; no executable action in this runtime
+- certification review — competent-certification review reserved; human authority only
+- certification determination — sovereign / legal reserved; no executable action in this runtime
 
-High AI confidence never bypasses D5/D6. Undefined policy results deny.
+High AI confidence never bypasses authorised certification decision workflow. Undefined policy results deny.
 
 ## What it does
 
@@ -47,7 +46,7 @@ High AI confidence never bypasses D5/D6. Undefined policy results deny.
 
 - Talk to live JAKIM/MYeHALAL, GCC single windows, Sinotrans, or lab LIMS
 - Deploy OPA/SPIRE/SCITT/EPCIS in production
-- Execute D6 sovereign/legal decisions
+- Execute certification determination sovereign/legal decisions
 - Close TRANSACTION-GATE or SOURCE-LOCKED items
 
 ## Reference limits
