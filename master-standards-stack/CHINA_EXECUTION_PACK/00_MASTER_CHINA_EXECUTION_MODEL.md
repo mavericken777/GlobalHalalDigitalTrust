@@ -1,255 +1,48 @@
-# 00 — Master China Execution Model
+# China-to-GCC operating model
 
-## 1. Operating concept
+## Purpose
 
-IQ300/AHTE is implemented as a federated execution fabric across three jurisdictional planes:
+Amanah/AHTE connects the full product and premises assurance journey from China origin to GCC destination. The operating model covers manufacturer onboarding, materials, laboratory evidence, audits, certification records, production, warehouses, logistics, customs, receiving, distribution, retail and verification.
 
-- **China origin plane:** manufacturer, supplier, laboratory, logistics, export and port operations.
-- **Malaysia governance/assurance plane:** applicable Malaysian Halal standards, JAKIM/JAIN governance instruments, assurance data, authority-linked records and project governance.
-- **GCC destination plane:** importer, destination authorities, customs, warehouse, retail and consumer/stakeholder verification.
+## Governance and platform roles
 
-The planes exchange controlled assertions, not uncontrolled replication of source records.
+- **PHC and JAKIM** work in parallel across Perak/state and federal Malaysian governance.
+- **JAKIM/JAIN/JAIM, muftis, scholars and authorised halal auditors** make certification award and revocation decisions through their applicable processes.
+- **Global Halal Supply Chain Limited** operates the international digital-infrastructure and coordination layer and 24/7 Command Center.
+- **Amanah/AHTE** connects product/SKU, premises, suppliers/materials, controls, evidence, events, audit records, certification status, custody and destination workflows.
+- **AI/ML** assists real-time monitoring, anomaly detection, predictive analytics, impact assessment and preemptive strategy recommendations. It does not make certification decisions.
 
-## 2. Physical + digital binding
+Authority connectivity is **AHTE ⇄ Direct JAKIM API ⇄ JAKIM**. The physical route is **China → GCC direct**. Malaysia is the parallel governance, assurance and authority-connectivity plane, not a physical transit leg.
 
-```text
-PHYSICAL OBJECT                 DIGITAL OBJECT
-────────────────────────────────────────────────────────
-Facility                        FacilityTwin
-Material                       MaterialObject
-Production run                 BatchObject
-Lot                            LotObject
-Pallet                         PalletObject
-Container                      ContainerObject
-Seal                            SealObject
-Sample                          SampleObject
-Custody handover                CustodyTransferEvent
-Inspection                      InspectionEvent
-Release                         Authority/ReleaseEvent
-Recall                          RecallCase
-```
-
-The binding key is `ObjectID + EventID + EvidenceID + ActorID + Timestamp + IntegrityProof`.
-
-## 3. Control loop
+## Product journey
 
 ```text
-AUTHORITATIVE SOURCE
-        ↓
-APPLICABILITY / RULE SELECTION
-        ↓
-CONTROL OBJECTIVE
-        ↓
-HCP / CONTROL IMPLEMENTATION
-        ↓
-PHYSICAL EXECUTION
-        ↓
-EVIDENCE CAPTURE
-        ↓
-AUDIT / ANALYTICS
-        ↓
-FINDING / CAR / RE-VERIFICATION
-        ↓
-AUTHORITY DECISION
-        ↓
-TRUST STATE
-        ↓
-RELEASE / HOLD / QUARANTINE / RECALL
-        ↓
-NEXT PHYSICAL HOP
+Organisation and premises onboarding
+→ product/SKU and supplier/material registration
+→ applicable requirements and controls
+→ laboratory sampling, custody, method, QC, result and authorised review
+→ audit, findings, corrective action and re-verification
+→ competent human certification decisions and status records
+→ production, batch and lot monitoring
+→ JAKIM-certified warehouse and logistics custody / telemetry
+→ origin port and customs processes
+→ direct China-to-GCC movement
+→ GCC receiving, warehouse, distribution and retail
+→ verification, continuous monitoring and recall support
 ```
 
-## 4. Object hierarchy
+## Event and evidence model
 
-`Programme → Organisation → Facility → Product → Formula/Version → Material → Supplier → Process → HCP → Batch → Lot → Logistic Unit → Shipment → Destination Inventory → Retail Unit`
+Represent each material action with ObjectID, EventID, EvidenceID, ActorID, timestamp and integrity proof, with applicable location, scope, method, parent/child objects, reviewer, issuer and provenance. Link evidence to the affected product, premises, batch, sample, shipment or custody event. Preserve original records; corrections supersede rather than overwrite. Integrity checks protect record identity and integrity; they do not establish the truth of a claim.
 
-Cross-cutting objects:
+Laboratory evidence follows sample identity → collection/seal → custody → method and quality controls → result → technical review/signature → report → linked assurance evidence. A laboratory result is not certification. JAKIM-certified laboratory, logistics-provider and warehouse status and scope are represented from the applicable JAKIM records.
 
-`Requirement`, `Control`, `Evidence`, `Sample`, `LabResult`, `Audit`, `Finding`, `CAR`, `AuthorityDecision`, `TrustAssertion`, `TrustAnchor`, `DigitalEvent`.
+## Monitoring and action
 
-## 5. Trust state model
+The monitoring system correlates changes across product, premises, suppliers, laboratory, production, warehouse, logistics, port and GCC destination records. Analytics can identify anomalies, predict potential risk, map impact and recommend preventive action. People responsible for operations and the competent authorities act on findings and certification decisions.
 
-Primary lifecycle:
+Keep certification, platform assurance, operational custody, customs and finance/Takaful records connected but attributable to their respective issuers and decision makers. Exceptions, containment, corrective action, re-verification, suspension, revocation and recall are recorded as operational events with linked evidence.
 
-`INITIAL → EVIDENCE-COMPLETE → ASSESSED → VERIFIED → RELEASED`
+## Technical documents
 
-Exception branches:
-
-`HOLD`, `QUARANTINED`, `DISPUTED`, `CORRECTIVE-ACTION`, `RE-VERIFICATION`, `EXPIRED`, `SUSPENDED`, `REVOKED`, `RECALLED`.
-
-A trust state is always scoped to one object and one authority/control context. A recalled lot must not automatically change unrelated lots; a destination quarantine must not erase origin evidence.
-
-## 6. Physical handoff model
-
-Every physical handoff has a corresponding digital checkpoint:
-
-1. Identify object.
-2. Read expected state.
-3. Verify physical identifier.
-4. Verify seal where applicable.
-5. Verify relevant condition data.
-6. Reconcile documentation.
-7. Capture actor + timestamp + location.
-8. Sign the event.
-9. Produce next-state decision.
-10. Transfer custody or place on hold.
-
-## 7. Minimum evidence packet
-
-For a critical control point:
-
-- Object IDs.
-- Requirement/control/HCP IDs.
-- Actor ID and role.
-- Time source.
-- Location/device ID.
-- Source record reference.
-- Images/video where required.
-- Measurement or test result where relevant.
-- Integrity hash.
-- Signature where required.
-- Previous-event reference.
-- Resulting state.
-
-## 8. Federated data architecture
-
-```text
-             GLOBAL TRUST NETWORK
-                     │
-       ┌─────────────┼─────────────┐
-       │             │             │
-   CHINA ZONE    MALAYSIA ZONE   GCC ZONE
-       │             │             │
- Factory SoR     Assurance SoR   Destination SoR
- MES/QMS/WMS     standards &     Import/customs/
- LIMS/ERP/IoT    authority        warehouse/retail
-       │             │             │
-       └─────── TRUST ASSERTION ───┘
-```
-
-The China zone retains granular records needed by the Chinese operators and applicable law. The cross-border layer exposes minimum-necessary assertions, proofs, statuses and references.
-
-China's 2024 cross-border data provisions explicitly address international trade, cross-border transport and multinational manufacturing data that contain neither personal information nor important data, while continuing to regulate personal-information and important-data exports. The Network Data Security Management Regulation also requires security controls, access control, encryption/backup measures, incident handling and governance over provision/entrusted processing. citeturn164534search0turn748828search0
-
-## 9. Standard and rule execution
-
-AHTE shall never apply a standard merely because a product is labelled halal. The engine executes:
-
-```text
-Commodity / Product Scope
-        ↓
-Jurisdiction / Market
-        ↓
-Applicable Law
-        ↓
-Mandatory Technical Requirements
-        ↓
-Competent-Authority Instruments
-        ↓
-Applicable Halal Standards / Specifications
-        ↓
-Contractual Requirements
-        ↓
-AHTE Control Implementation
-```
-
-The output is a `ResolvedRequirementSet` with source precedence, effective dates, applicability reason and control bindings.
-
-## 10. AI placement
-
-AI services are placed after the evidence layer:
-
-- evidence-gap prediction;
-- anomaly detection;
-- contradiction detection;
-- trust-graph fracture detection;
-- predictive compliance;
-- recall blast-radius traversal.
-
-AI outputs must retain model version, feature/input references, score, explanation metadata and reviewer/decision linkage.
-
-## 11. Human decision points
-
-Human/authority decisions are explicit at:
-
-- applicability determination where rules conflict;
-- audit findings;
-- laboratory interpretation where required;
-- certification/recognition decisions;
-- authority release/hold;
-- exceptional route approvals;
-- recall/withdrawal decisions;
-- dispute resolution.
-
-## 12. First-wave deployment sequence
-
-```text
-HOD GOVERNANCE
-    ↓
-PILOT FACILITIES
-    ↓
-DATA / SYSTEM INVENTORY
-    ↓
-STANDARDS + RULE PACKS
-    ↓
-FACTORY DIGITAL TWINS
-    ↓
-HCP / EVIDENCE TEMPLATES
-    ↓
-SMART-GLASS AUDIT
-    ↓
-LAB + SAMPLE CHAIN
-    ↓
-shipment workflow DIGITAL TWIN
-    ↓
-CONTAINER + SEAL BINDING
-    ↓
-ORIGIN / EXPORT REHEARSAL
-    ↓
-GCC BORDER REHEARSAL
-    ↓
-DESTINATION WAREHOUSE
-    ↓
-RETAIL / VERIFICATION
-    ↓
-POST-SHIPMENT ASSURANCE
-    ↓
-SCALE DECISION
-```
-
-## 13. Engineering acceptance criteria
-
-### Identity
-100% of critical physical objects have a stable identifier and parent genealogy.
-
-### Evidence
-100% of critical HCPs create linked evidence objects.
-
-### Custody
-100% of critical handovers are represented by signed custody events.
-
-### Reconciliation
-Every container/seal combination is reconciled before release at each controlled hop.
-
-### Availability
-Field devices support offline capture and secure later reconciliation.
-
-### Security
-High-value signing keys are hardware-backed or equivalent; access is least-privilege and auditable.
-
-### Cross-border exchange
-Only policy-approved fields leave each sovereign data zone.
-
-### Recovery
-The system can reconstruct a shipment state from its event stream without relying on free-text notes.
-
-### Recall
-A batch/lot recall can be traversed forward and backward through the trust graph with deterministic object relationships.
-
-## 14. Institutional interface principle
-
-Each Chinese HOD interface receives a concrete package:
-
-`Mandate → Required Decision → Data Interface → Technical Interface → Pilot Deliverable → Acceptance Test → Escalation Route → Scale Decision`.
-
-The programme is therefore operated as a series of accountable institutional interfaces rather than as a single software procurement.
+Use this operating model with the event catalogue, factory API contracts, smart-glass audit specification, port/customs workflow, evidence integrity design, laboratory interface and machine-readable schemas in this directory. Interfaces describe the target workflow; production responses are recorded only when received from configured systems.

@@ -2,7 +2,7 @@
 
 **Global Halal Supply Chain Limited** develops and operates the digital infrastructure for the Amanah / Global Halal Digital Trust ecosystem.
 
-AHTE and Amanah provide continuous, real-time assurance across the complete halal supply-chain process: certified product and SKU, premises, suppliers and materials, certified laboratory workflows, audit and certification records, production, batch, warehouse, logistics custody, ports, GCC receiving, distribution and verification. Evidence, custody, status, exceptions, analytics and corrective actions remain connected to the same product context from origin to destination.
+AHTE and Amanah provide continuous, real-time assurance across the complete halal supply-chain process: certified product and SKU, premises, suppliers and materials, JAKIM-certified laboratory workflows, audit and certification records, production, batch, JAKIM-certified warehouses and logistics, ports, GCC receiving, distribution and verification. Evidence, custody, status, exceptions, analytics and corrective actions remain connected to the same product context from origin to destination.
 
 AI/ML supports evidence review, anomaly detection, predictive analytics, impact assessment and preemptive strategy recommendations. JAKIM, JAIN/JAIM, muftis, scholars and authorised halal auditors make certification award and revocation decisions through their governance and certification processes. The platform monitors the end-to-end process in real time and records and propagates those decisions. PHC and JAKIM work in parallel across Perak/state and federal governance within Malaysia’s shared Islamic-law framework.
 
@@ -13,13 +13,13 @@ AI/ML supports evidence review, anomaly detection, predictive analytics, impact 
 - **AHTE:** standards applicability, controls, evidence, traceability, trust records, digital twins, real-time monitoring, analytics and decision support.
 - **Authority integration:** AHTE ⇄ Direct JAKIM API ⇄ JAKIM.
 - **Malaysia governance:** PHC and JAKIM work in parallel across state and federal functions.
-- **Supply chain:** producers, certified labs and premises, Sinotrans logistics and warehouses, ports/customs, GCC importers, distributors and retailers.
+- **Supply chain:** producers, JAKIM-certified labs and premises, JAKIM-certified logistics providers and warehouses including Sinotrans operations, ports/customs, GCC importers, distributors and retailers.
 - **Finance:** Shariah finance and Takaful integration workflows.
 
 ## End-to-end product journey
 
 ```text
-Origin → organisation/premises → product/SKU/suppliers/materials → applicable requirements and controls → certified lab sampling/custody/results → audit and certification review → corrective action/re-verification → production/batch → certified warehouse/logistics custody → ports/customs → GCC receiving → distribution/retail → verification and recall support
+Origin → organisation/premises → product/SKU/suppliers/materials → applicable requirements and controls → JAKIM-certified lab sampling/custody/results → audit and certification review → corrective action/re-verification → production/batch → JAKIM-certified warehouse/logistics custody → ports/customs → GCC receiving → distribution/retail → verification and recall support
 ```
 
 ## Repository map
@@ -36,4 +36,4 @@ Origin → organisation/premises → product/SKU/suppliers/materials → applica
 | `REPO_INDEX.md` | Repository guide |
 | `STATUS.md` | Current implementation and connector status |
 
-Commercial agreements, private trip administration, counterparty signatories, and transaction records are maintained outside this public repository.
+Project operating model: [STATUS.md](STATUS.md), [GOVERNANCE.md](GOVERNANCE.md), and [COMPLIANCE_ALIGNMENT.md](COMPLIANCE_ALIGNMENT.md).
