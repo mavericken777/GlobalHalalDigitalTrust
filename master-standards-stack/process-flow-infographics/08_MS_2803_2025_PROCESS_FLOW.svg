@@ -53,7 +53,7 @@
 <rect x="130" y="1034" width="1540" height="83" rx="18" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2"/>
 <circle cx="174" cy="1075" r="26" fill="#0f172a"/>
 <text x="174" y="1082" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="800" text-anchor="middle" fill="#ffffff">8</text>
-<text x="218" y="1068" font-family="Inter,Arial,sans-serif" font-size="20" font-weight="650" text-anchor="start" fill="#0f172a">Certification decision workflow / release</text>
+<text x="218" y="1068" font-family="Inter,Arial,sans-serif" font-size="20" font-weight="650" text-anchor="start" fill="#0f172a">Certification decision and monitoring</text>
 <rect x="82" y="1018" width="500" height="58" rx="15" fill="#ecfeff" stroke="#99f6e4"/>
 <text x="105" y="1055" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="650" text-anchor="start" fill="#0f172a">AHTE bindings: requirement • HCP • evidence • audit test</text>
 <rect x="600" y="1018" width="500" height="58" rx="15" fill="#f8fafc" stroke="#cbd5e1"/>
