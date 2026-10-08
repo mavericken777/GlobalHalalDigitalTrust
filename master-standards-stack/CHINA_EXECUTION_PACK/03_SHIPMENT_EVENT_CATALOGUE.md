@@ -30,12 +30,11 @@ Every shipment workflow event uses the common envelope:
 
 ## 2. Lifecycle catalogue
 
-### A. Programme and organisation
+### A. Organisation and premises
 
 | Event | Trigger | Minimum payload | Result |
 |---|---|---|---|
-| `E-PROGRAMME-OPEN` | Pilot formally opened | programme, sponsor, scope | ACTIVE |
-| `E-ORG-ONBOARD` | Participant admitted | legal identity, scope, owner | ONBOARDED |
+| `E-ORG-ONBOARD` | Organisation onboarded | legal identity, scope, owner | ONBOARDED |
 | `E-FACILITY-REGISTERED` | Factory/site registered | site, address, facility class | REGISTERED |
 | `E-ROLE-ASSIGNED` | Operational role assigned | actor, role, authority/scope | ACTIVE |
 | `E-COMPETENCE-VERIFIED` | Competence checked | qualification, validity, scope | VERIFIED |
@@ -175,7 +174,7 @@ Every shipment workflow event uses the common envelope:
 9. Out-of-order events are quarantined for reconciliation rather than silently merged.
 10. Event deletion is prohibited from the operational ledger; correction occurs by a compensating event.
 
-## 4. shipment workflow critical-path sequence
+## 4. Shipment lifecycle sequence
 
 ```text
 PRODUCT_SCOPE

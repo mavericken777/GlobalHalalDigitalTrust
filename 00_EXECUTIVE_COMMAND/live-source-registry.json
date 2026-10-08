@@ -250,13 +250,6 @@
         "class": "partner_evidence",
         "use": "Enterprise mobilisation/trade enablement project materials",
         "status": "PROJECT-DESIGNATED; CONTRACTUAL-EVIDENCE-OPEN"
-      },
-      "china_food_security_lab": {
-        "url": "https://github.com/mavericken777/GlobalHalalDigitalTrust/tree/main/partners/china-food-security-lab",
-        "issuing_entity": "China government food security laboratory",
-        "class": "partner_evidence",
-        "use": "Analytical-evidence project materials",
-        "status": "PROJECT-DESIGNATED; ACCREDITATION/CONTRACT-EVIDENCE-OPEN"
       }
     },
     "canonical_repository": {

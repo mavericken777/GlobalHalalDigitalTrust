@@ -1,42 +1,11 @@
-# Governance
+# Project governance
 
-Control date: 2026-09-28
+Global Halal Supply Chain Limited operates the international digital-infrastructure layer for Amanah and the Global Halal Digital Trust ecosystem.
 
-## Current control reality
+PHC and JAKIM work in parallel across Perak/state and federal Malaysian governance under the shared Islamic-law framework. JAKIM/JAIN/JAIM, muftis, scholars and authorised halal auditors make certification award and revocation decisions through their applicable processes. Amanah/AHTE connects the product, premises, evidence and operating records, monitors changes across the journey, and records and propagates those decisions.
 
-| Fact | State |
-|---|---|
-| Maintainer | Single GitHub account: `mavericken777` |
-| Signed commits | Not established as a repository rule |
-| Independent directors / multisig | None |
-| External governance review | No independent second control party evidenced; PR merges and CI do not establish one |
-| CI | Reference runtime, gateway/OPA, repository integrity and infographic workflows; passing them does not establish production assurance |
-| Backup governance | Not constituted |
-| License | MIT for repository-owned material (`LICENSE`); third-party standards and other source-held PDFs are outside that grant |
+The platform topology is **AHTE ⇄ Direct JAKIM API ⇄ JAKIM**. AI/ML supports evidence review, monitoring, anomaly and risk prediction, impact analysis and preemptive strategy recommendations. Product and premises assurance, certification decisions, custody, customs events and finance/Takaful decisions are connected in the product record with their responsible actors and evidence.
 
-This repository does **not** currently implement a federated, multi-sovereign or multi-party control plane. Language such as "sovereign federated ecosystem" describes a **target architecture**, not present-day control.
+The physical operating corridor is **China → GCC direct**. GHSCL coordinates the international operating and digital-infrastructure layer and the 24/7 Command Center. Laboratories, manufacturers, Sinotrans logistics and warehouses, ports/customs, GCC importers, distributors, retailers and finance providers contribute records through their applicable workflows and interfaces.
 
-## What files named AUDIT mean
-
-`REPOSITORY_COMPLETION_AUDIT_*`, `AGENT_CONTROL_LAYER_AUDIT_*`, `IQ300_ASSURANCE_CONTROL_PLANE_AUDIT_*` and similar documents are **maintainer self-assessments**.
-
-They are not:
-
-- ISO/IEC 17021 or 17025 audits
-- JAKIM / MAIN / JAIN certification decisions
-- JSM standards publications
-- GCC competent-authority decisions
-- partner-attested reports
-- financial audits
-
-No self-assessment in this repository may be cited as independent verification.
-
-## Required before any public "live" claim
-
-1. Named second maintainer or legal entity control arrangement.
-2. Commit signing policy enforced.
-3. External review of the evidence model by a party that did not author it.
-4. At least one executed partner or laboratory instrument on file.
-5. A running system whose logs can be inspected independently of this git history.
-
-Until then, public materials must lead with `STATUS.md`.
+Project governance and operating workflows are described in [STATUS.md](STATUS.md), [REPO_INDEX.md](REPO_INDEX.md), and the architecture and integration specifications.

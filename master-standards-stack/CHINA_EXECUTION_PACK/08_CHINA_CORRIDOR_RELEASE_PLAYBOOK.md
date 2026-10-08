@@ -1,281 +1,37 @@
-# 08 — China Pilot → shipment workflow → GCC Release Operating Playbook
+# China-to-GCC operating playbook
 
-## 1. Mission
+## 1. Organisation and premises onboarding
 
-Execute the first controlled China → GCC deployment as a complete physical + digital proof-of-operation and establish the repeatable pattern for scale.
+Register the organisation, operating facilities, people, equipment, roles and system connections. Link every facility to the relevant competent-authority records and scope. Maintain current status and supporting evidence for each premise.
 
-## 2. Pilot scope
+## 2. Product and supplier assurance
 
-### China
-- One or more nominated manufacturers.
-- Selected pilot products.
-- Material/supplier dossier.
-- Facility/process digital twin.
-- HCP/control map.
-- Smart-glass audit.
-- Laboratory pathway where applicable.
-- ERP/MES/QMS/WMS/LIMS integration.
-- Logistics provider integration.
+Register each product/SKU, formulation or bill of materials, suppliers, source materials, lots and applicable requirements. Connect each control to its owner, monitoring event and evidence record. Keep changes linked to the affected product and premises.
 
-### Corridor
-`Factory → consolidation/loading → container/seal → China logistics → export gateway → transit → GCC port/customs → destination warehouse → retail/distribution`.
+## 3. Laboratory evidence
 
-### Destination
-Start with a named GCC market and expand after the first shipment. The pack supports Saudi Arabia and UAE destination rule variants.
+Create a sample request tied to the product, batch and required method. Record sample identity, collection, seal, each custody transfer, receipt, method and quality-control context, result, technical review, authorised signatory and report version. Link the report to the assurance record. A laboratory result is evidence and does not itself grant halal certification.
 
-## 3. Journey stages
+## 4. Audit and certification decisions
 
-### Stage 0 — Governance
-**Inputs:** HOD mandate, programme sponsor, pilot scope.
+Auditors review the applicable scope, premises, product, supplier, material, production and laboratory evidence. Findings connect to corrective action and re-verification. JAKIM/JAIN/JAIM, muftis, scholars and authorised halal auditors make certification award and revocation decisions through their applicable processes. The platform records the decision, scope, issuer, evidence and effective status.
 
-**Outputs:** signed programme charter, interface owners, technical workstreams.
+## 5. Production and continuous monitoring
 
-**Pass:** every interface has an accountable owner.
+Bind production runs, batches, lots, line/equipment state, inputs, controls and operators to the certified premises and product records. The real-time monitoring system correlates events, detects anomalies, predicts risk, identifies affected scope and recommends preemptive strategies. Responsible human operators and competent authorities act on recommendations and decisions.
 
-### Stage 1 — Manufacturer activation
-**Inputs:** legal/site/product information.
+## 6. Warehouse and logistics custody
 
-**Outputs:** facility twin, product objects, material dossiers, system inventory.
+Record JAKIM-certified warehouse and logistics-provider status, receiving inspection, segregation, storage conditions, loading, vehicle/container/seal identity, custody transfers, telemetry and exceptions. Sinotrans and other configured logistics interfaces connect the China-to-GCC movement to the same product and batch evidence.
 
-**Pass:** factory can produce an auditable digital batch genealogy.
+## 7. Ports, customs and GCC destination
 
-### Stage 2 — Assurance readiness
-**Inputs:** standards/control set, HCP model, evidence templates.
+Prepare an evidence-linked shipment view for origin port/customs processes, direct China-to-GCC movement, destination arrival and GCC receiving. Authorities retain their own sovereign decisions. Reconcile shipment, seal, custody and destination records before onward warehouse, distribution, retail and verification workflows.
 
-**Outputs:** audit package, lab plan, corrective-action workflow.
+## 8. Exception handling and recall
 
-**Pass:** dry-run audit closes with traceable evidence.
+Connect each exception to affected objects, evidence, actor, time and location. Preserve the original record and add corrections as superseding records. Support investigation, containment, corrective action, re-verification, authority action and product recall across the affected supply-chain scope.
 
-### Stage 3 — Shipment readiness
-**Inputs:** released lots, packaging, pallets, logistics booking.
+## 9. Command Center
 
-**Outputs:** shipment object, container, seal, trust packet, export document set.
-
-**Pass:** 100% critical objects reconcile.
-
-### Stage 4 — Export
-**Inputs:** origin packet, declaration, physical cargo.
-
-**Outputs:** export release + signed custody event.
-
-**Pass:** origin inspection and system state match.
-
-### Stage 5 — GCC arrival
-**Inputs:** container, seal, trust packet, importer records.
-
-**Outputs:** destination inspection, import decision, warehouse receipt.
-
-**Pass:** seal/container/document reconciliation succeeds or exceptions are dispositioned.
-
-### Stage 6 — Destination release
-**Inputs:** import release, destination reconciliation.
-
-**Outputs:** warehouse release, distribution event.
-
-**Pass:** affected inventory objects are correctly scoped.
-
-### Stage 7 — Post-shipment
-**Inputs:** event stream, exceptions, audit results.
-
-**Outputs:** lessons, KPI report, scale decision.
-
-## 4. Workstream structure
-
-| Workstream | Deliverable |
-|---|---|
-| Governance | HOD RACI, programme charter, decision register |
-| Standards | China/Malaysia/GCC resolved requirement sets |
-| Manufacturer | Facility/product/material digital twins |
-| Audit | Smart-glass audit package + evidence templates |
-| Laboratory | Method/sample/custody/result chain |
-| Factory IT | ERP/MES/QMS/WMS/LIMS integration |
-| Cybersecurity | Identity/key/device/security baseline |
-| Logistics | Cargo/custody/seal integration |
-| Border | Trust packet + officer workflow |
-| GCC | Importer/destination/warehouse workflow |
-| Consumer/stakeholder | Verification endpoint |
-| Analytics | KPI/exception/recall dashboard |
-
-## 5. Four-week integrated sprint
-
-### Week 1 — Institutional and technical scope definition
-
-- Confirm counterpart owners.
-- Confirm product roster.
-- Confirm facility roster.
-- Inventory factory systems.
-- Establish object IDs.
-- Establish data classification.
-- Establish trust anchors.
-- Finalise destination rule pack.
-
-### Week 2 — Factory activation
-
-- Load material/supplier records.
-- Create product/formula versions.
-- Build facility/process twin.
-- Instantiate HCPs.
-- Connect factory APIs.
-- Load audit package.
-- Validate laboratory chain.
-
-### Week 3 — Physical rehearsal
-
-- Dry-run smart-glass audit.
-- Sample chain rehearsal.
-- Batch/lot traceability test.
-- Pallet/container/seal binding.
-- Carrier custody test.
-- Port officer workflow simulation.
-- GCC destination release simulation.
-
-### Week 4 — shipment workflow rehearsal and release
-
-- Register shipment object.
-- Generate signed trust packet.
-- Reconcile all critical objects.
-- Complete origin clearance and record authority evidence.
-- Execute physical shipment.
-- Complete destination clearance and record authority evidence.
-- Perform recall drill after release.
-- Hold executive/HOD post-ship review.
-
-## 6. Manufacturer activation dossier
-
-### Corporate
-Legal entity, manufacturing licences, site, owners, designated programme contact.
-
-### Products
-SKU, specification, formula/BOM, process version, intended GCC market.
-
-### Materials
-Supplier, source, origin, specification, certificates and related halal-risk evidence.
-
-### Facility
-Layout, zoning, process flow, equipment, hygiene/sanitation, segregation.
-
-### People
-Responsible roles, competency, training, authorisation, audit participation.
-
-### Systems
-ERP, MES, QMS, WMS, LIMS, DMS, IoT and identity systems.
-
-### Assurance
-Audit, evidence, laboratory, corrective-action and change-control records.
-
-## 7. shipment workflow digital twin
-
-```text
-shipment-workflow
- ├── Orders
- ├── Products
- │    └── Lots
- │         └── Pallets
- │              └── Container
- │                   └── Seal
- ├── Documents
- ├── Certificates / Decisions
- ├── Evidence
- ├── Custody Events
- ├── Inspections
- ├── Trust Assertion
- ├── Exceptions
- └── Destination Inventory
-```
-
-## 8. Origin release checklist
-
-- Product scope resolved.
-- Requirements resolved.
-- Material provenance complete.
-- Applicable HCPs executed.
-- Audit status acceptable.
-- Laboratory results linked where required.
-- Lots released.
-- Pallet genealogy complete.
-- Container assigned.
-- Seal applied and photographed.
-- Export documents reconciled.
-- Trust assertion signed.
-- Carrier custody event signed.
-
-## 9. GCC release checklist
-
-- Importer identified.
-- Destination rule pack resolved.
-- Trust assertion verified.
-- Container identity matched.
-- Seal identity matched.
-- Documents reconciled.
-- Authority/inspection result recorded.
-- Destination inventory created.
-- Quarantine/release state recorded.
-- Distribution permission/status recorded.
-
-## 10. Incident playbook
-
-### Identity mismatch
-`STOP → HOLD → CAPTURE → RECONCILE → AUTHORITY REVIEW → RESOLVE`
-
-### Seal mismatch
-`HOLD → PHYSICAL INSPECTION → EVIDENCE → CUSTODY INVESTIGATION → AUTHORITY DECISION`
-
-### Evidence contradiction
-`HOLD AFFECTED OBJECTS → COMPARE SOURCES → IDENTIFY AUTHORITATIVE RECORD → CORRECT/ESCALATE`
-
-### Route anomaly
-`ALERT → CHECK TELEMETRY → CHECK CUSTODY → VERIFY CONDITION → DECISION`
-
-### Recall
-`RECALL OPEN → TRACEBACK → TRACEFORWARD → QUARANTINE → DISPOSITION → CLOSE`
-
-## 11. KPI pack
-
-| KPI | Target |
-|---|---|
-| Critical traceability completeness | 100% |
-| Critical custody capture | 100% |
-| Unexplained identity mismatch | 0 |
-| Unlinked critical evidence | 0 |
-| Seal reconciliation | 100% |
-| Recall blast-radius determinism | 100% of tested scenarios |
-| Cross-border minimum-data compliance | 100% of approved packets |
-| Audit evidence retrieval | Minutes, not days |
-| Unauthorized data access | 0 |
-
-## 12. Scale-out
-
-After shipment workflow:
-
-`POST-SHIPMENT REVIEW → CONTROL TUNING → CONTROLLED TEMPLATE VERSION → SECOND MANUFACTURER → SECOND ROUTE/PRODUCT → MULTI-SITE → REGIONAL SCALE`.
-
-The critical scale principle is template standardisation without forcing identical local implementation. The common objects/events remain stable while jurisdiction-specific rule packs and operating procedures can vary.
-
-## 13. Exit report
-
-The post-ship executive report must contain:
-
-- event-completeness report;
-- traceability graph;
-- evidence completeness;
-- audit outcomes;
-- laboratory outcomes;
-- custody graph;
-- border events;
-- destination release;
-- exceptions;
-- corrective actions;
-- security events;
-- recall drill result;
-- KPI dashboard;
-- scale recommendation.
-
-## 14. Destination references
-
-Saudi SFDA guidance requires imported food to meet KSA requirements and identifies halal and origin/slaughter documentation where applicable; Saudi Halal Center has a distinct eligibility/audit/decision workflow. citeturn848971search1turn848971search0
-
-UAE MoIAT operates national conformity-mark licensing, including the Halal National Mark, through a digital application and field-assessment workflow and provides a route for registration of halal certification bodies. citeturn848971search2turn848971search12
-
-## 15. Definition of done
-
-shipment workflow is complete when the complete physical journey and digital trust journey can be reconstructed from the repository's event stream and linked evidence, the destination operating team can verify the scoped shipment state, exceptions can be deterministically isolated, and a repeatable implementation template exists for the next manufacturer and route.
+The 24/7 GHSCL Command Center presents current product/premises assurance, laboratory evidence, production and custody events, port/destination status, exceptions, analytics and preemptive recommendations. Certification status remains sourced to the competent authority. Authority API connectivity follows **AHTE ⇄ Direct JAKIM API ⇄ JAKIM**.

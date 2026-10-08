@@ -71,7 +71,7 @@
     ],
     "extended_aggregation": "unit -> box -> carton -> pallet -> logistic unit -> container -> shipment -> GCC destination inventory",
     "hard_rule": "NOT_DETECTED != HALAL",
-    "current_profile": "partners/china-food-security-lab/AHTE_CHINA_LAB_TRACEABILITY_INTEGRATION_PROFILE_2026-09-30.md"
+    "current_profile": "partners/README.md"
   },
   "manufacturer_onboarding": [
     "manufacturer identified",

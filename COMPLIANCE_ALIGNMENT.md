@@ -1,13 +1,17 @@
-# Standards alignment (reference engine)
+# Assurance operating model
 
-| Domain | Referenced standard | Code | Limit |
-|---|---|---|---|
-| Supply-chain events | GS1 EPCIS 2.0 shaped payload | `runtime/gateway/models.py` | Shape only; not a certified EPCIS repository |
-| Halal food model | MS 1500 / SMIIC 1 themes | `runtime/policies/halal_gate.rego` | Policy paraphrase; licensed clauses not reproduced |
-| Digital assertions | W3C VC-like signed JSON | `runtime/gateway/crypto.py` | Project assertion, not a statutory certificate |
-| Cold-chain demo bound | Demo -25 to -18 C | `valid_temperature` | Fixture bound, not a universal Codex rule |
-| Facility registry | `runtime/policies/data.json` | Fixture IDs only | **Not a JAKIM / BPJPH / SFDA / DAFF list** |
+This file describes the product and governance model used by the project. It is not a standards register and does not reproduce normative clauses.
 
-## Statutory disclaimer
+## Governance and certification
 
-This engine evaluates demo telemetry against demo policy. Physical certification, ritual compliance, and corridor release remain with accredited competent authorities. Facility keys prefixed `FIXTURE-` are simulated.
+PHC and JAKIM work in parallel across Perak/state and federal Malaysian governance. JAKIM/JAIN/JAIM, muftis, scholars and authorised halal auditors make certification award and revocation decisions through their applicable processes. AHTE connects and monitors evidence for certified products/SKUs, premises, suppliers, JAKIM-certified laboratories, logistics providers and warehouses, and production. It records and propagates competent-authority decisions.
+
+## Platform and corridor
+
+- Authority connectivity: **AHTE ⇄ Direct JAKIM API ⇄ JAKIM**.
+- Physical corridor: **China → GCC direct**.
+- AI/ML supports evidence review, real-time monitoring, anomaly detection, predictive analytics and preemptive strategy recommendations. It does not make certification decisions.
+- Laboratory results are evidence linked to sample identity, custody, method, quality controls, review and report. A test result alone does not establish halal status.
+- Logistics, warehouse, port/customs and destination events are connected to the product and custody record. Sovereign and certification decisions remain with the responsible authorities.
+
+Applicable standards, laws, destination requirements and methods must be taken from their current authoritative sources in the relevant implementation. No normative text is created by this overview.

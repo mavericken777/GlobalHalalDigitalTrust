@@ -8,8 +8,7 @@ These pages describe the intended platform interfaces and institutional roles. T
 | `ghsc-hk/` | International operating and digital-infrastructure coordination |
 | `jgc/` | Enterprise mobilisation and trade coordination interface |
 | `sinotrans/` | Warehouse, logistics, custody, and telemetry interface |
-| `china-food-security-lab/` | Laboratory evidence workflow |
-| `nicfs/` | Traceability integration option |
+| Laboratory interfaces | `master-standards-stack/CHINA_EXECUTION_PACK/api/` and `schemas/` describe generic sample, method, result and evidence interfaces |
 | `coda/` | Enterprise mobilisation interface |
 | `lulu/`, `carrefour-maf/`, `tamimi/`, `noon/` | GCC buyer, receiving, distribution, or retail workflows |
 

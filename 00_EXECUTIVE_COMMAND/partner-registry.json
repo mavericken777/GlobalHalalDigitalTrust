@@ -134,33 +134,6 @@
       "repository_path": "partners/sinotrans/"
     },
     {
-      "id": "nicfs",
-      "name": "NICFS / Hengqin food-safety platform",
-      "role": "China-side physical identity / traceability / anti-counterfeit source and optional laboratory-evidence integration",
-      "path": "partners/nicfs/",
-      "canonical_path_position": [
-        "Identity",
-        "Evidence",
-        "Traceability"
-      ],
-      "evidence_class": [
-        "E1",
-        "E2"
-      ],
-      "integration_points": [
-        "Enterprise/product identity",
-        "One-item-one-code",
-        "Microdot/QR/VOID where deployed",
-        "Unit-box-carton-pallet aggregation",
-        "Traceability events",
-        "Anti-diversion/scan analytics",
-        "AHTE evidence binding"
-      ],
-      "connector_state": "production-credentials-required",
-      "development_provider_required": true,
-      "repository_path": "partners/nicfs/"
-    },
-    {
       "id": "coda",
       "name": "China Overseas Development Association",
       "role": "Institutional introductions and proposed China enterprise mobilisation/export enablement backbone",
@@ -295,43 +268,6 @@
         "Transaction facilitation"
       ],
       "repository_path": "partners/china-merchant/"
-    },
-    {
-      "id": "china-food-security-lab",
-      "name": "National Food Safety (Hengqin) Innovation Center under Chinese Academy of Agricultural Sciences, China",
-      "role": "China-origin laboratory institution for analytical evidence generation and laboratory integration",
-      "canonical_path_position": [
-        "Evidence",
-        "Audit Test"
-      ],
-      "evidence_class": [
-        "E3"
-      ],
-      "repository_path": "partners/china-food-security-lab/",
-      "current_profile": "partners/china-food-security-lab/AHTE_CHINA_LAB_TRACEABILITY_INTEGRATION_PROFILE_2026-09-30.md",
-      "integration_points": [
-        "Sample/custody evidence",
-        "Method/QC/signed result",
-        "E3 evidence production",
-        "Traceability/physical-code events",
-        "AHTE evidence ingestion",
-        "Direct JAKIM API authority workflow linkage",
-        "24/7 Command Center feed",
-        "Predictive/preemptive analytics"
-      ],
-      "connector_state": "production-credentials-required",
-      "development_provider_required": true,
-      "development_provider_scope": [
-        "test request",
-        "sample registration",
-        "custody",
-        "method/scope",
-        "result",
-        "report correction/withdrawal",
-        "integrity verification",
-        "traceability/physical-code binding"
-      ],
-      "path": "partners/china-food-security-lab/"
     }
   ],
   "transaction_support_planes": {
@@ -349,12 +285,5 @@
     }
   },
   "provider_state_affirmation": "Provider and authority connection states are recorded from verified source data; complete platform workflows remain available for connected use.",
-  "identity_crosswalk": [
-    {
-      "from": "china-food-security-lab",
-      "candidate": "nicfs",
-      "status": "UNRESOLVED_NOT_AN_ALIAS",
-      "required_evidence": "Exact registered identities and documented relationship; S03"
-    }
-  ]
+  "identity_crosswalk": []
 }

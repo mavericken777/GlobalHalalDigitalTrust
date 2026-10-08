@@ -7,7 +7,7 @@ This repository describes the current Global Halal Digital Trust ecosystem and i
 ## Current model
 
 - Company: Global Halal Supply Chain Limited, Hong Kong.
-- Platform: Amanah/AHTE; end-to-end assurance and real-time monitoring across certified premises, SKUs, laboratories, production, warehouses and logistics.
+- Platform: Amanah/AHTE; end-to-end assurance and real-time monitoring across JAKIM-certified premises, SKUs, laboratories, production, warehouses and logistics.
 - Malaysia governance: PHC and JAKIM work in parallel across state and federal functions; JAKIM/JAIN/JAIM, muftis, scholars and authorised halal auditors make certification award and revocation decisions.
 - AI/ML: evidence support, anomaly detection, predictive analytics and preemptive strategy recommendations.
 - Authority integration: AHTE ⇄ Direct JAKIM API ⇄ JAKIM.
@@ -18,7 +18,6 @@ This repository describes the current Global Halal Digital Trust ecosystem and i
 
 - Current standards reference: `master-standards-stack/iq300-all-jakim-ms/01_MASTER_STANDARDS_REGISTER.md`.
 - Current standards and operating information are maintained in the active register and current specifications.
-- Private commercial instruments, signatures, personal identifiers, trip administration and transaction-specific records are outside this public repository.
 - Connector contracts and workflows remain in the repository; production states are reported only when configured and verified.
 
 The repository integrity, policy, gateway, reference-runtime and application checks are available in the [GitHub Actions page](https://github.com/mavericken777/GlobalHalalDigitalTrust/actions). The public website is published from the Amanah repository.
