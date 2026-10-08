@@ -5,7 +5,6 @@
 
 [PILOT: shipment workflow — China → GCC direct]
 
-[PROPOSAL: aligns China execution pack to current target architecture — path point: Control → Evidence → Authority Gate → Trust State → Operational Release]
 
 ## Implementation completeness rule
 
@@ -127,7 +126,7 @@ Jurisdictional implementation must preserve current Chinese data-governance, cyb
 - Physical identifiers and digital identifiers must remain bound throughout the lifecycle.
 - Exception states are engineered as first-class operating paths.
 - Human authority remains explicit in the data model through signed decisions and role-authorised actions.
-- AI/ML may analyse, predict and recommend; D5/D6 authority decisions remain human/authority-controlled.
+- AI/ML may analyse, predict and recommend; authorised certification decision workflow authority decisions remain human/authority-controlled.
 - External gates are not product feature blocks; complete adapters/workflows must still be built.
 
 ## Programme gates
@@ -210,5 +209,3 @@ shipment workflow is considered operationally successful when AHTE can reconstru
 ## Repository integrity
 
 All normative standard content remains source-governed. The execution pack stores implementation semantics, metadata, mappings, schemas and process logic rather than reproducing licensed standards verbatim.
-
-This file does not modify `master-standards-stack/verified-2026-09-17/`.

@@ -6,7 +6,6 @@
 | Artifact | `29_GLOBAL_PORT_AUTHORITIES_PROTOCOL_2026.md` |
 | Target folder | `deliverables/` |
 | Control date | 17 September 2026 |
-| Freeze boundary | `master-standards-stack/verified-2026-09-17/` |
 | Supersedes | None |
 | Companion artifacts | `00_EXECUTIVE_COMMAND/port-authority-registry.json`, `00_EXECUTIVE_COMMAND/corridor-registry.json` |
 | Commit message | `docs(deliverables): add 29 — Global Port Authorities Protocol for China-GCC corridor [DOCTRINE-CRITICAL]` |
@@ -22,7 +21,7 @@ Define the structured engagement protocol for origin-China and destination-GCC p
 - Related entities: customs, border control, quarantine/inspection/food authorities and authorised logistics operators including Sinotrans where selected.
 - Out of scope: non-GCC destination corridors unless separately scoped.
 
-## 3. AUTHORITY BOUNDARY
+## 3. certification workflow
 - Port/customs clearance decisions remain solely with competent national/local authorities.
 - No AI output, platform event, partner declaration, lab result or AHTE trust state creates official clearance, release or Halal certification.
 - Port/customs decisions are distinct from Malaysia Halal certification decisions and from destination halal/product acceptance decisions.
@@ -118,22 +117,16 @@ A deviation from the planned document set requires applicability review and an e
 ## 10. EXCEPTION HANDLING
 
 ### 10.1 Origin Hold
-`[OPEN GATE: ORIGIN HOLD — owner: origin customs/competent authority — blocking: Authority Gate/Origin Clearance]`
 
 ### 10.2 Destination Hold
-`[OPEN GATE: DESTINATION HOLD — owner: destination authority — blocking: Authority Gate/Border Release]`
 
 ### 10.3 Seal Breach
-`[OPEN GATE: SEAL BREACH — owner: custody operator — blocking: Evidence/Custody]` — quarantine and re-verify before release.
 
 ### 10.4 Telemetry Excursion
-`[OPEN GATE: TELEMETRY EXCURSION — owner: logistics/quality — blocking: Tayyib/condition verification]` — assess against commodity risk profile.
 
 ### 10.5 Document Discrepancy
-`[OPEN GATE: DOCUMENT DISCREPANCY — owner: document issuer/importer/exporter — blocking: Applicability/Evidence]`
 
 ### 10.6 Damage
-`[OPEN GATE: DAMAGE — owner: carrier/insurer/receiver — blocking: Receiving Verification]`
 
 ## 11. ESCALATION MATRIX
 | Issue | Primary Owner | Escalation |
@@ -159,7 +152,7 @@ The following are internal planning windows only, not authority SLAs:
 
 Actual timing is controlled by authority decisions, carrier schedules and transaction conditions.
 
-## 13. OPEN GATES
+## 13. PORT AND CUSTOMS OPERATING RECORDS
 - exact origin port/terminal;
 - exact destination country/emirate/port;
 - exact SKU/document set;
@@ -169,7 +162,7 @@ Actual timing is controlled by authority decisions, carrier schedules and transa
 - actual goods receipt/reconciliation.
 
 ## 14. CANONICAL PATH MAPPING
-`Authority → Instrument/requirement → Applicability → Port/custody control → Evidence → Audit/inspection test → Finding/hold → Corrective action → Re-verification → Authority Gate → Trust State → Operational Release`
+`Authority → Instrument/requirement → Applicability → Port/custody control → Evidence → Audit/inspection test → Finding/hold → Corrective action → Re-verification → certification and customs decisions → Trust State → Operational Release`
 
-## 15. AUTHORITY BOUNDARY AFFIRMATION
-Port/customs authorities retain sovereign decision authority. AHTE captures evidence and state transitions but does not issue or modify official clearance, release or Halal certification.
+## 15. certification workflow AFFIRMATION
+Port/customs authorities decide sovereign clearance and release. Certification decision makers decide Halal certification. AHTE connects and monitors evidence and verified decision-state changes across the operating journey.

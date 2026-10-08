@@ -37,6 +37,6 @@ This directory is the visual execution layer for the **Amanah Halal Trust Ecosys
 
 ## Common AHTE execution chain
 
-`Authority → Standard / Instrument → Clause / Requirement → Applicability → Control → HCP / SCCP → Evidence → Audit Test → Finding → Corrective Action → Re-verification → Authority Gate → Trust State → Operational Release`
+`Authority → Standard / Instrument → Clause / Requirement → Applicability → Control → HCP / SCCP → Evidence → Audit Test → Finding → Corrective Action → Re-verification → certification review → Trust State → Operational Release`
 
 The graphics are **implementation-oriented paraphrases**. They do not reproduce copyrighted normative standard text. They do not imply JAKIM, MAIN, JAIN, GCC, laboratory or customs endorsement.

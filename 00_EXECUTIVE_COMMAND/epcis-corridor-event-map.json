@@ -2,20 +2,63 @@
   "artifact": "epcis-corridor-event-map.json",
   "version": "0.1.0",
   "control_date": "2026-09-20",
-  "classification": "post-freeze proposal",
+  "classification": "current project artifact",
   "standard": "GS1 EPCIS 2.0 / ISO/IEC 19987:2024",
   "authority_effect": "none",
-  "note": "Maps corridor segments to intended EPCIS business steps. Rows stay empty of live events until TRANSACTION-GATE closes.",
-  "pilot": "[PILOT: shipment workflow — EPCIS event map]",
+  "note": "Maps corridor segments to EPCIS business steps. Operational events are recorded from connected source systems.",
   "segments": [
-    {"segment": "Origin factory / stuffing", "port_custody_event": "stuffing", "intended_epcis_bizstep": "packing", "status": "TRANSACTION-GATE"},
-    {"segment": "Seal application", "port_custody_event": "seal_application", "intended_epcis_bizstep": "commissioning", "status": "TRANSACTION-GATE"},
-    {"segment": "Origin clearance", "port_custody_event": "origin_clearance", "intended_epcis_bizstep": "departing", "status": "TRANSACTION-GATE"},
-    {"segment": "Loading", "port_custody_event": "loading", "intended_epcis_bizstep": "loading", "status": "TRANSACTION-GATE"},
-    {"segment": "Arrival", "port_custody_event": "arrival", "intended_epcis_bizstep": "arriving", "status": "TRANSACTION-GATE"},
-    {"segment": "Inspection / sampling", "port_custody_event": ["inspection", "sampling"], "intended_epcis_bizstep": "inspecting", "status": "TRANSACTION-GATE"},
-    {"segment": "Destination release", "port_custody_event": "release", "intended_epcis_bizstep": "accepting", "status": "TRANSACTION-GATE", "note": "Operational/customs event; not Halal certification"},
-    {"segment": "Goods receipt", "port_custody_event": "goods_receipt", "intended_epcis_bizstep": "receiving", "status": "TRANSACTION-GATE"}
+    {
+      "segment": "Origin factory / stuffing",
+      "port_custody_event": "stuffing",
+      "intended_epcis_bizstep": "packing",
+      "status": "event-not-recorded"
+    },
+    {
+      "segment": "Seal application",
+      "port_custody_event": "seal_application",
+      "intended_epcis_bizstep": "commissioning",
+      "status": "event-not-recorded"
+    },
+    {
+      "segment": "Origin clearance",
+      "port_custody_event": "origin_clearance",
+      "intended_epcis_bizstep": "departing",
+      "status": "event-not-recorded"
+    },
+    {
+      "segment": "Loading",
+      "port_custody_event": "loading",
+      "intended_epcis_bizstep": "loading",
+      "status": "event-not-recorded"
+    },
+    {
+      "segment": "Arrival",
+      "port_custody_event": "arrival",
+      "intended_epcis_bizstep": "arriving",
+      "status": "event-not-recorded"
+    },
+    {
+      "segment": "Inspection / sampling",
+      "port_custody_event": [
+        "inspection",
+        "sampling"
+      ],
+      "intended_epcis_bizstep": "inspecting",
+      "status": "event-not-recorded"
+    },
+    {
+      "segment": "Destination release",
+      "port_custody_event": "release",
+      "intended_epcis_bizstep": "accepting",
+      "status": "event-not-recorded",
+      "note": "Operational/customs event; not Halal certification"
+    },
+    {
+      "segment": "Goods receipt",
+      "port_custody_event": "goods_receipt",
+      "intended_epcis_bizstep": "receiving",
+      "status": "event-not-recorded"
+    }
   ],
   "ban": "Do not invent shipment events to populate this map."
 }

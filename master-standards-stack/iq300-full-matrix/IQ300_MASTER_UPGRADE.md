@@ -1,4 +1,4 @@
-# IQ300 Master Logical Upgrade - Clause -> Control -> HCP -> Evidence -> Audit Test -> Authority Gate
+# IQ300 Master Logical Upgrade - Clause -> Control -> HCP -> Evidence -> Audit Test -> certification review
 
 ## Executive specification
 
@@ -6,7 +6,7 @@ IQ300 is upgraded from a narrative standards register into a regulatory control 
 
 ## Canonical object path
 
-`INSTRUMENT -> EDITION -> CLAUSE -> REQUIREMENT INTENT -> APPLICABILITY -> CONTROL OBJECT -> HCP -> EVIDENCE -> AUDIT TEST -> FINDING -> CORRECTIVE ACTION -> RE-VERIFICATION -> AUTHORITY GATE -> TRUST STATE`
+`INSTRUMENT -> EDITION -> CLAUSE -> REQUIREMENT INTENT -> APPLICABILITY -> CONTROL OBJECT -> HCP -> EVIDENCE -> AUDIT TEST -> FINDING -> CORRECTIVE ACTION -> RE-VERIFICATION -> certification review -> TRUST STATE`
 
 ## Complete clause-object backbone from the supplied MS 2400 PDFs
 
@@ -38,6 +38,5 @@ IQ300 may calculate completeness, risk, anomalies and evidence sufficiency. It m
 
 The supplied compendia support detailed family-level mappings for MS 1500, MS 2424, MS 2634, MS 2738, MS 2803, MS 2393, MS 2627, MS 1900, MS 2691 and MS 2610. They do not expose every licensed numbered subclause. The repository records an explicit freeze gap rather than fabricating a false clause inventory.
 
-## Production freeze gate
 
-`Acquire licensed official text -> verify edition/confirmation -> parse clauses -> human legal/Shariah review -> create objects -> map controls -> map evidence -> map tests -> map authority gates -> QA -> publish version -> cryptographically freeze`
+`Acquire licensed official text -> verify edition/confirmation -> parse clauses -> human legal/Shariah review -> create objects -> map controls -> map evidence -> map tests -> map certification review -> QA -> publish version -> cryptographically freeze`

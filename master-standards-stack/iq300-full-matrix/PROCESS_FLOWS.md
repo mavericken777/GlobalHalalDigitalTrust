@@ -11,7 +11,7 @@ flowchart LR
     T --> F[Finding]
     F --> CA[Corrective action]
     CA --> RV[Re-verification]
-    RV --> AG[Authority gate]
+    RV --> AG[certification review]
     AG --> TS[Trust state]
 ```
 
@@ -43,7 +43,7 @@ flowchart TD
     CA --> VER[Verify effectiveness]
     VER --> AUTH{Authority disposition required?}
     AUTH -- No --> REL[Release under authorised control]
-    AUTH -- Yes --> GATE[Authority gate]
+    AUTH -- Yes --> GATE[certification review]
     GATE --> REL
 ```
 

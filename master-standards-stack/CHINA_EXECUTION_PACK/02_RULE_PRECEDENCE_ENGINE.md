@@ -58,7 +58,7 @@ IF CONFLICTING  → ESCALATE TO RULE OWNER
         ↓
 CREATE ResolvedRequirementSet
         ↓
-BIND CONTROL / HCP / EVIDENCE / AUTHORITY GATE
+BIND CONTROL / HCP / EVIDENCE / certification review
 ```
 
 ## 5. Compatibility logic
@@ -201,6 +201,6 @@ The 2024 CAC provisions state that certain international trade, cross-border tra
 
 Every resolved rule set must be explainable through:
 
-`Object → Rule candidates → Scope filters → Precedence → Compatibility → Conflict handling → Final requirements → Control bindings → Authority gate`.
+`Object → Rule candidates → Scope filters → Precedence → Compatibility → Conflict handling → Final requirements → Control bindings → certification review`.
 
 This decision trace becomes evidence for audits of the AHTE rules engine itself.

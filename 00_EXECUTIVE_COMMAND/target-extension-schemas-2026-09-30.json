@@ -3,42 +3,127 @@
   "artifact": "target-extension-schemas-2026-09-30.json",
   "version": "0.2.0",
   "control_date": "2026-09-30",
-  "classification": "post-freeze proposal schema extension",
+  "classification": "current project artifact",
   "authority_effect": "none",
   "description": "Target-state schemas for connector state, command-center alerts, machine prediction, preemptive strategy, Shariah-finance evidence packets, financing cases, Takaful cases and tokenized-asset references. Schema conformance does not create authority, credit, underwriting, token legal status, Shariah approval or certification status.",
   "$defs": {
     "id_array": {
       "type": "array",
-      "items": {"type": "string", "minLength": 1},
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
       "uniqueItems": true
     },
     "connector_state": {
       "type": "string",
-      "enum": ["development-provider-active", "sandbox-connected", "production-credentials-required", "production-connected"]
+      "enum": [
+        "development-provider-active",
+        "sandbox-connected",
+        "production-credentials-required",
+        "production-connected"
+      ]
     }
   },
   "schemas": {
     "connector_state_object": {
       "$id": "schema/target/connector-state.json",
       "type": "object",
-      "required": ["connector_id", "domain", "state", "production_evidence", "updated_at"],
+      "required": [
+        "connector_id",
+        "domain",
+        "state",
+        "production_evidence",
+        "updated_at"
+      ],
       "properties": {
-        "connector_id": {"type": "string", "minLength": 1},
-        "domain": {"type": "string", "enum": ["jakim", "laboratory", "sinotrans", "origin_port_customs", "gcc_port_customs", "gcc_importer", "finance", "takaful", "tokenomics", "other"]},
-        "provider": {"type": ["string", "null"]},
-        "state": {"$ref": "#/$defs/connector_state"},
-        "environment": {"type": "string", "enum": ["development", "sandbox", "staging", "production"]},
-        "production_evidence": {"type": "boolean"},
-        "last_success_at": {"type": ["string", "null"], "format": "date-time"},
-        "last_error_at": {"type": ["string", "null"], "format": "date-time"},
-        "last_error_code": {"type": ["string", "null"]},
-        "updated_at": {"type": "string", "format": "date-time"},
-        "notes": {"type": ["string", "null"]}
+        "connector_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "domain": {
+          "type": "string",
+          "enum": [
+            "jakim",
+            "laboratory",
+            "sinotrans",
+            "origin_port_customs",
+            "gcc_port_customs",
+            "gcc_importer",
+            "finance",
+            "takaful",
+            "tokenomics",
+            "other"
+          ]
+        },
+        "provider": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "state": {
+          "$ref": "#/$defs/connector_state"
+        },
+        "environment": {
+          "type": "string",
+          "enum": [
+            "development",
+            "sandbox",
+            "staging",
+            "production"
+          ]
+        },
+        "production_evidence": {
+          "type": "boolean"
+        },
+        "last_success_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "last_error_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "last_error_code": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "updated_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
       },
       "allOf": [
         {
-          "if": {"properties": {"state": {"const": "production-connected"}}},
-          "then": {"properties": {"environment": {"const": "production"}}}
+          "if": {
+            "properties": {
+              "state": {
+                "const": "production-connected"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "environment": {
+                "const": "production"
+              }
+            }
+          }
         }
       ],
       "additionalProperties": false
@@ -46,173 +131,756 @@
     "command_center_alert_object": {
       "$id": "schema/target/command-center-alert.json",
       "type": "object",
-      "required": ["alert_id", "trigger", "severity", "subject_objects", "detected_at", "status", "decision_class", "creates_authority_decision"],
+      "required": [
+        "alert_id",
+        "trigger",
+        "severity",
+        "subject_objects",
+        "detected_at",
+        "status",
+        "decision_class",
+        "creates_authority_decision"
+      ],
       "properties": {
-        "alert_id": {"type": "string", "minLength": 1},
-        "trigger": {"type": "string", "minLength": 1},
-        "taxonomy": {"type": "string", "minLength": 1},
-        "severity": {"type": "string", "enum": ["S0", "S1", "S2", "S3", "S4", "S5"]},
-        "subject_objects": {"$ref": "#/$defs/id_array"},
-        "shipment_id": {"type": ["string", "null"]},
-        "event_refs": {"$ref": "#/$defs/id_array"},
-        "evidence_refs": {"$ref": "#/$defs/id_array"},
-        "prediction_ref": {"type": ["string", "null"]},
-        "strategy_ref": {"type": ["string", "null"]},
-        "detected_at": {"type": "string", "format": "date-time"},
-        "owner_role": {"type": ["string", "null"]},
-        "decision_class": {"type": "string", "enum": ["D0", "D1", "D2", "D3", "D4", "D5", "D6"]},
-        "status": {"type": "string", "enum": ["open", "assigned", "held", "in_review", "capa", "reverification", "closed", "escalated", "recalled"]},
-        "creates_authority_decision": {"type": "boolean", "const": false}
+        "alert_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "trigger": {
+          "type": "string",
+          "minLength": 1
+        },
+        "taxonomy": {
+          "type": "string",
+          "minLength": 1
+        },
+        "severity": {
+          "type": "string",
+          "enum": [
+            "S0",
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5"
+          ]
+        },
+        "subject_objects": {
+          "$ref": "#/$defs/id_array"
+        },
+        "shipment_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "event_refs": {
+          "$ref": "#/$defs/id_array"
+        },
+        "evidence_refs": {
+          "$ref": "#/$defs/id_array"
+        },
+        "prediction_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "strategy_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "detected_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "owner_role": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "decision_class": {
+          "type": "string",
+          "enum": [
+            "D0",
+            "D1",
+            "D2",
+            "D3",
+            "D4",
+            "D5",
+            "D6"
+          ]
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "open",
+            "assigned",
+            "held",
+            "in_review",
+            "capa",
+            "reverification",
+            "closed",
+            "escalated",
+            "recalled"
+          ]
+        },
+        "creates_authority_decision": {
+          "type": "boolean",
+          "const": false
+        }
       },
       "additionalProperties": false
     },
     "prediction_object": {
       "$id": "schema/target/prediction.json",
       "type": "object",
-      "required": ["prediction_id", "model_id", "generated_at", "subject_objects", "risk_type", "evidence_refs", "creates_authority_decision"],
+      "required": [
+        "prediction_id",
+        "model_id",
+        "generated_at",
+        "subject_objects",
+        "risk_type",
+        "evidence_refs",
+        "creates_authority_decision"
+      ],
       "properties": {
-        "prediction_id": {"type": "string", "minLength": 1},
-        "model_id": {"type": "string", "minLength": 1},
-        "model_version": {"type": "string"},
-        "generated_at": {"type": "string", "format": "date-time"},
-        "subject_objects": {"$ref": "#/$defs/id_array"},
-        "risk_type": {"type": "string", "minLength": 1},
-        "predicted_failure": {"type": "string"},
-        "score": {"type": ["number", "null"]},
-        "confidence": {"type": "string", "enum": ["low", "medium", "high", "unscored"]},
-        "horizon": {"type": ["string", "null"]},
-        "evidence_refs": {"$ref": "#/$defs/id_array"},
-        "feature_refs": {"$ref": "#/$defs/id_array"},
-        "explanation": {"type": "string"},
-        "blast_radius_refs": {"$ref": "#/$defs/id_array"},
-        "decision_class": {"type": "string", "const": "D2"},
-        "creates_authority_decision": {"type": "boolean", "const": false}
+        "prediction_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "model_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "model_version": {
+          "type": "string"
+        },
+        "generated_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "subject_objects": {
+          "$ref": "#/$defs/id_array"
+        },
+        "risk_type": {
+          "type": "string",
+          "minLength": 1
+        },
+        "predicted_failure": {
+          "type": "string"
+        },
+        "score": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "confidence": {
+          "type": "string",
+          "enum": [
+            "low",
+            "medium",
+            "high",
+            "unscored"
+          ]
+        },
+        "horizon": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "evidence_refs": {
+          "$ref": "#/$defs/id_array"
+        },
+        "feature_refs": {
+          "$ref": "#/$defs/id_array"
+        },
+        "explanation": {
+          "type": "string"
+        },
+        "blast_radius_refs": {
+          "$ref": "#/$defs/id_array"
+        },
+        "decision_class": {
+          "type": "string",
+          "const": "D2"
+        },
+        "creates_authority_decision": {
+          "type": "boolean",
+          "const": false
+        }
       },
       "additionalProperties": false
     },
     "preemptive_strategy_object": {
       "$id": "schema/target/preemptive-strategy.json",
       "type": "object",
-      "required": ["strategy_id", "prediction_id", "subject_objects", "recommended_action", "decision_class", "status", "generated_at", "creates_authority_decision"],
+      "required": [
+        "strategy_id",
+        "prediction_id",
+        "subject_objects",
+        "recommended_action",
+        "decision_class",
+        "status",
+        "generated_at",
+        "creates_authority_decision"
+      ],
       "properties": {
-        "strategy_id": {"type": "string", "minLength": 1},
-        "prediction_id": {"type": "string", "minLength": 1},
-        "subject_objects": {"$ref": "#/$defs/id_array"},
-        "recommended_action": {"type": "string", "minLength": 1},
-        "alternative_actions": {"type": "array", "items": {"type": "string"}},
-        "expected_impact": {"type": "string"},
-        "urgency": {"type": "string", "enum": ["low", "medium", "high", "critical"]},
-        "evidence_refs": {"$ref": "#/$defs/id_array"},
-        "model_id": {"type": "string"},
-        "model_version": {"type": "string"},
-        "confidence": {"type": "string", "enum": ["low", "medium", "high", "unscored"]},
-        "explanation": {"type": "string"},
-        "decision_class": {"type": "string", "enum": ["D2", "D3", "D4", "D5", "D6"]},
-        "required_human_role": {"type": ["string", "null"]},
-        "generated_at": {"type": "string", "format": "date-time"},
-        "expires_at": {"type": ["string", "null"], "format": "date-time"},
-        "status": {"type": "string", "enum": ["proposed", "queued", "approved", "rejected", "executed", "expired", "superseded"]},
-        "outcome_refs": {"$ref": "#/$defs/id_array"},
-        "creates_authority_decision": {"type": "boolean", "const": false}
+        "strategy_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prediction_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "subject_objects": {
+          "$ref": "#/$defs/id_array"
+        },
+        "recommended_action": {
+          "type": "string",
+          "minLength": 1
+        },
+        "alternative_actions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "expected_impact": {
+          "type": "string"
+        },
+        "urgency": {
+          "type": "string",
+          "enum": [
+            "low",
+            "medium",
+            "high",
+            "critical"
+          ]
+        },
+        "evidence_refs": {
+          "$ref": "#/$defs/id_array"
+        },
+        "model_id": {
+          "type": "string"
+        },
+        "model_version": {
+          "type": "string"
+        },
+        "confidence": {
+          "type": "string",
+          "enum": [
+            "low",
+            "medium",
+            "high",
+            "unscored"
+          ]
+        },
+        "explanation": {
+          "type": "string"
+        },
+        "decision_class": {
+          "type": "string",
+          "enum": [
+            "D2",
+            "D3",
+            "D4",
+            "D5",
+            "D6"
+          ]
+        },
+        "required_human_role": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "generated_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "expires_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "proposed",
+            "queued",
+            "approved",
+            "rejected",
+            "executed",
+            "expired",
+            "superseded"
+          ]
+        },
+        "outcome_refs": {
+          "$ref": "#/$defs/id_array"
+        },
+        "creates_authority_decision": {
+          "type": "boolean",
+          "const": false
+        }
       },
       "additionalProperties": false
     },
     "finance_evidence_packet_object": {
       "$id": "schema/target/finance-evidence-packet.json",
       "type": "object",
-      "required": ["packet_id", "purpose", "requesting_party", "subject_objects", "issued_at", "disclosure_policy", "connector_state", "creates_financing_decision", "creates_takaful_decision"],
+      "required": [
+        "packet_id",
+        "purpose",
+        "requesting_party",
+        "subject_objects",
+        "issued_at",
+        "disclosure_policy",
+        "connector_state",
+        "creates_financing_decision",
+        "creates_takaful_decision"
+      ],
       "properties": {
-        "packet_id": {"type": "string", "minLength": 1},
-        "purpose": {"type": "string", "enum": ["trade_finance", "purchase_order_finance", "inventory_finance", "shipment_finance", "receivables_finance", "takaful_underwriting", "takaful_claim", "asset_state_verification", "tokenomics_support", "other"]},
-        "requesting_party": {"type": "string", "minLength": 1},
-        "subject_objects": {"$ref": "#/$defs/id_array"},
-        "formal_authority_status_ref": {"type": ["string", "null"]},
-        "ahte_trust_state_ref": {"type": ["string", "null"]},
-        "supply_chain_state_ref": {"type": ["string", "null"]},
-        "evidence_refs": {"$ref": "#/$defs/id_array"},
-        "custody_refs": {"$ref": "#/$defs/id_array"},
-        "exception_refs": {"$ref": "#/$defs/id_array"},
-        "integrity_manifest_ref": {"type": ["string", "null"]},
-        "issued_at": {"type": "string", "format": "date-time"},
-        "valid_until": {"type": ["string", "null"], "format": "date-time"},
-        "disclosure_policy": {"type": "string", "minLength": 1},
-        "signature_or_auth_ref": {"type": ["string", "null"]},
-        "connector_state": {"$ref": "#/$defs/connector_state"},
-        "creates_financing_decision": {"type": "boolean", "const": false},
-        "creates_takaful_decision": {"type": "boolean", "const": false},
-        "is_halal_certification": {"type": "boolean", "const": false}
+        "packet_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "purpose": {
+          "type": "string",
+          "enum": [
+            "trade_finance",
+            "purchase_order_finance",
+            "inventory_finance",
+            "shipment_finance",
+            "receivables_finance",
+            "takaful_underwriting",
+            "takaful_claim",
+            "asset_state_verification",
+            "tokenomics_support",
+            "other"
+          ]
+        },
+        "requesting_party": {
+          "type": "string",
+          "minLength": 1
+        },
+        "subject_objects": {
+          "$ref": "#/$defs/id_array"
+        },
+        "formal_authority_status_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ahte_trust_state_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "supply_chain_state_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "evidence_refs": {
+          "$ref": "#/$defs/id_array"
+        },
+        "custody_refs": {
+          "$ref": "#/$defs/id_array"
+        },
+        "exception_refs": {
+          "$ref": "#/$defs/id_array"
+        },
+        "integrity_manifest_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "issued_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "valid_until": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "disclosure_policy": {
+          "type": "string",
+          "minLength": 1
+        },
+        "signature_or_auth_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "connector_state": {
+          "$ref": "#/$defs/connector_state"
+        },
+        "creates_financing_decision": {
+          "type": "boolean",
+          "const": false
+        },
+        "creates_takaful_decision": {
+          "type": "boolean",
+          "const": false
+        },
+        "is_halal_certification": {
+          "type": "boolean",
+          "const": false
+        }
       },
       "additionalProperties": false
     },
     "financing_case_object": {
       "$id": "schema/target/financing-case.json",
       "type": "object",
-      "required": ["case_id", "purpose", "subject_objects", "evidence_packet_ref", "connector_state", "status", "external_decision_owner", "ahte_approves_financing"],
+      "required": [
+        "case_id",
+        "purpose",
+        "subject_objects",
+        "evidence_packet_ref",
+        "connector_state",
+        "status",
+        "external_decision_owner",
+        "ahte_approves_financing"
+      ],
       "properties": {
-        "case_id": {"type": "string", "minLength": 1},
-        "purpose": {"type": "string", "enum": ["trade_finance", "purchase_order_finance", "inventory_finance", "shipment_finance", "receivables_finance", "other"]},
-        "subject_objects": {"$ref": "#/$defs/id_array"},
-        "evidence_packet_ref": {"type": "string", "minLength": 1},
-        "provider_ref": {"type": ["string", "null"]},
-        "external_case_ref": {"type": ["string", "null"]},
-        "connector_state": {"$ref": "#/$defs/connector_state"},
-        "status": {"type": "string", "enum": ["draft", "evidence_packet_ready", "submitted", "received", "under_review", "info_required", "offered", "declined", "accepted", "documentation", "funded", "active", "repaid", "defaulted", "cancelled"]},
-        "external_decision_owner": {"type": "string", "minLength": 1},
-        "decision_ref": {"type": ["string", "null"]},
-        "decision_at": {"type": ["string", "null"], "format": "date-time"},
-        "event_refs": {"$ref": "#/$defs/id_array"},
-        "ahte_approves_financing": {"type": "boolean", "const": false}
+        "case_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "purpose": {
+          "type": "string",
+          "enum": [
+            "trade_finance",
+            "purchase_order_finance",
+            "inventory_finance",
+            "shipment_finance",
+            "receivables_finance",
+            "other"
+          ]
+        },
+        "subject_objects": {
+          "$ref": "#/$defs/id_array"
+        },
+        "evidence_packet_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "provider_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "external_case_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "connector_state": {
+          "$ref": "#/$defs/connector_state"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "evidence_packet_ready",
+            "submitted",
+            "received",
+            "under_review",
+            "info_required",
+            "offered",
+            "declined",
+            "accepted",
+            "documentation",
+            "funded",
+            "active",
+            "repaid",
+            "defaulted",
+            "cancelled"
+          ]
+        },
+        "external_decision_owner": {
+          "type": "string",
+          "minLength": 1
+        },
+        "decision_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "decision_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "event_refs": {
+          "$ref": "#/$defs/id_array"
+        },
+        "ahte_approves_financing": {
+          "type": "boolean",
+          "const": false
+        }
       },
       "additionalProperties": false
     },
     "takaful_case_object": {
       "$id": "schema/target/takaful-case.json",
       "type": "object",
-      "required": ["case_id", "case_type", "subject_objects", "evidence_packet_ref", "connector_state", "status", "external_decision_owner", "ahte_underwrites_or_decides_claim"],
+      "required": [
+        "case_id",
+        "case_type",
+        "subject_objects",
+        "evidence_packet_ref",
+        "connector_state",
+        "status",
+        "external_decision_owner",
+        "ahte_underwrites_or_decides_claim"
+      ],
       "properties": {
-        "case_id": {"type": "string", "minLength": 1},
-        "case_type": {"type": "string", "enum": ["underwriting", "claim"]},
-        "subject_objects": {"$ref": "#/$defs/id_array"},
-        "evidence_packet_ref": {"type": "string", "minLength": 1},
-        "provider_ref": {"type": ["string", "null"]},
-        "external_case_ref": {"type": ["string", "null"]},
-        "connector_state": {"$ref": "#/$defs/connector_state"},
-        "status": {"type": "string", "enum": ["draft", "evidence_packet_ready", "submitted", "under_review", "info_required", "terms_offered", "declined", "cover_active", "incident", "claim_submitted", "claim_under_review", "paid", "rejected", "partial", "withdrawn", "closed"]},
-        "external_decision_owner": {"type": "string", "minLength": 1},
-        "policy_or_claim_ref": {"type": ["string", "null"]},
-        "decision_ref": {"type": ["string", "null"]},
-        "event_refs": {"$ref": "#/$defs/id_array"},
-        "ahte_underwrites_or_decides_claim": {"type": "boolean", "const": false}
+        "case_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "case_type": {
+          "type": "string",
+          "enum": [
+            "underwriting",
+            "claim"
+          ]
+        },
+        "subject_objects": {
+          "$ref": "#/$defs/id_array"
+        },
+        "evidence_packet_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "provider_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "external_case_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "connector_state": {
+          "$ref": "#/$defs/connector_state"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "evidence_packet_ready",
+            "submitted",
+            "under_review",
+            "info_required",
+            "terms_offered",
+            "declined",
+            "cover_active",
+            "incident",
+            "claim_submitted",
+            "claim_under_review",
+            "paid",
+            "rejected",
+            "partial",
+            "withdrawn",
+            "closed"
+          ]
+        },
+        "external_decision_owner": {
+          "type": "string",
+          "minLength": 1
+        },
+        "policy_or_claim_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "decision_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "event_refs": {
+          "$ref": "#/$defs/id_array"
+        },
+        "ahte_underwrites_or_decides_claim": {
+          "type": "boolean",
+          "const": false
+        }
       },
       "additionalProperties": false
     },
     "tokenized_asset_reference_object": {
       "$id": "schema/target/tokenized-asset-reference.json",
       "type": "object",
-      "required": ["reference_id", "subject_objects", "connector_state", "underlying_asset_type", "legal_classification_status", "shariah_review_status", "regulatory_status", "ahte_is_title_registry", "tokenization_creates_halal_status"],
+      "required": [
+        "reference_id",
+        "subject_objects",
+        "connector_state",
+        "underlying_asset_type",
+        "legal_classification_status",
+        "shariah_review_status",
+        "regulatory_status",
+        "ahte_is_title_registry",
+        "tokenization_creates_halal_status"
+      ],
       "properties": {
-        "reference_id": {"type": "string", "minLength": 1},
-        "provider_ref": {"type": ["string", "null"]},
-        "network_ref": {"type": ["string", "null"]},
-        "external_token_ref": {"type": ["string", "null"]},
-        "subject_objects": {"$ref": "#/$defs/id_array"},
-        "connector_state": {"$ref": "#/$defs/connector_state"},
-        "underlying_asset_type": {"type": "string", "minLength": 1},
-        "ownership_title_source_ref": {"type": ["string", "null"]},
-        "financing_case_ref": {"type": ["string", "null"]},
-        "custody_state_ref": {"type": ["string", "null"]},
-        "authority_status_ref": {"type": ["string", "null"]},
-        "legal_classification_status": {"type": "string", "enum": ["unreviewed", "under_review", "approved_for_scope", "not_approved", "not_applicable"]},
-        "shariah_review_status": {"type": "string", "enum": ["unreviewed", "under_review", "approved_for_scope", "not_approved", "not_applicable"]},
-        "regulatory_status": {"type": "string", "enum": ["unreviewed", "under_review", "approved_for_scope", "not_approved", "not_applicable"]},
-        "state": {"type": "string", "enum": ["design", "sandbox", "eligible", "issued", "active", "encumbered", "transferred", "redeemed", "cancelled", "suspended"]},
-        "transferability_rule_ref": {"type": ["string", "null"]},
-        "encumbrance_refs": {"$ref": "#/$defs/id_array"},
-        "evidence_refs": {"$ref": "#/$defs/id_array"},
-        "signature_or_auth_refs": {"$ref": "#/$defs/id_array"},
-        "event_refs": {"$ref": "#/$defs/id_array"},
-        "ahte_is_title_registry": {"type": "boolean", "const": false},
-        "tokenization_creates_halal_status": {"type": "boolean", "const": false}
+        "reference_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "provider_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "network_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "external_token_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "subject_objects": {
+          "$ref": "#/$defs/id_array"
+        },
+        "connector_state": {
+          "$ref": "#/$defs/connector_state"
+        },
+        "underlying_asset_type": {
+          "type": "string",
+          "minLength": 1
+        },
+        "ownership_title_source_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "financing_case_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "custody_state_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "authority_status_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "legal_classification_status": {
+          "type": "string",
+          "enum": [
+            "unreviewed",
+            "under_review",
+            "approved_for_scope",
+            "not_approved",
+            "not_applicable"
+          ]
+        },
+        "shariah_review_status": {
+          "type": "string",
+          "enum": [
+            "unreviewed",
+            "under_review",
+            "approved_for_scope",
+            "not_approved",
+            "not_applicable"
+          ]
+        },
+        "regulatory_status": {
+          "type": "string",
+          "enum": [
+            "unreviewed",
+            "under_review",
+            "approved_for_scope",
+            "not_approved",
+            "not_applicable"
+          ]
+        },
+        "state": {
+          "type": "string",
+          "enum": [
+            "design",
+            "sandbox",
+            "eligible",
+            "issued",
+            "active",
+            "encumbered",
+            "transferred",
+            "redeemed",
+            "cancelled",
+            "suspended"
+          ]
+        },
+        "transferability_rule_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "encumbrance_refs": {
+          "$ref": "#/$defs/id_array"
+        },
+        "evidence_refs": {
+          "$ref": "#/$defs/id_array"
+        },
+        "signature_or_auth_refs": {
+          "$ref": "#/$defs/id_array"
+        },
+        "event_refs": {
+          "$ref": "#/$defs/id_array"
+        },
+        "ahte_is_title_registry": {
+          "type": "boolean",
+          "const": false
+        },
+        "tokenization_creates_halal_status": {
+          "type": "boolean",
+          "const": false
+        }
       },
       "additionalProperties": false
     }

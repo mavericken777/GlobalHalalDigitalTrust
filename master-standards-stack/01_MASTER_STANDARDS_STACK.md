@@ -59,7 +59,7 @@ NPRA and other sector regulators impose separate legal prerequisites. A halal en
 
 Every applicable requirement becomes a structured object:
 
-`RequirementID, authority, instrument, edition, confirmation, effective date, clause, requirement, applicability, risk, control objective, control, HCP, physical object, evidence, test, actor, verifier, authority gate, event, failure state, corrective action, re-verification, trust-state effect, source, verification status.`
+`RequirementID, authority, instrument, edition, confirmation, effective date, clause, requirement, applicability, risk, control objective, control, HCP, physical object, evidence, test, actor, verifier, certification review, event, failure state, corrective action, re-verification, trust-state effect, source, verification status.`
 
 ## 5. Product-scope routing
 
@@ -150,17 +150,13 @@ Terminal/credential states:
 
 ## 11. 2026-09-18 attached-source ingestion
 
-[PROPOSAL: closes primary-source depth gap - canonical path point: Standard / Instrument]
 
-The 2026-09-18 attachment set adds readable primary supplied copies of MS 1500:2019 (BM), MS 2400-1:2019, MS 2400-2:2019, MS 2400-3:2019, MS 2610:2015, MS 2683:2017 and MS 2691:2021, plus two secondary synthesis PDFs. The frozen `verified-2026-09-17/` package is unchanged.
 
 For the next controlled snapshot, MS 1500:2019, MS 2610:2015 and MS 2691:2021 are candidates for promotion from public-structure depth to primary-supplied-standard/source-held depth after clause-object reconciliation. MS 2683:2017 is registered as a supplemental Kelulut (stingless bee) honey specification and is **not** added to the 17-standard Malaysian halal operating set.
 
-See `16_ATTACHED_PDF_SOURCE_INGESTION_2026-09-18.md` and `attached-source-ingestion-registry-2026-09-18.json`.
 
 ## 12. 2026-09-19 ultra-deep secondary-compendium overlay
 
-[PROPOSAL: closes candidate clause/control discovery gap - canonical path point: Standard / Instrument -> Clause / Requirement]
 
 The attached `ultra_deep_standards.pdf` provides an expanded secondary working reference across 12 standards: MS 2424, MS 2634, MS 2738, MS 2803, MS 2809, MS 2810, MS 2393, MS 2627, MS 2627-2, MS 1900, MS 2691 and MS 2610.
 
@@ -172,12 +168,8 @@ See `17_ULTRA_DEEP_STANDARDS_PDF_RECONCILIATION_2026-09-19.md`.
 
 ## 13. 2026-09-19 detailed candidate-control extraction
 
-[PROPOSAL: closes secondary clause/control matrix gap - canonical path point: Clause / Requirement -> Applicability -> Control -> Evidence]
 
 The full 56-page attachment has now been decomposed into a standard-by-standard candidate matrix with physical PDF page ranges, source-confidence codes, candidate control domains, blocked claim classes and primary-reconciliation priorities.
 
 Detailed artifacts:
 - `18_ULTRA_DEEP_CLAUSE_CONTROL_CANDIDATE_MATRIX_2026-09-19.md`
-- `ultra-deep-candidate-control-registry-2026-09-19.json`
-
-The new matrix does not change the 17-standard catalogue or frozen package. It operationalizes the secondary source as a controlled gap-discovery corpus while keeping normative promotion blocked until primary/authority verification.

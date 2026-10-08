@@ -259,7 +259,6 @@ flowchart LR
 
 ## Supplemental product specification - MS 2683:2017
 
-[PROPOSAL: closes Kelulut honey product-specification gap - canonical path point: Standard / Instrument -> Applicability]
 
 The supplied primary standard identifies MS 2683:2017 as **Kelulut (Stingless bee) honey - Specification**. Its visible architecture includes scope, normative references, terms and definitions, requirements, sampling, and packaging/labelling.
 

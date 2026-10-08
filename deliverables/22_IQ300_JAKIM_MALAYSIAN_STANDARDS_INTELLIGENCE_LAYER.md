@@ -666,9 +666,9 @@ TRUST STATE
 
 This graph is the regulatory brain of IQ300.
 
-## 28. Stakeholder authority boundary
+## 28. Stakeholder certification workflow
 
-| Actor | IQ300 role | Authority boundary |
+| Actor | IQ300 role | certification workflow |
 |---|---|---|
 | JAKIM/JAIN/MAIN | Authoritative certification/governance record | Retains statutory/competent authority |
 | Qualified Shariah governance | Interpretation/approval where mandated | Does not become an AI function |
@@ -700,7 +700,7 @@ The next normative build should contain one record per verified requirement:
 | Evidence | Required evidence |
 | Test | Analytical method where applicable |
 | Responsible actor | Human/system responsibility |
-| Authority gate | Competent-authority decision |
+| certification review | Competent-authority decision |
 | Event | Canonical digital event |
 | Physical object | Asset/product/batch/container |
 | AI check | Predictive/anomaly rule |

@@ -32,7 +32,7 @@ This directory is the consolidated IQ300 standards library for the Malaysian Hal
 
 Every standard is represented through the IQ300 chain:
 
-`Standard -> Edition/Status -> Applicability -> Requirement -> Control Objective -> Control -> HCP -> Risk -> Evidence -> Audit Test -> Finding -> Corrective Action -> Re-verification -> Authority Gate -> Trust State`
+`Standard -> Edition/Status -> Applicability -> Requirement -> Control Objective -> Control -> HCP -> Risk -> Evidence -> Audit Test -> Finding -> Corrective Action -> Re-verification -> certification review -> Trust State`
 
 ## Machine-readable backbone
 

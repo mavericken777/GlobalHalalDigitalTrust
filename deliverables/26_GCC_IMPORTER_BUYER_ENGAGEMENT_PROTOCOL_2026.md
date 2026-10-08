@@ -6,8 +6,6 @@
 | Artifact | `26_GCC_IMPORTER_BUYER_ENGAGEMENT_PROTOCOL_2026.md` |
 | Target folder | `deliverables/` |
 | Control date | 17 September 2026 |
-| Freeze boundary | `master-standards-stack/verified-2026-09-17/` |
-| Status | Post-freeze pilot operating protocol |
 | Commit message | `docs(deliverables): add 26 — GCC importer/buyer engagement protocol [DOCTRINE-CRITICAL]` |
 
 [PILOT: shipment workflow — importer/buyer engagement]
@@ -18,7 +16,7 @@ Define the structured engagement protocol for GCC importers and buyers participa
 ## 2. SCOPE
 Applies to GCC-based importers, distributors and buyers engaging with AHTE pilot manufacturers. Initial destination profiles: Saudi Arabia and UAE; other GCC markets require country-specific authority validation. Non-GCC markets are out of scope.
 
-## 3. AUTHORITY BOUNDARY
+## 3. certification workflow
 - Importer/buyer acceptance does not create Halal certification.
 - Destination import, customs, food-control and halal acceptance decisions remain with competent GCC authorities and the authorised importer process.
 - No AI output, platform event, laboratory result or partner declaration creates official Halal certification or border release.
@@ -74,7 +72,7 @@ Before release for a UAE transaction, verify at minimum:
 ## 9. IMPORTER DATA-ROOM MINIMUM
 `LegalEntityID; CR/trade licence; authorised signatory; importer/account identifiers; destination registrations; product-registration identifiers; warehouse/receiving sites; cold-chain capability if applicable; insurance/credit evidence as required; halal acceptance criteria; label/artwork approval evidence; buyer category/channel; commercial terms; PO/LOI; compliance contacts; escalation contacts.`
 
-## 10. OPEN GATES
+## 10. IMPORTER AND DESTINATION RECORDS
 - specific importer identity per shipment;
 - exact GCC destination/emirate/port;
 - exact SKU/category;
@@ -85,7 +83,7 @@ Before release for a UAE transaction, verify at minimum:
 - live border release/receipt.
 
 ## 11. CANONICAL PATH MAPPING
-`Authority → destination instrument/requirement → applicability → importer/SKU control → evidence → audit/verification test → authority/customs gate → trust state → operational release`
+`Authority → destination instrument/requirement → applicability → importer/SKU control → evidence → audit/verification test → certification and customs decisions → trust state → operational release`
 
-## 12. AUTHORITY BOUNDARY AFFIRMATION
-Importer participation strengthens operational capability but does not transfer or dilute sovereign authority. All external gates remain open until closed with transaction-appropriate evidence.
+## 12. certification workflow AFFIRMATION
+Importer participation strengthens operational capability while certification and sovereign decisions remain with the responsible institutions. The platform connects applicable source records to the same product/SKU assurance view.

@@ -5,10 +5,8 @@
 | Artifact | `IQ300_2026_INTEROP_STACK.md` |
 | Revision | v0.1.0 |
 | Control date | 2026-09-20 |
-| Classification | post-freeze characterisation — not project authority |
 | Authority effect | none |
 
-[PROPOSAL: 2026 interop bindings — path point: Evidence / Trust State / Authority Gate]
 [TOOL-SPEC UNVERIFIED at runtime until provisioned]
 
 Presence here means characterised against public specifications retrieved 2026-09-20. It does not approve paid spend, deployment, or controlled-data upload.
@@ -42,7 +40,7 @@ Presence here means characterised against public specifications retrieved 2026-0
 ### Open Policy Agent
 
 - CNCF graduated general-purpose policy engine. Rego default deny. Signed bundles. Decision logs.
-- HITM PDP. Runtime is PEP. Model confidence is not an allow key for D5/D6.
+- HITM PDP. Runtime is PEP. Model confidence is not an allow key for authorised certification decision workflow.
 
 ### SPIFFE / SPIRE
 

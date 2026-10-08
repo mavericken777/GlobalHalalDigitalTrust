@@ -7,12 +7,9 @@
 | Artifact | `AHTE_CHINA_LAB_TRACEABILITY_INTEGRATION_PROFILE_2026-09-30.md` |
 | Revision | v1.0.0 |
 | Control date | 2026-09-30 |
-| Classification | Post-freeze consolidated target integration profile |
 | Supersedes | `AHTE_JAKIM_INTEGRATION_PROFILE_2026-09-26.md`; `DIRECT_JAKIM_API_ALIGNMENT_ADDENDUM_2026-09-30.md` |
 | Governing topology | `../../00_EXECUTIVE_COMMAND/CURRENT_TARGET_ARCHITECTURE_2026-09-30.md` |
-| Freeze impact | None |
 
-[PROPOSAL: consolidates China laboratory + traceability integration — path point: Evidence → Audit Test → Authority Gate → Trust State]
 
 ## 1. Purpose
 
@@ -283,7 +280,7 @@ AHTE
 
 Do not insert NurAI or an unnecessary external middleware institution in this topology.
 
-Internal code may use a logical `JakimAuthorityAdapter` interface to isolate the actual production protocol, but that interface is an implementation abstraction — not a separate authority gateway or an official external endpoint.
+Internal code may use a logical `JakimAuthorityAdapter` interface to isolate the actual production protocol, but that interface is an implementation abstraction — not a separate certification reviewway or an official external endpoint.
 
 Target functions may include:
 
@@ -303,7 +300,7 @@ For this project's operating architecture, formal approval/disapproval remains i
 
 AI/AHTE may classify, correlate, detect gaps, surface contradictions, prioritise risk and route evidence. They do not issue the formal certification decision.
 
-D5/D6 remain human/authority-controlled. A D4 hold cannot be automatically released where the governing policy requires human release.
+authorised certification decision workflow remain human/authority-controlled. A D4 hold cannot be automatically released where the governing policy requires human release.
 
 ## 11. AI/ML + preemptive assurance
 
@@ -387,7 +384,7 @@ These are connection/evidence dependencies, not permission to omit the target ar
 
 ## 16. Canonical path mapping
 
-`Authority → Standard/Instrument → Clause/Requirement → Applicability → Control → HCP/SCCP → Evidence → Audit Test → Finding → Corrective Action → Re-verification → Authority Gate → Trust State → Operational Release`
+`Authority → Standard/Instrument → Clause/Requirement → Applicability → Control → HCP/SCCP → Evidence → Audit Test → Finding → Corrective Action → Re-verification → certification review → Trust State → Operational Release`
 
 For this integration:
 
@@ -402,7 +399,7 @@ For this integration:
 - **Finding:** conformity/non-conformity/observation/trust fracture.
 - **Corrective Action:** re-sampling, re-testing, CAPA, method/process/source correction.
 - **Re-verification:** authorised follow-up.
-- **Authority Gate:** direct JAKIM API to the authorised human decision workflow.
+- **certification review:** direct JAKIM API to the authorised human decision workflow.
 - **Trust State:** machine-readable state derived from verified evidence and authority event.
 - **Operational Release:** governed operational action, never a substitute for certification.
 

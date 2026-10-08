@@ -5,14 +5,12 @@
 - Control date: `2026-09-19`
 - Suggested commit: `docs(agent): add Copilot repository controls [DOCTRINE-CRITICAL]`
 
-[PROPOSAL: closes Copilot instruction-coverage gap — path point: Control / Governance]
 
 Follow the root `AGENTS.md`.
 
 Before substantive work, read the current controlling artifacts identified by
 `README.md`, including the current Absolute Mode instruction and IQ300 Doctrine.
 
-The former `master-standards-stack/verified-2026-09-17/` package has been removed. Use the current standards registry at `master-standards-stack/iq300-all-jakim-ms/01_MASTER_STANDARDS_REGISTER.md` together with the live-source registry and current JSM/JAKIM verification. Do not reintroduce the removed package as a current normative baseline.
 
 Never invent normative wording, certificates, approvals, laboratory results,
 accreditation scopes, contracts, customs decisions, purchase orders or shipment
@@ -23,7 +21,7 @@ official Halal certificates.
 
 Map substantive compliance work to:
 
-`Authority → Standard / Instrument → Clause / Requirement → Applicability → Control → HCP / SCCP → Evidence → Audit Test → Finding → Corrective Action → Re-verification → Authority Gate → Trust State → Operational Release`
+`Authority → Standard / Instrument → Clause / Requirement → Applicability → Control → HCP / SCCP → Evidence → Audit Test → Finding → Corrective Action → Re-verification → certification review → Trust State → Operational Release`
 
 Use exact flag syntax from the current Absolute Mode instruction. Do not create
 parallel flag definitions.

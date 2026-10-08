@@ -2,7 +2,6 @@
 
 ## Canonical location
 
-`master-standards-stack/verified-2026-09-17/`
 
 ## Package declaration
 
@@ -37,5 +36,3 @@ The package is **documentation-complete and gap-accounted** for the 17 September
 Malaysia/JAKIM/JSM is represented as a standards, assurance, authority and trust-reference layer where applicable. It is not a physical transit leg for shipment workflow unless a later approved transaction record explicitly changes the route.
 
 ## Machine-readable manifest
-
-`master-standards-stack/verified-2026-09-17/MANIFEST.json`

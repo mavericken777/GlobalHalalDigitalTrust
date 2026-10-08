@@ -6,16 +6,14 @@ Preserve the strategic decisions and working concepts arising from the project d
 
 ## 30 September 2026 current architecture overlay
 
-This section records the current project architecture decisions for implementation, website rebuilding and Codex execution. It does not modify the immutable `master-standards-stack/verified-2026-09-17/` freeze.
 
-[PROPOSAL: reconciles current architecture decisions — path point: Authority → Standard / Instrument → Applicability → Control → Evidence → Authority Gate → Trust State → Operational Release]
 
 ### Current operating decisions
 
 1. **Default physical corridor is China → GCC direct.** Malaysia is the governance/assurance plane unless a Malaysia physical hop is separately scoped. Older China→Malaysia pilot language does not control shipment workflow.
 2. **JAKIM integration is direct JAKIM API.** Public architecture should not insert an unnecessary generic gateway between AHTE and JAKIM. Exact production endpoints, credentials, schemas and permissions remain controlled implementation inputs.
 3. **24/7 GHSCL + JAKIM Command Center is a first-class operating layer.** It continuously monitors manufacturer, laboratory, HCP/SCCP, authority status, Sinotrans warehouse/logistics, shipment/container/seal, ports, GCC receiving, CAPA, evidence freshness, trust fractures, predictive risk and recall state.
-4. **AI/ML predictive analytics are paired with preemptive strategy.** Existing Evidence Gap, Anomaly, Contradiction, Trust Fracture, Predictive Compliance and Recall Blast-Radius engines are extended by an explicit Preemptive Strategy Engine. AI may recommend/escalate and apply configured D4 holds; it must not bypass D5/D6 or auto-release human-reserved holds.
+4. **AI/ML predictive analytics are paired with preemptive strategy.** Existing Evidence Gap, Anomaly, Contradiction, Trust Fracture, Predictive Compliance and Recall Blast-Radius engines are extended by an explicit Preemptive Strategy Engine. AI may recommend/escalate and apply configured D4 holds; it must not bypass authorised certification decision workflow or auto-release human-reserved holds.
 5. **Sinotrans integration includes end-to-end logistics and warehouse real-time monitoring.** Integrate existing Y2T/MIS/EDI/WMS/TMS/IoT and related systems through secure adapters/APIs rather than replacing them.
 6. **Port authorities receive an authorised API/trust interface.** AHTE supports identity, trust packet, container/seal, evidence, inspection/sampling and official hold/release event exchange. Port/customs statutory authority remains sovereign.
 7. **Shariah Financing API is part of the target platform.** The target plane includes Islamic financing, trade finance, Takaful underwriting/claims evidence and tokenomics/digital-value mechanisms where legally, contractually, regulatorily and Shariah approved. AHTE trust is not credit approval; Halal certification is not financing approval; tokenization does not by itself change title, regulatory or Shariah status.

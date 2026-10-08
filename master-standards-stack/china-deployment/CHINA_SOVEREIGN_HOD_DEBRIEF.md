@@ -58,7 +58,7 @@ The binding object is the auditable identity chain.
 
 ### Core graph
 
-`Authority -> Standard/Edition -> Requirement -> Applicability -> Control Objective -> HCP -> Evidence -> Audit Test -> Finding -> CAR -> Re-verification -> Authority Gate -> Trust State -> Physical/Digital Release`
+`Authority -> Standard/Edition -> Requirement -> Applicability -> Control Objective -> HCP -> Evidence -> Audit Test -> Finding -> CAR -> Re-verification -> certification review -> Trust State -> Physical/Digital Release`
 
 ### Core objects
 
@@ -208,7 +208,7 @@ Every model result should record model ID/version, input references, timestamp a
 
 | Role | Accountability |
 |---|---|
-| Competent authority | Policy, official interpretation, certification/decision and authority gates |
+| Competent authority | Policy, official interpretation, certification/decision and certification review |
 | Standards owner | Standards lifecycle and technical content |
 | AHTE operator | Digital infrastructure, data model, workflow, trust graph, APIs |
 | Auditor/assessor | Observation, assessment, findings and re-verification evidence |

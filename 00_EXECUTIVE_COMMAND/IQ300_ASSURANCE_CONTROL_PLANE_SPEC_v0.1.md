@@ -1,100 +1,49 @@
-# IQ300 Autonomous Assurance Control Plane — Specification v0.1
+# AHTE assurance and monitoring plane
 
-| Field | Value |
+## Purpose
+
+The AHTE assurance plane connects evidence and operational events for a certified product/SKU and its premises across origin, production, laboratory, warehouse, logistics, ports and GCC destination. It provides a real-time view for operating teams and certification decision makers.
+
+## Event contract
+
+Every event carries:
+
+| Field | Meaning |
 |---|---|
-| Artifact | `IQ300_ASSURANCE_CONTROL_PLANE_SPEC_v0.1.md` |
-| Revision | v0.1.1 |
-| Control date | 2026-09-20 |
-| Classification | post-freeze proposal — not controlled doctrine |
-| Authority effect | none |
-| Freeze | `master-standards-stack/verified-2026-09-17/` (16 modules 00–15 + MANIFEST.json) |
+| ObjectID | Product, SKU, premises, batch, sample, shipment or equipment identity |
+| EventID | Stable identity of the recorded event |
+| EvidenceID | Evidence record linked to the event |
+| ActorID | Responsible source, person or system |
+| Timestamp | Event time and ingestion time where available |
+| IntegrityProof | Hash/signature material for change detection |
+| Provenance | Origin system, method, scope and source reference |
 
-[PROPOSAL: IQ300 Autonomous Assurance Control Plane — path point: Control → Authority Gate]
-[PILOT: shipment workflow — target execution architecture]
-[ENGINEERING-GATE: runtime implementation, signed statements, policy bundles]
+Correction creates a superseding record and preserves the prior event. IntegrityProof establishes byte integrity after capture; it does not establish factual truth.
 
-## 1. Proposition
+## Connected operations
 
-IQ300 does not automate away authority. IQ300 automates the assurance system around authority.
+The plane connects:
 
-The machine may execute encoded controls autonomously. A HITM policy enforcement point identifies the exact reserved-decision class. High AI confidence never removes a mandatory authority gate.
+1. organisation, premises, product, SKU, supplier and material onboarding;
+2. applicable requirements, controls and attributable evidence;
+3. laboratory sample identity, custody, method, QC, result and reviewer record;
+4. audit observations, findings, corrective action and re-verification;
+5. production, batch, sensors, IoT and digital-twin events;
+6. Sinotrans warehouse, logistics, seals, route and telemetry events;
+7. origin/destination port, customs and receiving interfaces;
+8. GCC warehouse, distribution, retail, product verification and recall;
+9. Command Center alerts, predictive analytics and preemptive recommendations.
 
-## 2. Invariants (non-negotiable)
+## Decision roles
 
-```
-EVIDENCE              ≠ CERTIFICATION
-AI ASSESSMENT         ≠ CERTIFICATION
-AI RECOMMENDATION     ≠ CERTIFICATION
-LAB RESULT            ≠ CERTIFICATION
-BLOCKCHAIN / SCITT    ≠ CERTIFICATION
-QR / C2PA MANIFEST    ≠ CERTIFICATION
-TRUST VECTOR          ≠ CERTIFICATION
-TRUST SCORE           ≠ CERTIFICATION
-OPERATIONAL RELEASE   ≠ CERTIFICATION
-NOT DETECTED          ≠ HALAL
-```
+AI/ML supports monitoring, evidence review, anomaly detection, prediction, impact analysis and recommendations. JAKIM/JAIN/JAIM, muftis, scholars and authorised halal auditors decide certification award and revocation through their applicable processes. AHTE records and propagates verified source decisions. The platform does not fabricate institutional or partner responses.
 
-AHTE is an evidence, control, orchestration and decision-support layer.
-Malaysia Halal certification remains with JAKIM / MAIN / JAIN.
-Destination acceptance remains with competent GCC authorities and importer processes.
-Malaysian Standards are technical instruments only.
+The topology is **AHTE ⇄ Direct JAKIM API ⇄ JAKIM**. PHC and JAKIM work in parallel across Perak/state and federal governance. The physical corridor is **China → GCC direct**.
 
-## 3. Two paths — do not silently replace the freeze path
+## State ownership
 
-### 3.1 Controlling doctrine path (v3.1 / v14.1) — UNCHANGED
+Certification status, platform assurance, operational custody, customs disposition and finance decisions have separate owners and state histories. Each connector preserves the provider's source and reports its actual environment and response state. Shariah finance and Takaful records are connected through their responsible providers.
 
-`Authority → Standard / Instrument → Clause / Requirement → Applicability → Control → HCP / SCCP → Evidence → Audit Test → Finding → Corrective Action → Re-verification → Authority Gate → Trust State → Operational Release`
+## Schemas and policy
 
-### 3.2 Proposed machine refinement (maps onto 3.1; see `canonical-path-machine-map.json`)
-
-HITM sits **before** Authority Gate as a policy decision point. Signed authoritative decision **is** the Authority Gate output (E5), not a parallel certificate issuer.
-
-## 4. Five sovereign objects
-
-Defined in `trust-packet-schemas.json` v1.2.0: Evidence, Assessment, HITM Case, Authority Decision, Trust State.
-
-## 5. HITM as policy PEP
-
-Evaluator: `policies/hitm-default-deny.rego` + fixtures F01–F12. Default deny.
-
-## 6–8. Vector, fracture, interop
-
-See `machine-spec/09-hard-gate-rules.json`, `machine-spec/11-trust-fracture-taxonomy.json`, `IQ300_2026_INTEROP_STACK.md`.
-
-## 9. Specification inventory (01–18)
-
-| ID | Item | Artifact |
-|---|---|---|
-| 01 | Agent Authority Model | `machine-spec/01-agent-authority-model.md` |
-| 02 | AI Action Authority Matrix | `machine-spec/02-ai-action-authority-matrix.json` |
-| 03 | HITM Decision-Class Registry | `hitm-decision-class-registry.json` |
-| 04 | Human Authority / Mandate Registry | `machine-spec/04-human-authority-mandate-registry.json` (stub; EXTERNAL-GATE) |
-| 05 | HITM Case Schema | `trust-packet-schemas.json#hitm_case_object` |
-| 06 | Authority Decision Schema | `trust-packet-schemas.json#authority_decision_object` |
-| 07 | AI Provenance Envelope | `trust-packet-schemas.json#ai_provenance_object` |
-| 08 | Trust Vector Schema | `trust-packet-schemas.json#trust_vector_object` |
-| 09 | Hard-Gate / Non-Compensation | `machine-spec/09-hard-gate-rules.json` |
-| 10 | Release Decision Schema | `trust-packet-schemas.json#release_decision_object` |
-| 11 | Trust Fracture Taxonomy | `machine-spec/11-trust-fracture-taxonomy.json` |
-| 12 | Autonomous State Machine | `machine-spec/12-autonomous-state-machine.json` |
-| 13 | Cryptographic Binding | `machine-spec/13-cryptographic-binding-profile.md` |
-| 14 | Authority-Aware API | `machine-spec/14-authority-aware-api.md` |
-| 15 | Agent Runtime Permissions | `machine-spec/15-agent-runtime-permissions.json` |
-| 16 | Auditability / Explainability | `machine-spec/16-auditability-layer.md` |
-| 17 | Failure-Closed Controls | `policies/hitm-default-deny.rego` |
-| 18 | shipment workflow Acceptance Tests | `shipment_workflow_ACCEPTANCE_TESTS.md` |
-
-Index: `machine-spec/README.md`.
-
-## 10. Promotion rule
-
-This specification does not rewrite `IQ300_DOCTRINE.md` v3.1 or the 14-node path in README / AGENTS / v14.1.
-Promotion requires `[PROMOTION]` + canonical-path review + `[DOCTRINE-CRITICAL]` maintainer acceptance.
-
-## 11. Open gates
-
-- `[SOURCE-LOCKED: exact MS / MPPHM Pindaan 2026 wording]`
-- `[OPEN GATE: live authority VC issuer — owner: JAKIM/GCC — blocking: E5 issuance]`
-- `[OPEN GATE: SCITT transparency service — owner: engineering — blocking: signed receipts]`
-- `[TRANSACTION-GATE: shipment workflow events]`
-- `[ENGINEERING-GATE: OPA/SPIRE/EPCIS runtime]`
+See `machine-spec/README.md`, `machine-spec/11-trust-fracture-taxonomy.json`, `machine-spec/12-autonomous-state-machine.json`, `machine-spec/14-authority-aware-api.md`, `machine-spec/15-agent-runtime-permissions.json`, `../hitm-decision-class-registry.json` and `../trust-packet-schemas.json`.

@@ -19,7 +19,7 @@
     "TEST_LIBRARY.md",
     "AUTHORITY_GATE_CATALOG.md"
   ],
-  "logic": "clause -> requirement intent -> applicability -> control -> HCP -> evidence -> audit test -> finding -> corrective action -> re-verification -> authority gate -> trust state",
+  "logic": "clause -> requirement intent -> applicability -> control -> HCP -> evidence -> audit test -> finding -> corrective action -> re-verification -> certification decision -> trust state",
   "sector_standard_freeze_rule": "Do not fabricate unavailable licensed numbered subclauses. Use family-level mappings until authoritative text is licensed and verified.",
   "authority_rule": "IQ300 is an evidence, control and decision-support layer. It does not itself issue Malaysian Halal certification.",
   "integrity_review_2026_09_26": {

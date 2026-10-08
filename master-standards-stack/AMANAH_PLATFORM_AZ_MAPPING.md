@@ -1,10 +1,10 @@
 # AMANAH HALAL TRUST ECOSYSTEM (AHTE)
 ## A-Z End-to-End Platform Mapping to the JAKIM/JSM Halal Standards Stack
 
-AHTE is the end-to-end sovereign/federated digital trust platform layer for Halal/Tayyib assurance. It operationalises evidence, controls, audit execution, traceability, risk management, authority gates, and trusted information exchange around applicable Malaysian Halal standards and related instruments.
+AHTE is the end-to-end sovereign/federated digital trust platform layer for Halal/Tayyib assurance. It operationalises evidence, controls, audit execution, traceability, risk management, certification review, and trusted information exchange around applicable Malaysian Halal standards and related instruments.
 
 ## Canonical control chain
-`Shariah/Fatwa -> Competent Authority -> Applicable Standard Set -> Requirement -> Applicability Decision -> Control Objective -> Control -> HCP -> Evidence -> Audit Test -> Finding -> Corrective Action -> Re-verification -> Authority Gate -> Trust State -> Physical/Digital Release`
+`Shariah/Fatwa -> Competent Authority -> Applicable Standard Set -> Requirement -> Applicability Decision -> Control Objective -> Control -> HCP -> Evidence -> Audit Test -> Finding -> Corrective Action -> Re-verification -> certification review -> Trust State -> Physical/Digital Release`
 
 ## Standards universe represented
 - MS 1500:2019 - Halal food - General requirements
@@ -109,7 +109,7 @@ Purpose-limited disclosure, data sovereignty, tamper evidence and minimum-necess
 
 ## Standard-to-AHTE mapping
 
-| Standard | Main AHTE domains | Core HCP families | Evidence / audit | Authority gate |
+| Standard | Main AHTE domains | Core HCP families | Evidence / audit | certification review |
 |---|---|---|---|---|
 | MS 1500:2019 | C,D,E,F,H,M,P,Q,R,S,T,W | materials, processing, sanitation, equipment, storage, packaging, labelling | specs, supplier evidence, certificates, site/record/interview/test | MATERIAL, CERTIFICATION, SERTU, SLAUGHTER/STUNNING as applicable |
 | MS 2400-1:2019 | B,C,D,E,H,O,R,T,V,W,X,Y | vehicle, loading, seals, custody, segregation, handover | vehicle/seal/custody records, inspection, traceability | TRANSPORT, EXCEPTION, RELEASE |

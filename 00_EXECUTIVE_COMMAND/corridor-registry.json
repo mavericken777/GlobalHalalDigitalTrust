@@ -1,44 +1,76 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "artifact": "corridor-registry.json",
-  "version": "1.2.0",
-  "control_date": "2026-09-30",
-  "freeze_boundary": "master-standards-stack/verified-2026-09-17/",
-  "classification": "post-freeze corridor registry extension",
+  "version": "2.0.0",
+  "classification": "current project corridor",
   "description": "Canonical project corridor definition for China-GCC direct shipment workflow, including cross-cutting authority connectivity, Command Center, AI/ML and transaction-support planes.",
   "implementation_principle": "FULL ARCHITECTURE NOW -> REAL CONNECTORS WHEN AVAILABLE -> NO REDESIGN REQUIRED",
-  "connector_states": ["development-provider-active", "sandbox-connected", "production-credentials-required", "production-connected"],
+  "connector_states": [
+    "development-provider-active",
+    "sandbox-connected",
+    "production-credentials-required",
+    "production-connected"
+  ],
   "corridor": {
-    "id": "china-gcc-direct",
     "name": "China → GCC Direct Corridor",
     "canonical_path": "Origin (China) → Analytical Evidence → Manufacturing/Assurance → Logistics/Warehouse → Border/Port → Destination (GCC)",
     "physical_route": "China -> GCC direct",
     "malaysia_role": "governance / assurance / direct JAKIM authority-connectivity plane unless separately scoped as a physical hop",
     "transshipment_rule": "No transshipment through Malaysia unless explicitly re-scoped and controlled as a proposal/change",
-    "scope": "shipment workflow qualification and execution model",
-    "status": "PILOT"
+    "status": "DESIGN"
   },
   "cross_cutting_planes": {
     "authority_connectivity": {
       "topology": "AHTE <-> Direct authorised JAKIM API <-> JAKIM authority system / authorised human workflow",
-      "target_state": "complete interface/workflow architecture",
+      "target_state": "configured API interface",
       "live_activation": "requires actual authorised production interface, permissions, credentials and security controls",
       "default_connector_state": "production-credentials-required"
     },
     "command_center": {
       "operator": "GHSCL with JAKIM authorised authority-side roles according to implemented scope",
       "mode": "24/7",
-      "coverage": ["manufacturer/facility", "supplier/material", "laboratory/sample", "HCP/SCCP", "audit/CAPA", "authority status", "Sinotrans warehouse", "Sinotrans logistics", "container/seal", "telemetry", "custody", "ports", "GCC receiving", "predictive risk", "preemptive strategy", "recall"]
+      "coverage": [
+        "manufacturer/facility",
+        "supplier/material",
+        "laboratory/sample",
+        "HCP/SCCP",
+        "audit/CAPA",
+        "authority status",
+        "Sinotrans warehouse",
+        "Sinotrans logistics",
+        "container/seal",
+        "telemetry",
+        "custody",
+        "ports",
+        "GCC receiving",
+        "predictive risk",
+        "preemptive strategy",
+        "recall"
+      ]
     },
     "ai_ml": {
-      "modules": ["Evidence Gap Predictor", "Anomaly Engine", "Contradiction Engine", "Trust Fracture Engine", "Predictive Compliance Engine", "Recall Blast-Radius Engine", "Preemptive Strategy Engine"],
-      "authority_boundary": "AI may assess, predict, recommend, prioritise and apply configured D4 holds where policy permits; it may not bypass D5/D6 or create official Halal certification."
+      "modules": [
+        "Evidence Gap Predictor",
+        "Anomaly Engine",
+        "Contradiction Engine",
+        "Trust Fracture Engine",
+        "Predictive Compliance Engine",
+        "Recall Blast-Radius Engine",
+        "Preemptive Strategy Engine"
+      ]
     },
     "finance_support": {
       "api": "Shariah Financing API",
-      "services": ["Islamic trade financing", "purchase/order financing", "inventory/shipment financing", "Takaful underwriting evidence", "Takaful claims evidence", "asset-state verification", "tokenomics/digital-value mechanisms where legally and Shariah approved"],
-      "status": "TARGET",
-      "boundary": "AHTE trust state does not create credit, underwriting, title, Shariah or regulatory decisions."
+      "services": [
+        "Islamic trade financing",
+        "purchase/order financing",
+        "inventory/shipment financing",
+        "Takaful underwriting evidence",
+        "Takaful claims evidence",
+        "asset-state verification",
+        "tokenomics/digital-value mechanisms where legally and Shariah approved"
+      ],
+      "status": "TARGET"
     }
   },
   "segments": [
@@ -46,67 +78,165 @@
       "id": "segment-1-origin",
       "name": "Origin — China",
       "owner": "Manufacturer + project mobilisation layer",
-      "partners": ["CODA", "China Merchant"],
-      "canonical_path_points": ["Enterprise mobilisation", "Qualification", "Commercial terms", "Identity", "Provenance"],
-      "evidence_class": ["E1", "E2"],
-      "target_integration": ["manufacturer onboarding", "ERP/MES/QMS/WMS/LIMS/DMS/IoT inventory", "digital twin", "AHTE origin evidence"],
-      "connector_state": "development-provider-active",
-      "open_gates": ["Manufacturer selection per shipment", "SKU selection per shipment", "Partner contractual mandate as applicable"]
+      "partners": [
+        "CODA",
+        "China Merchant"
+      ],
+      "canonical_path_points": [
+        "Enterprise mobilisation",
+        "Qualification",
+        "Commercial terms",
+        "Identity",
+        "Provenance"
+      ],
+      "evidence_class": [
+        "E1",
+        "E2"
+      ],
+      "target_integration": [
+        "manufacturer onboarding",
+        "ERP/MES/QMS/WMS/LIMS/DMS/IoT inventory",
+        "digital twin",
+        "AHTE origin evidence"
+      ],
+      "connector_state": "development-provider-active"
     },
     {
       "id": "segment-2-laboratory",
       "name": "Analytical Evidence",
       "owner": "China government food security laboratory / designated participating laboratory",
-      "partners": ["China government food security laboratory"],
-      "canonical_path_points": ["Evidence", "Audit Test"],
-      "evidence_class": ["E3"],
-      "target_integration": ["sample ID", "seal", "chain of custody", "LIMS/API", "method/scope", "signed result", "integrity verification", "AHTE evidence graph"],
-      "connector_state": "production-credentials-required",
-      "open_gates": ["Exact laboratory legal identity", "Accreditation scope per test method", "Method validation status", "GCC destination acceptance where required", "Contractual basis", "Production interface credentials/specification"]
+      "partners": [
+        "China government food security laboratory"
+      ],
+      "canonical_path_points": [
+        "Evidence",
+        "Audit Test"
+      ],
+      "evidence_class": [
+        "E3"
+      ],
+      "target_integration": [
+        "sample ID",
+        "seal",
+        "chain of custody",
+        "LIMS/API",
+        "method/scope",
+        "signed result",
+        "integrity verification",
+        "AHTE evidence graph"
+      ],
+      "connector_state": "production-credentials-required"
     },
     {
       "id": "segment-3-assurance",
       "name": "Manufacturer Assurance / Authority Connectivity",
       "owner": "Manufacturer + AHTE + authorised human/authority workflow",
       "partners": [],
-      "canonical_path_points": ["Applicability", "Control", "HCP / SCCP", "Evidence", "Audit Test", "Finding", "Corrective Action", "Re-verification", "Authority Gate", "Trust State"],
-      "evidence_class": ["E2", "E3", "E5"],
-      "target_integration": ["standards/applicability", "smart-glass audit", "CAPA/re-verification", "direct JAKIM API", "authority status propagation", "Command Center"],
-      "connector_state": "production-credentials-required",
-      "open_gates": ["Transaction-specific audit/authority case", "Actual authorised JAKIM production API scope", "Actual authority decision evidence"]
+      "canonical_path_points": [
+        "Applicability",
+        "Control",
+        "HCP / SCCP",
+        "Evidence",
+        "Audit Test",
+        "Finding",
+        "Corrective Action",
+        "Re-verification",
+        "Trust State"
+      ],
+      "evidence_class": [
+        "E2",
+        "E3",
+        "E5"
+      ],
+      "target_integration": [
+        "standards/applicability",
+        "smart-glass audit",
+        "CAPA/re-verification",
+        "direct JAKIM API",
+        "authority status propagation",
+        "Command Center"
+      ],
+      "connector_state": "production-credentials-required"
     },
     {
       "id": "segment-4-logistics",
       "name": "Sinotrans Logistics and Warehouse",
       "owner": "Sinotrans",
-      "partners": ["Sinotrans"],
-      "canonical_path_points": ["Logistics qualification", "Control", "Evidence", "Custody", "Trust State"],
-      "evidence_class": ["E4"],
-      "target_integration": ["WMS", "TMS", "Y2T", "MIS", "EDI", "IoT", "warehouse receipt/dispatch", "segregation", "container/seal", "telemetry", "route/geofence", "custody", "Command Center"],
-      "connector_state": "production-credentials-required",
-      "open_gates": ["Route selection", "Carrier qualification", "Warehouse halal-specific qualification", "Contractual basis", "Production system/API/security access"]
+      "partners": [
+        "Sinotrans"
+      ],
+      "canonical_path_points": [
+        "Logistics qualification",
+        "Control",
+        "Evidence",
+        "Custody",
+        "Trust State"
+      ],
+      "evidence_class": [
+        "E4"
+      ],
+      "target_integration": [
+        "WMS",
+        "TMS",
+        "Y2T",
+        "MIS",
+        "EDI",
+        "IoT",
+        "warehouse receipt/dispatch",
+        "segregation",
+        "container/seal",
+        "telemetry",
+        "route/geofence",
+        "custody",
+        "Command Center"
+      ],
+      "connector_state": "production-credentials-required"
     },
     {
       "id": "segment-5-border",
       "name": "Border / Port Authorities",
       "owner": "Origin and destination sovereign authorities",
       "partners": [],
-      "canonical_path_points": ["Evidence", "Audit Test", "Authority Gate", "Operational Release"],
-      "evidence_class": ["E4", "E5"],
-      "target_integration": ["authorised port/customs API trust interface", "shipment/container/seal reconciliation", "inspection/sampling", "hold/release event return"],
-      "connector_state": "production-credentials-required",
-      "open_gates": ["Origin port selection", "Destination port selection", "Actual sovereign interface/permissions", "Actual clearance and release events"]
+      "canonical_path_points": [
+        "Evidence",
+        "Audit Test",
+        "Operational Release"
+      ],
+      "evidence_class": [
+        "E4",
+        "E5"
+      ],
+      "target_integration": [
+        "authorised port/customs API trust interface",
+        "shipment/container/seal reconciliation",
+        "inspection/sampling",
+        "hold/release event return"
+      ],
+      "connector_state": "production-credentials-required"
     },
     {
       "id": "segment-6-destination",
       "name": "Destination — GCC",
       "owner": "Importer / buyer / destination authorities and operators",
       "partners": [],
-      "canonical_path_points": ["Authority Gate", "Receiving verification", "Trust State", "Operational Release"],
-      "evidence_class": ["E4", "E5"],
-      "target_integration": ["importer/buyer portal", "destination warehouse", "retail/receiving", "authorised trust verification", "GCC authority/customs status", "Command Center"],
-      "connector_state": "production-credentials-required",
-      "open_gates": ["Importer identification", "Destination market", "Product category", "Destination authority/import requirements", "Production receiving/API connectivity"]
+      "canonical_path_points": [
+        "Receiving verification",
+        "Trust State",
+        "Operational Release"
+      ],
+      "evidence_class": [
+        "E4",
+        "E5"
+      ],
+      "target_integration": [
+        "importer/buyer portal",
+        "destination warehouse",
+        "retail/receiving",
+        "authorised trust verification",
+        "GCC authority/customs status",
+        "Command Center"
+      ],
+      "connector_state": "production-credentials-required"
     }
   ],
   "shipment_workflow": {
@@ -114,8 +244,27 @@
     "name": "shipment workflow",
     "status": "NOT-INSTANTIATED",
     "pilot_flag": "[PILOT: shipment workflow — China → GCC direct]",
-    "eligibility_chain": ["Legal entity", "Factory", "SKU / formula", "Current halal certificate + issuer / scope / validity", "Destination issuer recognition / halal rules", "Label / product / import registration", "Importer / buyer", "Commercial terms / PO", "Pilot batch", "Laboratory evidence", "Audit/CAPA/re-verification as applicable", "Authority-linked status", "Logistics qualification", "Warehouse", "Container / seal", "Custody / telemetry", "Origin border release", "GCC border release", "Receiving verification"],
-    "open_gates": ["Manufacturer selection", "SKU selection", "Importer / buyer identification", "PO issuance", "Batch production", "Booking confirmation", "Export / import documentation", "Actual lab evidence", "Actual authority status/decision", "Border release and receipt"],
+    "eligibility_chain": [
+      "Legal entity",
+      "Factory",
+      "SKU / formula",
+      "Current halal certificate + issuer / scope / validity",
+      "Destination issuer recognition / halal rules",
+      "Label / product / import registration",
+      "Importer / buyer",
+      "Commercial terms / PO",
+      "Pilot batch",
+      "Laboratory evidence",
+      "Audit/CAPA/re-verification as applicable",
+      "Authority-linked status",
+      "Logistics qualification",
+      "Warehouse",
+      "Container / seal",
+      "Custody / telemetry",
+      "Origin border release",
+      "GCC border release",
+      "Receiving verification"
+    ],
     "development_rule": "The complete shipment workflow workflow may be exercised with clearly labelled synthetic/development data, but no event is marked as actually occurred until transaction-native evidence exists."
   },
   "implementation_boundary": {

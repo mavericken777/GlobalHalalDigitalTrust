@@ -4,12 +4,10 @@
 
 - Revision: v1.1.0
 - Control date: 2026-09-30
-- Classification: post-freeze operating architecture
 - Governing topology: `../00_EXECUTIVE_COMMAND/CURRENT_TARGET_ARCHITECTURE_2026-09-30.md`
 - Companion: `PLATINUM_COMMAND_CENTER_INTEGRATION_ADDENDUM_2026-09-30.md`
 - Authority effect: none
 
-[PROPOSAL: establishes command-center operating specification — path point: Evidence → Audit Test → Finding → Corrective Action → Re-verification → Authority Gate → Trust State → Operational Release]
 
 ## 1. Mission
 
@@ -312,10 +310,10 @@ Severity is not certification status.
 - D2 — machine assessment;
 - D3 — human finding/CAPA accountability;
 - D4 — trust-fracture hold; auto-hold may be configured, auto-release forbidden where human release is required;
-- D5 — competent-authority gate;
-- D6 — sovereign/legal/fatwa.
+- certification review — competent-certification review;
+- certification determination — sovereign/legal/fatwa.
 
-The Command Center must show the class and next authorised actor for every escalated case. No model confidence score bypasses D5/D6.
+The Command Center must show the class and next authorised actor for every escalated case. No model confidence score bypasses authorised certification decision workflow.
 
 ## 9. AI/ML predictive analytics + Preemptive Strategy Engine
 

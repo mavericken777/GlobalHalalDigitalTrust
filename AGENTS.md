@@ -1,108 +1,22 @@
-# AHTE / IQ300 Repository Agent Instructions
+# Repository guidance
 
-## Artifact Metadata
+This repository contains the Global Halal Digital Trust project: company context, operating model, platform architecture, integration contracts, reference software, and public-facing materials.
 
-- Artifact: `AGENTS.md`
-- Revision: `v1.1.0`
-- Control date: `2026-09-20`
-- Target: repository root
-- Classification: post-freeze agent-governance artifact
-- Authority effect: none
-- Suggested commit: `docs(agent): expand AGENTS.md controlling sources and placement [DOCTRINE-CRITICAL]`
+## Working rules
 
-[PROPOSAL: closes cross-agent instruction gap — path point: Control / Evidence / Governance]
+- Inspect the current repository state and controlling project files before making changes.
+- Keep current project information in the root README, STATUS, REPO_INDEX, and the domain's controlling specification. Remove obsolete copies instead of adding competing versions.
+- Keep private transaction records, draft agreements, personal data, signatory records, and private negotiations out of this public repository.
+- Do not fabricate standards text, test results, certifications, approvals, partner commitments, production integrations, or shipment activity.
+- Use official source material when describing a standard or regulatory requirement. Include only information that is available and relevant to the project.
+- Keep the physical corridor China → GCC direct unless a different route is explicitly scoped.
+- Describe AHTE and the direct JAKIM API as project interfaces and capabilities; never imply that the software itself issues official certification or sovereign release.
+- Use representative examples only when they are clearly labelled as examples and contain no private transaction identifiers.
+- Keep interfaces complete while distinguishing configured, development, sandbox, and production connector state. Never fabricate production responses.
+- Run the relevant repository tests and builds after implementation changes; update the controlling documentation in the same change.
 
-## 1. Repository Identity
+## Architecture summary
 
-This repository (`mavericken777/GlobalHalalDigitalTrust`) is the canonical
-project repository for the Amanah Halal Trust Ecosystem (AHTE) operated by
-Global Halal Supply Chain Ltd HK (GHSCL), under IQ300 doctrine.
+Global Halal Supply Chain Limited operates the international digital-infrastructure and coordination layer. AHTE connects product identity, standards applicability, controls, evidence, audit workflows, laboratory records, production and logistics events, destination operations, monitoring, and verification. The system covers China origin through GCC receiving and distribution, with direct JAKIM API connectivity represented as an integration interface.
 
-Repository content is project doctrine, architecture, evidence mapping and
-implementation guidance. It is not itself an external regulatory authority,
-certification decision or destination-market approval.
-
-Core principle:
-
-> Data stays where it belongs. Trust travels.
-
-## 2. Controlling Sources
-
-Before substantive work, resolve and read the current controlling artifacts
-identified by the root `README.md`.
-
-As of this control date, the primary controls are:
-
-1. `00_EXECUTIVE_COMMAND/ABSOLUTE_MODE_SYSTEM_INSTRUCTION_v14.1.md`
-2. `00_EXECUTIVE_COMMAND/IQ300_DOCTRINE.md`
-3. `master-standards-stack/README.md`
-4. `master-standards-stack/iq300-all-jakim-ms/01_MASTER_STANDARDS_REGISTER.md`
-5. `00_EXECUTIVE_COMMAND/live-source-registry.json`
-6. `00_EXECUTIVE_COMMAND/partner-registry.json`
-7. `00_EXECUTIVE_COMMAND/port-authority-registry.json`
-8. `00_EXECUTIVE_COMMAND/corridor-registry.json`
-9. `00_EXECUTIVE_COMMAND/trust-packet-schemas.json`
-10. `00_EXECUTIVE_COMMAND/schema-registry.json`
-11. `00_EXECUTIVE_COMMAND/commit-tag-taxonomy.json`
-12. `00_EXECUTIVE_COMMAND/project-file-curation.json`
-13. `00_EXECUTIVE_COMMAND/AGENT_CONTROL_LAYER_AUDIT_2026-09-19.md`
-14. `docs/TOOLING.md`
-
-Do not assume a hard-coded version remains current. Check the root `README.md`
-and repository state before relying on a command version.
-
-## 3. Standards Source Control
-
-The controlling standards source is the dynamic, source-controlled registry at
-`master-standards-stack/iq300-all-jakim-ms/01_MASTER_STANDARDS_REGISTER.md`,
-interpreted with current JAKIM/JSM sources and the complete applicable Malaysian
-Halal governance framework. Maintain provenance and version history for every
-source change. Do not silently overwrite evidence; identify supersession,
-source-locked text, open gates and proposals clearly.
-
-## 4. Non-Negotiable Rules
-
-- Never invent normative text, certificates, laboratory results, approvals, contracts, or shipment events.
-- Never treat AI, laboratory results, QR codes, blockchain records, or platform events as official Halal certification.
-- Enforce: `NOT DETECTED != HALAL`.
-- Never present shipment workflow as instantiated unless transaction-native evidence exists.
-- Never blur pilot material into permanent architecture without `[PILOT]`.
-- When required source is absent: respond exactly `DATA NOT AVAILABLE — SOURCE-LOCKED.`
-
-## 5. Authority Boundary
-
-AHTE is an evidence, control, orchestration and decision-support layer.
-Malaysian Standards are technical instruments only.
-Certification decisions remain with JAKIM / MAIN / JAIN.
-Destination decisions remain with GCC authorities and importers.
-AI and the platform never issue official Halal certificates.
-
-## 6. Canonical Path
-
-`Authority → Standard / Instrument → Clause / Requirement → Applicability → Control → HCP / SCCP → Evidence → Audit Test → Finding → Corrective Action → Re-verification → Authority Gate → Trust State → Operational Release`
-
-## 7. Repository Placement
-
-- `00_EXECUTIVE_COMMAND/` — doctrine, command, registries, audits
-- `03_ECOSYSTEM_PARTNERS/` — partner RACI / ecosystem matrices
-- `05_PLATINUM_REAL_TIME_MONITORING/` — monitoring architecture
-- `deliverables/` — numbered documentary deliverables (`00`–`29` present)
-- `docs/` — ecosystem documentation and `TOOLING.md`
-- `master-standards-stack/iq300-all-jakim-ms/` — current standards intelligence/control registry
-- `master-standards-stack/process-flow-infographics/` — process-flow visuals
-- `partners/` — coda, sinotrans, china-merchant, china-food-security-lab
-- `tools/` — generation tooling
-- `.github/` — agents, instructions, prompts, skills, hooks, workflows
-
-Do not create a new top-level directory without explicit repository-governance
-approval.
-
-## 8. See Also
-
-- `.github/copilot-instructions.md`
-- `.github/agents/halal-trust-editor.agent.md`
-- `.github/prompts/ahte-platinum-asset-generation.prompt.md`
-- `.github/skills/ahte-source-governance/SKILL.md`
-- `docs/TOOLING.md`
-- `00_EXECUTIVE_COMMAND/AGENT_CONTROL_LAYER_AUDIT_2026-09-19.md`
-- `00_EXECUTIVE_COMMAND/REPOSITORY_COMPLETION_AUDIT_2026-09-18.md`
+AI supports evidence processing and risk analysis. Official certification, customs release, and regulated financial decisions must not be represented as platform outputs unless the accountable institution has actually issued them.

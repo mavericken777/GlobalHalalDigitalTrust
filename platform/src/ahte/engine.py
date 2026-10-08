@@ -24,7 +24,7 @@ CANONICAL = [
     "Finding",
     "Corrective Action",
     "Re-verification",
-    "Authority Gate",
+    "Certification Decision",
     "Trust State",
     "Operational Release",
 ]
@@ -126,7 +126,7 @@ def authority_decision(body: AuthorityDecisionIn):
         {
             **body.model_dump(),
             "certificate_issued": False,
-            "path_node": "Authority Gate",
+            "path_node": "Certification Decision",
             "decision_class": "D5",
             "note": "Record of an asserted authority act; AHTE is not the issuing body",
         },

@@ -24,7 +24,7 @@ def one_flow(item):
        txt(1690,110,"Implementation view",16,500,"end","#cbd5e1"),
        '<rect x="40" y="176" width="1720" height="930" rx="28" fill="#ffffff" stroke="#e2e8f0"/>',
        txt(78,220,"END-TO-END DIGITAL ASSURANCE FLOW",22,800),
-       txt(78,250,"Scope → provenance → control → evidence → assessment → authority gate → trusted release",16,500,fill="#475569")]
+       txt(78,250,"Scope → provenance → control → evidence → assessment → certification decision workflow → trusted release",16,500,fill="#475569")]
     y0=285; boxw=1540; boxh=83; x=130; gap=24
     for i,step in enumerate(steps):
         y=y0+i*(boxh+gap)
@@ -39,7 +39,7 @@ def one_flow(item):
     p += ['<rect x="82" y="1018" width="500" height="58" rx="15" fill="#ecfeff" stroke="#99f6e4"/>',
           txt(105,1055,"AHTE bindings: requirement • HCP • evidence • audit test",15,650),
           '<rect x="600" y="1018" width="500" height="58" rx="15" fill="#f8fafc" stroke="#cbd5e1"/>',
-          txt(625,1055,"Authority gate + controlled release",15,650),
+          txt(625,1055,"Certification decision workflow + controlled release",15,650),
           '<rect x="1118" y="1018" width="600" height="58" rx="15" fill="#f8fafc" stroke="#cbd5e1"/>',
           txt(1140,1055,"Digital events + traceability preserve every state transition",15,650),
           '</svg>']
@@ -56,8 +56,8 @@ def master(items):
        txt(2115,108,"AHTE implementation view",15,500,"end","#cbd5e1"),
        '<rect x="40" y="180" width="2120" height="1600" rx="28" fill="#ffffff" stroke="#e2e8f0"/>',
        txt(75,225,"COMMON AHTE CONTROL SPINE",22,800),
-       txt(75,252,"Authority → scope → requirement → HCP → evidence → assessment → corrective action → re-verification → authority gate → trust state",16,500,fill="#475569")]
-    spine=["Authority","Scope","Requirement","HCP / Risk","Evidence","Audit","CAR / Re-verify","Authority gate","Trust / Release"]
+       txt(75,252,"Authority → scope → requirement → HCP → evidence → assessment → corrective action → re-verification → certification decision workflow → trust state",16,500,fill="#475569")]
+    spine=["Authority","Scope","Requirement","HCP / Risk","Evidence","Audit","CAR / Re-verify","Certification decision workflow","Trust / Release"]
     sx=75; sy=275; sbw=215; gap=12
     for i,st in enumerate(spine):
         x=sx+i*(sbw+gap)

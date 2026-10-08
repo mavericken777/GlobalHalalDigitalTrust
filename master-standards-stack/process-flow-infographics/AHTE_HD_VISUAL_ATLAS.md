@@ -1,9 +1,7 @@
 # AHTE HD Visual Atlas
 
 Control date: 2026-09-20  
-Classification: post-freeze visual execution layer  
 Authority effect: none  
-Freeze boundary: does not rewrite `verified-2026-09-17/`
 
 > AHTE is an evidence and decision-support platform. Official Halal certification and destination regulatory decisions remain with the competent authorities.
 
@@ -27,7 +25,7 @@ flowchart LR
     H --> I[Finding]
     I --> J[Corrective Action]
     J --> K[Re-verification]
-    K --> L[Authority Gate]
+    K --> L[certification review]
     L --> M[Trust State]
     M --> N[Operational Release]
 ```
@@ -55,7 +53,7 @@ flowchart TD
     M --> N[Corrective action]
     N --> O[Re-verification]
     O --> J
-    L --> P[Authority gate]
+    L --> P[certification review]
     P -->|Pass| Q[Authority decision]
     P -->|Hold| R[HOLD / DISPUTED / QUARANTINED]
     Q --> S[Trust state]
@@ -130,14 +128,14 @@ flowchart LR
     EV[Evidence] --> AS[Assessment]
     AS --> HITM[HITM case]
     HITM --> PEP[HITM PEP / OPA default-deny]
-    PEP --> AD[Authority decision D5/D6]
+    PEP --> AD[Authority decision authorised certification decision workflow]
     AD --> TS[Trust state]
     AI[AI advisory only] -.-> AS
     AI -.-> HITM
     AI -.-x AD
 ```
 
-High AI confidence cannot skip D5/D6 authority gates. AI does not issue certificates.
+High AI confidence cannot skip authorised certification decision workflow certification review. AI does not issue certificates.
 
 ---
 
@@ -335,7 +333,7 @@ stateDiagram-v2
 | Item | Source |
 |---|---|
 | Canonical path | README.md / IQ300 doctrine |
-| 17-standard set | verified-2026-09-17 catalogue |
+| 17-standard set | current applicable standards register |
 | Mermaid A–J | iq300-all-jakim-ms/03_COMPLETE_MERMAID_PROCESS_FLOWS.md |
 | Evidence / twin / port | 05_IQ300_EVIDENCE_TRUST_PROCESS_FLOWS.md |
 | HITM plane | IQ300_ASSURANCE_CONTROL_PLANE_SPEC_v0.1.md — proposal only |
