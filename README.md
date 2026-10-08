@@ -4,7 +4,7 @@
 
 [Current target architecture](00_EXECUTIVE_COMMAND/CURRENT_TARGET_ARCHITECTURE_2026-09-30.md) · [Implementation completeness rule](00_EXECUTIVE_COMMAND/IMPLEMENTATION_COMPLETENESS_RULE_2026-09-30.md) · [Codex rebuild prompt](docs/CODEX_PLATFORM_REBUILD_MASTER_PROMPT_2026-09-30.md) · [Website spec v2.1+](docs/WEBSITE_REBUILD_MASTER_SPEC_v2_2026-09-30.md) · [Trip pack](CHINA_TRIP_2026/00_READ_THIS_FIRST.md) · [Execution board](CHINA_TRIP_2026/EXECUTION_BOARD.md) · [A–Z index](REPO_INDEX.md) · [STATUS](STATUS.md)
 
-## Current project architecture — aligned to 7 October 2026
+## Current project architecture — aligned to 8 October 2026
 
 The project is a **Global Halal Digital Trust & Trade / Halal Tayyib infrastructure**. This page follows the [7 October AMANAH execution prompt](https://github.com/mavericken777/Amanah/blob/main/docs/AMANAH_100_PERCENT_END_TO_END_MASTER_EXECUTION_PROMPT_2026-10-07.md) and [current operating summary](https://github.com/mavericken777/Amanah/blob/main/docs/operations/STATUS.md). The 30 September architecture artifacts remain dated references.
 
@@ -163,7 +163,7 @@ Trust State is a machine-readable evidence/operational state, not the certificat
 
 ## Current engineering controls
 
-- The superseded 17 September 2026 standards package has been removed from the current repository tree.
+- Standards control is dynamic and registry-driven across the complete applicable Malaysian/JAKIM framework and its current authoritative sources.
 - Three corrupt legacy archives remain retired/quarantined; do not reconstruct normative content from corrupted assets.
 - The replacement MS2400 source index is an index/locator asset, not licensed normative text or a complete control set.
 - The reviewed derived Sinotrans MS2400 playbook bundle must not override verified source/control mappings where conflicts exist.
