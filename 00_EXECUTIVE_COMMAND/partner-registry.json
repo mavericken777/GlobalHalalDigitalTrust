@@ -392,10 +392,10 @@
     },
     {
       "id": "china-food-security-lab",
-      "name": "China government food security laboratory",
+      "name": "National Food Safety (Hengqin) Innovation Center under Chinese Academy of Agricultural Sciences, China",
       "project_status": "project_designated_partner",
       "contractual_status": "OPEN-GATE",
-      "role": "Analytical evidence generation plus China-side laboratory/traceability integration",
+      "role": "China-origin laboratory institution for analytical evidence generation and laboratory integration",
       "canonical_path_position": [
         "Evidence",
         "Audit Test"
@@ -407,7 +407,7 @@
       "repository_path": "partners/china-food-security-lab/",
       "current_profile": "partners/china-food-security-lab/AHTE_CHINA_LAB_TRACEABILITY_INTEGRATION_PROFILE_2026-09-30.md",
       "open_gates": [
-        "Exact legal entity/site",
+        "Contracting legal entity and registered site",
         "Accreditation scope per test method",
         "Method validation status",
         "Production system interface",
@@ -437,8 +437,9 @@
         "integrity verification",
         "traceability/physical-code binding"
       ],
-      "identity_relation": "Unresolved: do not equate legacy laboratory placeholder with NICFS or other similarly named institution without legal-entity evidence.",
-      "path": "partners/china-food-security-lab/"
+      "identity_relation": "Project-designated institution name: National Food Safety (Hengqin) Innovation Center under Chinese Academy of Agricultural Sciences, China. Its relationship to the separate NICFS / physical identity / traceability platform remains unverified; do not conflate entities without an authoritative instrument.",
+      "path": "partners/china-food-security-lab/",
+      "identity_update": "partners/china-food-security-lab/CHINA_LAB_INSTITUTION_IDENTITY_UPDATE_2026-10-08.md"
     }
   ],
   "transaction_support_planes": {
