@@ -144,10 +144,10 @@ docs/                     website/codex/implementation specifications
 | Source bindings and registries | [Executive control index](00_EXECUTIVE_COMMAND/README.md) |
 | Current standards registry | [Source-controlled register](master-standards-stack/iq300-all-jakim-ms/01_MASTER_STANDARDS_REGISTER.md) |
 
-The 26 September ingestion packages are historical audit evidence, not alternative current baselines. The removed 17 September package is not a current control source. Legacy roadmap/Sinotrans/CODA physical-pilot language is aligned to China → GCC direct. Project implementation does not instantiate Shipment 001 or create authority/finance decisions.
+The 26 September ingestion packages are historical audit evidence, not alternative current controls. Legacy roadmap/Sinotrans/CODA physical-pilot language is aligned to China → GCC direct. Project implementation does not instantiate Shipment 001 or create authority/finance decisions.
 
 
-## 7 October canonical AMANAH binding
+## 8 October canonical AMANAH binding
 
 | Domain | Canonical implementation |
 |---|---|
