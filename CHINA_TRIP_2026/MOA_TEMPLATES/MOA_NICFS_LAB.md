@@ -1,10 +1,11 @@
 # MEMORANDUM OF AGREEMENT — LABORATORY EVIDENCE ONLY (TEMPLATE)
 
 **Status:** TEMPLATE — not executed
-**Ref:** MOA-NICFS-LAB-2026-DRAFT-01
-**Counterparty brand on decks:** NICFS / 国食安创 / Hengqin food-safety innovation
-**Legal name to insert before signing:** ______________
-**Accreditation to attach:** CMA / CNAS / other ______ No. ______________
+**Ref:** MOA-CHINA-LAB-2026-DRAFT-02
+**Named institution:** National Food Safety (Hengqin) Innovation Center under Chinese Academy of Agricultural Sciences, China.
+**Contracting legal entity to insert before signing:** ______________
+**Accreditation/method scope to verify and attach:** CMA / CNAS / other ______ No. ______________
+**Status:** The institution name is project-designated; legal contracting identity, site, accreditation and scope remain to be confirmed before execution.
 
 Between
 
@@ -12,7 +13,7 @@ Between
 
 and
 
-**[LEGAL NAME OF LABORATORY VEHICLE]** (“Lab”)
+**[EXACT REGISTERED LEGAL NAME OF THE LABORATORY CONTRACTING ENTITY REPRESENTING THE NAMED INSTITUTION]** (“Lab”)
 
 ---
 
@@ -68,7 +69,7 @@ For GHSC
 Name: __________  Title: __________  Date: __________  Chop:
 
 
-Version: 1.1 · Control date: 2026-09-27 · Artifact: `CHINA_TRIP_2026/MOA_TEMPLATES/MOA_NICFS_LAB.md`.
+Version: 1.2 · Control date: 2026-10-08 · Artifact: `CHINA_TRIP_2026/MOA_TEMPLATES/MOA_NICFS_LAB.md`.
 Supersedes the 2026-09-26 working draft where inconsistent.
 Commit: `fix(mission): reconcile signing and readiness controls [EVIDENCE-UPDATE]`.
 [PROPOSAL: trip preparation — path point: Control / Evidence / Authority Gate]
