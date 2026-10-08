@@ -1,6 +1,6 @@
 # Execution board — commercial foundation and delivery
 
-Version: 1.1 · Control date: 2026-09-27 · Artifact: `CHINA_TRIP_2026/EXECUTION_BOARD.md`.
+Version: 1.2 · Control date: 2026-10-08 · Artifact: `CHINA_TRIP_2026/EXECUTION_BOARD.md`.
 Supersedes the 2026-09-26 working draft where inconsistent.
 Commit: `fix(mission): reconcile signing and readiness controls [EVIDENCE-UPDATE]`.
 [PROPOSAL: trip preparation — path point: Control / Evidence / Authority Gate]
