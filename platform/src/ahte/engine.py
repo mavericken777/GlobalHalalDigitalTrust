@@ -151,6 +151,6 @@ def corridor_event(body: CorridorEventIn):
         raise ValueError(f"segment must be one of {SEGMENTS}")
     return STORE.put(
         "events",
-        {**body.model_dump(), "pilot": True, "instantiated_shipment_001": False},
+        {**body.model_dump(), "pilot": True, "instantiated_shipment_workflow": False},
         "evt",
     )

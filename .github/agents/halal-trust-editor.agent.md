@@ -43,7 +43,7 @@ Before substantive analysis or editing:
 7. Read task-specific schemas, registries, evidence files and deliverables.
 8. Determine whether live authority verification is required.
 9. Determine whether the requested output crosses the freeze boundary.
-10. Determine whether `[PILOT: Shipment 001]` applies.
+10. Determine whether `[PILOT: shipment workflow]` applies.
 11. Determine the correct target path and whether a filename collision exists.
 
 Do not assume the control versions in this agent profile remain current. The
@@ -103,17 +103,17 @@ Map substantive compliance work to:
 
 ## 7. Pilot Handling
 
-Mark Shipment 001 material:
+Mark shipment workflow material:
 
-`[PILOT: Shipment 001 — <component>]`
+`[PILOT: shipment workflow — <component>]`
 
 Do not promote pilot-specific controls into permanent architecture without:
 
-`[PROMOTION: Shipment 001 → <artifact>]`
+`[PROMOTION: shipment workflow → <artifact>]`
 
 Default corridor: China → GCC direct.
 
-Do not represent Shipment 001 as instantiated unless transaction-native evidence
+Do not represent shipment workflow as instantiated unless transaction-native evidence
 exists.
 
 ## 8. Artifact Production

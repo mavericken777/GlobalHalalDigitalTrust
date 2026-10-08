@@ -8,7 +8,7 @@
 | Freeze | not modified |
 
 [PROPOSAL: IQ300 Autonomous Assurance Control Plane Specification — path point: Control → Authority Gate]
-[PILOT: Shipment 001 — first controlled execution environment]
+[PILOT: shipment workflow — first controlled execution environment]
 
 Parent: `../IQ300_ASSURANCE_CONTROL_PLANE_SPEC_v0.1.md`
 
@@ -29,4 +29,4 @@ Controlling doctrine path remains the 14-node sequence in `IQ300_DOCTRINE.md` v3
 | 15 | `15-agent-runtime-permissions.json` |
 | 16 | `16-auditability-layer.md` |
 | 17 | `../policies/hitm-default-deny.rego` |
-| 18 | `../SHIPMENT_001_ACCEPTANCE_TESTS.md` |
+| 18 | `../shipment_workflow_ACCEPTANCE_TESTS.md` |

@@ -38,7 +38,7 @@ High AI confidence never bypasses D5/D6. Undefined policy results deny.
 - Enforces HITM default-deny in-process and via a Rego policy fixture
 - Refuses to mint Halal certificates or set `trust_state=CERTIFIED`
 - Treats `not_detected` lab results as evidence only
-- Marks corridor events as pilot-only; does not instantiate Shipment 001
+- Marks corridor events as pilot-only; does not instantiate shipment workflow
 - Binds evidence and assessments to their object; negative decisions cannot become VERIFIED
 - Keeps self-asserted approvals PENDING because caller identity is not authenticated
 - Preserves restrictive trust states until an authenticated re-verification workflow exists

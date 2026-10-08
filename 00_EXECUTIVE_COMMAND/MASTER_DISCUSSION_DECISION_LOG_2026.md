@@ -12,7 +12,7 @@ This section records the current project architecture decisions for implementati
 
 ### Current operating decisions
 
-1. **Default physical corridor is China → GCC direct.** Malaysia is the governance/assurance plane unless a Malaysia physical hop is separately scoped. Older China→Malaysia pilot language does not control Shipment 001.
+1. **Default physical corridor is China → GCC direct.** Malaysia is the governance/assurance plane unless a Malaysia physical hop is separately scoped. Older China→Malaysia pilot language does not control shipment workflow.
 2. **JAKIM integration is direct JAKIM API.** Public architecture should not insert an unnecessary generic gateway between AHTE and JAKIM. Exact production endpoints, credentials, schemas and permissions remain controlled implementation inputs.
 3. **24/7 GHSCL + JAKIM Command Center is a first-class operating layer.** It continuously monitors manufacturer, laboratory, HCP/SCCP, authority status, Sinotrans warehouse/logistics, shipment/container/seal, ports, GCC receiving, CAPA, evidence freshness, trust fractures, predictive risk and recall state.
 4. **AI/ML predictive analytics are paired with preemptive strategy.** Existing Evidence Gap, Anomaly, Contradiction, Trust Fracture, Predictive Compliance and Recall Blast-Radius engines are extended by an explicit Preemptive Strategy Engine. AI may recommend/escalate and apply configured D4 holds; it must not bypass D5/D6 or auto-release human-reserved holds.

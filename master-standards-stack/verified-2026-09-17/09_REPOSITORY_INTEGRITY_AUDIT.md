@@ -48,7 +48,7 @@ The following are not repository defects and are not represented as complete fac
 - container booking/seal/custody telemetry;
 - destination border release and importer receipt.
 
-Each is explicitly mapped in `07_AZ_COMPLETION_EXTERNAL_GATE_REGISTER.md` and the Shipment 001 state machine.
+Each is explicitly mapped in `07_AZ_COMPLETION_EXTERNAL_GATE_REGISTER.md` and the shipment workflow state machine.
 
 ## Final repository status
 

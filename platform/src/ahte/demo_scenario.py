@@ -5,7 +5,7 @@ from .mock_integrations import MOCK_HUB
 from .models import ActorType, AssessmentIn, CorridorEventIn, EvidenceIn
 
 
-def run_demo(shipment_id: str = "SHIPMENT-001", object_id: str = "DEMO-PRODUCT-001") -> dict:
+def run_demo(shipment_id: str = "shipment-workflow", object_id: str = "DEMO-PRODUCT-001") -> dict:
     """Run a presentation-safe synthetic China→GCC journey in one call."""
     lab = MOCK_HUB.laboratory(object_id)
     evidence = engine.ingest_evidence(EvidenceIn(

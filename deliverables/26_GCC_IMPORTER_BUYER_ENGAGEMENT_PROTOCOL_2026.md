@@ -10,7 +10,7 @@
 | Status | Post-freeze pilot operating protocol |
 | Commit message | `docs(deliverables): add 26 — GCC importer/buyer engagement protocol [DOCTRINE-CRITICAL]` |
 
-[PILOT: Shipment 001 — importer/buyer engagement]
+[PILOT: shipment workflow — importer/buyer engagement]
 
 ## 1. PURPOSE
 Define the structured engagement protocol for GCC importers and buyers participating in the China → GCC direct corridor pilot. The protocol establishes evidence gates, authority boundaries and commercial qualification requirements.
@@ -65,7 +65,7 @@ Before release for a UAE transaction, verify at minimum:
 4. Commercial terms negotiation.
 5. Logistics and receiving-process alignment.
 6. AHTE onboarding.
-7. Shipment 001 SKU/batch selection.
+7. shipment workflow SKU/batch selection.
 8. PO/order confirmation.
 9. Shipment execution/custody tracking.
 10. Border release and receiving verification.

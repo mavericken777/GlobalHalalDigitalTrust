@@ -10,7 +10,7 @@
 | Freeze | `master-standards-stack/verified-2026-09-17/` (16 modules 00–15 + MANIFEST.json) |
 
 [PROPOSAL: IQ300 Autonomous Assurance Control Plane — path point: Control → Authority Gate]
-[PILOT: Shipment 001 — target execution architecture]
+[PILOT: shipment workflow — target execution architecture]
 [ENGINEERING-GATE: runtime implementation, signed statements, policy bundles]
 
 ## 1. Proposition
@@ -82,7 +82,7 @@ See `machine-spec/09-hard-gate-rules.json`, `machine-spec/11-trust-fracture-taxo
 | 15 | Agent Runtime Permissions | `machine-spec/15-agent-runtime-permissions.json` |
 | 16 | Auditability / Explainability | `machine-spec/16-auditability-layer.md` |
 | 17 | Failure-Closed Controls | `policies/hitm-default-deny.rego` |
-| 18 | Shipment 001 Acceptance Tests | `SHIPMENT_001_ACCEPTANCE_TESTS.md` |
+| 18 | shipment workflow Acceptance Tests | `shipment_workflow_ACCEPTANCE_TESTS.md` |
 
 Index: `machine-spec/README.md`.
 
@@ -96,5 +96,5 @@ Promotion requires `[PROMOTION]` + canonical-path review + `[DOCTRINE-CRITICAL]`
 - `[SOURCE-LOCKED: exact MS / MPPHM Pindaan 2026 wording]`
 - `[OPEN GATE: live authority VC issuer — owner: JAKIM/GCC — blocking: E5 issuance]`
 - `[OPEN GATE: SCITT transparency service — owner: engineering — blocking: signed receipts]`
-- `[TRANSACTION-GATE: Shipment 001 events]`
+- `[TRANSACTION-GATE: shipment workflow events]`
 - `[ENGINEERING-GATE: OPA/SPIRE/EPCIS runtime]`

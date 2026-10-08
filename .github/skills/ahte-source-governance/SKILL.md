@@ -1,6 +1,6 @@
 ---
 name: ahte-source-governance
-description: Enforces AHTE source provenance, freeze immutability, authority boundaries, and flag syntax during any repository task that touches standards, evidence, certification, pilot, partner, or corridor content. Use when the task involves IQ300, AHTE, JAKIM, MS 2400, halal certification, Shipment 001, or any deliverable that could be interpreted as an authority claim.
+description: Enforces AHTE source provenance, freeze immutability, authority boundaries, and flag syntax during any repository task that touches standards, evidence, certification, pilot, partner, or corridor content. Use when the task involves IQ300, AHTE, JAKIM, MS 2400, halal certification, shipment workflow, or any deliverable that could be interpreted as an authority claim.
 ---
 
 # AHTE Source Governance
@@ -12,7 +12,7 @@ Load this skill whenever the task involves:
 - any file under `master-standards-stack/verified-2026-09-17/`
 - any reference to JAKIM, MAIN, JAIN, MS 2400, GSO 2055, or other standards
 - any deliverable mentioning certification, approval, audit, or trust state
-- any `[PILOT: Shipment 001]` content
+- any `[PILOT: shipment workflow]` content
 - any partner-facing or public-facing asset
 - any corridor or port architecture
 
@@ -32,7 +32,7 @@ Load this skill whenever the task involves:
 - Never reproduce licensed MS 2400 normative wording.
 - Enforce `NOT DETECTED != HALAL`.
 - Never imply automatic certificate recognition or market access.
-- Never present Shipment 001 as instantiated.
+- Never present shipment workflow as instantiated.
 - Never blur pilot material into permanent architecture.
 - Never silently resolve a source conflict.
 - Use exact flag syntax from the current Absolute Mode instruction.

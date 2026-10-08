@@ -397,11 +397,11 @@ Finance/Takaful status may be visible to authorised Command Center roles only wh
 
 Financial decisions remain with the relevant counterparty.
 
-## 16. Shipment 001
+## 16. shipment workflow
 
-[PILOT: Shipment 001 — finance/Takaful evidence interface]
+[PILOT: shipment workflow — finance/Takaful evidence interface]
 
-Shipment 001 may later validate bounded financing/Takaful evidence packets when the relevant counterparty, legal/Shariah framework and transaction documents exist.
+shipment workflow may later validate bounded financing/Takaful evidence packets when the relevant counterparty, legal/Shariah framework and transaction documents exist.
 
 Before that point, the complete application workflow may be exercised with development providers and synthetic pilot objects clearly labelled as non-production.
 

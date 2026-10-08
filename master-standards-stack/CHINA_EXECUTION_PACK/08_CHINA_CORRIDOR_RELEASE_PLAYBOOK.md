@@ -1,4 +1,4 @@
-# 08 — China Pilot → Shipment 001 → GCC Release Operating Playbook
+# 08 — China Pilot → shipment workflow → GCC Release Operating Playbook
 
 ## 1. Mission
 
@@ -129,7 +129,7 @@ Start with a named GCC market and expand after the first shipment. The pack supp
 - Port officer workflow simulation.
 - GCC destination release simulation.
 
-### Week 4 — Shipment 001 rehearsal and release
+### Week 4 — shipment workflow rehearsal and release
 
 - Freeze shipment object.
 - Generate signed trust packet.
@@ -163,10 +163,10 @@ ERP, MES, QMS, WMS, LIMS, DMS, IoT and identity systems.
 ### Assurance
 Audit, evidence, laboratory, corrective-action and change-control records.
 
-## 7. Shipment 001 digital twin
+## 7. shipment workflow digital twin
 
 ```text
-SHIPMENT-001
+shipment-workflow
  ├── Orders
  ├── Products
  │    └── Lots
@@ -245,7 +245,7 @@ SHIPMENT-001
 
 ## 12. Scale-out
 
-After Shipment 001:
+After shipment workflow:
 
 `POST-SHIPMENT REVIEW → CONTROL TUNING → TEMPLATE FREEZE → SECOND MANUFACTURER → SECOND ROUTE/PRODUCT → MULTI-SITE → REGIONAL SCALE`.
 
@@ -278,4 +278,4 @@ UAE MoIAT operates national conformity-mark licensing, including the Halal Natio
 
 ## 15. Definition of done
 
-Shipment 001 is complete when the complete physical journey and digital trust journey can be reconstructed from the repository's event stream and linked evidence, the destination operating team can verify the scoped shipment state, exceptions can be deterministically isolated, and a repeatable implementation template exists for the next manufacturer and route.
+shipment workflow is complete when the complete physical journey and digital trust journey can be reconstructed from the repository's event stream and linked evidence, the destination operating team can verify the scoped shipment state, exceptions can be deterministically isolated, and a repeatable implementation template exists for the next manufacturer and route.

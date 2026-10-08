@@ -203,9 +203,9 @@ Credential/terminal states:
 
 `CERTIFIED` only when linked to valid competent credential; `EXPIRED; SUSPENDED; REVOKED; RECALLED; REJECTED`.
 
-## 17. Shipment 001 release rule
+## 17. shipment workflow release rule
 
-Shipment 001 cannot proceed from public manufacturer screening directly to release. Minimum release chain:
+shipment workflow cannot proceed from public manufacturer screening directly to release. Minimum release chain:
 
 `manufacturer legal identity -> exact factory -> exact SKU/formula -> current halal credential + issuer recognition for destination -> destination importer/item/label approvals -> commercial PO -> batch production evidence -> quality/halal release -> logistics provider/corridor qualification -> container/seal -> export documents -> custody/telemetry -> destination border/halal/food documents -> border release -> receiving verification -> reconciliation`.
 

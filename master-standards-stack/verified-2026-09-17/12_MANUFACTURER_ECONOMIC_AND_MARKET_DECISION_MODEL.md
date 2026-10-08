@@ -13,7 +13,7 @@ The model answers:
 2. What does compliance actually cost for this site/SKU/scheme?
 3. What market access or buyer value is evidenced rather than assumed?
 4. What is the risk-adjusted commercial return?
-5. What must be true before Shipment 001 can proceed?
+5. What must be true before shipment workflow can proceed?
 
 ---
 
@@ -282,9 +282,9 @@ Each risk stores `likelihood`, `impact`, `evidence`, `owner`, `mitigation`, `tri
 
 ---
 
-# 10. China -> GCC Shipment 001 commercial gate
+# 10. China -> GCC shipment workflow commercial gate
 
-Shipment 001 shall not be selected on generic category popularity or modelled ROI. The chosen SKU must simultaneously satisfy:
+shipment workflow shall not be selected on generic category popularity or modelled ROI. The chosen SKU must simultaneously satisfy:
 
 1. legal/factory identity verified;
 2. exact SKU/formula evidence complete;
@@ -310,7 +310,7 @@ Each candidate/SKU gets a decision memo with no opaque ranking:
 
 Possible operational states:
 
-`DISCOVERED -> EVIDENCE-REQUESTED -> TECHNICALLY-QUALIFIED -> REGULATORY-QUALIFIED -> BUYER-VALIDATED -> ECONOMICS-VALIDATED -> PILOT-APPROVED -> SHIPMENT-001-ELIGIBLE`.
+`DISCOVERED -> EVIDENCE-REQUESTED -> TECHNICALLY-QUALIFIED -> REGULATORY-QUALIFIED -> BUYER-VALIDATED -> ECONOMICS-VALIDATED -> PILOT-APPROVED -> shipment-workflow-ELIGIBLE`.
 
 ---
 
@@ -330,4 +330,4 @@ These remain optional scenario inputs only when management explicitly adopts and
 
 # 13. Completion state
 
-This module closes the commercial-analysis gap between the repository's compliance/manufacturer qualification system and a financeable Shipment 001 decision. It converts the useful framework in the uploaded market report into a source-controlled economic model that requires real quotations, buyer evidence and regulatory facts before a transaction is approved.
+This module closes the commercial-analysis gap between the repository's compliance/manufacturer qualification system and a financeable shipment workflow decision. It converts the useful framework in the uploaded market report into a source-controlled economic model that requires real quotations, buyer evidence and regulatory facts before a transaction is approved.

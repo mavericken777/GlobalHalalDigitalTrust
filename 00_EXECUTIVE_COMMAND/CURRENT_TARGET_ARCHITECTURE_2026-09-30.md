@@ -94,9 +94,9 @@ Default physical corridor: **China → GCC direct**.
 
 Malaysia is the governance/assurance and authority-connectivity plane unless a physical Malaysia movement is explicitly and separately scoped.
 
-[PILOT: Shipment 001 — first controlled China→GCC proof-of-execution]
+[PILOT: shipment workflow — first controlled China→GCC proof-of-execution]
 
-Shipment 001 remains a pilot object until transaction-native evidence exists.
+shipment workflow remains a pilot object until transaction-native evidence exists.
 
 ```text
 VERIFIED RAW-MATERIAL ORIGIN
@@ -424,7 +424,7 @@ For an unavailable live dependency implement:
 
 No arbitrary caps on manufacturers, products, facilities, materials, suppliers, evidence, shipments, audits, standards, roles, jurisdictions, connectors or languages.
 
-This does not remove legitimate authority/security gates and does not permit fabricated live JAKIM approvals, laboratory results, Sinotrans events, customs releases, GCC acceptance, finance/Takaful decisions, token approvals or Shipment 001 evidence.
+This does not remove legitimate authority/security gates and does not permit fabricated live JAKIM approvals, laboratory results, Sinotrans events, customs releases, GCC acceptance, finance/Takaful decisions, token approvals or shipment workflow evidence.
 
 ## 18. Public/website requirements
 
@@ -449,7 +449,7 @@ This precedence does not rewrite frozen source evidence.
 
 For current implementation:
 
-- old `China → Malaysia` or mandatory `China → Malaysia → GCC` pilot wording does not control Shipment 001; use China→GCC direct;
+- old `China → Malaysia` or mandatory `China → Malaysia → GCC` pilot wording does not control shipment workflow; use China→GCC direct;
 - generic public `Authority API Gateway` must not obscure direct JAKIM API topology;
 - old split China lab profile/addendum is superseded by the consolidated 30 September profile;
 - the duplicate lowercase `master-standards-stack/china-execution-pack/` lineage is retired after its richer/unique content is moved into canonical `master-standards-stack/CHINA_EXECUTION_PACK/`;

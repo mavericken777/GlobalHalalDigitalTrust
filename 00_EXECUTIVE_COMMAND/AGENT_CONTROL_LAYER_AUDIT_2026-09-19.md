@@ -78,7 +78,7 @@ Structural presence is verified. Behavioural Copilot runtime tests remain mainta
 [ ] Custom agent selectable (IDE/runtime)
 [ ] SOURCE-LOCKED behavioural test
 [ ] Freeze edit refusal test
-[ ] Shipment 001 not instantiated test
+[ ] shipment workflow not instantiated test
 [ ] NOT DETECTED != HALAL test
 ```
 

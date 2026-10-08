@@ -17,7 +17,7 @@ The detailed implementation and assets remain in Amanah. This repository records
 - **AI assists; authorised humans and competent authorities decide.** AI, laboratories, QR/NFC, blockchain, sensors and platforms do not certify Halal or make sovereign release decisions.
 - **Evidence before trust; trust before operational release.** Integrity proofs demonstrate integrity of recorded bytes, not factual truth.
 - Lab workflow is sample → custody → method/QC → result → review/signature → evidence; **NOT_DETECTED ≠ HALAL**.
-- Shipment 001 is a pilot and remains **NOT-INSTANTIATED** until real transaction evidence exists.
+- shipment workflow is a pilot and remains **NOT-INSTANTIATED** until real transaction evidence exists.
 - Public and portal workflows may show complete connector interfaces; development/sandbox state must remain labelled and must not fabricate authority, partner or transaction responses.
 
 ## Release state observed 8 October 2026

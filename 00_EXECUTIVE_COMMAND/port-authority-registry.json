@@ -33,7 +33,7 @@
     "china": [
       {
         "id": "china-origin-port-tbd",
-        "name": "To be determined per Shipment 001",
+        "name": "To be determined per shipment workflow",
         "country": "China",
         "competent_authority": "General Administration of Customs of the People's Republic of China (GACC)",
         "competent_authority_url": "http://www.customs.gov.cn/",
@@ -49,7 +49,7 @@
     "saudi_arabia": [
       {
         "id": "saudi-destination-port-tbd",
-        "name": "To be determined per Shipment 001",
+        "name": "To be determined per shipment workflow",
         "country": "Saudi Arabia",
         "competent_authority": "Zakat, Tax and Customs Authority (ZATCA) + SFDA",
         "competent_authority_urls": ["https://zatca.gov.sa/en/Pages/default.aspx", "https://www.sfda.gov.sa/en"],
@@ -63,7 +63,7 @@
     "uae": [
       {
         "id": "uae-destination-port-tbd",
-        "name": "To be determined per Shipment 001",
+        "name": "To be determined per shipment workflow",
         "country": "United Arab Emirates",
         "competent_authority": "Federal Authority for Identity, Citizenship, Customs & Port Security (ICP) + MoIAT + emirate-level customs",
         "competent_authority_urls": ["https://icp.gov.ae/en/about-icp/uae-customs-en/", "https://www.moiat.gov.ae/en"],

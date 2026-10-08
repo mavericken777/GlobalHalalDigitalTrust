@@ -36,7 +36,7 @@ Development mocks substitute **connectivity/data only**. They do not substitute 
 
 Do not use `coming soon`, permanent feature flags, blank pages, disabled navigation or demo-only reductions as substitutes for required target functionality.
 
-Do not fabricate live JAKIM decisions, laboratory results, Sinotrans telemetry, customs release, GCC acceptance, financing approval, Takaful underwriting, token legal/Shariah status or Shipment 001 transaction evidence.
+Do not fabricate live JAKIM decisions, laboratory results, Sinotrans telemetry, customs release, GCC acceptance, financing approval, Takaful underwriting, token legal/Shariah status or shipment workflow transaction evidence.
 
 ## 1. Purpose
 
@@ -406,7 +406,7 @@ Separate:
 
 ### `/china-gcc`
 
-China origin + traceability/lab + manufacturer + direct JAKIM/human authority workflow + Sinotrans + ports + GCC receiving. Mark Shipment 001 as pilot.
+China origin + traceability/lab + manufacturer + direct JAKIM/human authority workflow + Sinotrans + ports + GCC receiving. Mark shipment workflow as pilot.
 
 ### `/ports-customs`
 

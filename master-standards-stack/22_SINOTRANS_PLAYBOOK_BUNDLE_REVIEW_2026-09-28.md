@@ -19,6 +19,5 @@ The 33-page PDF is useful for preparing questions about vehicle history, cleanin
 
 ## October meeting use and gates
 
-Use [the October 15 Sinotrans acceptance worksheet](../CHINA_TRIP_2026/SINOTRANS_OCT15_ACCEPTANCE_WORKSHEET.md) to ask for a named legal/operating entity, site/lane, accountable control owner, actual SOP version, evidence export, exception decision authority and mutually accepted pilot scope. Bring an offline synthetic reference demonstration only if D01 rehearsal is recorded. Submit communications claims for D02 review; do not use the playbook's official-sounding cover as endorsement.
 
 The bundle neither supplies flight/rail tickets and hotel vouchers nor resolves the 13/14 October academy clash, 12-person legal roster, signed instrument mandates, or October 18 border/airport cutoff. **The travel and signing gates stay open.** The three genuinely damaged legacy archives were retired earlier; both newly supplied ZIPs are intact and must not be deleted as damaged source archives.

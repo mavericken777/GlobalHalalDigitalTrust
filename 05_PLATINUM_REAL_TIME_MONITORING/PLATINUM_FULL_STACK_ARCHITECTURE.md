@@ -503,9 +503,9 @@ Calibration and maintenance records are themselves evidence objects.
 - tamper-evident evidence history;
 - data-sovereignty / cross-border-transfer controls.
 
-## 17. Shipment 001 pilot mapping
+## 17. shipment workflow pilot mapping
 
-[PILOT: Shipment 001]
+[PILOT: shipment workflow]
 
 The pilot should instantiate the architecture only when transaction-native evidence exists.
 
@@ -530,7 +530,7 @@ Target evidence accumulation:
 17. current trust state;
 18. complete hash / signature manifest.
 
-Do not mark a Shipment 001 event as occurred until transaction-native proof exists.
+Do not mark a shipment workflow event as occurred until transaction-native proof exists.
 
 ## 18. Platinum acceptance test
 

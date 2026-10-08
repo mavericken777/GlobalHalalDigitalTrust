@@ -38,7 +38,7 @@ retrieval action.
 Do not silently resolve source conflicts. Do not present project doctrine as
 external authority text.
 
-Mark Shipment 001 material with `[PILOT: Shipment 001 — <component>]`.
+Mark shipment workflow material with `[PILOT: shipment workflow — <component>]`.
 
 Do not use external tools, deploy assets, incur charges or upload controlled
 data without runtime verification and explicit authorization.

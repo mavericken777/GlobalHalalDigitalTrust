@@ -1,7 +1,5 @@
-# Perak Halal Corporation Sdn Bhd
+# Perak Halal Corporation
 
-Perak State Government GLC for the Halal industry — local and global.
+Perak Halal Corporation is a Perak State Government halal-industry GLC within the ecosystem's institutional and assurance coordination layer.
 
-State and Federal work as ONE on audit, certification and compliance. PHC is the State industry arm of that single system.
-
-Start paper: INST-002 with JGC HK (27 Aug 2025). Corridor vehicle now formed: GHSC HK 79801544. Use the [China mission pack](../../CHINA_TRIP_2026/00_READ_THIS_FIRST.md) for current partner material.
+The platform represents authority connectivity and decision ownership separately. Halal certification decisions remain with the competent authority.

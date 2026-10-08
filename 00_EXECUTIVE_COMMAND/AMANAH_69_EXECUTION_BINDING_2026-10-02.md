@@ -13,6 +13,6 @@
 Canonical architecture and domain model; manufacturer onboarding; facility/product/SKU/supplier/material normalization; evidence/trust; laboratory/audit/CAPA; production/device profiles; logistics/route/custody/seal objects; port verification; verification events; API UAT; Platinum hardware RFQ catalogue; CODA financing proposal; Sinotrans and stakeholder operating packs; website/profile/visual specifications; China mission materials; red-team and cross-consistency controls.
 
 ## Explicit external gates
-JAKIM production API permissions/credentials/specification; partner production connectors and contracts; China laboratory legal/accreditation scope; port/customs authority interfaces; GCC acceptance; finance/Takaful/regulatory onboarding; production hosting/identity UAT; real Shipment 001 transaction evidence.
+JAKIM production API permissions/credentials/specification; partner production connectors and contracts; China laboratory legal/accreditation scope; port/customs authority interfaces; GCC acceptance; finance/Takaful/regulatory onboarding; production hosting/identity UAT; real shipment workflow transaction evidence.
 
 These gates delimit external activation. They do not remove target platform capabilities or justify fabricated production claims.

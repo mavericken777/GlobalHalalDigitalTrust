@@ -11,13 +11,13 @@
 | Companion artifacts | `00_EXECUTIVE_COMMAND/port-authority-registry.json`, `00_EXECUTIVE_COMMAND/corridor-registry.json` |
 | Commit message | `docs(deliverables): add 29 — Global Port Authorities Protocol for China-GCC corridor [DOCTRINE-CRITICAL]` |
 
-[PILOT: Shipment 001 — port/border]
+[PILOT: shipment workflow — port/border]
 
 ## 1. PURPOSE
 Define the structured engagement protocol for origin-China and destination-GCC port, customs, inspection and related border authorities for the China → GCC direct corridor pilot. The protocol establishes evidence gates, authority boundaries, custody hand-over points, document sets, exception handling, escalation paths and verification requirements.
 
 ## 2. SCOPE
-- Origin ports: selected China export ports used for Shipment 001.
+- Origin ports: selected China export ports used for shipment workflow.
 - Destination ports: selected GCC entry ports in Saudi Arabia, UAE or another specifically scoped GCC member state.
 - Related entities: customs, border control, quarantine/inspection/food authorities and authorised logistics operators including Sinotrans where selected.
 - Out of scope: non-GCC destination corridors unless separately scoped.

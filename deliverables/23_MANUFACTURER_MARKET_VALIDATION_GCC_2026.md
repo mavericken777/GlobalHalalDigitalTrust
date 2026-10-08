@@ -82,7 +82,7 @@ Batch ID; certificate reference; evidence hashes; custody events; sensor profile
 
 ## 6. Supplier outreach sequence
 
-`Candidate -> NDA/data request -> certificate verification -> SKU freeze -> ingredient review -> label review -> factory evidence -> sample -> lab as required -> importer approval -> commercial quote -> pilot PO -> Shipment 001 -> GCC release gate -> post-arrival verification`.
+`Candidate -> NDA/data request -> certificate verification -> SKU freeze -> ingredient review -> label review -> factory evidence -> sample -> lab as required -> importer approval -> commercial quote -> pilot PO -> shipment workflow -> GCC release gate -> post-arrival verification`.
 
 ## 7. Evidence request package
 
@@ -119,7 +119,7 @@ Validate the destination-country importer and food-registration route, applicabl
 
 ## 10. Commercial pilot architecture
 
-### Shipment 001 digital trust thread
+### shipment workflow digital trust thread
 
 `Manufacturer -> SKU -> batch -> Halal credential/reference -> laboratory evidence -> pallet -> container/seal -> Sinotrans custody -> China port -> vessel/transit -> GCC port -> customs/importer -> warehouse -> retailer/marketplace -> consumer record`.
 
@@ -168,7 +168,7 @@ Canned-food platform with broad product types and explicit Halal/quality-system 
 
 ## 12. Market-validation conclusion
 
-The research produces **10 viable engagement candidates and 10 initial product directions**, with public evidence supporting further due diligence. It does **not** establish that any candidate is already approved by JAKIM, SFDA, UAE authority or every GCC market. The next hard evidence event is supplier-document verification followed by importer-level destination confirmation and a controlled Shipment 001.
+The research produces **10 viable engagement candidates and 10 initial product directions**, with public evidence supporting further due diligence. It does **not** establish that any candidate is already approved by JAKIM, SFDA, UAE authority or every GCC market. The next hard evidence event is supplier-document verification followed by importer-level destination confirmation and a controlled shipment workflow.
 
 ## 13. Sources
 

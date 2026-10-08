@@ -380,7 +380,7 @@ Production activation requires the actual applicable inputs, including:
 - production connectivity test;
 - authority workflow acceptance test;
 - pilot sample/result dry run;
-- Shipment 001 evidence-chain rehearsal;
+- shipment workflow evidence-chain rehearsal;
 - GCC destination acceptance where applicable.
 
 These are connection/evidence dependencies, not permission to omit the target architecture.

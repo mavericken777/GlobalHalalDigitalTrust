@@ -102,7 +102,7 @@ A cross-border trust assertion is intentionally smaller than the source evidence
   "TrustAssertionID":"TA-SHP001-0001",
   "Issuer":"AUTH-...",
   "SubjectObjects":["LOT-...","CONT-...","SHIP-001"],
-  "Scope":"Shipment 001 China → GCC",
+  "Scope":"shipment workflow China → GCC",
   "ValidFrom":"...",
   "ValidUntil":"...",
   "State":"VERIFIED|RELEASED|HOLD|...",

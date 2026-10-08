@@ -13,5 +13,5 @@ Not promoted (cannot be promoted without evidence):
 
 - runtime OPA/SCITT/EPCIS/SPIRE
 - partner contractual status
-- Shipment 001 instantiation
+- shipment workflow instantiation
 - external audit or competent-authority endorsement

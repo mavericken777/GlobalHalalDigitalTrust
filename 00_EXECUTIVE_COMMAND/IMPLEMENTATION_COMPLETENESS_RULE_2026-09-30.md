@@ -112,7 +112,7 @@ Do not fabricate:
 - financing approvals;
 - Takaful underwriting/claims decisions;
 - token legal/Shariah/regulatory approval;
-- Shipment 001 transaction evidence;
+- shipment workflow transaction evidence;
 - production telemetry.
 
 Development/sandbox state must be visibly labelled and must never be presented as production evidence.

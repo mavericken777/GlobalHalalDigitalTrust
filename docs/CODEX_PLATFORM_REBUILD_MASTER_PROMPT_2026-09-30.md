@@ -10,7 +10,7 @@
 - Implementation completeness: `00_EXECUTIVE_COMMAND/IMPLEMENTATION_COMPLETENESS_RULE_2026-09-30.md`
 - Website specification: `docs/WEBSITE_REBUILD_MASTER_SPEC_v2_2026-09-30.md`
 - Freeze: `master-standards-stack/verified-2026-09-17/` — DO NOT MODIFY
-- Default pilot: `[PILOT: Shipment 001 — China → GCC direct]`
+- Default pilot: `[PILOT: shipment workflow — China → GCC direct]`
 
 ---
 
@@ -88,7 +88,7 @@ Do not create arbitrary feature caps on:
 
 Do **not** use `TODO`, `coming soon`, permanent feature flags, disabled navigation, blank placeholder pages or demo-only architectural shortcuts as substitutes for the target capability. A temporary development adapter is acceptable only when the complete target workflow, interface and state model are implemented.
 
-Do not fabricate live authority approvals, lab results, credentials, Sinotrans events, port/customs releases, GCC acceptance, financing approvals, Takaful underwriting decisions, token regulatory status, production telemetry or transaction-native Shipment 001 evidence. **Truthfulness of live state is required; architectural completeness is also required. These are not contradictory.**
+Do not fabricate live authority approvals, lab results, credentials, Sinotrans events, port/customs releases, GCC acceptance, financing approvals, Takaful underwriting decisions, token regulatory status, production telemetry or transaction-native shipment workflow evidence. **Truthfulness of live state is required; architectural completeness is also required. These are not contradictory.**
 
 # 1. Working rules
 
@@ -211,7 +211,7 @@ The physical pilot corridor is:
 
 Malaysia is the governance/assurance/authority-connectivity plane unless an explicit physical Malaysia movement is separately scoped.
 
-Mark Shipment 001 content as pilot where shown.
+Mark shipment workflow content as pilot where shown.
 
 # 5. Four synchronized chains
 

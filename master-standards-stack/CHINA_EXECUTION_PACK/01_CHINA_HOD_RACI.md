@@ -111,7 +111,7 @@ The programme office maintains the master interface register, but each interface
 
 China's Standardization Law places unified administration of standardisation with the State Council's standardisation administration department while assigning relevant sector responsibilities to competent authorities; it also recognises standards at national, sector, local, association and enterprise levels. citeturn356679search1 SAMR's official responsibilities include product quality safety, traceability, food-safety supervision, standardisation, inspection/testing and certification/recognition supervision. citeturn748828search1 MOFCOM's official mission includes foreign trade, import/export policy and bilateral/multilateral economic and trade cooperation. citeturn356679search2
 
-## RACI for Shipment 001
+## RACI for shipment workflow
 
 | Work package | China manufacturer | Lab | Logistics | Customs/port | AHTE | Malaysia authority interface | GCC importer/authority |
 |---|---|---|---|---|---|---|---|

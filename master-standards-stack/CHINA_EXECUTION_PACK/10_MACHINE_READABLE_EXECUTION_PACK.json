@@ -4,7 +4,7 @@
   "architecture": "AHTE",
   "corridor": "CHINA-GCC-DIRECT",
   "assurance_reference_layer": "MALAYSIA-JAKIM-JSM-STANDARDS; NOT A PHYSICAL TRANSIT LEG",
-  "pilot": "Shipment-001",
+  "pilot": "shipment-workflow",
   "standards_count": 17,
   "standards": [
     "MS 1500:2019","MS 2400-1:2019","MS 2400-2:2019","MS 2400-3:2019","MS 2424:2019","MS 2634:2019","MS 2738:2023","MS 2803:2025","MS 2809:2025","MS 2810:2025","MS 2393:2023","MS 2627:2017","MS 2627-2:2025","MS 1900:2025","MS 2691:2021","MS 2610:2015","MS 2636:2019"
@@ -53,5 +53,5 @@
   },
   "object_identity": ["organisation","facility","product","material","supplier","formula","process","HCP","batch","lot","unit","pallet","container","seal","shipment","warehouse","retail-unit","sample","audit-case","authority-case","recall-case"],
   "source_reference": "Department of Standards Malaysia / MySOL NSC 09 Halal catalogue + JAKIM operating instruments + IQ300 project source corpus",
-  "physical_route_rule": "Malaysia/JAKIM/JSM may provide standards, assurance, authority or trust-reference functions. Physical Shipment 001 moves China to GCC directly unless a later approved transaction record explicitly changes the route."
+  "physical_route_rule": "Malaysia/JAKIM/JSM may provide standards, assurance, authority or trust-reference functions. Physical shipment workflow moves China to GCC directly unless a later approved transaction record explicitly changes the route."
 }

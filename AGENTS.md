@@ -65,7 +65,7 @@ source-locked text, open gates and proposals clearly.
 - Never invent normative text, certificates, laboratory results, approvals, contracts, or shipment events.
 - Never treat AI, laboratory results, QR codes, blockchain records, or platform events as official Halal certification.
 - Enforce: `NOT DETECTED != HALAL`.
-- Never present Shipment 001 as instantiated unless transaction-native evidence exists.
+- Never present shipment workflow as instantiated unless transaction-native evidence exists.
 - Never blur pilot material into permanent architecture without `[PILOT]`.
 - When required source is absent: respond exactly `DATA NOT AVAILABLE — SOURCE-LOCKED.`
 

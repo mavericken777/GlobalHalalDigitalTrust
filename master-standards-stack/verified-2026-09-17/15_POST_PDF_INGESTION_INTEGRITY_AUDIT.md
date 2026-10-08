@@ -130,7 +130,7 @@ This is a controlled source condition, not permission to fabricate clause text.
 | Halal integrity | sertu/stunning present | explicit najs/contamination classification and release state machine | authority/source determination in live events |
 | Manufacturer transformation | qualification gate present | built-in vs retrofit transformation/change-control model | actual factory gap assessment and implementation |
 | Source assurance | official source register | both uploaded PDFs registered by hash with allowed/prohibited claim use | Pindaan 2026 primary source |
-| Shipment 001 | architecture complete | commercial/economic and transformation gates strengthened | real SKU/importer/buyer/PO/batch/shipment |
+| shipment workflow | architecture complete | commercial/economic and transformation gates strengthened | real SKU/importer/buyer/PO/batch/shipment |
 
 ## 8. Repository-routing integrity
 
@@ -159,7 +159,7 @@ Repository code-search can lag the immediate branch head, so direct ref/file rea
 
 ## 10. Physical corridor integrity
 
-[PILOT: Shipment 001]
+[PILOT: shipment workflow]
 
 Physical route remains:
 
@@ -209,7 +209,7 @@ These are not hidden project-documentation gaps:
 - customs/port/documentary requirements;
 - live destination release.
 
-### Shipment 001 transaction gates
+### shipment workflow transaction gates
 
 - final SKU;
 - buyer/importer commitment;
@@ -229,4 +229,4 @@ The repository is now:
 
 `DOCUMENTATION-COMPLETE / PDF-INGESTION-COMPLETE / SOURCE-CONFLICT-ACCOUNTED / EXTERNAL-GATES-EXPLICIT / CHINA-GCC-DIRECT / NO-FABRICATED-AUTHORITY-CLAIMS`.
 
-Operational certification, commercial contracting and Shipment 001 execution are not represented as complete until their external evidence actually exists.
+Operational certification, commercial contracting and shipment workflow execution are not represented as complete until their external evidence actually exists.

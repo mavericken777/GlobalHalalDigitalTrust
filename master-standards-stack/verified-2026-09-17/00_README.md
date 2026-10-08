@@ -5,6 +5,8 @@
 **Canonical corridor:** China -> GCC direct  
 **Status doctrine:** 100% evidence-accounted; no unsupported clause, certificate, market approval or partner commitment is treated as complete.
 
+**Repository revision:** 9 October 2026. At the repository owner's direction, transaction-specific labels and trip-administration material have been removed from the public tree. This package is retained for standards and control-model reference; use the current source register for operational applicability.
+
 ## Purpose
 
 This folder is the controlled 17 September 2026 consolidation point for the project's Malaysian Halal standards intelligence, JAKIM certification operating layer, technical control maps, sertu/stunning linkage, audit evidence model, China manufacturer screening, GCC market-entry controls and the deep-dive ingestion of the two user-supplied 74-page/48-page reference PDFs.
@@ -33,7 +35,7 @@ A row is complete only when the source status is known. Where a licensed standar
 - `03_ALL_MS_CLAUSE_CONTROL_EVIDENCE_MANUAL.md` - standard-by-standard clause/control/evidence/audit/authority mapping for the full project catalogue.
 - `04_SERTU_STUNNING_PROTOCOL_LINKAGE.md` - cross-standard sertu architecture and MS 1500/slaughter/stunning/protocol precedence.
 - `05_AUDIT_EVIDENCE_AUTHORITY_TEST_LIBRARY.md` - audit tests, evidence objects, NCR/CAR/re-verification and trust-state rules.
-- `06_CHINA_GCC_MANUFACTURER_MARKET_VALIDATION.md` - ten-manufacturer public-evidence validation, GCC entry gates and Shipment 001 qualification model.
+- `06_CHINA_GCC_MANUFACTURER_MARKET_VALIDATION.md` - ten-manufacturer public-evidence validation, GCC entry gates and shipment workflow qualification model.
 - `07_AZ_COMPLETION_EXTERNAL_GATE_REGISTER.md` - end-to-end completion audit, external dependencies and non-fabrication gates.
 - `08_SOURCE_VERIFICATION_REGISTER.md` - official URLs, supplied sources and verification notes.
 - `09_REPOSITORY_INTEGRITY_AUDIT.md` - pre-PDF-ingestion integrity baseline and corridor correction record.
@@ -41,8 +43,8 @@ A row is complete only when the source status is known. Where a licensed standar
 - `11_AUDIT_CLOSURE_TRACEABILITY_GOVERNANCE_MODEL.md` - governance, document hierarchy, supplier assurance, traceability, recall, change control and Digital Audit Twin closure model.
 - `12_MANUFACTURER_ECONOMIC_AND_MARKET_DECISION_MODEL.md` - readiness, cost stack, NPV/payback, scenario, funding and commercial decision framework using evidence-backed inputs.
 - `13_NAJS_CONTAMINATION_AND_RELEASE_DECISION_MODEL.md` - najs/contamination classification, containment, cleaning/sertu linkage, re-verification and release model.
-- `14_HALAL_BUILT_IN_RETROFIT_FACTORY_TRANSFORMATION_MODEL.md` - Halal Built-In vs existing-factory retrofit transformation, change control and [PILOT: Shipment 001] qualification path.
-- `15_POST_PDF_INGESTION_INTEGRITY_AUDIT.md` - final post-ingestion repository/source/conflict/routing/Shipment 001 integrity audit.
+- `14_HALAL_BUILT_IN_RETROFIT_FACTORY_TRANSFORMATION_MODEL.md` - Halal Built-In vs existing-factory retrofit transformation, change control and [PILOT: shipment workflow] qualification path.
+- `15_POST_PDF_INGESTION_INTEGRITY_AUDIT.md` - final post-ingestion repository/source/conflict/routing/shipment workflow integrity audit.
 - `MANIFEST.json` - machine-readable package index and source-depth declaration.
 
 ## Standards covered
@@ -105,4 +107,4 @@ The uploaded PDFs report 2026 amendments. Those details remain `SECONDARY-VERIFI
 
 ## Production freeze rule
 
-Before any real certification, audit, supplier approval, Shipment 001 release or public compliance claim, the applicable source versions shall be rechecked against the competent authority and current MySOL/JAKIM records. Exact licensed clauses that are not held in the controlled project corpus remain `SOURCE-LOCKED`.
+Before any real certification, audit, supplier approval, shipment workflow release or public compliance claim, the applicable source versions shall be rechecked against the competent authority and current MySOL/JAKIM records. Exact licensed clauses that are not held in the controlled project corpus remain `SOURCE-LOCKED`.

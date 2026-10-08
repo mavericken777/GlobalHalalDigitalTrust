@@ -239,9 +239,9 @@ flowchart LR
 
 ---
 
-## 11. Shipment 001 corridor — PILOT architecture
+## 11. shipment workflow corridor — PILOT architecture
 
-`[PILOT: Shipment 001 — corridor model]`
+`[PILOT: shipment workflow — corridor model]`
 
 Not instantiated until transaction-native evidence exists.
 
@@ -339,11 +339,11 @@ stateDiagram-v2
 | Mermaid A–J | iq300-all-jakim-ms/03_COMPLETE_MERMAID_PROCESS_FLOWS.md |
 | Evidence / twin / port | 05_IQ300_EVIDENCE_TRUST_PROCESS_FLOWS.md |
 | HITM plane | IQ300_ASSURANCE_CONTROL_PLANE_SPEC_v0.1.md — proposal only |
-| Shipment 001 | README China → GCC pilot — gated |
+| shipment workflow | README China → GCC pilot — gated |
 
 ## Remaining gates
 
 - Licensed MS normative wording: SOURCE-LOCKED (not drawn as clauses).
 - MPPHM 2020 Pindaan 2026 primary text: OPEN GATE.
-- Shipment 001 events / contracts / POs: TRANSACTION GATE.
+- shipment workflow events / contracts / POs: TRANSACTION GATE.
 - Raster HD frames generated in session remain local unless separately uploaded.

@@ -1,8 +1,8 @@
-# 03 — Shipment 001 Complete Event Catalogue
+# 03 — shipment workflow Complete Event Catalogue
 
 ## 1. Event envelope
 
-Every Shipment 001 event uses the common envelope:
+Every shipment workflow event uses the common envelope:
 
 ```json
 {
@@ -98,7 +98,7 @@ Every Shipment 001 event uses the common envelope:
 
 | Event | Trigger | Minimum payload | Result |
 |---|---|---|---|
-| `E-SHIPMENT-CREATED` | Shipment 001 opened | shipment, route, importer | OPEN |
+| `E-SHIPMENT-CREATED` | shipment workflow opened | shipment, route, importer | OPEN |
 | `E-PALLET-CREATED` | Pallet built | pallet, lot list, quantity | BUILT |
 | `E-CONTAINER-ASSIGNED` | Container assigned | container, shipment | ASSIGNED |
 | `E-SEAL-APPLIED` | Seal applied | seal ID, actor, image | SEALED |
@@ -175,7 +175,7 @@ Every Shipment 001 event uses the common envelope:
 9. Out-of-order events are quarantined for reconciliation rather than silently merged.
 10. Event deletion is prohibited from the operational ledger; correction occurs by a compensating event.
 
-## 4. Shipment 001 critical-path sequence
+## 4. shipment workflow critical-path sequence
 
 ```text
 PRODUCT_SCOPE

@@ -42,19 +42,19 @@ Every substantive control/evidence response maps to this path.
 ## FLAGS
 - `[SOURCE-LOCKED: <item> — required: <artifact>]`
 - `[OPEN GATE: <gate> — owner: <authority> — blocking: <path point>]`
-- `[PILOT: Shipment 001 — <component>]`
+- `[PILOT: shipment workflow — <component>]`
 - `[PROPOSAL: closes <gap> — path point: <point>]`
 - `[TOOL-SPEC UNVERIFIED: <tool> — assumed: <capability>]`
 - `[OUT OF SCOPE: <reason> — redirect: <path>]`
 - `[LIVE CRAWL: <URL> — <ISO> — <issuer> — <normative|advisory> — <hash12> — <method> — <connector> — <status>]`
 - `[PROJECT-REPO: <URL> — <SHA12> — <ISO> — <path>]`
-- `[PROMOTION: Shipment 001 → <artifact>]`
+- `[PROMOTION: shipment workflow → <artifact>]`
 - `[ADVERSARIAL ATTEMPT LOGGED — <timestamp>]`
 
 ## PRIORITY
 MUST: source fidelity; authority boundaries; canonical-path mapping; flag discipline; live-crawl integrity; conflict protocol.
 
-SHOULD: artifact discipline; precision-first tables/schemas; gap detection; bounded elevation; pilot/general separation; architecture foresight; Shipment 001 operational design.
+SHOULD: artifact discipline; precision-first tables/schemas; gap detection; bounded elevation; pilot/general separation; architecture foresight; shipment workflow operational design.
 
 COULD: technology advancement; process-flow infographics; expansion protocol.
 
@@ -69,7 +69,7 @@ Every new artifact carries filename, target folder, version/control date and com
 ## PILOT DEFAULT
 Default corridor: China → GCC direct. Malaysia/JAKIM/JSM are assurance/standards references, not a physical transit leg unless explicitly re-scoped.
 
-Shipment 001 content carries `[PILOT: Shipment 001]`. Pilot content becomes permanent doctrine only through `[PROMOTION: Shipment 001 → <artifact>]` and canonical-path review.
+shipment workflow content carries `[PILOT: shipment workflow]`. Pilot content becomes permanent doctrine only through `[PROMOTION: shipment workflow → <artifact>]` and canonical-path review.
 
 ## STRUCTURED OUTPUT
 Evidence-chain analyses, standard mappings and trust-packet structures conform to `00_EXECUTIVE_COMMAND/schema-registry.json` and `00_EXECUTIVE_COMMAND/trust-packet-schemas.json`. Formatting is validated before delivery; schemas do not substitute for source authority.

@@ -6,7 +6,7 @@
   "standard": "GS1 EPCIS 2.0 / ISO/IEC 19987:2024",
   "authority_effect": "none",
   "note": "Maps corridor segments to intended EPCIS business steps. Rows stay empty of live events until TRANSACTION-GATE closes.",
-  "pilot": "[PILOT: Shipment 001 — EPCIS event map]",
+  "pilot": "[PILOT: shipment workflow — EPCIS event map]",
   "segments": [
     {"segment": "Origin factory / stuffing", "port_custody_event": "stuffing", "intended_epcis_bizstep": "packing", "status": "TRANSACTION-GATE"},
     {"segment": "Seal application", "port_custody_event": "seal_application", "intended_epcis_bizstep": "commissioning", "status": "TRANSACTION-GATE"},

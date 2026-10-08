@@ -1,9 +1,9 @@
 # IQ300 — China Execution Pack
-## China Pilot → Shipment 001 → GCC Release
+## China Pilot → shipment workflow → GCC Release
 
-**Current architecture alignment — 30 September 2026:** this package executes AHTE across a **China-origin → GCC-destination direct physical corridor** with Malaysia as the governance/assurance and authority-connectivity plane unless a Malaysia physical movement is separately scoped. Older wording that could be read as a mandatory China→Malaysia→GCC physical route is superseded for Shipment 001.
+**Current architecture alignment — 30 September 2026:** this package executes AHTE across a **China-origin → GCC-destination direct physical corridor** with Malaysia as the governance/assurance and authority-connectivity plane unless a Malaysia physical movement is separately scoped. Older wording that could be read as a mandatory China→Malaysia→GCC physical route is superseded for shipment workflow.
 
-[PILOT: Shipment 001 — China → GCC direct]
+[PILOT: shipment workflow — China → GCC direct]
 
 [PROPOSAL: aligns China execution pack to current target architecture — path point: Control → Evidence → Authority Gate → Trust State → Operational Release]
 
@@ -29,7 +29,7 @@ Convert the existing AHTE standards, HCP, evidence, audit, trust-graph and physi
 8. Sinotrans warehouse and end-to-end logistics integration.
 9. Port/customs inspection, API and release workflows.
 10. Cryptographic trust anchoring and selective disclosure.
-11. Shipment 001 execution from China directly to the GCC.
+11. shipment workflow execution from China directly to the GCC.
 12. GCC destination admission, warehouse release, distribution and retail verification.
 13. 24/7 GHSCL + JAKIM-connected Command Center monitoring.
 14. AI/ML predictive analytics and Preemptive Strategy Engine workflows.
@@ -42,19 +42,19 @@ Convert the existing AHTE standards, HCP, evidence, audit, trust-graph and physi
 | `00_MASTER_CHINA_EXECUTION_MODEL.md` | Common operating model, architecture and implementation doctrine |
 | `01_CHINA_HOD_RACI.md` | Department-by-department interface and RACI model |
 | `02_RULE_PRECEDENCE_ENGINE.md` | China operating requirements + Malaysia governance/assurance + GCC destination rule resolution and conflict handling; not a physical-route definition |
-| `03_SHIPMENT_001_EVENT_CATALOGUE.md` | Complete Shipment 001 event model, state machine and payload requirements |
+| `03_shipment_workflow_EVENT_CATALOGUE.md` | Complete shipment workflow event model, state machine and payload requirements |
 | `04_FACTORY_SYSTEM_API_CONTRACTS.md` | ERP/MES/QMS/WMS/LIMS/IoT/identity/document API contracts |
 | `05_SMART_GLASS_AUDIT_SPEC.md` | Smart-glass audit device, field workflow, offline mode and evidence capture |
 | `06_PORT_OFFICER_UI_WORKFLOW.md` | Port/customs officer workflow, trust packet, inspection and release UI |
 | `07_CRYPTOGRAPHIC_TRUST_ANCHOR_ARCHITECTURE.md` | Key hierarchy, signatures, trust anchors, evidence hashes and selective disclosure |
-| `08_CHINA_PILOT_SHIPMENT_001_GCC_RELEASE_PLAYBOOK.md` | Integrated China pilot and Shipment 001 operating playbook |
-| `schemas/shipment-001-event.schema.json` | Event envelope schema |
+| `08_CHINA_PILOT_shipment_workflow_GCC_RELEASE_PLAYBOOK.md` | Integrated China pilot and shipment workflow operating playbook |
+| `schemas/shipment-workflow-event.schema.json` | Event envelope schema |
 | `schemas/trust-assertion.schema.json` | Cross-border trust assertion schema |
 | `schemas/authority-decision.schema.json` | Signed authority-decision object schema |
 | `schemas/custody-transfer.schema.json` | Physical custody transition schema |
 | `api/ahtE-factory-openapi.yaml` | Canonical factory integration API contract |
 | `data/CHINA_HOD_INTERFACE_REGISTER.csv` | Department-interface register |
-| `data/SHIPMENT_001_EVENT_REGISTER.csv` | Event register suitable for implementation tracking |
+| `data/shipment_workflow_EVENT_REGISTER.csv` | Event register suitable for implementation tracking |
 
 ## Common architecture
 
@@ -143,13 +143,13 @@ G3 — Factory/lab/logistics integration contracts implemented
   ↓
 G4 — Audit / laboratory / evidence dry-run passed
   ↓
-G5 — Shipment 001 physical-digital rehearsal passed
+G5 — shipment workflow physical-digital rehearsal passed
   ↓
 G6 — Export packet + origin border workflow ready
   ↓
 G7 — GCC destination admission ready
   ↓
-G8 — Shipment 001 released into destination operations
+G8 — shipment workflow released into destination operations
   ↓
 G9 — Post-shipment assurance + recall drill
   ↓
@@ -189,7 +189,7 @@ Across the execution pack, relevant events must be routable to the GHSCL + JAKIM
 
 ## Success definition
 
-Shipment 001 is considered operationally successful when AHTE can reconstruct, from signed events and linked physical evidence, the complete chain from the selected Chinese manufacturer's source materials and production records through laboratory evidence, authority-linked status, Sinotrans warehouse/logistics, container/seal custody and origin port events to the GCC destination and provide an authorised party with a deterministic, scope-specific verification view.
+shipment workflow is considered operationally successful when AHTE can reconstruct, from signed events and linked physical evidence, the complete chain from the selected Chinese manufacturer's source materials and production records through laboratory evidence, authority-linked status, Sinotrans warehouse/logistics, container/seal custody and origin port events to the GCC destination and provide an authorised party with a deterministic, scope-specific verification view.
 
 ## Security baseline
 

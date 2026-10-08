@@ -33,12 +33,12 @@ was retired after its richer/unique implementation material was moved into the c
 - master execution model;
 - China HOD/RACI;
 - rule precedence;
-- Shipment 001 event model;
+- shipment workflow event model;
 - factory-system API contracts;
 - smart-glass audit specification;
 - port officer workflow;
 - cryptographic trust-anchor architecture;
-- Shipment 001 GCC release playbook;
+- shipment workflow GCC release playbook;
 - factory/laboratory OpenAPI proposals;
 - execution schemas; and
 - CSV implementation registers.

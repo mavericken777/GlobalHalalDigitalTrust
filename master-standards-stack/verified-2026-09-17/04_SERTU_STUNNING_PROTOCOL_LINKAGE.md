@@ -94,7 +94,7 @@ For the project's direct China -> GCC corridor:
 - It does **not** by itself establish Saudi, UAE or other GCC import/halal acceptance.
 - Saudi Arabia currently requires halal slaughter certification for meat, poultry and their products and applies SFDA importer/item registration and border-control requirements.
 - UAE Halal product recognition is tied to the UAE Halal Products Control System, applicable UAE/GSO standards and registered halal certification bodies where required.
-- Shipment 001 cannot use a generic manufacturer `Halal` logo as proof. The exact issuer, facility, product/SKU, validity, destination-recognition status and consignment requirements must be verified.
+- shipment workflow cannot use a generic manufacturer `Halal` logo as proof. The exact issuer, facility, product/SKU, validity, destination-recognition status and consignment requirements must be verified.
 
 ## 10. Digital enforcement
 

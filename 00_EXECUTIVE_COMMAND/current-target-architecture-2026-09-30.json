@@ -20,7 +20,7 @@
     "destination": "GCC",
     "physical_route": "China -> GCC direct",
     "malaysia_role": "governance / assurance / authority-connectivity plane unless a physical hop is separately scoped",
-    "pilot": "Shipment 001",
+    "pilot": "shipment workflow",
     "pilot_status": "NOT-INSTANTIATED"
   },
   "authority_workflow": {

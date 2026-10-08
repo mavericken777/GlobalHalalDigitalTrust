@@ -253,7 +253,7 @@ The current repository already implements the following safeguards correctly:
 - `NOT DETECTED != HALAL`;
 - 14-node canonical path;
 - HCP/SCCP, evidence, audit, finding, CAPA/re-verification and authority-gate separation;
-- Shipment 001 pilot tagging and China -> GCC destination-release separation.
+- shipment workflow pilot tagging and China -> GCC destination-release separation.
 
 ### Repository gaps identified by this PDF
 

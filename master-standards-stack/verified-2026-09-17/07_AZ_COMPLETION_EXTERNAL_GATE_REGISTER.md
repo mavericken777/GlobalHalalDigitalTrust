@@ -35,7 +35,7 @@
 | Q | Quality management | DOC-COMPLETE | MS1900 distinction, pharmaceutical/cosmetic/device QMS overlays, CAPA/change/review controls | live organisation implementation/certification evidence where applicable |
 | R | Regulatory/source register | DOC-COMPLETE | controlled official source families and production source-freeze rule | live pre-transaction source re-check |
 | S | Security/cyber/resilience | DOC-COMPLETE / ENGINEERING-GATE | evidence integrity, identity/access, tamper, source trust, resilience architecture | threat model execution, penetration/security tests, key/device deployment |
-| T | Trade / Shipment 001 | DOC-COMPLETE / TRANSACTION-GATE | end-to-end event/gate model China -> GCC direct | selected SKU, importer/buyer, PO, batch, booking, export/import docs, release, receipt |
+| T | Trade / shipment workflow | DOC-COMPLETE / TRANSACTION-GATE | end-to-end event/gate model China -> GCC direct | selected SKU, importer/buyer, PO, batch, booking, export/import docs, release, receipt |
 | U | User interfaces | DOC-COMPLETE / ENGINEERING-GATE | stakeholder views, port tablet and smart-glass functional architecture | UX/product implementation, user acceptance and authority/partner validation |
 | V | Verification | DOC-COMPLETE | audit test library, re-verification, credential status and source-integrity rules | live evidence/results for each case |
 | W | Warehousing/logistics | DOC-COMPLETE / EXTERNAL-GATE | MS2400-1/-2/-3 source-backed controls and HCPs; Sinotrans operating model | actual selected route, carrier/warehouse qualification/certification/evidence |
@@ -125,9 +125,9 @@ Public screening is complete for ten candidates. The following items are **not r
 
 The repository contains the request schema and state machine needed to ingest/verify each item without redesign.
 
-## 4. Shipment 001 completeness audit
+## 4. shipment workflow completeness audit
 
-`Shipment 001` is architecturally complete but transactionally not yet instantiated.
+`shipment workflow` is architecturally complete but transactionally not yet instantiated.
 
 Required closure sequence:
 
@@ -147,7 +147,7 @@ Required closure sequence:
 14. receiving warehouse/importer verification complete;
 15. reconciliation/lessons-learned closes the validation transaction.
 
-Until items 1-15 exist, the repository must not claim `Shipment 001 completed`.
+Until items 1-15 exist, the repository must not claim `shipment workflow completed`.
 
 ## 5. Error-prevention controls introduced by this package
 
@@ -164,6 +164,6 @@ Until items 1-15 exist, the repository must not claim `Shipment 001 completed`.
 
 ## 6. Final completion statement
 
-The project now has an A-Z, evidence-accounted documentation baseline. Every known standards, certification, evidence, audit, manufacturer, GCC-entry, logistics and Shipment 001 workstream has a defined control architecture and closure state.
+The project now has an A-Z, evidence-accounted documentation baseline. Every known standards, certification, evidence, audit, manufacturer, GCC-entry, logistics and shipment workflow workstream has a defined control architecture and closure state.
 
 The only remaining items are evidence that does not yet exist or is controlled by third parties/licensed sources. Those are explicit gates, not hidden gaps. The system is therefore **documentation-complete and gap-accounted for the 17 September 2026 snapshot**, but it is not represented as regulator-certified, manufacturer-contractually verified, or transaction-complete where the corresponding external evidence has not yet been obtained.

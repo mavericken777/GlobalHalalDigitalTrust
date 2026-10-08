@@ -134,20 +134,20 @@ MS 2627, MS 2627-2, MS 2809 and MS 2810 are evidence-producing methods/standards
 - `process-flow-infographics/` — 17-standard process-flow atlas and generation assets
 - `AMANAH_PLATFORM_AZ_MAPPING.md` — A-Z platform decomposition
 - `AHTE_PLATINUM_REAL_TIME_MONITORING_STACK.md` — continuous/assisted/evidence/authority monitoring architecture
-- `CHINA_EXECUTION_PACK/` — **sole canonical** China deployment / Shipment 001 execution pack after the 30 September consolidation
+- `CHINA_EXECUTION_PACK/` — **sole canonical** China deployment / shipment workflow execution pack after the 30 September consolidation
 - `china-deployment/` — China sovereign/data/counterpart implementation materials
 
 Do not recreate `master-standards-stack/china-execution-pack/`; its richer/unique content was migrated into `CHINA_EXECUTION_PACK/` and the duplicate lineage was retired. See `../00_EXECUTIVE_COMMAND/OBSOLETE_ARTIFACT_RETIREMENT_2026-09-30.md`.
 
 ## China -> GCC direct execution
 
-[PILOT: Shipment 001 — China → GCC direct]
+[PILOT: shipment workflow — China → GCC direct]
 
 The canonical pilot corridor is **China -> GCC direct**. Malaysia is the governance/assurance and direct-JAKIM-authority-connectivity plane unless a physical Malaysia hop is separately scoped.
 
 The verified package includes a ten-manufacturer primary-source screen and a qualification workflow. No manufacturer public website claim is treated as a valid shipment certificate, GCC import approval or commercial commitment.
 
-Shipment 001 release requires:
+shipment workflow release requires:
 
 `factory/SKU evidence -> exact halal certificate and issuer/scope/validity -> destination recognition/importer/product/label controls -> buyer/PO -> pilot batch -> logistics qualification -> container/seal/custody -> border release -> receiving verification`.
 

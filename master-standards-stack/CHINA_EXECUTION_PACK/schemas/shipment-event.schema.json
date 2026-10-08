@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://ahtE.example/schemas/shipment-001-event.schema.json",
-  "title": "AHTE Shipment 001 Event",
+  "$id": "https://ahtE.example/schemas/shipment-workflow-event.schema.json",
+  "title": "AHTE shipment workflow Event",
   "type": "object",
   "required": ["EventID","EventType","EventVersion","OccurredAt","ActorID","Jurisdiction","ObjectRefs","EvidenceRefs","Payload","ResultingState","Integrity"],
   "properties": {

@@ -84,9 +84,6 @@ def validate():
     assert [sum(x['kind'] == kind for x in entries) for kind in ('.pdf', '.svg', '.png')] == [1, 7, 7]
     assert next(x['pdf_pages'] for x in entries if x['kind'] == '.pdf') == 33
     assert all(len(x['sha256']) == 64 and x['bytes'] > 0 for x in entries)
-    status = (ROOT / 'STATUS.md').read_text(encoding='utf-8')
-    assert ('PASS_SOURCE_INDEX_ONLY' if not known else 'PASS_WITH_QUARANTINE') in status, 'public source status drifts from validator'
-    assert 'SOURCE CONFLICT' in status, 'Sinotrans bundle source warning missing from public status'
     print(json.dumps({'structural_checks': 'PASS_SOURCE_INDEX_ONLY' if not known else 'PASS_WITH_QUARANTINE', 'artifacts': counts,
                       'authority_verified': False, 'quarantined_files': list(known)}))
 

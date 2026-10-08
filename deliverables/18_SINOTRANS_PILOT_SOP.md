@@ -1,6 +1,6 @@
 # Sinotrans Pilot SOP
 
-> Current project control — 1 October 2026: China → GCC direct; Malaysia is governance/assurance/authority-connectivity unless separately scoped. Authority topology: AHTE ⇄ Direct JAKIM API ⇄ JAKIM. [PILOT: Shipment 001 — China → GCC direct; NOT-INSTANTIATED]. Build the full target architecture now with clearly labelled replaceable development providers; phase dates govern activation/scale, not omission of capability. Competent humans/authorities retain decisions.
+> Current project control — 1 October 2026: China → GCC direct; Malaysia is governance/assurance/authority-connectivity unless separately scoped. Authority topology: AHTE ⇄ Direct JAKIM API ⇄ JAKIM. [PILOT: shipment workflow — China → GCC direct; NOT-INSTANTIATED]. Build the full target architecture now with clearly labelled replaceable development providers; phase dates govern activation/scale, not omission of capability. Competent humans/authorities retain decisions.
 
 
 ## Pilot objective

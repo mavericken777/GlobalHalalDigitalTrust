@@ -40,9 +40,9 @@ These are candidate categories for commercial screening, not a sales prediction 
 
 ## Decision state
 
-`PUBLIC-CLAIM-VERIFIED -> DOCUMENTS-REQUESTED -> CERTIFICATE-VERIFIED -> SKU-QUALIFIED -> DESTINATION-APPROVED -> COMMERCIAL-READY -> SHIPMENT-001-ELIGIBLE`
+`PUBLIC-CLAIM-VERIFIED -> DOCUMENTS-REQUESTED -> CERTIFICATE-VERIFIED -> SKU-QUALIFIED -> DESTINATION-APPROVED -> COMMERCIAL-READY -> shipment-workflow-ELIGIBLE`
 
-No candidate moves directly from public-claim verification to Shipment 001.
+No candidate moves directly from public-claim verification to shipment workflow.
 
 ## Public source set checked on 17 September 2026
 
