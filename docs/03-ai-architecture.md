@@ -56,7 +56,7 @@ Any pricing, regulatory or certification claim must be sourced from current appr
 Agents should operate with:
 - explicit scopes;
 - least-privilege credentials;
-- approval gates for consequential actions;
+- accountable human review and role-authorized action for consequential decisions;
 - immutable action logs;
 - tool allowlists;
 - human override;
