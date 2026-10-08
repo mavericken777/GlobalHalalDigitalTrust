@@ -1,8 +1,8 @@
 # Current Standards Source Control
 
-**Control date:** 2026-10-07
+**Control date:** 2026-10-08
 
-The former `master-standards-stack/verified-2026-09-17/` standards package has been removed from the current repository tree at the operator's explicit direction.
+The prior dated standards snapshot has been retired from the current repository tree at the operator's explicit direction. The active control is the dynamic source registry.
 
 ## Current controlling standards source
 

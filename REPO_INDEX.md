@@ -1,12 +1,12 @@
 # Repository index — A–Z operating map
 
-**7 October operating alignment:** follow the current [AMANAH platform summary](https://github.com/mavericken777/Amanah/blob/main/docs/operations/STATUS.md) and [master execution prompt](https://github.com/mavericken777/Amanah/blob/main/docs/AMANAH_100_PERCENT_END_TO_END_MASTER_EXECUTION_PROMPT_2026-10-07.md). Dated 30 September architecture files remain historical design references. The 17 September standards package has been removed and must stay absent. The live standards register is source-controlled; use full applicable Malaysian/JAKIM governance, not a catalogue-only framing. China → GCC direct remains the default physical corridor; Malaysia is the governance/assurance plane.
+**8 October operating alignment:** follow the current [AMANAH platform summary](https://github.com/mavericken777/Amanah/blob/main/docs/operations/STATUS.md) and [master execution prompt](https://github.com/mavericken777/Amanah/blob/main/docs/AMANAH_100_PERCENT_END_TO_END_MASTER_EXECUTION_PROMPT_2026-10-07.md). Dated 30 September architecture files remain historical design references. The live standards register is source-controlled; use full applicable Malaysian/JAKIM governance, not a catalogue-only framing. China → GCC direct remains the default physical corridor; Malaysia is the governance/assurance plane.
 
 **Implementation rule:** **FULL ARCHITECTURE NOW → REAL CONNECTORS WHEN AVAILABLE → NO REDESIGN REQUIRED.** Missing external APIs/credentials/partner feeds must not be converted into omitted or disabled target capabilities. Use replaceable development providers at the real integration boundary while keeping live-state claims truthful.
 
 **28 September reconciliation:** commercial foundation is recorded; travel `NOT_TRAVEL_READY`; signing `NOT_SIGNING_READY`. Current controls: [signing matrix](CHINA_TRIP_2026/SIGNING_MATRIX.md), [execution board](CHINA_TRIP_2026/EXECUTION_BOARD.md).
 
-Control date: 2026-10-07
+Control date: 2026-10-08
 Vehicle: **GLOBAL HALAL SUPPLY CHAIN LIMITED** · Hong Kong CR **79801544** on the project-supplied incorporation scan dated 11 Feb 2026; original verification remains open.
 
 ## Start here
@@ -21,7 +21,7 @@ Vehicle: **GLOBAL HALAL SUPPLY CHAIN LIMITED** · Hong Kong CR **79801544** on t
 | What to fill in China | [`CHINA_TRIP_2026/EXECUTION_BOARD.md`](CHINA_TRIP_2026/EXECUTION_BOARD.md) |
 | Papers already in hand | [`CHINA_TRIP_2026/01_INSTRUMENT_REGISTER.md`](CHINA_TRIP_2026/01_INSTRUMENT_REGISTER.md) |
 | Malaysia Halal system | [`CHINA_TRIP_2026/MALAYSIA_HALAL_AUTHORITY_MAP.md`](CHINA_TRIP_2026/MALAYSIA_HALAL_AUTHORITY_MAP.md) |
-| MoA templates (CODA, Sinotrans x2, NICFS x2) | [`CHINA_TRIP_2026/MOA_TEMPLATES/`](CHINA_TRIP_2026/MOA_TEMPLATES/) |
+| MoA templates (CODA, Sinotrans x2, China laboratory, NICFS traceability) | [`CHINA_TRIP_2026/MOA_TEMPLATES/`](CHINA_TRIP_2026/MOA_TEMPLATES/) |
 | Lulu / MAF-Carrefour / Tamimi / noon | [`CHINA_TRIP_2026/RETAILERS/`](CHINA_TRIP_2026/RETAILERS/) |
 | Runtime honesty (what the code actually is) | [`STATUS.md`](STATUS.md) |
 | Doctrine | [`00_EXECUTIVE_COMMAND/IQ300_DOCTRINE.md`](00_EXECUTIVE_COMMAND/IQ300_DOCTRINE.md) |
@@ -83,7 +83,7 @@ Shariah Financing API → Islamic financing / Takaful / tokenomics
 | K | Known mandate / contracting entity | authority map |
 | L | Lulu + logistics MoA | `CHINA_TRIP_2026/RETAILERS/LULU/` + Sinotrans logistics MoA |
 | M | Current standards registry | `master-standards-stack/iq300-all-jakim-ms/01_MASTER_STANDARDS_REGISTER.md` + applicable JAKIM/Malaysian governance instruments |
-| N | NICFS / China lab + traceability | `partners/nicfs/` + `partners/china-food-security-lab/` |
+| N | National Food Safety (Hengqin) Innovation Center laboratory + separate traceability platform | `partners/china-food-security-lab/` + `partners/nicfs/` |
 | O | October mission | `00_EXECUTIVE_COMMAND/OCTOBER_2026_STRATEGIC_IMPLEMENTATION_MISSION.md` — operate from `CHINA_TRIP_2026/` |
 | P | PHC | `partners/phc/` |
 | Q | Quarantine (corrupt legacy archives) | `00_EXECUTIVE_COMMAND/artifact-quarantine-2026-09-26.json` |
@@ -129,7 +129,7 @@ docs/                     website/codex/implementation specifications
 
 - Commercial foundation, travel, signing, demonstration and production are separate statuses.
 - The [signing matrix](CHINA_TRIP_2026/SIGNING_MATRIX.md) maps the original six instruments and four optional drafts.
-- Partner v2.1 restores structured authority/evidence fields and retains unresolved laboratory identities separately.
+- Partner registry v2.4.2 names the National Food Safety (Hengqin) Innovation Center under Chinese Academy of Agricultural Sciences, China, and keeps any relationship to NICFS traceability subject to authoritative confirmation.
 - The [closure report](00_EXECUTIVE_COMMAND/RECONCILIATION_2026-09-27.md) records completed fixes and external dependencies.
 - Three corrupt legacy archives were retired on 27 September. The valid replacement holds 628 MS 2400 clause/page locators without licensed text or completed control rules; the historical 613-object assertion is incomplete. See [source status](STATUS.md) and [retirement ledger](00_EXECUTIVE_COMMAND/artifact-quarantine-2026-09-26.json).
 
@@ -144,10 +144,10 @@ docs/                     website/codex/implementation specifications
 | Source bindings and registries | [Executive control index](00_EXECUTIVE_COMMAND/README.md) |
 | Current standards registry | [Source-controlled register](master-standards-stack/iq300-all-jakim-ms/01_MASTER_STANDARDS_REGISTER.md) |
 
-The 26 September ingestion packages are historical audit evidence, not alternative current baselines. The removed 17 September package is not a current control source. Legacy roadmap/Sinotrans/CODA physical-pilot language is aligned to China → GCC direct. Project implementation does not instantiate Shipment 001 or create authority/finance decisions.
+The 26 September ingestion packages are historical audit evidence, not alternative current controls. Legacy roadmap/Sinotrans/CODA physical-pilot language is aligned to China → GCC direct. Project implementation does not instantiate Shipment 001 or create authority/finance decisions.
 
 
-## 7 October canonical AMANAH binding
+## 8 October canonical AMANAH binding
 
 | Domain | Canonical implementation |
 |---|---|

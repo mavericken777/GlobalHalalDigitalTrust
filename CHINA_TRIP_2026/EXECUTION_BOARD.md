@@ -1,6 +1,6 @@
 # Execution board — commercial foundation and delivery
 
-Version: 1.1 · Control date: 2026-09-27 · Artifact: `CHINA_TRIP_2026/EXECUTION_BOARD.md`.
+Version: 1.2 · Control date: 2026-10-08 · Artifact: `CHINA_TRIP_2026/EXECUTION_BOARD.md`.
 Supersedes the 2026-09-26 working draft where inconsistent.
 Commit: `fix(mission): reconcile signing and readiness controls [EVIDENCE-UPDATE]`.
 [PROPOSAL: trip preparation — path point: Control / Evidence / Authority Gate]
@@ -29,7 +29,7 @@ The following table is generated from the readiness register by `python tools/tr
 | T13 | travel | Confirm meals, cruise, rest/prayer arrangements and costs | Hospitality lead (appointment pending) | 2026-10-05 | OPEN |
 | S01 | signing | Verify legal entities, signer mandates and bilingual M01-M06 | PHC/GHSCL legal leads + counterparties | 2026-10-07 | OPEN |
 | S02 | signing | Approve M05 logistics / M06 warehouse split; resolve existing-paper relationship and any requested exclusivity | PHC/GHSCL commercial leads + Sinotrans | 2026-10-05 | OPEN |
-| S03 | signing | Verify academy, laboratory, center and Hengqin identities | Wen Jian + technical/legal leads | 2026-10-05 | OPEN |
+| S03 | signing | Confirm the contracting entity, registered site and relationship to the separate traceability platform | Wen Jian + technical/legal leads | 2026-10-05 | OPEN |
 | S04 | signing | Obtain Bluamec/Blue Diamond/Ka Shui product and factory dossier | Dr. Zhang + supplier QA lead | 2026-10-07 | OPEN |
 | S05 | signing | Agree CODA supplier funnel and Lulu procurement pathway | Wu Xuejian + CODA/Lulu focal persons | 2026-10-07 | OPEN |
 | D01 | demonstration | Run offline reference demonstration and backup rehearsal | GHSCL technical lead | 2026-10-08 | OPEN |
@@ -46,4 +46,4 @@ The following table is generated from the readiness register by `python tools/tr
 
 ## In-room commercial outputs
 
-Sinotrans: exact contracting/operating entity, yard address, lane, authorised confirmation of INST-004 signers/dates, and written treatment of JGC/GHSC papers. Manufacturer/GHSC: first SKU, HS/category, receiving pack. Buyer: legal operating company and procurement/compliance owners. NICFS: exact legal entity, lab/platform relationship and method scope. Record accepted owner, due date, private evidence reference and actual status in [FIELD_LOG.md](FIELD_LOG.md); these tasks do not become complete merely because a template exists.
+Sinotrans: exact contracting/operating entity, yard address, lane, authorised confirmation of INST-004 signers/dates, and written treatment of JGC/GHSC papers. Manufacturer/GHSC: first SKU, HS/category, receiving pack. Buyer: legal operating company and procurement/compliance owners. Laboratory: National Food Safety (Hengqin) Innovation Center under Chinese Academy of Agricultural Sciences, China; confirm contracting entity, registered site, accreditation/method scope and any relationship to the separate NICFS traceability platform. Record accepted owner, due date, private evidence reference and actual status in [FIELD_LOG.md](FIELD_LOG.md); these tasks do not become complete merely because a template exists.

@@ -1,9 +1,9 @@
 openapi: 3.0.3
 info:
-  title: AHTE China Food Safety Laboratory Evidence Extension
+  title: AHTE National Food Safety (Hengqin) Innovation Center Laboratory Evidence Extension
   version: 0.2.0-proposal
   description: Proposal-level extension for ingesting method-controlled laboratory
-    evidence from the China Food Safety Innovation Center / participating laboratory
+    evidence from the National Food Safety (Hengqin) Innovation Center under Chinese Academy of Agricultural Sciences, China, or another participating laboratory
     into AHTE. This contract does not assert JAKIM production connectivity or laboratory
     recognition. Those remain external authority and contractual gates.
 servers:

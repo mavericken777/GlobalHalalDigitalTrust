@@ -4,11 +4,11 @@ This folder is the consolidated JAKIM / Department of Standards Malaysia Halal s
 
 ## Current standards control
 
-The former `verified-2026-09-17/` package has been removed because it was superseded. The current standards control is registry-driven through `iq300-all-jakim-ms/01_MASTER_STANDARDS_REGISTER.md`, current source registries, and live JSM/JAKIM verification. Exact normative wording remains source-locked and is not redistributed.
+The current standards control is registry-driven through `iq300-all-jakim-ms/01_MASTER_STANDARDS_REGISTER.md`, applicable current source registries, and live JSM/JAKIM verification. Exact normative wording remains source-locked where authoritative text is unavailable and is not redistributed.
 
 ### Current source-controlled standards assets
 
-The former `verified-2026-09-17/` package and its module set have been removed. Do not reference or reconstruct those files as current assets. The active registry is [`iq300-all-jakim-ms/01_MASTER_STANDARDS_REGISTER.md`](iq300-all-jakim-ms/01_MASTER_STANDARDS_REGISTER.md). Source-index, control-library and governance materials elsewhere in this repository are supporting records with their own provenance and scope; they are not a replacement frozen package.
+The active registry is [`iq300-all-jakim-ms/01_MASTER_STANDARDS_REGISTER.md`](iq300-all-jakim-ms/01_MASTER_STANDARDS_REGISTER.md). Source-index, control-library and governance materials elsewhere in this repository are supporting records with their own provenance and scope; the applicable framework remains dynamically source-controlled.
 
 ## Malaysian/JAKIM standards framework
 

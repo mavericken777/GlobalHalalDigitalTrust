@@ -1,6 +1,6 @@
 # Controlled signing matrix
 
-Version: 1.1 · Control date: 2026-09-27 · Artifact: `CHINA_TRIP_2026/SIGNING_MATRIX.md`.
+Version: 1.2 · Control date: 2026-10-08 · Artifact: `CHINA_TRIP_2026/SIGNING_MATRIX.md`.
 Supersedes the 2026-09-26 working draft where inconsistent.
 Commit: `fix(mission): reconcile signing and readiness controls [EVIDENCE-UPDATE]`.
 [PROPOSAL: trip preparation — path point: Control / Evidence / Authority Gate]
@@ -11,7 +11,7 @@ Original six mission instruments retained; optional outreach is separate. M05/M0
 |---|---|---|---|
 | M01 | phc + ghsc-hk + coda | Strategic cooperation / supplier facilitation | [Draft](MOA_TEMPLATES/MOA_CODA.md) |
 | M02 | phc + ghsc-hk + lulu | Procurement cooperation; no purchase order | [Draft](RETAILERS/LULU/MOA.md) |
-| M03 | ghsc-hk + nicfs | Analytical evidence; exact center/lab identity unconfirmed | [Draft](MOA_TEMPLATES/MOA_NICFS_LAB.md) |
+| M03 | ghsc-hk + [laboratory contracting entity to confirm] | National Food Safety (Hengqin) Innovation Center under Chinese Academy of Agricultural Sciences, China — analytical evidence; contracting entity and method scope to confirm | [Draft](MOA_TEMPLATES/MOA_NICFS_LAB.md) |
 | M04 | ghsc-hk + agricultural-institution | Entrusted agricultural development feasibility | [Draft](MOA_TEMPLATES/MOA_AGRICULTURAL_DEVELOPMENT.md) |
 | M05 | phc + ghsc-hk + sinotrans | Proposed transport/logistics split | [Draft](MOA_TEMPLATES/MOA_SINOTRANS_LOGISTICS.md) |
 | M06 | phc + ghsc-hk + sinotrans | Proposed warehouse split; counterparty acceptance pending | [Draft](MOA_TEMPLATES/MOA_SINOTRANS_WAREHOUSE.md) |

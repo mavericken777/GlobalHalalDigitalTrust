@@ -186,11 +186,11 @@
     },
     {
       "id": "S03",
-      "action": "Verify academy, laboratory, center and Hengqin identities",
+      "action": "Confirm the contracting entity, registered site and relationship to the separate traceability platform",
       "proposed_owner": "Wen Jian + technical/legal leads",
       "target_date": "2026-10-05",
       "status": "OPEN",
-      "closure_evidence_required": "Exact entities/addresses, relationships, accreditation/method scope and mandate",
+      "closure_evidence_required": "Contracting registration and mandate, site, accreditation/method scope, and authoritative evidence for any laboratory/traceability relationship",
       "evidence_reference": null,
       "domain": "mission",
       "workstream": "signing"
