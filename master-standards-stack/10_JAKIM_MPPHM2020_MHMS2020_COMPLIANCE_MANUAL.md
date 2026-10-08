@@ -45,7 +45,7 @@ JAKIM's official portal currently lists **Malaysian Halal Management System (MHM
 |---|---|---|
 | 4 | Route applicant into the correct certification scheme | Scheme routing record |
 | 5 | Confirm application eligibility and criteria | Eligibility checklist + source evidence |
-| 6 | Prevent applications that fall outside permitted criteria | Hard-stop eligibility gate |
+| 6 | Prevent applications that fall outside permitted criteria | Eligibility review |
 
 **Application dossier minimum model:** company profile/registration; product or service scope; premises/factory information; ingredient/raw-material data; supplier/manufacturer information; halal status of critical inputs; packaging information; process information; relevant certificates; site/layout information; declarations and other documents required by the competent authority.
 
@@ -75,7 +75,7 @@ JAKIM's official portal currently lists **Malaysian Halal Management System (MHM
 
 ### Part V - Application procedures
 
-| Procedure | Control intent | IQ300 gate |
+| Procedure | Control intent | IQ300 workflow step |
 |---|---|---|
 | 21 | New application | Intake -> eligibility -> document sufficiency -> audit readiness |
 | 22 | Renewal | Credential continuity -> changes -> surveillance/assessment -> renewal decision |
@@ -87,7 +87,7 @@ JAKIM's official portal currently lists **Malaysian Halal Management System (MHM
 | Procedure | Control intent | IQ300 audit event |
 |---|---|---|
 | 25 | Audit notification | E-AUDIT-OPEN + notice |
-| 26 | Audit scope | ScopeRecord frozen before fieldwork |
+| 26 | Audit scope | ScopeRecord recorded before fieldwork |
 | 27 | Adequacy audit | Document/system readiness assessment |
 | 28 | On-site audit | Site observations + sample + evidence linkage |
 | 29 | Follow-up audit | CAR closure / re-verification evidence |
@@ -231,7 +231,7 @@ The MHMS scheme layer is routed against the applicable MPPHM scheme, including f
 
 ## 4. JAKIM audit-ready evidence architecture
 
-### 4.1 Evidence quality gates
+### 4.1 Evidence quality checks
 
 An evidence object is only accepted as audit-ready when it has:
 
@@ -263,7 +263,7 @@ For a Chinese manufacturer seeking a Malaysia-linked or GCC export trust pathway
 
 - do not imply Malaysian Halal certification before the competent authority decision;
 - maintain a separate JAKIM certification status object and factory digital-trust onboarding status;
-- freeze the exact manufacturing site, formula/SKU and certification scope;
+- record and confirm the exact manufacturing site, formula/SKU and certification scope;
 - map destination-market requirements separately from Malaysian certification requirements;
 - preserve sovereign evidence references rather than copying sensitive source files unnecessarily.
 
@@ -294,7 +294,7 @@ V. Verification
 W. Warehouse/transport interface  
 X. Export/import documents  
 Y. Year/version control  
-Z. Zero-unresolved-critical-gaps gate.
+Z. Critical findings are resolved and re-verified.
 
 ## 8. Source basis
 

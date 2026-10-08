@@ -47,7 +47,7 @@ The implementation profile shall use current, widely supported cryptographic pri
 - TLS 1.3 for transport where supported.
 - AES-256-GCM or approved equivalent for symmetric encryption.
 
-The exact algorithm profile is frozen in the security standard and may be updated without changing business object identifiers.
+The exact algorithm profile is versioned in the security standard and may be updated without changing business object identifiers.
 
 ## 6. Evidence integrity
 

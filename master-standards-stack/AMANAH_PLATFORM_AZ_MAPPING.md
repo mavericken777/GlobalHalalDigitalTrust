@@ -121,7 +121,7 @@ Purpose-limited disclosure, data sovereignty, tamper evidence and minimum-necess
 | MS 2803:2025 | C,E,H,L,M,P,R,S,T | animal species/source/slaughter-or-origin/segregation | source, species, slaughter/origin, supplier/test evidence | ANIMAL MATERIAL, CERTIFICATION |
 | MS 2809:2025 | C,E,L,R,T | analytical dataset, chemometric model, validation, sample/result | dataset, model metadata, validation, report | LAB METHOD, AUTH DECISION |
 | MS 2810:2025 | C,E,L,M,T | pig-origin skin/hair identification | sample chain, method metadata, analytical result | ANALYTICAL EVIDENCE |
-| MS 2393:2023 | C,I,J,T,U | controlled terminology and semantics | ontology/definition evidence | TERMINOLOGY FREEZE |
+| MS 2393:2023 | C,I,J,T,U | controlled terminology and semantics | ontology/definition evidence | TERMINOLOGY REVIEW |
 | MS 2627:2017 | C,E,L,M,R,T | porcine DNA evidence in food | sample chain, PCR controls, result | LAB EVIDENCE, AUTH DECISION |
 | MS 2627-2:2025 | C,E,L,M,R,T | porcine DNA evidence in cosmetics | sample chain, qPCR controls/validation, result | LAB EVIDENCE, AUTH DECISION |
 | MS 1900:2025 | A,C,G,I,J,K,Q,R,T,W,X | organisation-level Shariah QMS | policies, objectives, audits, reviews, records | MANAGEMENT REVIEW / CERTIFICATION AS APPLICABLE |
@@ -139,7 +139,7 @@ Authority; Organisation; Facility; Person/Role/Competence; Product/SKU/Formula; 
 `PENDING -> EVIDENCE-COMPLETE -> ASSESSED -> VERIFIED -> VERIFIED-WITH-EXCEPTION -> RELEASED`
 Failure/hold states include HOLD, QUARANTINED, DISPUTED, CORRECTIVE_ACTION, RE-VERIFICATION, EXPIRED, SUSPENDED, REVOKED and RECALLED.
 
-## Production freeze
+## Production versioning
 Every production rule must carry exact standard number/edition, confirmation or revision status, effective date, supersession lineage, MPPHM/MHMS edition, current protocol, applicable circular/Pekeliling/fatwa/law/regulator requirement, laboratory method version where applicable, authority owner, source provenance/hash and implementation test evidence.
 
 ## Visual and process assets

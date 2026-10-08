@@ -43,8 +43,8 @@ flowchart TD
     CA --> VER[Verify effectiveness]
     VER --> AUTH{Authority disposition required?}
     AUTH -- No --> REL[Release under authorised control]
-    AUTH -- Yes --> GATE[certification review]
-    GATE --> REL
+    AUTH -- Yes --> DECISION[certification review]
+    DECISION --> REL
 ```
 
 ## 4. Smart-glass audit

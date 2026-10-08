@@ -2,21 +2,21 @@
 
 ## certification review
 
-| Gate | Function | Typical trigger |
+| Review / decision | Function | Typical trigger |
 |---|---|---|
 | AUTH-AUDIT | Competent-authority audit/assessment | conformity assessment and evidence review |
 | AUTH-CERT | Certification decision | issuance/renewal/scope decision |
 | AUTH-LOGO | Halal mark permission | artwork/claim release |
 | AUTH-MATERIAL | Material-origin acceptance | animal-derived / high-risk inputs |
 | AUTH-SERTU | Sertu verification/release | mughallazah contamination or conversion |
-| AUTH-PROTOCOL | Live slaughter/stunning rule gate | current Malaysian Protocol / circular / fatwa |
+| AUTH-PROTOCOL | Live slaughter/stunning rule review | current Malaysian Protocol / circular / fatwa |
 | AUTH-CHAIN | Logistics node integrity | transport/warehouse/retail certification |
 | AUTH-OUTSOURCE | Outsourced activity control | CMO/lab/packer/warehouse/carrier |
-| AUTH-LEGAL | Regulatory gate | NPRA / trade description / other law |
-| AUTH-LAB | Laboratory evidence gate | method validity, scope and interpretation |
+| AUTH-LEGAL | Regulatory review | NPRA / trade description / other law |
+| AUTH-LAB | Laboratory evidence review | method validity, scope and interpretation |
 | AUTH-VACCINE | Vaccine/biologic certification review | fatwa/circular/authority acceptance |
-| AUTH-COMPETENCE | Professional competence gate | Halal Executive/auditor role |
-| AUTH-GOV | Governance/ontology gate | terminology, Shariah QMS, source freeze |
+| AUTH-COMPETENCE | Professional competence review | Halal Executive/auditor role |
+| AUTH-GOV | Governance and terminology review | terminology, Shariah QMS, source versioning |
 
 ## Audit tests
 

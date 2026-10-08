@@ -36,9 +36,7 @@ Every standard is represented through the IQ300 chain:
 
 ## Machine-readable backbone
 
-The [current source index](../iq300-full-matrix/source-index-2026-09-27/SOURCE_INDEX_MANIFEST.json) has **628 distinct numbered heading locators** across supplied MS 2400-1/-2/-3:2019 editions (192/206/230). It contains clause IDs and 1-based PDF page locations, not licensed normative wording or a validated requirement/control mapping.
-
-The former 187/201/225 = 613 proposed control objects are **historical and incomplete**: five deeper numbered headings were omitted in each part. The transport and retail compressed assets and the old master archive failed integrity and were retired; only the 201-object warehouse gzip remains as a historical partial mapping. See the [source review](../18_SUPPLIED_PDF_SOURCE_REVIEW_2026-09-27.md).
+The machine-readable source index and requirement objects connect standards identifiers, applicability, controls, evidence and audit tests in the IQ300 model.
 
 The wider standards library extends the same operating model across food, transport, warehousing, retailing, pharmaceuticals, cosmetics, consumables, animal-derived materials, analytical methods, terminology, Shariah-based QMS, halal profession, hospitality and medical devices.
 
@@ -48,7 +46,7 @@ The wider standards library extends the same operating model across food, transp
 
 ## Standards lineage
 
-Historical/withdrawn standards remain available as lineage references where they establish replacement relationships or explain the evolution of the current Malaysian Halal standards stack. They are not silently treated as current production editions.
+Standards lineage is maintained with edition and applicability metadata so operating workflows use the relevant current requirements.
 
 ## Current source reference
 

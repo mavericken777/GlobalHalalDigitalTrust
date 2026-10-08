@@ -79,9 +79,9 @@ Exception branches:
 
 A trust state is always scoped to one object and one authority/control context. A recalled lot must not automatically change unrelated lots; a destination quarantine must not erase origin evidence.
 
-## 6. Physical gate model
+## 6. Physical handoff model
 
-Every physical handoff has a digital gate:
+Every physical handoff has a corresponding digital checkpoint:
 
 1. Identify object.
 2. Read expected state.

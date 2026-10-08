@@ -220,7 +220,7 @@ VACCINE / BIOLOGIC LOT
  └─ packaging
 ```
 
-Detailed annex values must be frozen only after authoritative source verification.
+Detailed annex values must be versioned after authoritative source verification.
 
 ## 10. MS 2634 cosmetics intelligence
 
@@ -690,7 +690,7 @@ The next normative build should contain one record per verified requirement:
 | Field | Purpose |
 |---|---|
 | Standard | Source standard |
-| Edition | Version freeze |
+| Edition | Version control |
 | Clause | Exact clause only after authoritative verification |
 | Requirement | Normative requirement |
 | Applicability | Product/process/jurisdiction scope |

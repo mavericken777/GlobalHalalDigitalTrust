@@ -24,30 +24,30 @@ Convert a Chinese manufacturer from an ordinary supplier record into a fully tra
 
 `Candidate -> Scope -> Entity -> Facility -> Product -> Materials -> Process -> HCP -> Evidence -> Competence -> Audit -> Lab -> Corrective Action -> Re-verification -> Authority workflow -> Production readiness -> Shipment readiness`
 
-## 4. Minimum acceptance gates
+## 4. Manufacturer onboarding steps
 
-### Gate A - Identity
+### Step A - Identity
 All organisation, facility, product and material identifiers reconcile.
 
-### Gate B - Scope
+### Step B - Scope
 Applicable Malaysian and destination requirements are mapped to the product/process scope.
 
-### Gate C - Provenance
+### Step C - Provenance
 Critical materials have source/supplier/origin evidence and traceability.
 
-### Gate D - HCP
+### Step D - HCP
 Critical halal control points are identified, monitored and evidenced.
 
-### Gate E - Personnel
+### Step E - Personnel
 Responsible roles are assigned and competence records are current.
 
-### Gate F - Evidence
+### Step F - Evidence
 Required evidence can be retrieved by requirement/HCP/batch.
 
-### Gate G - Audit
+### Step G - Audit
 Facility and records pass the defined audit workflow and corrective-action cycle.
 
-### Gate H - Shipment
+### Step H - Shipment
 Batch/lot/pallet/container/seal relationships are complete and dispatch-ready.
 
 ## 5. ERP/MES/WMS/QMS/LIMS integration fields
@@ -56,7 +56,7 @@ At minimum exchange stable IDs, timestamps, actor IDs, process/batch references,
 
 ## 6. First shipment readiness checklist
 
-- Product list frozen for the shipment.
+- Product list confirmed for the shipment.
 - All critical material suppliers mapped.
 - Batch and lot IDs allocated.
 - Packaging and labels verified.

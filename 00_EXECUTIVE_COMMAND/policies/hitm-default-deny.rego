@@ -44,7 +44,7 @@ allow if {
 }
 
 # D5/D6 never allowed to the machine, regardless of confidence.
-deny_reason["authority_gate_reserved"] if {
+deny_reason["certification_decision_requires_human"] if {
   reserved_classes[input.class]
 }
 

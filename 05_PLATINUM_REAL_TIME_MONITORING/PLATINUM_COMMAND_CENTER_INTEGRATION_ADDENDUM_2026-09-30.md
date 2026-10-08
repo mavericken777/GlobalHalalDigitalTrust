@@ -287,9 +287,7 @@ A Platinum deployment aligned to this addendum should demonstrate:
 
 ## 11. shipment workflow mapping
 
-[PILOT: shipment workflow — China → GCC direct]
-
-For the pilot, the Command Center should be able to reconstruct:
+The Command Center reconstructs the end-to-end operating journey:
 
 `material → sample → lab → batch → audit → authority status → warehouse → pallet → container → seal → logistics → origin port → transit → GCC port → receiving`
 

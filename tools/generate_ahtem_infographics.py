@@ -84,7 +84,7 @@ def master(items):
     fy=360+5*(panel_h+gy); fx=75
     p += [f'<rect x="{fx}" y="{fy}" width="{3*panel_w+2*gx}" height="{panel_h}" rx="18" fill="#f8fafc" stroke="#cbd5e1"/>',
           txt(fx+22,fy+34,"AHTE VISUAL DOCTRINE",18,800),
-          txt(fx+22,fy+64,"The flow converts applicable standards into digital controls, HCPs, evidence, audit tests and traceable authority-gated outcomes.",14,550,fill="#334155"),
+          txt(fx+22,fy+64,"The flow converts applicable standards into digital controls, HCPs, evidence, audit tests and traceable authority decisions.",14,550,fill="#334155"),
           txt(fx+22,fy+101,"Analytical execution",14,800),
           txt(fx+22,fy+127,"Laboratory, AI and operational outputs are bound to the evidence, audit and authority workflow.",13,550,fill="#334155"),
           txt(fx+22,fy+165,"Traceability",14,800),

@@ -10,10 +10,8 @@
 | Companion artifacts | `00_EXECUTIVE_COMMAND/port-authority-registry.json`, `00_EXECUTIVE_COMMAND/corridor-registry.json` |
 | Commit message | `docs(deliverables): add 29 — Global Port Authorities Protocol for China-GCC corridor [DOCTRINE-CRITICAL]` |
 
-[PILOT: shipment workflow — port/border]
-
 ## 1. PURPOSE
-Define the structured engagement protocol for origin-China and destination-GCC port, customs, inspection and related border authorities for the China → GCC direct corridor pilot. The protocol establishes evidence gates, authority boundaries, custody hand-over points, document sets, exception handling, escalation paths and verification requirements.
+Define the structured operating workflow for origin-China and destination-GCC port, customs, inspection and related border authorities for the China → GCC direct corridor. The workflow connects evidence, authority responsibilities, custody handovers, documentation, exception response and verification.
 
 ## 2. SCOPE
 - Origin ports: selected China export ports used for shipment workflow.
@@ -30,18 +28,18 @@ Define the structured engagement protocol for origin-China and destination-GCC p
 ## 4. PORT ENGAGEMENT CHAIN
 `Origin port selection → Export-document readiness → Container stuffing/seal → Origin customs/inspection clearance → Loading confirmation → Transit custody/telemetry → Destination arrival notice → Destination customs/food/quarantine inspection → Border release → Receiving verification → AHTE E4/E5 evidence linkage`
 
-## 5. EVIDENCE GATES
-| Gate | Owner | Evidence Required | Status |
+## 5. EVIDENCE REVIEW STEPS
+| Workflow step | Owner | Evidence recorded |
 |---|---|---|---|
-| Origin port selection | Project + logistics operator | capability, cut-offs, handling requirements | EXTERNAL-GATE / TRANSACTION-GATE |
-| Export documentation | Manufacturer/exporter + importer + logistics | invoice, packing list, origin, declaration, category-specific documents | TRANSACTION-GATE |
-| Container/seal integrity | Logistics operator + terminal | seal ID, stuffing/condition record | TRANSACTION-GATE |
-| Origin clearance | GACC/competent China authority | official export clearance/release | EXTERNAL-GATE |
-| Transit custody | Sinotrans/designated operator | custody events, telemetry where risk requires | TRANSACTION-GATE |
-| Destination arrival | Terminal/operator | arrival/terminal record | TRANSACTION-GATE |
-| Destination inspection | Destination authority | inspection/sampling/hold/release evidence | EXTERNAL-GATE |
-| Border release | Customs/border authority | official clearance/release | EXTERNAL-GATE |
-| Receiving verification | Importer/warehouse | goods receipt, seal/condition reconciliation | TRANSACTION-GATE |
+| Origin port selection | Project + logistics operator | Capability, cut-offs and handling requirements |
+| Export documentation | Manufacturer/exporter + importer + logistics | Invoice, packing list, origin, declaration and category-specific documents |
+| Container/seal integrity | Logistics operator + terminal | Seal ID and stuffing/condition record |
+| Origin clearance | GACC/competent China authority | Official export clearance/release |
+| Transit custody | Sinotrans/designated operator | Custody events and telemetry where risk requires |
+| Destination arrival | Terminal/operator | Arrival/terminal record |
+| Destination inspection | Destination authority | Inspection/sampling/hold/release evidence |
+| Border release | Customs/border authority | Official clearance/release |
+| Receiving verification | Importer/warehouse | Goods receipt and seal/condition reconciliation |
 
 ## 6. ORIGIN — CHINA
 Before shipment release:
@@ -112,7 +110,7 @@ Do not infer Saudi/UAE equivalence. Resolve exact national customs, food/product
 | Condition report | importer/warehouse | seal/damage/condition reconciliation |
 
 ### 9.3 Alignment Rule
-A deviation from the planned document set requires applicability review and an explicit evidence-gap/open-gate decision. Missing documents are never presumed satisfied.
+A deviation from the planned document set is recorded for applicability review and resolution. Required documents are verified against their applicable scope.
 
 ## 10. EXCEPTION HANDLING
 

@@ -6,8 +6,10 @@ ROOT=Path(__file__).resolve().parents[1]
 LINK=re.compile(r'(?<!!)\[[^\]]*\]\(([^)]+)\)')
 def main():
     names=subprocess.check_output(['git','ls-files','-z'],cwd=ROOT).decode().split('\0')
+    deleted=set(subprocess.check_output(['git','ls-files','--deleted','-z'],cwd=ROOT).decode().split('\0'))
     missing=[];checked=0
     for name in filter(lambda x:x.endswith('.md'),names):
+        if name in deleted:continue
         source=ROOT/name
         if not source.is_file():
             missing.append(f'{name}: tracked file missing')

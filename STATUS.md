@@ -17,7 +17,7 @@ This repository describes the current Global Halal Digital Trust ecosystem and i
 ## Repository status
 
 - Current standards reference: `master-standards-stack/iq300-all-jakim-ms/01_MASTER_STANDARDS_REGISTER.md`.
-- Dated standards snapshots, freeze instructions and obsolete project audit bundles are removed from the active tree.
+- Current standards and operating information are maintained in the active register and current specifications.
 - Private commercial instruments, signatures, personal identifiers, trip administration and transaction-specific records are outside this public repository.
 - Connector contracts and workflows remain in the repository; production states are reported only when configured and verified.
 

@@ -44,7 +44,7 @@
 6. AI agents cannot independently alter regulated status.
 7. Audit logs survive failure of the primary application.
 
-## Security release gate
+## Security release requirements
 
 No production release for critical trust services without:
 - security sign-off;

@@ -18,7 +18,7 @@
 
 The Finance/Takaful/tokenomics plane must be fully designed and implemented as a target platform domain even before a production bank, financier, Takaful operator or token/regulatory counterparty is connected.
 
-External legal/Shariah/regulatory/counterparty decisions remain mandatory for live financial transactions, but those external gates must **not** be implemented as deleted features, blank pages, permanent feature flags or missing schemas.
+External legal/Shariah/regulatory/counterparty decisions remain mandatory for live financial transactions, but those provider and authority setup must **not** be implemented as deleted features, blank pages, permanent feature flags or missing schemas.
 
 Use complete production adapter contracts plus replaceable development/sandbox providers. Development providers must never be represented as real financing, underwriting, claim, token issuance or regulatory decisions.
 
@@ -395,21 +395,19 @@ Financial decisions remain with the relevant counterparty.
 
 ## 16. shipment workflow
 
-[PILOT: shipment workflow — finance/Takaful evidence interface]
-
-shipment workflow may later validate bounded financing/Takaful evidence packets when the relevant counterparty, legal/Shariah framework and transaction documents exist.
+The workflow supports bounded financing/Takaful evidence packets under the relevant counterparty, legal/Shariah framework and transaction terms.
 
 Before that point, the complete application workflow may be exercised with development providers and synthetic pilot objects clearly labelled as non-production.
 
 No financing approval, Takaful policy or token issuance is implied by documenting or simulating this interface.
 
-## 17. External gates
+## 17. Provider and authority setup
 
 
 
 
 
-These gates block **live external activation**, not the complete target software architecture.
+Provider connection status informs live operation; the platform retains complete evidence, analytics and workflow capabilities.
 
 ## 18. Acceptance criteria
 

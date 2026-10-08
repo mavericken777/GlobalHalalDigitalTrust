@@ -37,7 +37,7 @@ High AI confidence never bypasses authorised certification decision workflow. Un
 - Enforces HITM default-deny in-process and via a Rego policy fixture
 - Refuses to mint Halal certificates or set `trust_state=CERTIFIED`
 - Treats `not_detected` lab results as evidence only
-- Marks corridor events as pilot-only; does not instantiate shipment workflow
+- Separates demonstration events from authenticated operating events
 - Binds evidence and assessments to their object; negative decisions cannot become VERIFIED
 - Keeps self-asserted approvals PENDING because caller identity is not authenticated
 - Preserves restrictive trust states until an authenticated re-verification workflow exists
@@ -47,8 +47,8 @@ High AI confidence never bypasses authorised certification decision workflow. Un
 - Talk to live JAKIM/MYeHALAL, GCC single windows, Sinotrans, or lab LIMS
 - Deploy OPA/SPIRE/SCITT/EPCIS in production
 - Execute certification determination sovereign/legal decisions
-- Close TRANSACTION-GATE or SOURCE-LOCKED items
+- Connect and validate the configured authority, logistics, laboratory and destination interfaces
 
 ## Reference limits
 
-MemoryStore is volatile and resets on restart. No production authentication, persistence or immutable audit log is implemented. Compose binds to localhost only. Use synthetic data; do not expose it publicly. See [mission demo runbook](../docs/OCTOBER_2026_DEMO_RUNBOOK.md).
+MemoryStore is volatile and resets on restart. This reference runtime has no production authentication, persistence or immutable audit log. Compose binds to localhost only. Use synthetic data and keep it on a trusted local environment.

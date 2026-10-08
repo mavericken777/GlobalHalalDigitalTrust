@@ -4,7 +4,6 @@
 
 The current controlling records are:
 
-- [Institution identity update (8 October 2026)](CHINA_LAB_INSTITUTION_IDENTITY_UPDATE_2026-10-08.md)
 - [AHTE China laboratory + traceability integration profile](AHTE_CHINA_LAB_TRACEABILITY_INTEGRATION_PROFILE_2026-09-30.md)
 - [Proposal OpenAPI for laboratory evidence](../../master-standards-stack/CHINA_EXECUTION_PACK/api/china-food-security-lab-openapi-extension.yaml)
 

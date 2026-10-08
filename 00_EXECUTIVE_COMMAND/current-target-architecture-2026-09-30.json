@@ -295,33 +295,6 @@
     "authorised buyer / consumer verification"
   ],
   "canonical_china_pack": "master-standards-stack/CHINA_EXECUTION_PACK/",
-  "retired_lineage": "master-standards-stack/china-execution-pack/",
-  "supersession_rules": [
-    {
-      "stale": "China -> Malaysia pilot wording",
-      "use": "China -> GCC direct"
-    },
-    {
-      "stale": "China -> Malaysia -> GCC mandatory physical route",
-      "use": "China origin -> GCC destination; Malaysia governance/assurance unless separately scoped"
-    },
-    {
-      "stale": "generic public certification decisionway or NurAI hop between AHTE and JAKIM",
-      "use": "direct JAKIM API"
-    },
-    {
-      "stale": "passive command-center analytics",
-      "use": "joint 24/7 GHSCL operational + authorised JAKIM authority-side monitoring with predictive/preemptive escalation"
-    },
-    {
-      "stale": "transport-only Sinotrans scope",
-      "use": "end-to-end warehouse + logistics real-time integration"
-    },
-    {
-      "stale": "development dependency used to disable target capability",
-      "use": "complete target capability + replaceable sandbox/development provider until real connector is available"
-    }
-  ],
   "physical_corridor": {
     "origin": "China",
     "destination": "GCC",

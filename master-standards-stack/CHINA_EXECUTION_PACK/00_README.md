@@ -3,7 +3,7 @@
 
 **Current architecture alignment — 30 September 2026:** this package executes AHTE across a **China-origin → GCC-destination direct physical corridor** with Malaysia as the governance/assurance and authority-connectivity plane unless a Malaysia physical movement is separately scoped. Older wording that could be read as a mandatory China→Malaysia→GCC physical route is superseded for shipment workflow.
 
-[PILOT: shipment workflow — China → GCC direct]
+China → GCC direct operating corridor.
 
 
 ## Implementation completeness rule
@@ -127,9 +127,9 @@ Jurisdictional implementation must preserve current Chinese data-governance, cyb
 - Exception states are engineered as first-class operating paths.
 - Human authority remains explicit in the data model through signed decisions and role-authorised actions.
 - AI/ML may analyse, predict and recommend; authorised certification decision workflow authority decisions remain human/authority-controlled.
-- External gates are not product feature blocks; complete adapters/workflows must still be built.
+- Provider and authority setup are not product feature blocks; complete adapters/workflows must still be built.
 
-## Programme gates
+## Programme workflow
 
 ```text
 G0 — Institutional alignment
@@ -155,7 +155,7 @@ G9 — Post-shipment assurance + recall drill
 G10 — Scale-out decision
 ```
 
-These programme gates govern live operational readiness. They must not be implemented as disabled architecture: development providers should allow the target workflow to be exercised before real external gates close.
+Provider setup is represented at the connector boundary so the target workflow can be exercised through development providers and connected to operating providers.
 
 ## Core implementation objects
 

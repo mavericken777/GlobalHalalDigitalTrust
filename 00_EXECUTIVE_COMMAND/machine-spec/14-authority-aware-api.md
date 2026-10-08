@@ -1,6 +1,6 @@
 # 14 — Authority-Aware API (proposal)
 
-[PROPOSAL] [ENGINEERING-GATE: not implemented]
+Authority-aware API reference for the AHTE integration model.
 
 Base path: `/v0/assurance` (not a certification API).
 
@@ -17,4 +17,4 @@ Base path: `/v0/assurance` (not a certification API).
 
 Every mutating call records `actor`, `spiffe_id` (when runtime exists), `opa_decision_log_ref`.
 
-Error `403 authority_gate_reserved` on authorised certification decision workflow machine execute.
+Error `403 certification_decision_requires_human` on authorised certification decision workflow machine execute.

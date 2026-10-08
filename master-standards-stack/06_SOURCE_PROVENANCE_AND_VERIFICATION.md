@@ -20,15 +20,15 @@
 - **D - Training material:** supported by supplied training slides.
 - **E - IQ300 design:** an implementation architecture proposed by the project.
 
-## 3. Version freeze
+## 3. Version control
 
 Every production requirement must store:
 
 `Authority + instrument type + document number + edition + confirmation/status + effective date + superseded relationship + official source reference + acquisition date + hash/integrity reference + reviewer + verification date.`
 
-## 4. Current-source verification gates
+## 4. Current-source review steps
 
-Before production hard-freeze, verify:
+Before production deployment, verify:
 
 1. current status and confirmation of every Malaysian Standard from the official JSM/MySOL source;
 2. current MPPHM and MHMS requirements;
@@ -86,7 +86,7 @@ All source-derived claims should identify the exact source class. Any future cor
 | S16 | `MS2683_2017.pdf` | `247b1f69bcc1` | primary supplied supplemental standard | Kelulut honey specification |
 | S17 | `MS2691_2021.pdf` | `07d3b127358b` | primary supplied standard | MS 2691 source-depth upgrade candidate |
 
-The secondary PDFs' 14-standard framing and references to `MPPHM 2020 Pindaan 2026` do not override the controlled 17-standard catalogue or establish exact authority text. Those issues remain explicit conflict/source gates.
+The secondary PDFs' 14-standard framing and references to `MPPHM 2020 Pindaan 2026` are compared with the Malaysian standards catalogue and applicable authority sources.
 
 
 

@@ -8,10 +8,8 @@
 | Control date | 17 September 2026 |
 | Commit message | `docs(deliverables): add 26 — GCC importer/buyer engagement protocol [DOCTRINE-CRITICAL]` |
 
-[PILOT: shipment workflow — importer/buyer engagement]
-
 ## 1. PURPOSE
-Define the structured engagement protocol for GCC importers and buyers participating in the China → GCC direct corridor pilot. The protocol establishes evidence gates, authority boundaries and commercial qualification requirements.
+Define the structured engagement workflow for GCC importers and buyers participating in the China → GCC direct corridor. The workflow connects evidence, authority requirements and commercial qualification.
 
 ## 2. SCOPE
 Applies to GCC-based importers, distributors and buyers engaging with AHTE pilot manufacturers. Initial destination profiles: Saudi Arabia and UAE; other GCC markets require country-specific authority validation. Non-GCC markets are out of scope.
@@ -24,16 +22,16 @@ Applies to GCC-based importers, distributors and buyers engaging with AHTE pilot
 ## 4. IMPORTER QUALIFICATION CHAIN
 `Legal entity registration → applicable food/import trade licence → destination importer/product registration → halal acceptance criteria → product-category familiarity → commercial capability → storage/cold-chain capability where applicable → distribution network → financial capability → AHTE onboarding`
 
-## 5. EVIDENCE GATES
-| Gate | Owner | Evidence Required | Status |
+## 5. EVIDENCE REVIEW STEPS
+| Workflow step | Owner | Evidence recorded |
 |---|---|---|---|
-| Importer legal registration | Importer | Trade licence, commercial registration | EXTERNAL-GATE |
-| Import eligibility/registration | Importer + destination authority | Applicable importer account/licence and product/item registration | EXTERNAL-GATE |
-| Halal acceptance criteria | Destination authority | Current product/certificate/issuer rules | EXTERNAL-GATE |
-| Product category fit | Importer | Portfolio, channel and shelf-life capability | EXTERNAL-GATE |
-| Commercial terms | Importer + project commercial layer | PO, price, payment terms, Incoterms | EXTERNAL-GATE |
-| Logistics capability | Importer + Sinotrans/designated operator | Warehouse, receiving, cold chain where applicable | EXTERNAL-GATE |
-| Financial capability | Importer | Credit/bank/commercial evidence as contractually required | EXTERNAL-GATE |
+| Importer legal registration | Importer | Trade licence and commercial registration |
+| Import eligibility/registration | Importer + destination authority | Applicable importer account/licence and product/item registration |
+| Halal acceptance criteria | Destination authority | Current product/certificate/issuer rules |
+| Product category fit | Importer | Portfolio, channel and shelf-life capability |
+| Commercial terms | Importer + project commercial layer | PO, price, payment terms and Incoterms |
+| Logistics capability | Importer + Sinotrans/designated operator | Warehouse, receiving and cold chain where applicable |
+| Financial capability | Importer | Credit/bank/commercial evidence as contractually required |
 
 ## 6. SAUDI ARABIA PROFILE
 Before release for a Saudi transaction, verify at minimum:

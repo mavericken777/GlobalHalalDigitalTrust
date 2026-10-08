@@ -55,6 +55,6 @@ def run_demo(shipment_id: str = "shipment-workflow", object_id: str = "DEMO-PROD
             {"name": "shariah_finance", "result": finance},
         ],
         "trust_state": "ASSESSED",
-        "next_authority_gate": "HUMAN_AUTHORITY",
+        "next_certification_decision": "HUMAN_AUTHORITY",
         "presentation_note": "All external provider responses are synthetic demonstration data.",
     }

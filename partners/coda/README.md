@@ -10,7 +10,7 @@ CODA does not create Halal certification authority and is not represented here a
 
 ## Contractual basis
 
-## Open gates
+## Integration responsibilities
 - executed/controlling partnership instrument
 - programme eligibility and mandate
 - named authorised contacts

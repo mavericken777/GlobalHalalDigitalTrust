@@ -146,7 +146,7 @@ flowchart TD
  V4 --> V5[Formulation]
  V5 --> V6[Filling lot]
  V6 --> V7[QC / disposition]
- V7 --> V8[Authority / fatwa gate]
+ V7 --> V8[Authority / fatwa review]
 ```
 
 ## H. Laboratory evidence boundary

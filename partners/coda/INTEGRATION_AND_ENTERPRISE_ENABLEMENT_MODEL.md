@@ -24,43 +24,43 @@ CODA should be approached as the mechanism for finding, mobilising and organisin
 | Sinotrans / logistics operator | Physical custody and logistics execution | Shipment events, custody records, transport/warehouse evidence |
 | GCC importer/distributor | Destination-market requirements, receiving, customs and commercial execution | Import evidence, receiving confirmation, market activation |
 
-## Manufacturer onboarding gates
+## Manufacturer onboarding workflow
 
-### Gate 1 — Discovery
+### Stage 1 — Discovery
 
 Collect legal entity, factory, product portfolio, target markets, certifications and export ambitions.
 
-### Gate 2 — Qualification
+### Stage 2 — Qualification
 
 Screen product category, raw-material risks, existing quality systems, traceability maturity, laboratory needs and GCC target-market suitability.
 
-### Gate 3 — Evidence
+### Stage 3 — Evidence
 
 Connect required laboratory tests and source evidence. Preserve the distinction between test evidence and Halal certification.
 
-### Gate 4 — Halal/Tayyib readiness
+### Stage 4 — Halal/Tayyib readiness
 
 Map the manufacturer's process to applicable Halal requirements and Tayyib/product-integrity controls. The platform can support evidence and workflow; it does not itself issue certification.
 
-### Gate 5 — Digital onboarding
+### Stage 5 — Digital onboarding
 
 Assign manufacturer/site/product/SKU/batch identifiers, source references, evidence hashes, roles and permissions.
 
-### Gate 6 — Platinum eligibility
+### Stage 6 — Platinum eligibility
 
 Select the full-stack real-time monitoring profile appropriate to the product and logistics risk.
 
-### Gate 7 — Market and logistics readiness
+### Stage 7 — Market and logistics readiness
 
 Match target GCC market, importer/distributor, route, warehouse, transport and receiving controls.
 
-### Gate 8 — Pilot transaction
+### Stage 8 — Operating transaction
 
 Execute a controlled transaction with complete evidence and exception handling.
 
-### Gate 9 — Scale
+### Stage 9 — Network expansion
 
-Expand only after KPI, compliance, technical and commercial gates are passed.
+Use the agreed KPI, compliance, technical and commercial workflow for each deployment.
 
 ## CODA support concept
 
@@ -114,7 +114,7 @@ Core reusable objects:
 ## Success KPIs
 
 - qualified manufacturers screened;
-- manufacturers reaching Gate 4;
+- manufacturers reaching Stage 4;
 - manufacturers with laboratory evidence connected;
 - manufacturers with digital identities;
 - Platinum devices deployed;

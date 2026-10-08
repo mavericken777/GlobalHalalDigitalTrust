@@ -6,8 +6,7 @@
 - Control date: 2026-09-30
 - Governing architecture: `00_EXECUTIVE_COMMAND/CURRENT_TARGET_ARCHITECTURE_2026-09-30.md`
 - Default corridor: **China → GCC direct**
-- Pilot: `[PILOT: shipment workflow — Sinotrans warehouse/logistics]`
-- Supersedes: prior China→Malaysia pilot wording in this file
+- Operating corridor: China → GCC direct
 
 
 ## Purpose
@@ -270,7 +269,7 @@ KPIs must be based on real telemetry/transactions; no synthetic KPI is to be rep
 
 ## shipment workflow pilot
 
-[PILOT: shipment workflow — China → GCC direct]
+The operating workflow covers China → GCC direct.
 
 The pilot physical corridor is **China → GCC direct**. Malaysia is the governance/assurance plane unless a Malaysia physical hop is separately authorised and scoped.
 
@@ -295,7 +294,7 @@ Pilot phases:
 - seal application;
 - synthetic/offline rehearsal only where live transaction evidence does not yet exist.
 
-### Phase 3 — Live shipment workflow when transaction gates close
+### Phase 3 — Live shipment workflow when transaction workflow is configured
 
 - actual booking;
 - actual batch/lot;
