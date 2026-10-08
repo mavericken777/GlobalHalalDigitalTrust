@@ -1,14 +1,14 @@
 # Repository status
 
-Control date: 2026-10-07. This is a repository evidence status, not a certification, travel approval or production-activation statement.
+Control date: 2026-10-08. This is a repository evidence status, not a certification, travel approval or production-activation statement.
 
-## 7 October controlling alignment
+## 8 October controlling alignment
 
-The current cross-repository operating direction is maintained in [AMANAH’s 7 October platform execution prompt](https://github.com/mavericken777/Amanah/blob/main/docs/AMANAH_100_PERCENT_END_TO_END_MASTER_EXECUTION_PROMPT_2026-10-07.md) and [current platform summary](https://github.com/mavericken777/Amanah/blob/main/docs/operations/STATUS.md). This repository’s 30 September architecture files remain dated architecture references; they do not restore the removed 17 September standards package.
+The current cross-repository operating direction is maintained in [AMANAH’s 7 October platform execution prompt](https://github.com/mavericken777/Amanah/blob/main/docs/AMANAH_100_PERCENT_END_TO_END_MASTER_EXECUTION_PROMPT_2026-10-07.md) and [current platform summary](https://github.com/mavericken777/Amanah/blob/main/docs/operations/STATUS.md). This repository’s 30 September architecture files remain dated architecture references. Current standards applicability is governed by the dynamic source-controlled registry and current JAKIM/JSM sources.
 
 - Physical corridor: **China → GCC direct**; Malaysia is the governance, assurance, standards and authority-connectivity plane unless a transaction explicitly scopes a physical Malaysia movement.
 - Authority topology: **AHTE ⇄ Direct JAKIM API ⇄ JAKIM**. PHC is an ecosystem/assurance institution; no unsupported certification authority is assigned to it.
-- Standards: dynamic, source-controlled and complete for applicable Malaysian/JAKIM governance, standards, procedures, protocols, circulars and destination requirements. MS 1500 / MS 2400 or the 17-entry catalogue alone is not the complete foundation. The retired 17 September package remains absent; use the current register and mark unavailable normative text `SOURCE-LOCKED`.
+- Standards: dynamic, source-controlled and complete for applicable Malaysian/JAKIM governance, standards, procedures, protocols, circulars and destination requirements. MS 1500 / MS 2400 or a catalogue snapshot alone is not the complete foundation. Use the current register and mark unavailable normative text `SOURCE-LOCKED`.
 - Market-side lifecycle explicitly includes GCC importer, receiving warehouse, distributor/3PL, retailer/marketplace, buyer and consumer verification, plus post-market exception/recall.
 - AI assists within its decision class. Competent humans/authorities retain certification, legal, sovereign release, finance and Takaful decisions. Shipment 001 remains not instantiated without transaction evidence.
 
